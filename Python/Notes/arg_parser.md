@@ -1,3 +1,11 @@
+# Argument Parsing from the CLI
+
+When we execute a script from the command line it is possible to enter command line argument. This is not related to Python, it is related to scripting languages. However, in this tutorial I will be focusing on the Python library `argparse` in order to create command line arguments for a script.
+
+The following code snippet creates a file called `arg_parser.py` and accepts
+the arguments created by `add_argument`.
+
+```Python
 """
 The argparse is used to get command line arguments when executing a script.
 
@@ -13,6 +21,7 @@ python arg_parser.py -w 10 -H 10 -q
 
 python3.exe arg_parser.py -w 10 -H 10 -a cats -l dogs dogs2 -a cats2
 """
+
 
 import math
 import argparse
@@ -80,4 +89,48 @@ if __name__ == '__main__':
         
     print("Values using -l", args.list)
     print("Values using -a", args.append)
-    
+```
+
+# Syntax for arguments
+
+The following file `input_file.py` takes one input,
+
+```Python
+import argparse
+
+parser = argparse.ArgumentParser('Retrieve an input file')
+parser.add_argument('-I', '--input_file',
+                    type=str,
+                    required=True)
+
+args = parser.parse_args()
+
+# If both a single dash and a double dash exist, argparse will always use the double dash into the parse_args()
+print(args.input_file)
+```
+
+When executing the script from the command line, their are multiple variations in which we can specify the input file,
+
+```Bash
+python input_file.py -I input.txt
+
+python input_file.py -I=input.txt
+
+python input_file.py -Iinput.txt
+
+python input_file.py -I"input.txt"
+
+python input_file.py "-Iinput.txt"
+```
+
+It's not uncommon for command line arguments to accept no spaces but still be valid, for example the common CMake parameter `-D` is used often as,
+
+```
+cmake .. -G "Visual Studio 19 2022" -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
+```
+
+This is using the `-D` argument and setting it to `CMAKE_TOOLCHAIN_FILE` and is equivalent to,
+
+```
+cmake .. -G "Visual Studio 19 2022" -D CMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
+```
