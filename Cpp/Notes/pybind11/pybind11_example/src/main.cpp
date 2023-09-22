@@ -14,4 +14,3 @@ void MyData::print()
 {
     printf("%f, %f\n", x, y);
 }
-
