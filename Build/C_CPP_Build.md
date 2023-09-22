@@ -6,7 +6,7 @@ The compilation of a C++ program involves three steps.
 
 1. **Preprocessing:** The preprocessor takes a C++ source code file and deals with the `#include`s, `#define`s and other preprocessor directives. The output of this step is a *pure* C++ file without pre-processor directives.
 2. **Compilation:** The compiler takes the pre-processor's output and produces an object file from it. What the compiler actually needs to do is take our text file and convert them into an intermediate format called an **object file**.
-3. **Linking:** The linker takes the object files produced by the compiler and produces either a library ro an executeable.
+3. **Linking:** The linker takes the object files produced by the compiler and produces either a library or an executeable.
 
 # Preprocessing
 
@@ -55,10 +55,8 @@ Because object files are machine code, they have therefore been targeted for a s
 
 # Linking
 
-The linker is what produces the final compilation output from the object files the compiler produced. This output can be either a shared (or dynamic) library or an executeable.
+The linker is what produces the final compilation output from the object files the compiler produced. This output can be either a static, shared (or dynamic) library or an executeable.
 
-It links all the object files by replacing the references to undefined symbols with the correct addresses. Each of these symbols can be defined in other object files or in libraries. If they are defined in libraries other than the standard library, you need to tell the linker about them.
+ Linking refers to the process of combining multiple compiled object files or libraries into a single executable or shared library. When you write a C++ program, you typically divide it into multiple source files (`.cpp` files). Each source file is separately compiled into an object file (`.o` or `.obj` file), which contains machine code instructions for that specific part of the program. These object files may also reference functions or symbols defined in other object files or libraries. It checks that all functions and symbols referenced in one file are defined in another, and it resolves these references by including the necessary code from other object files or libraries into the final binary.
 
-At this stage the most common errors are missing definitions or duplicate definitions. The former means that either the definitions don't exist (i.e. they are not written), or that the object files or libraries where they reside were not given to the linker.
-
-Continuing into the final step, the linker (`ld.exe`) links the object code with the library code to produce an executeable file "hello". This is performed using the command `ld -o hello hello.o`
+![](./images/linking.png)
