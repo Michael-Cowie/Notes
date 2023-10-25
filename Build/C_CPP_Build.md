@@ -55,7 +55,9 @@ Because object files are machine code, they have therefore been targeted for a s
 
 # Linking
 
-The linker is what produces the final compilation output from the object files the compiler produced. This output can be either a static, shared (or dynamic) library or an executeable.
+The linker is what produces the final compilation output from the object files the compiler produced. The linking stage is primarily used to create executable programs from object files. The generation of static libraries (`.lib` in Windows, `.a` in Linux) and dynamic/shared libraries (`.dll` in Windows, `.so` in Linux) typically occurs in a different step, often referred to as the library creation or library building stage. This process involves creating libraries that can be linked to other programs in the future.
+
+The linking stage is primarily concerned with creating **executable programs from object files**. It resolves symbols, links object files together, and generates an executable file that can be run. The output of this stage is typically an executable file (e.g., `.exe`, `.out`, `.app`) that can be directly executed. The linking stage is not used to produce static or dynamic libraries. 
 
 Linking refers to the process of combining multiple compiled object files or libraries into a single executable or shared library. When you write a C++ program, you typically divide it into multiple source files (`.cpp` files). Each source file is separately compiled into an object file (`.o` or `.obj` file), which contains machine code instructions for that specific part of the program. These object files may also reference functions or symbols defined in other object files or libraries. It checks that all functions and symbols referenced in one file are defined in another, and it resolves these references by including the necessary code from other object files or libraries into the final binary.
 
