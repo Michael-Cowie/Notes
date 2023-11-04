@@ -191,3 +191,27 @@ To test our Python Extension Module, we execute `python` from the command line i
 Finally, let's execute example code calls and test our extension module!
 
 ![](./images/cmd_example.png)
+
+# Debugging C++ Code from Python
+
+When creating this example, I ran into issues using Visual Studio 2022 to attach to processes so I have configured CMake to generate a Visual Studio 2019 solution file, this allowed this example to work.
+
+To debug C++ code we need both the source code files, `.pdb` files and attaching to the running `python.exe` process. From here, open up the solution file and hit a break point on all of the lines of interest. Here, I will hit a break point on all of the functions we wrote.
+
+![](./images/vs_bp.png)
+
+The new step is to attach to the `python.exe` process **before it runs our C++ code**. To do this I have hit a breakpoint on the calling function `print(my_pybind11_module.add(1, 2))`, just after, `print(getpid())` while allows me to retrieve the `python.exe` process number.
+
+![](./images/pycharm_bp_1.png)
+
+In this example, I know that the `python.exe` process number is `27524` and I have not entered the C++ calling code yet. From here, inside of Visual Studio we need to go into `Debug -> Attach to Process` and attach to the process id `27524`.
+
+![](./images/vs_bp_2.png)
+
+Once we have attached to the `python.exe` process, we can continue the Python code execution to run our C++ code. From here, we will hit a breakpoint inside our C++ code using Visual Studio.
+
+![](./images/vs_bp_3.png)
+
+We have now hit a breakpoint inside of the `add` function, which was called via Python from `print(my_pybind11_module.add(1, 2))`. Hence, the values of `i` and `j` are `1` and `2`. We can see this on the stack frame and also print them via the immediate window.
+
+Continuing this code will code our Python code execution and allow us to his the breakpoints inside of `hello_world` and `print` from the other remaining Python code calls.
