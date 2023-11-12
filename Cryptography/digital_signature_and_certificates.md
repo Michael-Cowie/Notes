@@ -55,3 +55,25 @@ Keep in mind, a digital certificate is based on trust. The trusted third party i
 In summary, digital certificates are based on trust, or chain of trust. It verifies the identity of the public keys owner. In other words, it verifies the digital signature is truly signed by the claimed signer.
 
 ![](./images/alice_bob_5.png)
+
+# SSL certificates
+
+HTTPS is the secure version of HTTP, a protocol used between a browser and a web server. The "S" at the end of HTTPS stands for "secure". Technically, it refers to HTTP over Secure Sockets Layer (SSL). HTTPS means all communication between your browser and the web server are encrypted.
+
+![](./images/SSL_1.png)
+
+Behind HTTPS, SSL certificate plays an important role in building trust between a browser and a web server. By definition, a SSL certificate is a web servers digital certificate. Let us begin with an example to demonstrate how a SSL certificate works.
+
+Here is the scenario. I want to connect with the Yahoo web server and I want all communication with the Yahoo web server to be over an encrypted line.
+
+1. I type in `https://wwww.yahoo.com` into the web browser and hit enter.
+2. My browser requests secure pages (HTTPS) from a Yahoo web server.
+3. The Yahoo server sends its public key **with its SSL certificate**. Which is digitally signed by a third party, or we call Certificate Authority, or simply CA.
+4. Once my browser receives the certificate, it will check the issuers digital signature with the Certificate Authority. As we know, a digital signature is created by a CA's private key and my browser will be installed with many major CA's public key. Thus, digital signature can be verified. Once the certificate signature is verified, the digital certificate can be trusted. 
+5. Now, a green padlock icon appears in the address bar. The green padlock simply indicates that the web servers public key really belongs to the web server, not someone else.
+6. Now it is time to exchange data. My browser creates one symmetric key. It keeps one and gives a copy to the web server. However, the browser does not want to send the key in plaintext. Therefore, it uses the web servers public key to encrypt the symmetric key and send it to the web server.
+7. When the web server gets the encrypted symmetric key, it uses its private key to decrypt it. Now the web servers gets the browsers shared key.
+
+From now on, all traffic between the client and the web server will be encrypted and decrypted with the same key. In this example, we actually demonstrate how assymmetric key algorithm and symmetric key algorithm work together. Asymmetric key algorithm (Public and Private key) is used to verify the identity of the owner and its public key so that trust is built. Once the connection is established, symmetric key algorithm (shared key) is used to encrypt and decrypt all traffic between them.
+
+Keep in mind, `https:` and green padlock only indicate the communication between the client and the server are encrypted, it does not mean it is a "safe and good" website.
