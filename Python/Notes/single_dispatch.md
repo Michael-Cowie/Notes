@@ -80,3 +80,18 @@ add.register(list, func=add_list)
 ```
 
 Will also work. Hence, we have two different approaches to register the function, either a decorator or calling it directly.
+
+It is also possible to decorate a single function multiple times,
+
+```python
+@add.register(float)  
+@add.register(int)  
+def _(a, b):  
+    print("First argument is of type ", type(a))  
+    print(a + b)  
+  
+  
+if __name__ == '__main__':  
+    add(1.0, 2)  # First argument is of type  <class 'float'>  
+    add(1, 2.0)  # First argument is of type  <class 'int'>
+```
