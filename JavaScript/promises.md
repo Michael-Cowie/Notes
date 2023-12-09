@@ -10,7 +10,7 @@ A 'Promise' is an object that represents the eventual completion or failure of a
 
 ```JavaScript
 const myPromise = new Promise((resolve, reject) => {
-  // Perform asynchronous operation
+  // Perform asynchronous operation (await something else, etc...)
   const operation_successful = true;
 
   if (operation_successful) {
@@ -89,3 +89,44 @@ const myPromise = new Promise((resolve, reject) => {
 In this example, the asynchronous operation is a network request using fetch. The `resolve` and `reject` functions are used to signal the completion or failure of the operation. When an asynchronous operation completes, its corresponding `resolve` or `reject` callback is scheduled as a microtask. Microtasks have higher priority than regular tasks in the event loop, ensuring they are executed before the next rendering or user input handling.
 
 The event loop continuously checks the microtask queue for pending tasks. If the microtask queue is not empty, the event loop executes the microtasks in the order they were added. Promises use the microtask queue to ensure that their callbacks are executed in a predictable order.
+
+Let's take a look at my prior example at the steps being ran,
+
+```JavaScript
+console.log("Creating my Promise");
+const myPromise = new Promise((resolve, reject) => {
+    // Perform asynchronous operation
+    const operation_successful = true;
+  
+    console.log("Inside my Promise");
+    if (operation_successful) {
+      resolve("Success Data"); // <--- Queue the result in the microtask and pass to 'then()'
+    } else {
+      reject("Error data");
+    }
+});
+console.log("After creating my Promise");
+
+myPromise
+    .then(data => {
+        console.log(data);  // "Success Data", i.e. data passed to 'resolve'
+    })
+    .catch(error => {
+        console.log(error); // "Error Data", i.e. data passed to 'reject'
+    })
+    .finally(() => {
+        console.log("Finally Block");
+    })
+console.log("End of file");
+```
+
+Here, the logging call order is as follows,
+
+1. `Creating my Promise`
+2. `Inside my Promise`
+3. `After creating my Promise`
+4. `End of file`
+5. `Success Data`
+6. `Finally Block`
+
+Notice here that `Inside my Promise` is called before `After creating my Promise` as the executor function is called straight away. Then `resolve` and `reject` are what queue the result to be passed to `then()` and `catch()` later on. Here, we synchronously execute all of the lines of code and call `End of file`. From here, the microtask queue will have our events in queue and will be called, which pass the result value to `then()`, finally calling `Success Data`.
