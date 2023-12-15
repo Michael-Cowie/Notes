@@ -28,4 +28,4 @@ def button_click_event():
   example_function()
 ```
 
-In this example, if `example_function` is only imported here, we will receive an error when running from a build, but not from source. This is caused by it not being correctly imported when implementing the lazy loading technique.
+In this example, if `example_function` is only imported here, we will receive an error when running from a build, but not from source. The error will be caused by `from example import example_function` because the file `example.py` will have not been included in the final application as it was not found during the initial `start_app.py` execution.
