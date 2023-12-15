@@ -43,7 +43,7 @@ What is important to understand in JavaScript is that every single function or m
 
 **5. using `.bind()`** - When using `.bind()` a new stub function is returned from that call that internally uses `.apply()` to set the `this` pointer as was passed to `.bind()`. FYI, this isn't really a different case because `.bind()` can be implemented with `.apply()`
 
-**6. Using ES6 Fat Arrow Function** - Defining a function via the arrow syntax in ES6+ will bind the current lexical value of `this` to it. So, no matter how the function is called elsewhere (with any of the previous ways to call it), the `this` value will be set by the interpreter to the value that `this` has when the function was defined. This is completely different than all other function calls.
+**6. Using ES6 Fat Arrow Function** - Defining a function via the arrow syntax in ES6+ will bind the current lexical value of `this` to it. So, no matter how the function is called elsewhere (with any of the previous ways to call it), the `this` value will be set by the interpreter to the value that `this` has when the function was defined. This is completely different than all other function calls. In JavaScript, arrow functions do not have their own `this` binding. Instead, they inherit the this value from the surrounding scope (lexical scoping)
 
 # Arrow Function and Functions
 
@@ -97,3 +97,18 @@ getData(data => {
 ```
 
 This also means that it is not possible to set an arrow functions `this` with `.bind` or `.call`.
+
+Adding to the previous example, by calling directly `createObject().bar();`, `this` will be set to the global object, resulting in `undefined` as the environment global will most likely not have `foo` set to the global object for the first `this.foo`.
+In this example `this.a` will print `undefined`
+
+```JavaScript
+let a = 5;
+
+const test = () => {
+  let a = 10;
+  return console.log(this.a);
+};
+
+test();
+```
+In the context of arrow functions, the value of `this` is determined by where the arrow function is defined, not where it is called. In the example above, the arrow function is defined at the top level (not within a specific object or class), so `this` in the arrow function refers to the global object (`window` in browsers, or `global` in Node.js). Running this, both will print `undefined` as neither have an attirbute `a`. In this example, the same goes for if it was defined using `function test() {`
