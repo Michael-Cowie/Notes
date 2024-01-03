@@ -32,7 +32,7 @@ When Alice receives the message she will then,
 
 # Digital Certificates
 
-As we look at the example above on how digital signatures were created and how it was verified, we find out there is one big problem. Now, the problem happens when a hacker intercepts Bobs digitally digned message. The hacker simply discards Bobs message and creates his own entirely new message creating his own public/private key pair and places his public key in a public location, just like Bob.
+As we look at the example above on how digital signatures were created and how it was verified, we find out there is one big problem. Now, the problem happens when a hacker intercepts Bobs digitally signed message. The hacker simply discards Bobs message and creates his own entirely new message creating his own public/private key pair and places his public key in a public location, just like Bob.
 
 ![](./images/alice_bob_4.png)
 
@@ -74,6 +74,6 @@ Here is the scenario. I want to connect with the Yahoo web server and I want all
 6. Now it is time to exchange data. My browser creates one symmetric key. It keeps one and gives a copy to the web server. However, the browser does not want to send the key in plaintext. Therefore, it uses the web servers public key to encrypt the symmetric key and send it to the web server.
 7. When the web server gets the encrypted symmetric key, it uses its private key to decrypt it. Now the web servers gets the browsers shared key.
 
-From now on, all traffic between the client and the web server will be encrypted and decrypted with the same key. In this example, we actually demonstrate how assymmetric key algorithm and symmetric key algorithm work together. Asymmetric key algorithm (Public and Private key) is used to verify the identity of the owner and its public key so that trust is built. Once the connection is established, symmetric key algorithm (shared key) is used to encrypt and decrypt all traffic between them.
+From now on, all traffic between the client and the web server will be encrypted and decrypted with the same key. In this example, we actually demonstrate how asymmetric key algorithm and symmetric key algorithm work together. Asymmetric key algorithm (Public and Private key) is used to verify the identity of the owner and its public key so that trust is built. Once the connection is established, symmetric key algorithm (shared key) is used to encrypt and decrypt all traffic between them.
 
 Keep in mind, `https:` and green padlock only indicate the communication between the client and the server are encrypted, it does not mean it is a "safe and good" website.
