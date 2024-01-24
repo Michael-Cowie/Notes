@@ -156,3 +156,62 @@ class MyClass {
     }
 }
 ```
+
+# Callback Hell
+
+The use of `async` and `await` helps with a previously known common problem called Callback Hell, where a continuous chain of callbacks were used.
+
+For example, this function...
+
+```JavaScript
+async function test() {
+  return 'hello world';
+}
+```
+
+returns a Promise. So you can execute it like one, `.then()` and all.
+
+```JavaScript
+test().then(message => {
+  console.log(message); // message = 'hello world'
+});
+```
+
+Which means,
+
+```JavaScript
+async function test() {
+  const user = await getUser();
+  const report = await user.getReport();
+  report.read = true
+  return report;
+}
+```
+
+is roughly analogous to,
+
+```JavaScript
+function test() {
+  return getUser().then(function (user) {
+    return user.getReport().then(function (report) {
+      report.read = true;
+      return report;
+    });
+  });
+}
+```
+
+In both cases, the callback passed to `test().then()` will receive `report`` as its first parameter. 
+
+# Why we need to have `async` in an `await`
+
+When using `await`, it means to wait until the promise is settled (that is, `fulfilled` or `rejected`). When execution resumes, the value of the `await` expression becomes that of the fulfilled promise. If the promise is rejected, the await expression throws the rejected value. On this note, why is it therefore necessary to be inside an `await`?
+
+Well, the keyword `await` is used to mark the function as extraordinary. It adds a visual marker that the body of this function does not run to completion by itself, but can be interleaved arbitarily with other code. The `async` denotes an asynchronous function, which will always return a `Promise` that depends on other promises and whose execution is concurrent to other asynchronous operations (and might be cancelled from outside).
+
+It's true that the keyword is not strictly necessary and the kind of function could be determined by whether the respective `await` appear in its body, but that would lead to less maintable code.
+
+1. It is less comprehensible, because you need to scan the whole body to determine the kind.
+2. It is more error prone, because it's easy to break a function by adding/removing those keywords without getting a syntax error.
+
+Lastly, by placing a `await` in a funtion body outside an `await` it will mean that we will be **creating a blocking call**, which will freeze the application execution. Remember, calling an `async` function will return a `Promise`, without this being inside an `async` function we will essentially be blocking the entire execution. By definition, using `await` pauses the execution of its surrounding `async` function until the promise is settled.
