@@ -78,3 +78,33 @@ Let's have an example of the usage in React,
 ```HTML
 <Modal {...this.props} title='Modal heading' animation={false}>
 ```
+
+`{...this.props}` spreads out the "own" enumerable properties in props as discrete properties on the Modal element you're creating. For instance, if `this.props` contained `a: 1` and `b: 2`, then this would be the equivalent of,
+
+```HTML
+<Modal a={this.props.a} b={this.props.b} title='Modal heading' animation={false}>
+```
+
+**Spread operator for conditionally adding to objects**
+
+The spread operator can be useful when conditionally adding to an object.
+
+```JavaScript
+const includeExtra = true;
+
+const test_object = {
+    'test' : {
+        'a': 'a',
+        'b': 'b',
+        ...(includeExtra && {
+            'extra': 'extra'
+        })
+        
+    }
+}
+```
+
+This syntax is leveraging the fact that if the condition is `false` (i.e., `includeExtra` is `false`), the inner object is an empty object `{}`.
+
+- If `includeExtra` is true, the resulting object is `{ 'extra': 'extra' }`.
+- If `includeExtra` is false, the resulting object is `{}` because `false` is treated as a `falsy` value, and the spread operator effectively spreads nothing.
