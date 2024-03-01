@@ -108,3 +108,17 @@ This syntax is leveraging the fact that if the condition is `false` (i.e., `incl
 
 - If `includeExtra` is true, the resulting object is `{ 'extra': 'extra' }`.
 - If `includeExtra` is false, the resulting object is `{}` because `false` is treated as a `falsy` value, and the spread operator effectively spreads nothing.
+
+**Spread operator for partially updating an object**
+
+The spread operator can be very useful for partially updating an object.
+
+```JavaScript
+let objectState = { a: 1, b: 2, c: 3 };
+
+let newObjectState = {a: 100};
+
+console.log({...objectState, ...newObjectState}); // Outputs: {a: 100, b: 2, c: 3}
+```
+
+Here, we spread the first object `objectState` into the main object (Notice they're enclosed inside `{}`). Then, we further overwrite each object `key` with the next object from `newObjectState`. This will change `a: 1` from `objectState` to `a: 100` from `newObjectState`. This is particually useful when partially updating states in React.
