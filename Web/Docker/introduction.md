@@ -1,6 +1,8 @@
 # Docker Introduction
 
-Docker is a platform that enables developers to automate the deployment and scaling of applications within lightweight, portable containers. 
+Docker is virtualization software that makes developing and deploying applications much easier. Docker does this by packaging an application with all the necessary dependencies, configurations, system tools into something called a container. The application code itself, libraries, dependencies and also the runtime and environment configuration. So, the application and its running environment are
+both packaged in a single Docker package which we can easily share and distribute. The two key concepts to understand in Docker are **containers** and **images**. Containers and images are fundamental concepts that work together to facilitate the deployment and execution of applications.
+
 
 Key features of Docker include:
 
@@ -12,9 +14,13 @@ Key features of Docker include:
 
 4. **Versioning and Rollback:** Docker allows versioning of container images, enabling easy rollbacks to previous states if issues arise during deployment or updates.
 
-Docker was created to address the challenges of deploying and managing applications in diverse and dynamic computing environments. It simplifies the process of packaging applications and their dependencies, streamlining development workflows, enhancing collaboration between development and operations teams, and facilitating the deployment of applications across different environments. Docker has become a popular tool in the DevOps ecosystem, promoting a more efficient and consistent approach to application development and deployment.
+##### What Problems Does Docker Solve?
 
-The two key concepts to understand in Docker are **containers** and **images**. Containers and images are fundamental concepts that work together to facilitate the deployment and execution of applications.
+Docker was created to address the challenges of deploying and managing applications in diverse and dynamic computing environments. Usually, when you have a team of developers working on some application, they would have to install all of the services that application depends on, such as databases (SQL, MongoDB), etc... directly on their machine. Every developer on the team needs to install and configure all services directly. Depending on the OS, each installination environment will be different too. This task can become very tedious depending on how complex the application is.
+
+Containers solve this problem as we do not need to install any of the services directly on the host machine because with Docker we have the service packaged in one isolated environment, packaged with its entire configuration inside of a container. As a developer, we do not need to go and look for some binaries to download and install. Creating the container, Docker will fetch the dependencies and start it.
+
+Docker containers aid when deploying too, as it aids significaly when setting up and configuring it on the server. It will significantly reduce any errors, as such the server having multiple different versions of a single dependency or simply human error setting up the application again on the server. Now, given the application code and Docker file, the application can easily be deployed on the server. This only has the requirement of the server requiring the Docker runtime to be installed. 
 
 ##### Docker Image
 
@@ -31,3 +37,61 @@ Containers provide process isolation, file system isolation, and networking isol
 ##### Summary
 
 An image is a static, immutable snapshot that includes all the necessary components for an application, while a container is a dynamic, runnable instance of that image. Images act as blueprints for containers, allowing developers to package and distribute applications consistently. Containers, on the other hand, offer an isolated and portable runtime environment for executing applications based on these images. Together, images and containers form the core building blocks of containerization in Docker.
+
+##### Docker Registries
+
+Now, it's clear that we get containers by running images. However, how do we get images to run containers from? Let's say we want to run a database container such as MySQL, how do we get their Docker images? That is where Docker Registries come in. Their are ready Docker images online in image storage or registry. Basically, this is a storage specifically for Docker image type of artifacts. Usually, the company developing those services like MySQL, as well as the Docker community itself will create that is called "official images", so you know this MySQL image was actually created by MySQL itself or the Docker community.
+
+Docker itself offers the biggest Docker registry called [Docker Hub](https://hub.docker.com/). This is where we can find any of these official images or additional images that individual developers have created and uploaded there. Docker hub also offers the ability for private registries that require authentication to access.
+
+As a quick note, we may hear the terms "registry" and "repository". As a simple explanation, a docker registry is a service providing storage for images. It can be hosted by a third party such as AWS or by yourself. Inside the registry, we hold multiple repositories for all of different application images. A docker repository is simply, a collection of related images with the same name but different versions.
+
+##### Docker Image Versions
+
+As time goes on, technology changes and images will be changed. In this case, a new Docker image will be created. Therefore, images are versioned aswell, these are called image tags and follow the format `<name>:tag`. On the page for each image on Docker Hub, we actually have the list of versions/tags of that image. Below is an example for MySQL.
+
+![](../images/docker_intro_3.png)
+
+There is a special tag which all images have called `latest`. Using the `latest` tag will grab the newest release. Using a specific version is best practice, especially for deploying to production. Without specifying the version, such as using `docker pull mysql`, the tag `latest` is implicitly used.
+
+To obtain the image, the command `docker pull <image_name>:<version>` is used, such as `docker pull mysql:latest`. From here, the Docker client will connect to Docker Hub and request to download the specific image. Running the command `docker images` will list all available images on the local machine. From here we can run a container from the downloaded image by using 
+
+```sh
+docker run -d --name <container_name> <image name>:<version>
+```
+
+Infact, we do not need to pull an image for this to work. When running a command and providing an image at the end, if we do not have it locally, Docker will automatically fetch it from Docker Hub.
+
+##### Container Port vs Host Port
+
+After running a container, how can we access it? Simply put, we cannot right now. This is because the container is running in the closed Docker Network, so we cannot access it from our local computer browser. We need to expose the container port to the host. What we need is do is called "port binding". This will bind the containers port to the hosts port to make the service available to the outside world. The container is running on some port, each application has some standard port on which it's running. For example, `nginx` always runs on port 80, `redis` runs on port `6379`. 
+
+What we need to do is tell Docker to bind the specific port inside the container to be a port on the host machine. This mean, we treat port `9000` on the host machine as port `80` on the container. This means `localhost:9000` will make a request to the container on port `80`.
+
+![](../images/docker_intro_4.png)
+
+This is done with an additional flag when creating a Docker container in the format `-p <host_port>:<container_port>`. For example,
+
+```sh
+docker run -d -p 9000:80 nginx:1.23
+```
+
+will create a `nginx` container running on port `80` on the container, but become accessible on the host machine on port `9000`.
+
+![](../images/docker_intro_5.png)
+
+##### Virtual Machine vs Docker
+
+Firstly, we need to understand how an operating system is made up. Operating systems have two layers, the OS kernel and the OS Applications Layer. The kernel is the part that communicates with the hardware componenets like CPU memory storage etc... So, when you have a physical machine with all these resources and you install an OS on that physical machine, the kernel of that OS will actually be the one talking to the hardware components to allocate resources like CPU memory storage etc... to the applications. These applications are a part of the applications layer and they run on top of the kernel layer. So the kernel is essentially a middleman between the applications that you see when interacting with the computer.
+
+![](../images/docker_intro_1.png)
+
+Because Docker and Virtual Machines are virtualization tools, the question is, which parts of the OS do they virtualize? 
+
+The main different between Docker and Virtual Machines lie from the fact that Docker will virtualize only the OS applications layer. Docker will use the kernel of the host. Docker does not have its own kernel. On the other hand, a Virtual Machine has its own applications layer and also its own kernel. A Virtual Machine therefore virtualizes the complete OS.
+
+![](../images/docker_intro_2.png)
+
+This results in a significant difference in image sizes. Docker images are significantly smaller as they only have to implement only one layer of the OS. Docker images are mostly a couple of MB of size, whereas VM images are often GB in size. The result is that using Docker can save a lot of disk space. Additionally, a Docker container can begin in a few seconds, whereas VM will take minutes to start because it also has to boot up a kernel everytime it starts, whereas Docker will reuse the host kernel.
+
+Keep in mind that because Docker uses the users kernel, this means it cannot run Linux based software applications on a Windows OS. Linux based Docker images, cannot use the Windows kernel. Docker was originally built for the Linux OS and most popular containers are Linused based. Thankfully, this problem was later resolved when developing on Windows or MacOS by using Docker Desktop for Windows and MacOS. This made it possible to run Linux containers on Windows or MacOS. Docker Desktop uses a Hypervisor layer with a lightweight Linux distro on top of it to provide the needed Linux kernel, allowing the possibility to run Linux based containers on Windows and MacOS.
