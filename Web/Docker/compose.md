@@ -66,7 +66,7 @@ services:
             MONGO_INITDB_ROOT_PASSWORD: supersecret
 ```
 
-Coming both services, the end result will become,
+Combining both services, the end result will become,
 
 ```YAML
 services:

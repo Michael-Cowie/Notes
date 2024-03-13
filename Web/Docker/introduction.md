@@ -95,3 +95,62 @@ The main different between Docker and Virtual Machines lie from the fact that Do
 This results in a significant difference in image sizes. Docker images are significantly smaller as they only have to implement only one layer of the OS. Docker images are mostly a couple of MB of size, whereas VM images are often GB in size. The result is that using Docker can save a lot of disk space. Additionally, a Docker container can begin in a few seconds, whereas VM will take minutes to start because it also has to boot up a kernel everytime it starts, whereas Docker will reuse the host kernel.
 
 Keep in mind that because Docker uses the users kernel, this means it cannot run Linux based software applications on a Windows OS. Linux based Docker images, cannot use the Windows kernel. Docker was originally built for the Linux OS and most popular containers are Linused based. Thankfully, this problem was later resolved when developing on Windows or MacOS by using Docker Desktop for Windows and MacOS. This made it possible to run Linux containers on Windows or MacOS. Docker Desktop uses a Hypervisor layer with a lightweight Linux distro on top of it to provide the needed Linux kernel, allowing the possibility to run Linux based containers on Windows and MacOS.
+
+##### Dockerfile - Create Our Own Image
+
+When you're done with development and we want to release it to the end users, we want to run it on a deployment server. To make the deployment process easier, we want to deploy our application as a Docker container aslongside our other dependencies as Docker containers. We need to create a "definition" of how to build an image from our application. This definition is written inside a `Dockerfile`.
+
+![](../images/docker_intro_6.png)
+
+A Dockerfile is a text document that contains commands to assemble an image. Docker can then build an image by reading those instructions. Here, I will demonstrate a small example for a small Node.js application and then build an image for it.
+
+I will create a small container for the following code snippet, creating a small Node.js server.
+
+![](../images/docker_intro_7.png)
+
+
+Dockerfiles start from a parent image or "base image". It's a Docker image that your image is based on. You choose the base image, depending on which tools you need to have available. In this example, we need a Node.js based application to run on Linux, because to execute our server we run `node src/server.js`.
+
+Dockerfiles must begin with a FROM instruction. Build this image from the specified image. Looking on Docker Hub we can choose our [node image](https://hub.docker.com/_/node) from the registry. In this example I will use the base image of `node`. This means that our environment will have `node` and `npm` commands inside, implicitly using the tag `latest`.
+
+The `node` base image is an empty Linux based operating system. Therefore we must first copy over our application code to the target directories. The `WORKDIR` will set the current working directory. Next, we simply `npm install` to get the `express` dependency defined inside the `package.json`. Although the `RUN` command is used to execute shell commands, the final command to start the server must be `CMD` and follows a different syntax using a list of strings.
+
+Defining this Docker file gives us the ability to generate an Image. Next, it is time to actually build the image from this definition. The command for this is `docker build <path>`. It is useful to use the `-t` flag to provide a name and optionally a tag in the format of `-t <name>:<tag>`. 
+
+Here, I will use the command `docker build -t node-app:1.0.0 .` to generate my image. This is telling Docker to generate an image from the definition provided inside the Dockerfile, name it `node-app` and tag the version with `1.0.0`. Typing `docker images`, we can now see it created locally.
+
+```sh
+C:\Users\Michael\Desktop\Docker\intro>docker images
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+node-app     1.0.0     812be17510e0   3 minutes ago   1.11GB
+```
+
+We can now create a container from our created image using,
+
+```sh
+docker run -d --name myserver -p 3000:3000 node-app:1.0.0
+```
+
+Running `docker ps`, we will see our container and node app running on port `3000`. Our server is now accessible from `localhost:3000`
+
+```sh
+C:\Users\Michael\Desktop\Docker\intro>docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                    NAMES
+44d51230c723   node-app:1.0.0   "docker-entrypoint.s…"   46 seconds ago   Up 46 seconds   0.0.0.0:3000->3000/tcp   myserver
+```
+
+Grabbing this ID, we can also execute `docker logs 44d51230c723` to view the output in our container, which is `app listening on port 3000`.
+
+```sh
+C:\Users\Michael\Desktop\Docker\intro>docker logs 44d51230c723
+app listening on port 3000
+```
+
+##### Development and Deployment Lifeycle
+
+
+Suppose we take an example with a JavaScript application using MongoDB, instead of installing it on your laptop you download a Docker container from the Docker Hub. So, we connect our JavaScript application with the MongoDB and we start developing. Suppose we developed the first version of the application locally and we now want to deploy it on the development environment where a tester can test it.
+
+Firstly, we commit and push our changes to GitHub. This will then trigger a continuous integration action to build the docker image. The docker image will then (optionally) be pushed to a private repository, which can then be pulled down from the deployment server. The deployment server can fetch the MongoDB image from Docker Hub registry, but will need to grab the image for our JavaScript application from the private repository. Now we have two containers, the custom container and a publically available MongoDB which can now talk to each other and run as an app.
+
+![](../images/docker_intro_8.png)
