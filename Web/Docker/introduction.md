@@ -80,6 +80,15 @@ will create a `nginx` container running on port `80` on the container, but becom
 
 ![](../images/docker_intro_5.png)
 
+---
+
+In addition to port mapping, it should be noted that the `EXPOSE` keyword in the Dockerfile **does not expose a port**. `Expose` is basically documentation, and not using it does not restrict access. This is a dangeros misunderstanding if anyone relies on it to limit access. The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published.
+
+Therefore,
+
+- `EXPOSE` is a way of **documenting**.
+- `--publish` or (`-p`) is a way of **mapping* a host port to a running container port.
+
 ##### Virtual Machine vs Docker
 
 Firstly, we need to understand how an operating system is made up. Operating systems have two layers, the OS kernel and the OS Applications Layer. The kernel is the part that communicates with the hardware componenets like CPU memory storage etc... So, when you have a physical machine with all these resources and you install an OS on that physical machine, the kernel of that OS will actually be the one talking to the hardware components to allocate resources like CPU memory storage etc... to the applications. These applications are a part of the applications layer and they run on top of the kernel layer. So the kernel is essentially a middleman between the applications that you see when interacting with the computer.
