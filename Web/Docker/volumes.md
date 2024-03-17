@@ -38,6 +38,10 @@ This is the type of volume we should be using in production, as their is additio
 
 ![](../images/docker_images2.png)
 
+It's important to note that **data is never copied into a volume, it's always just mapped**. When you create a new file inside the container that is inside the volume location, we can observe that it's also inside the volume. This is because it's the same file mounted to appear in two places.
+
+Picture the volume as a network share. If someone makes a change on the network share, everyone that's using it sees that change. So the first container starts, makes a change, and exits. The second container starts, and sees the change the first one made. If you ran two containers simultaneously they'd both be hitting the same files in the same volume, which would be messy with multiple databases trying to share a single location.
+
 #### Volumes in Docker Compse
 
 Volumes defined in the docker compose file is nearly identical to that defined in the CLI. Below is an example of using a named volume. Keep in mind, at the end, in the same level as the services, we need to list all of the volumes that we have defined.
@@ -103,7 +107,7 @@ In addition we can add a `-v /app/node_modules` to mount a volume (Docker intern
 
 # Persistent Storage Using Named Volumes
 
-In this example, I will created a volume to allow for persistent storage in a MySQL database.
+In this example, I will create a volume to allow for persistent storage in a MySQL database.
 
 1. The first thing to do is to create the volume.
 
@@ -139,11 +143,7 @@ After executing the command we can see creation of the image and container,
 
 ![](../images/docker_named_volumes_2.png)
 
-aswell as the Volume becoming populated.
-
-![](../images/docker_named_volumes_4.png)
-
-Inside the `mysql_data` Volume we can also see the `my_database` folder. Additionally, when we use the Volume from the flag `-v mysql_data:/var/lib/mysql` we can compare to volume to the container folder structure.
+The volume has now been populated from the container initialization. Inside the `mysql_data` volume we can also see the `my_database` folder. Additionally, when we use the Volume from the flag `-v mysql_data:/var/lib/mysql` we can compare to volume to the container folder structure. When we use a volume, we are mounting the directory inside the container to the volume. This means that the container is no longer referencing a directory inside the container, but rather, it is now "mounted" and referring to the volume. This means any changes the container does inside of `/var/lib/mysql` will be making changes inside the volume, hence, when we initialized the MySQL server and the directory was populated with files, it is reflected inside the volume.
 
 ![](../images/docker_named_volumes_5.png)
 
@@ -201,6 +201,8 @@ to delete the container. At this point, the MySQL container has been stopped and
 docker run -d --name mysql_db -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=my_database -v mysql_data:/var/lib/mysql mysql:latest
 ```
 
+Before the container starts, we have mounted `/var/lib/mysql` to our volume, they will contain the previously created files during the database initialization. Now, because these files exist, MySQL will run any initialization files again.
+
 ```sh
 docker exec -it mysql_db mysql -u root -p
 ```
@@ -224,7 +226,7 @@ mysql> SELECT * FROM example_table;
 1 row in set (0.01 sec)
 ```
 
-We can see the inserted row, demonstrating that the data is persistent across container restarts and removals due to the Docker volume. This is the power of using volumes to separate data from the container's lifecycle.
+We can see the inserted row, demonstrating that the data is persistent across container restarts and removals due to the Docker volume. This is the power of using volumes to separate data from the container's lifecycle. 
 
 Alternatively, to do this with docker compose it would use the following `compose.yaml`.
 
