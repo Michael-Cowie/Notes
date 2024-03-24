@@ -2,8 +2,12 @@
 
 On a host we have a physical file system. The way volumes work is that we plug the physical file system path into the containers file system path. Meaning, a folder in the physical host file system is mounted into the virtual file system of Docker. What happens is that when a container writes to its file system it gets automatically repliced/written on the host file system directory (and vice versa). This is why, if a container restarts from a fresh state in its own virtual file system it gets the data automatically from the host because the data is still there. This is how data is populated on startup of a container.
 
-# Volume Types.
+Volumes provide a way to persist data beyond the lifecycle of a container. They can be used to share files between the host machine and the container or between multiple containers. When you mount a volume to a container, the contents of the volume are accessible to the container at runtime, and any changes made to the volume from within the container are reflected on the host machine and vice versa.
 
+**Volumes are mounted to containers during the runtime stage, when you create and start a container from a Docker image. 
+Because volumes are used at runtime, the `.dockerignore` file is used to ignore files of context during build time. Therefore, it doesn't works with volumes.**
+
+# Volume Types.
 
 #### Host Volume
 
@@ -13,7 +17,7 @@ Their are three types of docker volumes and so, different ways of creating them.
 docker run -v /home/mount/data:/var/lib/mysql/data
 ```
 
-This type of volume is called host volume. The main characteristic of this type is that we decide where on the host file system that reference is made. Meaning, which folder on the host file system we mount into the container.
+This type of volume is called host volume. The main characteristic of this type is that we decide where on the host file system that reference is made. Meaning, which folder on the host file system we mount into the container. When the container is ran, the container folder `/var/lib/mysql/data` will now be mounted.
 
 #### Anonymous Volume
 

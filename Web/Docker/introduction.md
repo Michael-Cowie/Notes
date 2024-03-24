@@ -24,11 +24,13 @@ Docker containers aid when deploying too, as it aids significaly when setting up
 
 ##### Docker Image
 
-An image is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, such as code, runtime, libraries, and system tools. **An image serves as a template for creating containers**. Images are typically built from a set of instructions (Dockerfile) that specify the application's configuration and dependencies. Images are versioned, allowing you to track changes and roll back to previous states if needed. Images are immutable, meaning they cannot be modified once created. Instead, any changes result in the creation of a new image.
+An image is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, such as code, runtime, libraries, and system tools. **An image serves as a template for creating containers**. Images are typically built from a set of instructions (Dockerfile) that specify the application's configuration and dependencies. Images are versioned, allowing you to track changes and roll back to previous states if needed. Images are immutable, meaning they cannot be modified once created. Instead, any changes result in the creation of a new image. The creation of a Docker image is done during the buildtime stage.
+
+A Docker image is composed of one or more read-only layers. Each layer represents a set of filesystem changes made to the image during the build process. Layers are created based on the instructions in the Dockerfile, such as `RUN`, `COPY`, `ADD`, and `FROM`. Layers are used for efficient storage, caching, and distribution of Docker images.
 
 ##### Docker Container
 
-**A container is a runnable instance of a Docker image**. It is an isolated environment that encapsulates the application and its dependencies, ensuring consistency across different environments. Containers are lightweight and share the host operating system's kernel, making them more resource-efficient compared to traditional virtual machines.
+**A container is a runnable instance of a Docker image**. It is an isolated environment that encapsulates the application and its dependencies, ensuring consistency across different environments. Containers are lightweight and share the host operating system's kernel, making them more resource-efficient compared to traditional virtual machines. Creating and using a Docker container is done during the runtime stage.
 
 Containers are a standalone isolated environment to run any code. Containers include everything needed to run a piece of software, including the code, runtime, libraries, and system tools. Docker uses containerization technology to isolate applications from the underlying infrastructure, making it easy to deploy and run applications consistently across different environments.
 
