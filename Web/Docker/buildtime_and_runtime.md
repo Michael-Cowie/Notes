@@ -5,7 +5,7 @@ In Docker, build time and run time refer to two distinct phases in the lifecycle
 
 ![](../images/buildtime_runtime_1.png)
 
-#### Build Stage
+## Buildtime Stage
 
 The build stage involves creating a Docker image from a Dockerfile. This stage focuses on defining the environment and dependencies required to run the application. Commands specified inside a Dockerfile are executed during the build stage when you build a Docker image using the `docker build` command. An example Docker file can be,
 
@@ -36,7 +36,7 @@ Because the build time focuses on the creation of the Docker image it's importan
 5. Docker images are composed of one or more read-only layers. Each layer represents a set of filesystem changes made to the image during the build process. Layers are created based on the instructions in the Dockerfile, such as `RUN`, `COPY`, `ADD`, and `FROM`. Layers are used for efficient storage, caching, and distribution of Docker images.
 
 
-#### Runtime Stage
+## Runtime Stage
 
 The runtime stage involves creating and running containers based on the Docker image created during the build stage. This stage focuses on executing the application code within the containers.
 

@@ -4,8 +4,13 @@ On a host we have a physical file system. The way volumes work is that we plug t
 
 Volumes provide a way to persist data beyond the lifecycle of a container. They can be used to share files between the host machine and the container or between multiple containers. When you mount a volume to a container, the contents of the volume are accessible to the container at runtime, and any changes made to the volume from within the container are reflected on the host machine and vice versa.
 
-**Volumes are mounted to containers during the runtime stage, when you create and start a container from a Docker image. 
-Because volumes are used at runtime, the `.dockerignore` file is used to ignore files of context during build time. Therefore, it doesn't works with volumes.**
+**Volumes are mounted to containers during the runtime stage, when you create and start a container from a Docker image.  Because volumes are used at runtime, the `.dockerignore` file is used to ignore files during build time. Therefore, it doesn't works with volumes.**
+
+Their are two ways to get app code into the container, which have different advantages/disadvantages, but you would typically only do one or the other, but not both:
+
+1. **Copy the code into the immutable image as a layer during build time** when you want to ship your code to run in production. This is done in the Dockerfile with the `COPY` command.
+
+2. **Mount a directory on the host containing your code** when you want to iterate quickly during development and test changes without rebuilding the image.
 
 # Volume Types.
 
