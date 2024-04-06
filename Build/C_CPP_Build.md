@@ -53,12 +53,71 @@ The assembler (`as.exe`) converts the **assembly code into machine code**. The m
 
 Because object files are machine code, they have therefore been targeted for a specific CPU and a specific Operating System, but are **not a complete executeable**.
 
-# Linking
+-----
+## Linking
 
-The linker is what produces the final compilation output from the object files the compiler produced. The linking stage is primarily used to create executable programs from object files. The generation of static libraries (`.lib` in Windows, `.a` in Linux) and dynamic/shared libraries (`.dll` in Windows, `.so` in Linux) typically occurs in a different step, often referred to as the library creation or library building stage. This process involves creating libraries that can be linked to other programs in the future.
+Linking is an essential phase in the software development process, where various components like object files and libraries are combined to create functional software artifacts. The linking process differs between creating executables and libraries, each serving distinct purposes in software development.
 
-The linking stage is primarily concerned with creating **executable programs from object files**. It resolves symbols, links object files together, and generates an executable file that can be run. The output of this stage is typically an executable file (e.g., `.exe`, `.out`, `.app`) that can be directly executed. The linking stage is not used to produce static or dynamic libraries. 
+### Linking for Executables
 
-Linking refers to the process of combining multiple compiled object files or libraries into a single executable or shared library. When you write a C++ program, you typically divide it into multiple source files (`.cpp` files). Each source file is separately compiled into an object file (`.o` or `.obj` file), which contains machine code instructions for that specific part of the program. These object files may also reference functions or symbols defined in other object files or libraries. It checks that all functions and symbols referenced in one file are defined in another, and it resolves these references by including the necessary code from other object files or libraries into the final binary.
+When creating executables, the linker's primary objective is to merge different components to produce a standalone program capable of execution. This involves several steps:
+
+#### Source Code Only:
+
+- In this scenario, each source file (`.cpp`) is compiled into an object file (`.o` or `.obj`) by the compiler. These object files contain machine code specific to the functions and data defined in each source file.
+- The linker combines these object files into a single executable binary, resolving any references to external symbols (functions, variables) by searching for their definitions in other object files or libraries.
+- Finally, the linker generates the formatted executable file, ready for deployment and execution.
+
+#### Static Linking with Libraries:
+
+- If the program depends on external libraries, whether provided as source code or precompiled static libraries (`.lib` in Windows, `.a` in Unix-like systems), the linker includes the necessary library code directly into the final executable.
+- During the linking process, the linker searches for references to functions or symbols defined in the external libraries and incorporates the corresponding object code into the executable binary.
+- This static linking ensures that all required functionality is contained within the executable itself, resulting in a self-contained binary.
+
+#### Dynamic Linking with Libraries:
+
+- Alternatively, the program can be linked dynamically with external libraries, where the required functionality is provided by shared object files (`.dll` in Windows, `.so` in Unix-like systems) at runtime.
+- In this scenario, the linker embeds references to the external symbols in the executable, indicating that these symbols will be resolved dynamically during program execution.
+- The executable is linked against the dynamic library's import library (e.g., `.lib` files in Windows), containing information about the shared object file's symbols and their locations.
+  When linking an executable against a dynamic library, you include the import library (`.lib`) during the linking process. This import library doesn't contain the actual code of the dynamic library; instead, it serves as a reference for the linker, informing it about the symbols exported by the dynamic library and their locations.
+  When creating a dynamic/shared library (`.dll`) on Windows, you often also generate an import library (`.lib`) alongside it.
+- When the program is executed, the operating system's dynamic linker loads the necessary shared object files into memory and resolves the symbol references, allowing the program to access the required functionality.
+
+### Linking for Creating Libraries
+
+Creating libraries involves preparing reusable components that can be linked with other programs during their compilation. This process varies depending on whether the library is static or dynamic.
+
+#### Static Library Creation:
+
+- For static libraries, the linker archives compiled object files (`.o` or `.obj`) into a single library file (`.lib` in Windows, `.a` in Unix-like systems).
+- These libraries serve as collections of object files and their associated symbols, providing a bundled set of functionality that can be linked directly into executables at compile time.
+
+#### Dynamic Library Creation:
+
+When creating dynamic/shared libraries, the process involves generating both the dynamic library file (`.dll` in Windows, `.so` in Unix-like systems) and an associated import library file (`.lib` in Windows). Here's a breakdown of the process:
+
+1. **Compilation**: First, the source code of the dynamic library is compiled into object files (`.obj`).
+
+2. **Linking**: Then, these object files are linked together to produce the dynamic library file (`.dll`). During this linking process, the linker generates a shared object file containing position-independent code (PIC) and symbols. This shared object file is designed to be loaded into memory by multiple processes (executables) at runtime.
+
+3. **Import Library Generation**: Alongside the dynamic library file, an import library file (`.lib`) is generated. This import library contains stubs or placeholders for the functions and symbols exported by the dynamic library.
+
+4. **Usage in Executables**: When linking an executable against the dynamic library on Windows, you include the import library (`.lib`) during the linking process. The import library provides information needed by the linker to locate and link against the corresponding dynamic library (`.dll`) at runtime.
+
+When creating dynamic/shared libraries on Windows, it's essential to generate both the dynamic library file (`.dll`) and the associated import library file (`.lib`). The import library facilitates linking executables against the dynamic library, enabling runtime loading and symbol resolution.
+
+
+### Linking for Executables Using Libraries
+
+When linking executables with libraries, whether static or dynamic, the process involves integrating the executable code with the library code to produce a functional program.
+
+#### Static Linking:
+
+- In static linking, the necessary library code is included directly into the final executable binary during the linking process, resulting in a self-contained executable.
+  The exception to this is when embedding a `.lib` as an import file which references a `.dll`.
+
+#### Dynamic Linking:
+
+- In dynamic linking, the linker embeds references to the external symbols in the executable, indicating that these symbols will be resolved dynamically at runtime. On Windows systems, this process involves linking against the import library (`.lib`) associated with the dynamic library (`.dll`). The import library contains information about the symbols exported by the dynamic library and their locations. This allows the operating system's dynamic linker to load the necessary shared object files into memory when the program is executed, enabling runtime resolution of the symbols referenced by the executable.
 
 ![](./images/linking.png)

@@ -8,9 +8,31 @@ Firstly, we need to know what a library is. Basically, a library is a collection
 
 Static libraries are `.a` (or in Windows `.lib`) files. All the code relating to the library is in this file and it is directly linked into the program at compile time. A program using a static library **takes copies of the code that it uses from the static library and makes it part of the program**. Windows also has `.lib` files which are used to reference `.dll` files, but they act the same way as the first one.
 
+A static library is more or less a bunch of object files put together. It exists to avoid to list individually every object file that you need, those from which you use the exported symbols. Linking a library containing object files you use and linking the objects files themselves is exactly the same.
+
+**Note that `.lib` files can be either static libraries (containing object files) or import libraries (containing symbols to allow the linker to link to a `.dll`).** When creating a dynamic/shared library (`.dll`) on Windows, you often also generate an import library (`.lib`) alongside it. The import library contains stubs or placeholders for the functions and symbols exported by the dynamic library.
+The `.lib` file is an import library file, which allows the final executable to contain an import address table (IAT) by which all DLL function calls are referenced.
+**Import libraries are normal libraries, that's the point, libraries that are statically linked, containing only the code to dynamically load the actual code in the DLL.**
+
+In summary, static files `.lib` is for **building** and is embedded into either a `.dll` or a `.exe`. For this reason **you will not find** `.lib` files when inspecting an installed piece of software. 
+During development, you may work within a repository that contains `.lib` files, but these are intended to be used for developers. They can be optionally included in an installed piece of software, but they are not being directly used by the software itself. It is only present for other developers to link to it when using working on development and using the library, if they chose to. For example,
+in a CMake program we may be creating a `.pyd` file that depends on a `.lib` as follows,
+
+```CMake
+target_link_libraries(teigha_pyd
+    teigha_lib
+)
+```
+
+Here `teigha_pyd` depends on `teigha.lib`. However, `.lib` will not be added to the `PYTHON_PATH` during runtime. This is because `.lib` files are for **build-time, not run-time**. The `.lib` contents is now inside of `.pyd` and the `teigha.pyd` files is added to the `PYTHON_PATH` using `add_dll_directory` as the `.pyd` is used during run-time.
+
 ## Dynamic libraries
 
 Dynamic libraries are `.so` (or in Windows `.dll`, or in OS X `.dylib`) files. All the code relating to the library is in this file, and it is referenced by programs using it at run-time. A program using a dynamic library **only makes references to the code** that it uses in the dynamic library.
+
+A dynamic library should be seen as a special executable file. They are generally built with the same linker that creates normal executables (but with different options). But instead of simply declaring an entry point (on windows a `.dll` file does declare an entry point that can be used for initializing the `.dll`), they declare a list of exported (and imported) symbols. At runtime, there are system calls that allow to get the addresses of those symbols and use them almost normally
+
+Generally, dynamic libraries also contain `.lib` which acts as import files (mentioned above). You don't need a `.lib` file to use a dynamic library, but without one you cannot treat functions from the DLL as normal functions in your code. Instead, you must manually call `LoadLibrary` to load the DLL (and `FreeLibrary` when you're done), and `GetProcAddress` to obtain the address of the function or data item in the DLL. You must then cast the returned address to an appropriate pointer-to-function in order to use it.
 
 The memory address locations are resolved ultimately when the OS maps the dll into your process. A dll can be mapped into different processes at the same time and at different virtual addresses. The dll addresses are resolved when they are loaded, this happens during **runtime** when they're needed. They do have a module base address at compile time but its only a suggestion to the OS and since Vista with ASLR enabled it won't be used if your process gets randomized addresses.
 
