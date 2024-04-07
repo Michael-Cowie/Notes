@@ -55,7 +55,7 @@ Dynamic libraries reduce the amount of code that is duplicated in each program t
 
 # .exp
 
-A `.exp` file is an export file, which is used in Windows to define the symbols that are exported from a dynamic-link library (DLL). The `.exp file` contains a list of all the functions and variables that are part of the DLL's public interface, and it is used by the linker to generate the correct import library for the DLL.
+A `.exp` file is an export file, which is used in Windows to define the symbols that are exported from a dynamic-link library (DLL). The `.exp` file contains a list of all the functions and variables that are part of the DLL's public interface, and it is used by the linker to generate the correct import library for the DLL.
 
 A symbol is a named entity in a program or library that refers to a specific location in memory. In computer programming, symbols are used to represent various elements of a program, such as variables, functions, and objects.
 
