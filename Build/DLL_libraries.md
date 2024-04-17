@@ -256,5 +256,5 @@ information about the `.dll` that the linker will use such as memory address loc
 As of a user of a DLL library you still must,
 
 1. Tell Visual Studio where to search for the header files (`.h`). This is used during the preprocessor stage.
-2. Tell Visual Studio that you depend on the import files `.lib`. This is used during the linking stage.
+2. Tell Visual Studio that you depend on the import files (`.lib`). This is used during the linking stage.
 3. Include the `.dll` file inside your project. This is used during runtime.
