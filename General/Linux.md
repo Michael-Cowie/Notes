@@ -287,4 +287,4 @@ With the current working directory being `~`, I run the following command `sudo 
 
 After observing this, we can unmount is by the command `umount` and observe that `~/else/where` has now been restored to its original content of only containing `else.txt`.
 
-Currently visible mounts can be viewed by running `mount`.
+Currently visible mounts can be viewed by running `mount`. However, this does not show the source directory. Infact if I run it now, the output I receive for my current bind mount is, `/dev/sdc on /home/radix/else/where type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)`. The source directory here is not `/dev/sdc`. Therefore, we will instead use the command `findmnt` and then use `grep` to filter it down for our source directory. Hence, `findmnt | grep some/where` will correctly show us the source directory and the mount point for our recently created mount.
