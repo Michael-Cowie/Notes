@@ -58,7 +58,7 @@ set(MyString "Some Text")
 message(STATUS "${MyString}")
 ```
 
-The current output here is that the top level `message(STATUS "${MyString}")` will print and empty string, however the child will correctly print "Some Text". However, the parent can also reference the target that the child created. Recall that CMake prints empty strings for undefined variables.
+The current output here is that the top level `message(STATUS "${MyString}")` will print an empty string, however the child will correctly print "Some Text". However, the parent can also reference the target that the child created. Recall that CMake prints empty strings for undefined variables.
 
 This is because targets are visible at **any scope after the point that they have been defined**. Regular (non-cache) variables are scoped to directories and functions, and are only visible to script code in the same directory and function scope (same function scope, and same directory level, or subdirectories added by `add_subdirectory`). To define a variable in the parent directory's scope, you must define it like `set(<variable> <value>... PARENT_SCOPE)`.
 
