@@ -165,6 +165,8 @@ Non-static functions (and global names in general) are better declared in a head
 
 # Making Objects
 
+For object creation using `{}` and `()`, please review my notes `{}_vs_()_initialization.md`
+
 ```C++
 #include <iostream>
 
@@ -195,24 +197,65 @@ const string & Entity::getName() const {
 
 int main()
 {
-    // These 3 are on the stack, they will be automatically free
+    // These are on the stack, they will be automatically free
     // when leaving the function
-    Entity a;
-    cout << a.getName() << endl; // "Default"
-    
-    Entity b("b");
-    cout << b.getName() << endl; // "b"
-    
-    Entity c = Entity("c");
-    cout << c.getName() << endl; // "c"
-    
-    // Needs to be manually freed because it is on the heap, not the stack
-    Entity* d = new Entity("d");
-    cout << d->getName() << endl; // "d"
-    delete d;
+
+    // Default constructor
+    // This uses the zero-parameter constructor and initializes my_name to "Default"
+    Entity e1;
+    cout << "e1: " << e1.getName() << endl;
+
+    // Constructor with parameter
+    // This uses the constructor that takes a const string reference and sets my_name to "Custom Name"
+    Entity e2("Custom Name");
+    cout << "e2: " << e2.getName() << endl;
+
+    // Uniform initialization with default constructor
+    // This uses the zero-parameter constructor and initializes my_name to "Default" using uniform initialization
+    Entity e3{};
+    cout << "e3: " << e3.getName() << endl;
+
+    // Uniform initialization with parameterized constructor
+    // This uses the constructor that takes a const string reference and sets my_name to "Another Name" using uniform initialization
+    Entity e4{"Another Name"};
+    cout << "e4: " << e4.getName() << endl;
+
+    // Direct initialization with default constructor
+    // This uses the zero-parameter constructor and initializes my_name to "Default" with direct initialization
+    Entity e5 = Entity();
+    cout << "e5: " << e5.getName() << endl;
+
+    // Direct initialization with parameterized constructor
+    // This uses the constructor that takes a const string reference and sets my_name to "Direct Initialization" with direct initialization
+    Entity e6 = Entity("Direct Initialization");
+    cout << "e6: " << e6.getName() << endl;
+
+    // Copy initialization with default constructor
+    // This uses the zero-parameter constructor and initializes my_name to "Default" with copy initialization
+    // It first creates an object of Entity using curve braces and then invokves copy initialization to e7.
+    Entity e7 = {};
+    cout << "e7: " << e7.getName() << endl;
+
+    // Copy initialization with parameterized constructor
+    // This uses the constructor that takes a const string reference and sets my_name to "Copied Initialization" with copy initialization
+    Entity e8 = {"Copied Initialization"};
+    cout << "e8: " << e8.getName() << endl;
+
+    // Using new keyword (dynamically allocated)
+    // This creates an Entity object dynamically using the zero-parameter constructor and initializes my_name to "Default"
+    Entity* e9 = new Entity();
+    cout << "e9: " << e9->getName() << endl;
+
+    // This creates an Entity object dynamically using the constructor that takes a const string reference and sets my_name to "Dynamic Name"
+    Entity* e10 = new Entity("Dynamic Name");
+    cout << "e10: " << e10->getName() << endl;
+
+    // Clean up dynamic allocation
+    delete e9;
+
+
     return 0;
 }
-
 ```
 
 # Member Initialization List
