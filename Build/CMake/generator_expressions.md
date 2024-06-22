@@ -27,6 +27,25 @@ likewise with
 - `$<CXX_COMPILER_ID:comp>`
   - `1` if the CMake-id of the CXX compiler matches `comp`, otherwise `0`.
 
+Other logical expressions exist, such as OR,
+
+- `$<OR:condition1, condition2, ..., conditionN>` - These are the conditions that are evaluated. If any one of these conditions is true, the OR expression returns true.
+
+As an example, I will break down the following command,
+
+```CMake
+$<$<OR:$<CONFIG:Release>,$<CONFIG:RelWithDebInfo>>:/Gw>
+```
+
+1. `$<...>` - This syntax indicates a generator expression
+2. `$<OR:...>` - This expression is a logical OR operator. It returns true if any of its arguments are true. This allows for combining multiple conditions.
+3. `$<CONFIG:Release>` - This expression checks if the current build configuration is `Release`. It evaluates to true if the build configuration is `Release`.
+4. `$<CONFIG:RelWithDebInfo>` - This expression checks if the current build configuration is `RelWithDebInfo`. It evaluates to true if the build configuration is `RelWithDebInfo`.
+5. Combining to `$<OR:$<CONFIG:Release>,$<CONFIG:RelWithDebInfo>>` - This expression combines the two previous configuration checks using the OR operator. It evaluates to true if either the `Release` or `RelWithDebInfo` configuration is active.
+6. Now, let's pretend OR was evaluated to `true`, this means it will be combined to - `$<1:/Gw>`, which means the string `/Gw` will be passed. It is did not, it will be evaluated to `$<0:/Gw>`, which fails the original logical expression and an empty string is passed.
+
+Therefore, this is interpreted as "For a `Release` or `RelWithDebInfo` build, pass the flag `/Gw`"
+
 # Informational Expressions
 
 These expressions expand to some information. The information may be used directly, eg:
