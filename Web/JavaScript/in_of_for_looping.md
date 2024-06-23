@@ -5,7 +5,7 @@ Both `for...in` and `for...of` are looping constructs which are used to iterate 
 1. `for...in` iterates over all enumerables **property keys of an object**.
 2. `for...of` iterates over the **values of an iterable object**. Iterable objects are arrays, strings, etc...
 
-The `for...of` is defined by the [Symbol.iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols, this defines the values returned by `for...of`. The iterable protocol involves defining the `Symbol.iterator` method on your object, which returns an iterator object with a `next` method. The `next` method should return an object with `value` and `done` properties.
+The `for...of` is defined by the [Symbol.iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols), this defines the values returned by `for...of`. The iterable protocol involves defining the `Symbol.iterator` method on your object, which returns an iterator object with a `next` method. The `next` method should return an object with `value` and `done` properties.
 
 To create an example with a customizable `for...of` behaviour, it would appear as the following.
 
