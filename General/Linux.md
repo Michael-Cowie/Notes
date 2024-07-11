@@ -100,8 +100,6 @@ Essential command binaries that need to be available in single-user mode, includ
 
 The `sbin` directory contains system binaries that can only be executed by the root user. These contain commands such as `mount` or `deluser`.
 
-This directory is the 
-
 4. `/dev` **(Device Files)**
 
 - Here, we can interface with hardware or drivers as if they were regular files. You might create disk partitions here.
