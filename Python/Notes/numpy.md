@@ -1,21 +1,5 @@
 # NumPy: A Fundamental Python Library for Scientific Computing
 
-2. [Main Purpose](#main-purpose)
-3. [When to Use NumPy](#when-to-use-numpy)
-    - [Numerical Computations](#numerical-computations)
-    - [Data Analysis](#data-analysis)
-    - [Scientific Simulations](#scientific-simulations)
-    - [Machine Learning](#machine-learning)
-4. [Problems NumPy Fixes](#problems-numpy-fixes)
-    - [Speed](#speed)
-    - [Memory Efficiency](#memory-efficiency)
-    - [Vectorized Operations](#vectorized-operations)
-    - [Mathematical Functions](#mathematical-functions)
-5. [Essential Understanding of NumPy](#essential-understanding-of-numpy)
-    - [ndarray Object](#ndarray-object)
-6. [Array Creation](#array-creation)
-
-
 # Main Purpose
 
 NumPy (Numerical Python) is a vital Python library designed for scientific computing. It offers support for large, multi-dimensional arrays and matrices, along with a comprehensive collection of mathematical functions. NumPy's main purpose is to enable efficient numerical computations in Python, particularly when dealing with large datasets or complex mathematical operations.
