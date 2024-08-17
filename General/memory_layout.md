@@ -170,3 +170,15 @@ The BSS segment is typically larger in embedded systems or older systems, where 
 # Text Segment (Code Segment)
 
 This section contains the compiled machione code of the program. This segment is generally read-only to prevent accidental modification of the instructions.
+
+# Processes
+
+Each process has its own independent memory space. The code, data, heap and stack are all isolated from other processes. This isolationm provides security and stability but comes at the cost of higher memory usage and slower inter-process communication.
+
+# Threads
+
+Threads within the same process share the same memory space. This includes sharing the code, data and heap segments. Threads have **their own stack segment but share the address space for the heap and global variables**.
+
+Each threads has its own stack. This allows threads to execute independently with their own local variables and function call information.
+
+Since threads share the same memory space, communication between threads is more efficient than between processes. However, this also means that threads must synchronize access to shared resources to prevent race conditions and data corruption.

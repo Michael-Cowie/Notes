@@ -136,7 +136,7 @@ Additional subdirectories can be on a per install bassis, or example, when confi
 
 Users home directories, containing saved files, personal settings, etc...
 
-- Each user has a subdirectory here (e.g., `/home/<user>) containing personal files.
+- Each user has a subdirectory here (e.g., `/home/<user>`) containing personal files.
 - User-specific settings, documents and downloads reside here.
 
 7. `/usr` **(Unix System Resources)**
@@ -279,7 +279,7 @@ the directories `/some/where` and `/else/where` have the same content, which is 
 
 ![](./images/linux_2.png)
 
-In the following example above I have two directories. `~/some/where` which contains a file `.some.txt` and another directory `~/else/where/` which contains a file `else.txt`.
+In the following example above I have two directories. `~/some/where` which contains a file `some.txt` and another directory `~/else/where/` which contains a file `else.txt`.
 
 With the current working directory being `~`, I run the following command `sudo mount --bind ~/some/where ~/else/where`. This will create a bind mount with the mount point being, `~/else/where`. This means, the content inside of `~/else/where` is now the content inside of `~/some/where`, which can be seen by `dir else/where` and observing that the content is now `some.txt`
 
