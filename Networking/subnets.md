@@ -17,9 +17,9 @@ So, `192.168.1.1` in binary is `11000000.10101000.00000001.00000001`.
 
 An important concept to remember is the difference between a network portion and a host portion. 
 
-The network portion is the part of an IP address that identifies the specific network. All devices on the same network share the same network portion of their IP address. It's determined by the subnet mask.
+- The **network portion** is the part of an IP address that identifies the specific network. All devices on the same network share the same network portion of their IP address. It's determined by the subnet mask.
 
-The host portion is the part of the IP address that identifies a specific device (or host) within the network. It's unique for each device on the same network. This means that the number of available hosts on a subnet is the bit range for the host portion.
+- The **host portion** is the part of the IP address that identifies a specific device (or host) within the network. It's unique for each device on the same network. This means that the number of available hosts on a subnet is the bit range for the host portion.
 
 A subnet mask determines which part of the IP address is the network portion and which part is the host portion. Like an IP address, it's a 32-bit number, written in the same dotted decimal format. 
 

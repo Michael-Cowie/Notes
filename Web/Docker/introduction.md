@@ -66,7 +66,7 @@ Infact, we do not need to pull an image for this to work. When running a command
 
 ##### Container Port vs Host Port
 
-After running a container, how can we access it? Simply put, we cannot right now. This is because the container is running in the closed Docker Network, so we cannot access it from our local computer browser. We need to expose the container port to the host. What we need is do is called "port binding". This will bind the containers port to the hosts port to make the service available to the outside world. The container is running on some port, each application has some standard port on which it's running. For example, `nginx` always runs on port 80, `redis` runs on port `6379`. 
+After running a container, how can we access it? Simply put, we cannot right now. This is because the container is running in the closed Docker Network, so we cannot access it from our local computer browser. We need to expose the container port to the host. What we need is do is called "port binding". This will bind the containers port to the hosts port to make the service available to the outside world. The container is running on some port, each application has some standard port on which it's running. For example, `nginx` always runs on port `80`, `redis` runs on port `6379`. 
 
 What we need to do is tell Docker to bind the specific port inside the container to be a port on the host machine. This mean, we treat port `9000` on the host machine as port `80` on the container. This means `localhost:9000` will make a request to the container on port `80`.
 
@@ -84,12 +84,12 @@ will create a `nginx` container running on port `80` on the container, but becom
 
 ---
 
-In addition to port mapping, it should be noted that the `EXPOSE` keyword in the Dockerfile **does not expose a port**. `Expose` is basically documentation, and not using it does not restrict access. This is a dangeros misunderstanding if anyone relies on it to limit access. The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published.
+In addition to port mapping, it should be noted that the `EXPOSE` keyword in the Dockerfile **does not expose a port**. `Expose` is basically documentation, and not using it does not restrict access. This is a dangerous misunderstanding if anyone relies on it to limit access. The `EXPOSE` instruction does not actually publish the port. It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published.
 
 Therefore,
 
 - `EXPOSE` is a way of **documenting**.
-- `--publish` or (`-p`) is a way of **mapping* a host port to a running container port.
+- `--publish` or (`-p`) is a way of **mapping** a host port to a running container port.
 
 ##### Virtual Machine vs Docker
 
