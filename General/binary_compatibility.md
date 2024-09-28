@@ -90,4 +90,4 @@ For binaries to be compatible,
 
 If any of these requirements are not met, the binaries will not be compatible, even if they are for the same CPU architecture.
 
-In practice, this means that binaries compiled with different compilers (e.g. MSVC and MinGW) are often incompatible and trying to mix them will lead to errors. For smooth integration, ensure that all components of a project are compiled with the same toolchain.
+In practice, this means that binaries compiled with different compilers (e.g. MSVC and MinGW) are often incompatible and trying to mix them will lead to errors. For smooth integration, ensure that all components of a project are compiled with the same toolchain. In general, things compiled with one compiler aren't compatible with another compiler.

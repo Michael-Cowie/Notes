@@ -248,8 +248,9 @@ running `MathLibrary.exe` in the command line will work correctly :)
 
 #### When creating the library
 
-Despite it being a DLL library, a `.lib` file is also generated. This `.lib` file is statically linked by the user of the library. The `.lib` is an import file that contains 
-information about the `.dll` that the linker will use such as memory address locations.
+Despite it being a DLL library, a `.lib` file is also generated. This `.lib` file is statically linked by the user of the library. The `.lib` is an import file that contains information about the `.dll` that the linker will use such as memory address locations. A `.lib` file is used whether you're statically linking or dynamically linking, as it's a file used at build time.
+
+Not all `.lib` are equivalent, if you want to statically link to a library they need to be statically compiled so that all required information is within the `.lib` file. If the library is distributed as a dynamic linked library, you cannot statically linked the `.lib` file as it would only contain information to reference the `.dll`. For example, Qt are distributed as a dynamic linked library. If you really want to have a statically linkable Qt libs, you would need to compile Qt statically, before you can link them.
 
 #### When using the library
 
