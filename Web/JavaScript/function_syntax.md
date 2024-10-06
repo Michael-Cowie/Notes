@@ -72,3 +72,49 @@ const namedFunctionExpression = function namedFunction() {
 ```
 
 The name `namedFunction` is only visible within the function itself (for recursion or referencing the function inside itself).
+
+**8. The difference between `=> {}` and `=> ()`** 
+
+In JavaScript, the difference between `=> {}` and `=> ()` in arrow functions lies **in how they handle the return statement**.
+
+---
+
+`=> {}` - This syntax **requires an explicit `return` statement** to return a value. Without a `return` statement, `undefined` will be returned.
+
+```JavaScript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(number => {
+    return number * 2;
+});
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
+
+Remember this syntax **requires** a return statement, i.e
+
+```JavaScript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(number => {
+    number * 2; // No return statement here
+});
+console.log(doubled); // Output: [undefined, undefined, undefined, undefined, undefined]
+```
+
+---
+
+`=> ()` - This syntax **implicitly returns the value** without needing a `return` statement.
+
+```JavaScript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(number => number * 2);
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
+
+or a multi-line example,
+
+```JavaScript
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(number => (
+    number * 2
+));
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
