@@ -81,6 +81,8 @@ class ZlibConan(ConanFile):
 
 Here, the Class contains the `options` that were specified inside the `conanfile.txt`. Additionally, some metadata. The methods inside the Class take the steps responsible to build the package. 
 
+For each defined string in the `settings`, it must be an option and value defined inside the `settings.yml`.
+
 - `requirements` - `zlib` is a library that does not need further dependencies, however the `requirements` method is used to define if a dependency is used via `self.require(<dependeyc>/<version>)`. An example can be seen in the `libtiff` [recipe](https://github.com/conan-io/conan-center-index/blob/master/recipes/libtiff/all/conanfile.py#L65).
 
 ```python
@@ -220,3 +222,104 @@ conanfile.py
 conan_export.tgz
 conan_sources.tgz
 ```
+
+As of now in conan1 `conan download` will download all PackageID for the dependency, while conan2 allows to specify a PackageID.
+
+## Development Environment Configuration
+
+
+Maintainability of all configurations is important, especially in a shared environment. To manage this efficiently a directly structure such as,
+
+```
+📁 repository
+    📁 config
+        📁 profiles
+            🗎 profile1
+            🗎 profile2
+        🗎 settings.yml
+        🗎 remotes.json
+```
+
+can be very useful as the [command](https://docs.conan.io/1/reference/commands/consumer/config.html#conan-config-install) `conan config install <directory>` can be very useful as it will move all of the essential files within the specific directory into the `.conan` directory. This is essential in a shared environment. The command can take additional configurations such as storing the directory within GitHub repositories, `.zip` files or directly specifying the directory.
+
+## PackageID
+
+A PackageID uniquely identifies a binary package that is associated with a specific configuration. This ID is essential for Conan's package management system because it ensures that packages built under different settings (e.g. compiler version, operating system, architecture) can coexist in a repository without conflict.
+
+Conan generates the PackageID by hashing several key components, including
+
+1. **Settings** - Compiler, architecture, build type (e.g., Debug, Release), etc...
+2. **Options** - Custom options defined for a package, such as feature flags or library versions.
+3. **Requires** - Any dependencies the package has.
+4. **Configuration Modifications** - Modifications in the recipe (`conanfile.py`) or applied `package_id()` method.
+
+Each of these factors can influence the binary that is generated, which is why a unique ID is needed to differentiate between different configurations of the same package.
+
+You can customize how conan computes the PackageID by overriding the `package_id()` method in the `conanfile.py` recipe. This can be useful in cases where some settings or options don't affect the final binary and shouldn't trigger a new PackageID, optimizing package reuse.
+
+For example, if we want to have the same `package_id` for all the binaries compiled with gcc between versions `4.5` and `5.0`, we can do:
+
+```python
+def package_id(self):
+    v = Version(str(self.info.settings.compiler.version))
+    if self.info.settings.compiler == "gcc" and (v >= "4.5" and v < "5.0"):
+        # The assigned string can be arbitrary
+        self.info.settings.compiler.version = "GCC 4 between 4.5 and 5.0"
+```
+
+This works because the contents inside of `self.info` are involved in the `package_id` hashing for PackageID, by setting them to the same string value, they will hash identically. This approach is not recommended in the general case, and it would be better approached with the global `compatibility` plugin or the recipe `compatibility()` method.
+
+The default `package_id()` uses the `settings` and `options` directly as defined, and assumes the semantic versioning for dependencies is defined in requires.
+
+This `package_id()` method can be overridden to control the package ID generation. Within the `package_id()`, we have access to the `self.info` object, which is hashed to compute the binary ID and contains:
+
+
+## Package ABI compatibility
+
+Each package recipe can generate N binary packages from it, depending on these three items: `settings`, `options` and `requires`.
+
+When any of the settings of a package recipe changes, it will reference a different binary.
+
+```python
+class MyLibConanPackage(ConanFile):
+    name = "mylib"
+    version = "1.0"
+    settings = "os", "arch", "compiler", "build_type"
+```
+
+When this package is installed by a `conanfile.txt`, another package `conanfile.py`, or directly,
+
+```shell
+$ conan install mylib/1.0@user/channel -s arch=x86_64 -s ...
+```
+
+The process is,
+
+1. Conan gets the user input settings and options. Those settings and options can come from the command line, profiles or from the values cached in the latest `conan install` execution.
+
+2. Conan retrieves the `mylib/1.0@user/channel` recipe, reads the `settings` attribute, and assigns the necessary values.
+
+3. With the current package values for `settings` (also `options` and `requires`), it will compute a SHA1 hash that will serve as the binary package ID, e.g. `c6d75a933080ca17eb7f076813e7fb21aaa740f2`.
+
+4. Conan will try to find the `c6d75...` binary package. If it exists, it will be retrieved. If it cannot be found, it will fail and indicate that it can be built from sources using `conan install --build`.
+
+If the package is installed again using different settings, for example, on a `32-bit` architecture
+
+```shell
+$ conan install mylib/1.0@user/channel -s arch=x86 -s ...
+```
+
+The process will be repeated with a different generated package ID, because the `arch` setting will have a different value.
+
+When developers using the package use the same settings as one of those uploaded binaries, the computed package ID will be identical causing the binary to be retrieved and reused without the need of rebuilding it from the sources.
+
+
+Note this simple scenario of a header-only library. The package does not need to be built, and it will not have any ABI issues at all. The recipe for such a package will be to generate a single binary package, no more. This is easily achieved by not declaring `settings` nor `options` in the recipe as follows:
+
+```python
+class MyLibConanPackage(ConanFile):
+    name = "mylib"
+    version = "1.0"
+    # no settings defined!
+```
+
