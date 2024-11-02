@@ -158,23 +158,27 @@ This combination enhances the CPU's ability to handle multiple tasks efficiently
 
 # CPU Instruction Set
 
-The CPU instruction set (or instruction set architecture, ISA) is a set of commands that a specific CPU can execute. It defines the operations the CPU can perform and how those operations are encoded.
+The CPU instruction set (or instruction set architecture, ISA) **is a set of commands that a specific CPU can execute**. It defines the operations the CPU can perform and how those operations are encoded.
 
 - **Abstract Operations**: It includes operations like arithmetic, data movement, control flow, and logic.
 
 - **Architecture-Specific**: Different CPU architectures (e.g., x86, ARM, MIPS) have different instruction sets.
 
-- **Examples**: Instructions like ADD, MOV, JMP, etc., are part of the instruction set.
+- **Examples**: Instructions like `ADD`, `MOV`, `JMP`, etc., are part of the instruction set.
 
-Example:
+- **x86 Instruction Set**: Common in Intel and AMD CPUs, includes instructions like `MOV`, `ADD`, `SUB`, `MUL`.
 
-- **x86 Instruction Set**: Common in Intel and AMD CPUs, includes instructions like MOV, ADD, SUB, MUL.
+- **ARM Instruction Set**: Common in mobile devices and embedded systems, includes instructions like `LDR`, `STR`, `ADD`, `SUB`.
 
-- **ARM Instruction Set**: Common in mobile devices and embedded systems, includes instructions like LDR, STR, ADD, SUB.
+Every other layer (assembly language and machine code) **is built to conform to this set of instructions.**
+
+
 
 # Assembly Language
 
-Assembly language is a low-level programming language that uses human-readable mnemonics **to represent the machine code instructions of a specific CPU's instruction set**.
+Assembly language is a low-level programming language that uses human-readable mnemonics **to represent the machine code instructions of a specific CPU's instruction set**. This means each ISA has its own assembly language that directly corresponds to its machine instructions.
+
+This means that when programming in assembly, the specific commands and syntax you use will depend on the ISA for the target architecture..
 
 - **One-to-One Mapping**: Each assembly instruction corresponds directly to a machine code instruction.
 
@@ -184,12 +188,16 @@ Assembly language is a low-level programming language that uses human-readable m
 
 **x86 Assembly**
 
+In this example, `MOV`, `AX` and `ADD` are from the x86 ISA.
+
 ```
 MOV AX, 1   ; Move the value 1 into the AX register
 ADD AX, 2   ; Add the value 2 to the AX register
 ```
 
 **ARM Assembly**
+
+In this example, `MOV`, `ADD` and `R0` are from the ARM ISA, `#1` and `#2` are constants.
 
 ```
 MOV R0, #1  ; Move the value 1 into the R0 register
@@ -198,7 +206,7 @@ ADD R0, R0, #2  ; Add the value 2 to the R0 register
 
 # Machine Code
 
-Machine code is the binary representation of the instructions that the CPU executes. It is the lowest-level programming language, directly executed by the CPU.
+Machine code is the binary representation of the instructions that the CPU executes. It is the lowest-level programming language, **directly executed by the CPU**.
 
 
 - **Binary Format**: Represented in binary (0s and 1s), often displayed in hexadecimal for readability.
@@ -239,16 +247,33 @@ E2800002        ; ADD R0, R0, #2
 
 - **Direct Correspondence**: Assembly language is a human-readable form of machine code for a specific ISA. Writing assembly code for one ISA does not translate to another. An x86 assembly program can't run on an ARM CPU because the instructions and register names are different.
 
-# x86 Architecture
+# x86 and x64
 
-x86 is a family of instruction set architectures (ISAs) initially developed by Intel based on the Intel 8086 microprocessor and its successors. Intel both designed and manufactured the x86 architecture. x86 simply refers to a family of processors and the instruction set they all use. It doesn't actually say anything specific about data sizes. The term x86 derived from the fact that early successors to the 8086 also had names ending in "86".
+**x86 is a family of instruction set architectures (ISAs) initially developed by Intel based on the Intel 8086 microprocessor** and its successors. Intel both designed and manufactured the x86 architecture. x86 simply refers to a family of processors and the instruction set they all use. It doesn't actually say anything specific about data sizes. The term "x86" comes from Intel’s line of processors that started with the Intel 8086 in 1978. The "86" in x86 refers to the last two digits in the names of these early processors, such as the 80**86**, 801**86**, 802**86**, 803**86**, and 804**86**. It can access up to 4GB of RAM and uses 32-bit data paths. x86 applications are compatible with both 32-bit and 64-bit operating systems.
 
-x86 started out as a 16-bit instruction set for 16-bit processors (the 8086 and 8088 processors), then was extended to a 32-bit instruction set for 32-bit processors (80386 and 80486), and now has been extended to a 64-bit instruction set for 64-bit processors. It used to be written as 80x86 to reflect the changing value in the middle of the chip model numbers, but somewhere along the line the 80 in the front was dropped, leaving just x86.
+x86 uses a complex instruction set, allowing it to execute multi-step operations with a single instruction. The x86 architecture maintains backward compatibility, meaning software designed for older x86 processors generally works on newer ones. The primary developer and the largest manufacturer of x86 CPUs is Intel. The x86 architecutre is predominantly used in personal computers (PCs), laptops, and servers. A major competitor to Intel is AMD, also producing x86 CPUs.
+
+x86-64 is the full, technical name of the 64-bit extension to the original x86 architecture, developed by AMD and sometimes called AMD64. When AMD introduced 64-bit processing for x86, they called it **x86-64** to indicate backwards compatibility with 32-bit x86 but with the 64-bit capabilities. x64 became shorthand for x86-64, adopted mainly for simplicity. This term was popularized by operating systems like Windows, which labeled 64-bit versions as x64 to distinguish them from x86 (32-bit). So, x64 is widely used to mean x86-64 but is technically a branding term rather than a strict technical one.
 
 
-x86 uses a complex instruction set, allowing it to execute multi-step operations with a single instruction. The x86 architecture maintains backward compatibility, meaning software designed for older x86 processors generally works on newer ones.
+**x86** - 32-bit, but technically a family name that includes both 16-bit and 32-bit processors.
+**x86-64** - The precise technical name for the 64-bit extension to x86, originally by AMD.
+**x64** - A shorthand term for x86-64, commonly used in OS and software terminology.
 
-The primary developer and the largest manufacturer of x86 CPUs is Intel. The x86 architecutre is predominantly used in personal computers (PCs), laptops, and servers. A major competitor to Intel is AMD, also producing x86 CPUs.
+On Windows, we can also observe two program files directories, `Program Files` and `Program Files (x86)`.
+
+For `Program Files (x86)`
+
+- This folder is specifically for 32-bit applications that use the x86 ISA.
+- The term x86 here reflects the historical link to 32-bit processing. x86 becomes synonymous with 32-bit after the intel 80386 introduced 32-bit capabilities.
+
+For `Program Files`
+
+- This folder is for 64-bit applications, compatible with x64 (or x86-64) architecture, which is technically an extension of the x86 ISA to support 64-bit processing.
+- Programs here are compiled with 64-bit instructions and can fully utilize the 64-biot addressing and processing capabilities of a 64-bit CPU, like accessing more than 4 GB of RAM.
+- These applications rely on 64-bit versionf of system libraries, which aren't compatible with 32-bit programs.
+
+So, both folders are related to the x86 ISA family, but they organize applications based on which version of the x86 ISA they are built for. If different ISA was used to create binaries such as ARM then it will need to be placed into a different installation directory.
 
 # ARM Architecture
 
@@ -264,4 +289,20 @@ ARM uses a simpler, more efficient instruction set that requires fewer transisto
 
 - **Nvidia**: Produces ARM-based processors for various applications, including gaming consoles and automotive systems.
 
-In summary, x86 and ARM are two different types of CPU architectures, with x86 being used mainly in PCs and servers, and ARM being dominant in mobile and embedded devices. The major manufacturers of these processors include Intel and AMD for x86, and companies like Apple, Samsung, and Nvidia for ARM.
+x86 and ARM are two different types of CPU architectures, with x86 being used mainly in PCs and servers, and ARM being dominant in mobile and embedded devices. 
+
+# CPU Compatibilities
+
+The major manufacturers of these processors include **Intel and AMD for x86 and x86-64 (x64)**, and companies like **Apple, Samsung, and Nvidia for ARM**. This means, different companies (Intel and AMD) can build their own CPUs, **but build to support the ISA**.
+
+Both Intel and AMD CPUs adhere to the x86 and x86-64 ISA specifications so they can understand and execute the same instructions. This means any code compiled for x86/x86-64 will run on both intel and AMD CPUs, **as long as it doens't rely on CPU-specific extensions**.
+
+Each company is free to implement the x86 instructions in its own way at the **microarchitecture** level. The microarchitecture is the detailed design of how instructions are executed within the CPU, including things like pipelines, cache sizes, branch predictors and execution units. This is where Intel and AMD make the CPUs unique. **While they execute the same instructions, they optimize differently to improve speed, efficiency and power consumption**.
+
+Beyond the standard x86 instructions, each company may add **optional extensions** that improve performance for specific applications. Intel and AMD must adhere to the x86 ISA to ensure compatibility, but they are free to innovate on microarchitecture and use extensions and compiler optimizations to differentiate performance. This is why you’ll see performance differences between Intel and AMD CPUs even when running the same x86-compiled code.
+
+1. **Intel has AVX-512 (Advanced Vector Extensions)**, which allows for more complex operations in parallel for large datasets, especially useful in fields like scientific computing.
+
+2. **AMD includes its own extensions like SS35** and, in some models, Advanced Vector Extensions tailored to its architecture.
+
+Compilers can detect when they're running on CPUs with specific extensions and generate code that takes advantage of those instructions. When using the Intel Compiler, for example, can be optimized to utilize **Intel-specific features**, like AVX-512, if it detects they're available. This might make the code run more efficiently on Intel CPUs than on AMD CPUs. Using compiler specific extensions will no longer make it compatible with other CPUs, such as using the Intel Compiler with extensions enabled, will no longer make it run on AMD CPUs.
