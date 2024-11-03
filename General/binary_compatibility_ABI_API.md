@@ -137,6 +137,16 @@ When a binary is compatible with a particular version of a library or runtime, i
 - It can link against and call functions from the runtime or library
 - The memory layout and function calling conventions of the binary match the runtime or library, ensuring correct execution.
 
+## Summarized Comparison
+
+- **API (Application Programming Interface)** - Defines available functions, methods, and classes for source code to compile without modification. This is strictly for the **source level (compilation)**.
+
+- **ABI (Application Binary Interface)** -  Defines how different program modules or components interact at the binary level. It includes details like calling conventions, machine interface, and binary formats. This is strictly for the **binary level (linking and runtime)**.
+
+- **Binary Compatibility** - Ensures that compiled binaries from different versions can work together, maintaining ABI compatibility. This is strictly at the **binary level (linking and runtime)**.
+
+- **Backward Compatibility** - Allows newer version to support older code or data, **typically at the source code level, but may or may not ensure ABI or binary compatibility**.
+
 ## Example - Python source code and Python extension modules
 
 Python is a dynamic language and most Python code is distributed as **source code** (`.py` files), where API compatibility is the main concern. However, things become more complex when dealing with compiled extension modules (`.pyd` and `.so` files).

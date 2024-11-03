@@ -323,3 +323,37 @@ class MyLibConanPackage(ConanFile):
     # no settings defined!
 ```
 
+# Profile Versioning Caveats
+
+Their are some caveats when using profiles and specific versioning that conan does, for example if we investigate the available compiler options in a standard `settings.yml`, for `msvc` we can see
+
+```yml
+    msvc:
+        version: [170, 180, 190, 191, 192, 193]
+```
+
+This means that inside the profile file, we can set the compiler version as,
+
+```ini
+[settings]
+compiler=msvc
+compiler.version=193
+```
+
+Now, the Visual Studio compiler has multiple fields,
+
+- M - major version (two digits)
+- N - minor version (two digits)
+- B - build version (five digits)
+- R - revision version
+
+For example, the compiler version for Visual Studio 2022 version `17.9.0` is `19.39.33519`:
+
+- The major version is `19`
+- The minor version is `39`
+- The build version is `33519`
+- The revision version is `0`
+
+Now, this can be often shortended to `1939`, where it will only use the major and minor version, in addition to removing the `.`. Conan takes this a step further, **where `compiler.version` is actually referring to `19.3X` compiler versions for MSVC**.
+
+Microsoft generally try to keep `19.3X` binary compatible, meaning, **they adhere to the same ABI and API**. This ensures that binaries built with `19.31` can work with `19.32` interchangably. Conan will then use `19.3X` in order to create less packages for each library.
