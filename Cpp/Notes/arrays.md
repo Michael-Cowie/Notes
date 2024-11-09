@@ -6,9 +6,9 @@ An array in C++ is a collection of elements of the same type placed in contiguou
 type name [elements];
 ```
 
-Where `type` is a valid type, such as `int`, `char`, ... <br>
-`name` is a valid identifier <br>
-`elements` (which is always enclosed in square brackets []), specifies the length of the array in terms of number of elements.
+- `type` is a valid type, such as `int`, `char`, ...
+- `name` is a valid identifier
+- `elements` (which is always enclosed in square brackets `[]`), specifies the length of the array in terms of number of elements.
 
 There, the `foo` array, with five elements of type `int` can be declared as;
 
@@ -20,6 +20,20 @@ Likewise, an array int integer pointers can be declared as,
 
 ```C++
 int* intarray[10];
+```
+
+With arrays, curly braces **`{}` are used for initializing arrays and aggregate types**, while square brackets **`[]` are used for array indexing and declaration**. When declaring an array the square brackets `[]` are always to the right of the variable, with the ability to initialize it using `{}` afterwards.
+
+In this example below, I use `typedef` to define `Vector3` as an array of size `3`. The size is defined using `[]` to the right of the variable name and is read right to left. This is then instantiated later on using `{}`.
+
+```C++
+#include <iostream>
+
+int main() {
+    typedef int Vector3[3];
+    Vector3 v3 = { 1, 2, 3 };
+    return 0;
+}
 ```
 
 **Note:** The `elements` field within the square brackets [], representing the number of elements in the array, must be a constant expression, since array are blocks of static memory whose size must be determined at compile time, before the program runs.
