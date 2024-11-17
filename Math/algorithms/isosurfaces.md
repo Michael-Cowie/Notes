@@ -1,7 +1,7 @@
+<div style="text-align: center;">
+    <h1>Isosurfaces</h1>
+</div>
 
-<h1 style="text-align: center;">
-    Isosurfaces
-</h1>
 
 An isosurface is a **three-dimensional surface that represents points of a constant value within a volume of space**. This value could be anything measurable, such as pressure, temperature, velocity, or density. For example,
 
