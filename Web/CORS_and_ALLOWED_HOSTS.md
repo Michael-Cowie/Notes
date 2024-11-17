@@ -1,4 +1,6 @@
-# `CORS_ORIGIN_WHITELIST`
+<div align="center">
+  <h1> CORS_ORIGIN_WHITELIST </h1>
+</div>
 
 CORS stands for Cross-Origin Resource Sharing, which is a security feature implemented by web browsers to restrict web pages from making requests to a domain other than the one that served the page. `CORS_ORIGIN_WHITELIST` is a Django setting used when you're dealing with AJAX requests (or API requests) coming from a different origin (domain, protocol, or port) than your Django application.
 

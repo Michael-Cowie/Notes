@@ -1,4 +1,6 @@
-# Memory Layout
+<div align="center">
+  <h1>  Memory Layout </h1>
+</div>
 
 When a program is executed, it is loaded into the memory with a specific structure, which includes the following segments,
 

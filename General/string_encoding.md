@@ -1,4 +1,6 @@
-# Strings and Byte Strings
+<div align="center">
+  <h1>  String and Byte Strings </h1>
+</div>
 
 The only thing that a computer can store is bytes. To store anything in a computer, you must first `encode` it, i.e. convert it to bytes. For example,
 

@@ -1,4 +1,6 @@
-# Exception Handling
+<div align="center">
+  <h1>  Exception Handling </h1>
+</div>
 
 The general syntax for C++ exception handling is,
 

@@ -1,4 +1,6 @@
-# MAC address
+<div align="center">
+  <h1>  MAC Address </h1>
+</div>
 
 A media access control address (MAC address) is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment. The usage of the MAC address is in layer 2 (Data Link).
 

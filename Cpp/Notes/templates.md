@@ -1,5 +1,6 @@
-# Class Templates
-
+<div align="center">
+  <h1> Class Templates </h1>
+</div>
 Templates are a new concept which enable you to define generic classes and functions and thus provides support for generic programming. Generic programming is an approach where generic types are used as parameters in algorithms so that they work for a variety of suitable data types and data structures.
 
 A template can be used to create a family of classes or functions. For example, a class template for an `array` class would enable us to create arrays of various data types such as `int` array and `float` array. Similarly, we can define a template for a function, say `mul()` that would help us create various versions of `mul()` for multiplying `int`, `float` and `double` type values.

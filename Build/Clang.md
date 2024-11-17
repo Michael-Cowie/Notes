@@ -1,3 +1,7 @@
+<div align="center">
+  <h1> Clang </h1>
+</div>
+
 Clang is a **compiler front-end** for a varying range of programming languages such as C and C++. It's part of the LLVM project and is designed to work as a drop-in replacement for the GNU Compiler Collection (GCC). The Clang project source code is available [on GitHub](https://github.com/llvm/llvm-project)
 
  Here, "drop-in replacement" refers to a software component that is designed to be a direct subsitute for another, with little or no modification required to the existing system. It implies that the replacement can be used as an equivalent to the original, matching its interface and behaviours. In the context of Clang, it means that Clang is designed to understand GCC's command-line options and compile most programs written for GCC without changes to the code or the build environment. This allows developers to switch from using GCC to Clang without having to alter their source code or build scripts significantly.

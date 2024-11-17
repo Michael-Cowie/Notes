@@ -1,4 +1,6 @@
-# Lambda Functions
+<div align="center">
+  <h1> Lambda Functions </h1>
+</div>
 
 C++ Lambda expression allows us to define anonymous function objects which can either be used inline or passed as an argument.
 

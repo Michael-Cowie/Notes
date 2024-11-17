@@ -1,4 +1,6 @@
-# Indexing
+<div align="center">
+  <h1>  Indexing </h1>
+</div>
 
 Models are responsible for pulling the data from data source. Arrange data following a hierarchical structure so that views/delegagte can get/set data (using an index called model index). Notify the View & Delegate while data has been modified. There are three types of views and so as models — List, Table & Tree.
 

@@ -1,4 +1,6 @@
-# Why use Conan
+<div align="center">
+  <h1> Conan </h1>
+</div>
 
 Conan is a popular open-source C++ dependency manager. Its primary purpose is to simplify the process of managing dependencies in C++ projects. Dependency management is crucial in software development, especially in large-scale projects where codebase can quickly become complex and rely on numerous external libraries.
 

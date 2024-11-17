@@ -1,4 +1,6 @@
-# Inline functions
+<div align="center">
+  <h1>  Inline Functions </h1>
+</div>
 
 One of the objectives of using functions in a program is to save some memory space, which becomes appreciable when a function is likely to be called many times. However, every time a function is called, it takes a lot of extra time in executing a series of instructions for tasks such as jumping to the function, saving registers, pushing arguments into the stack and returning to the calling function. **When a function is small, a substantial percentage of execution time maybe spent in such overheads.**
 

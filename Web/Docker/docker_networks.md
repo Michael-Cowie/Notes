@@ -1,4 +1,6 @@
-# Docker Networks
+<div align="center">
+  <h1> Docker Networks </h1>
+</div>
 
 Docker networks are a fundamental feature of Docker that enable communication between containers. They provide isolation, security, and efficient communication between Docker containers. Docker networks allow containers to communicate with each other regardless of which host they are running on.
 

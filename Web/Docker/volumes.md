@@ -1,4 +1,6 @@
-# Volumes
+<div align="center">
+  <h1> Volumes </h1>
+</div>
 
 On a host we have a physical file system. The way volumes work is that we plug the physical file system path into the containers file system path. Meaning, a folder in the physical host file system is mounted into the virtual file system of Docker. What happens is that when a container writes to its file system it gets automatically repliced/written on the host file system directory (and vice versa). This is why, if a container restarts from a fresh state in its own virtual file system it gets the data automatically from the host because the data is still there. This is how data is populated on startup of a container.
 

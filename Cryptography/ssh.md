@@ -1,4 +1,6 @@
-# SSH
+<div align="center">
+  <h1> SSH </h1>
+</div>
 
 The Secure Shell Protocol (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. It's most notable applications are remote login and command-line execution. <br>
 

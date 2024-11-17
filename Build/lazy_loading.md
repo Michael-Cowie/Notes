@@ -1,5 +1,6 @@
-# Lazy Loading
-
+<div align="center">
+  <h1> Lazy Loading </h1>
+</div>
 Lazy loading is a technique to determine which files to include when building and packaging the application. This is done by simply starting the application and determining which files are imported on startup. It's used to easily strip away the unused files when running the application, such as tests.
 
 Suppose we have the following example project,

@@ -1,4 +1,6 @@
-# Data Transfer Object (DTO)
+<div align="center">
+  <h1> Data Transfer Object (DTO) </h1>
+</div>
 
 In the field of programming, a data transfer object (DTO) is an object that carries data between processes. The motivation for its use is that communication between processes is usually done resorting to remote interfacts (e.g. web services), where each call is an expensive operation. Because the majority of the cost of each call is related to the round-trip time between the client and the server, one way of reducing the number of calls is to use an object (DTO) that aggregate the data that would have been transferred by the server calls, but is served by one call only.
 

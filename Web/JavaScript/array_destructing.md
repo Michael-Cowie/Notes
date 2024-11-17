@@ -1,4 +1,6 @@
-# Array Destructing
+<div align="center">
+  <h1> Array Destructing </h1>
+</div>
 
 When trying to destruct values from an array, it's essential to encapsulate the variables inside square brackets `[]`. When creating an array with 3 elements such as,
 

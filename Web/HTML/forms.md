@@ -1,4 +1,6 @@
-# `forms`
+<div align="center">
+  <h1> Forms </h1>
+</div>
 
 An HTML form is used to collect user input. The user input is most often sent to a server for processing.
 

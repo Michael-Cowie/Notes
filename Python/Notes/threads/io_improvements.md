@@ -1,4 +1,6 @@
-# Using Threads to resolve IO bound issues
+<div align="center">
+  <h1> Using Threads to Resolve IO Bound Issues </h1>
+</div>
 
 The discussions on this topic has been done in reference to the code written in `isort_demo.py` and my experience using the `isort`. `isort` is [Python utility package](https://github.com/PyCQA/isort) to sort import order. This is increasing useful to standardize code style when working on large projects with multiple developers. Feeding a industry size codebase with millions of lines of code can be quite time consuming to check and sort all of the imports. `isort_demo.py` contains 9 sample files where I have chained them together to treat them as being multiple thousands of copies, emulating a much larger codebase.
 

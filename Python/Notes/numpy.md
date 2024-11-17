@@ -1,4 +1,6 @@
-# NumPy: A Fundamental Python Library for Scientific Computing
+<div align="center">
+  <h1> NumPy  </h1>
+</div>
 
 # Main Purpose
 

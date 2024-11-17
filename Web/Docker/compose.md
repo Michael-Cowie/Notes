@@ -1,4 +1,6 @@
-# Compose
+<div align="center">
+  <h1> Compose </h1>
+</div>
 
 Docker compose is a tool that allows you to define and run multiple services and applications that belong together in one isolated environment. It's common to have a frontend container, a backend container, an authentication container, etc...Docker compose allows us to group and execute these together. Simply put, if we want to deploy multiple docker containers where each container may have its different  configuration options, we can use docker compose to accomplish this.
 

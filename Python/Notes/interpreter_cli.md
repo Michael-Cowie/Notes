@@ -1,4 +1,6 @@
-# Executing Python using a CLI
+<div align="center">
+  <h1> Executing Python using a CLI </h1>
+</div>
 
 Let us begin from the beginning. When we type inside the console `python hello_world.py`, where is the `python` executeable found to run `hello_world.py`? Well, your "default" version is the **first one appearing in your path**. The so-called path is a list of directories your system searches for executeables. When you type a command, like `python`, this list is traversed from the first directory to the last, searching for a filename that matches the command you typed. If the filename/command is found, the matched file gets executed **without** taking into account potential later matches. This behaviour is by design. On UNIX systems the path environment variable is called `$PATH`, while on Windows system it's referred to as `%PATH%`
 

@@ -1,4 +1,7 @@
-# Euclidean algorithm
+<div align="center">
+  <h1> Euclidean Algorithm </h1>
+</div>
+
 The Euclidean Algorithm is an efficient method for computing the greatest common divisor (GCD) of two integers. The GCD is the largest number that divides them both without a remainder.
 
 ## The Algorithm

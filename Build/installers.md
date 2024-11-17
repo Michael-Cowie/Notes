@@ -1,4 +1,6 @@
-# Installers
+<div align="center">
+  <h1> Installers </h1>
+</div>
 
 Installation (or setup) of a computer program (including device drivers and plugins) is the act of making the program ready for execution. Installation refers to the particular configuration of a software or hardware with a view to making it usable with the computer. A soft or digital copy of the piece of software (program) is needed to install it. There are different processes of installing a piece of software. Because the process varies for each program and each computer, programs (including operating systems) often come with an installer, which is a specialised program responsible for doing whatever is needed (see below) for the installation. Installation may be part of a larger software deployment process.
 

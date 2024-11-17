@@ -1,4 +1,6 @@
-# `enum`
+<div align="center">
+  <h1> enum </h1>
+</div>
 
 An enumeration is a user-defined data type that consists of integral constants. To define an enumeration, keyword `enum` is used.
 

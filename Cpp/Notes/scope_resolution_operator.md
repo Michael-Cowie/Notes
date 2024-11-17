@@ -1,4 +1,6 @@
-# Scope Resolution Operator
+<div align="center">
+  <h1> Scope Resolution Operator </h1>
+</div>
 
 `::` is known as the scope resolution operator. The scope resolution operator is used to help resolve issues with scoping and can be used in various ways. When writing code, variables, classes and so forth are defined in scopes. When writing variables into a function for example, the variables "scope" is inside the function. When declaring variables are the top of a file, the variables scopes is the "Global" scope. The following are examples for utilize the scope resolution operator.
 

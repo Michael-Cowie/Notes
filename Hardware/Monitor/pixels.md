@@ -1,4 +1,6 @@
-# Pixel
+<div align="center">
+  <h1> Pixel </h1>
+</div>
 
 A pixel is the smallest addressable element in a raster image, or the smallest addressable element in an all point addressable display device; so it is the smallest controllable element of a picture represented on the screen. The example below shows an image with a portion greatly enlarged so that individual pixels, rendered as small squares can easily be seen.
 

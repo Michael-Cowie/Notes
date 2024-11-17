@@ -1,5 +1,6 @@
-# Rest Operator
-
+<div align="center">
+  <h1> Rest Operator </h1>
+</div>
 The rest operator in JavaScript is denoted by three dots `(...)`. It's used in various contexts, but here we'll focus on its primary use within function parameters and with arrays.
 
 **Rest Operator in Function Parameters**

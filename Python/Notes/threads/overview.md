@@ -1,5 +1,6 @@
-# Threads
-
+<div align="center">
+  <h1>  Threads </h1>
+</div>
  A thread is the smallest unit of execution within a process. A process can have multiple threads, and each thread represents an independent flow of control within that process. Threads within the same process share the same memory space, allowing them to efficiently communicate and share data.
 
  ![](../images/Multithreaded_process.png)

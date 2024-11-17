@@ -1,6 +1,8 @@
 Hardware rendering and Software rendering is related to 2D drawing and are two different ways to produce graphics in computer graphics.
 
-# Hardware Rendering
+<div align="center">
+  <h1> Hardware Rendering </h1>
+</div>
 
 When you're using Hardware rendering:
 
@@ -10,7 +12,9 @@ When you're using Hardware rendering:
 
 - The GPU is designed specifically to perform complex calculations required for rendering graphics. It is optimized for parallel processing, which allows it to perform multiple calculations simultaneously, making it much faster than software rendering.
 
-# Software Rendering
+<div align="center">
+  <h1> Software Rendering </h1>
+</div>
 
 When you're using Hardware rendering:
 

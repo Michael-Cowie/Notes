@@ -1,4 +1,6 @@
-# Digital Signatures
+<div align="center">
+  <h1> Digital Signatures </h1>
+</div>
 
 Before we begin to understand digital certificates, we need to understand how a digital signature works and find out the weakness of digital signatures. From here, we could understand why digital certificates are necessary. 
 

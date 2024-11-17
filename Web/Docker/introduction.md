@@ -1,4 +1,6 @@
-# Docker Introduction
+<div align="center">
+  <h1> Docker Introduction </h1>
+</div>
 
 Docker is virtualization software that makes developing and deploying applications much easier. Docker does this by packaging an application with all the necessary dependencies, configurations, system tools into something called a container. The application code itself, libraries, dependencies and also the runtime and environment configuration. So, the application and its running environment are
 both packaged in a single Docker package which we can easily share and distribute. The two key concepts to understand in Docker are **containers** and **images**. Containers and images are fundamental concepts that work together to facilitate the deployment and execution of applications.

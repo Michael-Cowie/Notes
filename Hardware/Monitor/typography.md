@@ -1,4 +1,6 @@
-# Typography
+<div align="center">
+  <h1>  Typography </h1>
+</div>
 
 To program effectively with Windows graphics, you must understand two related concepts:
 

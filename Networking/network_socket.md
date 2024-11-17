@@ -1,4 +1,6 @@
-# Network Sockets
+<div align="center">
+  <h1> Network Sockets </h1>
+</div>
 
 A network socket is a software structure within a network node of a computer network that serves as an endpoint for sending and receiving data across the network. The structure and properties of a socket are defined by an application programming interface (API) for the networking architecture. Sockets are created only during the lifetime of a process of an application running in the node. <br>
 

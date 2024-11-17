@@ -1,5 +1,6 @@
-
- # singledispatch
+<div align="center">
+  <h1>  singledispatch </h1>
+</div>
  
 `singledispatch` is a decorator aimed at functional programming. This decorator will transform a regular function into a single dispatch generic function. The `singledispatch` determines which registered function to call **based on the first argument type**.
 

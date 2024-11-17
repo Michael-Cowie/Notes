@@ -1,4 +1,6 @@
-# Function Definition Syntax
+<div align="center">
+  <h1> Function Definition Syntax </h1>
+</div>
 
 **1. Function Declaration**
 

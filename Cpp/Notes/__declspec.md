@@ -1,4 +1,6 @@
-# __declspec
+<div align="center">
+  <h1> __declspec </h1>
+</div>
 
 `__declspec` is a Microsoft-specific keyword used in C++ to apply specific attributes to a function or variable declaration. The most common use of `__declspec` is to specify how a function or variable should be exported or imported from a dynamic-link library (DLL).
 

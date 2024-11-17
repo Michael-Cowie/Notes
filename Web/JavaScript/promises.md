@@ -1,4 +1,6 @@
-# Promises
+<div align="center">
+  <h1> Promises </h1>
+</div>
 
 A 'Promise' is an object that represents the eventual completion or failure of an asynchronous operation and allow you to attach callbacks that will be executed when the operation is completed or when an error occurs. It has 3 states
 

@@ -1,4 +1,6 @@
-# Two's Complement
+<div align="center">
+  <h1>  Two's Complement</h1>
+</div>
 
 Two's complement is a mathematical method used to represent both positive and negative integers in binary form. In this system, the most significant bit (leftmost bit) represents the sign of the number, where 0 represents a positive number and 1 represents a negative number. The remaining bits represent the magnitude of the number, using the standard binary representation.
 

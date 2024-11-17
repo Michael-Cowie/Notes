@@ -1,5 +1,6 @@
-# C++ structs
-
+<div align="center">
+  <h1> C++ Structs </h1>
+</div>
 C and C++ both have the `struct` keyword available, in C it can hold several data types.
 
 The C style struct will be,

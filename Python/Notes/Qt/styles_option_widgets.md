@@ -1,4 +1,6 @@
-# Qt Styles, Options and Widgets
+<div align="center">
+  <h1> Qt Styles, Options and Widgets </h1>
+</div>
 
 ## Styles
 

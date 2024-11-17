@@ -1,4 +1,6 @@
-# Qt Delegates
+<div align="center">
+  <h1>  Qt Delegates </h1>
+</div>
 
 In Qt, delegates are used to customize the appearance and behavior of items in item views such as `QListView`, `QTableView`, and `QTreeView`. They allow you to control how data is displayed and edited within the view. Delegates are particularly useful when you need to display data in a specific format or provide custom editing capabilities.
 

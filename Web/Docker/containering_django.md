@@ -1,4 +1,6 @@
-# Deploying Django
+<div align="center">
+  <h1> Deploying Django </h1>
+</div>
 
 #### SQLite to PostgreSQL
 

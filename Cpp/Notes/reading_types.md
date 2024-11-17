@@ -1,4 +1,6 @@
-# Reading Types in C++
+<div align="center">
+  <h1>  Reading Types in C++ </h1>
+</div>
 
 To read any C++ type, a reliable approach is to start from the variable name and read backward, applying a `right-left rule`. This means **starting from the variable name and moving outward**. An important exception is arrays, where the size is defined in square brackets `[]` on the right side of the variable name.
 

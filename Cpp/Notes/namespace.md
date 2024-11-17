@@ -1,4 +1,6 @@
-# Namespaces
+<div align="center">
+  <h1> Namespaces </h1>
+</div>
 
 We have been defining variables in different scopes in C++ programs, such as classes, functions, blocks, etc. ANSI C++ standard has added a new keyword `namespace` to define a scope that could hold global identifiers. The best example of namespace scope is the C++ Standard Library. All classes, functions and templates are declared within the namespace named `std`. That is why we have been using the directive,
 

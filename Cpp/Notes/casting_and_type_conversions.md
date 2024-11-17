@@ -14,7 +14,9 @@
 - [Summary](#summary)
 
 
-# Casting
+<div align="center">
+  <h1> Casting </h1>
+</div>
 
 Casting in C++ involves **converting data between types**. It can happen automatically (implicit casting) or explicitly (explicit casting).
 

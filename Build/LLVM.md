@@ -1,5 +1,6 @@
-# LLVM
-
+<div align="center">
+  <h1> LLVM </h1>
+</div>
 LLVM is a set of compiler and toolchain technologies that can be used to **develop a frontend for any programming language and a backend for any instruction set architecture**. LLVM is designed around a language-independent intermediate representation (IR) that serves as a portable, high-level assembly language that can be optimized with a variety of transformations over multiple passes. The name LLVM originally stood for Low Level Virtual Machine, though the project has expanded and the name is no longer officially an initialism.
 
 LLVM standardize the process from turning source code to machine code. LLVM is responsible for the magic behind Clang and languages like Rust, Swift and Julia. LLVM will represent high-level language code in a language agnostic code called Intermediate Representation (IR).

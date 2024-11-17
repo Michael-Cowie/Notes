@@ -1,4 +1,6 @@
-# What is a Pointer?
+<div align="center">
+  <h1>  What is a Pointer?</h1>
+</div>
 
 A pointer is a variable that **stores the memory address** of another variable. Pointers are declared using the `*` symbol, and they must be initialized before use.
 

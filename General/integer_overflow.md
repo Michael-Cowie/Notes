@@ -1,4 +1,6 @@
-# Integer Overflow
+<div align="center">
+  <h1>  Integer Overflow </h1>
+</div>
 
 We will use the following code to demonstrate an integer overflow:
 

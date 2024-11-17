@@ -1,4 +1,6 @@
-# File Types
+<div align="center">
+  <h1> Files Types </h1>
+</div>
 
 When programming in Python, we will be exposted to multiple file types. Some common file types are `.py`, `.pyc` and `.pyd`, other more uncommon file types could be `.pyi` and `.pyw`. I will define a series
 of common file types that I have been exposted to the most when developing with Python.

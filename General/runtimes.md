@@ -7,7 +7,9 @@
 5. [Virtualized/Containerized Runtimes (Docker, ...)](#virtualizedcontainerized-runtimes-docker)
 
 
-# Runtimes
+<div align="center">
+  <h1>  Runtimes </h1>
+</div>
 
 A runtime environment **provides the necessary infrastructure for executing code, managing resources, and handling system calls**. It is used for various types of code, including interpreted languages (like Python or JavaScript), managed code (like Java or .NET), and compiled binaries. **Runtimes ensure that the code runs correctly** and efficiently on the target platform, regardless of how the code was originally written or compiled.
 

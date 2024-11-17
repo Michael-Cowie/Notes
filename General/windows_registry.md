@@ -1,5 +1,6 @@
-# Windows Registry
-
+<div align="center">
+  <h1>  Windows Registry </h1>
+</div>
 The Windows Registry is a hierarchical database that stores configuration settings and options for the Microsoft Windows operating system. It contains information about the system, hardware, installed software, user preferences, and more. The registry is organized into keys, subkeys, and values, which collectively store the data used by Windows and its applications.
 
 ![](./images/registry_1.png)

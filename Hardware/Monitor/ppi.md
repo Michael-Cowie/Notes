@@ -1,5 +1,6 @@
-# PPI
-
+<div align="center">
+  <h1>  PPI </h1>
+</div>
 Pixels per inch (ppi) and pixels per centimetre (ppcm or pixels/cm) are measurements of the pixel density of an electronic image device, such as a computer monitor or television display. Horizontal and vertical density are usually the same, as most devices have square pixels, but differ on devices that have non-square pixels. Note that **pixel density** is not the same as resolution - where the former describes the amount of detail on a physical surface or device, the latter describes the amount of pixel information regardless of its scale. Considered in another way, a pixel has no inherent size or unit (a pixel is actually a sample), but when it is printed, displayed or scanned, then the pixel has both a physical size (dimension) and a pixel density (ppi).
 
 ## Basic principles

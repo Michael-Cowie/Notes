@@ -1,4 +1,6 @@
-# Build Time and Run Time
+<div align="center">
+  <h1> Build Time and Run Time </h1>
+</div>
 
 
 In Docker, build time and run time refer to two distinct phases in the lifecycle of a containerized application.

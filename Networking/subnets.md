@@ -1,4 +1,6 @@
-# Network Subnetting
+<div align="center">
+  <h1> Network Subnetting </h1>
+</div>
 
 Subnetting is a method to divide a larger IP network into smaller, managebeable sub-networks by adjusting the subnet mask. By doing this, you can optimize IP address allocation, enhance security, and improve network performance. Each subnet operates operates independently within the larger network, allowing for better control over the traffic and access.
 

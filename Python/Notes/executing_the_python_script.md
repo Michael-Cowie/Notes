@@ -1,4 +1,6 @@
-# Executing the Python Script
+<div align="center">
+  <h1> Executing the Python Script </h1>
+</div>
 
 When we speak of Python we often mean not just the language but also the implementation. Python is actually a specification for a language that can be implemented in different ways.
 

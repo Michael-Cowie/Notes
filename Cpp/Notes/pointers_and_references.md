@@ -1,4 +1,6 @@
-# Pointers
+<div align="center">
+  <h1> Pointers and References</h1>
+</div>
 
 When a variable is declared, the memory needed to store its value is assigned a specific location in memory (its memory address). Generally, C++ programs do not actively decide the exact memory address where its variables are stored. Fortuneately, that task is left to the environment where the program is run - generally, an operating system decides the particular memory locations on runtime. However, it may be useful for a program to be able to obtain the address of a variable during runtime in order to access data cells that are at a certain position relative to it.
 

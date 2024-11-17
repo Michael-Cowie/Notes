@@ -1,4 +1,6 @@
-# What is Linux?
+<div align="center">
+  <h1>  What is Linux? </h1>
+</div>
 
 Linux is a family of open-source Unix-like operating systems based on the **Linux Kernel**. It was released by Linux Torvalds of September 17, 1991. An operating system is software that manages all of the hardware resources associated with your desktop or laptop. To put it simply, the operating system manages the communication between your software and your hardware. Without the operating system (OS), the software wouldn't function.
 

@@ -1,4 +1,6 @@
-# Objects as Function Arguments
+<div align="center">
+  <h1>  Objects as Function Arguments</h1>
+</div>
 
 In C++ there are three different ways to pass data to a function. They're pass by **value, reference and by pointer**. All have different characteristics when it comes to efficiency, storage and behaviour. Passing by pointer is quite legacy, primarily used in C.
 

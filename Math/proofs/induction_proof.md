@@ -1,4 +1,6 @@
-# Proof by Induction
+<div align="center">
+  <h1> Proof by Induction </h1>
+</div>
 
 The simpliest and most common form of mathematical induction refers that a statement involving a natural number $n$ holds for all values of $n$. <br>
 

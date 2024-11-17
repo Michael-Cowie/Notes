@@ -1,4 +1,6 @@
-# Gaming Rates
+<div align="center">
+  <h1> Gaming Rates </h1>
+</div>
 
 In almost all modern FPS games the server maintains the game state. This is important to prevent cheating, but leads to some of the issues people experience. In a client-server game design, there is always to be the problem of a difference in game state between the client and server, i.e. The client sees a delayed version of the "True" game state on the server. This will always exist, but there are some things we can do to make it less noticable.
 

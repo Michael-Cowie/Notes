@@ -1,4 +1,6 @@
-# PYTHONPATH
+<div align="center">
+  <h1> PYTHONPATH </h1>
+</div>
 
 To first explain the PYTHONPATH I first need to explain how Python handles importing. Python imports work by searching the directories listed in `sys.path`.
 To show your current directories inside of `sys.path`, the following Python code can run,

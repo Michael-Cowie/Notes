@@ -1,4 +1,6 @@
-# Argument Parsing from the CLI
+<div align="center">
+  <h1>  Argument Parsing From the CLI </h1>
+</div>
 
 When we execute a script from the command line it is possible to enter command line argument. This is not related to Python, it is related to scripting languages. However, in this tutorial I will be focusing on the Python library `argparse` in order to create command line arguments for a script.
 

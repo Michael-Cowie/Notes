@@ -1,4 +1,6 @@
-# Creating an Executable From Python Code
+<div align="center">
+  <h1> Creating an Executable from Python Code </h1>
+</div>
 
 When creating a project with having the intent to share it with others it is not feasible to hand all of your Python source code to the user and expect them to run it. The goal here is to create an executable file that we can give to a user, providing them the ability to execute your project by simply running the executable. Here, we will create an executable for the following Python code.
 

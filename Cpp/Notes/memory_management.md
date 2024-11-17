@@ -1,4 +1,6 @@
-# Memory management operators
+<div align="center">
+  <h1> Memory Management </h1>
+</div>
 
 C uses `malloc()` and `calloc()` functions to allocate memory dynamically at run time. Similarily it uses the function `free()` to free dynamically allocated memory. We use dynamic allocation techniques when it is not known in advance how much of memory space is needed. Although C++ supports these functions, it also defines two unary operators `new` and `delete` that perform the task of allocating and freeing the memory in a better and easier way. Since these operators manipulate memory on the free store, they are also known as free store operators.
 
