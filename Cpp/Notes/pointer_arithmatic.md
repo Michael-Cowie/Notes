@@ -1,4 +1,6 @@
-# Pointer Arithmatic
+<div align="center">
+  <h1> Pointer Arithmatic </h1>
+</div>
 
 The only difference between pointer arithmatic and regular arithmatic is that the number you are adding to the pointer will be multiplied by the size of the type that the pointer is pointing to. For example, if you have a pointer to an `int` and an `int` size is `4` bytes, `pointer_to_int + 4` will evaluate to a memory address `16` bytes `(4 ints)` ahead.
 

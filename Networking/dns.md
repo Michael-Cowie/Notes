@@ -1,4 +1,6 @@
-# DNS
+<div align="center">
+  <h1>  DNS </h1>
+</div>
 
 The Domain Name System (DNS) is the hierarchical and decentralized naming system used to identify computers reachable through the internet or other Internet Protocol (IP) networks. The resource records contained in the DNS associate domain names with other forms of information. These are commonly used to map human-friendly domain names to the numerical IP addresses computers need to locate services and devices using the underlying network protocols. but have been extended over time to perform many other functions as well. The Domain Name System has been an essential component of the functionality of the Internet since 1985.
 

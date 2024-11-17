@@ -1,4 +1,6 @@
-# List Initialization using `{}`
+<div align="center">
+  <h1> List Initialization using `{}` </h1>
+</div>
 
 In C++ 11, we have new syntax for initializing classes which gives us a big number of possibilities how to initialize variables, 
 

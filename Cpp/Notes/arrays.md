@@ -1,4 +1,6 @@
-# Arrays
+<div align="center">
+  <h1> Arrays </h1>
+</div>
 
 An array in C++ is a collection of elements of the same type placed in contiguous memory locations that can be individually referenced by using an index to a unique identifier. A typical declaration for an array in C++ is,
 

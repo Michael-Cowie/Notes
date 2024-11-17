@@ -1,4 +1,6 @@
-# C++ Classes
+<div align="center">
+  <h1> C++ Classes </h1>
+</div>
 
 ## Outside the Class Function Definitions
 

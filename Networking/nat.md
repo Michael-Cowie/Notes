@@ -1,4 +1,6 @@
-# NAT
+<div align="center">
+  <h1>  NAT </h1>
+</div>
 
 To understand NAT (Network address translation) we must first understand the problem that NAT is trying to solve. To do this, we have a take a look back in time all the way back to the 1970s/1980s, which in terms of technology seems like centuries ago. Way back then, IPv4 was created and it was thought of that there would not be more than 4.3billion devices connected to the internet. Now, at the time this made sense because nobody expected the internet to grow to the usage size as it is today.
 

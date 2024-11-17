@@ -1,5 +1,6 @@
-# Binary Compatibility
-
+<div align="center">
+  <h1> Binary Compatibility </h1>
+</div>
 Binary compatibility between files refers to the ability of compiled code (binaries) to work together without causing errors or crashes. Simply running on the same CPU architecture (e.g. x86, x86_64, ARM) is **necessary**, but **not sufficient** to ensure binary compatibility. The reason is that binary compatibilty depends on more than just the CPU architecture; it also involves:
 
 1. Application Binary Interface (ABI) differences

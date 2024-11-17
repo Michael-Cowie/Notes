@@ -1,4 +1,6 @@
-# `eventFilter`
+<div align="center">
+  <h1>  Qt eventFilter </h1>
+</div>
 
 We are going to begin our study of Qt events by first learning about an event filter in Qt. Any `QObject` can implement it's on `eventFilter` method which can then be installed onto another `QObject` using `installEventFilter`. Typically, it *monitors* the events of another object.
 

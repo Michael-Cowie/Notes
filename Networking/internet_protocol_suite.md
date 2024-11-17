@@ -1,4 +1,6 @@
-# Internet Protocol Suite
+<div align="center">
+  <h1>  Internet Protocol Suite </h1>
+</div>
 
 The **Internet protocol suite**, commonly known as **TCP/IP**, is the set of communication protocols used in the internet and similar computer networks. The current foundational protocols in the suite are the Transmission Control Protocol (TCP), the Internet Protocol (IP), aswell as the User Datagram Protocol (UDP). It is important to note that TCP/IP is simply the name to refer to the Internet protocol suite but is not limited to TCP, for example, UDP can be used. However, the ratio of TCP or UDP traffic is about one million to one so the name TCP/IP was instead adopted because TCP is the most common protocol used.
 

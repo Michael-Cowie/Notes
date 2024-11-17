@@ -1,4 +1,6 @@
-# Diffie–Hellman key exchange
+<div align="center">
+  <h1>  Diffie-Hellman Key Exchange </h1>
+</div>
 
 Diffie-Hellman key exchange is a method of securely exchanging cryptographic keys over a public channel. <br>
 

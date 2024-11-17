@@ -1,5 +1,6 @@
-# Virtual Addresses
-
+<div align="center">
+  <h1>  Virtual Addresses </h1>
+</div>
 Virtual addresses are mainly used to address three core problems,
 
 #### Problems With Memory

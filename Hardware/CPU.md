@@ -1,4 +1,6 @@
-# What is a CPU?
+<div align="center">
+  <h1>  What is a CPU?</h1>
+</div>
 
 The **Central Processing Unit (CPU)**, often referred to as the "brain" of the computer, is a crucial component responsible for executing instructions from programs. It performs the basic arithmetic, logic, control, and input/output (I/O) operations specified by the instructions.
 

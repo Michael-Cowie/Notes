@@ -1,4 +1,6 @@
-# Euclidean Theorem
+<div align="center">
+  <h1> Euclidean Theorem </h1>
+</div>
 
 In number theory, Euler's Theorem states that, if $a$ and $n$ and coprime positive integers, and φ(n) is Euler's totient function, then $a^{φ(n)}$ is congruent to $1$ modulo $n$, that is <br>
 

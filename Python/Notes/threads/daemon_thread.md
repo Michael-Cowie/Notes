@@ -1,4 +1,6 @@
-# Daemon Threads
+<div align="center">
+  <h1>  Daemon Threads </h1>
+</div>
 
 A daemon thread is a type of thread that runs in the background and **does not prevent the application from exiting**. These threads are typically used for background tasks that are not essential to the main program's execution.
 

@@ -1,4 +1,6 @@
-# Object Construction
+<div align="center">
+  <h1> Object Construction </h1>
+</div>
 
 Objects are the foundation of most data structures and applications. They allow you to group related data and behavior together, making your code more modular, reusable, and easier to understand.
 
