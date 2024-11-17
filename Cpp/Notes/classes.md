@@ -388,13 +388,59 @@ Whenever `const` objects try to invokve non-const member functions, the compiler
 
 # Copy Constructor
 
-The copy constructor is a constructor which **creates an object by initializing it with an object of the same class**, which has been created previously. The copy constructor is used to −
+A copy constructor is a special constructor in C++ that initializes a new object as a copy of an existing object. It is invoked when,
 
-- Initialize one object from another of the same type.
-- Copy an object to pass it as an argument to a function.
-- Copy an object to return it from a function.
+1. A new object is created from an existing object (e.g. during initialization)
+2. An object is passed by value to a function
+3. An object is returned by value from a function
 
-Here is a full example,
+The copy constructors primary purpose is to ensure that when one object is copied, the new object is initialized properly, potentially with its own memory or resources.
+
+A copy constructor has the following general signature,
+
+```C++
+ClassName(const ClassName& other);
+```
+
+It takes a single argument that is a `const` reference to an object **of the same class**. The `const` ensures the original object is not modified during copying, and passing by reference avoids unnecessary copying.
+
+The copy constructor is called under the following conditions,
+
+1. **Initialization with another object**
+
+```C++
+MyClass obj1;          // Default constructor
+MyClass obj2 = obj1;   // Copy constructor is called
+```
+2. **Passing an object by value**
+
+```C++
+void myFunction(MyClass obj); // Copy constructor is called when obj is passed
+
+MyClass obj1;
+myFunction(obj1);            // Copy constructor is invoked here
+```
+
+3. **Returning an object by value**
+
+```C++
+MyClass createObject() {
+    MyClass obj;
+    return obj; // Copy constructor may be invoked
+}
+
+MyClass obj2 = createObject();
+```
+
+4. **Throwing or catching objects by value**
+
+```C++
+throw obj;   // Copy constructor is invoked when throwing
+catch (MyClass obj) { }  // Copy constructor is invoked when catching
+```
+
+It's important to distinguish when the copy constructor is being called or `operator=`. The `operator=` is called for **an already existing object**. This is different from the copy constructor, whcih is used to create a new object as a copy of an existing object.
+
 
 ```C++
 #include <iostream>
@@ -405,46 +451,58 @@ class Point
 {
     int x;
     int y;
-    
-    public:
-        Point(int x, int y): x(x), y(y){}
-    
-        Point(Point & obj) 
+
+public:
+    /* Constructor */
+    Point(int x, int y) : x(x), y(y) {}
+
+    /* Copy constructor */
+    Point(const Point& obj)
+    {
+        cout << "Copy constructor called" << endl;
+        x = obj.x * 2;
+        y = obj.y * 2;
+    }
+
+    /* Assignment operator */
+    Point& operator=(const Point& obj)
+    {
+        cout << "Assignment operator called" << endl;
+        if (this != &obj)
         {
-            cout << "Copy constructor called" << endl;
-            // Create the new "Point" from double the previous x and y values
-            x = obj.x * 2;
-            y = obj.y * 2;
+            x = obj.x;
+            y = obj.y;
         }
-        
-        int getX() const
-        {
-            return x;
-        }
-        
-        int getY() const
-        {
-            return y;
-        }
+        return *this;
+    }
+
+    int getX() const
+    {
+        return x;
+    }
+
+    int getY() const
+    {
+        return y;
+    }
 };
 
-
-void print_point(const Point & point){
-    cout << "X: " << point.getX() << endl;
-    cout << "Y: " << point.getY() << endl;
+void print_point(const Point& point) {
+    cout << "X: " << point.getX() << " Y: " << point.getY() << endl;
 }
 
 int main(void)
 {
-    Point p1(1, 2);   //normal constructor
-    print_point(p1); // 1, 2
-    
-    Point p2 = p1;   // copy constructor
-    print_point(p2); // 2, 4
-    
-    Point p3(p2);    // copy constructor
-    print_point(p3); // 4, 8
+    Point p1(1, 2);   // normal constructor
+    print_point(p1);  // 1, 2
+
+    Point p2 = p1;    // copy constructor
+    print_point(p2);  // 2, 4
+
+    p1 = p2;          // assignment operator
+    print_point(p1);  // 2, 4
 }
+
 ```
 
 # Destructors
