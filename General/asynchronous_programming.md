@@ -1,5 +1,5 @@
 <div align=center>
- <h1> Asynchronous Programming in Python</h1>
+    <h1> Asynchronous Programming </h1>
 </div>
 
 Asynchronous programming in Python allows you to write code that performs non-blocking operations, **meaning one task can pause and allow other tasks to execute in the meantime**. This is particularly useful for I/O-bound and high-latency operations, such as working with databases, network requests and reading/writing files.
@@ -66,12 +66,13 @@ The `await` keyword is used to pause the execution of an asynchronous function a
 
 When an asynchronous function encounters an `await` expression, it creates a special object called a "future" that represents the result of the awaited operation. The function then returns control to the event loop, which schedules the future to be executed by a separate execution context, such as a thread or a process. For example, `await asyncio.sleep(2)` will be run in a seperate process, outside of `python.exe` as it will make system calls to the OS (Of course, the python GIL is freed used at this time).
 
-![](../images/event_loop.png)
+<div align=center>
+    <img src="./images/event_loop.png">
+</div>
 
 The event loop continues running other tasks while the future is being executed. When the future completes, it signals the event loop that the result is available. The event loop then resumes the execution of the asynchronous function where it left off, passing the result of the future to the `await` expression, back to the coroutine using the `send()` method from Python generators.
 
 Another visualization of the Event Loop could be the following code snippet,
-
 
 ```Python
 import asyncio
