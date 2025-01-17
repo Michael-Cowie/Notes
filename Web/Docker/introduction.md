@@ -2,7 +2,7 @@
   <h1> Docker Introduction </h1>
 </div>
 
-Docker is virtualization software that makes developing and deploying applications much easier. Docker does this by packaging an application with all the necessary dependencies, configurations, system tools into something called a container. The application code itself, libraries, dependencies and also the runtime and environment configuration. So, the application and its running environment are
+Docker is virtualization software that makes developing and deploying applications much easier. **Docker does this by packaging an application with all the necessary dependencies, configurations, system tools into something called a container**. The application code itself, libraries, dependencies and also the runtime and environment configuration. So, the application and its running environment are
 both packaged in a single Docker package which we can easily share and distribute. The two key concepts to understand in Docker are **containers** and **images**. Containers and images are fundamental concepts that work together to facilitate the deployment and execution of applications.
 
 
@@ -115,48 +115,156 @@ When you're done with development and we want to release it to the end users, we
 
 ![](../images/docker_intro_6.png)
 
-A Dockerfile is a text document that contains commands to assemble an image. Docker can then build an image by reading those instructions. Here, I will demonstrate a small example for a small Node.js application and then build an image for it.
+A **Dockerfile** is a text file that defines the instructions to build a Docker image. It follows a specific structure, **creating layers** that stack together to form a final image. The order of commands and efficient layering significantly affect the iamges size, performance and build time.
 
-I will create a small container for the following code snippet, creating a small Node.js server.
+A Dockerfile consists of keywords (instructions) followed by arguments. Each line defines a step in the image-building process. Comments begin with `#`.
 
-![](../images/docker_intro_7.png)
+The basic syntax is,
 
-
-Dockerfiles start from a parent image or "base image". It's a Docker image that your image is based on. You choose the base image, depending on which tools you need to have available. In this example, we need a Node.js based application to run on Linux, because to execute our server we run `node src/server.js`.
-
-Dockerfiles must begin with a FROM instruction. Build this image from the specified image. Looking on Docker Hub we can choose our [node image](https://hub.docker.com/_/node) from the registry. In this example I will use the base image of `node`. This means that our environment will have `node` and `npm` commands inside, implicitly using the tag `latest`.
-
-The `node` base image is an empty Linux based operating system. Therefore we must first copy over our application code to the target directories. The `WORKDIR` will set the current working directory. Next, we simply `npm install` to get the `express` dependency defined inside the `package.json`. Although the `RUN` command is used to execute shell commands, the final command to start the server must be `CMD` and follows a different syntax using a list of strings.
-
-Defining this Docker file gives us the ability to generate an Image. Next, it is time to actually build the image from this definition. The command for this is `docker build <path>`. It is useful to use the `-t` flag to provide a name and optionally a tag in the format of `-t <name>:<tag>`. 
-
-Here, I will use the command `docker build -t node-app:1.0.0 .` to generate my image. This is telling Docker to generate an image from the definition provided inside the Dockerfile, name it `node-app` and tag the version with `1.0.0`. Typing `docker images`, we can now see it created locally.
-
-```sh
-C:\Users\Michael\Desktop\Docker\intro>docker images
-REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
-node-app     1.0.0     812be17510e0   3 minutes ago   1.11GB
+```
+# Comment
+INSTRUCTION arguments
 ```
 
-We can now create a container from our created image using,
+Docker images are made up of **layers**, with each instruction in the Dockerfile creating a new layer. These layers are stacked to form the final image, and Docker uses **layer caching** to optimize builds.
 
-```sh
-docker run -d --name myserver -p 3000:3000 node-app:1.0.0
+Each instruction (e.g., `RUN`, `COPY`) creates a new layer. Layers are cached. If a layer doesn't change, it's reused from the cache, speeding up subsequent builds. Changing one layer invalidates the cache for all subsequent layers. This means that any modification to a step in the Dockerfile forces Docker to rebuild that layer and all layers that come after it, even if those subsequent layers haven't changed.
+
+Some of the best practices for layer management are,
+
+1. **Place rarely changing instructions early** - These layers are cached, rebuilding rebuild time.
+
+2. **Combine commands** - Minimize the number of layers by combining related `RUN` commands.
+
+3. **Avoid redundant layers** - Remove unnecessary steps to keep the image smaller.
+
+The order of commands in a Dockerfile matters because,
+
+1. **Layer Caching** - Changing an earlier instruction invalidates the cache for all following layers.
+
+2. **Dependency Management** - Instructions that depend on previous steps must follow them.
+
+3. **Efficiency** - Logical ordering minimizes unecessary rebuilds and ensures correctness.
+
+Here is an example of inefficient ordering,
+
+```Docker
+COPY . /app
+RUN apt-get update && apt-get install -y curl
 ```
 
-Running `docker ps`, we will see our container and node app running on port `3000`. Our server is now accessible from `localhost:3000`
+Any change to the files in the `COPY` step will force the `RUN` step to execute again, wasting time.
 
-```sh
-C:\Users\Michael\Desktop\Docker\intro>docker ps
-CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                    NAMES
-44d51230c723   node-app:1.0.0   "docker-entrypoint.s…"   46 seconds ago   Up 46 seconds   0.0.0.0:3000->3000/tcp   myserver
+```Docker
+RUN apt-get update && apt-get install -y curl
+COPY . /app
 ```
 
-Grabbing this ID, we can also execute `docker logs 44d51230c723` to view the output in our container, which is `app listening on port 3000`.
+Here, the `RUN` step is cached and doesn't need to be repeated unless dependencies change.
 
-```sh
-C:\Users\Michael\Desktop\Docker\intro>docker logs 44d51230c723
-app listening on port 3000
+Some of the essential keywords in Docker are,
+
+1. `FROM` - This is **required** and it specifies the base image. Every Dockerfile must begin with a `FROM` instruction.
+
+```Docker
+FROM python:3.9-slim
+```
+
+This sets the foundation for the image and is in the format of `<name>:<version>`.
+
+- `python` - This indiciates the official Python image available on Docker Hub.
+- `3.9` - Specifies the Python version, in this case, Python 3.9.
+- `slim` - Refers to a variant of the Python 3.9 image is smaller and more lightweight compared to the default Python image.
+
+2. `RUN` - Executes commands in the shell during the **build process**, typically for installing software or configuring the environment.
+
+```Docker
+RUN apt-get update && apt-get install -y curl
+```
+
+3. - `COPY` and `ADD` - These commands will **add files from the host machine to the image**. The difference is that `COPY` will copy files or directories while `ADD` has the same functionality as `COPY` but also supports remote URLs and archive extraction.
+
+```Docker
+COPY app.py /app/
+```
+
+4. `CMD` - Specifies the default command to run **when the container starts**. Can be overridden by the user.
+
+```Docker
+CMD ["python", "app.py"]
+```
+
+You should use `CMD` to set defaults and `ENTRYPOINT` for required commands.
+
+5. `ENTRYPOINT` - Defines the containers main process. Unlike `CMD`, it's difficult to override.
+
+
+```Python
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+```
+
+The `ENTRYPOINT` specifies a command that will always be executed when the container starts. The `CMD` specifies arguments that will be fed to the ENTRYPOINT.
+
+6. `WORKDIR` - Sets the working directory for subsequent instructions.
+
+```Docker
+WORKDIR /app
+```
+
+7. `EXPOSE` - **Documents** the port on which the container listens. This is optional, it does not actually publish the port.
+
+```Docker
+EXPOSE 8080
+```
+
+8. `ENV` - Sets environment variables in the container.
+
+```Docker
+ENV APP_ENV=production
+```
+
+This is a subtle list of available options with many more available!
+
+Here is a practical example of a Dockerfile for a Python web application.
+
+```Docker
+# Base image
+FROM python:3.9-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install dependencies
+RUN apt-get update && apt-get install -y build-essential
+RUN pip install --no-cache-dir flask
+
+# Set working directory
+WORKDIR /app
+
+# Copy application code
+COPY . /app
+
+# Expose the port
+EXPOSE 5000
+
+# Default command
+CMD ["python", "app.py"]
+```
+
+The `docker build` command is used to create a Docker image based on the Dockerfile,
+
+```Docker
+docker build -t my-python-app .
+```
+
+- `-t my-python-app` - Tags the image with the name `my-python-app`.
+- `.` - Indicates the context directory, which is sent to the Docker daemon. This directory includes the Dockerfile and the application code.
+
+Once built, the image is stored locally and can be listed with,
+
+```Docker
+docker images
 ```
 
 ##### Development and Deployment Lifeycle
