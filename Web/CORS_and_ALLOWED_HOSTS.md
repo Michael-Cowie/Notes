@@ -18,21 +18,23 @@ This setting specifies a list of origins that are allowed to make cross-origin r
 
 #### CORS
 
+The purpose of CORS is to control which web origins (i.e., websites) can interact with your backend API. The `Origin` header is a reflection of the website or application making the request—not the user behind it.
+
 To understand CORS better I will break it down and create a simple example from the context of a DRF (Django Rest Framework) application. Imagine you're building a web application using Django Rest Framework for the backend and a separate frontend framework like React.js or Angular.js for the client-side. These two parts might be hosted on different domains (e.g., backend on `api.example.com` and frontend on `app.example.com`).
 
 When your frontend (e.g., JavaScript code running in the browser) tries to make requests to your Django Rest Framework API, the browser blocks these requests by default due to security reasons (CORS policy). To allow these cross-origin requests from your frontend to your Django Rest Framework API, you specify the domains (origins) that are allowed to access your API in the `CORS_ORIGIN_WHITELIST` setting.
 
-When a client, typically a web browser, makes a cross-origin request to your Django application, it includes an Origin header in the HTTP request. This header indicates the domain from which the request originates. For example, if a frontend application hosted at `https://frontend.example.com` makes a request to your Django backend hosted at `https://api.example.com`, the `Origin` header in the request will be set to `https://frontend.example.com`.
+When a client, typically a web browser, makes a cross-origin request to your Django application, it includes an `Origin` header in the HTTP request. **This header indicates the domain from which the request originates**. For example, if a frontend application hosted at `https://frontend.example.com` makes a request to your Django backend hosted at `https://api.example.com`, the `Origin` header in the request will be set to `https://frontend.example.com`. This header **does not represent the user's IP address** but rather the webpage (or origin) that initiated the request. The `Origin` header helps enforce the browser's security model known as Same-Origin Policy.
 
 Django middleware, specifically the Django CORS middleware when configured with `CORS_ORIGIN_WHITELIST`, checks this `Origin` header against the list of domains specified in `CORS_ORIGIN_WHITELIST`. If the domain specified in the `Origin` header matches any domain listed in `CORS_ORIGIN_WHITELIST`, Django includes the necessary CORS headers in the response to allow the cross-origin request. These headers inform the browser that the request is permitted and specify which methods (e.g., `GET`, `POST`) and headers can be used in the cross-origin request.
 
-When hosting the backend to a server on the web, for example, `wwww.radix.fitness.com`, this will require updating of `CORS_ORIGIN_WHITELIST` to also include `radix.fitness.com`. An origin is a combination of hostname, port, and scheme.
+When hosting the backend to a server on the web, for example, `wwww.radix.fitness.com`, this will require updating of `CORS_ORIGIN_WHITELIST` to also include `radix.fitness.com`. The `Origin` header is included in cross-origin HTTP requests by web browsers to indicate the originating domain (protocol + hostname + port) of the request. 
 
 ```
 https://foo.example.com:8080//
 ^^^^    ^^^^^^^^^^^^^^^ ^^^^   
  ||           ||         ||
-scheme     hostname     port
+protocol   hostname     port
 ```
 
 Therefore, the request IP address is irrelevant here as CORS is primarily focusing on the `Origin` HTTP header field which indicates the domain from which the request originates. In summary, `CORS_ORIGIN_WHITELIST` is used to control access to your Django application based on the `Origin` header in cross-origin requests.

@@ -2,9 +2,7 @@
   <h1> GitHub Actions </h1>
 </div>
 
-GitHub Actions is a **continuous integration and continuous delivery (CI/CD) platform** that allows you to automate your build, test and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
-
-GitHub Actions goes beyond just DevOps and lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.
+GitHub Actions is a **continuous integration and continuous delivery (CI/CD) platform** that allows you to automate your build, test and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production. GitHub Actions goes beyond just DevOps and lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.
 
 GitHub provides Linux, Windows, and macOS virtual machines to run your workflows, or you can host your own self-hosted runners in your own data center or cloud infrastructure.
 
@@ -213,9 +211,7 @@ An **action** is a custom application for the GitHub Actions platform that perfo
 
 You can write your own actions, or you can find actions to use in your workflows in the GitHub Marketplace.
 
-The GitHub Actions `checkout` step is commonly used in workflows to check out your repositorys code into the GitHub Actions runner so that the workflow can operate on it, such as running tests.
-
-The most basic usage of the `checkout` action looks like this,
+The GitHub Actions `checkout` step is commonly used in workflows to check out your repositorys code into the GitHub Actions runner so that the workflow can operate on it, such as running tests. The most basic usage of the `checkout` action looks like this,
 
 ```YAML
 jobs:
