@@ -2,9 +2,9 @@
   <h1> Volumes </h1>
 </div>
 
-On a host we have a physical file system. The way volumes work is that we plug the physical file system path into the containers file system path. Meaning, a folder in the physical host file system is mounted into the virtual file system of Docker. What happens is that when a container writes to its file system it gets automatically repliced/written on the host file system directory (and vice versa). This is why, if a container restarts from a fresh state in its own virtual file system it gets the data automatically from the host because the data is still there. This is how data is populated on startup of a container.
+A volume in Docker is an independent filesystem managed by Docker **that is mounted to a container**. Volumes are stored in a part of the host filesystem managed by Docker, and they aren't typically tied to the lifecycle of a specific container. You "attach" a docker-managed storage unit to a specific location in your containers filesystem. This means that your container is referencing the directory that it is mounted to and any changes made will be reflected on the volume.
 
-Volumes provide a way to persist data beyond the lifecycle of a container. They can be used to share files between the host machine and the container or between multiple containers. When you mount a volume to a container, the contents of the volume are accessible to the container at runtime, and any changes made to the volume from within the container are reflected on the host machine and vice versa.
+Volumes provide a way to persist data beyond the lifecycle of a container. They can be used to share files between the host machine and the container or between multiple containers. When you mount a volume to a container, the contents of the volume are accessible to the container **at runtime**, and any changes made to the volume from within the container are reflected on the host machine and vice versa.
 
 **Volumes are mounted to containers during the runtime stage, when you create and start a container from a Docker image.  Because volumes are used at runtime, the `.dockerignore` file is used to ignore files during build time. Therefore, it doesn't works with volumes.**
 
@@ -64,57 +64,10 @@ services:
         ports:
             - 27017:27017
         volumes:
-            - db-data/var/lib/mysql/data
+            - db-data:/var/lib/mysql/data
 volumes:
     db-data
 ```
-
-# Host Volume Example
-
-
-Once an image is made, it becomes read only. Meaning, if we change our application in anyway whether it be changing the source code or adding new dependencies we then have to rebuild a new image based on those changes.
-
-We can see that a container by default does not update by stopping and restarting a container by executing,
-
-```bash
-docker start my_container
-```
-
-Then observing the application and make changes,
-
-```bash
-docker stop my_container
-docker start my_container
-```
-
-Keep in mind, `docker start` does not spawn a new container. However, `docker run` will create a new container instance. What we are observing is not a bug. This is expected behaviour as an image is a snapshot of the code taken at that point in time, it should not be expected to change or update. Once the image is created, it will become read only. To resolve this without volumes we would have to create a completely new image from the new code and make a new container from the new image.
-
-To get around this behaviour, Docker offers volumes. Volumes are a feature that allow us to specify folders on our **host computer** that can be made available to running containers. We can map the folders on our host computer to specific folders inside the container. This means, if anything changed inside the specified folders on the host machine, that change will also be reflected into the mapped to folders inside the container.
-
-One important thing to note about this is that the image itself **does not change**. Volumes just give us a way to map directories between containers and the host computer. The image that the container is running does not change. If we wanted to update the image to share or create new containers, then we will have to rebuild the image. Volumes are very useful for development purposes to see the changes without rebuilding the image.
-
-Given a project structure as,
-
-```
-api/
-├─ node_modules/
-│  ├─ app.js
-│  ├─ DockerFile
-│  ├─ package.json
-│  ├─ package-lock.json
-```
-
-and a Docker file which will be causing the container to work in `/app` which is caused by having `WORKDIR /app` inside the Docker file.
-
-We need to map our `api` folder to `/app` in the container, using volumes. This can be done by the `-v` flag when creating our container, e.g.
-
-```cmd
-docker run --name my_container -v C:\...\api:/app my_image
-```
-
-Where the format is `<host folder>:<container folder>`. This means, any changes inside of `C:\...\api` will now be pushed to the container inside of `/app`.
-
-In addition we can add a `-v /app/node_modules` to mount a volume (Docker internal volume) at the `/app/node_modules` directory inside the container. This can be added to avoid overwriting the `node_modules` directory with the local version. Mounting a volume here means that the `node_modules` directory will not be used and the image's built in `node_modules` will be preserved.
 
 # Persistent Storage Using Named Volumes
 
@@ -145,7 +98,7 @@ We can break down the previous command as follows,
 - `--name mysql_db` - This option assigns the name `mysql_db` to the container.
 - `-e MYSQL_ROOT_PASSWORD=password` - This option sets an environment variable that is used by the MySQL Docker image to set the root password for the MySQL server running inside the container.
 - `-e MYSQL_DATABASE=my_database` - This option sets an environment variable `MYSQL_DATABASE` to `my_database`. This environment variable tells MySQL Docker image to create a database named `my_database` when the container starts.
-- `-v mysql_data:/var/lib/mysql` - This option uses the Docker volume named `mysql_data` mounts it to the directory `/var/lib/mysql` inside the container. This is where MySQL typically stores its data, including databases and tables. By using a volume, the data stored in this directory will persist even if the container is stopped or removed.
+- `-v mysql_data:/var/lib/mysql` - This option uses the Docker volume named `mysql_data` and **mounts it to** the directory `/var/lib/mysql` inside the container. This is where MySQL typically stores its data, including databases and tables. By using a volume, the data stored in this directory will persist even if the container is stopped or removed.
 - `mysql:latest` - This is the name and tag of the Docker image used to create the container. In this case, it's the official MySQL Docker image tagged as `latest`, which means it will use the latest available version of the MySQL image.
 
 In summary, when we run the command Docker will create a new container called `mysql_db` based on the `mysql:latest` image. The container will run in detached mode, setting the MySQL root password to `password` and create a database named `my_database`. Additionally, it will use a Docker volume named `mysql_data` to persist the MySQL data in the `/var/lib/mysql` directory.
@@ -154,7 +107,9 @@ After executing the command we can see creation of the image and container,
 
 ![](../images/docker_named_volumes_2.png)
 
-The volume has now been populated from the container initialization. Inside the `mysql_data` volume we can also see the `my_database` folder. Additionally, when we use the Volume from the flag `-v mysql_data:/var/lib/mysql` we can compare to volume to the container folder structure. When we use a volume, we are mounting the directory inside the container to the volume. This means that the container is no longer referencing a directory inside the container, but rather, it is now "mounted" and referring to the volume. This means any changes the container does inside of `/var/lib/mysql` will be making changes inside the volume, hence, when we initialized the MySQL server and the directory was populated with files, it is reflected inside the volume.
+The volume has now been populated from the container initialization. Inside the `mysql_data` volume we can also see the `my_database` folder. Additionally, when we use the Volume from the flag `-v mysql_data:/var/lib/mysql` we can compare to volume to the container folder structure. 
+
+**When we use a volume, we are mounting the volume to the directory inside the container**. This means that the container is no longer referencing a directory inside the container, but rather, it is now mounted and pointing to the volume. This means any changes the container does inside of `/var/lib/mysql` will be making changes inside the volume, **hence, when we initialized the MySQL server and the directory was populated with files, it is reflected inside the volume**.
 
 ![](../images/docker_named_volumes_5.png)
 
@@ -212,16 +167,17 @@ to delete the container. At this point, the MySQL container has been stopped and
 docker run -d --name mysql_db -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=my_database -v mysql_data:/var/lib/mysql mysql:latest
 ```
 
-Before the container starts, we have mounted `/var/lib/mysql` to our volume, they will contain the previously created files during the database initialization. Now, because these files exist, MySQL will run any initialization files again.
+Before the container starts, we have mounted `/var/lib/mysql` to our volume, they will contain the previously created files during the database initialization. Now, because these files exist, MySQL will not run any initialization files again.
 
 ```sh
 docker exec -it mysql_db mysql -u root -p
 ```
 
+Verify the data is still present.
+
 ```SQL
 USE my_database;
 
--- Verify the data is still present
 SELECT * FROM example_table;
 ```
 
@@ -275,4 +231,4 @@ USE my_database;
 SELECT * FROM example_table;
 ```
 
-To validate the same thing.
+To validate the same thing. This works because when you first run the database container and specify a volume, Docker mounts the volume at a directory inside the container. The database initializes itself, creates its files (schemas, tables, etc.), and stores them in the volume. If you stop or remove the container but don't delete the volume, the data remains stored in the volume. When you create a new container and mount the same volume, the database finds the existing data in the volume and continues from where it left off. Your tables, data, and configurations are preserved. This is why we can observe out tables still being here.
