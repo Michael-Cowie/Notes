@@ -21,7 +21,7 @@ If a box has a display value of `block`, then
 
 - The box will **break onto a new line**.
 - The `width` and `height` properties **are respected**.
-- Padding, margin and border will cause other elements **to be pushed away**.
+- `padding`, `border` and `margin` will cause other elements **to be pushed away**.
 - If `width` is not specified, the box will extend in the inline direction **to fill the space available in its container**. In most cases, the box will become as wide as its container, filling up 100% of the space available.
 
 Some HTML elements, such as `<h1>` and `<p>` use `block` as their outer display type by default.
@@ -32,8 +32,8 @@ If a box has a display type of `inline`, then
 
 - The box **will not break onto a new line**.
 - The `width` and `height` properties **will NOT apply**.
-- Top and bottom padding, margins and borders will apply but **will NOT cause other inline boxes** to move away from the box.
-- Left and right padding, margins and borders will apply and will cause other inline boxes to move away from the box.
+- Top and bottom `padding`, `border` and `margin` will apply but **will NOT cause other `inline` boxes** to move away from the box.
+- Left and right `padding`, `border` and `margin` will apply and **will cause other `inline` boxes** to move away from the box.
 
 Some HTML elements, such as `<a>`, `<span>` and `<strong>` use `inline` as their default display type by default.
 
@@ -52,20 +52,13 @@ Some HTML elements such as `<button>` and `<input>` use `inline-block` as their 
 
 #### Inner and Outer Display Types
 
-`block`, `inline` and `inline-block` display value are said to be **outer display** types - they affect how the box is laid out in relation to other boxes around it. Boxes also have an **inner display** type, which dictates how elements **inside that box** are laid out.
+`block`, `inline` and `inline-block` display value are said to be **outer display** types, they affect how the box is laid out in relation to other boxes around it. Boxes also have an **inner display** type, which dictates how elements **inside that box** are laid out.
 
 You can change the inner display type by setting an inner display value, for example `display: flex;`. The element will still use the outer display type `block` but this changes the inner display type to `flex`. Any **direct children** of this box will become flex items and behave according to the Flexbox specification.
 
 ##### Outer Display Type
 
-The outer display type controls how the element fits into the document flow. The main types are,
-
-| Outer Display Type | Description |
-| -------------------| ----------- |
-| `block` | Starts on a new line and takes up the full width of its container|
-| `inline` | Stays in line with surrounding text and only takes up as much width as necessary |
-| `inline-block` | Behaves like `inline` but allows setting the `width` and `height` property.
-| `none` | Hides the element completely and is removed from document flow |
+The outer display type controls how the element fits into the document flow. The main types are `block`, `inline` and `inline-block`,which were previously described but also include `none`. Using `none` will hide the element completely and it is removed from document flow.
 
 ##### Inner Display Type
 
@@ -93,7 +86,7 @@ Some `display` values are shorthand for both **outer and inner** display types.
 
 # CSS Box Model
 
-The CSS box model as a whole applies to applies to `block` boxes and defines how the different parts of a box - margin, border, padding and content work together to create a box that you can see on a page. `inline` boxes use **just some of the behaviour** defined in the box model.
+The CSS box model as a whole applies to applies to `block` boxes and defines how the different parts of a box - `margin`, `border`, `padding` and the content area work together to create a box that you can see on a page. `inline` boxes use **just some of the behaviour** defined in the box model.
 
 To add complexity, there is a standard and alternative box model. By default, browsers use the standard box model.
 
@@ -139,7 +132,7 @@ The **margin is not counted** towards the actual size. It affects the total spac
 
 # The Alternative CSS Box Model
 
-In the alternative box model, any width is the **width of the visible box on the page**. The content area width is that width minus the width for the padding and border. No need to add up the border and padding to get the real size of the box.
+In the alternative box model, any width is the **width of the visible box on the page**. The content area width is that width minus the width for the `padding` and `border`. No need to add up the border and padding to get the real size of the box.
 
 To turn on the alternative model for an element, set `box-sizing: border-box` on it.
 
@@ -182,7 +175,7 @@ We can control all margins of an element at once using the `margin` property, or
 
 #### Margin Collapsing
 
-Depending on whether two elements whose whose **margins touch** have positive or negative margins, the results will be different.
+Depending on whether two elements whose **margins touch** have positive or negative margins, the results will be different.
 
 - **Two positive margins** will combine to become one margin. Its size will be equal to the **largest individual margin**.
 - **Two negative margins** will collapse and the smallest value will be used.

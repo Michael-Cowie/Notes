@@ -272,4 +272,4 @@ Inline styles are CSS declarations that affects a single HTML element, contained
 <span style="color: purple; font-weight: bold">span element</span>
 ```
 
-Generally, **avoid using CSS in this way if possible**. It is considered bad practice. First, it is the least efficient implementation of CSS for maintenance. One styling change might require multiple edits within a single webo page. Second, inline CSS also mixes (CSS) presentational code with HTML and content, making everything more difficult to read and understand. Separating code and content makes maintenance easier for all who work on the website.
+Generally, **avoid using CSS in this way if possible**. It is considered bad practice. First, it is the least efficient implementation of CSS for maintenance. One styling change might require multiple edits within a single webpage. Second, inline CSS also mixes (CSS) presentational code with HTML and content, making everything more difficult to read and understand. Separating code and content makes maintenance easier for all who work on the website.
