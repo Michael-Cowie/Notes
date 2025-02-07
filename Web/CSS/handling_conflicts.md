@@ -75,19 +75,19 @@ The text will be red because the line style `color: red;` has the highest preced
 
 # Inheritance
 
-Some CSS property values set on parent elements are inherited by their child elements and some aren't.
-
-For example, if you set a `color` and `font-family` on an element, **every element inside it** will also be styled with that colour and font, unless you've applied different colours and font values directly to them. **By default, text-related properties** are inherited such as,
+Some CSS property values set on parent elements are inherited by their child elements and some aren't. For example, if you set `color` and `font-family` on an element, **every element inside it** will also be styled with that colour and font, unless you've applied different colours and font values directly to them. **By default, text-related properties** are inherited such as,
 
 - `color`
 - `font` - Including, `font-family`, `font-size`, `...`
 - `cursor`
 
-Here, we have set the `<div>` to a `color: blue` style, meaning the `<span>` within it will inherit that colour. However, the other `<span>` has a style applied to it where it will be red, which overwrites and it and will not inherit blue.
+Here, we have set the `<div>` to have `color: blue;`, meaning the `<span>` within it will inherit that colour. However, the other `<p>` has a style applied to it where it will be red, which overwrites and it and will not inherit blue.
 
-![](./images/12.png)
+<div align="center">
+  <img src="./images/12.png">
+</div>
 
-Most **box model properties such as spacing, layout-related properties are not inherited**. Including,
+Most **box model properties such as spacing and layout-related properties are not inherited**. Including,
 
 - `width` and `height`
 - `margin`, `border` and `padding`
