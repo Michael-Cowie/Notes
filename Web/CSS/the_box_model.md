@@ -175,6 +175,8 @@ We can control all margins of an element at once using the `margin` property, or
 
 #### Margin Collapsing
 
+**Margin collapsing is when two vertical margins "combine" into a single margin**, taking the larger value of the two. This only happens with vertical margins (top and bottom), **never with horizontal margins** (left and right)
+
 Depending on whether two elements whose **margins touch** have positive or negative margins, the results will be different.
 
 - **Two positive margins** will combine to become one margin. Its size will be equal to the **largest individual margin**.

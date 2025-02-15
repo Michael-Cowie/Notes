@@ -87,6 +87,25 @@ Here, we have set the `<div>` to have `color: blue;`, meaning the `<span>` withi
   <img src="./images/12.png">
 </div>
 
+
+Additionally, **inherited values cascade to multiple children**. Meaning, if we have,
+
+```HTML
+<div>
+  <p>
+    <span> I am red </span>
+  </p>
+</div>
+```
+
+```CSS
+div {
+  color: red;
+}
+```
+
+The `<span>` will inherit `color: red;` from the `<div>`. If the `<p>` has its own `color` set, then the `<span>` will inherit the `<p>` `color` value instead of `<div>`. You will always inherit from the closest parent that has a defined value.
+
 Most **box model properties such as spacing and layout-related properties are not inherited**. Including,
 
 - `width` and `height`
@@ -96,3 +115,191 @@ Most **box model properties such as spacing and layout-related properties are no
 
 
 These properties do not inherit by default to prevent unintended design issues. If you set a `width` of 50% on an element, all of its descendants do not get a `width` of 50% of their parents width. If this was the case, CSS would be very frustrating to use.
+
+# Overridden values
+
+Some properties **override** or **invalidate** others based on their behavior, the rendering model, or the browser’s layout rules. Understanding which properties override others will help you debug layouts more effectively.
+
+Typically, overridden values occur or can be found by,
+
+#### Check the CSS Specification and Rendering Rules
+
+Some properties **cannot coexist** logically, e.g., `width` is ignored for `display: inline` elements.
+
+This means if we had,
+
+```CSS
+.example {
+  display: inline;
+  width: 1000px;
+  color: red;
+  background: black;
+}
+```
+
+The `width: 1000px;` **will not** be applied to the element.
+
+Some properties **take precedence** based on the layout mode, e.g. `position: absolute` removes the element from normal flow, so `display:inline` becomes meaningless.
+
+This means if we had,
+
+```CSS
+.example {
+  position: absolute;
+  display: inline;
+  width: 1000px;
+  color: red;
+  background: black;
+}
+```
+
+The element **will have a width of** `1000px` as `position: absolute` will implicitly set `display: block` on the element and has overridden `display: inline;`
+
+#### Use Developers Tools
+
+Right-click on an element and choose **Inspect Element**, check for **Computed Styles** in the browsers DevTools. These will show the final result.
+
+In our previous example if we had,
+
+```HTML
+<span class="example">
+  Example Text
+</span>
+```
+
+```CSS
+.example {
+  position: absolute;
+  display: inline;
+  width: 1000px;
+  color: red;
+  background: black;
+}
+```
+
+We can observe that the class `.example` is being applied, but the final `display` value is `block` and not `inline`.
+
+<div align="center">
+  <img src="./images/13.png">
+</div>
+
+#### Look for Conflicting Properties
+
+When two properties **control the same aspect of an element**, e.g. `float` and `display`, one might take precedence and it is important to detect this using the DevTools.
+
+# Frequently Overridden Values
+
+#### Position-related Overrides
+
+```CSS
+.positioned-element {
+    position: absolute;
+
+    /* The following get automatically applied/overridden */
+    display: block;
+    float: none;
+    clear: none;
+    margin: 0;
+}
+
+.fixed-element {
+    position: fixed;
+
+    /* Same overrides as absolute */
+    display: block;
+    float: none;
+    clear: none;
+    margin: 0;
+}
+```
+
+#### Float Overrides
+
+```CSS
+.floated-element {
+    float: left;
+
+    /* Even if you set these, they get overridden */
+    display: block;
+}
+
+.inline-but-floated {
+    display: inline;
+    float: right;
+
+    /* display becomes block automatically */
+    display: block;
+}
+```
+
+#### Display-related Overrides
+
+```CSS
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    /* These get overridden even if set */
+    float: none;
+    clear: none;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-child {
+    /* These get overridden even if set */
+    float: none;
+    clear: none;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+    position: absolute;
+
+    /* becomes regular flex when positioned */
+    display: flex;
+}
+```
+
+#### Margin Collapsing Context
+
+```CSS
+.block-element {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Margins can collapse with other block elements */
+}
+
+.absolute-block {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Margins won't collapse due to positioning */
+}
+```
+
+#### Percentage Heights
+
+```CSS
+.parent {
+    position: relative;
+    /* Height must be defined for child percentages to work */
+    height: 500px;
+}
+
+.child {
+    height: 50%;  /* Works because parent has defined height */
+}
+
+.undefined-parent {
+    position: relative;
+    /* No height defined */
+}
+
+.child-no-height {
+    height: 50%;  /* Won't work, collapses to auto */
+}
+```
