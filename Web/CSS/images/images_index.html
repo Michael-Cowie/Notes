@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit Demo</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed red;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3> Normal </h3>
+    <div class="container">
+        <img src="./kittens_300_200.png" style="width: 300px; height: 200px;">
+    </div>
+
+    <h3>fill (default)</h3>
+    <div class="container">
+        <img src="./kittens_300_200.png" style="object-fit: fill">
+    </div>
+
+    <h3>contain</h3>
+    <div class="container">
+        <img src="./kittens_300_200.png"  style="object-fit: contain">
+    </div>
+
+    <h3>cover</h3>
+    <div class="container">
+        <img src="./kittens_300_200.png"  style="object-fit: cover">
+    </div>
+
+    <h3>none</h3>
+    <div class="container">
+        <img src="./kittens_300_200.png" style="object-fit: none">
+    </div>
+
+    <h3>scale-down</h3>
+    <div class="container">
+        <img src="./kittens_300_200.png" style="object-fit: scale-down">
+    </div>
+</body>
+</html>
