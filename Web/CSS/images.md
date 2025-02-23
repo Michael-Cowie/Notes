@@ -1,18 +1,16 @@
 <div align="center">
-    <h1> Images, Media and Form Layouts
+    <h1> Images
 </div>
 
-Images and video are described as **replaced elements**. This means that CSS cannot affect the internal layout of these elements, only their position on the page amongst other elements.
+Images and video are described as **replaced elements**. This means that CSS cannot affect the internal layout of these elements, only their position on the page amongst other elements. Certain replaced elements, such as images and video, are also described as having **an aspect ratio**. This means that it has a size in both the horizontal (`x`) and vertical (`y`) dimensions and will be displayed using the intrinsic dimensions of the file by default. The aspect ratio is the proportional relationship between the width and height of an image, video, or any rectangular element.
 
-Certain replaced elements, such as images and video, are also described as having **an aspect ratio**. This means that it has a size in both the horizontal (`x`) and vertical (`y`) dimensions and will be displayed using the intrinsic dimensions of the file by default.
-
-# Content Images
+$$ \text{Aspect Ratio} = \frac{\text{Width}}{\text{Height}}$$
 
 By default, images want to show their true size. Images start as inline elements (they flow with text). **They sit on the texts baseline by default**, which often creates that annoying little gap at the bottom. This gap, while seemingly arbitrary, is actually a result of how browsers handle inline elements and text baseline alignment.
 
 When an image is placed in an HTML document using the `<img>` tag, browsers apply certain default styles and behaviours.
 
-- **Intrinsic Dimensions** - The images natural width and height (intrinsic size) are determined by its file properties.
+- **Intrinsic Dimensions** - The images natural width and height are determined by its file properties.
 - **Default Display Mode** -  Images are inline elements by default (`display: inline`). This means they behave like text characters and align with surrounding inline content.
 - **Intrinsic Aspect Ratio Preservation** - Unless explicitly overridden, **the browser scales images proportionally** to maintain aspect ratio. Images maintain aspect ratio when **only width OR height** is specified. Images potentially distort when both width and height are specified.
 - **No Scaling Unless Defined** - If no width or height is specified, the image is displayed at its natural size.
@@ -132,7 +130,7 @@ For this reason, if the `<img>` is within a container, `width: 100%` and `height
 
 #### Default Behaviour - No `object-fit`
 
-Before applying `object-fit`, let's look at an image inside a **fixed-sized container** without any styling. Allow examples below will be placing a `200 x 200` image within a `300 x 200` container.
+Before applying `object-fit`, let's look at an image inside a **fixed-sized container** without any styling. The examples below will be placing a `300 x 200` image within a `200 x 200` container.
 
 
 <div align="center">
@@ -271,7 +269,14 @@ The `scale-down` value compares the results of `none` and `contain`, then **uses
 
 - `none` would display at `300 x 200`. The original size.
 - `contain` would display at `200 x 133` - Scaled down.
-- Since `contain` results in a smaller 
+- Since `contain` results in a smaller, this is the one that is used. The result looks identical to `contain` in this case.
+- If the original image were smaller than the container, it would display at its original size.
+
+This is useful for,
+
+- Galleries with mixed image sizes to stay small.
+- Responsive designs where images shouldn't exceed their original size.
+- Situations where you want to prevent upscaling of small images.
 
 <div align="center">
     <img src="./images/scale-down.png">

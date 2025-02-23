@@ -450,7 +450,7 @@ Pseudo-elements allow you to style specific parts of an element without needing 
 4. `::first-line` - Styles the **first line** of an element.
 5. `::selection` - Styles text when selected.
 
-These pseudo-elements **do not create new DOM elements** but are instead rendered as ps part of the selected  element. They're treated as **child elements** property to display anything and require the `content` property to display anything. They're inline by default but can be styled with CSS properties like `display`, `position`, `width`, ...
+These pseudo-elements **do not create new DOM elements** but are instead rendered as part of the selected  element. They're treated as **child elements** property to display anything and require the `content` property to display anything. They're inline by default but can be styled with CSS properties like `display`, `position`, `width`, ...
 
 Even though `::before` and `::after` are not actual DOM elements, they behave as if they were children of the selected element. They do not appear in the DOM tree when inspecting elements but can be seen in the rendered output using browser developer tools.
 
