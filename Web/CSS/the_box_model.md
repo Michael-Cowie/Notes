@@ -202,7 +202,7 @@ In the example below, we have two paragraphs. The top paragraph has a `margin-bo
 }
 ```
 
-We can observe that the `margin-bottom: 50px` is being utilized. The distance between the top paragraph to the bottom is 50px, not 70px!
+We can observe that the `margin-bottom: 50px` is being utilized. The distance between the top paragraph to the bottom is 50px, **not 70px!** The natural guess would have expect the two boxes to be `70px` as a combination of the both, instead it is 50!
 
 Likewise, setting any `margin-top` value beteen `0` and `50` will do nothing as it will choose the largest value between the two paragraphs. 
 
@@ -224,6 +224,77 @@ Changing the `two` class to become,
 </div>
 
 will make the difference between the two paragraphs to become `70px` as this is now the largest distance between the two. The final way to make them change is to make either of the margins negative to make them move closer.
+
+The previous example was a **sibling margin collapsing**. Now, we can illustrate a margin collapsing example with a **parent-child margin collapsing.**
+
+We have the following example,
+
+```HTML
+<div class="grandparent">
+  <div class="container">
+     <div class="child">
+          
+     </div>
+  </div>
+</div>
+```
+
+```CSS
+.grandparent {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+```
+
+This will result in the following output,
+
+<div align="center">
+    <img src="./images/44.png">
+</div>
+
+Now, we're going to modify to CSS to become,
+
+```CSS
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+```
+
+The goal of this is that the addition of `margin-left: 50px` we expect our blue `container` class to be pushed to the right and with `margin-top: 50px` we expect it to be pushed downwards. However, the grandparent was instead pushed down too.
+
+<div align="center">
+    <img src="./images/45.png">
+</div>
+
+The key confusion is that we are expecting the blue container to be positioned `50px` from the top edge inside the red grandparent, but instead, the entire red grandparent gets pushed down by `50px`.
+
+Margin collapsing happens in three specific situations,
+
+**Adjacent Siblings**
+
+- When two block-level elements are placed one after another
+- Their vertical margins (The bottom of the first element and the top margin of the second) will collapse into one.
+
+**Parent - Child Relationship**
+
+- When a parent element has **no border, padding, inline content** or clearance to separate it from its first child top margin.
+- The top margin of the first child collapses with the top margin of the parent.
+- Simiarily, if nothing separates the last childs bottom margin from the parents bottom margin, they collapse.
+
+**Empty Blocks**
+
+- When a block element has no height, no min-height, no padding and no content its top and bottom margins can collapse together.
 
 # Borders
 
