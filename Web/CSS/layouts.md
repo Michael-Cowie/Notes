@@ -1434,3 +1434,48 @@ This will create a fixed width grid of `500px` with 3 columns of width `100px`, 
 <div align="center">
   <img src="./images/70.png">
 </div>
+
+#### Mobile Responsive Grids
+
+When you define a Grid size such as `2 x 3` it will not automatically change dimensions to accomodate responsive design such as changing dimensions to `6 x 1` when displayed on smaller screens. To make it a mobile responsive we still need to use media queries and change the dimensions on a larger screen. Here, the default the size here `6 x 1`, but when the screen width is larger than `900px` the dimensions are changed to `2 x 3`.
+
+It's important to note that **it's not a choice between Grid and Flexbox**, Grid items can become Flex items to **align its content**. In the below example, `display: flex` is used to align the text while the item itself is also a Grid item.
+
+```HTML
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+</div>
+```
+
+```CSS
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(6, 200px);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  max-width: 100%;
+}
+
+@media (min-width: 900px) { 
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: steelblue;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+```
