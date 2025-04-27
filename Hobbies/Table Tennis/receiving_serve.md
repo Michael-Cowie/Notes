@@ -158,7 +158,7 @@ Sidespin introduces horizontal rotation by brushing sideways across the ball. Un
 
 The physics of sidespin become particularly evident during bounce, where the ball deviates from standard reflection angles. Rather than rebounding at the geometrically expected angle, sidespin balls maintain their rotational energy through the bounce and continue curving in the spin direction. When contacting the receiver's racket, sidespin creates sideways forces that push the ball laterally across the racket face, typically deflecting returns in the direction opposite to the incoming spin. This lateral displacement requires receivers to adjust both their positioning and racket angle horizontally, adding complexity to the return technique.
 
-**For returning spin services** we will create the mirror rule. **Mirror their paddle direction - their right becomes your left**. This works because **the angle their arm rotates to cause the spin, is the angle that the ball will bounce off towards**.
+**For returning spin services** we will create the mirror rule - **Mirror their paddle direction - their right becomes your left**. This works because **the angle their arm rotates to cause the spin, is the angle that the ball will bounce off towards**.
 
 <div align="center">
     <img src="./images/3.png/">
@@ -325,26 +325,40 @@ Power comes from the legs, hip and core. Using only the hand will not give you a
 6. **Don't rush** - Acceleration at point of contact is what causes the speed. Begin slow and then accelerate when raising your arm.
 7. **Follow through** - After completion of the shot, keep the paddle driving up to your head. This is important to having the paddle near the middle of the body, allowing the use of a paddle backhand return afterwards.
 8. **Brushing contact** - During the contact phase, players aim to brush the ball with the racket's surface while maintaining a closed racket angle. This brushing action generates topspin, causing the ball to rotate forward and descend quickly over the net. **The ball should be struck with the middle or upper portion of the racket for maximum control**.
+9. **Extend your arm so its near flat** - When kneeing down, make sure you're nearly extending your nearly flat as depicted by the image below.
+
+While the above is general advice the sequence of steps can be broken down into,
+
+1. When the ball starts to touch the table, shift your weight to your right foot, knees bent.
+
+2. Twist your waist and rotate your shoulders at the same time.
+
+3. Drop your hand down behind your knee while **keeping your arm almost straight.**
 
 <div align="center">
-    <img src="./images/37.png/">
+    <img src="./images/43.png/">
 </div>
 
 <div align="center">
-    <img src="./images/36.png/">
+    <img src="./images/ma_long_forehand.gif/">
 </div>
 
 <div align="center">
     <img src="./images/42.png/">
 </div>
 
+<div align="center">
+    <img src="./images/37.png/">
+</div>
+
+
 #### Footwork
 
 Good footwork is vital to get into position and move effiently. Without proper footwork you will miss the opportunity to get in propert position to get a good hit.
 
-The way some players like Ma Long perform footwork is to perform jumping actions to ensure to get into correct position quickly. The key characteristics are,
+The way most players like Ma Long perform footwork is to perform jumping actions to ensure to get into correct position quickly. The key characteristics are,
 
-1. Have a strong core the entire game.
+1. Have a strong core the entire game. Similar to how you would perform the planking exercise.
 2. Feet wide apart and weight on the balls of your feet.
 3. Knees bent
 4. Springs with both feet
