@@ -1393,18 +1393,27 @@ There are two levels of alignment,
 
 ##### Aligning the Entire Grid
 
-When the grid contains columnns that do not do hold the full width of the grid itself we can position the columns.
+The align a grid we require a **grid to be smaller than its parent**.
 
-- `justify-content` - Moves the **whole grid** horizontally.
+- `justify-content` - Moves the **whole grid** horizontally. It controls how the entire grid is positioned inside its parent container. It does not change the positions of individual grid items inside their respective grid cells.
+
 - `align-content` - Moves the **whole grid** vertically.
 
+Below, we define a grid with `display: grid` on the container and set a `width` of `500px`, here we are specifying the **width of the grid container, not the grid itself!**
+
+- **Grid Container Width** - The containers width is `500px`, meaning that it can hold grid itrems inside the `500px` space.
+
+- **Grid Items** - The grid items inside the container are place based on the column definitions - `grid-template-columns`. The containers width is `500px`, but the grids structure is defined by the columns. With `repeat(3, 100px)`, the **total grid width from the columns** is `300px`.
+
+The parents width is what defines the available space and the grid containers size is determined by its own content, such as the column definitions. Because the **grid is smaller than the container**, we can therefore use `justify-content` to horizontally center the grid. Additionally, we can use `align-content` to vertically center the grid because we have defined each column height to be `100px` but the grid container is `250px` in height.
 
 ```CSS
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 100px); /* 3 columns of 100px */
-  width: 500px;                            /* Fixed width to demonstrate alignment */
-  border: 2px solid black;
+  grid-template-columns: repeat(3, 100px);
+  width: 500px;     /* Sets the parent width */
+  height: 250px;    /* Sets the parent height */
+  border: 2px solid lightblue;
 }
 
 .item {
@@ -1412,6 +1421,7 @@ When the grid contains columnns that do not do hold the full width of the grid i
   text-align: center;
   padding: 10px;
   border: 1px solid black;
+  height: 100px;    /* Sets the column height */
 }
 ```
 
@@ -1423,11 +1433,10 @@ When the grid contains columnns that do not do hold the full width of the grid i
 </div>
 ```
 
-This will create a fixed width grid of `500px` with 3 columns of width `100px`, meaning we have `200px` of space. We finally apply to following to center the columns,
-
 ```CSS
 .grid-container {
-  justify-content: center;
+  justify-content: center; /* Horizontally Center */
+  align-items: center;     /* Vertically Center */
 }
 ```
 
