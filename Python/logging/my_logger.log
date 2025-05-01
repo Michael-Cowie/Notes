@@ -1,0 +1,8 @@
+My_Logger: INFO - Successfully created My Logger!
+My_Logger: ERROR - ZeroDivisionError occurred
+Traceback (most recent call last):
+  File "C:\Users\Michael\Desktop\Playground\main.py", line 30, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+My_Logger.subcomponent: WARNING - This is a sublogger warning

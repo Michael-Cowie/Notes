@@ -360,6 +360,7 @@ The way most players like Ma Long perform footwork is to perform jumping actions
 
 1. Have a strong core the entire game. Similar to how you would perform the planking exercise.
 2. Feet wide apart and weight on the balls of your feet.
+
 3. Knees bent
 4. Springs with both feet
 5. Feet remain apart during the jump
