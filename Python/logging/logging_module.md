@@ -237,3 +237,52 @@ logging.warning("Still won't show")
 logging.error("This WILL show")
 logging.critical("This WILL show too")
 ```
+
+<div align="center">
+    <h1> Enabling Specific Loggers </h1>
+</div>
+
+In large applications, many loggers can exist. Having the ability to only enable a select amount is useful to reduce unwanted bloat when loggers are logging changes. The following example illustrates how an application can determine which loggers to use given an input flag `--logger=<logger_name>`.
+
+```python
+import argparse
+import logging
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--logger", help="Enable only the specified logger and its children")
+args = parser.parse_args()
+selected_logger_name = args.logger
+
+# List of all known loggers
+ALL_LOGGERS = [
+    "app",
+    "app.db",
+    "app.auth",
+    "app.auth.jwt",
+    "app.api",
+    "app.utils",
+    "app.services.billing",
+    "app.services.notifications",
+    "app.cli",
+    "app.worker",
+]
+
+def configure_logging(selected_logger):
+    for logger_name in ALL_LOGGERS:
+        logger = logging.getLogger(logger_name)
+        if selected_logger and logger_name.startswith(selected_logger):
+            logger.setLevel(logging.DEBUG)  # Or configurable
+            logger.disabled = False
+        else:
+            logger.disabled = True  # Completely disable unwanted loggers
+
+    # Add a console handler just once
+    root_logger = logging.getLogger()
+    if not root_logger.handlers:
+        handler = logging.StreamHandler()
+        handler.setFormatter(logging.Formatter("%(name)s - %(levelname)s - %(message)s"))
+        root_logger.addHandler(handler)
+        root_logger.setLevel(logging.DEBUG)
+
+configure_logging(selected_logger_name)
+```

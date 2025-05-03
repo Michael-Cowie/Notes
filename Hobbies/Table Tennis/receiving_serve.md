@@ -158,7 +158,7 @@ Sidespin introduces horizontal rotation by brushing sideways across the ball. Un
 
 The physics of sidespin become particularly evident during bounce, where the ball deviates from standard reflection angles. Rather than rebounding at the geometrically expected angle, sidespin balls maintain their rotational energy through the bounce and continue curving in the spin direction. When contacting the receiver's racket, sidespin creates sideways forces that push the ball laterally across the racket face, typically deflecting returns in the direction opposite to the incoming spin. This lateral displacement requires receivers to adjust both their positioning and racket angle horizontally, adding complexity to the return technique.
 
-**For returning spin services** we will create the mirror rule - **Mirror their paddle direction - their right becomes your left**. This works because **the angle their arm rotates to cause the spin, is the angle that the ball will bounce off towards**.
+**For returning spin services** we will create the mirror rule - **Mirror their paddle direction - their right becomes your left**. This works because **the angle their arm rotates to cause the spin, is the angle that the ball will bounce off towards**. Keep in mind this **will not work** when your opponent using the opposite hand that you use, e.g. right handed versus left handed.
 
 <div align="center">
     <img src="./images/3.png/">
