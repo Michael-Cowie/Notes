@@ -158,6 +158,10 @@ Sidespin introduces horizontal rotation by brushing sideways across the ball. Un
 
 The physics of sidespin become particularly evident during bounce, where the ball deviates from standard reflection angles. Rather than rebounding at the geometrically expected angle, sidespin balls maintain their rotational energy through the bounce and continue curving in the spin direction. When contacting the receiver's racket, sidespin creates sideways forces that push the ball laterally across the racket face, typically deflecting returns in the direction opposite to the incoming spin. This lateral displacement requires receivers to adjust both their positioning and racket angle horizontally, adding complexity to the return technique.
 
+<div align="center">
+    <h1> Return Technique - Mirroring
+</div>
+
 **For returning spin services** we will create the mirror rule - **Mirror their paddle direction - their right becomes your left**. This works because **the angle their arm rotates to cause the spin, is the angle that the ball will bounce off towards**. Keep in mind this **will not work** when your opponent using the opposite hand that you use, e.g. right handed versus left handed.
 
 <div align="center">
@@ -172,6 +176,41 @@ It works because the spin they apply ends up pushing the ball in the **same dire
 1. You don't need to know spin names.
 2. You don't need to watch the ball curve.
 3. **Just mirror their paddle direction**. - "Their paddle goes that way, my paddle points the other way."
+
+<div align="center">
+    <h1> Return Technique - Inverse
+</div>
+
+An alternative technique is to think of **doing the inverse**. Firstly, keep an eye on the servers paddle and observe **the point of contact**. When applying spin, the paddle will momentarily contact the paddle and then move a direction to apply spin. This technique is to watch the paddles movement and **apply the opposite**.
+
+When the paddle makes contact with the ball, if the paddle moves **from your left to the right, then hit the ball in the inverse direction, i.e. left**. To shorten this further we can condense it from a thought process as to simply **looking at the point of contact, then directing the ball in the opposite direction**.
+
+
+<div align="center">
+    <img src="./images/44.png/">
+</div>
+
+The mirror technique has slightly difficulties when applying it to the pendulum serve. The inverse technique does not struggle with this. Suppose the server is performing **a inverse pendulum**. Once the paddle has made contact with the ball, the paddle **will move left** and cause the ball to move in a counter-clockwise rotation. Hence once it has made contact with our paddle on a neutral position, the ball will go left. 
+
+Applying the inverse rule above, we need to direct the ball in the opposite direction of the paddle movement. The red line is the direction of the servers paddle upon contact with the ball. The inverse direction of this means we need to hit the ball to the right.
+
+<div align="center">
+    <img src="./images/45.png/">
+</div>
+
+<div align="center">
+    <img src="./images/ma_long_reverse_pendulum.gif/">
+</div>
+
+---- TODO Normal pendulum
+
+<div align="center">
+    <img src="./images/46.png/">
+</div>
+
+<div align="center">
+    <img src="./images/ma_long_pendulum.gif/">
+</div>
 
 ### Right Sidespin
 
