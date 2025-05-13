@@ -202,8 +202,6 @@ Applying the inverse rule above, we need to direct the ball in the opposite dire
     <img src="./images/ma_long_reverse_pendulum.gif/">
 </div>
 
----- TODO Normal pendulum
-
 <div align="center">
     <img src="./images/46.png/">
 </div>
@@ -365,6 +363,32 @@ Power comes from the legs, hip and core. Using only the hand will not give you a
 7. **Follow through** - After completion of the shot, keep the paddle driving up to your head. This is important to having the paddle near the middle of the body, allowing the use of a paddle backhand return afterwards.
 8. **Brushing contact** - During the contact phase, players aim to brush the ball with the racket's surface while maintaining a closed racket angle. This brushing action generates topspin, causing the ball to rotate forward and descend quickly over the net. **The ball should be struck with the middle or upper portion of the racket for maximum control**.
 9. **Extend your arm so its near flat** - When kneeing down, make sure you're nearly extending your nearly flat as depicted by the image below.
+10. **Begin down and then pull backwards - Form an arc** - As demonstrated below, Ma Long is performing a forehand loop. He first lowers his paddle and instead of immediately driving it upwards, he pulls it back to perform an arc movement.
+
+<div align="center">
+    <img src="./images/ma_long_forehand_2.gif/">
+</div>
+
+<div align="center">
+    <img src="./images/47.png/">
+</div>
+
+<div align="center">
+    <img src="./images/51.png/">
+</div>
+
+<div align="center">
+    <img src="./images/48.png/">
+</div>
+
+<div align="center">
+    <img src="./images/50.png/">
+</div>
+
+<div align="center">
+    <img src="./images/52.png/">
+</div>
+
 
 While the above is general advice the sequence of steps can be broken down into,
 
