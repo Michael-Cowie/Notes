@@ -103,6 +103,37 @@ Same logic applies if you use your forehand.
 A receiver must be adaptable in choosing between an open or closed grip based on the incoming spin, ball placement, and desired trajectory of the return.
 
 <div align="center">
+    <h1> Holding the Paddle - Forehand Loop </h1>
+</div>
+
+When holding the paddle for the forehand loop the key characteristics are
+
+1. Not holding the thumb completely horizontal, instead raise it slightly upward.
+2. The index finger should be risen on the back as to not allow for the index finger to go completely off the paddle.
+
+<div align="center">
+    <img src="./images/53.png/">
+</div>
+
+<div align="center">
+    <img src="./images/54.png/">
+</div>
+
+<div align="center">
+    <h1> Holding the Paddle - Backhand </h1>
+</div>
+
+When holding the paddle for a backhand loop, the positionof the index finger at the back remains the same. **The key difference is the thumb**. Now, we raise the thumb slightly higher in order to support the paddle to give it more power.
+
+<div align="center">
+    <img src="./images/55.png/">
+</div>
+
+<div align="center">
+    <img src="./images/56.png/">
+</div>
+
+<div align="center">
     <h1> Spin Mechanics</h1>
 </div>
 
