@@ -141,7 +141,7 @@ Key Results:
 The modern product development process integrates all three concepts into a self-sustaining system of value creation.
 
 1. **OKRs provide directional goals** and bussiness context (the "why").
-2. **Empowered product teams own the problem** space and use the product trio to lead discovery and delivery.
+2. **Empowered product teams own the problem space** and use the product trio to lead discovery and delivery.
 3. Teams use hypothesis-driven development to experiment, validate and iterate towards achieving OKRs
 4. Progress is continuously evaluated using **product metrics and qualitative research**.
 
@@ -314,7 +314,7 @@ The team didn't ship "new sync logic" because they were told to. They designed, 
 | ----------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
 | 1. Strategic Alignment  | Execs define business OKRs                                   | KR = Reduce lab submission delay from 7 days to 2 days           |
 | 2. Opportunity Framing  | Trio investigates and defines the user problem               | Problem = Field data uploads unreliable due to offline sync gaps |
-| 3. Team OKRs      | Trio writes team-level OKRs based on discovered problems | KR = 90% of uploads occur within 24h, 70% fewer tagging errors   |
+| 3. Team OKRs      | Trio writes team-level OKRs based on discovered problems | KR = 90% of uploads occur within 24h, 70% fewer tagging errors, ...   |
 | 4. Discovery            | Whole team explores ideas to meet OKRs                       | Spike on offline sync logic, QR codes, feedback UX              |
 | 5. Solution Shaping     | Team validates options and selects best-fit approach         | Build auto-sync + sync status indicators                        |
 | 6. Delivery & Iteration | Ship features iteratively, observe impact                    | Auto-sync logic deployed to pilot field team                    |
@@ -325,7 +325,7 @@ The team didn't ship "new sync logic" because they were told to. They designed, 
     <h1> Conclusion </h1>
 </div>
 
-The interplay of empowered teams, the trio model and OKRs constitutes a foundational shift from **project-based**, output-driven development to **product-based** outcome-driven strategy execution. Empowered product teams, led by a balanced product trio, operate within a high-context, high-autonomy environment enabled by OKRs. This results in greater innovation, faster learning cycles, better alignment with customer needs and a scalable product culture.
+The interplay of empowered teams, the trio model and OKRs constitutes a foundational shift from **project-based, output-driven development to product-based outcome-driven strategy execution**. Empowered product teams, led by a balanced product trio, operate within a high-context, high-autonomy environment enabled by OKRs. This results in greater innovation, faster learning cycles, better alignment with customer needs and a scalable product culture.
 
 <div align="center">
     <h1> Glossary of Terms </h1>
