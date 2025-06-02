@@ -1,16 +1,20 @@
+<div align="center">
+    <h1> How CMake target_link_libraries Changes Visual Studio</h1>
+</div>
+
 CMake is a build generation tool. It does not compile code itself. It is therefore interesting to see an example of how a CMake function translates these to a generation tool. In this example I will be analysing how the CMake function `target_link_libraries` affects the configurations of Visual Studio to accomplish the task of linking.
 
 Now, when using a library their are three main steps to remember. [Taking from my previous notes](https://github.com/Michael-Cowie/Notes/blob/main/Build/DLL_libraries.md#using-the-library), these are
 
 1. Find the header files. This is done from the Visual Studio `Additional Include Directories`
 
-![](../../images/dll_library_7.png)
+![](../../../images/dll_library_7.png)
 
 2. Specify that we use the `.lib` file and specify which directory it is located in.
 
-![](../../images/dll_library_8.png)
+![](../../../images/dll_library_8.png)
 
-![](../../images/dll_library_9.png)
+![](../../../images/dll_library_9.png)
 
 In the previous example, we listed `MathLibrary.lib` in the `Additional Dependencies` field and to tell Visual Studio to search for it by the directory listed in `Additional Library Directories.
 
