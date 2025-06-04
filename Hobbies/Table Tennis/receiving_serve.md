@@ -471,10 +471,6 @@ Knowing the swing path of the forehand topspin is **based on the balls incoming 
 
 When performing a forehand loop **versus backspin** it's crucial to angle the racket in a much higher angle. This is because backspin forces the ball go to downwards onto the table, we therefore need to counteract this by aiming our paddle at a much higher angle, relying on the backspin to pull it back onto the table.
 
-<div align="center">
-    <img src="./images/38.png/">
-</div>
-
 Additionally, when trying to loop versus backspin **you need to drop the paddle even lower** in order to generate more power and combat the backspin.
 
 <div align="center">
@@ -484,7 +480,11 @@ Additionally, when trying to loop versus backspin **you need to drop the paddle 
 When performing a forehand loop **versus topspin**, we need hit the ball on a much lower angle. This is because the ball has high amounts of topspin which causes the ball go to upwards on contact. You need to calibrate how much power and what angle is required **depending on the amount of spin on the ball**.
 
 <div align="center">
-    <img src="./images/40.png/">
+    <img src="./images/58.png/">
+</div>
+
+<div align="center">
+    <img src="./images/57.png/">
 </div>
 
 ## Backhand Loop - TODO
