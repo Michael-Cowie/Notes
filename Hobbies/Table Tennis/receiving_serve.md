@@ -386,7 +386,7 @@ The first thing to do when performing the banana flick is to,
 Power comes from the legs, hip and core. Using only the hand will not give you any stability. When performing the forehand loop there are some essential key points,
 
 1. **Drop the bat low** - It's useful to drop the bat as low as the knee.
-2. **Relax your arm** - Make sure to keep your arm relaxed, the only point of tension should be your wrist **right before contact**.
+2. **Relax your body** - Make sure to keep your arm relaxed, the only point of tension should be **your wrist right before contact**. Only at the **end**, lock the wrist. **You can only tighten one place**, you cannot tighten everything. You need to focus only one thing to tighten, which is the wrist right before contact.
 3. **Squeeze your core** - For balance and added power, make sure you're applying tension to your core as if you're doing a plank during all of your shots.
 4. **Don't aim your racket inward** - Make sure that your racket is slightly open.
 5. **Timing** - Make sure to wait for when the ball hits the apex and **begins to slightly lower**.
