@@ -130,7 +130,7 @@ Before jumping into the creation of our Docker Compose, we first need to think a
 
 1. Our Database will be using PostgreSQL, this is where our Django application will request data from.
 2. Our Django application will be ran using Gunicorn
-3. We need to run a nginex server that will act as a proxy to our Gunicorn ran server.
+3. We need to run a nginx server that will act as a proxy to our Gunicorn ran server.
 
 Because of these three criteria, we know that we will need three containers, each to perform these tasks.
 
