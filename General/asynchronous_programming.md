@@ -54,7 +54,9 @@ async def async_random():
 asyncio.run(async_random())
 ```
 
-# Event Loop
+<div align=center>
+    <h1> Python Event Loop </h1>
+</div>
 
 The event loop is a mechanism that manages the execution of asynchronous code. The event loop is a central component of the `asyncio` library, which is a built-in library for asynchronous programming in Python. The event loop is responsible for scheduling the execution of asynchronous tasks and managing the flow of control between them. It uses a non-blocking I/O model, which means that it can handle multiple tasks concurrently without waiting for any of them to complete.
 
@@ -212,7 +214,9 @@ Time    | Event
 
 The crucial component in this example to understand is that when `time.sleep(5)` is called in `task_one`, the event loop is blocked entirely for 5 seconds as this `sleep` implementation does not yield control back to the event loop to run other tasks. This prevents `task_two()` or any other tasks from running during this period, defeating the purpose of asynchronous programming.
 
-# System Calls for Non-Blocking I/O
+<div align="center">
+    <h1> System Calls for Non-Blocking I/O </h1>
+</div>
 
 The event loop uses a single thread to schedule the execution of multiple coroutines concurrently and manage the flow between them.
 
@@ -224,7 +228,10 @@ In this way, the `asyncio.sleep` function is able to release the control of the 
 
 It is important to note that the non-blocking behaviour is achieved by the usage of the underlying system capabilities, like the `select` or `poll` system calls to wait for I/O events, **which are provided by the operating system and are not specific to the Python interpreter**.
 
-# Common Mistakes
+<div align="center">
+    <h1> Common Mistakes </h1>
+</div>
+
 
 ## Not Running Independent Tasks Together
 
@@ -303,6 +310,76 @@ async def check_file(self, changed_file):
 
 Now, we need to pause for a moment and realize why this **will not work**. `isort.check_file` is a **synchronous function** - just wrapping it with `async` does not make it magically asynchronous. What our `async` function `check_file` is doing is just the same without `async` added. **To get any meaningful performance with asynchronous code we need to have a function that yields back control to the event loop, which this does not do**. As `isort.check_file` is a synchronous function, to get any benefits we will be forced to take a different approach such as using threads.
 
-# Asynchronous File Handling
+<div align="center">
+    <h1> Asynchronous File Handling </h1>
+</div>
+
 
 Asynchronous behaviour is specifically designed for IO operations, however file handling is treated slightly differently. Most operating systems don't support asynchronous file operations. That's why asyncio doesn't support them either. For now, the workaround is to use aiofiles that uses threads to handle files. Asynchronous programming is best utilized for IO-bound and high-level structured network code for the performance improvement related to network and web-servers, database connection libraries, distributed task queues, etc...
+
+<div align="center">
+    <h1> JavaScript Event Loop vs Python Event Loop </h1>
+</div>
+
+The JavaScript event loop is a coordination mechanism that enables non-blocking asynchronous execution in a single-threaded environment. While the event loop itself is implemented within JavaScript engines (V8, ...), the actual asynchronous operations are delegated to external systems like `libuv` in Node.js or Web APIs in browsers.
+
+`libuv` is a C library that is used to abstract non-blocking I/O operations to a consistent interface across all supported platforms. It provides mechanisms to handle file system, DNS, network, child processes, pipes, signal handling, polling and streaming. It also includes a thread pool for offloading work for some things that can't be done asynchronously at the operating system level. Therefore, V8 provides the functionalities related to running JS files, but to use system resources like Network, Files, etc... `libuv` is used.
+
+The JavaScript event loop is intrinsic to its **runtime**, whereas **Python requires an explicit event loop**, typically via libraries like `asyncio`. This is where one of the key differences occur. You do not import or initialize anything, asynchronous concepts (`Promise`, `async/await`, `setTimeout`) are natively understood and scheduled by the environment. Additionally, JavaScript creates the concept of a task priority. This means once the synchronous code has been executed, it decides which task to run depending on its priority. These priority tasks are either **Macrotasks or Microtasks**.
+
+The Python interpreter **is not asynchronous by default**. `asyncio`was introduced in Python 3.4+ to support asynchronous programming. You must **explicitly create and run an event loop** such as `asyncio.run()` or `loop.run_until_complete()`. Therefore, in Python Async support is **optional and library-based**, not part of the interpreters core runtime design, unlike JavaScript.
+
+#### Core Components
+
+<div align="center">
+    <img src="./images/4.png">
+</div>
+
+##### Call Stack
+
+The primary execution context where JavaScript functions run is last-in-first-out (LIFO). All synchronous code executes here and **the event loop can only proceed when this stack is completely empty**. Once the call stack is completely empty, asynchronous tasks will be ran with the highest priority tasks checked first.
+
+##### Macrotask Qeueue - Task Queue
+
+This queue holds the callbacks from `setTimeout`, `setInterval`, I/O operations, DOM events and `setImmediate` (Node.js). These represent discrete units of work that execute one at a time. The Macrotask queue is checked **if the Microtask queue is empty**.
+
+##### Microtask Queue
+
+This queue holds callbacks from Promise resolutions (`then`, `catch` and `finally`), `queueMicrotask()` and `process.nextTick()` in Node.js. This queue **has absolute priority over macrotasks**.
+
+##### Event Loop Execution Cycle
+
+The initialization of the application requires running the program to completion and setting up the event listeners. This means the entirety of the call stack would have run to completion and the event listeners will be the primary cause of future asynchronous tasks or code being executed. **This means the call stack will be initially populated through the entry point of the application but will later be populated through the callback functions**.
+
+The event loop runs continuously, following this precise sequence.
+
+1. **Execute call stack to completion** - Run all synchronous JavaScript code until the call stack is empty. This will initially be the entry point synchronous code for the application that configures the event listeners for user use.
+
+2. **Process all microtasks** - Execute every callback in the microtask queue until completely empty, including any new microtasks created during this phase.
+
+3. **Take one macrotask** - Remove and execute a single callback from the macrotask queue, if available.
+
+4. **Execute resulting synchronous code** - The macrotask call stack runs on the call stack like any other function, potentially calling other functions or creating new async operations.
+
+5. **Process all new microtasks** - Handle any microtasks created during the macrotask execution.
+
+6. **Return to step 3** - Continue with the next macrotask.
+
+This cycle ensures that **microtasks always complete before the next macrotask begins**, creating predictable execution ordering.
+
+The following code will perform the following actions,
+
+1. Synchronous code will print `1` and `4`.
+2. Call stack empties, triggering microtask processing.
+3. Promise callback prints `3`.
+4. Macrotask (`setTimeout`) finally prints `2`.
+
+```JavaScript
+console.log('1');                               // Synchronous
+setTimeout(() => console.log('2'), 0);          // Macrotask
+Promise.resolve().then(() => console.log('3')); // Microtask
+console.log('4');                               // Synchronous
+```
+
+This architecture explains why `setTimeout(callback, 0)` doesn't execute immediately. **It must wait for the current call stack to empty and all microtasks to complete before the timer callback can run**. This is why `2` is printed last.
+
