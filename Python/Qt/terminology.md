@@ -1,6 +1,7 @@
 <div align="center">
   <h1>  Qt Terminology </h1>
 </div>
+
 ## ItemView and ViewItem
 
 #### ItemView
