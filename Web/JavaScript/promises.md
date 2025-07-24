@@ -8,7 +8,7 @@ A 'Promise' is an object that represents the eventual completion or failure of a
 2. **Fulfilled** - The operation completed successfully, and the promise has a resulting value.
 3. **Rejected** - The operation failed, and the promise has a reason for the failure.
 
-# Creating a Promise
+## Creating a Promise and Execution Order
 
 ```JavaScript
 const myPromise = new Promise((resolve, reject) => {
@@ -22,8 +22,6 @@ const myPromise = new Promise((resolve, reject) => {
   }
 });
 ```
-
-# Handling Promise States
 
 - **then()** - Used to handle the resolved state.
 - **catch()** - Used to handle the rejected state.
@@ -42,7 +40,102 @@ myPromise
     })
 ```
 
-# Promises and Event Loop
+When you create a new Promise, the constructor receives an executor function, which itself receives two functions as arguments, `resolve` and `reject`. These are used to indicate whether the asynchronous operation succeed or failed.
+
+- `resolve()` is used inside the Promise to send the result. It is how you complete or fulfill a promise from inside the executor.
+- `.then()` is used outside the Promise to receive that result. Is how you register a callback to receive that result once its available. Even if `resolve()` is called immediately, `.then()` **does not execute immediately**. Instead, it is deferred using the microtask queue.
+
+- The function you pass to `.then()` is **not the same** as `resolve` - it is simply a listener waiting for the Promise to be fulfilled.
+
+```JavaScript
+console.log("1. Start");
+
+const myPromise = new Promise((resolve, reject) => {
+  console.log("2. Inside executor");
+  resolve("Success!");
+});
+
+myPromise.then(result => {
+  console.log("4. Then:", result);
+});
+
+console.log("3. End");
+```
+
+| Step | Description                                     | Output               |
+| ---- | ----------------------------------------------- | -------------------- |
+| 1    | Synchronous code runs                           | `1. Start`           |
+| 2    | Executor runs immediately                       | `2. Inside executor` |
+| 3    | `resolve("Success!")` is called synchronously   | (No output yet)      |
+| 4    | `.then(...)` callback is scheduled as microtask | (Still waiting)      |
+| 5    | Remaining sync code finishes                    | `3. End`             |
+| 6    | Microtasks run: `.then()` callback fires        | `4. Then: Success!`  |
+
+## Asynchronous Functions
+
+When a function is declared with the `async` keyword, it behaves differently from a regular function in two fundamental ways.
+
+1. **All return values are wrapped in a resolved Promise.**
+2. **All errors (thrown or rejected) are wrapped in a rejected Promise.**
+
+This means the return and error behaviour of an `async` function mirrors that of a manually constructed Promise chain using `.then()` and `.catch()`.
+
+Consider the following API call,
+
+```JavaScript
+async function fetchUserData() {
+  const response = await fetch("https://api.example.com/user");
+  const data = await response.json();
+  return data;
+}
+```
+
+This functionally is functionally equivalent to,
+
+```JavaScript
+function fetchUserData() {
+  return fetch("https://api.example.com/user")
+    .then(response => response.json())
+    .then(data => data);
+}
+```
+
+Both versions,
+
+1. Return a Promise.
+2. **Automatically wrap the final return value** `data` inside a **resolved Promise.**.
+3. If an error occurs (e.g. a network failure, invalid JSON or a bad request), it **gets caught and wrapped in a reject Promise**.
+
+So we can call `.then()`, `.catch()` and `.finally()` on either one.
+
+```JavaScript
+fetchUserData()
+  .then(data => {
+    console.log("User data:", data);
+  })
+  .catch(error => {
+    console.error("Failed to fetch:", error);
+  });
+```
+
+Throwing errors in an `async` function returns a rejected Promise. Any `throw` in an `async` function or an error in an awaited Promise causes the entire function to return a rejected Promise. This rejected Promise is what `.catch()` handles externally.
+
+```JavaScript
+async function fetchUserData() {
+  const response = await fetch("https://api.example.com/user");
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch user");
+  }
+
+  const data = await response.json();
+  return data;
+}
+```
+
+The `async`/`await` syntax does not replace Promises, it simplifies them. Behind the scenes `async` functions wrap return values in resolved Promises and forward exceptions as rejected Promises. As a result, the familiar `.then()`, `.catch()` and `.finally()` methods work the same on the return value of an `async` function as they do on a regular Promise.
+
+## Promises and Event Loop
 
 When you create a Promise, its executor function is executed immediately. This function typically contains asynchronous operations. When you create a Promise and its executor function is immediately called, it might seem counterintuitive if you think of asynchrony purely in terms of I/O tasks. However, this immediate invocation is more related to the nature of the Promise mechanism and how it manages asynchronous control flow:
 
@@ -110,7 +203,7 @@ function fetch(url, options) {
 }
 ```
 
-# Promise Chaining
+## Promise Chaining
 
 In the previous example,
 

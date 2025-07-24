@@ -10,11 +10,11 @@ The Python `asyncio` library is an easy approach to allow for the execution of a
 
 The `async` keyword wraps the function so that it **now returns a coroutine object**. The `await` keyword can be used to execute the coroutine in a blocking manner, or it can be added as a task to be executed later. `await` **will give control back to the event loop** so other functions can be executed. Under the hood `asyncio` utilizes coroutines for the internal implementation which also relies on generators, primarily the `send` method of generators.
 
-Ideally, you want to utilize asynchronous programming when your program has I/O-bound operations, where we are "waiting" for responses that are out of our control and give us the ability to perform other tasks while waiting. You do not want to use asynchronous code when you need a simple program with little to no I/O-bound performance isssues. 
+Ideally, you want to utilize asynchronous programming when your program has I/O-bound operations, where we are "waiting" for responses that are out of our control and give us the ability to perform other tasks while waiting. You do not want to use asynchronous code when you need a simple program with little to no I/O-bound performance isssues.
 
 Mixing `asyncio` with UI frameworks can be a little tricky as `asyncio` will have its own event loop so will other UI frameworks. Let us suppose we are mixing `asyncio` and `tkinter`, running both event loops at the same time is a dubious proposition, but of course, can be done if we mix both to use a single event loop.
 
-It is very important to know that all of the **code execution runs on a single thread**. Asynchronous programming is a form of concurrency not parallelism. 
+It is very important to know that all of the **code execution runs on a single thread**. Asynchronous programming is a form of concurrency not parallelism.
 
 ```Python
 if io_bound:
@@ -155,7 +155,7 @@ Time    | Event
 
 3.0s    | Event loop completes
         | - All tasks are finished. The event loop stops execution.
-                  
+
 ```
 
 It's crucial to understand the event loop as this illustrates how asynchronous code is single threaded and is handled by the event loop. If we were to instead use `time.sleep(...)` instead of `yield asyncio.sleep(...)`, this would block the execution of the entire event loop **as it is a blocking call and does not yield back control to the event loop** to execute other tasks while it's sleeping.
@@ -191,12 +191,12 @@ Time    | Event
         | - Task 1 prints "Task 1: Start."
         | - Task 1 encounters `time.sleep(5)`, which blocks the event loop.
         | - No other tasks can proceed while `time.sleep(5)` runs.
-        
+
 5.0s    | Task 1: End
         | - Task 1 resumes after the blocking `time.sleep(5)`.
         | - Task 1 prints "Task 2: End."
         | - Task 1 completes execution.
-        
+
 5.0s    | Task 2: Start
         | - The event loop finally moves to `task_two()`.
         | - Task 2 prints "Task 2: Start."
@@ -231,7 +231,6 @@ It is important to note that the non-blocking behaviour is achieved by the usage
 <div align="center">
     <h1> Common Mistakes </h1>
 </div>
-
 
 ## Not Running Independent Tasks Together
 
@@ -294,7 +293,7 @@ async def mistake_one():
 asyncio.run(mistake_one())
 ```
 
-The following code takes 3 seconds to execute! This occurs because each `sleep` call is blocking and does not yield back control to the event loop to perform the other `sleep` operations. If we replace this back to our previous implementation, it will correctly execute in 1 second! 
+The following code takes 3 seconds to execute! This occurs because each `sleep` call is blocking and does not yield back control to the event loop to perform the other `sleep` operations. If we replace this back to our previous implementation, it will correctly execute in 1 second!
 
 ```Python
 async def network_request_synchronous():
@@ -313,7 +312,6 @@ Now, we need to pause for a moment and realize why this **will not work**. `isor
 <div align="center">
     <h1> Asynchronous File Handling </h1>
 </div>
-
 
 Asynchronous behaviour is specifically designed for IO operations, however file handling is treated slightly differently. Most operating systems don't support asynchronous file operations. That's why asyncio doesn't support them either. For now, the workaround is to use aiofiles that uses threads to handle files. Asynchronous programming is best utilized for IO-bound and high-level structured network code for the performance improvement related to network and web-servers, database connection libraries, distributed task queues, etc...
 
@@ -349,7 +347,7 @@ This queue holds callbacks from Promise resolutions (`then`, `catch` and `finall
 
 ##### Event Loop Execution Cycle
 
-The initialization of the application requires running the program to completion and setting up the event listeners. This means the entirety of the call stack would have run to completion and the event listeners will be the primary cause of future asynchronous tasks or code being executed. **This means the call stack will be initially populated through the entry point of the application but will later be populated through the callback functions**.
+The initialization of the application requires running the program to run until completion and setup the event listeners. This means the entirety of the call stack would have run to completion and the event listeners will be the primary cause of future asynchronous tasks or code being executed. **This means the call stack will be initially populated through the entry point of the application but will later be populated through the callback functions**.
 
 The event loop runs continuously, following this precise sequence.
 
@@ -382,4 +380,3 @@ console.log('4');                               // Synchronous
 ```
 
 This architecture explains why `setTimeout(callback, 0)` doesn't execute immediately. **It must wait for the current call stack to empty and all microtasks to complete before the timer callback can run**. This is why `2` is printed last.
-
