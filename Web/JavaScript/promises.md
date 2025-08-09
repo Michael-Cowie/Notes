@@ -43,7 +43,7 @@ myPromise
 When you create a new Promise, the constructor receives an executor function, which itself receives two functions as arguments, `resolve` and `reject`. These are used to indicate whether the asynchronous operation succeed or failed.
 
 - `resolve()` is used inside the Promise to send the result. It is how you complete or fulfill a promise from inside the executor.
-- `.then()` is used outside the Promise to receive that result. Is how you register a callback to receive that result once its available. Even if `resolve()` is called immediately, `.then()` **does not execute immediately**. Instead, it is deferred using the microtask queue.
+- `.then()` is used outside the Promise to receive that result. It is how you register a callback to receive that result once its available. Even if `resolve()` is called immediately, `.then()` **does not execute immediately**. Instead, it is deferred using the microtask queue.
 
 - The function you pass to `.then()` is **not the same** as `resolve` - it is simply a listener waiting for the Promise to be fulfilled.
 
@@ -70,6 +70,74 @@ console.log("3. End");
 | 4    | `.then(...)` callback is scheduled as microtask | (Still waiting)      |
 | 5    | Remaining sync code finishes                    | `3. End`             |
 | 6    | Microtasks run: `.then()` callback fires        | `4. Then: Success!`  |
+
+## `await` and `then()`
+
+Two common ways to handle a Promises result are,
+
+1. Using the `await` keyword.
+2. Using the `.then()` keyword.
+
+Although they're interchangeable in many cases, their execution behaviour, readability impact and error handling approaches differ.
+
+#### How an `async` Function Executes
+
+An `async` function always return a Promise, regardless of whether it contains `await`. When called,
+
+1. **The function begins executing synchronously until it reaches the first** `await`. It will complete if no `await` exists.
+2. At that point, execution is paused and control returns to the caller.
+3. When the awaited Promise resolves, execution resumes where it left off.
+
+```TypeScript
+async function test() {
+  console.log('Start');
+  await new Promise(r => setTimeout(r, 1000));
+  console.log('End');
+}
+
+test();
+console.log('After call');
+```
+
+```
+Start
+After call
+End
+```
+
+This shows that **the async function begins execution immediately** and outputs `Start`. The runtime will then reach the `await`, to which it will give control back up and allow `After call` to be logged. Finally, the Promise will resolve, continue and output `End`.
+
+1. `test()` is called. It starts executing synchronously and logs `Start`. This occurs because the asynchronous function is called and executes immediately until the first `await`.
+2. It hits `await <promise>`. At this point the async function yields. It's suspended and **returns a pending Promise** to the caller. The JavaScript thread is not blocked. Control returns to the caller right away.
+3. Because the caller didn't `await` the return Promise, the next line runs immediately, so we will see `After call`.
+4. After ~1000ms `setTimeout` callback fires a macrotask, which resolves the awaited Promise. That queues a microtask to resume the suspended async function. The function continues and logs `End`.
+
+The entire code doesn't halt, `await` only pauses that async function at that point. It doesn't block the thread or stop other code from running. It is basically syntax sugar for "split this function into two parts and continue the second part via a `.then()`".
+
+You should use `await` when you are inside an `async` function and want sequential, readable and synchronous looking code.
+
+#### `.then()` as an Alternative to `await`
+
+Using `.then()` attaches a callback that runs when the Promise resolves.
+
+```TypeScript
+test().then(() => console.log('Done'));
+```
+
+In this style,
+
+- The async function **still runs immediately** when called.
+- `.then()` schedules the callback to execute after resolution.
+- The rest of the surrounding code continues without waiting.
+
+You should use `.then()` **when you are not inside an** `async` function or you want to chain multiple asynchronous transformations.
+
+```TypeScript
+fetchData()
+  .then(process)
+  .then(saveResult)
+  .catch(handleError);
+```
 
 ## Asynchronous Functions
 
