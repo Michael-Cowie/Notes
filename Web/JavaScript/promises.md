@@ -118,7 +118,7 @@ You should use `await` when you are inside an `async` function and want sequenti
 
 #### `.then()` as an Alternative to `await`
 
-Using `.then()` attaches a callback that runs when the Promise resolves.
+Using `.then()` **attaches a callback that runs when the Promise resolves**.
 
 ```TypeScript
 test().then(() => console.log('Done'));
