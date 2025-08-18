@@ -1,8 +1,20 @@
 <div align="center">
-    <h1> Forehand Loop </h1>
+    <h1> Holding the Paddle - Forehand Loop </h1>
 </div>
 
 Power comes from the legs, hip and core. Using only the hand will not give you any stability. When performing the forehand loop there are some essential key points,
+When holding the paddle for the forehand loop the key characteristics are
+
+1. Not holding the thumb completely horizontal, instead raise it slightly upward.
+2. The index finger should be risen on the back as to not allow for the index finger to go completely off the paddle.
+
+<div align="center">
+    <img src="./images/53.png/">
+</div>
+
+<div align="center">
+    <img src="./images/54.png/">
+</div>
 
 1. **Drop The Bat Low** - It's useful to drop the bat as low as the knee. When the paddle is lowered deeply, it's important to keep the **elbow close to your body**. Under this situation is important to use your entire body during this motion. In instances when the ball is very fast and their is no time to drop it low, it's approprtiate to not pull it down as far.
 2. **Relax Your Body** - Make sure to keep your arm relaxed, the only point of tension should be **your wrist right before contact**. Only at the **end**, lock the wrist. **You can only tighten one place**, you cannot tighten everything. You need to focus only one thing to tighten, which is the wrist right before contact.
