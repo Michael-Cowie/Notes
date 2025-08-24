@@ -23,14 +23,15 @@ When holding the paddle for the forehand loop the key characteristics are
 5. **Don't Rush** - Acceleration at point of contact is what causes the speed. Begin slow and **then accelerate** when raising your arm. When using acceleration instead of a fixed speed, it increases contact time on the ball.
 6. **Follow Through** - After completion of the shot, **keep the paddle driving up to your head**. This is important to having the paddle near the middle of the body, allowing the use of a paddle backhand return afterwards.
 7. **Brushing Contact** - During the contact phase, players aim to brush the ball with the racket's surface while maintaining a closed racket angle. This brushing action generates topspin, causing the ball to rotate forward and descend quickly over the net. **The ball should be struck with the middle or upper portion of the racket for maximum control**.
-8. **Begin Down and Then Pull Backwards - Form an Arc** - As demonstrated below, Ma Long is performing a forehand loop. He first lowers his paddle and instead of immediately driving it upwards, he pulls it back to perform an arc movement.
-9. **Turn Your Index Finger Upward** - It's very important to keep **the wrist relaxed** in a natural position. When coming up in an upward motion you will turn your **index finger upward**.
+8. **Brushing Balance** - Think - "Brush through the ball with power". First make contact with a **brushing angle**, then use your arm, waist and legs to **drive through** the ball.
+9. **Begin Down and Then Pull Backwards - Form an Arc** - As demonstrated below, Ma Long is performing a forehand loop. He first lowers his paddle and instead of immediately driving it upwards, he pulls it back to perform an arc movement.
+10. **Turn Your Index Finger Upward** - It's very important to keep **the wrist relaxed** in a natural position. When coming up in an upward motion you will turn your **index finger upward**.
 
 <div align="center">
     <img src='images/index_finger_flick.gif'>
 </div>
 
-10. **MOVE!** - It's very important to get into the correct position to perform the forehand loop. Good footwork is important and always remember `Eyes (Watch the ball) → Legs (Get into position) → Arm (Follow through with the loop)`.
+10. **MOVE!** - It's very important to get into the correct position to perform the forehand loop. Good footwork is important and always remember `Eyes (Watch the ball) → Legs (Get into position) → Arm (Follow through with the loop)`. **Anticipation** is important but comes with practice, you need to "visualize" the ball in the position where you believe it will go to and preemptively move and prepare.
 
 <div align="center">
     <img src="./images/ma_long_forehand_2.gif/">
@@ -101,9 +102,19 @@ When performing a forehand loop against backspin it's crucial to make the follow
 
 45° racket angle is fine for both backspin and topspin, **the key difference is when to hit the ball**.
 
+#### Brushing Rule of Thumb
+
+- When **close to the table** → More Brush to for control, high arc.
+- When **farther from the table** → More power for penetration and depth.
+- When against **backspin** → Brush more to lift the ball.
+- When against **topspin** → Use more power and forward drive to counter.
+
 <div align="center">
     <h1> Racket Angle </h1>
 </div>
+
+- **Backspin** - More open angle, brush more.
+- **Topspin** - More closed angle, drive more.
 
 Knowing the swing path of the forehand topspin is **based on the balls incoming spin**.
 
