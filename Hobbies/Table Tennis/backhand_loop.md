@@ -43,6 +43,10 @@ Against topspin, imagine you are "brushing forward through" the ball with a bit 
     <img src='images/backhand_loop_technique.gif'>
 </div>
 
+<div align='center'>
+    <img src='images/full_motion.gif'>
+</div>
+
 Small but critical details which make a great forehand loop are,
 
 1. **Triangle Motion** - The motion of the backhand loop should create a △ shape. Where the lower right point represents the elbow and the bottom left to top point represent the hand motion. This does not represent the complete posture movement 1 to 1, but represents the movement behaviour. **The point is this is to illustrate that the elbow should not be moving around. Once the elbow moves, the triangle is gone**.
@@ -63,10 +67,22 @@ Small but critical details which make a great forehand loop are,
     <img src='images/backhand_contact_angle.gif'>
 </div>
 
-4. **Wrist Adjustment After Contact** - A constant racket angle is incorrect. While versus topspin it is a much less of an angle versus backspin, a constant angle is not correct. When performing a loop you **must push forward**. This means to **hold the ball, then push forward**. This happens from a combination of brushing (To grab the ball) then push forward to produce power. The paddle angle **should change from closed open to closed, do not keep the same paddle angle**.
+4. **Wrist Rotation** - Whether the ball is backspin or topspin, we use the wrist power like the following. As long as you want to apply force, always generate forward forward then use the wrist rotation for the arc direction. This motion also determines how deeply you can hold the ball.
+
+<div align='center'>
+    <img src='images/backhand_wrist_rotation_2.gif'>
+</div>
+
+5. **Wrist Adjustment After Contact** - A constant racket angle is incorrect. While versus topspin it is a much less of an angle versus backspin, a constant angle is not correct. When performing a loop you **must push forward**. This means to **hold the ball, then push forward**. This happens from a combination of brushing (To grab the ball) then push forward to produce power. The paddle angle **should change from closed open to closed, do not keep the same paddle angle**.
 
 <div align='center'>
     <img src='images/backhand_wrist_rotation.gif'>
+</div>
+
+6. **Initial Racket Angle** - When it comes to the backhand loop, for a higher quality shot it's important to use a more **closed angle and NOT an open angle at the beginning**. You cannot loop forward with an open racket face. The power is coming from the wrist rotation of moving back to front and using a **brushing** action to control the ball. An open racket can still get the ball on the table, but the power is limited.
+
+<div align="center">
+    <img src='images/backhand_closed_racket_angle.png'>
 </div>
 
 <div align="center">
