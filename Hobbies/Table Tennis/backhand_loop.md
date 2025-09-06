@@ -28,16 +28,17 @@ Using your waist is essential for the backhand loop. The movement **should be si
 
 1. Slightly tuck in the abdomen.
 2. Start your hand **slightly left of the stomach**, not in the center. From the center you cannot generate power. As the movement is restricted from down to upwards when performing the loop, this is very weak.
-3. Start with the upper arm leading the forearm. Then the upper arm leading the wrist. Finally, the paddle tip comes through. This is a complete power sequence and it must be a complete chain movement.
+3. Pivot on your right leg while internally rotating wrist/forearm.
+4. Start with the upper arm leading the forearm. Then the upper arm leading the wrist. Finally, the paddle tip comes through. This is a complete power sequence and it must be a complete chain movement.
 
 The correct feeling of the backhand loop is the following.
 
-- Your racket meets the balls surface with a brushing motion.
+- Your racket meets the balls surface with a brushing contact. You cannot muscle through it, grip the balls surface and spin it outward through the whipping motion. This sensation defines true looping. Hitting into it directly is not proper looping technique.
 - At the same time, your forearm/wrist/wait supply controlled power into that brushing path.
 - Think of it as "brushing through the ball with power". This is not two steps, but one blended contact.
 
-Against backspin, imagine you are "lifting and brushing" the ball upwards in one motion.
-Against topspin, imagine you are "brushing forward through" the ball with a bit more drive.
+**Against backspin**, imagine you are "lifting and brushing" the ball upwards in one motion.
+**Against topspin**, imagine you are "brushing forward through" the ball with a bit more drive.
 
 <div align='center'>
     <img src='images/backhand_loop_technique.gif'>
@@ -83,6 +84,12 @@ Small but critical details which make a great forehand loop are,
 
 <div align="center">
     <img src='images/backhand_closed_racket_angle.png'>
+</div>
+
+7. **Foot Stance** - During the backhand loop it's very important to have your feet parallel. Having your feet parallel means that when creating rotation by twisting your body can you **create a significantly higher amount of power by utilization of the hip**, this is much more difficult to do if you were to have your left foot lower. Power comes from hip rotation. **Transfer power from the legs and hips through rotation**.
+
+<div align='center'>
+    <img src='./images/backhand_foot_stance.png'/>
 </div>
 
 <div align="center">

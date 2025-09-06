@@ -44,7 +44,7 @@ The use of `QStyleOption` in Qt instead of interfacing directly with `QWidget` w
 
 - **Simplified Styles** - QStyle implementations do not need to know about the internal workings of each widget. They only need the rendering information encapsulated in `QStyleOption`.
 
-#### Performance 
+#### Performance
 
 - **Optimized Rendering** - `QStyleOption` allows for the pre-computation of rendering information. Instead of recalculating widget state and geometry repeatedly during painting, this information is prepared once and passed to the style.
 
@@ -165,8 +165,81 @@ if __name__ == "__main__":
 
 In this example we create two new widgets, `CustomButton` and `CustomProgressBar` to demonstrate our understanding of Qt Style, Options and Widget interactions.
 
-
 To get this working we first create a `QMainWindow` to hold all of our widgets. Here, the `QMainWindow` holds both the `CustomButton` and `CustomProgressBar` by creating instances and adding the `QMainWindow` as the parent. By setting the `QMainWindow` as the parent, when `show()` is called on the parent, this will implicitly call `show()` on all child elements, thus, `show()` is never called on our custom widgets.
+
+`initFrom`
+
+```python
+QStyleOptionProgressBar option;
+option.initFrom(widget);
+```
+
+The `initFrom(QWidget *widget)` **copies the widgets state into the option** so the style knows,
+
+- Is the widget enabled or disabled?
+
+- Is it active, focused, pressed, etc...?
+- What is the palette (colours)?
+- What is the layout direction?
+- What is the font?
+
+Without this, the `QStyleOptionProgressBar` would not reflect the actual widgets look and feel. The word "Option" means a container for options/state/data passed to the style system.
+
+#### Lifecycle of `QStyleOptionProgressBar`
+
+1. **Construct an empty option**
+
+```python
+option = QStyleOptionProgressBar()
+```
+
+At this stage its just default/empty - widget info, no state and no values.
+
+2. **Initialize with the widgets current state.**
+
+```python
+option.initFrom(self)
+```
+
+This copies properties from the widget.
+
+- Enabled/disabled, active focus
+- Palette (light/dark colours)
+- Layout direction
+- Font
+
+This ensures the style paints consistently with the rest of the app.
+
+3. **Add custom parameters**
+
+```python
+option.minimum = 0
+option.maximum = 100
+option.progress = 42
+option.text = "42%"
+option.textVisible = True
+```
+
+Now the option knows this specific progress bars values.
+
+4. **Pass to style for rendering**
+
+```python
+painter = QPainter(self)
+self.style().drawControl(QStyle.ControlElement.CE_ProgressBar, option, painter, self)
+```
+
+This hands it to Qt's style engine. The style (Fusion, Windows, macOS, or custom) decides how to draw it.
+
+The conceptual flow is,
+
+1. **Defaults** → `option = QStyleOptionProgressBar()`
+
+2. **Sync with widget** → `option.initFrom(self)`
+
+3. **Customize** → set progress, minimum, maximum, etc.
+
+4. **Render** → `self.style().drawControl(...)`
 
 ## Example 2
 

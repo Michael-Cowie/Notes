@@ -18,7 +18,7 @@ The meaning of “letting the ball come to you” in table tennis — controlled
 3. Instead, read the serve early, move your body to the correct spot and meet the ball in your ideal contact zone - usually close to your body, in front of you.
 
 <div align="center">
-    <h1> Return Technique - Mirroring
+    <h1> Return Technique - Mirroring Paddle Direction
 </div>
 
 **For returning spin services** we will create the mirror rule - **Mirror their paddle direction - their right becomes your left**. This works because **the angle their arm rotates to cause the spin, is the angle that the ball will bounce off towards**. Keep in mind this **will not work** when your opponent using the opposite hand that you use, e.g. right handed versus left handed.
