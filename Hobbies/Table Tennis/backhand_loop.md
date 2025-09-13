@@ -41,7 +41,7 @@ The correct feeling of the backhand loop is the following.
 **Against topspin**, imagine you are "brushing forward through" the ball with a bit more drive.
 
 <div align='center'>
-    <img src='images/backhand_loop_technique.gif'>
+    <img src='images/zhang_jike_backhand_form.gif'>
 </div>
 
 <div align='center'>
@@ -74,7 +74,7 @@ Small but critical details which make a great forehand loop are,
     <img src='images/backhand_wrist_rotation_2.gif'>
 </div>
 
-5. **Wrist Adjustment After Contact** - A constant racket angle is incorrect. While versus topspin it is a much less of an angle versus backspin, a constant angle is not correct. When performing a loop you **must push forward**. This means to **hold the ball, then push forward**. This happens from a combination of brushing (To grab the ball) then push forward to produce power. The paddle angle **should change from closed open to closed, do not keep the same paddle angle**.
+5. **Wrist Adjustment After Contact** - A constant racket angle is incorrect. While versus topspin it is a much less of an angle versus backspin, a constant angle is not correct. When performing a loop you **must push forward**. This means to **hold the ball, then push forward**. This happens from a combination of brushing (To grab the ball) then push forward to produce power. The paddle angle **should change from closed open to closed, do not keep the same paddle angle**. "Press down" doesn't mean literally pushing the ball downard into the table. It refers to a **controlled closing of a racket angle and slightly brushing over the ball** to keep it low and stable. The "press down" happens **right at and immediately after contact**.
 
 <div align='center'>
     <img src='images/backhand_wrist_rotation.gif'>
@@ -91,6 +91,8 @@ Small but critical details which make a great forehand loop are,
 <div align='center'>
     <img src='./images/backhand_foot_stance.png'/>
 </div>
+
+8. **Single Motion** - Even if you're perfectly aware that the backhand technique will be used, it's still important to not preemptively prepare yourself. This means you should not pull your paddle down and "hold it". It should not be a two motion movement, but one. Instead, wait and perform the backhand loop in one swift movement with acceleration included.
 
 <div align="center">
     <h1> Versus Backspin </h1>
