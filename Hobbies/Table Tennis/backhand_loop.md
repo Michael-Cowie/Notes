@@ -21,6 +21,32 @@ For the backhand loop the right foot should be slightly infront of the left foot
 Their will be a difference between the body stance in terms of how deep you kneel versus backspin and topspin which will be addressed below.
 
 <div align="center">
+    <h1> Technique For Distance </h1>
+</div>
+
+- **Very Close** - For a very close ball, you use the **banana flick**.
+
+<div align='center'>
+    <img src='images/zhang_jike_11.gif'>
+</div>
+
+- **Mid Range** - For a mid range backhand loop, it's very important for 80% to 90% of the underarm and the wrist. You don't want to use the hip and shoulder for a midrange shot. In addition, notice that the **elbow is high**.
+
+<div align='center'>
+    <img src='images/anders_lind_backhand_1.gif'>
+</div>
+
+<div align='center'>
+    <img src='images/ma_long_backhand_1.gif'>
+</div>
+
+<div align='center'>
+    <img src='images/zhang_jike_backhand_10.gif'>
+</div>
+
+- **Long Range** - This is the type of looped where we need to more far more of the hip for power.
+
+<div align="center">
     <h1> Backhand Motion and Versus Topspin </h1>
 </div>
 
@@ -83,6 +109,12 @@ Small but critical details which make a great forehand loop are,
 </div>
 
 7. **Foot Stance** - The left foot is usually a **tiny bit** behind the right foot.
+
+8. **Wrist movement** - Rotate the wrist outwards on completion.
+
+<div align='center'>
+    <img src='images/zhang_jike_backhand_form_7.gif'>
+</div>
 
 <div align="center">
     <h1> Versus Backspin </h1>
