@@ -152,6 +152,13 @@ Beyond the three phases, several timeless engineering principles support reliabl
    - Do I know exactly what "done" looks like?
    - Have I identified what could force me to restart?
 
+## Engineering Mistakes
+
+- **Having assumptions without validating them** - Assumptions in an Engineering process or feature development without validation can lead to poor decision making without the assumption validated. Additionally, if the assumption was incorrect and not validated early, it can lead the the entire development being halted due to code blockers or technical debt.
+- **Accepting Acceptance Criteria at face value** - Expecting perfectly written Acceptance Criteria is never something to expect, discoveries can occur during development. Additionally, challenge the Acceptance Criteria for breaking scenarios.
+- **Conflicting Design Principles** - Software Engineering can have multiple useful design principles, two may include DRY and 'only pass what is needed'. As an example, if you are not able to implement both patterns due to conflicts, it's best to step back and consider the bigger architectural design.
+- **Simple Solution != Architecturally Correct** - Simple solutions do not mean they're architecturally correct. It's ideal to search for best practices and use framework best practices. A simple solution such as filtering may include framework filtering rather than self-written code filtering.
+
 ## Conclusion
 
 The path of engineering progression is not defined solely by technical knowledge, but by the systematic application of engineering principles across all phases of work. Mistakes such as hidden assumptions, late discovery of edge cases or conflicting design choices arise **from gaps in preparation, iterative validation and reflection**.

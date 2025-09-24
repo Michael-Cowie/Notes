@@ -50,23 +50,28 @@ Their will be a difference between the body stance in terms of how deep you knee
     <h1> Backhand Motion and Versus Topspin </h1>
 </div>
 
-Using your waist is essential for the backhand loop. The movement **should be side to side**.
+#### Preparation - Beginning of Stroke
 
-1. Slightly tuck in the abdomen.
-2. Start your hand **slightly left of the stomach**, not in the center. From the center you cannot generate power. As the movement is restricted from down to upwards when performing the loop, this is very weak.
-3. Pivot on your right leg while internally rotating wrist/forearm.
-4. Start with the upper arm leading the forearm. Then the upper arm leading the wrist. Finally, the paddle tip comes through. This is a complete power sequence and it must be a complete chain movement.
-5. Even if you're perfectly aware that the backhand technique will be used, it's still important to not preemptively prepare yourself. This means you should not pull your paddle down and "hold it". It should not be a two motion movement, but one. Instead, wait and perform the backhand loop in one swift movement with acceleration included.
-6. Versus **topspin**, tighten the core first then **brush forward with power**. Wrist rotation is much smaller versus topspin, the stroke is compact and explosive. Wrist rotation is used for more backspin.
+- **Legs** - Knees are slightly bent (not as deep as vs backspin). This lowers your center of gravity, keeps you balanced and "loads" your legs like springs.
+- **Torso** - Upper body leans forward slightly over the table, compact stance.
+- **Arm** - Forearm is pulled back, elbow in front of the body.
+- **Wrist** - Slightly cocked back, ready to snap forward.
 
-The correct feeling of the backhand loop is the following.
+#### Acceleration into Contact - Middle of Stroke
 
-- Your racket meets the balls surface with a brushing contact. You cannot muscle through it, grip the balls surface and spin it outward through the whipping motion. This sensation defines true looping. Hitting into it directly is not proper looping technique.
-- **Do not brush upward, brush forward**.
-- At the same time, your forearm/wrist/wait supply controlled power into that brushing path.
-- Think of it as "brushing through the ball with power". This is not two steps, but one blended contact.
+- **Legs** - Knees begin to rise slightly, providing forward-upward force. Here the upward component is small, since the ball already carries topspin (natural lift). The main purpose is to stabilize and transfer energy into the stroke.
+- **Torso** - Slight rotation and forward drive of the shoulders to add body weight into the ball.
+- **Forearm** - Moves forward more than upward (Flatter trajectory compared to backspin). **Accelerate in the later part of the swing**.
+- **Contact Point** - Make contact close to the body, but not too close. This allows for longer contact time as the paddle moves in the motion with the arm. In the later part of the swing, there is a section where the racket carries the ball. If you contact it too late, there is no time or space the the ball to stay on the racket.
+- **Contact** - Happen when the ball is at or just after the peak of its bounce, **with the wrist in the middle of its snap**, accelerating through. Contact happens right as the wrist is accelerating through its midpoint, not fully bent, not fully snapped forward. This ensures you "catch" the ball with maximum brushing speed. - After you contact the ball, you need to feel like you're lifting the ball. **Then complete the follow-through. Do not brush upward, brush forward**.
+- **Wrist** - Snap forward with a shoft, sharp motion. Yur forearm/wrist/wait supply controlled power into that brushing path.
 
-**Against topspin**, imagine you are "brushing forward through" the ball with a bit more drive.
+#### Follow Through
+
+- **Legs** - Fully support your body weight in a stable stance, not fully blocked, still flexible.
+- **Torso** - Finishes its forward lean, then stabilizes.
+- **Forearm** - Complete its forward swing, not too high.
+- **Wrist** - Finishes its snap and relaxes, rotating the wrist outwards.
 
 <div align='center'>
     <img src='images/zhang_jike_backhand_form.gif'>
@@ -76,41 +81,53 @@ The correct feeling of the backhand loop is the following.
     <img src='images/zhang_jike_backhand_form_2.gif'>
 </div>
 
-Small but critical details which make a great forehand loop are,
+Small but critical details which make a great backhand loop are,
 
-1. **Elbow Placement** - Swing it freely.
-
-<div align='center'>
-    <img src='images/zhang_jike_backhand_form_5.gif'>
-</div>
-
-2. **Follow Through** - Similar to the forehand, it's crucial to follow through. The backhand loop requires the waist and legs to generate power, not just the arms. Additionally, **do not deliberately go upward**. Brush and go forward. When you go rotate, go forward.
-
-<div align='center'>
-    <img src='images/zhang_jike_backhand_form_6.gif'>
-</div>
-
-2. **Correct Paddle Contact** - When looping with the backhand, the contact point on the rubber should be **slightly above center**. This helps to create a whipping effect. If you contact the ball too low on the rubber, that is incorrect as you will not get enough brushing action either.
-
-<div align='center'>
-    <img src='images/backhand_contact_point.png'>
-</div>
-
-3. **Correct Ball Contact** - Hit the **upper middle part of the ball**. A brushing contact is essential, but so is the point of contact. Without doing so, the angle racket will be incorrect.
-
-<div align='center'>
-    <img src='images/backhand_contact_angle.gif'>
-</div>
-
-5. **Wrist Adjustment After Contact** - A constant racket angle is incorrect. While versus topspin it is a much less of an angle versus backspin, a constant angle is not correct. When performing a loop you **must push forward**. This means to **hold the ball, then push forward**. This happens from a combination of brushing (To grab the ball) then push forward to produce power. The paddle angle **should change from closed open to closed, do not keep the same paddle angle**. "Press down" doesn't mean literally pushing the ball downard into the table. It refers to a **controlled closing of a racket angle and slightly brushing over the ball** to keep it low and stable. The "press down" happens **right at and immediately after contact**.
+1. **Wrist** - For backhand loops, topspin or backspin, even backhand flicks, the following wrist motion is always used. This motion is used to grip the ball and add spin. Whenever spin is involved, topspin or backspin, for backhand **always rotate the racket back first with a closed racket face**.
 
 <div align='center'>
     <img src='images/backhand_wrist_rotation.gif'>
 </div>
 
-7. **Foot Stance** - The left foot is usually a **tiny bit** behind the right foot.
+2. **Contact Angle** - The racket may appear to be a very high degree when leaving, but the actual contact point is closed. This contact angle is used to add spin.
 
-8. **Wrist movement** - Rotate the wrist outwards on completion.
+<div align='center'>
+    <img src='images/60.png'>
+</div>
+
+3. **Elbow Placement** - Swing it freely.
+
+<div align='center'>
+    <img src='images/zhang_jike_backhand_form_5.gif'>
+</div>
+
+4. **Follow Through** - Similar to the forehand, it's crucial to follow through. The backhand loop requires the waist and legs to generate power, not just the arms. Additionally, **do not deliberately go upward**. Brush and go forward. When you go rotate, go forward.
+
+<div align='center'>
+    <img src='images/zhang_jike_backhand_form_6.gif'>
+</div>
+
+5. **Correct Paddle Contact** - When looping with the backhand, the contact point on the rubber should be **slightly above center**. This helps to create a whipping effect. If you contact the ball too low on the rubber, that is incorrect as you will not get enough brushing action either.
+
+<div align='center'>
+    <img src='images/backhand_contact_point.png'>
+</div>
+
+6. **Correct Ball Contact** - Hit the **upper middle part of the ball**. A brushing contact is essential, but so is the point of contact. Without doing so, the angle racket will be incorrect.
+
+<div align='center'>
+    <img src='images/backhand_contact_angle.gif'>
+</div>
+
+7. **Wrist Adjustment After Contact** - A constant racket angle is incorrect. While versus topspin it is a much less of an angle versus backspin, a constant angle is not correct. When performing a loop you **must push forward**. This means to **hold the ball, then push forward**. This happens from a combination of brushing (To grab the ball) then push forward to produce power. The paddle angle **should change from closed open to closed, do not keep the same paddle angle**. "Press down" doesn't mean literally pushing the ball downard into the table. It refers to a **controlled closing of a racket angle and slightly brushing over the ball** to keep it low and stable. The "press down" happens **right at and immediately after contact**.
+
+<div align='center'>
+    <img src='images/backhand_wrist_rotation.gif'>
+</div>
+
+8. **Foot Stance** - The left foot is usually a **tiny bit** behind the right foot.
+
+9. **Wrist movement** - Rotate the wrist outwards on completion.
 
 <div align='center'>
     <img src='images/zhang_jike_backhand_form_7.gif'>
