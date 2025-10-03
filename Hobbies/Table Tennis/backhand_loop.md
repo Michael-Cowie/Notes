@@ -44,7 +44,7 @@ Their will be a difference between the body stance in terms of how deep you knee
     <img src='images/zhang_jike_backhand_10.gif'>
 </div>
 
-- **Long Range** - This is the type of looped where we need to more far more of the hip for power.
+- **Long Range** - This is the type of loop where we need to more far more of the hip for power.
 
 <div align="center">
     <h1> Backhand Motion and Versus Topspin </h1>
@@ -63,7 +63,7 @@ Their will be a difference between the body stance in terms of how deep you knee
 - **Torso** - Slight rotation and forward drive of the shoulders to add body weight into the ball.
 - **Forearm** - Moves forward more than upward (Flatter trajectory compared to backspin). **Accelerate in the later part of the swing**.
 - **Contact Point** - Make contact close to the body, but not too close. This allows for longer contact time as the paddle moves in the motion with the arm. In the later part of the swing, there is a section where the racket carries the ball. If you contact it too late, there is no time or space the the ball to stay on the racket.
-- **Contact** - Happen when the ball is at or just after the peak of its bounce, **with the wrist in the middle of its snap**, accelerating through. Contact happens right as the wrist is accelerating through its midpoint, not fully bent, not fully snapped forward. This ensures you "catch" the ball with maximum brushing speed. - After you contact the ball, you need to feel like you're lifting the ball. **Then complete the follow-through. Do not brush upward, brush forward**.
+- **Contact** - Happen when the ball is at or just after the peak of its bounce, **with the wrist in the middle of its snap**, accelerating through. Contact happens right as the wrist is accelerating through its midpoint, not fully bent, not fully snapped forward. This ensures you "catch" the ball with maximum brushing speed. - After you contact the ball, you need to feel like you're lifting the ball. **Then complete the follow-through. Do not brush upward, brush forward**. Think of it as catching the ball on your rubber and guiding it forward, while the spin you impart keeps it afloat.
 - **Wrist** - Snap forward with a shoft, sharp motion. Yur forearm/wrist/wait supply controlled power into that brushing path.
 
 #### Follow Through
@@ -137,7 +137,13 @@ Small but critical details which make a great backhand loop are,
     <h1> Versus Backspin </h1>
 </div>
 
-**Do not brush upward, brush forward**. When you lower your center of gravity and tuck your wrist inward, the forward motion naturally has an upward motion. When lowering your center of gravity, the forward strike naturally generates an upward force.
+When you lower your center of gravity and tuck your wrist inward, the forward motion naturally has an upward motion. When lowering your center of gravity, the forward strike naturally generates an upward force.
+
+Contact point for backspin is the most important, remember versus topspin is can be higher, but for backspin its very important to brush the ball but also hit it on a much flatter angle in conjunction to lifting the ball.
+
+<div align="center">
+    <img src="./images/58.png/">
+</div>
 
 <div align='center'>
     <img src='images/zhang_jike_backhand_form_3.gif'>
