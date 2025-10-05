@@ -58,3 +58,10 @@ Produces frictional heat, causing glue to congeal into chunks. **Spread lightly 
 ##### Using a dry sponge edge
 
 Drags glue unevenly, leaving streaks. **Ensure the applicator is fully loaded with glue**.
+
+#### Cutting The Rubber
+
+1. Use an X-Acto #11 blade or scalpel for cutting the rubber.
+2. Cut after the glue is fully dried and rolled.
+3. Keep blade at 45° to the blade edge.
+4. Replace blade after every 1–2 rubbers for best results.
