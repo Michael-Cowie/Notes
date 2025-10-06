@@ -96,11 +96,16 @@ While the above is general advice the sequence of steps can be broken down into,
 When performing a forehand loop against backspin it's crucial to make the following adjustments,
 
 1. Loop the ball at **2 o'clock**. Unlike topspin, it's essential to wait for the ball to fall a bit more than normal. It's completely fine to loop a topspin ball near 12 o'clock, but versus backspin it's very important to loop it around **2 o'click**.
-2. When looping, the rackle angle must be going at 45°.
+2. When looping, the rackle angle must be going at 45°, but inital contact is in the lower-mid component of the ball.
 3. When looping backspin, it's very important **to brush the ball**.
 4. Make sure to **accelerate** and **follow through** with the looping motion so the hand is above the head which leads to increased contact time. If the ball goes off to table it is an indication that more brushing is required or more follow through is required.
+5. Rotate the wrist before contact to help lift the ball.
 
-45° racket angle is fine for both backspin and topspin, **the key difference is when to hit the ball**.
+**Contact Point + Follow Through** are the most important aspects of looping a backspin ball. Within the mid-lower contact, you have higher dwell time. This increased dwell time, combined with wrist movement and follow through allows you to pull the ball over the net. **The follow through racket may look high, but the initlal contact point is still the lower-middle**. The wrist rotation during the follow through creates this illusion. The conclusion here is that **heavy backspin balls can be contacted at mid or slightly below center**.
+
+<div align="center">
+    <img src="./images/62.png/">
+</div>
 
 #### Brushing Rule of Thumb
 
@@ -118,13 +123,7 @@ When performing a forehand loop against backspin it's crucial to make the follow
 
 Knowing the swing path of the forehand topspin is **based on the balls incoming spin**.
 
-When performing a forehand loop **versus backspin** it's crucial to angle the racket in a much higher angle. This is because backspin forces the ball go to downwards onto the table, we therefore need to counteract this by aiming our paddle at a much higher angle, relying on the backspin to pull it back onto the table.
-
-Additionally, when trying to loop versus backspin **you need to drop the paddle even lower** in order to generate more power and combat the backspin.
-
-<div align="center">
-    <img src="./images/41.png/">
-</div>
+When performing a forehand loop **versus backspin** it's crucial to angle the racket in a much higher angle. This is because backspin forces the ball go to downwards onto the table, we therefore need to counteract this by aiming our paddle at a much higher angle, relying on the backspin to pull it back onto the table. Additionally, when trying to loop versus backspin **you need to drop the paddle even lower** in order to generate more power and combat the backspin.
 
 When performing a forehand loop **versus topspin**, we need hit the ball on a much lower angle. This is because the ball has high amounts of topspin which causes the ball go to upwards on contact. You need to calibrate how much power and what angle is required **depending on the amount of spin on the ball**.
 
