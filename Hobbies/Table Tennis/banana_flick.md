@@ -38,8 +38,8 @@ This is also shown in the summary `.gif`. The point of corner is not in the cent
 
 #### Angle for Spin
 
-For **backspin** - Angle the racket higher.
-For **topspin** - No need to angle at as high.
+For **backspin** - Angle the racket higher with the contact point on the lower-mid part.
+For **topspin** - No need to angle at as high and the contact point should be higher than backspin.
 
 #### Summary
 

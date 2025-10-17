@@ -13,6 +13,79 @@ When holding the paddle for a backhand, the position of the index finger at the 
 </div>
 
 <div align="center">
+    <h1> Lin Shidong - Middle to Right Swing Motion </h1>
+</div>
+
+Lin's backhand is characterized by a **minimalist yet explosive motion**, prioritizing timing and acceleration. Unlike the broader, left-to-right brushing path typical of traditional loops, Lin's stroke direction is **forward-right**, creating a flatter, faster and more penetrating trajectory. The stroke merges the principles of loop drive and counter-topspin, allowing him to attack both topspin and underspin balls close to the table with minimal preparation time.
+
+Backhand is different to forehand. Forehand uses a tacky rubber and can grab the ball, using a significant amount of the body for the loop. The backhand needs to be explosive and performed in a short amount of time.
+
+The forward swing begins from the elbow joint, functioning as a stable hinge while the forearm rotates forward and slightly upward.
+
+- The wrist releases explosively.
+- The core and knees contribute minor but synchronized forward thrust.
+- Lin's stroke line moves **from the middle of his body toward the right**, giving the shot a linear, forward-driving energy rather than an arced, cross-body sweep. The arm should grap the ball and wrap it downards, do not shoot the arm too high.
+- During the loop, the back
+
+The most crucial points to apply when performing the backhand loop for success are,
+
+1. **Brushing** - Essential for control and spin.
+2. **Explosive Movement** - Explosive movement and wrist are essential for power and allow for increased dwell time for the follow through. This means to perform the movement from start to completion in the smallest amount of time, which also creating high amounts of power.
+3. **Follow Through** - If brushing and explosive movement are combined, then follow through is critical to allow for increased dwell time and increased accuracy.
+4. **Rotate The Hand Down** - During the follow through, this allows us to drop the ball and give it forward rotation and then a downward trend to get on the table.
+
+The motion blends brushing and driving, approximately a 40:60 brush-to-drive ratio in standard rallies. The impact zone lies in front of the torso. Lin uses a thin-medium contact, generating topspin while maintaining forward penetration. Grip pressure peaks precisely at contact, compressing the ball momentarily before release. This synchronization of elbow stability, forearm rotation and wrist acceleration results in high ball speed with a comparatively low arc.
+
+<div align="center">
+    <img src="./images/lin_shidong_1.gif/">
+</div>
+
+<div align="center">
+    <img src="./images/lin_shidong_3.gif/">
+</div>
+
+For topspin when contacting the ball late on the falling phase, the contact point should be lower when raising the arm. This is important to grab the ball and impart a large amount of spin. However, when hitting the ball at an early phase when the ball has a lot of spin, a higher contact point is performed because the ball has a lot of spin. **Contact should be at the top of the bounce or slightly earlier**.
+
+- **Against Backspin** - Brush slightly more upward.
+- **Against Topspin / Fast Loops** - Emphasize forward drive.
+
+<div align="center">
+    <img src="./images/64.png/">
+</div>
+
+<div align="center">
+    <img src="./images/lin_shidong_5.gif/">
+</div>
+
+<div align="center">
+    <img src="./images/lin_shidong_4.gif/">
+</div>
+
+Even at a long distance, the same technique was used. However, the further the distance the more appropritae it is to use Zhang Jike style of hip usage.
+
+<div align="center">
+    <img src="./images/lin_shidong_2.gif/">
+</div>
+
+<div align="center">
+    <h1> Modern Table Tennis Backhand Loop </h1>
+</div>
+
+For the backhand, never intentionally pull your arm back for any technique. **All strokes should be formed by your body leading your hand**. The power from your body and legs is always more crucial than the power from your arm alone. In modern table tennis, your body weight must be pressed onto your right leg. Many players misunderstand what pressing on the right leg means. It doesn't mean leaning excessively, you just need to settle your weight onto that leg.
+
+When executing the backhand, power must be generated from the inside out. Do not gather power by pulling sideways to your left. Instead, feel the power accumulating inside your body. If you watch modern table tennis, nobody pulls from the side to the front anymore unless its from a very high distance. Modern players generate power from the inside outward. This allows you to utilize the power from your body and thighs.
+
+To hit the ball with quality to the opponents side, you need forward power. Therefore, your power application must be from inside out, not from left to right. The right leg must be slightly forward, so you can properly anchor your weight and maintain balance. The center of gravity is pressed on the right leg. Think of a general drawing his sword, this motion is direct and forward.
+
+For all backhand strokes, do not actively pull your arm back. The more you pull your arm back, the easier it is to get jammed. Instead, start from the standard ready position. From there, shift your weight onto the right leg with an inward coiling movement. **Do not initiate the movement with your arm**. The backhand relies more on a solid framework than the forehand. The backhand requires more power from your body and legs. **The hand does not actively pull back, it is the power from the legs and body coiling inward. The hand remains still. As you coil in and settle the weight on the right leg, the hand naturally comes back**. It is the body coiling that generates the power and creates the angle.
+
+The most import aspect of the backhand is the body internals energy, the power from your core and thighs. The power of hip thrust, core tension and thigh strength. Once then, you can add finger and wrist action. Finger action in the backhand is the final link in the chain. Grip the racket at the moment of coiling and thrusting.
+
+<div align='center'>
+    <img src='images/modern_table_tennis.gif'>
+</div>
+
+<div align="center">
     <h1> Stance </h1>
 </div>
 

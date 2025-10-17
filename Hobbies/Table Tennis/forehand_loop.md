@@ -95,16 +95,35 @@ While the above is general advice the sequence of steps can be broken down into,
 
 When performing a forehand loop against backspin it's crucial to make the following adjustments,
 
+1. Store the power to the right leg. Shift the entire weight to the right leg. Do not rotate the right leg once planted.
+1. While pressing down on the right leg, we inwardly rotate the right hip. Then, the waist rotates. Do not rotate your legs or the waist cannot rotate properly.
+
+<div align="center">
+    <img src="./images/63.png/">
+</div>
+
+1. The power from the waist and hips come out. If you can feel the rotation of your waist and hips and they cannot rotate any further, that means your waist and hips are in position.
+
 1. Loop the ball at **2 o'clock**. Unlike topspin, it's essential to wait for the ball to fall a bit more than normal. It's completely fine to loop a topspin ball near 12 o'clock, but versus backspin it's very important to loop it around **2 o'click**.
-2. When looping, the rackle angle must be going at 45°, but inital contact is in the lower-mid component of the ball.
-3. When looping backspin, it's very important **to brush the ball**.
-4. Make sure to **accelerate** and **follow through** with the looping motion so the hand is above the head which leads to increased contact time. If the ball goes off to table it is an indication that more brushing is required or more follow through is required.
-5. Rotate the wrist before contact to help lift the ball.
+1. Inital contact is in the lower-mid component of the ball, illustrated below by the image.
+1. When looping backspin, it's very important **to brush the ball**.
+1. Make sure to **accelerate** and **follow through** with the looping motion so the hand is above the head which leads to increased contact time. If the ball goes off to table it is an indication that more brushing is required or more follow through is required.
+1. Rotate the wrist before contact to help lift the ball.
+
+<div align="center">
+    <img src="./images/wrist_rotation_fang.gif/">
+</div>
+
+1. After making contact with the ball at the lower-mid point, wrist rotation and natural follow through will keep the ball on the table. **After successfully making a brushing contact at the correct contact point, at this point you can then rotate the wrist and brush in a forward direction to get the ball over the net at a velocity that isn't as easy to return**. If you brush and lift at too high of an angle, giving the opponent an easy high topspin ball allows them to easy loop it back for an offensive return, which is not good.
 
 **Contact Point + Follow Through** are the most important aspects of looping a backspin ball. Within the mid-lower contact, you have higher dwell time. This increased dwell time, combined with wrist movement and follow through allows you to pull the ball over the net. **The follow through racket may look high, but the initlal contact point is still the lower-middle**. The wrist rotation during the follow through creates this illusion. The conclusion here is that **heavy backspin balls can be contacted at mid or slightly below center**.
 
 <div align="center">
     <img src="./images/62.png/">
+</div>
+
+<div align="center">
+    <img src="./images/ma_long_vs_backhand.gif/">
 </div>
 
 #### Brushing Rule of Thumb
