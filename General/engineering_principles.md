@@ -44,9 +44,15 @@ The preparation phase determines whether development begins with clarity or hidd
    - Think in systems, consider how your change affects the entire application.
    - For AC incompleteness, the suggestion is to create a **data flow diagram** showing all input sources. Additionally, confirmation of scope boundaries with product managers.
 
-6. **Alternative Generation**
+6. **Alternative Approaches** - Create 2 to 3 different approaches to solve the problem. Evaluate each approach against criteria, maintainability, performance, complexity, alignment with existing patterns. Ensure your chosen approach follows existing system patterns and finally list what could go wrong with your approach.
 
-   - Create 2 to 3 different approaches to solve the problem. Evaluate each approach against criteria, maintainability, performance, complexity, alignment with existing patterns. Ensure your chosen approach follows existing system patterns and finally list what could go wrong with your approach.
+7. **Working Isn't The Same As Correct** - Correctness means aligning with design, not producing results. This means the work follows correct architectural correctness despite what the users views as perceived completeness just from application behaviour.
+
+8. **Pause on Uncertainty** - Establish a "stop and validate" trigger whenever ambiguity or unease arises. This natural feeling occurrs for a reason and is often a signal for exposing potential problems.
+
+9. **Challenge Assumptions Early** – Continuous validation and alignment if any misalignment occurs is crucial, rather than waiting for formal review to catch issues early. This will reduce costly rework if these misalignments were caught early. This continuous validation extends to code architecture feedback aswell.
+
+10. **Validate Before Executing** - Restate requirements to validate perceived understanding. Different approaches to validate perceived understanding could be to discuss it with the app spec or analysing the code paths. Confirm assumptions if any are present. Test understanding through multiple scenarios before implementation begins.
 
 In any engineering discipline, **preparation is not passive reading**. It is **active exploration and validation** of assumptions.
 

@@ -31,8 +31,20 @@ The most crucial points to apply when performing the backhand loop for success a
 
 1. **Brushing** - Essential for control and spin.
 2. **Explosive Movement** - Explosive movement and wrist are essential for power and allow for increased dwell time for the follow through. This means to perform the movement from start to completion in the smallest amount of time, which also creating high amounts of power.
-3. **Follow Through** - If brushing and explosive movement are combined, then follow through is critical to allow for increased dwell time and increased accuracy.
-4. **Rotate The Hand Down** - During the follow through, this allows us to drop the ball and give it forward rotation and then a downward trend to get on the table.
+3. **Follow Through** - If brushing and explosive movement are combined, then follow through is critical to allow for increased dwell time and increased accuracy. Follow through is important or otherwise you will be subconsciously using your muscles to slow down. Like golf, there is no way to hit it as well and also have the club stop immediately afterwards. Sometimes thinking about where your follow through ends up, can help control the motion before and during contact. You change your motion before hitting the ball as well, even though youre focused on the after part.
+4. **Create an Arc** - At the point of contact, a final downward snap of the wrist is applied to give the ball a downward trend. This creates a powerful arc. A good arc makes the loop both safe and powerful. Allowing for it to clear then net and then give a downward trend to land on the table. A flat arc (too straight) will result in the ball travelling very fast, but doesn't dip and will go off the table. An arc is too flat when it is not given enough upward brush or topspin to bring the ball down. You need to "wrap forward-up-down" not "push forward". **Even though the "pull down" optically occurs after the ball is struck, the muscle movement is different on ball contact because the down force begins before/during ball contact.**
+
+<div align="center">
+    <img src="./images/bh_arc.png/">
+</div>
+
+<div align="center">
+    <img src="./images/lin_shidong_backhand_downward_slowed.gif/">
+</div>
+
+<div align="center">
+    <img src="./images/lin_shidong_backhand_downward.gif/">
+</div>
 
 The motion blends brushing and driving, approximately a 40:60 brush-to-drive ratio in standard rallies. The impact zone lies in front of the torso. Lin uses a thin-medium contact, generating topspin while maintaining forward penetration. Grip pressure peaks precisely at contact, compressing the ball momentarily before release. This synchronization of elbow stability, forearm rotation and wrist acceleration results in high ball speed with a comparatively low arc.
 

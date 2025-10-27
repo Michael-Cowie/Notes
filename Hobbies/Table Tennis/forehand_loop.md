@@ -24,7 +24,16 @@ When holding the paddle for the forehand loop the key characteristics are
 6. **Follow Through** - After completion of the shot, **keep the paddle driving up to your head**. This is important to having the paddle near the middle of the body, allowing the use of a paddle backhand return afterwards.
 7. **Brushing Contact** - During the contact phase, players aim to brush the ball with the racket's surface while maintaining a closed racket angle. This brushing action generates topspin, causing the ball to rotate forward and descend quickly over the net. **The ball should be struck with the middle or upper portion of the racket for maximum control**.
 8. **Brushing Balance** - Think - "Brush through the ball with power". First make contact with a **brushing angle**, then use your arm, waist and legs to **drive through** the ball.
-9. **Begin Down and Then Pull Backwards - Form an Arc** - As demonstrated below, Ma Long is performing a forehand loop. He first lowers his paddle and instead of immediately driving it upwards, he pulls it back to perform an arc movement.
+9. **Begin Down and Then Pull Backwards - Form an Arc** - As demonstrated below, Ma Long is performing a forehand loop. He first lowers his paddle and instead of immediately driving it upwards, he pulls it back to perform an arc movement. It's very important to pull it backwards, **otherwise it removes too much of the forward momemtnum**. It's more difficult to **brush forward** without puling backwards and then arcing forward, otherwise it has too much upward direction and less forward direction. The two black dots illustrate the contact point in the middle of the movement, which is the ideal contact point. The difference being when pulling backwards and then arcing forwward, has significantly more forward momentum. This extra forward momentum used in conjunction with a **brushing** contact aids in control, spin and speed.
+
+<div align="center">
+    <img src="./images/65.png/">
+</div>
+
+<div align="center">
+    <img src="./images/ma_long_forehand_2.gif/">
+</div>
+
 10. **Turn Your Index Finger Upward** - It's very important to keep **the wrist relaxed** in a natural position. When coming up in an upward motion you will turn your **index finger upward**.
 
 <div align="center">
@@ -32,10 +41,6 @@ When holding the paddle for the forehand loop the key characteristics are
 </div>
 
 10. **MOVE!** - It's very important to get into the correct position to perform the forehand loop. Good footwork is important and always remember `Eyes (Watch the ball) → Legs (Get into position) → Arm (Follow through with the loop)`. **Anticipation** is important but comes with practice, you need to "visualize" the ball in the position where you believe it will go to and preemptively move and prepare.
-
-<div align="center">
-    <img src="./images/ma_long_forehand_2.gif/">
-</div>
 
 11. **Full Body Movement** - Many players make the mistake of following through with the arm only. The forehand is a full body motion starting from the legs, going through the waist, shoulder and finishing with the wrist. To summarize,
 
