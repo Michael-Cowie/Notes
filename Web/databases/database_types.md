@@ -50,7 +50,7 @@ SELECT name FROM Employees WHERE salary > 90000;
     <h1> Document Oriented Databases - NoSQL </h1>
 </div>
 
-Document databases store data as **semi-strucutred JSON or BSON documents**, typically nested and schema-flexible. Optimal for hierarchical or polymorphic data. An "id" field is not strictly in most NoSQL databases, but **if you don't have it and don't create indexes** your searches can become brute-force linear scans `O(n)`, which are very slow in large datasets.
+Document databases store data as **semi-strucutred JSON or BSON documents**, typically nested and schema-flexible. Optimal for hierarchical or polymorphic data. An "id" field is not strictly required in most NoSQL databases, but **if you don't have it and don't create indexes** your searches can become brute-force linear scans `O(n)`, which are very slow in large datasets.
 
 For this reason, MongoDB requires an `_id` field for every document. If you don't provide one, it automatically inserts it using an `ObjectId`. CouchDB requires an `_id` as a document key and finally Firestore also assigns a unique ID if not provided.
 
