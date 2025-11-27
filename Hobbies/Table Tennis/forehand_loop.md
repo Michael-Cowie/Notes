@@ -44,6 +44,8 @@ When holding the paddle for the forehand loop the key characteristics are
 
 11. **Full Body Movement** - Many players make the mistake of following through with the arm only. The forehand is a full body motion starting from the legs, going through the waist, shoulder and finishing with the wrist. To summarize,
 
+12. **Lift The Ball With Your Legs** - At the point of contact, push and lift the ball with your legs. This allows the **waist to still rotate forward**. Still press forward at contact while snapping the wrist to create spin. This allows **to lift with ball without a lower contact** and also means that the swing motion is not directed upward. Without lifting with your legs. **Your legs lift the ball, your arm and wrist rotate he ball**. A brushing contact will cause the topspin on the ball to grip onto the rubber for increased dwell time. The ball “sticks” during the lift because friction + brushing create a tiny gripping window. Your legs don’t lift the ball, your legs lift the stroke, and friction holds the ball on the rubber long enough for that upward path to be transferred into spin + lift.
+
 - Drop the racket low.
 - Keep the elbow near the body.
 - Rotate with the waist.
@@ -139,22 +141,29 @@ When performing a forehand loop against backspin it's crucial to make the follow
 - When against **topspin** → Use more power and forward drive to counter.
 
 <div align="center">
-    <h1> Racket Angle </h1>
-</div>
-
-- **Backspin** - More open angle, brush more.
-- **Topspin** - More closed angle, drive more.
-
-Knowing the swing path of the forehand topspin is **based on the balls incoming spin**.
-
-When performing a forehand loop **versus backspin** it's crucial to angle the racket in a much higher angle. This is because backspin forces the ball go to downwards onto the table, we therefore need to counteract this by aiming our paddle at a much higher angle, relying on the backspin to pull it back onto the table. Additionally, when trying to loop versus backspin **you need to drop the paddle even lower** in order to generate more power and combat the backspin.
-
-When performing a forehand loop **versus topspin**, we need hit the ball on a much lower angle. This is because the ball has high amounts of topspin which causes the ball go to upwards on contact. You need to calibrate how much power and what angle is required **depending on the amount of spin on the ball**.
-
-<div align="center">
     <img src="./images/58.png/">
 </div>
 
 <div align="center">
     <img src="./images/57.png/">
+</div>
+
+<div align='center'>
+    <h1> Backspin and Topspin Identical Racket Angle </h1>
+</div>
+
+**Just fix the angle** and handle the both of top and under spin in same way. The **only difference is the center of gravity**. Do not open the paddle for backspin, fearing it will not go over the net. Do not close the paddle for topspin, fearing it will go over. **We only need to adjust the body movement direction**. If the racket angle keeps changing, shots be inconsistent.
+
+The racket angle should be approximately 45 degrees. Too vertical means you can only hit the ball while too horizontal means you can only brush it.
+
+<div align="center">
+    <img src="./images/74.png/">
+</div>
+
+For looping **topspin** shots, the body rotates backward. For looping topspin, the forearm moves straight forward.
+
+Now for **backspin**, the body movement changes slightly. **The paddle angle remains consistent**. The looping backspin shots, the forearm moves forward and upward.
+
+<div align="center">
+    <img src="./images/paddle_angle.gif/">
 </div>

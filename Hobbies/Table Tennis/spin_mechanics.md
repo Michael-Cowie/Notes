@@ -70,7 +70,7 @@ When the ball spins,
 1. On one side, the surface ball moves **with** the airflow. The relative speed is higher and thus, has **lower pressure**.
 2. On the other side, the surface moves **against** the airflow. The relative speed is lower and thus, has **higher pressure**.
 
-That pressure differences pushes the ball in the direction of the lower pressure, this is the magnus force.
+**That pressure differences pushes the ball in the direction of the lower pressure**, this is the magnus force.
 
 Think of air as having two forms of energy,
 
@@ -86,6 +86,12 @@ Energy is conversed so,
 <div align="center">
     <img src="./images/magnus_effect_2.png/">
 </div>
+
+These principles can be applied to all types of spin, hence
+
+- **Topspin** - The opposite directions meet on the top (Lower pressure on bottom), hence the magnus effect causes it to naturally go downards. Keep in mind, when making contact with the rubber, will go upwards.
+- **Backspin** - The opposite directions meet on the bottom (Lower pressure on top), hence the magnus effect causes it to naturally go upwards. Keep in mind, when making contact with the rubber it will go downwards.
+
 
 <div align="center">
     <h1> Right sidespin </h1>
