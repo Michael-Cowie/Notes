@@ -71,6 +71,116 @@ You can identify the factory method by,
 2. Subclasses override it to **instantiate different products**.
 3. Workflow logic in the base class uses the product but **does not branch**.
 
+## Handling Multiple Variables
+
+Factory Method is fundamentally a solution to **one dimension of variation**. It answers a single question 'Which concrete implementation should be created in this context?'. Problems arise when systems evolve to vary along multiple orthogonal axes, independent decisions that should not constrain each other.
+
+Orthogonal axes represent distinct concerns. When more than one axis exists, attempting to encode all decisions in a single factory leads to combinatorial growth and brittle designs. The correct approach is not to extend Factory Method, but to **apply it repeatedly**, once per axis and **compose the results**.
+
+With multiple axes, object creation becomes staged. Each stage resolves exactly one axis and produces either a concrete object or a factory suitable for resolving the next axis. Factories no longer create final products directly, instead, they progressively narrow the design space.
+
+As factories begin returning other factories, **Abstract Factory naturally emerges**. It is not a replacement for Factory Method, but a structural organization of multiple Factory Methods that belong to the same axis family. Each factory remains narrow in responsibility and orthogonality is preserved through **composition rather than inheritance**.
+
+The defining principle is simple, **one axis per abstraction, one decision per factory**. This structure scales linearly, keeps changes localized and avoids leaking combinations into the type stream.
+
+This means each factory,
+
+- Resolves exactly one axis.
+- Knows nothing about the others.
+- Passes control forward.
+
+This avoids,
+
+- A single class having multiple responsibilities and conversions.
+- Nested conditionals.
+- Class explosion.
+
+Hence, with multiple orthogonal axes, Factory Method is used multiple times in sequence, not once in combination.
+
+Let's imagine a system that processes documents before delivery. The three axes will be,
+
+1. **Document Type**
+
+   - Invoice
+   - Report
+   - Letter
+
+2. **Processing Pipeline**
+
+   - Simple (Validate only)
+   - Audited (Validate + Log)
+   - Secure (Validate + Encrypt)
+
+3. **Delivery Channel**
+   - Email
+   - File system
+   - Cloud storage
+
+Each axis represents a **separate concern**.
+
+- What the document is.
+- How it is processed.
+- Where it is delivered.
+
+None of these logically depends on the others. This is orthogonal because,
+
+- Any document type can go through any processing pipeline.
+- Any pipeline can deliver through any channel.
+- Adding a new delivery channel should not require modifying document logic.
+
+So the design space is `Document x Pipeline x Delivery`. The staged factory resolution will be,
+
+```
+Client
+  |
+  v
+Document Factory
+  |
+  v
+Pipeline Factory
+  |
+  v
+Delivery Factory
+  |
+  v
+Concrete Delivery Action
+```
+
+Each factory will,
+
+- Resolve one axis.
+- Produce an object suitable for the next stage.
+- Hides concrete combinations behind boundaries.
+
+The client has **three independent choices**.
+
+- What document am I sending?
+- How should it be processed?
+- How should it be delivered?
+
+The client makes these choices once, at configuration time.
+
+```python
+document_factory = InvoiceDocumentFactory()
+document = document_factory.create()
+```
+
+At this point, the client has a document. **No knowledge of processing or delivery**.
+
+```python
+pipeline_factory = SecurePipelineFactory()
+processed = pipeline_factory.create().process(document)
+```
+
+Now, the document is validated / logged / encrypted. The client still knows nothing about delivery.
+
+```python
+delivery_factory = EmailDeliveryFactory()
+delivery_factory.create().send(processed)
+```
+
+Finally, the user can choose the concrete delivery mechanism. The client never seens the concrete classes.
+
 ## Example 1 - Different Serializer
 
 Different serializers (JSON, XML, YAML) share a uniform interface, but the system chooses which one to use at runtime.
@@ -206,7 +316,6 @@ class Exporter(ABC):
     @abstractmethod
     def export(self, prepared_data):
         pass
-
 
 class MatplotlibExporter(Exporter):
     def export(self, prepared_data):
@@ -408,3 +517,161 @@ svg_creator.export(image, raw_options)
 pdf_creator = PdfCreator()
 pdf_creator.export(image, raw_options)
 ```
+
+## Example 4 - Backend x File Formats
+
+Now let us suppose we attempt to combine our previous examples and export using a specific backend, into a specified file format. We are now describing two independent axes of variation,
+
+1. **Backend / Engine**.
+
+   - Matplotlib
+   - Qt
+   - ...
+
+2. **Output Format**.
+   - PNG
+   - SVG
+   - PDF
+
+The previous design assumes **one axis of variation**, `Creator → Exporter`. Now we actually have two forms of variation, `Backend x Format`. If you try to stay with only the Factory Method, you will end with with an explosion.
+
+```
+MatplotlibPngCreator
+MatplotlibSvgCreator
+MatplotlibPdfCreator
+QtPngCreator
+QtSvgCreator
+QtCreator
+```
+
+This is a combinational smell. **Factory Method works best when one dimension varies**. When two dimensions vary independently, it is no longer the right abstraction on its own. So the short answer here is, you don't "fix" the Factory Method here, you instead compose it or lift it into Abstract Factory.
+
+We now have two decisions that are independent,
+
+1. Which backend am I using?
+2. Which format am I exporting to?
+
+These decisions should **not be merged into one hierarchy**. Instead, one abstraction chooses the backend and another abstraction chooses the format-specifier exporter within that backend. This leads to Abstract Factory build out of Factory Methods.
+
+As a high-level architecture, the conceptual concept is,
+
+```
+Client
+  |
+  v
+BackendFactory  (Matplotlib / InHouse)
+  |
+  +-- create_png_exporter()
+  +-- create_svg_exporter()
+  +-- create_pdf_exporter()
+```
+
+Each backend factory guarantees,
+
+- All exporters it creates are compatible with that backend.
+- Unsupported formats can fail or be mitted.
+
+This is exactly what Abstract Factory is for.
+
+#### Product Interface
+
+The product interfaces stay the same.
+
+```python
+class ImageExporter(ABC):
+    @abstractmethod
+    def export(self, image, options):
+        pass
+```
+
+#### Abstract Backend Factory
+
+We now need to create the abstract factory, for each backend. This factory represents **one backend ecosystem**.
+
+```python
+class ImageExportBackend(ABC):
+    @abstractmethod
+    def create_png_exporter(self) -> ImageExporter:
+        pass
+
+    @abstractmethod
+    def create_svg_exporter(self) -> ImageExporter:
+        pass
+
+    @abstractmethod
+    def create_pdf_exporter(self) -> ImageExporter:
+        pass
+```
+
+#### Concreete Backend
+
+The factory will be represent each backend, containing factory methods. Each backend controls,
+
+- Which formats it supports.
+- Which exporters are implemented.
+
+```python
+class MatplotlibBackend(ImageExportBackend):
+    def create_png_exporter(self):
+        return MatplotlibPngExporter()
+
+    def create_svg_exporter(self):
+        return MatplotlibSvgExporter()
+
+    def create_pdf_exporter(self):
+        return MatplotlibPdfExporter()
+```
+
+The Factory Method fits specifically in each method,
+
+```
+create_png_exporter()
+create_svg_exporter()
+create_pdf_exporter()
+```
+
+is itself a Factory Method. So, we did not abandon the Factory Method. Instead, we organized multiple Factory Methods under a higher abstraction.
+
+#### Client Code.
+
+Now, the client code is a two-axis choice, cleanly separated.
+
+```python
+if backend == "matplotlib":
+    factory = MatplotlibBackend()
+else:
+    factory = InHouseBackend()
+
+if format == "png":
+    exporter = factory.create_png_exporter()
+elif format == "svg":
+    exporter = factory.create_svg_exporter()
+else:
+    exporter = factory.create_pdf_exporter()
+
+exporter.export(image, options)
+```
+
+Now,
+
+- The client never mixes backend classes.
+- The backend guarantees compatibility.
+- Adding a new backend does not modify client logic.
+- Adding a new format modifies only the factory interface.
+
+We need to avoid using a single Facory Method here.
+
+```python
+create_exporter(backend, format)
+```
+
+Because this would collapse two independent concerns. This can lead back to,
+
+- Large conditional blocks.
+- Tight coupling.
+- Hard-to-test combinations.
+
+Abstract Factory exists specifically to avoid this.
+
+- **Factory Method** - Given this context, create one product.
+- **Abstract Factory** - Given this backend, create any product in its family.
