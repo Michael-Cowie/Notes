@@ -252,6 +252,8 @@ Zhang Jike doesn't put muscular effort into forcing his wrist position. His **el
     <h1> Versus Backspin </h1>
 </div>
 
+**The same action, the same backswing, different centre of gravity!** - Zhang Jike
+
 When you lower your center of gravity and tuck your wrist inward, the forward motion naturally has an upward motion. When lowering your center of gravity, the forward strike naturally generates an upward force.
 
 Contact point for backspin is the most important, remember versus topspin is can be higher, but for backspin its very important to brush the ball but also hit it on a much flatter angle in conjunction to lifting the ball.

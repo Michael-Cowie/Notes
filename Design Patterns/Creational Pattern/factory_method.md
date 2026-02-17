@@ -5,7 +5,7 @@
 The Factory Method is a **pattern for creating objects** when you,
 
 1. Know you need a **family of related objects**, but
-2. Don't want the **client code** to know which concrete class is beung used.
+2. Don't want the **client code** to know which concrete class is being used.
 
 Instead of having the client code do,
 

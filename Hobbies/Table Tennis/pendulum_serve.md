@@ -66,6 +66,42 @@ During the pendulum service, the goal is to make contact on the left side of the
     <img src='images/pendulum_serve_3.gif'>
 </div>
 
+<div align='center'>
+    <img src='images/ma_long_pendulum_serve_slowed.gif'>
+</div>
+
+<div align='center'>
+    <img src='images/78.png'>
+</div>
+
+<div align='center'>
+    <img src='images/79.png'>
+</div>
+
+<div align='center'>
+    <img src='images/80.png'>
+</div>
+
+<div align='center'>
+    <img src='images/81.png'>
+</div>
+
+<div align='center'>
+    <img src='images/82.png'>
+</div>
+
+<div align='center'>
+    <img src='images/83.png'>
+</div>
+
+<div align='center'>
+    <img src='images/84.png'>
+</div>
+
+<div align='center'>
+    <img src='images/85.png'>
+</div>
+
 #### Backspin
 
 <div align='center'>

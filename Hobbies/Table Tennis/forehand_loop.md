@@ -167,3 +167,30 @@ Now for **backspin**, the body movement changes slightly. **The paddle angle rem
 <div align="center">
     <img src="./images/paddle_angle.gif/">
 </div>
+
+<div align='center'>
+    <h1> Fang Bo Contact Point </h1>
+</div>
+
+1. To create an arc, lower your contact point **to the lower middle part of the ball**. This is what creates an arc, when the contact is in the upper portion, it has no arc. This contact point is very ideal for low balls, but a higher contact point is good when it's a high ball.
+
+2. Lower your swing, so you can find the angle to create the arc. **You need to brush, contact in the middle of the swing and contact in the middle of the ball and move forward to create an arc.**
+
+<div align="center">
+    <img src="./images/86.png/">
+
+</div>
+
+<div align="center">
+    <img src="./images/88.png/">
+</div>
+
+<div align="center">
+    <img src="./images/89.png/">
+</div>
+
+3. Contact point on rubber.
+
+<div align="center">
+    <img src="./images/87.png/">
+</div>
