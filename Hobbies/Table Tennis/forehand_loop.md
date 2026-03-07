@@ -53,6 +53,10 @@ When holding the paddle for the forehand loop the key characteristics are
 - Follow through, brushing the ball.
 
 <div align="center">
+    <img src="./images/92.png/">
+</div>
+
+<div align="center">
     <img src="./images/47.png/">
 </div>
 

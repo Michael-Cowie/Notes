@@ -59,3 +59,27 @@ The first thing to do when performing the banana flick is to,
 <div align="center">
     <img src="./images/banana_flick_1.gif/">
 </div>
+
+<div align='center'>
+    <h1> Zhang Jike </h1>
+</div>
+
+#### Total Wrist Rotation
+
+<div align="center">
+    <img src="./images/90.png">
+</div>
+
+#### Contact Points
+
+1. **Treat the ball as backspin**. This means, always hit in the lower component of the ball.
+2. **Hit the ball on the corner of the paddle as illustrated below**. By rotating your wrist and hitting in the lower left component of the rubber, it increases the dwell time.
+3. **BRUSH THE BALL**.
+
+<div align="center">
+    <img src="./images/91.png">
+</div>
+
+<div align="center">
+    <img src="./images/zhang_jike_backhand_slowmo.gif">
+</div>
