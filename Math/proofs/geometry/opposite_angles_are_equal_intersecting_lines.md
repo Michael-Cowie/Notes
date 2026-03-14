@@ -4,7 +4,7 @@
 
 While it maybe intuitive to some, mathematical proofs are a very useful method to understanding why some mathematical properties are defined the way they are.
 
-When two straight lines cross, they form four angles at that single common point (the vertex). The two pairs of opposite (non-adjacent) angles are called vertical angles because they share the same vertex and stand "vertically opposite" each other across that point—meaning they are positioned directly across from one another through the intersection.
+When **two straight lines cross**, they form four angles at that single common point (the vertex). The two pairs of opposite (non-adjacent) angles are called vertical angles because they share the same vertex and stand "vertically opposite" each other across that point—meaning they are positioned directly across from one another through the intersection.
 
 The vertical angles theorem (sometimes called the opposing or opposite angles theorem) states that when two straight lines intersect, the pairs of opposite angles formed are equal in measure. This behaviour occurs when two lines intersect, four angles are formed. There are two pairs of non-adajcent angles. These pairs are called vertical angles. In the image below (a,b) and (c,d) are vertical angle pairs.
 

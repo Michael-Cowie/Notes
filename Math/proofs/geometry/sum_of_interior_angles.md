@@ -50,7 +50,7 @@ The second method of this proof is to instead connect each vertex with every oth
     <img src='./images/22.png'>
 </div>
 
-#### Proof - Exterior Angles Sum to 360
+#### Proof - Exterior Angles of a Convex, non-intersecting Polygon Sum to 360
 
 Now, we can use this proof to to prove that the sum of the exterior angles of any polygon equal 360.
 

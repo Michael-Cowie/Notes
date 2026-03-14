@@ -6,6 +6,11 @@
     <h2> Terminology</h1>
 </div>
 
+<div align='center'>
+    <img src='./images/33.png'>
+</div>
+
+
 #### Radius
 
 <div align='center'>
@@ -165,9 +170,9 @@ We also know this to be true from the second theorem, because this point is from
 
 #### Theorem 4 - Opposite Angles on A Cyclic Quadrilateral sum to 180
 
-A quadrilateral is called cyclic is all four of its verticies lie on the circumfrance of a circle. This important property creates the theorem that states that the opposite angles always sum to 180.
+A quadrilateral is called cyclic if all four of its verticies lie on the circumfrance of a circle. This important property creates the theorem that states the opposite angles always sum to 180.
 
-In the following screenshot, \( A + B = 180\).
+In the following example, \( A + B = 180\).
 
 <div align='center'>
     <img src='./images/25.png'>
@@ -197,4 +202,38 @@ Below, this illustrates angle \( ACD = ABC\) and \( ABC = ACD \).
 
 <div align='center'>
     <img src='./images/30.png'>
+</div>
+
+#### Theorem 7 - Chord Bisector Theorem
+
+- Theorem 1 -  The line bisecting the chord while passing through the circle's center is perpendicular to the chord. 
+
+- Theorem 2 - The line that is perpendicular to the chord and passes through the center of a circle bisects the chord. This results in splitting the chord into two equal sizes.
+
+<div align='center'>
+    <img src='./images/32.png'>
+</div>
+
+#### Theorem 8 - Equal Chord Equal Angle Theorem
+
+<div align='center'>
+    <img src='./images/34.png'>
+</div>
+
+#### Theorem 9 - Two Sectants Segment Theorem
+
+<div align='center'>
+    <img src='./images/35.png'>
+</div>
+
+#### Theorem 10 - Tangent Sectant Theorem
+
+<div align='center'>
+    <img src='./images/36.png'>
+</div>
+
+#### Theorem 11 - Chord Chord Power Theorem
+
+<div align='center'>
+    <img src='./images/37.png'>
 </div>
