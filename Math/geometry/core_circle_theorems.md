@@ -2,6 +2,31 @@
     <h1> Important Circle Theorems </h1>
 </div>
 
+## Table of Contents
+
+- [Terminology](#terminology)
+  - [Radius](#radius)
+  - [Diameter](#diameter)
+  - [Chord](#chord)
+  - [Arc](#arc)
+  - [Sector](#sector)
+  - [Segment](#segment)
+  - [Circumference](#circumference)
+  - [Tangent](#tangent)
+  - [Secant](#secant)
+  - [Subtended](#subtended)
+- [Theorem 1 – Angles Subtended From Same Arc](#theorem-1--angles-subtended-from-same-arc)
+- [Theorem 2 – Inscribed Angle Theorem](#theorem-2--inscribed-angle-theorem)
+- [Theorem 3 – Angles in a Semicircle is always 90 degrees](#theorem-3--angles-in-a-semicircle-is-always-90-degrees)
+- [Theorem 4 – Opposite Angles on A Cyclic Quadrilateral sum to 180](#theorem-4--opposite-angles-on-a-cyclic-quadrilateral-sum-to-180)
+- [Theorem 5 – Two Tangent Theorem](#theorem-5--two-tangent-theorem)
+- [Theorem 6 – Alternate Segment Theorem](#theorem-6--alternate-segment-theorem)
+- [Theorem 7 – Chord Bisector Theorem](#theorem-7--chord-bisector-theorem)
+- [Theorem 8 – Equal Chord Equal Angle Theorem](#theorem-8--equal-chord-equal-angle-theorem)
+- [Theorem 9 – Two Secants Segment Theorem](#theorem-9--two-secants-segment-theorem)
+- [Theorem 10 – Tangent Secant Theorem](#theorem-10--tangent-secant-theorem)
+- [Theorem 11 – Chord Chord Power Theorem](#theorem-11--chord-chord-power-theorem)
+
 <div align='center'>
     <h2> Terminology</h1>
 </div>
