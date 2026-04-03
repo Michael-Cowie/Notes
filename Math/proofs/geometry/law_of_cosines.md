@@ -16,12 +16,12 @@ $$\cos(\theta) = \frac{A}{H} = \frac{\text{Adjacent}}{\text{Hypotenuse}}$$
 
 1. In the right triangle $BCD$, from the definition of cosine.
 
-\[
+$$
 \begin{aligned}
 \cos(C) &= \frac{CD}{a} \\
 CD &= a \cos(C)
 \end{aligned}
-\]
+$$
 
 2. Subtract from side $b$
 
