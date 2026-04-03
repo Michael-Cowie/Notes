@@ -19,7 +19,7 @@ Now, based on the circle theorm "Inscribed Angle Theorem" that states "The angle
 \[
 2a = 2c \\
 2b = 2c \\
-\],
+\]
 
 Therefore,
 
