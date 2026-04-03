@@ -40,7 +40,7 @@ Therefore,
 
 $$
 \begin{align*}
-\sin B &= \frac{h}{c} \\[4pt]
+\sin B &= \frac{h}{c} \\
 \sin C &= \frac{h}{b}
 \end{align*}
 $$
@@ -49,7 +49,7 @@ Which can be rearranged to:
 
 $$
 \begin{align*}
-c \cdot \sin B &= h \\[4pt]
+c \cdot \sin B &= h \\
 b \cdot \sin C &= h
 \end{align*}
 $$
@@ -86,7 +86,7 @@ Therefore,
 
 $$
 \begin{align*}
-\sin A &= \frac{h}{c} \\[4pt]
+\sin A &= \frac{h}{c} \\
 \sin C &= \frac{h}{a}
 \end{align*}
 $$
@@ -95,7 +95,7 @@ Which can be rearranged to:
 
 $$
 \begin{align*}
-c \cdot \sin A &= h \\[4pt]
+c \cdot \sin A &= h \\
 a \cdot \sin C &= h
 \end{align*}
 $$
@@ -159,7 +159,7 @@ Therefore,
 
 $$
 \begin{align*}
-\sin B &= \frac{h}{c} \\[4pt]
+\sin B &= \frac{h}{c} \\
 \sin C &= \frac{h}{b}
 \end{align*}
 $$
@@ -168,7 +168,7 @@ Which can be rearranged to:
 
 $$
 \begin{align*}
-c \cdot \sin B &= h \\[4pt]
+c \cdot \sin B &= h \\
 b \cdot \sin C &= h
 \end{align*}
 $$
@@ -226,8 +226,8 @@ it follows that
 
 $$
 \begin{align*}
-\sin(\theta_1) &= \sin(\theta_2) = \frac{h}{c} \\[8pt]
-\sin(\theta_2) &= \frac{h}{c} \\[8pt]
+\sin(\theta_1) &= \sin(\theta_2) = \frac{h}{c} \\
+\sin(\theta_2) &= \frac{h}{c} \\
 c \cdot \sin(\theta_2) &= h
 \end{align*}
 $$
