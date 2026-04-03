@@ -54,13 +54,13 @@ b \cdot \sin C &= h
 \end{align*}
 $$
 
-Since both equal \( h \),
+Since both equal $h$,
 
 $$
 c \cdot \sin B = b \cdot \sin C
 $$
 
-Dividing both sides by \( \sin B \cdot \sin C \) gives:
+Dividing both sides by $\sin B \cdot \sin C$ gives:
 
 $$
 \boxed{\frac{c}{\sin C} = \frac{b}{\sin B}}
@@ -100,13 +100,13 @@ a \cdot \sin C &= h
 \end{align*}
 $$
 
-Since both equal \( h \),
+Since both equal $h$,
 
 $$
 c \cdot \sin A = a \cdot \sin C
 $$
 
-Dividing both sides by \( \sin A \cdot \sin C \) gives:
+Dividing both sides by $\sin A \cdot \sin C$ gives:
 
 $$
 \frac{c}{\sin C} = \frac{a}{\sin A}
@@ -173,13 +173,13 @@ b \cdot \sin C &= h
 \end{align*}
 $$
 
-Since both equal \( h \),
+Since both equal $h$,
 
 $$
 c \cdot \sin B = b \cdot \sin C
 $$
 
-Dividing both sides by \( \sin B \cdot \sin C \) gives:
+Dividing both sides by $\sin B \cdot \sin C$ gives:
 
 $$
 \boxed{\frac{c}{\sin C} = \frac{b}{\sin B}}
