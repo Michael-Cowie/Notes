@@ -126,7 +126,7 @@ $$
 \frac{c}{\sin C} = \frac{a}{\sin A}
 $$
 
-Since both ratios are equal to \(\frac{c}{\sin C}\), it follows that all three ratios are equal:
+Since both ratios are equal to $\frac{c}{\sin C}$, it follows that all three ratios are equal:
 
 $$
 \boxed{\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}}
