@@ -308,7 +308,7 @@ CREATE TABLE order_items (
 );
 ```
 
-The `order_items` table contains a `unit_price` column. This is linked to the price of the item by the `product_id` column. However the `products` table also has a `price` column. The `products.price` represents the **current price** of the product in the catalog. This means it costs $9.99 today. This can change over time due to sales, discounts, inflation, etc. The `order_items.unit_price` is the price of the product **at the time of the order**. So this means Alice bought 2 USB-C cables last week for $9.99, but now the price is $10.50.
+The `order_items` table contains a `unit_price` column. This is linked to the price of the item by the `product_id` column. However the `products` table also has a `price` column. The `products.price` represents the **current price** of the product in the catalog. This means it costs $9.99 today. This can change over time due to sales, discounts, inflation, etc. The `order_items.unit_price` is the price of the product **at the time of the order**. So this means Alice bought 2 USB-C cables last week for$9.99, but now the price is $10.50.
 
 - `id SERIAL PRIMARY KEY`
 

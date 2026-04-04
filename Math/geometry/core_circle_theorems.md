@@ -148,7 +148,7 @@ Angles subtended by the same arc are equal. This means if an arc subtends an ang
     <img src='./images/20.png'>
 </div>
 
-Finally, the remaining angle can be calculated from $ 180 - 65 - 35 $ and will be equal and opposite angles.
+Finally, the remaining angle can be calculated from $180 - 65 - 35$ and will be equal and opposite angles.
 
 #### Theorem 2 - Inscribed Angle Theorem
 
@@ -197,7 +197,7 @@ We also know this to be true from the second theorem, because this point is from
 
 A quadrilateral is called cyclic if all four of its verticies lie on the circumfrance of a circle. This important property creates the theorem that states the opposite angles always sum to 180.
 
-In the following example, $ A + B = 180$.
+In the following example, $A + B = 180$.
 
 <div align='center'>
     <img src='./images/25.png'>
@@ -223,7 +223,7 @@ Another important property of this theorem is that the line joining the external
 
 The angle between a tangent and a chord through the point of contact is equal to the angle in the opposite (alternate) segment of the circle.
 
-Below, this illustrates angle $ ACD = ABC$ and $ ABC = ACD $.
+Below, this illustrates angle $ACD = ABC$ and $ABC = ACD$.
 
 <div align='center'>
     <img src='./images/30.png'>

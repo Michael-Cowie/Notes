@@ -809,7 +809,7 @@ runs:
       run: echo "Hello, ${{ inputs.name }}!" > greeting.txt
 
     - name: Set greeting output
-      run: echo "greeting=$(cat greeting.txt)" >> $GITHUB_ENV
+      run: echo "greeting=$(cat greeting.txt)" >>$GITHUB_ENV
 ```
 
 In composite actions, `using: composite` is the only option for `runs`. Steps are defined under `steps` and they can include `run`.

@@ -2,7 +2,7 @@
     <h1> Angles Subtending from the Same Arc are Equal
 </div>
 
-We will begin this proof by creating our illustration diagram. This contains angles $ a $ and $ b $.
+We will begin this proof by creating our illustration diagram. This contains angles $a$ and $b$.
 
 <div align='center'>
     <img src='./images/9.png'>

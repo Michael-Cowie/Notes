@@ -2,7 +2,7 @@
     <h1> The sum of angles inside a triangle equal 180 </h1>
 </div>
 
-We want to prove that $ a + b + c = 180 $.
+We want to prove that $a + b + c = 180$.
 
 <div align='center'>
     <img src='./images/2.png'>

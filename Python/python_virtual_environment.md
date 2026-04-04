@@ -31,10 +31,10 @@ Virtual Environments aid significantly when using multiple projects and easily k
 
 ![](./images/venv5.jpg)
 
-Now, in the given scenario where a developer is working on Repo B and trying to get the dependency `numpy`, they will not actually get the package. This is because when the developer types `$ where pip` it will tell you that it is located in Repo A. This means, despite working on Repo B and being in that area when opening cmd, typing `$ pip install numpy`, it will place `numpy` on Repo A, **not Repo B*, all due to the location of where `pip.exe` was when executing it via `pip install numpy`.
+Now, in the given scenario where a developer is working on Repo B and trying to get the dependency `numpy`, they will not actually get the package. This is because when the developer types `$where pip` it will tell you that it is located in Repo A. This means, despite working on Repo B and being in that area when opening cmd, typing `$ pip install numpy`, it will place `numpy` on Repo A, **not Repo B*, all due to the location of where `pip.exe` was when executing it via `pip install numpy`.
 
 This is where virtual environments are used, reducing conflicts with system libraries. Now change the scenario to the following,
 
 ![](./images/venv6.jpg)
 
-Now, this time if I wanted `numpy` in Repo B, I would first call `$ activate.bat` which means `where pip` would point to the `pip.exe` in the virtual environment. This means, `$ pip install numpy` will correctly place it into the `site-packages` of the working repository.
+Now, this time if I wanted `numpy` in Repo B, I would first call `$activate.bat` which means `where pip` would point to the `pip.exe` in the virtual environment. This means, `$ pip install numpy` will correctly place it into the `site-packages` of the working repository.

@@ -64,7 +64,7 @@ and with Objects,
 
 ```JavaScript
 function greet(person) {
-  console.log(`Hello, ${person.name}! You are ${person.age} years old.`);
+  console.log(`Hello, ${person.name}! You are${person.age} years old.`);
 }
 
 const person = { name: "John", age: 30 };

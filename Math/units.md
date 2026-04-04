@@ -2,7 +2,7 @@
     <h1> Introduction of Units </h1>
 </div>
 
-A unit, in mathematical and scientific contexts is a standardized quantity used as a refernce for measuring a particular physical or abstract property. It assigns meaning to a numerical value by **specifying the dimension it represents**. For instance, the number "6" alone is dimensionless and ambiguous, however, when paired with a unit such as $ 6 \ \frac{\mathrm{km}}{\mathrm{h}} $, it becomes velocity, indicating a rate of change in position over time. Formally, units are part of dimensional analysis, a branch of mathematics that **ensures consistency in equations** by tracking dimensions associated with quantites. A unit is a constraint on how a numerical value participates in equations. Units are algebraic labels that enforce correct combination of quantities. **Only equations give physical meaning, units alone never do**. Units must be fixed and cannot contain numerical information.
+A unit, in mathematical and scientific contexts is a standardized quantity used as a refernce for measuring a particular physical or abstract property. It assigns meaning to a numerical value by **specifying the dimension it represents**. For instance, the number "6" alone is dimensionless and ambiguous, however, when paired with a unit such as $6 \ \frac{\mathrm{km}}{\mathrm{h}}$, it becomes velocity, indicating a rate of change in position over time. Formally, units are part of dimensional analysis, a branch of mathematics that **ensures consistency in equations** by tracking dimensions associated with quantites. A unit is a constraint on how a numerical value participates in equations. Units are algebraic labels that enforce correct combination of quantities. **Only equations give physical meaning, units alone never do**. Units must be fixed and cannot contain numerical information.
 
 A quantity is defined as an ordered pair consisting of a scalar and a unit. Equivalently, it may be written as the product.
 
@@ -13,16 +13,16 @@ $$
 Where,
 
 -  $x ∈ \mathbb{R}$ is a numerical magnitude.
-- $ u $ is a unit representing a reference standard.
+- $u$ is a unit representing a reference standard.
 
-The unit $𝑢$ specifies the dimension of the quantity and provides semantic meaning to the scalar $ 𝑥 $. Without $ 𝑢 $, the numerical value $ 𝑥 $ alone is dimensionally indeterminate. The expression $ xu $ is interpreted as "$x $ times the reference quantiy defined by $ u $"
+The unit $𝑢$ specifies the dimension of the quantity and provides semantic meaning to the scalar $𝑥$. Without $𝑢$, the numerical value $𝑥$ alone is dimensionally indeterminate. The expression $xu$ is interpreted as "$x$ times the reference quantiy defined by $u$"
 
-A unit defines **the dimension** of a quantity, and the **scalar multiplies** that unit to determine its magnitude. Consider the example $ 6 \frac{\mathrm{km}}{\mathrm{h}} $, "km" denotes kilometres and "h" denotes hours. The "/" symbol indicates divison, hence $ 6 \ \frac{\mathrm{km}}{\mathrm{h}} $ is read as "kilometres per hour". Meaning, the distance travelled in kilometres divided by the time elapsed in hours. This interpretation allows us to understand the quantity as a rate, for every hour, 6 kilometres are covered.
+A unit defines **the dimension** of a quantity, and the **scalar multiplies** that unit to determine its magnitude. Consider the example $6 \frac{\mathrm{km}}{\mathrm{h}}$, "km" denotes kilometres and "h" denotes hours. The "/" symbol indicates divison, hence $6 \ \frac{\mathrm{km}}{\mathrm{h}}$ is read as "kilometres per hour". Meaning, the distance travelled in kilometres divided by the time elapsed in hours. This interpretation allows us to understand the quantity as a rate, for every hour, 6 kilometres are covered.
 
-- **Length** - $ 5m $ (metres), read as "five metres". Here, the unit "m" specifies linear extent.
-- **Area** - $ 4m^2 $ (square metres), read as "four square metres", indicating length squared.
-- **Volume** - $ 3m^3 $ (cubic metres), read as "three cubic metres", from length cubed.
-- **Density** - $ 2 \ \frac{\mathrm{kg}}{\mathrm{m^3}} $, read as "two kilogrames per cubic metre", a mass per unit volume.
+- **Length** - $5m$ (metres), read as "five metres". Here, the unit "m" specifies linear extent.
+- **Area** - $4m^2$ (square metres), read as "four square metres", indicating length squared.
+- **Volume** - $3m^3$ (cubic metres), read as "three cubic metres", from length cubed.
+- **Density** - $2 \ \frac{\mathrm{kg}}{\mathrm{m^3}}$, read as "two kilogrames per cubic metre", a mass per unit volume.
 
 <div align='center'>
 <h1> Meaning and Creation </h1>
@@ -43,34 +43,34 @@ Derived units are formed by algebraic combinations of these base units via multi
 
 For example,
 
-- **Velocity $ \frac{\mathrm{m}}{\mathrm{s}} $** = $ \frac{\mathrm{Length}}{\mathrm{Time}} $, created by dividing length by time.
+- **Velocity $\frac{\mathrm{m}}{\mathrm{s}}$** = $\frac{\mathrm{Length}}{\mathrm{Time}}$, created by dividing length by time.
 
-- **Acceleration $ \frac{\mathrm{m}}{\mathrm{s^2}} $** = $ \frac{\mathrm{Length}}{\mathrm{Time^2}} $, from velocity divided by time.
+- **Acceleration $\frac{\mathrm{m}}{\mathrm{s^2}}$** = $\frac{\mathrm{Length}}{\mathrm{Time^2}}$, from velocity divided by time.
 
-- **Force (Newton) $ \frac{\mathrm{kg \ \cdot \ m }}{\mathrm{s^2}} $**, from mass times acceleration.
+- **Force (Newton) $\frac{\mathrm{kg \ \cdot \ m }}{\mathrm{s^2}}$**, from mass times acceleration.
 
-Base units like "metre" are not ratios, they are fundamental references. However, many derived units, especially rates are ratios, such as speed $ \frac{\mathrm{distance}}{\mathrm{time}} $. Even non-ratio units can be expressed dimensionally, for instance energy (joule) is $ \frac{\mathrm{kg \ \cdot \ m^2 }}{\mathrm{s^2}} $, which is not purely a ratio but a product of ratios. Units can also be dimensionless, such as angles ($ \mathrm{rad} $) or ratios like efficiency, e.g. 0.8 meaning 80%.
+Base units like "metre" are not ratios, they are fundamental references. However, many derived units, especially rates are ratios, such as speed $\frac{\mathrm{distance}}{\mathrm{time}}$. Even non-ratio units can be expressed dimensionally, for instance energy (joule) is $\frac{\mathrm{kg \ \cdot \ m^2 }}{\mathrm{s^2}}$, which is not purely a ratio but a product of ratios. Units can also be dimensionless, such as angles ($\mathrm{rad}$) or ratios like efficiency, e.g. 0.8 meaning 80%.
 
 Creation of a unit involves,
 
 1. **Selection of base units** - Choose appropriate standards, e.g. SI vs Imperial.
-2. **Algebraic operations** - Multiply for products (e.g. $ Area = Length \cdot Length $), divide for rates (e.g. $ density = \frac{mass}{volume} $) or raise to powers (e.g. $ pressure = \frac{force}{area} = \frac{N}{m^2} $)
-3. **Prefixes for scaling** - Use SI prefixes like kilo ($ 10^{3} $) to adjust magnitude without changing the dimension.
+2. **Algebraic operations** - Multiply for products (e.g. $Area = Length \cdot Length$), divide for rates (e.g. $density = \frac{mass}{volume}$) or raise to powers (e.g. $pressure = \frac{force}{area} = \frac{N}{m^2}$)
+3. **Prefixes for scaling** - Use SI prefixes like kilo ($10^{3}$) to adjust magnitude without changing the dimension.
 
-In practice, units ensure that each term in an equation is consistent, compatible and in the same dimension. For example, in the kinematics equation $ v = u + at$, all terms must have units of velocity for the equation to hold.
+In practice, units ensure that each term in an equation is consistent, compatible and in the same dimension. For example, in the kinematics equation $v = u + at$, all terms must have units of velocity for the equation to hold.
 
 A term in this context is any individual piece of an equation seperated by a plus or minus sign. Key points about terms i,
 
-- **Simple or compound** - A term can be a single variable (e.g $ u$) or a combination of variables (e.g. $ at $)
+- **Simple or compound** - A term can be a single variable (e.g $u$) or a combination of variables (e.g. $at$)
 
 - **Independent contribution** - Each term contributes independently to the total value of the expression.
 
 - **Unit consistency** - Terms that are added or subtracted must have the same units, otherwise the equation is physically meaningless.
 
-In the equation $ v = u + at $
+In the equation $v = u + at$
 
-- $ u $ has the unit of velocity, $ \frac{m}{s} $
-- $ at $ has the unit of velocity $ \frac{m}{s} $ because $ a \ (\frac{m}{s^2}) \cdot t \ (s) = \frac{m}{s} $
+- $u$ has the unit of velocity, $\frac{m}{s}$
+- $at$ has the unit of velocity $\frac{m}{s}$ because $a \ (\frac{m}{s^2}) \cdot t \ (s) = \frac{m}{s}$
 
 Therefore, the equation is valid and the plus and minus of each term can occur because all terms share compatible units.
 
@@ -84,17 +84,17 @@ Formally, a physical quantity consists of a numeric value together with a unit. 
 
 When units are divided, the result is a **rate**. A unit such as $\frac{m}{s}$ **answers a "per" question**. How much length corresponds to one unit of time. Rate units are often intuitive because they align with everyday experience and sequential reasoning.
 
-Multiplication of units, by contrast does not produce a rate and does not imply spatial extension, motion or geometry. A product such as $ N \cdot m $ signifies joint dependence. The resulting quantity depends linearly on both contributing quantities simultaneously. This dependence is purely algebraic. If either factor is scaled, the resulting quantity scales proportionally. If both are scaled, the effect compounds. No additional interpretation is implied by the multiplication itself.
+Multiplication of units, by contrast does not produce a rate and does not imply spatial extension, motion or geometry. A product such as $N \cdot m$ signifies joint dependence. The resulting quantity depends linearly on both contributing quantities simultaneously. This dependence is purely algebraic. If either factor is scaled, the resulting quantity scales proportionally. If both are scaled, the effect compounds. No additional interpretation is implied by the multiplication itself.
 
 #### Why Compound Units Resist Visualization
 
-Certain compound units, mostly notably area ($m^2$), has a geometric visualization. This is a special case arising from the structure of physical space, not a general feature of unit multiplication. Most compound units such as $N \cdot m$, $ \frac{kg \cdot m}{s}$, or $ J \cdot s$ **do not correspond to shapes, regions or spatial distributions**. Attempting to visualize them leads to confusion because such units **were never intended** to represent physical objects or configurations.
+Certain compound units, mostly notably area ($m^2$), has a geometric visualization. This is a special case arising from the structure of physical space, not a general feature of unit multiplication. Most compound units such as $N \cdot m$, $\frac{kg \cdot m}{s}$, or $J \cdot s$ **do not correspond to shapes, regions or spatial distributions**. Attempting to visualize them leads to confusion because such units **were never intended** to represent physical objects or configurations.
 
 Questions such as "Where is the meter" or "What shape does $N \cdot m$ make" are therefore category errors. They assume that a unit must encode spatial or mechanical structure, when it infacts **it encodes algebraic compatibility**.
 
 #### Meaning Comes from Equations, Not Units
 
-**A unit itself carries no physical meaning** beyond its algebraic role. The same unit may appear in distinct physical contexts with different interpretations. For example, $ N \cdot m$ appears in both work and torque, yet these quantites differ fundamentally in behaviour and interpretation. The distinction arises from the **equations in which the unit appears, not from the unit itself**.
+**A unit itself carries no physical meaning** beyond its algebraic role. The same unit may appear in distinct physical contexts with different interpretations. For example, $N \cdot m$ appears in both work and torque, yet these quantites differ fundamentally in behaviour and interpretation. The distinction arises from the **equations in which the unit appears, not from the unit itself**.
 
 Therefore, physical meaning is assigned by equations and laws, while units serve to ensure that those equations are internally consistent and dimensionally valid. Units enforce how quantities combine, equations determine what those combinations represent.
 
@@ -124,7 +124,7 @@ $$
 c \left(\frac{m}{s} \right) = c \cdot m \cdot s^{-1}
 $$
 
-Is just a scalar multiplication of a symbolic unit expression. A derived unit like $\frac{m}{s}$ **is not a number fraction**, it is a compound unit $ms^{-1}$ and multiplying by a scalar scales the entire compound unit exactly the same way as multiplying $ 6 \cdot m$ scales metres.
+Is just a scalar multiplication of a symbolic unit expression. A derived unit like $\frac{m}{s}$ **is not a number fraction**, it is a compound unit $ms^{-1}$ and multiplying by a scalar scales the entire compound unit exactly the same way as multiplying $6 \cdot m$ scales metres.
 
 A derived unit is just algebra on base units. For example,
 
@@ -154,8 +154,8 @@ $$
 
 That is the complete structure. There is,
 
-- One scalar, $ \frac{6}{5} $
-- One unit expression, $ ms^{-1} $
+- One scalar, $\frac{6}{5}$
+- One unit expression, $ms^{-1}$
 
 Nothing inside the unit is independently scaled.
 
@@ -195,7 +195,7 @@ $$
 \frac{6}{5} \frac{m}{s} = \frac{6m}{5s}
 $$
 
-both are mathematically the same, **we always express it relative to the standard unit**, which is "per 1 second" in $ \frac{m}{s} $.
+both are mathematically the same, **we always express it relative to the standard unit**, which is "per 1 second" in $\frac{m}{s}$.
 
 So,
 
@@ -207,20 +207,20 @@ $$
 
 Scaling refers to units that adjust magnitude without altering dimension. There are five common scaling units.
 
-- **Prefixes** - These are multiplicative factors, e.g. micro ($ μ = 10^{-6} $) in $μm$ (micrometre). Reading "$ 5 μm$" as "five micromtres", equivalent to $ 5 × 10^{-6} m $
-  - Kilo (k) - Multiplies the base unit by $ 10^{3} $, as in kilometre (1000 metres) or kilogram (1000 grams).
-  - Mega (M) - Multiplies the base unit by $ 10^{6} $
-  - Giga (G) - Multiplies the base unit by $ 10^{9} $
-  - Milli (m) - Divides the base unit by 1000 or multiplying by $ 10^{-3} $
-  - Micro (μ) - Divides the base unit by 1,000,000 or multiplying by $ 10^{-6} $
+- **Prefixes** - These are multiplicative factors, e.g. micro ($μ = 10^{-6}$) in $μm$ (micrometre). Reading "$5 μm$" as "five micromtres", equivalent to $5 × 10^{-6} m$
+  - Kilo (k) - Multiplies the base unit by $10^{3}$, as in kilometre (1000 metres) or kilogram (1000 grams).
+  - Mega (M) - Multiplies the base unit by $10^{6}$
+  - Giga (G) - Multiplies the base unit by $10^{9}$
+  - Milli (m) - Divides the base unit by 1000 or multiplying by $10^{-3}$
+  - Micro (μ) - Divides the base unit by 1,000,000 or multiplying by $10^{-6}$
 
-- **Dimensionless units** - These have no physical dimension, often arising from ratios of like quantites. These quantities have no physical dimension and arise from ratios of the same type of quantity, so the units cancel out. They act purely as scaling factors, changing only magnitude. If an objects mass changes from 5kg to 10kg, the ratio is $ \frac{10}{5} = 2$, which is unitless. This means the mass has doubled, often read as "twice as large".
+- **Dimensionless units** - These have no physical dimension, often arising from ratios of like quantites. These quantities have no physical dimension and arise from ratios of the same type of quantity, so the units cancel out. They act purely as scaling factors, changing only magnitude. If an objects mass changes from 5kg to 10kg, the ratio is $\frac{10}{5} = 2$, which is unitless. This means the mass has doubled, often read as "twice as large".
 
-Versus other types, scaling units differ from dimensional units in that they do not introduce new dimensions, they merely resize. In contrast, derived units like $ \frac{km}{h}$ introduce a rate dimension.
+Versus other types, scaling units differ from dimensional units in that they do not introduce new dimensions, they merely resize. In contrast, derived units like $\frac{km}{h}$ introduce a rate dimension.
 
 #### Specialized Units
 
-In fields like thermodynamics (e.g. entrophy $ \frac{J}{K} $) or electromagnetism (e.g. $ Tesla = \frac{kg}{s^2 \ \cdot \ A} $). These are derived but tailored to specific domains.
+In fields like thermodynamics (e.g. entrophy $\frac{J}{K}$) or electromagnetism (e.g. $Tesla = \frac{kg}{s^2 \ \cdot \ A}$). These are derived but tailored to specific domains.
 
 <div align='center'>
     <h1> Working with Units </h1>
@@ -234,7 +234,7 @@ $$
 Q = n \cdot u
 $$
 
-where $ n $ is a real number and $ U $ is a unit symbol. **This unit is not embedded in the number, it is an independent algebraic factor**. This separation is foundational. Numerical operations act on numbers, while units combine according to algebraic rules.
+where $n$ is a real number and $U$ is a unit symbol. **This unit is not embedded in the number, it is an independent algebraic factor**. This separation is foundational. Numerical operations act on numbers, while units combine according to algebraic rules.
 
 When two quantities are multiplied, the multiplication processes **independently on numbers and units**.
 
@@ -274,9 +274,9 @@ Units behave like algebraic symbols.
 They do **not** mix with numbers. You **never multiply a number ino a unit**. You only attach the unit after the numeric operation. **Units only change when you multiply by something that itself has units**.
 
 - **Multiply by $3$** - Only the **number** changes.
-- **Multiply by $ \frac{3}{3} $** - Nothing changes.
-- **Multiply by $ \frac{3s}{3s} $** - Still nothing changes.
-- **Multiply by $ 3s $** - **Units** change.
+- **Multiply by $\frac{3}{3}$** - Nothing changes.
+- **Multiply by $\frac{3s}{3s}$** - Still nothing changes.
+- **Multiply by $3s$** - **Units** change.
 
 So if you want a factor of $3$ to appear in the unit, it must come from an expression that already contains that unit.
 
@@ -305,7 +305,7 @@ $$
 
 **Step 3 - Cancel units, not numbers**
 
-You do not cancel $ 3s $ with $ 2s $, you only cancel the unit $ s $.
+You do not cancel $3s$ with $2s$, you only cancel the unit $s$.
 
 $$
 \frac{km}{\cancel{s}} \times \cancel{s} = km
@@ -326,8 +326,8 @@ $$
 
 Where,
 
-- $ c $ = scalar
-- $ U $ = unit expression
+- $c$ = scalar
+- $U$ = unit expression
 
 They are distinct types of objects, but they are multiplied together into one algebraic object.
 
@@ -387,7 +387,7 @@ $$
 \frac{3600s}{1h} = \frac{\cancel{1h}}{\cancel{1h}} = 1
 $$
 
-So, what we want to do is multiply by 1 in disguise. Hence if we wish to change from $\frac{m}{s}$ to $\frac{km}{h} $
+So, what we want to do is multiply by 1 in disguise. Hence if we wish to change from $\frac{m}{s}$ to $\frac{km}{h}$
 
 $$
 \frac{6}{5} \frac{m}{s} \cdot \frac{1km}{1000m} \cdot \frac{3600s}{1hr}
@@ -414,9 +414,9 @@ $$
     <h1> Exercises </h1>
 </div>
 
-**Question 1** - A $1000L$ tank is filled at a rate of $ 25 \frac{L}{S}$. How long does it take to fill the tank?
+**Question 1** - A $1000L$ tank is filled at a rate of $25 \frac{L}{S}$. How long does it take to fill the tank?
 
-Start with constructing the equation to solve for $ x $
+Start with constructing the equation to solve for $x$
 $$
 25\frac{L}{s} \cdot x s = 1000L
 $$
@@ -436,7 +436,7 @@ $$
 25\cancel{L}x = 1000\cancel{L}
 $$
 
-Now solve for $ x $
+Now solve for $x$
 $$
 x = \frac{1000}{25} \\
 x = 40
@@ -444,9 +444,9 @@ $$
 
 Therefore, it will take 40 seconds to fill the tank.
 
-**Question 2** - A car travels at a velocity of $12\frac{m}{s}$ for $ 15s $. How far did the car travel?
+**Question 2** - A car travels at a velocity of $12\frac{m}{s}$ for $15s$. How far did the car travel?
 
-Start with constructing the equation to solve for $ x $
+Start with constructing the equation to solve for $x$
 $$
 12\frac{m}{s} \cdot 15s = xm
 $$
@@ -470,7 +470,7 @@ Therefore, the car will travel 180 metres.
 
 **Question 3** - Convert $8\frac{m}{s}$ to $\frac{km}{hr}$
 
-Start by identifying the current units $ \frac{m}{s} $ and the units we need to change it to $ \frac{km}{h} $. Remember the golden rule, it's completely fine to multiplying by $ 1 $.
+Start by identifying the current units $\frac{m}{s}$ and the units we need to change it to $\frac{km}{h}$. Remember the golden rule, it's completely fine to multiplying by $1$.
 
 First, identify the conversion between $m$ and $km$
 $$
@@ -497,9 +497,9 @@ $$
 \left( 8 \cdot \frac{1}{1000} \cdot \frac{3600}{1} \right) \left( \frac{\cancel{m}}{\cancel{s}} \cdot \frac{km}{\cancel{m}} \cdot \frac{\cancel{s}}{hr} \right) = 8 \cdot \frac{3600}{1000} \frac{km}{hr} = 28.8 \frac{km}{hr}
 $$
 
-Therefore, $ 8\frac{m}{s} $ is equivalent to $ 28.8 \frac{km}{hr} $
+Therefore, $8\frac{m}{s}$ is equivalent to $28.8 \frac{km}{hr}$
 
-**Question 4** - A runner is moving at a velocity of 5$ \frac{m}{s} $. What is this rate in $ \frac{s}{m} $?
+**Question 4** - A runner is moving at a velocity of 5$\frac{m}{s}$. What is this rate in $\frac{s}{m}$?
 
 Start with,
 
@@ -507,15 +507,15 @@ $$
 5 \frac{m}{s}
 $$
 
-We want the recriprical. Therefore, we separate the scalar and unit and both put them to the power of $ - 1 $
+We want the recriprical. Therefore, we separate the scalar and unit and both put them to the power of $- 1$
 
 $$
 \left( 5 \frac{m}{s}\right)^{-1} = \left(5^{-1}\right) \left(\frac{m}{s} \right)^{-1} = \frac{1}{5} \frac{s}{m}
 $$
 
-**Question 5** - With the density of liquid being $800\frac{kg}{m^3}$ and having $ 4m^3$, what mass do you have?
+**Question 5** - With the density of liquid being $800\frac{kg}{m^3}$ and having $4m^3$, what mass do you have?
 
-First understand the question carefully to understand the unit we're solving for. We are asked to solve for how much mass we will have. Therefore, we need to solve the unknown $ x $ for the mass unit $ kg $.
+First understand the question carefully to understand the unit we're solving for. We are asked to solve for how much mass we will have. Therefore, we need to solve the unknown $x$ for the mass unit $kg$.
 
 $$
 800\frac{kg}{m^3} \cdot 4m^3 = xkg
@@ -541,9 +541,9 @@ $$
 3200 = x
 $$
 
-Now, solving for x we know that we will have $ 3200kg $
+Now, solving for x we know that we will have $3200kg$
 
-**Question 6** - A rocket ejects gas at a rate of of $ 4\frac{kg}{s} $ with a velocity of $ 300 \frac{m}{s} $. What force is produced?
+**Question 6** - A rocket ejects gas at a rate of of $4\frac{kg}{s}$ with a velocity of $300 \frac{m}{s}$. What force is produced?
 
 First, start with.
 

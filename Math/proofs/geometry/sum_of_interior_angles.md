@@ -12,16 +12,16 @@ Now, the sum of the interior angles is not always a constant value and we will c
 
 #### Proof One
 
-To begin this proof, we will create a visual diagram of the the first three shapes from $ n $ equals 3 to 5.
+To begin this proof, we will create a visual diagram of the the first three shapes from $n$ equals 3 to 5.
 
 <div align='center'>
     <img src='./images/19.png'>
 </div>
 
-1. For each shape with $ n $ numbers of verticies, create a point in the centre of the shape and draw a line to each vertex.
-2. For each shape, for $ n $ number of verticies we have created $ n $ number of triangles.
-3. Each triangle has $ 180 $ degrees of angles, this means the sum of all angles for the total number of triangles is $ n \cdot 180 $.
-4. The previous calculation $ n \cdot 180 $ includes the angles that do not include the shape interior angles, that is, it contains the angles in the triangle that are not part of the interior shape angles.
+1. For each shape with $n$ numbers of verticies, create a point in the centre of the shape and draw a line to each vertex.
+2. For each shape, for $n$ number of verticies we have created $n$ number of triangles.
+3. Each triangle has $180$ degrees of angles, this means the sum of all angles for the total number of triangles is $n \cdot 180$.
+4. The previous calculation $n \cdot 180$ includes the angles that do not include the shape interior angles, that is, it contains the angles in the triangle that are not part of the interior shape angles.
 
 <div align='center'>
     <img src='./images/21.png'>
@@ -44,7 +44,7 @@ $$
 
 #### Proof Two
 
-The second method of this proof is to instead connect each vertex with every other vertex. This creates a relationship where the number of triangles is always 2 less than $ n $. Hence, this immediately creates the formula $ 180(n - 2) $.
+The second method of this proof is to instead connect each vertex with every other vertex. This creates a relationship where the number of triangles is always 2 less than $n$. Hence, this immediately creates the formula $180(n - 2)$.
 
 <div align='center'>
     <img src='./images/22.png'>
@@ -87,7 +87,7 @@ n \times 180^\circ - \sum_{i=1}^{n} \alpha_i
 $$
 
 
-From the proof illustrated above we know that the sum of the interior angles is $ (n - 2) \times 180 $.
+From the proof illustrated above we know that the sum of the interior angles is $(n - 2) \times 180$.
 $$
 \sum_{i=1}^{n} \alpha_i = 180^\circ(n - 2)
 $$

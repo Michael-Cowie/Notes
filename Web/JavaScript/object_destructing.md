@@ -82,7 +82,7 @@ console.log(rest); // { age: 30, city: "Christchurch" }
 
 ```JavaScript
 function printPersonDetails({ name, age }) {  // The `{` and `}` are destructing during the function call.
-  console.log(`${name} is ${age} years old.`);
+  console.log(`${name} is${age} years old.`);
 }
 
 printPersonDetails(person);
@@ -111,7 +111,7 @@ For function parameter typing, it's done as follows,
 
 ```JavaScript
 function printPersonDetails({ name, age }: Person) {
-  console.log(`${name} is ${age} years old.`);
+  console.log(`${name} is${age} years old.`);
 }
 
 printPersonDetails(person);

@@ -65,7 +65,7 @@ $$
 \frac{PA}{PC} = \frac{PD}{PB}
 $$
 
-Where $ PA $ is from the same edge of the triangle as the other triangle $ PC $. Because they're similar and have identical angles, the ratio of each edge much be kept when resizing. Hence the ratio of this edge will be equal of the ratio of the other edge $ PD $ from the same edge of the other triangle $ PD $.
+Where $PA$ is from the same edge of the triangle as the other triangle $PC$. Because they're similar and have identical angles, the ratio of each edge much be kept when resizing. Hence the ratio of this edge will be equal of the ratio of the other edge $PD$ from the same edge of the other triangle $PD$.
 
 <div align='center'>
     <img src='./images/38.png'>
