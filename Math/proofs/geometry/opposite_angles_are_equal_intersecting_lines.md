@@ -12,45 +12,45 @@ The vertical angles theorem (sometimes called the opposing or opposite angles th
     <img src='./images/1.jpg'>
 </div>
 
-Here, we to prove that \( a = b \) and \( c = d\).
+Here, we to prove that $ a = b $ and $ c = d$.
 
 We know by mathematical definition,
 
-\[
+$$
 a + d = 180
-\]
+$$
 
 This is because angles above any line sum to 180. We can do the same thing for,
 
-\[
+$$
 d + b = 180
-\]
+$$
 
 Therefore,
 
-\[
+$$
 a + d = d + b \\
 a = b
-\]
+$$
 
 Hence, this is a simple proof to known that opposing angles are identical. Different approaches can also be done such as,
 
-\[
+$$
 a + c = 180 \\
 c + b = 180
-\]
+$$
 
-Now, format this back to \( c \)
+Now, format this back to $ c $
 
-\[
+$$
 c = 180 - a \\
 c = 180 - b
-\]
+$$
 
-Now, replace the common factor of \( c \).
+Now, replace the common factor of $ c $.
 
-\[
+$$
 180 - a = 180 - b \\
 -a = -b \\
 \boxed{a = b}
-\]
+$$

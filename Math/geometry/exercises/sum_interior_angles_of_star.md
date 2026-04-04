@@ -49,13 +49,13 @@ $$ \frac{540}{5} = 108 $$
 
 We can identify the triangle with purple lines and given that this is a regular star it is therefore an isoceles triangle with both green angles being the same. This leads to,
 
-\[
+$$
 \begin{aligned}
 2 \cdot \text{green} + 108 &= 180 \\
 2 \cdot \text{green} &= 72 \\
 \angle \text{green} &= 36
 \end{aligned}
-\]
+$$
 
 This is the single angle and therefore the sum of all angles is $$ 36 \cdot 5 = 180$$.
 
@@ -122,13 +122,13 @@ $$ b = \frac{900}{7} = 128.57 $$
 
 We can now solve for $a$,
 
-\[
+$$
 \begin{aligned}
 2a + b &= 180 \\
 2b &= 51.43   \\
 \angle b &= 25.715
 \end{aligned}
-\]
+$$
 
 Therefore, the sum of all interior angles will be $$7b$$ and therefore give us $$ 7 \cdot 25.715 = 180$$
 

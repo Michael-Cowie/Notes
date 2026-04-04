@@ -245,13 +245,13 @@ Take the following as an example. We know that $4$ is $r$ times larger than $2$.
 
 From here, we can split the right side of the triangle into two components, $2y$ and $y$. Therefore, 
 
-\[
+$$
 \begin{aligned}
 2y + y &= 9 \\
 3y &= 9 \\
 y &= 3
 \end{aligned}
-\]
+$$
 
 We can now calculate the longer side being $2 * 3 = 6$ and the shorter side being $3$. These sum to $9$.
 
@@ -455,8 +455,8 @@ Basic trigonometric ratios can be remembered by an acronym called SOH-CAH-TOA. T
 
 $$
 \begin{align*}
-\sin(\theta) &= \frac{\text{opposite}}{\text{hypotenuse}} \\[6pt]
-\cos(\theta) &= \frac{\text{adjacent}}{\text{hypotenuse}} \\[6pt]
+\sin(\theta) &= \frac{\text{opposite}}{\text{hypotenuse}} \\
+\cos(\theta) &= \frac{\text{adjacent}}{\text{hypotenuse}} \\
 \tan(\theta) &= \frac{\text{opposite}}{\text{adjacent}}
 \end{align*}
 $$
@@ -513,57 +513,57 @@ Take the following example, given
 
 We have 2 angles, therefore we can calculate the third angle $C$.
 
-\[
+$$
 \begin{aligned}
 C &= 180^\circ - A - B \\
   &= 180^\circ - 50^\circ - 60^\circ \\
   &= 70^\circ
 \end{aligned}
-\]
+$$
 
 ##### 2. Calculate Length $b$
 
 When observing the proportional equality,
-\[
+$$
 \frac{a}{\sin(A)} = \frac{b}{\sin(B)}
-\]
+$$
 
 Substitute the known values,
-\[
+$$
 \begin{aligned}
 \frac{10}{\sin(50^\circ)} &= \frac{b}{\sin(60^\circ)}
 \end{aligned}
-\]
+$$
 
 Rearrange to solve for $b$,
-\[
+$$
 \begin{aligned}
 b &= \frac{10 \sin(60^\circ)}{\sin(50^\circ)} \\
   &\approx 11.31 \text{ cm}
 \end{aligned}
-\]
+$$
 
 ##### 3. Calculate Length $c$
 
 When observing the proportional equality,
-\[
+$$
 \frac{a}{\sin(A)} = \frac{c}{\sin(C)}
-\]
+$$
 
 Substitute the known values,
-\[
+$$
 \begin{aligned}
 \frac{10}{\sin(50^\circ)} &= \frac{c}{\sin(70^\circ)}
 \end{aligned}
-\]
+$$
 
 Rearrange to solve for $c$,
-\[
+$$
 \begin{aligned}
 c &= \frac{10 \sin(70^\circ)}{\sin(50^\circ)} \\
   &\approx 11.23 \text{ cm}
 \end{aligned}
-\]
+$$
 
 Now we have every angle and every side length of the triangle with only originally beginning with two angles and a side.
 
@@ -609,7 +609,7 @@ Take the following example, given
 
 We are given two sides and the included angle, so we use the Law of Cosines.
 
-\[
+$$
 \begin{aligned}
 c^2 &= a^2 + b^2 - 2ab\cos(C) \\
     &= 8^2 + 10^2 - 2(8)(10)\cos(60^\circ) \\
@@ -617,53 +617,53 @@ c^2 &= a^2 + b^2 - 2ab\cos(C) \\
     &= 164 - 80 \\
     &= 84
 \end{aligned}
-\]
+$$
 
-\[
+$$
 \begin{aligned}
 c &= \sqrt{84} \\
   &\approx 9.17 \text{ cm}
 \end{aligned}
-\]
+$$
 
 ##### 2. Calculate Angle $A$
 
 Now that we have all three sides, we can calculate angle $A$.
 
-\[
+$$
 \begin{aligned}
 a^2 &= b^2 + c^2 - 2bc\cos(A)
 \end{aligned}
-\]
+$$
 
 Rearrange to solve for $\cos(A)$,
 
-\[
+$$
 \begin{aligned}
 \cos(A) &= \frac{b^2 + c^2 - a^2}{2bc} \\
         &= \frac{10^2 + (9.17)^2 - 8^2}{2(10)(9.17)} \\
         &\approx 0.709
 \end{aligned}
-\]
+$$
 
-\[
+$$
 \begin{aligned}
 A &= \cos^{-1}(0.709) \\
   &\approx 45.0^\circ
 \end{aligned}
-\]
+$$
 
 ##### 3. Calculate Angle $B$
 
 We now calculate the final angle using the angle sum of a triangle.
 
-\[
+$$
 \begin{aligned}
 B &= 180^\circ - A - C \\
   &= 180^\circ - 45.0^\circ - 60^\circ \\
   &= 75.0^\circ
 \end{aligned}
-\]
+$$
 
 Now we have every angle and every side length of the triangle with only originally beginning with two sides and the included angle.
 
@@ -734,13 +734,13 @@ $$A = \frac{1}{2}ab\sin(C)$$
 
 Alternative forms of this can be written down,
 
-\[
+$$
 \begin{aligned}
 A &= \frac{1}{2}ab\sin(C) \\
 A &= \frac{1}{2}bc\sin(A) \\
 A &= \frac{1}{2}ac\sin(B)
 \end{aligned}
-\]
+$$
 
 This all begins from the basic area formula,
 

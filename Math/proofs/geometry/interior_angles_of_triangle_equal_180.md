@@ -2,7 +2,7 @@
     <h1> The sum of angles inside a triangle equal 180 </h1>
 </div>
 
-We want to prove that \( a + b + c = 180 \).
+We want to prove that $ a + b + c = 180 $.
 
 <div align='center'>
     <img src='./images/2.png'>
@@ -35,16 +35,16 @@ Once we have added the two paralle lines, we can treat each triangle edge as a t
 
 We know that,
 
-\[
+$$
 b + a + c = 180
-\]
+$$
 
 because these are the angles below the top parallel line, listed previously as geometric property one.
 
 Therefore, this can be summarized as,
 
-\[
+$$
 \boxed{a + b + c = 180}
-\]
+$$
 
 Thus, proving that the sum of all angles inside a triangle equal 180.

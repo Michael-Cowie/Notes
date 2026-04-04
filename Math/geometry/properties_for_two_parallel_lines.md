@@ -10,9 +10,9 @@ When a transversal intersects two parallel lines, a predictable set of angle rel
 
 Two lines are parallel if they lie in the same plane and never intersect, regardless of how far they are extended. Symbolically this is written as,
 
-\[
+$$
 l_1 \parallel l_2
-\]
+$$
 
 Parallel lines also main equidistant from each other at every point.
 

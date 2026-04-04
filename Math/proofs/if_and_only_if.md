@@ -205,12 +205,12 @@ An `iff` statement fails the moment the two propositions disagree. To *prove* a 
 
 Let,
 
-\[
+$$
 \begin{aligned}
 P &\text{ = "You are inside the club"} \\
 Q &\text{ = "You have ID"}
 \end{aligned}
-\]
+$$
 The claim asserts $P \Rightarrow Q$.
 
 **Only if** $(P \Rightarrow Q)$: ✓ *True.*
@@ -230,12 +230,12 @@ The `only if` direction lets you deduce *backward*. Seeing someone inside, you k
 
 Let,
 
-\[
+$$
 \begin{aligned}
 P &= \text{"n is a multiple of 4"} \\
 Q &= \text{"n is a multiple of 2"}
 \end{aligned}
-\]
+$$
 
 
 The claim asserts $P \Leftrightarrow Q$. We need both $Q \Rightarrow P$ and $P \Rightarrow Q$ to hold.
@@ -255,12 +255,12 @@ Since the `if` direction fails, the biconditional fails. Being a multiple of 2 i
 
 Let,
 
-\[
+$$
 \begin{aligned}
 P &= \text{"$n^2$ is even"} \\
 Q &= \text{"$n$ is even"}
 \end{aligned}
-\]
+$$
 
 The claim asserts $P \Leftrightarrow Q$.
 
