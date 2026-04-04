@@ -8,7 +8,7 @@ The angle between the chord and the tangent is equal to the angle by the the cho
     <img src='./images/32.png' width='400'>
 </div>
 
-Let \(P\) be a point on the circumference of a circle and \(O\) be the centre.
+Let $P$ be a point on the circumference of a circle and \(O\) be the centre.
 
 Let \(\overline{AB}\) be the tangent to the circle at \(P\). The tangent makes an angle \(\alpha\) with the chord \(PQ\).
 
