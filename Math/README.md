@@ -14,7 +14,7 @@ Avoid `\(...\)` for inline math expressions. Additionally, ensure there is **no 
 
 To render math blocks, **the only acceptable format is to use a fenced block ```math**
 
-```text
+```markdown
 ```math
 a + b = c
 ```
