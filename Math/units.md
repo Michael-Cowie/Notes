@@ -15,7 +15,7 @@ Where,
 -  $x ∈ \mathbb{R}$ is a numerical magnitude.
 - $ u $ is a unit representing a reference standard.
 
-The unit $ 𝑢 $ specifies the dimension of the quantity and provides semantic meaning to the scalar $ 𝑥 $. Without $ 𝑢 $, the numerical value $ 𝑥 $ alone is dimensionally indeterminate. The expression $ xu $ is interpreted as "$x $ times the reference quantiy defined by $ u $"
+The unit $𝑢$ specifies the dimension of the quantity and provides semantic meaning to the scalar $ 𝑥 $. Without $ 𝑢 $, the numerical value $ 𝑥 $ alone is dimensionally indeterminate. The expression $ xu $ is interpreted as "$x $ times the reference quantiy defined by $ u $"
 
 A unit defines **the dimension** of a quantity, and the **scalar multiplies** that unit to determine its magnitude. Consider the example $ 6 \frac{\mathrm{km}}{\mathrm{h}} $, "km" denotes kilometres and "h" denotes hours. The "/" symbol indicates divison, hence $ 6 \ \frac{\mathrm{km}}{\mathrm{h}} $ is read as "kilometres per hour". Meaning, the distance travelled in kilometres divided by the time elapsed in hours. This interpretation allows us to understand the quantity as a rate, for every hour, 6 kilometres are covered.
 
