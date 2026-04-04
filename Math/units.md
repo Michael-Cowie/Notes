@@ -245,9 +245,9 @@ $$
 This rule is exact and universal. No interpretation is applied at this stage, the operation is purely algebraic. Multiplying quantities does not describe a physical process, nor does it imply motion, shape or distribution.
 
 **Example** - Separate into two operations. One for the numbers and one for the units.
-$$
+```math
 \frac{8}{3} \frac{L}{s} \times 8000L
-$$
+```
 
 **Numbers**
 $$

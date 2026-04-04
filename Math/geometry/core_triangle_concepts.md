@@ -110,7 +110,7 @@ $$
 
 ####  Pythagoras Theorem
 
-The pythagoras theorem is applied to a **right angle triangle**. It states, $$a^2 + b^2 = c^2 $$
+The pythagoras theorem is applied to a **right angle triangle**. It states, $$a^2 + b^2 = c^2$$
 
 Where $c$ is the hypotenuse of a triangle.
 
@@ -189,7 +189,7 @@ Therefore, our goal is to prove $AE = b$.
 
 Therefore,
 
-$$ \frac{x}{y} = \frac{a}{b}$$
+$$\frac{x}{y} = \frac{a}{b}$$
 
 #### Midsegment Theorem
 
@@ -478,7 +478,7 @@ $$
 
 Therefore, $$\sin(36.87^\circ) = 0.6$$
 
-When applying the arithmatic here, we're applying the inverse sine function. When we go from, $$\sin(\theta) = \frac{o}{h} $$ to $$\theta = \sin^{-1}\left(\frac{o}{h}\right)$$ We're applying the inverse sine function $\sin^{-1}$ to both sides. That is, $$\sin^{-1}(\sin(\theta)) = \sin^{-1}\left(\frac{o}{h}\right)$$
+When applying the arithmatic here, we're applying the inverse sine function. When we go from, $$\sin(\theta) = \frac{o}{h}$$ to $$\theta = \sin^{-1}\left(\frac{o}{h}\right)$$ We're applying the inverse sine function $\sin^{-1}$ to both sides. That is, $$\sin^{-1}(\sin(\theta)) = \sin^{-1}\left(\frac{o}{h}\right)$$
 
 <div align='center'>
     <h1> The Law of Sines </h1>

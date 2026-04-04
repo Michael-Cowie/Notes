@@ -4,7 +4,7 @@
 
 Images and video are described as **replaced elements**. This means that CSS cannot affect the internal layout of these elements, only their position on the page amongst other elements. Certain replaced elements, such as images and video, are also described as having **an aspect ratio**. This means that it has a size in both the horizontal (`x`) and vertical (`y`) dimensions and will be displayed using the intrinsic dimensions of the file by default. The aspect ratio is the proportional relationship between the width and height of an image, video, or any rectangular element.
 
-$$ \text{Aspect Ratio} = \frac{\text{Width}}{\text{Height}}$$
+$$\text{Aspect Ratio} = \frac{\text{Width}}{\text{Height}}$$
 
 By default, images want to show their true size. Images start as inline elements (they flow with text). **They sit on the texts baseline by default**, which often creates that annoying little gap at the bottom. This gap, while seemingly arbitrary, is actually a result of how browsers handle inline elements and text baseline alignment.
 

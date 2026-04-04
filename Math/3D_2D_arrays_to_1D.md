@@ -110,25 +110,29 @@ To index into the flattened array we need a formula that needs to perform three 
 
 To traverse through the elevation in the one dimensional array we need to make "jumps" of the number of blocks on each elevation height. This would be calculated from the number of blocks on the X axis multiplied by the number of blocks on the Y axis.
 
-$$ k * \text{sizeX} * \text{sizeY} $$
+$$k * \text{sizeX} * \text{sizeY}$$
 
 To traverse vertically through the Y axis in the one dimensional array we need to make "jumps" of the number of blocks on the X axis.
 
-$$ j * \text{sizeX} $$
+$$j * \text{sizeX}$$
 
 Finally, once we have the correct elevation and height, we only need to add the horizontal displacement `i` to the final result to find the index inside the one dimensional array. This will give us the final 3D to 1D translation mapping of,
 
-$$ index = i + j * \text{sizeX} +  k * \text{sizeX} * \text{sizeY} $$
+$$index = i + j * \text{sizeX} +  k * \text{sizeX} * \text{sizeY}$$
 
 In the previous example with a `2 x 2 x 2` Block Model, the 3D to 1D translation we will have our final mapping equation,
 
-$$ index = i + j * 2 + K * 4$$
+$$index = i + j * 2 + K * 4$$
 
 We previously saw the number 7 in index 6 of the flattened array which was represented by the position (0, 1, 1). Here we can validate our equation using,
 
-$$ index = 0 + 1 * 2 + 1 * 4$$
-$$ index = 0 + 2 + 4$$
-$$ index = 6$$
+$$
+\begin{aligned}
+index &= 0 + 1 \cdot 2 + 1 \cdot 4 \\
+      &= 0 + 2 + 4 \\
+      &= 6
+\end{aligned}
+$$
 
 As an important contextual note, it's vital to understand context. Here, in our first example we represented the table in a format of X and Y which can be translated to the X axis being columns and the Y axis as rows. This is not transferable to the 3D space. The X axis is no longer "rows" and the Y axis is no longer "columns" as it is no longer a table.
 

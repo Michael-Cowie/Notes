@@ -112,7 +112,7 @@ As seen above, the rendered box will decrease in size. Now, using device-indepen
 
 The formula to calculate a device-independent pixel from physical pixels is,
 
-$$ \text{DIP} = \frac{ \text{Physical Pixels}}{ \text{ DPR (Device Pixel Ratio)}}$$
+$$\text{DIP} = \frac{ \text{Physical Pixels}}{ \text{ DPR (Device Pixel Ratio)}}$$
 
 Where,
 
@@ -124,7 +124,7 @@ Where,
 
 **DPI is the number of physical pixels packed into one inch** of a screen. It determines the pixel density of a display.
 
-$$ \text{DPI} = \frac{\sqrt{(\text{Screen Width Resolution}^2 + \text{Screen Height Resolution}^2)}}{\text{Screen Size (In Inches)}}$$
+$$\text{DPI} = \frac{\sqrt{(\text{Screen Width Resolution}^2 + \text{Screen Height Resolution}^2)}}{\text{Screen Size (In Inches)}}$$
 
 Where,
 
@@ -136,7 +136,7 @@ When a monitor is advertised as 24 inches, that measurement **is always the diag
 
 If we had to calculate the DPI for a **24-inch monitor** with a resolution of `1920 x 1080` using the formula it would become,
 
-$$ \text{DPI} = \frac{\sqrt{(1920^2 + 1080^2)}}{24}$$
+$$\text{DPI} = \frac{\sqrt{(1920^2 + 1080^2)}}{24}$$
 
 The output will be **91.79 DPI**. This calculated DPI will then be used with a standard reference point to calculate the DPR. After the DPR is calculated, we can finally calculate the number of physical pixels to display on screen.
 
@@ -154,7 +154,7 @@ As screens got higher resolutions, UI scaling became necessary. Since **96 DPI w
 
 The DPR is simply a ratio between physical pixels and CSS pixels. **It determines how many physical pixels should be used to display a single CSS pixel**.
 
-$$ \text{DPR} = \frac{\text{Physical Pixels (Horizontal)}}{ \text{CSS Pixels (Horizontal)}}$$
+$$\text{DPR} = \frac{\text{Physical Pixels (Horizontal)}}{ \text{CSS Pixels (Horizontal)}}$$
 
 - **Physical Pixels** - The actual number of hardware pixels on the screen, this should be 3840 for a 4k display.
 - **CSS Pixels** - The width of an element in pixels. Defined in CSS using the `px` unit.
@@ -171,11 +171,11 @@ The `200px` refers to **CSS pixels**, which are independent of the actual screen
 
 For a **4k monitor (3840 x 2160) resolution at 24 inches**, the DPI is calculated as,
 
-$$ \text{DPI} = \frac{\sqrt{(3840^2 + 2160^2)}}{24} = ~183.54$$
+$$\text{DPI} = \frac{\sqrt{(3840^2 + 2160^2)}}{24} = ~183.54$$
 
 We then calculate the DPR (Assuming a standard CSS reference of 96 DPI),
 
-$$ \text{DPR} = \frac{183.54}{96} = 1.91 = \text{} \thicksim 2.0$$
+$$\text{DPR} = \frac{183.54}{96} = 1.91 = \text{} \thicksim 2.0$$
 
 This results in a **4k 24inch monitor having a DPR of roughly 2**.
 
@@ -185,7 +185,7 @@ $$\text{Physical Pixels} = \text{CSS Pixels * DPR}$$
 
 This means that our `<div>` width a `width` of 200 CSS Pixels will be rendered as,
 
-$$ \text{Physical Pixels} = 200 * 2 = 400 \text{ Physical Pixels}$$
+$$\text{Physical Pixels} = 200 * 2 = 400 \text{ Physical Pixels}$$
 
 If a person were to set their monitor to **200% size (scaling) in their OS settings**, they are adjusting the UI scaling factor. This means that the end result will **double the logical pixels size** of UI elements.
 

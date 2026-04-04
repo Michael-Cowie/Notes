@@ -234,7 +234,7 @@ $$
 
 Because $\theta_2$ is equal to $A$, we finally have,
 
-$$\boxed{c \cdot \sin(A) = h} $$
+$$\boxed{c \cdot \sin(A) = h}$$
 
 Next, we need to creation a relationship using the larger triangle. That is,
 

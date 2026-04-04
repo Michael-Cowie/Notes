@@ -29,7 +29,7 @@ The only row that breaks the implication is the second one, where it is raining 
 
 #### Necessary Condition
 
-When we say "$Q$ is **necessary** for $P$", this directly translates to $$P \Rightarrow Q $$This is a requirement statement.
+When we say "$Q$ is **necessary** for $P$", this directly translates to $$P \Rightarrow Q$$This is a requirement statement.
 
 It asserts whenever $P$ is true, $Q$ must also be true. That is the entire constraint. The statement does not claim that $Q$ causes or guarantees $P$, only that $P$ cannot occur without it.
 
@@ -60,8 +60,8 @@ The statement places a restriction on $Q$, not on $P$.
 
 These are opposite directions of implication
 
-$$ \text{Necessary}:  P \Rightarrow Q$$
-$$ \text{Sufficient}:  Q \Rightarrow P$$
+$$\text{Necessary}:  P \Rightarrow Q$$
+$$\text{Sufficient}:  Q \Rightarrow P$$
 
 Therefore, when we say "$Q$ is necessary **and** sufficient for $P$" it directly translates to $P \Leftrightarrow Q$. This combines both directions $$P \Rightarrow Q \space \text{and} \space Q \Rightarrow P$$
 
