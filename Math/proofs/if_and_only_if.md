@@ -73,15 +73,15 @@ This is no longer a one-way relationship. It is a two-way constraint.
 
 The phrase `if` introduces a sufficient condition. A statement of the form,
 
-$$
+```math
 P \space \text{if} \space Q
-$$
+```
 
 means that,
 
-$$
+```math
 Q \Rightarrow P
-$$
+```
 
 This indicates whenever $Q$ is true, $P$ must also be true. This is written formally as $Q \Rightarrow P$ which is read as "Q implies P". The implication flows from $Q$ to $P$.
 
@@ -115,15 +115,15 @@ The ground being wet from a bucket does not break this, the implication only pro
 
 The phrase `only if` introduces a necessary condition. A statement of the form,
 
-$$
+```math
 P \space \text{only if} \space Q
-$$
+```
 
 means that,
 
-$$
+```math
 P \Rightarrow Q
-$$
+```
 
 This indicates that $Q$ must be true whenever $P$ is true. In other words, $P$ cannot occur without $Q$. This time the arrow flows *from* $P$ *toward* $Q$. $Q$ is now a *necessary condition* for $P$. Without $Q$, $P$ is impossible. But $Q$ alone is not enough to guarantee $P$, it is merely required.
 
@@ -205,12 +205,13 @@ An `iff` statement fails the moment the two propositions disagree. To *prove* a 
 
 Let,
 
-$$
+```math
 \begin{aligned}
 P &\text{ = "You are inside the club"} \\
 Q &\text{ = "You have ID"}
 \end{aligned}
-$$
+```
+
 The claim asserts $P \Rightarrow Q$.
 
 **Only if** $(P \Rightarrow Q)$: ✓ *True.*
@@ -230,13 +231,12 @@ The `only if` direction lets you deduce *backward*. Seeing someone inside, you k
 
 Let,
 
-$$
+```math
 \begin{aligned}
 P &= \text{"n is a multiple of 4"} \\
 Q &= \text{"n is a multiple of 2"}
 \end{aligned}
-$$
-
+```
 
 The claim asserts $P \Leftrightarrow Q$. We need both $Q \Rightarrow P$ and $P \Rightarrow Q$ to hold.
 
@@ -255,12 +255,12 @@ Since the `if` direction fails, the biconditional fails. Being a multiple of 2 i
 
 Let,
 
-$$
+```math
 \begin{aligned}
 P &= \text{"$n^2$ is even"} \\
 Q &= \text{"$n$ is even"}
 \end{aligned}
-$$
+```
 
 The claim asserts $P \Leftrightarrow Q$.
 

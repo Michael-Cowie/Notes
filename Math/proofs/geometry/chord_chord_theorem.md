@@ -4,9 +4,9 @@
 
 The Chord Chord Theorem states that,
 
-$$
+```math
 AE \cdot EB = CE \cdot ED
-$$
+```
 
 <div align='center'>
     <img src='./images/42.png' width='400'>
@@ -24,10 +24,10 @@ To begin this proof we will draw lines from verticies $A$ to $D$ and $C$ to $B$.
 
 Because both triangles have equal angles, it means that these are **similar triangles**. This means, each side increases at the exact same ratio to keep the angles the same. Therefore,
 
-$$
+```math
 \frac{AE}{CE} = \frac{ED}{EB}
-$$
+```
 
-$$
+```math
 AE \cdot EB = CE \cdot ED
-$$
+```

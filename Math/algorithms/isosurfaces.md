@@ -10,9 +10,9 @@ An isosurface is a **three-dimensional surface that represents points of a const
 
 Now, a scalar field is a mathematical function that assigns a single scalar value to every point in a space. A scalar value is a single numerical value that represents a quantity. If $f(x, y, z)$ is a scalar field, an isosurface for the isovalue $c$ is defined as,
 
-$$
+```math
 f(x, y, z) = c
-$$
+```
 
 The isosurface divides the 3D volume into two regions,
 
@@ -74,9 +74,9 @@ We need to calculate the point $p$ on the edge $AB$ where the isosurface $f(x, y
 
 We need to calculate the relative position along an edge where a scalar field $f(x, y, z)$ equals a specified isovalue $c$. To accomplish this, we will the following formula,
 
-$$
+```math
 t = \frac{|f(A) - c|}{|f(A) - c| + |f(B) - c|}
-$$
+```
 
 Where,
 
@@ -96,23 +96,23 @@ $t$ is the proportion of the distance that $A$'s scalar value contributes to the
 
 $t$ is then used to find the exact point $p$ along the edge where $f(p) = c$ using the formula,
 
-$$
+```math
 p = A + t(B - A)
-$$
+```
 
 ##### Substitution
 
 First let's calculate $t$ as,
 
-$$
+```math
 t = \frac{|2 - 0|}{|2 - 0| + |-1 - 0|} = \frac{2}{2 + 1} = \frac{2}{3}
-$$
+```
 
 Then, interpolate the value of $p$ using,
 
-$$
+```math
 p = (0, 0, 0) + \frac{2}{3}((1, 0, 0) - (0, 0, 0)) = (0, 0, 0) + \frac{2}{3}(1, 0, 0) = (\frac{2}{3}, 0, 0)
-$$
+```
 
 Therefore, the isosurface intersects the edge $AB$ at $p = (\frac{2}{3}, 0, 0)$ 
 

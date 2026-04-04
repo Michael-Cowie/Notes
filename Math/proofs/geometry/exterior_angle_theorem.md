@@ -23,36 +23,37 @@ To create this proof, we will introduce a third variable $Z$.
 First, factor $e$ into the equation by substituting out $z$. The goal of this is to create a final equation to represent $e$ using only $a$ and $b$.
 
 Given,
-$$
+
+```math
 a + b + z = 180
-$$
+```
 
 and,
 
-$$
+```math
 e + z = 180
-$$
+```
 
 We will rewrite this into,
 
-$$
+```math
 z = 180 - e
-$$
+```
 
 Therefore,
 
-$$
+```math
 \begin{aligned}
 a + b + z &= 180 \\
 a + b + 180 - e &= 180 \\
 a + b - e &= 0 \\
 \end{aligned}
-$$
+```
 
 Finally giving us,
 
-$$
+```math
     \boxed{a + b = e}
-$$
+```
 
 This concludes that the exterior angle $e$ is the sum of the two interior angles that non-adjacent to the exterior angle.

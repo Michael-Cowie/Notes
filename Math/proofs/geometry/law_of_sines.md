@@ -31,40 +31,39 @@ Given that we have created two right angle triangles, we will use both to define
 - The **opposite**, labeled $O$ is the side opposite the angle. In both situations with angle $\angle B$ or $\angle C$, this corresponds to the side $h$.
 - The **hypotenuse** is different for each right angle triangle. For calculating $\angle B$, it is the side labeled $c$. For calculating $\angle C$, it is the side labeled $b$.
 
-
-$$
+```math
 \sin(\theta) = \frac{O}{H}
-$$
+```
 
 Therefore,
 
-$$
+```math
 \begin{align*}
 \sin B &= \frac{h}{c} \\
 \sin C &= \frac{h}{b}
 \end{align*}
-$$
+```
 
 Which can be rearranged to:
 
-$$
+```math
 \begin{align*}
 c \cdot \sin B &= h \\
 b \cdot \sin C &= h
 \end{align*}
-$$
+```
 
 Since both equal $h$,
 
-$$
+```math
 c \cdot \sin B = b \cdot \sin C
-$$
+```
 
 Dividing both sides by $\sin B \cdot \sin C$ gives:
 
-$$
+```math
 \boxed{\frac{c}{\sin C} = \frac{b}{\sin B}}
-$$ 
+```
 
 Now that this is an established relationship for $c$ and $b$, we need to include $a$ to complete the proportionality relationship. To complete this we create an identical triangle but instead create two right angle triangles by extending a line from vertex $B$.
 
@@ -78,59 +77,59 @@ This will again create two right angle triangles.
     <img src='./images/48.png' width='700'>
 </div>
 
-$$
+```math
 \sin(\theta) = \frac{O}{H}
-$$
+```
 
 Therefore,
 
-$$
+```math
 \begin{align*}
 \sin A &= \frac{h}{c} \\
 \sin C &= \frac{h}{a}
 \end{align*}
-$$
+```
 
 Which can be rearranged to:
 
-$$
+```math
 \begin{align*}
 c \cdot \sin A &= h \\
 a \cdot \sin C &= h
 \end{align*}
-$$
+```
 
 Since both equal $h$,
 
-$$
+```math
 c \cdot \sin A = a \cdot \sin C
-$$
+```
 
 Dividing both sides by $\sin A \cdot \sin C$ gives:
 
-$$
+```math
 \frac{c}{\sin C} = \frac{a}{\sin A}
-$$
+```
 
 ##### 3. Join the relationships
 
 From the two derived relationships we have:
 
-$$
+```math
 \frac{c}{\sin C} = \frac{b}{\sin B}
-$$
+```
 
 and
 
-$$
+```math
 \frac{c}{\sin C} = \frac{a}{\sin A}
-$$
+```
 
 Since both ratios are equal to $\frac{c}{\sin C}$, it follows that all three ratios are equal:
 
-$$
+```math
 \boxed{\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C}}
-$$
+```
 
 This is the **Law of Sines**.
 
@@ -151,39 +150,39 @@ From here, create two right angle triangles from vertex $A$ by creating the line
     <img src='./images/50.png' width='700'>
 </div>
 
-$$
+```math
 \sin(\theta) = \frac{O}{H}
-$$
+```
 
 Therefore,
 
-$$
+```math
 \begin{align*}
 \sin B &= \frac{h}{c} \\
 \sin C &= \frac{h}{b}
 \end{align*}
-$$
+```
 
 Which can be rearranged to:
 
-$$
+```math
 \begin{align*}
 c \cdot \sin B &= h \\
 b \cdot \sin C &= h
 \end{align*}
-$$
+```
 
 Since both equal $h$,
 
-$$
+```math
 c \cdot \sin B = b \cdot \sin C
-$$
+```
 
 Dividing both sides by $\sin B \cdot \sin C$ gives:
 
-$$
+```math
 \boxed{\frac{c}{\sin C} = \frac{b}{\sin B}}
-$$ 
+```
 
 Now that this is an established relationship for $c$ and $b$, we need to include $a$ to complete the proportionality relationship. To complete this we create an identical triangle but instead create a single right angle triangles by extending a line from vertex $B$.
 
@@ -212,25 +211,25 @@ This proof involves the smaller triangle and the larger triangle.
 
 Given that
 
-$$
+```math
 \sin(\theta_1) = \frac{h}{c}
-$$
+```
 
 and from the supplementary angle identities of sine previously mentioned,
 
-$$
+```math
 \sin(\theta_1) = \sin(\theta_2)
-$$
+```
 
 it follows that
 
-$$
+```math
 \begin{align*}
 \sin(\theta_1) &= \sin(\theta_2) = \frac{h}{c} \\
 \sin(\theta_2) &= \frac{h}{c} \\
 c \cdot \sin(\theta_2) &= h
 \end{align*}
-$$
+```
 
 Because $\theta_2$ is equal to $A$, we finally have,
 
@@ -251,12 +250,12 @@ $$\boxed{\frac{a}{\sin(A)} = \frac{c}{\sin(C)}}$$
 
 Finally, we can combine the previous equality,
 
-$$
+```math
 \frac{c}{\sin C} = \frac{b}{\sin B}
-$$ 
+```
 
 to prove for an obtuse triangle,
 
-$$
+```math
 \boxed{\frac{a}{\sin A} = \frac{c}{\sin C} = \frac{b}{\sin B}}
-$$ 
+```

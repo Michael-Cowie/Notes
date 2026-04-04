@@ -16,21 +16,21 @@ $$\cos(\theta) = \frac{A}{H} = \frac{\text{Adjacent}}{\text{Hypotenuse}}$$
 
 1. In the right triangle $BCD$, from the definition of cosine.
 
-$$
+```math
 \begin{aligned}
 \cos(C) &= \frac{CD}{a} \\
 CD &= a \cos(C)
 \end{aligned}
-$$
+```
 
 2. Subtract from side $b$
 
-$$
+```math
 \begin{aligned}
 CD &= b - DA \\
 b - DA &= a \cos(C) \\
 \end{aligned}
-$$
+```
 
 Therefore,
 
@@ -38,11 +38,11 @@ $$\boxed{DA = b - a \cos(C)}$$
 
 3. In the triangle $BCD$, from the definition of sine.
 
-$$
+```math
 \begin{aligned}
 \sin(C) &= \frac{BD}{a} \\
 \end{aligned}
-$$
+```
 
 Therefore,
 
@@ -50,29 +50,29 @@ $$\boxed{BD = a \sin(C)}$$
 
 4. In the triangle $ADB$, apply the Pythagorean Theorem.
 
-$$
+```math
 c^2 = BD^2 + DA^2
-$$
+```
 
 4. Substitute for $BD$ and $DA$.
 
 Previously calculated,
 
-$$
+```math
 \begin{aligned}
 BD &= a \sin(C) \\
 DA &= b - a \cos(C)
 \end{aligned}
-$$
+```
 
 Therefore,
 
-$$
+```math
 \begin{aligned}
 c^2 &= (a \sin(C))^2 + (b - a \cos(C))^2 \\
     &= a^2 \sin^2(C) + b^2 - 2ab \cos(C) + a^2 \cos^2(C)
 \end{aligned}
-$$
+```
 
 5. Rearrange the terms.
 

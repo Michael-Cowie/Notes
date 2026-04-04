@@ -12,15 +12,15 @@ Let $O$ be the centre of the circle and let $\overline{AC}$ be a chord.
 
 Let $OM$ intersect $\overline{AC}$ at $M$ such that
 
-$$
+```math
 OM \perp AC
-$$
+```
 
 We want to prove
 
-$$
+```math
 AM = MC
-$$
+```
 
 <div align='center'>
     <img src='./images/35.png'>
@@ -30,9 +30,9 @@ $$
 
 Since $O$ is the centre of the circle,
 
-$$
+```math
 OA = OC
-$$
+```
 
 because all radii of a circle are equal.
 
@@ -40,48 +40,47 @@ because all radii of a circle are equal.
 
 Since
 
-$$
+```math
 OM \perp AC
-$$
+```
 
 it follows that
 
-$$
+```math
 \angle OMA = \angle OMC = 90^\circ
-$$
+```
 
 ### Step 3 — Consider the triangles
 
 Consider the triangles
 
-$$
+```math
 \triangle OMA \quad \text{and} \quad \triangle OMC
-$$
-
+```
 
 ### Step 4 — Show the triangles are congruent
 
 We know
 
-$$
+```math
 OA = OC
-$$
+```
 
-$$
+```math
 OM = OM
-$$
+```
 
 (common side)
 
-$$
+```math
 \angle OMA = \angle OMC
-$$
+```
 
 Therefore
 
-$$
+```math
 \triangle OMA \cong \triangle OMC
-$$
+```
 
 by the **RHS (Right angle–Hypotenuse–Side)** congruence rule.
 
@@ -90,12 +89,12 @@ by the **RHS (Right angle–Hypotenuse–Side)** congruence rule.
 
 Since the triangles are congruent, corresponding sides are equal. Therefore
 
-$$
+```math
 AM = MC
-$$
+```
 
 The line perpendicular from the centre of a circle to a chord bisects the chord.
 
-$$
+```math
 \boxed{AM = MC}
-$$
+```

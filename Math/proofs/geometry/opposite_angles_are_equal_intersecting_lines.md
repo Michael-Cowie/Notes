@@ -16,41 +16,41 @@ Here, we to prove that $a = b$ and $c = d$.
 
 We know by mathematical definition,
 
-$$
+```math
 a + d = 180
-$$
+```
 
 This is because angles above any line sum to 180. We can do the same thing for,
 
-$$
+```math
 d + b = 180
-$$
+```
 
 Therefore,
 
-$$
+```math
 a + d = d + b \\
 a = b
-$$
+```
 
 Hence, this is a simple proof to known that opposing angles are identical. Different approaches can also be done such as,
 
-$$
+```math
 a + c = 180 \\
 c + b = 180
-$$
+```
 
 Now, format this back to $c$
 
-$$
+```math
 c = 180 - a \\
 c = 180 - b
-$$
+```
 
 Now, replace the common factor of $c$.
 
-$$
+```math
 180 - a = 180 - b \\
 -a = -b \\
 \boxed{a = b}
-$$
+```

@@ -180,15 +180,15 @@ We can create two isoceles triangles to form an algebraic equation.
     <img src='./images/24.png'>
 </div>
 
-$$
+```math
     2a + 2b = 180
-$$
+```
 
 Therefore,
 
-$$
+```math
     \boxed{a + b = 90}
-$$
+```
 
 We also know this to be true from the second theorem, because this point is from the centre equaling 180 degrees, the angle from the circumance must be half this and therefore 90.
 

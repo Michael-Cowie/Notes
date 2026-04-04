@@ -35,16 +35,16 @@ Once we have added the two paralle lines, we can treat each triangle edge as a t
 
 We know that,
 
-$$
+```math
 b + a + c = 180
-$$
+```
 
 because these are the angles below the top parallel line, listed previously as geometric property one.
 
 Therefore, this can be summarized as,
 
-$$
+```math
 \boxed{a + b + c = 180}
-$$
+```
 
 Thus, proving that the sum of all angles inside a triangle equal 180.

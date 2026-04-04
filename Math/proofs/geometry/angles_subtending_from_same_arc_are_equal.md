@@ -16,14 +16,14 @@ Next, we will create another angle subtending to the arc. This will come from th
 
 Now, based on the circle theorm "Inscribed Angle Theorem" that states "The angle subtended by an arc at the centre of a circle is twice the angle subtended at any point on the circumfrence" this follows.
 
-$$
+```math
 2a = 2c \\
 2b = 2c \\
-$$
+```
 
 Therefore,
 
-$$
+```math
 2a = 2b \\
 \boxed{a = b}
-$$
+```

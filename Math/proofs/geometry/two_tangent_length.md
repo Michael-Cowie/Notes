@@ -14,21 +14,21 @@ We will begin this proof by outling the following information,
 2. Draw a line from the centre point $O$ to the origin point $C$. Call this length $Y$.
 3. We know from the definition of a tangent line, that a tangent meets the radius it will form 90 degrees. Therefore, we are able to use pythagoras theorem to calculate the length of either side.
 
-$$
+```math
 BC = \sqrt{y^2 - x^2}
-$$
+```
 
 Identically,
 
-$$
+```math
 AC = \sqrt{y^2 - x^2}
-$$
+```
 
 Therefore,
 
-$$
+```math
     AC = BC
-$$
+```
 
 Telling us, that the two tangents formed from an external point onto a circle will have equal length. 
 

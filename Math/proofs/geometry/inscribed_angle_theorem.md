@@ -27,18 +27,20 @@ To begin the proof, we will begin with the following operations.
 3. Given these are isoceles triangles we can mark the remaining angle as $180 - 2x$ and $180 - 2y$.
 4. This means the remaining angle to be calculated can be immediately identified as $2x$ given the exterior angle theorem or calculated via,
 
-$$
+```math
 \begin{aligned}
 180 - 2x + z &= 180 \\
 -2x + z &= 0 \\
 -2x &= -z \\
 \end{aligned}
-$$
+```
 
 Therefore,
-$$
+
+```math
     \boxed{2x = z}
-$$
+```
+
 Similarily for $y$. Hence, the remaining angle is calculated as $2x$ and $2y$ for the opposing side.
 
 <div align='center'>

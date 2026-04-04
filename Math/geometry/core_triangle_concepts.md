@@ -98,11 +98,11 @@ For a triangle with side lengths $a,b$ and $c$,
     <img src='./images/60.png' width='200'>
 </div>
 
-$$
+```math
 a + b > c \\
 a + c > b \\
 b + c > a \\
-$$
+```
 
 <div align='center'>
     <img src='./images/61.png' width='500'>
@@ -245,13 +245,13 @@ Take the following as an example. We know that $4$ is $r$ times larger than $2$.
 
 From here, we can split the right side of the triangle into two components, $2y$ and $y$. Therefore, 
 
-$$
+```math
 \begin{aligned}
 2y + y &= 9 \\
 3y &= 9 \\
 y &= 3
 \end{aligned}
-$$
+```
 
 We can now calculate the longer side being $2 * 3 = 6$ and the shorter side being $3$. These sum to $9$.
 
@@ -371,9 +371,9 @@ Any line drawn parallel to one side of a triangle creates a smaller triangle tha
 
 Additionally,
 
-$$
+```math
 \frac{AD}{AB} = \frac{AE}{AC}
-$$
+```
 
 <div align='center'>
     <h1> Congruence of Triangles </h1>
@@ -453,13 +453,13 @@ A hypotenuse is not just the longest side. It is defined as the side opposite th
 
 Basic trigonometric ratios can be remembered by an acronym called SOH-CAH-TOA. These only apply **directly to right triangles**.
 
-$$
+```math
 \begin{align*}
 \sin(\theta) &= \frac{\text{opposite}}{\text{hypotenuse}} \\
 \cos(\theta) &= \frac{\text{adjacent}}{\text{hypotenuse}} \\
 \tan(\theta) &= \frac{\text{opposite}}{\text{adjacent}}
 \end{align*}
-$$
+```
 
 These ratios depend on the hypotenuse and therefore require a right triangle. If you have an opposite of $3$ and hypotenuse of $5$ then we have,
 
@@ -469,12 +469,12 @@ This means that the side across from angle $\theta$ is 60% of the hypotenuse. Th
 
 To get the angle from sine, use the inverse sine function.
 
-$$
+```math
 \begin{align*}
 \theta &= \sin^{-1}(0.6) \\
 \theta &\approx 36.87^\circ
 \end{align*}
-$$
+```
 
 Therefore, $$\sin(36.87^\circ) = 0.6$$
 
@@ -513,57 +513,63 @@ Take the following example, given
 
 We have 2 angles, therefore we can calculate the third angle $C$.
 
-$$
+```math
 \begin{aligned}
 C &= 180^\circ - A - B \\
   &= 180^\circ - 50^\circ - 60^\circ \\
   &= 70^\circ
 \end{aligned}
-$$
+```
 
 ##### 2. Calculate Length $b$
 
 When observing the proportional equality,
-$$
+
+```math
 \frac{a}{\sin(A)} = \frac{b}{\sin(B)}
-$$
+```
 
 Substitute the known values,
-$$
+
+```math
 \begin{aligned}
 \frac{10}{\sin(50^\circ)} &= \frac{b}{\sin(60^\circ)}
 \end{aligned}
-$$
+```
 
 Rearrange to solve for $b$,
-$$
+
+```math
 \begin{aligned}
 b &= \frac{10 \sin(60^\circ)}{\sin(50^\circ)} \\
   &\approx 11.31 \text{ cm}
 \end{aligned}
-$$
+```
 
 ##### 3. Calculate Length $c$
 
 When observing the proportional equality,
-$$
+
+```math
 \frac{a}{\sin(A)} = \frac{c}{\sin(C)}
-$$
+```
 
 Substitute the known values,
-$$
+
+```math
 \begin{aligned}
 \frac{10}{\sin(50^\circ)} &= \frac{c}{\sin(70^\circ)}
 \end{aligned}
-$$
+```
 
 Rearrange to solve for $c$,
-$$
+
+```math
 \begin{aligned}
 c &= \frac{10 \sin(70^\circ)}{\sin(50^\circ)} \\
   &\approx 11.23 \text{ cm}
 \end{aligned}
-$$
+```
 
 Now we have every angle and every side length of the triangle with only originally beginning with two angles and a side.
 
@@ -583,13 +589,13 @@ Where,
 
 When observing the equations,
 
-$$
+```math
 \begin{aligned}
 a^2 &= b^2 + c^2 - 2bc\cos(A) \\
 b^2 &= a^2 + c^2 - 2ac\cos(B) \\
 c^2 &= a^2 + b^2 - 2ab\cos(C)
 \end{aligned}
-$$
+```
 
 We use these equations when we are given combinations of sides and angles that cannot be solved using the Law of Sines.
 
@@ -609,7 +615,7 @@ Take the following example, given
 
 We are given two sides and the included angle, so we use the Law of Cosines.
 
-$$
+```math
 \begin{aligned}
 c^2 &= a^2 + b^2 - 2ab\cos(C) \\
     &= 8^2 + 10^2 - 2(8)(10)\cos(60^\circ) \\
@@ -617,53 +623,53 @@ c^2 &= a^2 + b^2 - 2ab\cos(C) \\
     &= 164 - 80 \\
     &= 84
 \end{aligned}
-$$
+```
 
-$$
+```math
 \begin{aligned}
 c &= \sqrt{84} \\
   &\approx 9.17 \text{ cm}
 \end{aligned}
-$$
+```
 
 ##### 2. Calculate Angle $A$
 
 Now that we have all three sides, we can calculate angle $A$.
 
-$$
+```math
 \begin{aligned}
 a^2 &= b^2 + c^2 - 2bc\cos(A)
 \end{aligned}
-$$
+```
 
 Rearrange to solve for $\cos(A)$,
 
-$$
+```math
 \begin{aligned}
 \cos(A) &= \frac{b^2 + c^2 - a^2}{2bc} \\
         &= \frac{10^2 + (9.17)^2 - 8^2}{2(10)(9.17)} \\
         &\approx 0.709
 \end{aligned}
-$$
+```
 
-$$
+```math
 \begin{aligned}
 A &= \cos^{-1}(0.709) \\
   &\approx 45.0^\circ
 \end{aligned}
-$$
+```
 
 ##### 3. Calculate Angle $B$
 
 We now calculate the final angle using the angle sum of a triangle.
 
-$$
+```math
 \begin{aligned}
 B &= 180^\circ - A - C \\
   &= 180^\circ - 45.0^\circ - 60^\circ \\
   &= 75.0^\circ
 \end{aligned}
-$$
+```
 
 Now we have every angle and every side length of the triangle with only originally beginning with two sides and the included angle.
 
@@ -683,9 +689,9 @@ This occurs in the following cases,
 
 The governing equation is,
 
-$$
+```math
 \frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
-$$
+```
 
 ### Law of Cosines
 
@@ -698,13 +704,13 @@ This occurs in the following cases:
 
 The governing equations are,
 
-$$
+```math
 \begin{aligned}
 a^2 &= b^2 + c^2 - 2bc\cos(A) \\
 b^2 &= a^2 + c^2 - 2ac\cos(B) \\
 c^2 &= a^2 + b^2 - 2ab\cos(C)
 \end{aligned}
-$$
+```
 
 ### Ambiguous Case (SSA)
 
@@ -716,9 +722,9 @@ When using the Law of Sines with SSA,
 
 This occurs because,
 
-$$
+```math
 \sin(\theta) = \sin(180^\circ - \theta)
-$$
+```
 
 <div align='center'>
     <h1> Area of Triangle using Trigonometry </h1>
@@ -734,13 +740,13 @@ $$A = \frac{1}{2}ab\sin(C)$$
 
 Alternative forms of this can be written down,
 
-$$
+```math
 \begin{aligned}
 A &= \frac{1}{2}ab\sin(C) \\
 A &= \frac{1}{2}bc\sin(A) \\
 A &= \frac{1}{2}ac\sin(B)
 \end{aligned}
-$$
+```
 
 This all begins from the basic area formula,
 
@@ -758,12 +764,12 @@ So, from the above using $$\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\
 
 Using angle $C$,
 
-$$
+```math
 \begin{aligned}
 \sin C &= \frac{h}{b} \\
 b\sin C &= h
 \end{aligned}
-$$
+```
 
 Therefore,
 
@@ -775,12 +781,12 @@ So, from the above using $$\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\
 
 Using angle $B$,
 
-$$
+```math
 \begin{aligned}
 \sin B &= \frac{h}{c} \\
 c\sin B &= h
 \end{aligned}
-$$
+```
 
 Therefore,
 
@@ -798,12 +804,12 @@ So, from the above using $$\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\
 
 Using angle $A$,
 
-$$
+```math
 \begin{aligned}
 \sin A &= \frac{h}{c} \\
 c\sin A &= h
 \end{aligned}
-$$
+```
 
 Therefore,
 

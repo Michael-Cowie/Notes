@@ -8,19 +8,13 @@ One of the foundational results in Euclidean geometry is the **Isosceles Triangl
 
 #### Triangle Notation
 
-The symbol
-
-$$
-\triangle ABC
-$$
-
-denotes the triangle determined by three non-collinear points $A$, $B$, and $C$.
+The symbol $\triangle ABC$ denotes the triangle determined by three non-collinear points $A$, $B$, and $C$.
 
 The sides of the triangle are the line segments:
 
-$$
+```math
 AB, \quad BC, \quad CA.
-$$
+```
 
 Here, $AB$ denotes the **length** of the line segment joining points $A$ and $B$.
 
@@ -29,29 +23,23 @@ Here, $AB$ denotes the **length** of the line segment joining points $A$ and $B$
 
 When we write
 
-$$
+```math
 AB = AC,
-$$
+```
 
 we mean that the length of segment $AB$ equals the length of segment $AC$.
 
 A triangle satisfying
 
-$$
+```math
 AB = AC
-$$
+```
 
 is called an **isosceles triangle**.
 
 #### Angle Notation
 
-The symbol
-
-$$
-\angle ABC
-$$
-
-denotes the angle with vertex at point $B$, formed by segments $BA$ and $BC$.
+The symbol $\angle ABC$ denotes the angle with vertex at point $B$, formed by segments $BA$ and $BC$.
 
 The middle letter always indicates the vertex of the angle.
 
@@ -62,13 +50,7 @@ Thus:
 
 #### Congruence
 
-The symbol
-
-$$
-\cong
-$$
-
-denotes **congruence**.
+The symbol $\cong$ denotes **congruence**.
 
 Two triangles are congruent if:
 
@@ -77,9 +59,9 @@ Two triangles are congruent if:
 
 Thus,
 
-$$
+```math
 \triangle ABD \cong \triangle ACD
-$$
+```
 
 means triangle $ABD$ and triangle $ACD$ are identical in size and shape.
 
@@ -89,25 +71,21 @@ means triangle $ABD$ and triangle $ACD$ are identical in size and shape.
 
 #### The Side–Side–Side (SSS) Congruence Theorem
 
-The **SSS Congruence Theorem** states:
-
-> If three sides of one triangle are equal in length to three sides of another triangle, then the two triangles are congruent.
-
-This theorem is the central logical tool in the proof.
+The **SSS Congruence Theorem** states "If three sides of one triangle are equal in length to three sides of another triangle, then the two triangles are congruent." This theorem is the central logical tool in the proof.
 
 ## Statement of the Theorem
 
 Let $\triangle ABC$ be a triangle such that
 
-$$
+```math
 AB = AC.
-$$
+```
 
 Then,
 
-$$
+```math
 \angle ABC = \angle BCA.
-$$
+```
 
 Where A, B and C are verticies on the triangle.
 
@@ -123,9 +101,9 @@ Let $D$ be the midpoint of segment $BC$.
 
 By definition of midpoint:
 
-$$
+```math
 BD = DC
-$$
+```
 
 and point $D$ lies on segment $BC$.
 
@@ -133,11 +111,11 @@ Construct the segment $AD$.
 
 We now consider two triangles:
 
-$$
+```math
 \triangle ABD
 \quad \text{and} \quad
 \triangle ACD.
-$$
+```
 
 <div align='center'>
     <img src='./images/29.png'>
@@ -150,53 +128,52 @@ We verify three equalities:
 
 1. From the hypothesis:
 
-$$
+```math
 AB = AC
-$$
+```
 
 2. From the definition of midpoint:
 
-$$
+```math
 BD = DC
-$$
+```
 
 3. By the reflexive property of equality:
 
-$$
+```math
 AD = AD
-$$
+```
 
 #### Step 3 — Apply SSS Congruence
 
 Since the three corresponding sides of $\triangle ABD$ and $\triangle ACD$ are equal, the SSS Congruence Theorem implies:
 
-$$
+```math
 \triangle ABD \cong \triangle ACD
-$$
-
+```
 
 #### Step 4 — Deduce Equality of Angles
 
 By the definition of congruence, corresponding angles of congruent triangles are equal. Therefore,
 
-$$
+```math
 \angle ABD = \angle DCA
-$$
+```
 
 Because point $D$ lies on segment $BC$, the lines $BD$ and $BC$ are collinear. Thus,
 
-$$
+```math
 \angle ABD = \angle ABC
-$$
+```
 
 and similarly,
 
-$$
+```math
 \angle DCA = \angle BCA
-$$
+```
 
 Hence,
 
-$$
+```math
 \angle ABC = \angle BCA
-$$
+```

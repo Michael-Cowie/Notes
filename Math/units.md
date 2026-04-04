@@ -6,9 +6,9 @@ A unit, in mathematical and scientific contexts is a standardized quantity used 
 
 A quantity is defined as an ordered pair consisting of a scalar and a unit. Equivalently, it may be written as the product.
 
-$$
+```math
 Q = xu
-$$
+```
 
 Where,
 
@@ -120,37 +120,37 @@ A derived unit,
 
 So,
 
-$$
+```math
 c \left(\frac{m}{s} \right) = c \cdot m \cdot s^{-1}
-$$
+```
 
 Is just a scalar multiplication of a symbolic unit expression. A derived unit like $\frac{m}{s}$ **is not a number fraction**, it is a compound unit $ms^{-1}$ and multiplying by a scalar scales the entire compound unit exactly the same way as multiplying $6 \cdot m$ scales metres.
 
 A derived unit is just algebra on base units. For example,
 
-$$
+```math
 \frac{m}{s} = m \cdot s^{-1}
-$$
+```
 
 That's it. It is **not a numerical fraction**. It is a product of unit symbols with exponents.
 
-$$
+```math
 1\frac{m}{s} = 1 \cdot m \cdot s^{-1}
-$$
+```
 
 Where, the "1" is the scalar. The unit part is $m \cdot s^{-1}$. The "per 1 second" is not something being divided numerically, it is built into the unit definition.
 
 Take,
 
-$$
+```math
 \frac{6}{5} \frac{m}{s}
-$$
+```
 
 This means,
 
-$$
+```math
 \frac{6}{5} \cdot m \cdot s^{-1}
-$$
+```
 
 That is the complete structure. There is,
 
@@ -161,21 +161,21 @@ Nothing inside the unit is independently scaled.
 
 If you rewrite,
 
-$$
+```math
 \frac{6}{5} \cdot m \cdot s^{-1}
-$$
+```
 
 as a fraction, you get
 
-$$
+```math
 \frac{6m}{5s}
-$$
+```
 
 Now it looks like 6 went to metres and 5 went to seconds, but that is just algebraic rearrangement. This did not scale metres and not seconds, **the entire unit expression was scaled** and then rewrote it. Units behave like algebraic symbols. Just like,
 
-$$
+```math
 \frac{6}{5}xy^{-1}
-$$
+```
 
 The scalar multiplies the whole product. You're never scaling the numerator and denominator separately.
 
@@ -183,25 +183,25 @@ Units are **always defined relative to 1 of that unit**.
 
 So when we say,
 
-$$
+```math
 1.2\frac{m}{s}
-$$
+```
 
 We mean, 1.2 × (1 metre per 1 second). We always normalize back to "per 1 second" because that is the unit definition. That does not mean the denominator stayed unchanged during multiplication. It means we express the final value relative to the standard unit.
 
 Even though,
 
-$$
+```math
 \frac{6}{5} \frac{m}{s} = \frac{6m}{5s}
-$$
+```
 
 both are mathematically the same, **we always express it relative to the standard unit**, which is "per 1 second" in $\frac{m}{s}$.
 
 So,
 
-$$
+```math
 \frac{6m}{5s} = \frac{6}{5} \frac{m}{s} = 1.2 \frac{m}{s}
-$$
+```
 
 #### Scaling Units - Dimensionless and Prefixed
 
@@ -230,17 +230,17 @@ In fields like thermodynamics (e.g. entrophy $\frac{J}{K}$) or electromagnetism 
 
 A physical quantity is defined as the product of a scalar number and a unit.
 
-$$
+```math
 Q = n \cdot u
-$$
+```
 
 where $n$ is a real number and $U$ is a unit symbol. **This unit is not embedded in the number, it is an independent algebraic factor**. This separation is foundational. Numerical operations act on numbers, while units combine according to algebraic rules.
 
 When two quantities are multiplied, the multiplication processes **independently on numbers and units**.
 
-$$
+```math
 (aU)×(bV)=(a×b)(U×V)
-$$
+```
 
 This rule is exact and universal. No interpretation is applied at this stage, the operation is purely algebraic. Multiplying quantities does not describe a physical process, nor does it imply motion, shape or distribution.
 
@@ -250,19 +250,20 @@ This rule is exact and universal. No interpretation is applied at this stage, th
 ```
 
 **Numbers**
-$$
+```math
 \frac{8}{3} \times 8000 = \frac{64000}{3}
-$$
+```
 
 **Units**
-$$
+```math
 \frac{L}{s} \times L = \frac{L^2}{s}
-$$
+```
 
 **Combine**
-$$
+
+```math
 \frac{64000}{3} \frac{L^2}{s}
-$$
+```
 
 Units behave like algebraic symbols.
 
@@ -286,43 +287,49 @@ So if you want a factor of $3$ to appear in the unit, it must come from an expre
 Additionally, **you do not need the same quantity to cancel units**. You need the same unit, not the same quantity.
 
 **Example**
-$$
+
+```math
 \frac{5}{3} \frac{km}{s} \times 2s
-$$
+```
 
 **Step 1 - Write in scalar-unit form**
-$$
+
+```math
 \frac{5}{3} \frac{km}{s} = \left( \frac{5}{3} \right) \frac{km}{s}
-$$
-$$
+```
+
+
+```math
 2s = 2 \times s
-$$
+```
 
 **Step 2 - Multiply scalars and units separately**
-$$
+
+```math
 \left(\frac{5}{3} \times 2 \right) \left( \frac{km}{s} \times s\right)
-$$
+```
 
 **Step 3 - Cancel units, not numbers**
 
 You do not cancel $3s$ with $2s$, you only cancel the unit $s$.
 
-$$
+```math
 \frac{km}{\cancel{s}} \times \cancel{s} = km
-$$
+```
 
 **Result**
-$$
+
+```math
 \frac{10}{3} km
-$$
+```
 
 ## Inverting
 
 A measured quantity is,
 
-$$
+```math
 Q = c \cdot U
-$$
+```
 
 Where,
 
@@ -333,36 +340,37 @@ They are distinct types of objects, but they are multiplied together into one al
 
 If you invert a quantity, you invert the entire product.
 
-$$
+```math
 Q^{-1} = \left( c \cdot U \right)^{-1}
-$$
+```
 
 Now use the algebra rule
-$$
+
+```math
 (ab)^{-1} = a^{-1}b^{-1}
-$$
+```
 
 Therefore
 
-$$
+```math
 (c \cdot U)^{-1} = c^{-1} \cdot U^{-1}
-$$
+```
 
 Hence if we had the example,
 
-$$
+```math
 \frac{5}{3} \frac{m}{s} = \frac{5}{3} \cdot ms^{-1}
-$$
+```
 
 Invert entire quantity
 
-$$
+```math
 = \left( \frac{5}{3} \right)^{-1} \cdot (ms^{-1})^{-1}
-$$
+```
 
-$$
+```math
 = \frac{3}{5} \cdot sm^{-1} = \frac{3}{5} \frac{s}{m}
-$$
+```
 
 This has resulted the scalar being inverted and the unit exponents inverted. Multiplication and inversion apply to the entire product structure. The scalar and unit don't mix, they transform in parallel.
 
@@ -372,43 +380,46 @@ To change units, we multiply conversion factors that equal 1.
 
 We know,
 
-$$
+```math
 1km = 1000m \\
 3600s = 1hr
-$$
+```
 
 So,
 
-$$
+```math
 \frac{1km}{1000m} = \frac{\cancel{1000m}}{\cancel{1000m}} = 1
-$$
+```
 
-$$
+```math
 \frac{3600s}{1h} = \frac{\cancel{1h}}{\cancel{1h}} = 1
-$$
+```
 
 So, what we want to do is multiply by 1 in disguise. Hence if we wish to change from $\frac{m}{s}$ to $\frac{km}{h}$
 
-$$
+```math
 \frac{6}{5} \frac{m}{s} \cdot \frac{1km}{1000m} \cdot \frac{3600s}{1hr}
-$$
+```
 
 Now, group and scalars.
 
 **Scalars**
-$$
+
+```math
 \frac{6}{5} \cdot \frac{1}{1000} \cdot 3600 = \frac{6}{5} \cdot \frac{3600}{1000} = 4.32
-$$
+```
 
 **Units**
-$$
+
+```math
 \frac{\cancel{m}}{\cancel{s}} \cdot \frac{km}{\cancel{m}} \cdot \frac{\cancel{s}}{hr} = \frac{km}{hr}
-$$
+```
 
 **Result**
-$$
+
+```math
 4.32 \frac{km}{hr}
-$$
+```
 
 <div align='center'>
     <h1> Exercises </h1>
@@ -417,54 +428,63 @@ $$
 **Question 1** - A $1000L$ tank is filled at a rate of $25 \frac{L}{S}$. How long does it take to fill the tank?
 
 Start with constructing the equation to solve for $x$
-$$
+
+```math
 25\frac{L}{s} \cdot x s = 1000L
-$$
+```
 
 Cancel the seconds unit.
-$$
+
+```math
 25\frac{L}{\cancel{s}} \cdot x \cancel{s} = 1000L
-$$
+```
 
 Condense the equation.
-$$
+
+```math
 25Lx = 1000L
-$$
+```
 
 Cancel the Length unit.
-$$
+
+```math
 25\cancel{L}x = 1000\cancel{L}
-$$
+```
 
 Now solve for $x$
-$$
+
+```math
 x = \frac{1000}{25} \\
 x = 40
-$$
+```
 
 Therefore, it will take 40 seconds to fill the tank.
 
 **Question 2** - A car travels at a velocity of $12\frac{m}{s}$ for $15s$. How far did the car travel?
 
 Start with constructing the equation to solve for $x$
-$$
+
+```math
 12\frac{m}{s} \cdot 15s = xm
-$$
+```
 
 Separate the scalar and units. Then condense the equation.
-$$
+
+```math
 \left( 12 \cdot 15\right) \left( \frac{m}{\cancel{s}} \cdot \cancel{s} \right) = xm
-$$
+```
 
 Cancel out the metre units.
-$$
+
+```math
 180\cancel{m} = x\cancel{m}
-$$
+```
 
 Solve for x.
-$$
+
+```math
 180 = x
-$$
+```
 
 Therefore, the car will travel 180 metres.
 
@@ -473,29 +493,30 @@ Therefore, the car will travel 180 metres.
 Start by identifying the current units $\frac{m}{s}$ and the units we need to change it to $\frac{km}{h}$. Remember the golden rule, it's completely fine to multiplying by $1$.
 
 First, identify the conversion between $m$ and $km$
-$$
+
+```math
 1km = 1000m \\
 \frac{1km}{1000m} = 1
-$$
+```
 
 Secondly, identify the conversion between $s$ and $hr$
 
-$$
+```math
 3600s = 1hr \\
 \frac{3600s}{1hr} = 1
-$$
+```
 
 Now, we use this to convert between units by multiplying by 1 in disguise.
 
-$$
+```math
 8\frac{m}{s} \cdot \frac{1km}{1000m} \cdot \frac{3600s}{1hr}
-$$
+```
 
 Now multiply separately between the scalar and the units.
 
-$$
+```math
 \left( 8 \cdot \frac{1}{1000} \cdot \frac{3600}{1} \right) \left( \frac{\cancel{m}}{\cancel{s}} \cdot \frac{km}{\cancel{m}} \cdot \frac{\cancel{s}}{hr} \right) = 8 \cdot \frac{3600}{1000} \frac{km}{hr} = 28.8 \frac{km}{hr}
-$$
+```
 
 Therefore, $8\frac{m}{s}$ is equivalent to $28.8 \frac{km}{hr}$
 
@@ -503,43 +524,43 @@ Therefore, $8\frac{m}{s}$ is equivalent to $28.8 \frac{km}{hr}$
 
 Start with,
 
-$$
+```math
 5 \frac{m}{s}
-$$
+```
 
 We want the recriprical. Therefore, we separate the scalar and unit and both put them to the power of $- 1$
 
-$$
+```math
 \left( 5 \frac{m}{s}\right)^{-1} = \left(5^{-1}\right) \left(\frac{m}{s} \right)^{-1} = \frac{1}{5} \frac{s}{m}
-$$
+```
 
 **Question 5** - With the density of liquid being $800\frac{kg}{m^3}$ and having $4m^3$, what mass do you have?
 
 First understand the question carefully to understand the unit we're solving for. We are asked to solve for how much mass we will have. Therefore, we need to solve the unknown $x$ for the mass unit $kg$.
 
-$$
+```math
 800\frac{kg}{m^3} \cdot 4m^3 = xkg
-$$
+```
 
-$$
+```math
 800\frac{kg}{\cancel{m^3}} \cdot 4\cancel{m^3} = xkg
-$$
+```
 
-$$
+```math
 800 \cdot 4 kg = xkg
-$$
+```
 
-$$
+```math
 3200 kg = xkg
-$$
+```
 
-$$
+```math
 3200 \cancel{kg} = x \cancel{kg}
-$$
+```
 
-$$
+```math
 3200 = x
-$$
+```
 
 Now, solving for x we know that we will have $3200kg$
 
@@ -547,28 +568,28 @@ Now, solving for x we know that we will have $3200kg$
 
 First, start with.
 
-$$
+```math
 4\frac{kg}{s} \cdot 300 \frac{m}{s}
-$$
+```
 
 Group scalars and units.
 
-$$
+```math
 4 \cdot 300 \cdot \frac{kg}{s} \cdot \frac{m}{s}
-$$
+```
 
-$$
+```math
 1200 \frac{kg \cdot m}{s^2}  
-$$
+```
 
 Now recognize,
 
-$$
+```math
 \frac{kg \cdot m}{s^2} = N
-$$
+```
 
 Therefore,
 
-$$
+```math
 = 1200N
-$$
+```

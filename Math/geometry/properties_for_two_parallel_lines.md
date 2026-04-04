@@ -10,9 +10,9 @@ When a transversal intersects two parallel lines, a predictable set of angle rel
 
 Two lines are parallel if they lie in the same plane and never intersect, regardless of how far they are extended. Symbolically this is written as,
 
-$$
+```math
 l_1 \parallel l_2
-$$
+```
 
 Parallel lines also main equidistant from each other at every point.
 
@@ -59,10 +59,10 @@ Alternate interior angles lie,
 
 If two parallel lines are intersected by a traversal, **alternate interior angles are equal**.
 
-$$
+```math
 \angle x = \angle x \\
 \angle y = \angle y \\
-$$
+```
 
 <div align='center'>
     <img src='./images/43.png' width='400'>
@@ -79,10 +79,10 @@ Alternate exterior angles lie,
 
 Alternate exterior angles are equal.
 
-$$
+```math
 \angle 1 = \angle 4 \\
 \angle 2 = \angle 3 \\
-$$
+```
 
 <div align='center'>
     <img src='./images/45.png' width='400'>
@@ -92,9 +92,9 @@ $$
 
 Co-interior angles lie between the parallel lines on the same side of the transversal. Co-interior angles are supplementary, meaning their sum is $180^\circ$.
 
-$$
+```math
 \angle a + \angle b = 180^\circ
-$$
+```
 
 <div align='center'>
     <img src='./images/47.jpg' width='400'>
@@ -116,6 +116,6 @@ Any line drawn parallel to one side of a triangle creates a smaller triangle tha
 
 Additionally,
 
-$$
+```math
 \frac{AD}{AB} = \frac{AE}{AC}
-$$
+```

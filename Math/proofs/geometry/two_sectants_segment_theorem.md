@@ -6,10 +6,9 @@ The Two Secant Theorem states that when two secant lines are drawn from the same
 
 In the following example we can observe,
 
-$$
+```math
     PA \cdot PB = PC \cdot PD
-$$
-
+```
 
 <div align='center'>
     <img src='./images/37.png'>
@@ -17,15 +16,15 @@ $$
 
 Consider the triangles
 
-$$
+```math
 \triangle PAD
-$$
+```
 
 and
 
-$$
+```math
 \triangle PCB
-$$
+```
 
 where the points $A, B, C, D$ lie on the circle and the secants intersect at the external point $P$.
 
@@ -35,25 +34,25 @@ Angles subtended by the same arc of a circle are equal.
 
 Both $\angle CDA$ and $\angle CBA$ subtend arc $CA$. Therefore,
 
-$$
+```math
 \angle CDA = \angle CBA
-$$
+```
 
 ### Step 2: Angle at the external point
 
 Both triangles share the same vertex $P$, formed by the intersection of the two secant lines. Hence,
 
-$$
+```math
 \angle DPA = \angle BPD
-$$
+```
 
 ### Step 3: Triangle similarity
 
 Since two pairs of corresponding angles are equal,
 
-$$
+```math
 \triangle PAD \sim \triangle PCB
-$$
+```
 
 by the AA similarity criterion. This occurrs because both triangles have two identical angles and hence, must have a third identical angle. Given that both triangles have all three identical angles, they're similar. Similar triangles difference from congruent triangles. Similar triangles mean that all three have identical angles, but can differ in size. However, congruent triangles have all three identical angles and idential size. Hence, similar triangles can differ and size, but this growth on each size has identical ratio on each side.
 
@@ -61,9 +60,9 @@ by the AA similarity criterion. This occurrs because both triangles have two ide
 
 From triangle similarity,
 
-$$
+```math
 \frac{PA}{PC} = \frac{PD}{PB}
-$$
+```
 
 Where $PA$ is from the same edge of the triangle as the other triangle $PC$. Because they're similar and have identical angles, the ratio of each edge much be kept when resizing. Hence the ratio of this edge will be equal of the ratio of the other edge $PD$ from the same edge of the other triangle $PD$.
 
@@ -75,9 +74,9 @@ Where $PA$ is from the same edge of the triangle as the other triangle $PC$. Bec
 
 Multiplying both sides gives,
 
-$$
+```math
 \boxed{PA \cdot PB = PC \cdot PD}
-$$
+```
 
 <div align='center'>
     <h1> Tangent-Secant Theorem </h1>

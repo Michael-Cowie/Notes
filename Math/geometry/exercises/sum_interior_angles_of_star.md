@@ -39,9 +39,9 @@ While we have two possible approaches here, we will first be taking the approach
 
 Inside the star, we can identify the pentagon that is illustrated by the blue lines. Additionally, we know that the interior angles on the convex polygon is $180 \cdot (n - 2)$. Therefore with $n = 5$ we can identify the purple angle with,
 
-$$
+```math
 180 \cdot (5 - 2) = 540 
-$$
+```
 
 This is the sum of all angles, given that this is regular and they're all equal it means that the purple angle is 
 
@@ -49,13 +49,13 @@ $$\frac{540}{5} = 108$$
 
 We can identify the triangle with purple lines and given that this is a regular star it is therefore an isoceles triangle with both green angles being the same. This leads to,
 
-$$
+```math
 \begin{aligned}
 2 \cdot \text{green} + 108 &= 180 \\
 2 \cdot \text{green} &= 72 \\
 \angle \text{green} &= 36
 \end{aligned}
-$$
+```
 
 This is the single angle and therefore the sum of all angles is $$36 \cdot 5 = 180$$.
 
@@ -93,9 +93,9 @@ The exterior angle theorem will still apply, however it is going to take more st
 
 This finally allows us to identify the final triangle and identify that,
 
-$$
+```math
 A + B + C + D + E + F + G = 180
-$$
+```
 
 #### Solution 2 - Using Interior Angles for a Regular Convex Polygon
 
@@ -111,10 +111,9 @@ We can calculate the angle $b$ by first identifying a seven sided shape in the c
     <img src='./images/13.png' width='600'/>
 </div>
 
-
-$$
+```math
 180 \cdot (7 - 2) = 900 
-$$
+```
 
 This is the sum of all angles, given that this is regular and they're all equal it means that the purple angle is 
 
@@ -122,13 +121,13 @@ $$b = \frac{900}{7} = 128.57$$
 
 We can now solve for $a$,
 
-$$
+```math
 \begin{aligned}
 2a + b &= 180 \\
 2b &= 51.43   \\
 \angle b &= 25.715
 \end{aligned}
-$$
+```
 
 Therefore, the sum of all interior angles will be $$7b$$ and therefore give us $$7 \cdot 25.715 = 180$$
 
@@ -185,6 +184,6 @@ Recall that the goal of this proof is to find $a + b + c + d + e + g$.
 
 This finally gives us,
 
-$$
+```math
 \boxed{a + b + c + d + e + f + g = 180}
-$$
+```
