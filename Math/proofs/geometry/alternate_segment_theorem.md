@@ -46,7 +46,6 @@ Using the angle sum of a triangle,
 
 ```math
 \angle POQ = 180^\circ - 2\angle OPQ
-\tag{1}
 ```
 
 #### Step 2 — Tangent–Radius Property
@@ -67,7 +66,6 @@ Since the angle between the tangent $AB$ and the chord $PQ$ is $\alpha$,
 
 ```math
 \alpha = 90^\circ - \angle OPQ
-\tag{2}
 ```
 
 #### Step 3 — Substitute
