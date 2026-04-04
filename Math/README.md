@@ -6,34 +6,31 @@ When writing LaTeX math in Markdown, rendering may differ between local preview 
 
 ## Inline Expressions
 
-**Use** `$...$` **only**!
+**Use** \$...\$ **only**!
 
-Avoid `\(...\)` for inline math expressions. Additionally, ensure there is **no whitespace inside the delimiters**. This means `$...$` is the only valid expression. While other expressions such as `$ ...$` and `$ ... $` may render locally, it will not render correctly on the GitHub website.
+Avoid \\(...\\) for inline math expressions. Additionally, ensure there is **no whitespace inside the delimiters**. This means \$...\$ is the only valid expression. While other expressions such as \$ ...\$ and \$ ... \$ may render locally, it will not render correctly on the GitHub website.
 
 ## Block / Multiline Expressions
 
-To render math blocks, **the only acceptable format is to use a fenced block ```math**
+To render math blocks, **the only acceptable format is to use a fenced block \```math**.
 
-```markdown
-```math
+
+\```math
 a + b = c
-```
-```
+\```
+
 
 For multiline or display-style equations, **avoid any other style** such as the commonly used
 
-```
-\[
+\\[
 ... 
-\]
-```
+\\]
+
 
 and
 
-```
-$$
+\$\$
 ...
-$$
-```
+\$\$
 
 Although these may render locally, they are **unreliable on GitHub** and may be flattened into inline text or fail to render consistently.
