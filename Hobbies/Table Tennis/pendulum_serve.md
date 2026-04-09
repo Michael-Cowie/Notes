@@ -63,43 +63,72 @@ During the pendulum service, the goal is to make contact on the left side of the
 #### Ma Long
 
 <div align='center'>
-    <img src='images/pendulum_serve_3.gif'>
+    <img src='images/pendulum_serve_3.gif' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/ma_long_pendulum_serve_slowed.gif'>
+    <img src='images/ma_long_service_slowed_2.gif' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/78.png'>
+    <img src='images/ma_long_service_slowed_1.gif' width='700'>
+</div>
+
+
+<div align='center'>
+    <img src='images/ma_long_pendulum_serve_slowed.gif' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/79.png'>
+    <img src='images/78.png' width='700'>
+</div>
+
+Notice that the ball is not thrown vertically up and down, instead he **throws it in an arc towards him**.
+
+<div align='center'>
+    <img src='images/79.png' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/80.png'>
+    <img src='images/80.png' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/81.png'>
+    <img src='images/98.png' width='700'>
+</div>
+
+
+<div align='center'>
+    <img src='images/81.png' width='700'>
+</div>
+
+
+Notice the **paddle angle**. Despite it being backspin, he still contacts in a way for sidespin aswell.
+
+Additionally, notice that he brings the paddle close to upper chest when contacting.
+
+<div align='center'>
+    <img src='images/82.png' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/82.png'>
+    <img src='images/97.png' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/83.png'>
+    <img src='images/96.png' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/84.png'>
+    <img src='images/83.png' width='700'>
 </div>
 
 <div align='center'>
-    <img src='images/85.png'>
+    <img src='images/84.png' width='700'>
+</div>
+
+<div align='center'>
+    <img src='images/85.png' width='700'>
 </div>
 
 #### Backspin
