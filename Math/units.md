@@ -376,7 +376,7 @@ This has resulted the scalar being inverted and the unit exponents inverted. Mul
 
 ## Changing Between Units
 
-To change units, we multiply conversion factors that equal 1.
+To change units, we multiply by conversion factors that equal 1.
 
 We know,
 
@@ -385,23 +385,53 @@ We know,
 3600s = 1hr
 ```
 
-So,
+Keep in mind, units by themselves are not numbers, only quantities (number + unit) can be compared or divided.
+
+For example, consider
 
 ```math
-\frac{1km}{1000m} = \frac{\cancel{1000m}}{\cancel{1000m}} = 1
+\frac{1km}{1m}
 ```
+
+Using the definition \(1km = 1000m\), we rewrite,
 
 ```math
-\frac{3600s}{1h} = \frac{\cancel{1h}}{\cancel{1h}} = 1
+\frac{1km}{1m} = \frac{1000m}{1m} = \frac{1000\cancel{m}}{\cancel{m}}= 1000
 ```
 
-So, what we want to do is multiply by 1 in disguise. Hence if we wish to change from $\frac{m}{s}$ to $\frac{km}{h}$
+So this ratio is dimensionless and evaluates to a pure number because the units are both representing length and can divide into each other, due to the previous $=$ equality.
+
+Now consider,
+
+```math
+\frac{1km}{1000m}
+```
+
+Substitute again,
+
+```math
+\frac{1km}{1000m} = \frac{1000m}{1000m} = 1
+```
+
+This is a ratio of the same quantity written in two different ways, so it equals 1.
+
+Similarly,
+
+```math
+\frac{3600s}{1hr} = \frac{1hr}{1hr} = 1
+```
+
+
+- If units do not cancel, then you have a physical quantity (scalar × unit). 
+- If units cancel (same dimension), then you get a pure number .
+
+To change units, we are multiplying by 1 in disguise. This means we keep the dimension the same for the units we are changing. For example, to convert from \(\frac{m}{s}\) to \(\frac{km}{h}\):
 
 ```math
 \frac{6}{5} \frac{m}{s} \cdot \frac{1km}{1000m} \cdot \frac{3600s}{1hr}
 ```
 
-Now, group and scalars.
+Each fraction equals 1, so the value stays the same, but the units change.
 
 **Scalars**
 

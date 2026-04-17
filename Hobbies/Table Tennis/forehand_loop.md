@@ -1,4 +1,40 @@
 <div align="center">
+    <h1> TLDR </h1>
+</div>
+
+
+#### Wrist Rotation
+
+The wrist rotation should be going backwards, **not downward**. A requirement to do this is to have a **relaxed wrist**. It's important to think of this as cleaning a window. A relaxed, soft wrist. Additionally, you can also think of this as **rotation of the index finger**, which implicitly rotates the wrist.
+
+<div align="center">
+    <img src="./images/wrist_rotation_backwards.gif/" width='300'>
+</div>
+
+When you go downwards, it causes the player to do slower movements because you need to wrap your wrist around the back of your body.
+
+<div align="center">
+    <img src="./images/99.png/" width='300'>
+</div>
+
+#### Creating a Faster Ball - Follow Through!
+
+In order to create a faster ball, the contact point time is very crucial. That is, it is to be hit in the middle of the motion illustrated below.
+
+<div align="center">
+    <img src="./images/100.png/" width='300'>
+</div>
+
+The movement will not be so much of a higher angle. **It's very important that you're brushing upwards**. At the moment of contact you need to rotate your wrist as mentioned above to create the topspin arc. **Never smash the ball**. Rotation is a matter of topspin. There is no rotation, if you forget this you have no chance and the ball will go directly into the net.
+
+The brushing topspin, wrist rotation and follow through are all used together to create a faster ball that creates an arc, allowing the ball to go over the net and back onto the table. Additionally, **make sure to get low**. This allows for additional reaction time and more space to generate power.
+
+<div align="center">
+    <img src="./images/follow_through.gif/" width='300'>
+</div>
+
+
+<div align="center">
     <h1> Holding the Paddle - Forehand Loop </h1>
 </div>
 

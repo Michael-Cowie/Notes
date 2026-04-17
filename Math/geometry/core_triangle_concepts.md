@@ -351,9 +351,38 @@ For an obtuse triangle, we solve this by creating a right angle triangle and sub
     <h1> Similar Triangles </h1>
 </div>
 
+Two triangles are similar if and only if their corresponding angles are equal. By the Angle-Angle similarity criterion, it is sufficient to show that just two pairs of angle match, the third must also match, since angles in any triangle always sum to $180^\circ$.
+
 <div align='center'>
     <img src='./images/75.png' width='700'>
 </div>
+
+Because the angles are identical, similar triangles are essentially the same shape at different sizes. The ratio between any corresponding pair of sides is always the same constant, called the scale factor, denoted $r$ below.
+
+This means that every side of the larger triangle is exactly $r$ times the corresponding side of the smaller one. In other words,
+
+```math
+\frac{ra}{a} = \frac{r\cancel{a}}{\cancel{a}} = r
+```
+
+```math
+\frac{rb}{b} = \frac{r\cancel{b}}{\cancel{b}} = r
+```
+
+```math
+\frac{rc}{c} = \frac{r\cancel{c}}{\cancel{c}} = r
+```
+
+```math
+\therefore \frac{ra}{a} = \frac{rb}{b} = \frac{rc}{c} 
+```
+
+**This is not limited to the same side**. While it can be rearranged, we can also compare two different sides.
+
+```math
+\frac{b}{a} = \frac{rb}{ra} = \frac{\cancel{r}b}{\cancel{r}a} = \frac{b}{a} 
+```
+
 
 <div align='center'>
     <img src='./images/82.png' width='700'>
@@ -430,7 +459,7 @@ Heron’s Formula is a way to find the area of a triangle using only the lengths
 Instead of dropping a height (which can be messy), Heron’s formula lets you compute area directly from side lengths—especially useful when coordinates or heights aren’t easily available.
 
 <div align='center'>
-    <img src='./images/98.png' width='700'>
+    <img src='./images/98.png' width='400'>
 </div>
 
 First, calculate the semi-perimeter $s$. $$s = \frac{a+b+c}{2}$$
