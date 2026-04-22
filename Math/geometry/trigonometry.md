@@ -30,6 +30,383 @@ In the case of this angle, the arc length corresponds with $\frac{1}{6}$ of the 
 
 For a full circle, we eventually measure the complete circumfrance of $2\pi$.
 
+#### What is a Degree?
+
+A **degree ($^\circ$)** is defined by dividing a full circle into 360 equal parts. Therefore,
+
+```math
+360^\circ = \text{one full revolution}
+```
+
+Degrees are convenient because they align well with historical and practical uses (navigation, geometry, etc...) but they are arbitrary, there is nothing inherently "natural" about 360 beyond convention.
+
+#### What is a Radian?
+
+A **radian ($\mathrm{rad}$)** is defined using the geometry of a circle Let's say we have a circle with a radius $r$
+
+<div align='center'>
+    <img src='./images/133.png' width='300'>
+</div>
+
+If we bring the radius outside the circle and wrap it around the circumfrance to create an arc. From here, draw a line from the centre of the circle to where the arc ends, **this is the definition of one radian**. It is the angle created when we have an **arc length of $r$**.
+
+<div align='center'>
+    <img src='./images/134.png' width='300'>
+</div>
+
+For reference, this is about $\approx 57.3^\circ$. This conversion occurs because,
+
+```math
+\begin{align*}
+2\pi \ \mathrm{rad} &= 360^\circ \\
+1 \ \mathrm{rad} &= \frac{360^\circ}{2\pi} \\
+1 \ \mathrm{rad} &\approx 57.3^\circ
+\end{align*}
+```
+
+When we count the number of radians in a circle, this is how we come up with $2\pi \ \mathrm{rad}$ in a circle. This is not coincidental, it is precisely because the circumfrance of a circle is calculated from $2 \pi r$. Meaning, their are $2 \pi$ number of $r$ into the circumfrance.
+
+That is, we know that $1 \ \mathrm{rad}$ occurs every $r$ length on the circumfrance.
+
+```math
+\begin{align*}
+C &= 2 \pi r \\
+\frac{C}{r} &= 2 \pi (\approx 6.28) \\
+\end{align*}
+```
+
+Therefore, we know that $r$ goes into the circumfrance $C$, $2 \pi$ times. It follows that $1 \ \mathrm{rad}$ will go into the circumfrance (Also $360^\circ$) $2 \pi$ times.
+
+<div align='center'>
+    <img src='./images/135.png' width='300'>
+</div>
+
+Another important relationship is known from the radian to the geometry of a circle where,
+
+```math
+\theta = \frac{\text{arc length}}{\text{radius}}
+```
+
+We can begin to create this relationship by starting with something we already know.
+
+```math
+C = 2 \pi r
+```
+
+Now think in **fractions of a circle**. If an angle $\theta_{rad}$ in $\mathrm{rad}$ is some fraction of a full turn, then its arc length $s$ is the same fraction of the circumfrance. Because $\theta_{rad}$ is in $\mathrm{rad}$ and $2 \pi r$ is also in $\mathrm{rad}$, the units cancel out to get a pure number. This is how these equalities hold true.
+
+```math
+\begin{align*}
+\frac{s}{2 \pi r} &= \frac{\theta_{rad}}{2\pi} \\
+\frac{s}{r} &= \theta_{rad}
+\end{align*}
+```
+
+<div align='center'>
+    <img src='./images/136.png' width='800'>
+</div>
+
+While the above shows,
+
+```math
+\theta_{rad} = \frac{s}{r}
+```
+
+as a derived formula, it's significantly important to understand what this represents in terms of understanding radians as a unit. Instead, radians is defined as **"An angle is how many radius-lengths fit along the arc"**.
+
+That is,
+
+- If you have an arc length of $r$, then you have $1 \ \mathrm{rad}$
+- If you have an arc length of $2r$, then you have $2 \ \mathrm{rad}$
+- If you have an arc length of $\pi r$, then you have $\pi \ \mathrm{rad}$
+
+If we break down the equation to properly understand what is happens, given the fraction
+
+```math
+\frac{s}{r}
+```
+
+We are trying to solve for many **how radius length $r$ fit into the arc length $s$**. The result will be a multiple of $r$ into $s$ and given that $1 \ \mathrm{rad} = r$ it therefore calculates the amount of radians into the arc length $s$.
+
+Take the following example with $r=2$ and $s=5$.
+
+<div align='center'>
+    <img src='./images/137.png' width='300'>
+</div>
+
+```math
+\theta_{rad} = \frac{s}{r} \\
+\theta_{rad} = \frac{5}{2} \\ 
+\theta_{rad} = 2.5 \\
+```
+
+Therefore we have,
+
+<div align='center'>
+    <img src='./images/138.png' width='300'>
+</div>
+
+This can also be represented in degrees because,
+
+```math
+2.5 \ \mathrm{rad} \times \frac{180^\circ}{\pi \ \textrm{rad}} = \frac{2.5 * 180}{\pi}^\circ = \ \approx 143.3^\circ
+```
+
+This means, given a circle with $r=2$ and $s=5$. The arc will form with an angle of $2.5 \ \mathrm{rad}$ or $\approx 143.3^\circ$.
+
+#### Why Radians are Unitless
+
+Units are one of the most reliable tools in mathematics and physics. They allow us to track quantities, verify equations and ensure that calculations make sense. For example, when multiplying and dividing measurements, units behave predictably, metres cancel metres, seconds remain seconds and so on. However, when working with angles, especially radians, this familiar system seems to break down. Expressions such as,
+
+```math
+s = r \theta_{rad}
+```
+
+raise a natural concern. If $r$ is a length and $\theta_{rad}$ is an angle, why does their product still produce a length? When multiplying two variables, the resulting product has the combined unit of both,
+
+```math
+m \times \mathrm{rad} = \mathrm{m \ rad}
+```
+This apparent inconsistency leads to an important realization. **Radians are not ordinary units**. Understanding how they differ from standard units resolves the confusion and explains why they're so powerful in mathematics.
+
+In most contexts, units represent physical dimensions. For example,
+
+1. Metres (m) measure length
+2. Seconds (s) measure time
+3. Kilograms (kg) measure mass
+
+When performing calculations, these units combine and cancel according to agelbraic rules. For instance,
+
+```math
+\frac{10\text{m}}{2\text{m}} = 5
+```
+
+Here, the metres cancel, leaving a **dimensionless number**. This is familiar and intuitive.
+
+A radian is defined **using a ratio**.
+
+```math
+\theta_{rad} = \frac{s}{r}
+```
+
+Where,
+
+- $s$ is the arc length
+- $r$ is the radius
+
+From a unit perspective,
+
+```math
+\theta_{rad} = \frac{\text{length}}{\text{length}} = 1
+```
+
+This is the crucial point, **a radian is dimensionless**. It is not an independent unit like metres, or seconds, but rather **a ratio of two lengths**. The symbol $\mathrm{rad}$ is therefore best understood as a label that indicates "this number represents an angle", rather than a true physical unit.
+
+The equation $s = r\theta_{rad}$ does not break the rules. If one thinks of $\theta_{rad}$ as carrying a unit $\mathrm{rad}$, then multiplying $r$ (metres) by $\theta$ might appear to produce "metre radians". However, this reasoning treats radians as if they were a fundamental unit, which they are not. 
+
+Substituting the definition of $\theta_{rad}$ can validate this.
+
+```math
+\begin{align*}
+s &= r \cdot \frac{s}{r} \\
+s &= s
+\end{align*}
+```
+
+In terms of units,
+
+```math
+m \cdot \frac{m}{m} = m
+```
+
+The units are entire consistent. The "radian" does not need to be cancelled at this stage because it has already disappeared in the ratio $\frac{s}{r}$. An angles radian value is "How many radii is the arc length of a circle subtended by this angle?". This is a pure number. In other words, **radians are adimensional**. This is why you are allowed to cancel radians everywhere it appears in a formula, as 1 radian is the same as 1.
+
+Despite being dimensionless, radians are often written with the symbol $\mathrm{rad}$, especially in expressions like,
+
+```math
+2 \ \mathrm{rad} \times \frac{180^\circ}{\pi \ \mathrm{rad}}
+```
+
+In this context, $\mathrm{rad}$ behaves like a unit that can be cancelled. This is not because it is a true unit, but it serves as a **bookkeeping device**. It helps distinguish angles from ordinary numbers and ensures that conversions are applied correctly.
+
+Thus, radians occupy a unique position.
+
+1. Mathematically, they are dimensionless.
+2. Practically, they are treated **as if they have units** for clarity.
+
+#### Why we use Radians
+
+A common question in mathematics is why radians are preferred over degrees, especially when both measure the same angle, angles. The key reason is not arbitrary convention, but **simplicity**. Radians are defined in a way that naturally fits the geometry of a circle, which causes many important formulas to become cleaner and more direct. This can be clearly seen through two fundamental examples,
+
+1. The arc length
+2. The sector area
+
+Radians are defined by the relationship,
+
+```math
+\theta_{rad} = \frac{s}{r}
+```
+
+Where $s$ is the arc length and $r$ is the radius. Rearranging gives,
+
+```math
+s = r\theta_{rad}
+```
+
+This equation is not a derived formula, it is a direct consequence of how radians are defined. Because of this, radians encode the relationship between angle and length in a circle.
+
+#### Arc Length
+
+Using radians, the formula for arc length is,
+
+```math
+s = r\theta_{rad}
+```
+
+This is simple and proportional. Doubling the angle doubles the arc length. However, **if the angle $x$ is given in degrees**, it must first be converted.
+
+```math
+\theta_{rad} = x^\circ \cdot \frac{\pi \ \mathrm{rad}}{180^\circ}
+```
+
+Substituting into the formula,
+
+```math
+s = r \left( x^\circ \cdot \frac{\pi \ \textrm{rad}}{180^\circ} \right) = \frac{\pi x r}{180}
+```
+
+Now the formula contains an extra constant factor $\frac{\pi}{180}$. This factor does not come from geometry, it comes from the degree system itself.
+
+#### Sector Area
+
+The same pattern appears with sector area. The area of a circle is calculated as,
+
+```math
+A = \pi r^2
+```
+
+We can expand on this to calculate the area of a sector in a circle.
+
+<div align='center'>
+    <img src='./images/139.png' width='200'>
+</div>
+
+Given an angle $\theta_{rad}$ we can calculate the area of the sector as,
+
+```math
+\begin{align*}
+A &= \frac{\theta_{rad}}{2\pi} \cdot \pi r^2 \\
+A &= \frac{1}{2} r^2 \theta_{rad}
+\end{align*}
+```
+
+This follows directly from taking a fraction of the full circle area. **Using the variable x in degrees**, we again convert.
+
+```math
+\theta_{rad} = x^\circ \cdot \frac{\pi \ \mathrm{rad}}{180^\circ}
+```
+
+Substituting,
+
+```math
+A = \frac{1}{2}r^2\left( x^\circ \cdot \frac{\pi \ \mathrm{rad} }{180^\circ} \right) = \frac{\pi x r^2}{360}
+```
+
+Once again, an extra factor appears, making the formula less clean.
+
+These examples illustrate the core reason radians are preferred.
+
+1. In radians, formulas reflect pure geometric relationships.
+2. In degrees, formulas include conversion factors like $\frac{\pi}{180}$
+3. Radians eliminate unnecessary constants because they are defined using the circle itself. This means relationships are direct and proportional, equations are simpler and easier to manipulate and patterns in mathematics become more visible.
+
+<div align='center'>
+    <h2> Unit Conversion </h2>
+</div>
+
+Since both measure the same full rotation,
+
+```math
+\begin{align*}
+360^\circ &= 2\pi \ \mathrm{rad} \\
+180^\circ &= \pi \ \mathrm{rad}
+\end{align*}
+```
+
+Therefore,
+
+```math
+\frac{180^\circ}{\pi \ \mathrm{rad}} = 1
+```
+
+and,
+
+```math
+1 = \frac{\pi \ \mathrm{rad}}{180^\circ}
+```
+
+This is the **key conversion identity**. Think of conversion like cancelling units in fractions. 
+
+### Radians to Degrees
+
+To transform an angle $\theta_{rad}$ into degrees, we need to multiply the angle by 1, while cancelling out the $\mathrm{rad}$ unit and keep the $^\circ$ unit. This is done by multiplying by $\frac{180^\circ}{\pi \ \mathrm{rad}}$.
+
+```math
+\theta \ \mathrm{rad} \times \frac{180^\circ}{\pi \ \mathrm{rad}}
+```
+
+For example,
+
+```math
+\begin{align*}
+\frac{\pi}{3} \ \textrm{rad} \times \frac{180^\circ}{\pi \ \textrm{rad}} \\
+\\
+\frac{\cancel{\pi}}{3} \ \cancel{\textrm{rad}} \times \frac{180^\circ}{\cancel{\pi} \ \cancel{\textrm{rad}}} \\
+\\
+\frac{180^\circ}{3} &= 60^\circ
+\end{align*}
+```
+
+This works because,
+
+1. $\pi$ cancels
+2. The unit $\mathrm{rad}$ cancels
+3. This leaves the unit degrees ($^\circ$) left.
+
+This works perfectly fine in scenarios where the radian is not a multiple of $\pi$, where it is frequently displayed as.
+
+```math
+2 \ \mathrm{rad} \times \frac{180^\circ}{\pi \ \mathrm{rad}} = \frac{360}{\pi}^\circ = \ \approx 114.5^\circ
+```
+
+#### Degrees to Radians
+
+To transform an angle $\theta_{deg}$ into $\mathrm{rad}$, we need to multiply the angle by 1, while cancelling out the $^\circ$ unit and keep the $\mathrm{rad}$ unit. This is done by multiplying by $\frac{\pi \ \mathrm{rad}}{180^\circ}$.
+
+```math
+\theta_{deg} \times \frac{\pi \ \mathrm{rad}}{180^\circ}
+```
+
+For example,
+
+```math
+\begin{align*}
+45^\circ \times \frac{\pi \ \mathrm{rad}}{180^\circ} \\
+\\
+45^\circ \times \frac{\pi \ \mathrm{rad}}{180^\circ} \\
+\\
+\frac{45 \times \pi}{180} \ \frac{\cancel{^\circ} \ \mathrm{rad}}{\cancel{^\circ}} \\
+\\
+\frac{45\pi}{180} \ \mathrm{rad} &= \frac{\pi}{4} \ \mathrm{rad}
+\end{align*}
+```
+
+This works because,
+
+1. The degrees unit cancel
+2. Results keeps the $\mathrm{rad}$ unit
+
+
 <div align='center'>
     <h1> The Right-Angled Triangle </h1>
 </div>
@@ -222,8 +599,6 @@ The wave-like graphs of sine, cosine and tangent are direct consequences of thei
 
 Ultimately, trigonometric graphs are not just abstract shapes, they are visual representations of circular motion unfolding over time.
 
-
-
 <div align='center'>
     <h3> The Sine Wave </h3>
 </div>
@@ -269,16 +644,6 @@ Therefore,
     <img src='./images/sine_more_2_pi.gif' width='800'>
 </div>
 
-With all of this, we have found a way to create a mathematical description for a wave, out of a triangle. In reality, not all functions look like the previous pure $\sin$ wave. We can manipulate the function with additional numbers,
-
-- If you multiply the $\sin$ by a certain number, we influence **the amplitude**.
-- If we multiply the angle by a certain number, we influence **its frequency**.
-- We can also shift the function in the $x$ or $y$ direction by adding constants in and outside the $\sin$ function.
-
-<div align='center'>
-    <img src='./images/sine_function_changes.gif' width='800'>
-</div>
-
 <div align='center'>
     <h3> The Cosine Wave </h3>
 </div>
@@ -308,34 +673,9 @@ Cosine literally means "complementary sine" because,
     <img src='./images/122.png' width='800'>
 </div>
 
-Cosine is used to calculate the hypotenuse of an extended triangle illustrated below.
-
-<div align='center'>
-    <img src='./images/127.png' width='800'>
-</div>
-
-We begin this proof by creating a single right angled triangle on the unit circle with 3 lengths, $a$, $b$ and $c$. From here, we create a second triangle with another straight line that is a tangent to the point touching the circumfrance. 
-
-Because a line tangent touches the circumfrance to create a right angle and they both have the same angle $\theta$, they're therefore similar triangles as both triangles have all 3 equal angles.
-
-<div align='center'>
-    <img src='./images/126.png' width='800'>
-</div>
-
-Therefore,
-
-```math
-\begin{align*}
-\frac{c}{b} &= \frac{rc}{rb} \\
-\frac{1}{\cos(\theta)} &= \frac{rc}{1} \\
-\frac{1}{\cos(\theta)} &= rc
-\end{align*}
-```
-
 <div align='center'>
     <h3> The Tangent Wave </h3>
 </div>
-
 
 Understanding the graph of $\tan(x)$ begins with clarifying what the function actually represents. Unlike $\sin$ and $\cos$, which describes positions on the unit circle, **tangent describes a relationship**. Specifically, a ratio that can be interpreted as a slope. This distinction
 
@@ -408,6 +748,83 @@ Therefore because these are similar triangles,
 \tan(\theta) &= ra
 \end{align*}
 ```
+
+<div align='center'>
+    <h3> Wave Manipulation </h3>
+</div>
+
+Trigonometric functions such as sine and cosine are commonly used to model waves and periodic behaviour. To fully describe how a wave behaves, mathematics use a generalized equation that accounts for changes in height, position and timing. Understanding this allows us to interpret and manipulate real-world wave patterns more effectively.
+
+##### The Complete Wave Function
+
+The general form of a trigonometric wave function is,
+
+```math
+y = a\sin(b(x-c)) + d
+```
+
+(or using cosine instead of sine)
+
+Each parameter plays a specific role,
+
+- $a$ is the **amplitude**, determining the height of the wave.
+- $b$ affects the **period**, or how long it takes for one full cycle.
+- $c$ is the **phase shift**, controlling horizontal movement.
+- $d$ is the **vertical shift**, moving the graph up or down.
+
+Together, these values allow the function to represent a wide range of wave behaviours.
+
+<div align='center'>
+    <img src='./images/132.png' width='700'>
+</div>
+
+#### Amplitude - $a$
+
+<div align='center'>
+    <img src='./images/sine_wave_amplitude.gif' width='800'>
+</div>
+
+#### Period - $b$
+
+The period of a function $f(x)$ is the smallest positive number $T$ such that $f(x + T) = f(x)$ for all $x$. For a basic sine function we know,
+
+```math
+\sin(\theta + 2\pi) = \sin(\theta)
+```
+
+so the period of $\sin(x)$ when the argument is $x$ is $2\pi$. 
+
+Now consider $y = \sin(10x)$, the argument is no longer $x$, it is $10x$. When $x$ increases by some amount $T$, the argument inside the sine increases by $10T$.
+
+```math
+\sin(10(x + T)) = \sin(10x + 10T)
+```
+
+For the function to repeat, the argument must increase by a full cycle of sine, i.e. by a multiple of $2\pi$. The smallest such positive value is exactly one full cycle,
+
+```math
+\begin{align*}
+10T &= 2\pi \\
+T &= \frac{2\pi}{10} \\
+T &= \frac{\pi}{5}
+\end{align*}
+```
+
+<div align='center'>
+    <img src='./images/sine_wave_period.gif' width='800'>
+</div>
+
+#### Phase Shift - $c$
+
+<div align='center'>
+    <img src='./images/sine_wave_phase_shift.gif' width='800'>
+</div>
+
+#### Vertical Shift - $d$
+
+<div align='center'>
+    <img src='./images/sine_wave_vertical_shift.gif' width='800'>
+</div>
 
 <div align='center'>
     <h1> Recriprocal Trigonometric Functions </h1>
