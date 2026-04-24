@@ -20,6 +20,10 @@ This form is especially useful when describing group relationships, such as popu
 
 #### Fractional Form of Ratios
 
+<div align='center'>
+    <img src='./images/5.png'>
+</div>
+
 Ratios can also be written in fractional form. The ratio $3:1$ can be expressed as $\frac{3}{1}$.
 
 This form highlights that a ratio is fundamentally a divison.
@@ -29,9 +33,7 @@ This form highlights that a ratio is fundamentally a divison.
 
 Fractional form is particularly used in mathematics because it connects ratios to operations, allowing them to be manipulated algebraically and simplified.
 
-A ratio compares two quantites, $7:3$. This means "7 for every 3". It's just a relationship, not a calculation. A fraction uses the same two numbers, but as divison. $\frac{7}{3}$ means "7 divided by 3" which gives a single number $\approx 2.33$.
-
-A ratio and a fraction are built from the same numbers in the same order.
+A ratio compares two quantites, $7:3$. This means "7 for every 3". It's just a relationship, not a calculation. A fraction uses the same two numbers, but as divison. $\frac{7}{3}$ means "7 divided by 3" which gives a single number $\approx 2.33$. A ratio and a fraction are built from the same numbers in the same order.
 
 ```math
 7:3 ↔ \frac{7}{3}

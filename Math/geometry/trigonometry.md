@@ -234,6 +234,8 @@ Thus, radians occupy a unique position.
 1. Mathematically, they are dimensionless.
 2. Practically, they are treated **as if they have units** for clarity.
 
+The fact that radians are dimensionless and directly tied to geometry leads to simpler and more natural formulas. This simplicity extends beyond geometry into calculus and physics, where many fundamental relationships rely on angles behaving as pure numbers. 
+
 #### Why we use Radians
 
 A common question in mathematics is why radians are preferred over degrees, especially when both measure the same angle, angles. The key reason is not arbitrary convention, but **simplicity**. Radians are defined in a way that naturally fits the geometry of a circle, which causes many important formulas to become cleaner and more direct. This can be clearly seen through two fundamental examples,
@@ -557,6 +559,26 @@ Additionally, other trigonometric functions arise naturally.
 ```
 
 Interpreted as the slope of the line from the origin $P$. This provides a geometric meaning to tangent as a rate of change, linking trigonometry to calculus.
+
+An angle of $110^\circ$ lies in the second quadrant of the unit circle, where the $x\mathrm{-coordinates}$ are negative and the $y\mathrm{-coordinates}$ are positive. When a ray is drawn from the origin at an angle of $110^\circ$, it intersects the unit circle at a point whose vertical position determines the value of $\sin(110^\circ)$.
+
+To compute $\sin(110^\circ)$, one introduces the concept of a reference angle. The reference angle is supplementary angle. For $110^\circ$, the reference angle is,
+
+```math
+180^\circ - 110^\circ = 70^\circ
+```
+
+This means that the triangle used to evaluate the sine function is effectively based on a $70^\circ$ angle. The vertical height of this triangle is identical to the coordinate of the point at $110^\circ$ on the unit circle. Consequently, the identity arises.
+
+```math
+\sin(110^\circ) = \sin(70^\circ)
+```
+
+<div align='center'>
+    <img src='./images/140.png' width='600'>
+</div>
+
+This equality is not coincidental but reflects the symmetry of the unit circle and the vertical axis. Points angles $\theta$ and $180^\circ - \theta$ share the same $y\text{-coordinate}$, and thus the same sine value.
 
 <div align='center'>
     <h1> Changing Angles </h1>
