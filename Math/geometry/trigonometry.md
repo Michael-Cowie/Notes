@@ -16,19 +16,17 @@ We get a number that **always remains the same**, no matter how large or small t
 C = 2\pi r
 ```
 
-With a radius of 1, the circumfrance is simply $2\pi$. It was precisely this circle that was used as a template for a new measurement of angular units. Which is why it became known as the unit circle. Now, instead of imagining that, for example $60^\circ$ consists of 60 parts, we place our circle template with its center at the tip of the angle and measure the length of the arc that this angle encloses.
+With a radius of 1, the circumfrance is simply $2\pi$. It was precisely this circle that was used as a template for a new measurement of angular units. Which is why **it became known as the unit circle**. Now, instead of imagining that, for example $60^\circ$ consists of 60 parts, we place our circle template with its center at the tip of the angle and measure the length of the arc that this angle encloses.
 
 <div align='center'>
     <img src='./images/106.png' width='700'>
 </div>
 
-In the case of this angle, the arc length corresponds with $\frac{1}{6}$ of the entire circumfrance. That is, $60^\circ \cong \frac{2\pi}{6} = \frac{\pi}{3}$. At a $90^\circ$ angle, the ark occupies a quarter of the circle. So this angle corresponds to $\frac{90}{360} \cdot 2\pi = \frac{1}{4} \cdot 2\pi = \frac{2\pi}{4} = \frac{\pi}{2}$
+In the case of this angle, the arc length corresponds with $\frac{1}{6}$ of the entire circumfrance. That is, $60^\circ \cong \frac{2\pi}{6} = \frac{\pi}{3}$. At a $90^\circ$ angle, the arc occupies a quarter of the circle. So this angle corresponds to $\frac{90}{360} \cdot 2\pi = \frac{1}{4} \cdot 2\pi = \frac{2\pi}{4} = \frac{\pi}{2}$
 
 <div align='center'>
     <img src='./images/107.png' width='200'>
 </div>
-
-For a full circle, we eventually measure the complete circumfrance of $2\pi$.
 
 #### What is a Degree?
 
@@ -42,7 +40,7 @@ Degrees are convenient because they align well with historical and practical use
 
 #### What is a Radian?
 
-A **radian ($\mathrm{rad}$)** is defined using the geometry of a circle Let's say we have a circle with a radius $r$
+A **radian ($\mathrm{rad}$)** is defined using the geometry of a circle. Angles without explicitly specified units are generally assumed to be measured in radians, especially in mathematical writing. Let's say we have a circle with a radius $r$. 
 
 <div align='center'>
     <img src='./images/133.png' width='300'>
@@ -75,7 +73,7 @@ C &= 2 \pi r \\
 \end{align*}
 ```
 
-Therefore, we know that $r$ goes into the circumfrance $C$, $2 \pi$ times. It follows that $1 \ \mathrm{rad}$ will go into the circumfrance (Also $360^\circ$) $2 \pi$ times.
+Therefore, we know that $r$ goes into the circumfrance $C$, $2 \pi$ times. It follows that $1 \ \mathrm{rad}$ will go into the circumfrance (Also $360^\circ$) $2 \pi$ times as $1 \ \mathrm{rad} = r$.
 
 <div align='center'>
     <img src='./images/135.png' width='300'>
@@ -84,10 +82,12 @@ Therefore, we know that $r$ goes into the circumfrance $C$, $2 \pi$ times. It fo
 Another important relationship is known from the radian to the geometry of a circle where,
 
 ```math
-\theta = \frac{\text{arc length}}{\text{radius}}
+\theta_{rad} = \frac{\text{arc length}}{\text{radius}}
 ```
 
-We can begin to create this relationship by starting with something we already know.
+This is the definition of radians. We are dividing the arc length by radius, to identify the number of times the radius $r$ goes into the arc length $s$. Because $1 \ \mathrm{rad} = r$, this gives us the number of radians. 
+
+Alternatively, we can begin to create this relationship by starting with something we already know.
 
 ```math
 C = 2 \pi r
@@ -112,7 +112,7 @@ While the above shows,
 \theta_{rad} = \frac{s}{r}
 ```
 
-as a derived formula, it's significantly important to understand what this represents in terms of understanding radians as a unit. Instead, radians is defined as **"An angle is how many radius-lengths fit along the arc"**.
+as a derived formula, it's significantly important to understand what this represents in terms of understanding radians. Instead, radians is defined as **"An angle is how many radius-lengths fit along the arc"**. For this reason, $\mathrm{rad}$ is infact, not a unit or it is considered a unit that cancels itself out because if the length of the circle was in metres, it would be $\frac{m}{m} = 1$
 
 That is,
 
@@ -135,9 +135,11 @@ Take the following example with $r=2$ and $s=5$.
 </div>
 
 ```math
-\theta_{rad} = \frac{s}{r} \\
-\theta_{rad} = \frac{5}{2} \\ 
-\theta_{rad} = 2.5 \\
+\begin{aligned}
+\theta_{rad} &= \frac{s}{r} \\
+\theta_{rad} &= \frac{5}{2} \\
+\theta_{rad} &= 2.5
+\end{aligned}
 ```
 
 Therefore we have,
@@ -183,7 +185,7 @@ When performing calculations, these units combine and cancel according to agelbr
 
 Here, the metres cancel, leaving a **dimensionless number**. This is familiar and intuitive.
 
-A radian is defined **using a ratio**.
+A radian is defined **as a ratio**. That is, the ratio between the arc length $s$ and the radius $r$.
 
 ```math
 \theta_{rad} = \frac{s}{r}
@@ -200,7 +202,7 @@ From a unit perspective,
 \theta_{rad} = \frac{\text{length}}{\text{length}} = 1
 ```
 
-This is the crucial point, **a radian is dimensionless**. It is not an independent unit like metres, or seconds, but rather **a ratio of two lengths**. The symbol $\mathrm{rad}$ is therefore best understood as a label that indicates "this number represents an angle", rather than a true physical unit.
+This is the crucial point, **a radian is dimensionless**. It is not an independent unit like metres, or seconds, but rather **a ratio of two lengths**. The symbol $\mathrm{rad}$ is therefore best understood as a label that indicates "this number represents an angle", rather than a true physical unit. **The unit actually cancels itself out as it compresses to $1$**.
 
 The equation $s = r\theta_{rad}$ does not break the rules. If one thinks of $\theta_{rad}$ as carrying a unit $\mathrm{rad}$, then multiplying $r$ (metres) by $\theta$ might appear to produce "metre radians". However, this reasoning treats radians as if they were a fundamental unit, which they are not. 
 
@@ -238,7 +240,7 @@ The fact that radians are dimensionless and directly tied to geometry leads to s
 
 #### Why we use Radians
 
-A common question in mathematics is why radians are preferred over degrees, especially when both measure the same angle, angles. The key reason is not arbitrary convention, but **simplicity**. Radians are defined in a way that naturally fits the geometry of a circle, which causes many important formulas to become cleaner and more direct. This can be clearly seen through two fundamental examples,
+A common question in mathematics is why radians are preferred over degrees, especially when both measure the same thing, angles. The key reason is not arbitrary convention, but **simplicity**. Radians are defined in a way that naturally fits the geometry of a circle, which causes many important formulas to become cleaner and more direct. This can be clearly seen through two fundamental examples,
 
 1. The arc length
 2. The sector area
@@ -354,7 +356,7 @@ This is the **key conversion identity**. Think of conversion like cancelling uni
 To transform an angle $\theta_{rad}$ into degrees, we need to multiply the angle by 1, while cancelling out the $\mathrm{rad}$ unit and keep the $^\circ$ unit. This is done by multiplying by $\frac{180^\circ}{\pi \ \mathrm{rad}}$.
 
 ```math
-\theta \ \mathrm{rad} \times \frac{180^\circ}{\pi \ \mathrm{rad}}
+\theta_ \ \mathrm{rad} \times \frac{180^\circ}{\pi \ \mathrm{rad}}
 ```
 
 For example,
@@ -519,7 +521,7 @@ It is this that allows for the relationship to exist. The size of the triangles 
     <h1> The Unit Circle </h1>
 </div>
 
-The unit circle is a central unifying framework of trignometry, extending the subject beyond the limited context of right-angled triangles into a continuous theory of angles and functions. While early trigonometry defines sine, cosine and tangent as ratios of sides in a triangle, this approach is inherently restricted to acue angles. The unit circle resolves this limitation by redefining trigonometric functions in terms of **geometry on a circle of radius one**, thereby allowing these functions to be defined for all real angles.
+The unit circle is a central unifying framework of trignometry, extending the subject beyond the limited context of right-angled triangles into a continuous theory of angles and functions. While early trigonometry defines sine, cosine and tangent as ratios of sides in a triangle, this approach is inherently restricted to acute angles. The unit circle resolves this limitation by redefining trigonometric functions in terms of **geometry on a circle of radius one**, thereby allowing these functions to be defined for all real angles.
 
 <div align='center'>
     <img src='./images/120.png' width='400'>
@@ -560,9 +562,7 @@ Additionally, other trigonometric functions arise naturally.
 
 Interpreted as the slope of the line from the origin $P$. This provides a geometric meaning to tangent as a rate of change, linking trigonometry to calculus.
 
-An angle of $110^\circ$ lies in the second quadrant of the unit circle, where the $x\mathrm{-coordinates}$ are negative and the $y\mathrm{-coordinates}$ are positive. When a ray is drawn from the origin at an angle of $110^\circ$, it intersects the unit circle at a point whose vertical position determines the value of $\sin(110^\circ)$.
-
-To compute $\sin(110^\circ)$, one introduces the concept of a reference angle. The reference angle is supplementary angle. For $110^\circ$, the reference angle is,
+An angle of $110^\circ$ lies in the second quadrant of the unit circle, where the $x\mathrm{-coordinates}$ are negative and the $y\mathrm{-coordinates}$ are positive. When a ray is drawn from the origin at an angle of $110^\circ$, it intersects the unit circle at a point whose vertical position determines the value of $\sin(110^\circ)$. To compute $\sin(110^\circ)$, one introduces the concept of a reference angle. The reference angle is supplementary angle. For $110^\circ$, the reference angle is,
 
 ```math
 180^\circ - 110^\circ = 70^\circ
@@ -579,6 +579,188 @@ This means that the triangle used to evaluate the sine function is effectively b
 </div>
 
 This equality is not coincidental but reflects the symmetry of the unit circle and the vertical axis. Points angles $\theta$ and $180^\circ - \theta$ share the same $y\text{-coordinate}$, and thus the same sine value.
+
+When a larger shape, such as a rectangle is divided into multiple right triangles, **each triangle can be compared independently to a corresponding triangle from the unit circle**. That is, in any geometric shape that is built upon right angled triangles, each right angle triangle is either the unit circle or a scaled unit circle. However, **each triangle is compared geometrically independently**.
+
+<div align='center'>
+    <img src='./images/162.png' width='600'>
+</div>
+
+<div align='center'>
+    <h1> Import Relationships <h1>
+</div>
+
+## 1. Complementary Angle Identities
+
+```math
+\begin{aligned}
+\sin\left(\theta\right) &= \cos\left(90 - \theta\right) \\
+\cos\left(\theta\right) &= \sin\left(90 - \theta\right)
+\end{aligned}
+```
+
+In a right triangle, there are two acute angles.
+
+```math
+\theta \ \ \text{and} \ \ 90^\circ - \theta
+```
+
+But when you switch from $\theta$ to $90^\circ - \theta$, the **labels of the sides change**.
+
+<div align='center'>
+    <img src='./images/141.png' width='400'>
+</div>
+
+Hence, when we have $\theta$ with $O$ and $A$ on two legs, $90^\circ - \theta$ will have the opposite legs labelled, so $O \rightarrow A$ and $A \rightarrow O$.
+
+Therefore for $\theta$,
+
+```math
+\sin(\theta) = \frac{O}{H}
+```
+
+Now, given the previous legs with $\theta$, we will invert them when working with $90^\circ - \theta$. So,
+
+```math
+\frac{O \rightarrow A}{H}
+```
+
+For $90^\circ - \theta$,
+
+```math
+\cos(90^\circ - \theta) = \frac{A}{H}
+```
+
+Because these are calculating the same side of the triangle, we can conclude,
+
+```math
+\sin(\theta) = \cos(90^\circ - \theta)
+```
+
+When comparing this to the unit circle, we can see in here that $\sin(\theta) = \cos(90^\circ - \theta)$ because it represents the height of either of the two right angled triangles, which are equal.
+
+<div align='center'>
+    <img src='./images/142.png' width='400'>
+</div>
+
+## 2. Pythagorean Identity
+
+```math
+\sin^2\theta + \cos^2\theta = 1
+```
+
+This observation is significantly easier to observe when looking at the unit circle. Because it's a right angled triangle we can use the Pythagorean theorem. 
+
+```math
+a^2 + b^2 = c^2
+```
+
+Here we substitute,
+
+- $a = \sin(\theta)$
+- $b = \cos(\theta)$
+- $c = 1$
+
+Therefore,
+
+```math
+\begin{aligned}
+\left(\sin\left(\theta\right)\right)^2 + \left(\cos\left(\theta\right)\right)^2 &= 1 \\
+\sin^2\theta + \cos^2\theta &= 1
+\end{aligned}
+```
+
+<div align='center'>
+    <img src='./images/143.png' width='400'>
+</div>
+
+## 3. Supplementary Angle Identities
+
+```math
+\sin(\theta) = \sin(180 - \theta)
+```
+
+<div align='center'>
+    <img src='./images/144.png' width='700'>
+</div>
+
+```math
+\cos(\theta) = -\cos(180 - \theta)
+```
+
+<div align='center'>
+    <img src='./images/145.png' width='700'>
+</div>
+
+## 4. Odd/Even Symmetry
+
+Firstly, we define
+
+- **Anti-Clockwise** rotation as a **positive angle**.
+- **Clockwise** rotation as a **negative angle**.
+
+```math
+\begin{aligned}
+\sin\left(-\theta\right) &= -\sin\left(\theta\right) \\
+\cos\left(-\theta\right) &= \cos\left(\theta\right)
+\end{aligned}
+```
+
+#### Even Function
+
+A function is considered **even** if,
+
+```math
+f(-x) = f(x)
+```
+
+This has the property that it is reflected around the $y$ axis.
+
+<div align='center'>
+    <img src='./images/146.png' width='300'>
+</div>
+
+The **cosine function is considered even**. As demonstrated below, $\theta$ and $-\theta$ has identical $x$ axis points. Therefore,
+
+```math
+\cos(-\theta) = \cos(\theta)
+```
+
+<div align='center'>
+    <img src='./images/147.png' width='300'>
+</div>
+
+#### Odd Function
+
+A function is considered **odd** if,
+
+```math
+f(-x) = -f(x)
+```
+
+The graph of an odd function is **symmetric with respect to the origin**.
+
+<div align='center'>
+    <img src='./images/148.png' width='300'>
+</div>
+
+The **sine function is considered odd**. As demonstrated below, $\theta$ and $-\theta$ are in opposing $y$ directions. Therefore, by multiplying $f(\theta)$ by $-1$ it will have overlap with $f(\theta)$. Therefore,
+
+```math
+f(-\theta) = -f(\theta)
+```
+
+Hence,
+
+```math
+\sin(-\theta) = -\sin(\theta)
+```
+
+
+<div align='center'>
+    <img src='./images/149.png' width='300'>
+</div>
+
 
 <div align='center'>
     <h1> Changing Angles </h1>
@@ -640,7 +822,7 @@ Here, the negative length means that the opposite side is in the lower semi-circ
     <img src='./images/sin_wave_slowed.gif' width='800'>
 </div>
 
-We can extend the sine function to larger angle range. We can keep rotating around the circle, beyond $2\pi$. A negative angle will simply mean that we rotate clockwise.
+We can extend the sine function to a larger angle range. We can keep rotating around the circle, beyond $2\pi$. A negative angle will simply mean that we rotate clockwise.
 
 The sine function is periodic, which means,
 
@@ -673,11 +855,9 @@ Therefore,
 To begin graphing the cosine function, we will,
 
 1. Plot the angle $\theta$ on the $x$ axis.
-2. Plot the length of the $adjacent$ on the $y$ axis.
+2. Plot the length of the adjacent on the $y$ axis.
 
-Here, the negative length means that the adjacent side is on the left half of the semi-circle. All properties of the cosine functions are equal.
-
-Cosine literally means "complementary sine" because,
+Here, the negative length means that the adjacent side is on the left half of the semi-circle. All properties of the cosine functions are equal. Cosine literally means "complementary sine" because,
 
 ```math
 \cos(\theta) = \sin(\frac{\pi}{2} -\theta)
@@ -816,7 +996,7 @@ The period of a function $f(x)$ is the smallest positive number $T$ such that $f
 
 so the period of $\sin(x)$ when the argument is $x$ is $2\pi$. 
 
-Now consider $y = \sin(10x)$, the argument is no longer $x$, it is $10x$. When $x$ increases by some amount $T$, the argument inside the sine increases by $10T$.
+Now consider $y = \sin(10x)$, the argument is no longer $x$, it is $10x$. When $x$ increases by some amount $T$, the argument inside the sine increases by $10T$. The entire input to sine is $10x$. So when x changes, you must substitute into the whole expression, hence $x \rightarrow x + T$.
 
 ```math
 \sin(10(x + T)) = \sin(10x + 10T)
@@ -1004,3 +1184,299 @@ It follows,
 <div align='center'>
     <img src='./images/129.png' width='500'>
 </div>
+
+<div align='center'>
+    <h1> Trigonometry Angle sum Identities </h1>
+</div>
+
+```math
+\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \\
+
+\sin(\alpha - \beta) = \sin(\alpha)\cos(\beta) - \cos(\alpha)\sin(\beta)
+```
+
+
+```math
+\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta) \\
+
+\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)
+```
+
+
+These identites using the unit circle using the following proof.
+
+<div align='center'>
+    <img src='./images/150.png' width='500'>
+</div>
+
+## Angle Addition
+
+These can be shown incrementally. First, I will show
+
+```math
+\sin(\alpha + \beta) = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \\
+\cos(\alpha + \beta) = \cos(\alpha)\cos(\beta) - \sin(\alpha)\sin(\beta)
+```
+
+We begin by referencing the unit circle, that is, having an implicit radius of $1$.
+
+<div align='center'>
+    <img src='./images/151.png' width='500'>
+</div>
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\sin(\beta) = O \\
+\cos(\beta) = A
+```
+
+<div align='center'>
+    <img src='./images/152.png' width='500'>
+</div>
+
+Proceeding from this we can identify two more lengths.
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\cos(\beta) \sin(\alpha) = O \\
+\cos(\beta) \cos(\alpha) = A
+```
+
+<div align='center'>
+    <img src='./images/153.png' width='500'>
+</div>
+
+
+Proceeding to calculate an additional two sides, we also need to calculate and include an additional angle. Below, the angle $\alpha$ is included. This is geometrically true as we have the angles,
+
+1. $\alpha$
+2. $90$
+3. $90 - \alpha$
+
+On the original triangle. Therefore because the remaining angle in the triangle will be $90 - \alpha$ we have a straight line with $90^\circ$, it follows the remaining angle must be $\alpha$.
+
+Proceeding from this we can identify two more lengths.
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\sin(\beta) \sin(\alpha) = O \\
+\sin(\beta) \cos(\alpha) = A
+```
+
+<div align='center'>
+    <img src='./images/154.png' width='500'>
+</div>
+
+To proceed with calculating the final two lengths we calculate an additional angle as $\alpha + \beta$. This is true from either alterior angles are equal, treating this square as parallel lines or solving,
+
+
+
+```math
+\begin{aligned}
+90 - \alpha - \beta + x &= 90 \\
+-\alpha - \beta &= -x \\
+\alpha + \beta &= x
+\end{aligned}
+```
+
+<div align='center'>
+    <img src='./images/155.png' width='500'>
+</div>
+
+From this information we can finally solve for all lengths.
+
+<div align='center'>
+    <img src='./images/156.png' width='500'>
+</div>
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\sin(\alpha + \beta) = O \\
+\cos(\alpha + \beta) = A \\
+```
+
+This can then conclude,
+
+```math
+\sin(\alpha + \beta) = \cos(\beta)\sin(\alpha) + \sin(\beta)\cos(\alpha) \\
+
+\cos(\alpha + \beta) = \cos(\beta)\cos(\alpha) - \sin(\beta)\sin(\alpha)
+```
+
+## Angle Subtraction
+
+These can be shown incrementally. First, I will show
+
+```math
+\sin(\alpha - \beta) =  \sin(\alpha)\cos(\beta) - \cos(\alpha)\sin(\beta) \\
+\cos(\alpha - \beta) = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta)
+```
+
+Before reading a geometric proof of an identity such as
+
+```math
+\cos(\alpha - \beta)
+```
+
+it is helpful to separate the idea of **rotation** from the idea of **angle difference inside a diagram**.
+
+For addition, $\alpha + \beta$ is easy to visualize dynamically, begin at angle $\alpha$ and then rotate further amount $\beta$ anti-clockwise. The final direction is visibly the sum of the two sums. Subtraction is less intuitive, because $\alpha - \beta$ suggests rotating clockwise from $\alpha$, yet many geometric proofs do not draw that motion directly.
+
+Instead, the proof uses a static figure made from right triangles. The values $\sin(\theta)$ and $\cos(\theta)$ come from the unit circle triangle and any triangle with the same angle is rotated or a scaled copy, so the same ratios remain valid whenever it is placed.
+
+Within the construction, angles $\alpha$ and $\beta$ are arranged so that a remaining angle can be calculated to equal,
+
+```math
+\alpha - \beta
+```
+
+This discovered angle represents the same clockwise difference you would imagine rotating $\alpha$ back by $\beta$, but it is not usually shown as visible motion. It appears as the angle between rotated triangles already placed in the plane.
+
+Once that angle is identified, the triangle containing it nehaves like the unit circle triangle for angle $\alpha - \beta$, or a scaled version of it. Each small triangle in the diagram is either a unit triangle or a similar scaled copy of one. Their placement in the larger figure is arbitrary, but their internal trig ratios remain true. 
+
+Once an angle such as $\alpha - \beta$ appears, its associated sides inherit the correct sine/cosine relationships. Because once we know an angles size, **we can move that angle anywhere in the plane** while keeping its measure the same. As a result, the angle for $\alpha - \beta$ is the angle that is desired, it may represent a clockwise rotation from $\alpha$, but not be visible as much as easily as addition.
+
+<div align='center'>
+    <img src='./images/163.png' width='200'>
+</div>
+
+We begin this proof by constructing the following base.
+
+<div align='center'>
+    <img src='./images/157.png' width='500'>
+</div>
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\sin(\beta) = O \\
+\cos(\beta) = A \\
+```
+
+<div align='center'>
+    <img src='./images/158.png' width='500'>
+</div>
+
+Proceeding from this, we can calculate two more lengths.
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\cos(\beta) \sin(\alpha) = O \\
+\cos(\beta) \cos(\alpha) = A
+```
+
+<div align='center'>
+    <img src='./images/159.png' width='500'>
+</div>
+
+To proceed on calculating an additional two lengths, we need in the angle $\alpha$. This is calculated because the previous triangle had the angles,
+
+1. $\alpha$
+2. $90^\circ$
+3. $90 - \alpha$
+
+We know because of a straight line adding to $180$ the missing angle alongside the unknown sides is $90 - \alpha$. Therefore, by similar triangles, the missing angle is $\alpha$. Alternatively this can be calculated algebraically from $90 -\alpha + x = 90$, giving us $x = \alpha$.
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\sin(\beta) \sin(\alpha) = O \\
+\sin(\beta) \cos(\alpha) = A
+```
+
+<div align='center'>
+    <img src='./images/160.png' width='500'>
+</div>
+
+To proceed on calculating the final two lengths we need to calculate an additional angle $\alpha - \beta$. To do this we label the angle $90 - \alpha$ and solve for,
+
+```math
+\begin{aligned}
+90 - \alpha + \beta + x &= 90 \\
+-\alpha + \beta + x &= 0 \\
+x &= \alpha - \beta
+\end{aligned}
+```
+
+This angle is labelled below and can be used to calculate the final two unknown lengths.
+
+Because,
+
+```math
+H \sin(\theta) = O \\
+H \cos(\theta) = A
+```
+
+It follows,
+
+```math
+\sin(\alpha - \beta) = O \\
+\cos(\alpha - \beta) = A
+```
+
+<div align='center'>
+    <img src='./images/161.png' width='500'>
+</div>
+
+Using all of this information we can finally calculate,
+
+```math
+\sin(\alpha - \beta) = \cos(\beta)\sin(\alpha) - \sin(\beta)\cos(\alpha) \\
+
+\cos(\alpha - \beta) = \cos(\beta)\cos(\alpha) + \sin(\beta)\sin(\alpha)
+```
+

@@ -1,3 +1,45 @@
+<div align='center'>
+    <h1> TLDR </h1>
+</div>
+
+The most important components on the backhand flick to remember is,
+
+1. **Face the racket downward** - As the racket head points down, the wrist must be pulled in. If the wrist isn't pulled in, the racket head will turn to the left. **If your racket head is pointing to the left during your flick, no matter how much force you use, the ball will go into the net.**
+
+2. **Rotate your wrist** - The racket should be bent back sufficiently bent. To allow for additional wrist flexion, **raise your elbow**.
+
+#### Wrong - Wrist Pointing Left
+
+<div align='center'>
+    <img src='./images/left_wrist_banana_flick.gif' width='500'>
+</div>
+
+#### Correct - Racket Head Facing Down
+
+<div align='center'>
+    <img src='./images/correct_wrist_banana_flick.gif' width='500'>
+</div>
+
+3. **Contact The Side** - Always aim to flick from the side. Flicking from the front often leads to the ball going into the net. **By flicking from the side, you avoid the spin**. You don't confront the balls spin directly.
+
+<div align='center'>
+    <img src='./images/side_contact_backhand_flick.gif' width='500'>
+</div>
+
+<div align='center'>
+    <img src='./images/101.png' width='500'>
+</div>
+
+<div align='center'>
+    <img src='./images/102.png' width='500'>
+</div>
+
+4. **Let the ball come to you** - Let the ball come close to you and do not hit too early. This allows for you to grab the ball and use your entire body and arm to lift the ball over the net. By hitting too early, you have less dwell time and do not use your arm to lift the ball.
+
+5. **Relax then release power instantly**.
+
+6. **Follow through, directing your arm to your oppoent**. Focusing on controlling the ball and brushing forward.
+
 <div align="center">
     <h1> Backhand Banana Flick </h1>
 </div>

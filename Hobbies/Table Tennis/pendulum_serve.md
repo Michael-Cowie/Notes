@@ -58,7 +58,17 @@ During the pendulum service, the goal is to make contact on the left side of the
     <img src='images/68.png'>
 </div>
 
-#### Variations
+#### Direction After Contact
+
+A crucial step to creating backspin is to have an **upward motion** during contact. To do this, at some point during the motion your hand needs to be beneath the ball to **create an upward motion**.
+
+<div align='center'>
+    <img src='images/upward_motion_pendulum_serve.gif'>
+</div>
+
+<div align='center'>
+    <h1> Variations </h1>
+</div>
 
 #### Ma Long
 

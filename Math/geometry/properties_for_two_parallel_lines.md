@@ -60,8 +60,10 @@ Alternate interior angles lie,
 If two parallel lines are intersected by a traversal, **alternate interior angles are equal**.
 
 ```math
-\angle x = \angle x \\
-\angle y = \angle y \\
+\begin{aligned}
+\angle x &= \angle x \\
+\angle y &= \angle y
+\end{aligned}
 ```
 
 <div align='center'>
@@ -80,8 +82,10 @@ Alternate exterior angles lie,
 Alternate exterior angles are equal.
 
 ```math
+\begin{aligned}
 \angle 1 = \angle 4 \\
 \angle 2 = \angle 3 \\
+\end{aligned}
 ```
 
 <div align='center'>
