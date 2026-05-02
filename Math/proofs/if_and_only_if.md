@@ -29,7 +29,13 @@ The only row that breaks the implication is the second one, where it is raining 
 
 #### Necessary Condition
 
-When we say $Q$ is **necessary** for $P$, this directly translates to $$P \Rightarrow Q$$This is a requirement statement.
+When we say $Q$ is **necessary** for $P$, this directly translates to 
+
+```math
+P \Rightarrow Q
+```
+
+This is a requirement statement.
 
 It asserts whenever $P$ is true, $Q$ must also be true. That is the entire constraint. The statement does not claim that $Q$ causes or guarantees $P$, only that $P$ cannot occur without it.
 
@@ -42,9 +48,13 @@ The statement places a restriction on $P$, not on $Q$
 
 #### Sufficient Condition
 
-When we say "$Q$ is **sufficient** for $P$", this directly translates to $$Q \Rightarrow P$$This is a guarantee statement.
+When we say $Q$ is **sufficient** for $P$, this directly translates to 
 
-It asserts that whenever $Q$ is true, $P$ must also be true. That is the entire promise. The statement does not say that $Q$ is required for $P$, only that it is enough to ensure it.
+```math
+Q \Rightarrow P
+```
+
+This is a guarantee statement. It asserts that whenever $Q$ is true, $P$ must also be true. That is the entire promise. The statement does not say that $Q$ is required for $P$, only that it is enough to ensure it.
 
 Equivalently,
 
@@ -60,10 +70,16 @@ The statement places a restriction on $Q$, not on $P$.
 
 These are opposite directions of implication
 
-$$\text{Necessary}:  P \Rightarrow Q$$
-$$\text{Sufficient}:  Q \Rightarrow P$$
+```math
+\text{Necessary}:  P \Rightarrow Q \\
+\text{Sufficient}:  Q \Rightarrow P
+```
 
-Therefore, when we say "$Q$ is necessary **and** sufficient for $P$" it directly translates to $P \Leftrightarrow Q$. This combines both directions $$P \Rightarrow Q \space \text{and} \space Q \Rightarrow P$$
+Therefore, when we say $Q$ is necessary **and** sufficient for $P$ it directly translates to $P \Leftrightarrow Q$. This combines both directions 
+
+```math
+P \Rightarrow Q \space \text{and} \space Q \Rightarrow P
+```
 
 This is no longer a one-way relationship. It is a two-way constraint.
 
@@ -89,7 +105,7 @@ The `if` direction is a one-way street. The implication runs in one direction on
 
 This is also called a *sufficient condition*, $Q$ is sufficient for $P$. Knowing $Q$ is all you need to conclude $P$. However, $P$ might be true even without $Q$, other routes to $P$ may exist.
 
-| $Q$ | $P$ | $Q \Rightarrow P$ ("$P$ if $Q$") |
+| $Q$ | $P$ | $Q \Rightarrow P$ ($P$ if $Q$) |
 |:---:|:---:|:---:|
 | T | T | T |
 | T | F | **F** |
@@ -135,7 +151,7 @@ $P \Rightarrow Q$ tells you the following,
 2. $P$ implies $Q$
 3. $Q$ being true does not force $P$ to be true. 
 
-| $P$ | $Q$ | $P \Rightarrow Q$ ("$P$ only if $Q$") |
+| $P$ | $Q$ | $P \Rightarrow Q$ ($P$ only if $Q$) |
 |:---:|:---:|:---:|
 | T | T | T |
 | T | F | **F** |
@@ -182,7 +198,7 @@ The truth table is not a description of reality, it is a checklist of all possib
     <h1> "If and only if" - The biconditional </h1>
 </div>
 
-The statement "$P$ if **and** only if $Q$", often abbreviated `iff` or written $P \Leftrightarrow Q$ is the conjunction of both implications. It asserts simultaneously that $Q \Rightarrow P$ (the `if`) and that $P \Rightarrow Q$ (the `only if`). **Both arrows must hold.**
+The statement $P$ if **and** only if $Q$, often abbreviated `iff` or written $P \Leftrightarrow Q$ is the conjunction of both implications. It asserts simultaneously that $Q \Rightarrow P$ (the `if`) and that $P \Rightarrow Q$ (the `only if`). **Both arrows must hold.**
 
 This makes $Q$ both necessary and sufficient for $P$. The two propositions rise and fall together. **Whenever one is true, the other is true**. Whenever one is false, the other is false.
 
@@ -244,14 +260,14 @@ The claim asserts $P \Leftrightarrow Q$. We need both $Q \Rightarrow P$ and $P \
 Every multiple of 4 is automatically a multiple of 2, because $4 = 2 \times 2$. If $n = 4k$ for some integer $k$, then $n = 2(2k)$, which is divisible by 2. No counterexample exists.
 
 **If** $(Q \Rightarrow P)$: ✗ *False.*
-Consider $n = 6$. It is a multiple of 2, but not a multiple of 4. So "$n$ is a multiple of 4 **if** it is a multiple of 2" fails. One counterexample is all it takes.
+Consider $n = 6$. It is a multiple of 2, but not a multiple of 4. So $n$ is a multiple of 4 **if** it is a multiple of 2 fails. One counterexample is all it takes.
 
 **If and only if** $(P \Leftrightarrow Q)$: ✗ *False.*
 Since the `if` direction fails, the biconditional fails. Being a multiple of 2 is necessary but not sufficient for being a multiple of 4.
 
 ### Example 3 - Even integers
 
-**The statement -** "$n^2$ is even if **and** only if $n$ is even."
+**The statement -** $n^2$ is even if **and** only if $n$ is even.
 
 Let,
 
@@ -267,14 +283,18 @@ The claim asserts $P \Leftrightarrow Q$.
 **If** $(Q \Rightarrow P)$: ✓ *True.*
 If $n$ is even, write $n = 2k$. Then
 
-$$n^2 = (2k)^2 = 4k^2$$
+```math
+n^2 = (2k)^2 = 4k^2
+```
 
 which is even. ✓
 
 **Only if** $(P \Rightarrow Q)$: ✓ *True.*
 Proved by contrapositive. If $n$ is *odd*, write $n = 2k + 1$. Then
 
-$$n^2 = (2k+1)^2 = 4k^2 + 4k + 1$$
+```math
+n^2 = (2k+1)^2 = 4k^2 + 4k + 1
+```
 
 which is odd. So if $n$ is not even, $n^2$ is not even. The contrapositive of $P \Rightarrow Q$ is equivalent to it. ✓
 
