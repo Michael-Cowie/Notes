@@ -248,8 +248,10 @@ The `only if` direction lets you deduce *backward*. Seeing someone inside, you k
 Let,
 
 ```math
-P = \text{"n is a multiple of 4"} \\
-Q = \text{"n is a multiple of 2"}
+\begin{aligned}
+P &= \text{"n is a multiple of 4"} \\
+Q &= \text{"n is a multiple of 2"}
+\end{aligned}
 ```
 
 The claim asserts $P \Leftrightarrow Q$. We need both $Q \Rightarrow P$ and $P \Rightarrow Q$ to hold.
@@ -271,7 +273,7 @@ Let,
 
 ```math
 \begin{aligned}
-P &= \text{"$n^2$ is even"} \\
+P &= "n^2 \ \text{is even"} \\
 Q &= \text{"$n$ is even"}
 \end{aligned}
 ```
