@@ -248,10 +248,8 @@ The `only if` direction lets you deduce *backward*. Seeing someone inside, you k
 Let,
 
 ```math
-\begin{aligned}
-P &= \text{"n is a multiple of 4"} \\
-Q &= \text{"n is a multiple of 2"}
-\end{aligned}
+P = \text{"n is a multiple of 4"} \\
+Q = \text{"n is a multiple of 2"}
 ```
 
 The claim asserts $P \Leftrightarrow Q$. We need both $Q \Rightarrow P$ and $P \Rightarrow Q$ to hold.
