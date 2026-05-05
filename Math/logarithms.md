@@ -329,7 +329,9 @@ If we have an example,
 \log_3(9^2) = 2 \log_3 (9) = 2(2) = 4
 ```
 
-## Changing Log Bases
+<div align='center'>
+    <h1> Changing Log Bases </h1>
+</div>
 
 We can change the bases,
 
@@ -363,7 +365,9 @@ y &= \frac{\log_{k}\left(x\right)}{\log_{k}\left(b\right)}
 \end{aligned}
 ```
 
-## Solving Exponential Functions
+<div align='center'>
+    <h1> Solving Exponential Functions </h1>
+</div>
 
 One of the most practical uses of logarithms is solving equations where the unknown is in the exponent.
 
