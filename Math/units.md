@@ -451,6 +451,116 @@ Each fraction equals 1, so the value stays the same, but the units change.
 4.32 \frac{km}{hr}
 ```
 
+## Units in Exponnents
+
+Dimensional analysis is one of the most powerful validation tools in mathematics, physics and engineers. By tracking units through equations, it becomes possible to verify whether formulas are physically meaningful before numerical calculation even begins. Exponential functions, however, introduce a subtle but extremely important restriction, **the exponent of an exponential expression must always be dimensionless**. This initially feels counterintuitive because many exponential growth models involve quantities with physical units such as time, distance or temperature. Expressions such as,
+
+```math
+2^t
+```
+
+to appear to place seconds directly inside an exponent, despite exponents traditionally representing repeated multiplication counts.
+
+Consider a simple exponential
+
+```math
+2^3
+```
+
+This means,
+
+```math
+2 \times 2 \times 2
+```
+
+The exponent $3$ does not multiply into the result directly. Instead, it specifies how many repeated multiplications occur. The exponent therefore acts as a counting parameter. Because counts are pure numbers, **exponents cannot possess physical dimensions**. An expression such as
+
+```math
+2^{5_s}
+```
+
+Would literally mean "Multiply $2$ by itself "5 seconds times"" which has no mathematical interpretation. Seconds measure duration, not repetition count. Thus, **exponents must always reduce to pure dimensionless numbers** before exponentiation becomes meaningful.
+
+Despite this restriction, exponential growth models naturally involve time. For example, suppose a quantity doubles every second. A common shorthand model is,
+
+```math
+V(t) = V_0 2^t
+```
+
+where,
+
+- $V(t)$ is volume.
+- $V_0$ is initial volume.
+- $t$ is measured in seconds.
+
+At first glance this appears dimensionally inconsistent because $t$ seems to carry units inside the exponent. However, the rigorous form of the equation is actually,
+
+```math
+V(t) = V_02^{\frac{t}{T}}
+```
+
+where,
+
+- $T$ is the doubling time.
+
+If doubling occurs every second, then
+
+```math
+T = 1s
+```
+
+So the expression becomes,
+
+```math
+V(t) = V_0 2^{\frac{t}{1s}}
+```
+
+now the exponent is,
+
+```math
+\frac{t}{1s}
+```
+
+which is dimensionless because the seconds cancel. So for example if,
+
+```math
+t = 58s
+```
+
+then,
+
+```math
+\frac{58s}{1s} = 58
+```
+
+and the exponent reduces correctly to,
+
+```math
+2^{58}
+```
+
+which is mathematically valid. Additionally, if the question were to be stated to double every 2 seconds, $T$ can be $2_s$.
+
+```math
+V(t) = V_0 2^{\frac{t}{2T}}
+```
+
+Hence if $t = 58$
+
+```math
+V(t) = V_0 2^{\frac{58s}{2T}}
+```
+
+Hence, the exponent becomes $29$ and implies it doubled $29$ times.
+
+As an additional example, radioactive decay is an example that includes exponent units which cancel out. The decay constant, λ "lambda", the reciprocal of the mean lifetime (in $s^{−1}$), sometimes referred to as simply decay rate. The decay exponential decay law is defined as,
+
+```math
+N(t) = N_0 e^{-λt}
+```
+
+
+
 <div align='center'>
     <h1> Exercises </h1>
 </div>
@@ -623,3 +733,86 @@ Therefore,
 ```math
 = 1200N
 ```
+
+**Question 7** - A stadium starts with one drop of water. Every second the amount of water doubles. The stadium is full after 60 seconds. When is it quarter full?
+
+##### Step 1 - Define the Exponential Model
+
+Let,
+
+- $V(t)$ = Volume at time $t$.
+- $V_0$ = Initial drop volume.
+- Doubling time $T = 1s$.
+
+The rigorous model is,
+
+```math
+V(t) = V_0 2^{\frac{t}{T}}
+```
+
+The exponent is dimensionless because,
+
+```math
+\frac{t}{1s}
+```
+
+cancels out.
+
+##### Step 2 - Express Full Volume
+
+If the stadium becomes full at $t=60s$ then,
+
+```math
+V_f = V_0 2^{60}
+```
+
+##### Step 3 - Determine Quarter Full Volume
+
+Quarter full means,
+
+```math
+\frac{V_f}{4}
+```
+
+Substitute $V_f$,
+
+```math
+\frac{V_f}{4} = \frac{V_02^{60}}{2^2}
+```
+
+Apply exponent laws,
+
+```math
+\frac{V_f}{4} = V_0 2^{60-2} = V_0 2^{58}
+```
+
+##### Step 4 - Match Against the Original Model
+
+The model states,
+
+```math
+V(t) = V_0 2^t
+```
+
+Quarter full occurs when,
+
+```math
+V_02^t = V_02^{58}
+```
+
+Cancel $V_0$
+
+```math
+2^t = 2^{58}
+```
+
+Apply logarithms to both sides,
+
+```math
+\begin{aligned}
+\log_{2}\left(2^t\right) &= \log_{2}\left(2^{58}\right) \\
+t &= 58
+\end{aligned}
+```
+
+Therefore, the stadium is quarter full after $58$ seconds.
