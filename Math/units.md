@@ -375,7 +375,6 @@ Invert entire quantity
 This has resulted the scalar being inverted and the unit exponents inverted. Multiplication and inversion apply to the entire product structure. The scalar and unit don't mix, they transform in parallel.
 
 ## Changing Between Units
-
 To change units, we multiply by conversion factors that equal 1.
 
 We know,
@@ -449,6 +448,71 @@ Each fraction equals 1, so the value stays the same, but the units change.
 
 ```math
 4.32 \frac{km}{hr}
+```
+
+An additional example with more conversions could be calculating $\frac{\text{seconds}}{\text{year}}$. This is read as "How many seconds are in one year".
+
+##### Step 1 - Write the conversion chain
+
+We multiply the units so that everything cancels **except seconds**.
+
+```math
+1 \ \text{year} = ? \ \text{seconds}
+```
+
+##### Step 2 - Use standard conversion factors
+
+- $1$ year = $365.25$ days
+- $1$ day = $24$ hours
+- $1$ hour = $60$ minutes
+- $1$ minute = $60$ seconds
+
+##### Step 3 - Write the full expression
+
+```math
+1 \ \text{year}
+= 365.25 \ \text{days}
+\times 24 \frac{\text{hours}}{\text{day}}
+\times 60 \frac{\text{minutes}}{\text{hour}}
+\times 60 \frac{\text{seconds}}{\text{minute}}
+```
+
+##### Step 4 - Condense expression
+
+```math
+\begin{aligned}
+1 \ \text{year}
+&= 365.25 \ \text{days}
+\times 24 \frac{\text{hours}}{\text{day}}
+\times 60 \frac{\text{minutes}}{\text{hour}}
+\times 60 \frac{\text{seconds}}{\text{minute}}
+\\
+&= 365.25 \ \cancel{\text{days}}
+\times 24 \frac{\cancel{\text{hours}}}{\cancel{\text{day}}}
+\times 60 \frac{\cancel{\text{minutes}}}{\cancel{\text{hour}}}
+\times 60 \frac{\text{seconds}}{\cancel{\text{minute}}}
+\\
+&= 365.25 \times 24 \times 60 \times 60 \ \text{seconds}
+\\
+&= 31{,}557{,}600 \ \text{seconds}
+\end{aligned}
+```
+
+##### Step 5 - Create unit
+
+If $1 \text{ year} = 31{,}557{,}600 \ \text{seconds}$ it therefore follows,
+
+```math
+\begin{aligned}
+31{,}557{,}600 \ \text{seconds} &= 1 \ \text{year} \\
+\frac{31{,}557{,}600 \ \text{seconds}}{1 \ \text{year}} &= 1 \\
+\end{aligned}
+```
+
+Therefore,
+
+```math
+31{,}557{,}600 \ \frac{\text{seconds}}{\text{year}}
 ```
 
 ## Units in Exponnents

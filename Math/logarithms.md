@@ -310,7 +310,7 @@ Then,
 \begin{aligned}
 \left(b^m\right)^n &= x^n \\
 b^{m \cdot n} &= x^n \\
-\log_{b}\left(x^n\right) &= m \cdot n
+m \cdot n &= \log_{b}\left(x^n\right)
 \end{aligned}
 ```
 
@@ -408,4 +408,41 @@ Gives,
 
 ```math
 2x = \ln 7
+```
+
+<div align='center'>
+    <h1> Inverse </h1>
+</div>
+
+When a logarithm with base $b$ is raised to the power of a logarithm with the same base, it can be simplified. That is,
+
+```math
+b^{\log_b{x}} = x
+```
+
+This occurs because,
+
+```math
+\log_b{x} = y \Leftrightarrow b^y = x
+```
+
+Therefore,
+
+```math
+\begin{aligned}
+\log_b{x} &= y \\
+b^{\log_b{x}} &= b^y
+\end{aligned}
+```
+
+Because,
+
+```math
+b^y = x
+```
+
+It follows,
+
+```math
+b^{\log_b{x}} = x
 ```
