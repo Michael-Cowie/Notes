@@ -365,11 +365,11 @@ Hence if we had the example,
 Invert entire quantity
 
 ```math
-= \left( \frac{5}{3} \right)^{-1} \cdot (ms^{-1})^{-1}
-```
-
-```math
-= \frac{3}{5} \cdot sm^{-1} = \frac{3}{5} \frac{s}{m}
+\begin{aligned}
+&= \left( \frac{5}{3} \right)^{-1} \cdot (ms^{-1})^{-1} \\
+&= \frac{3}{5} \cdot sm^{-1} \\
+&= \frac{3}{5}\frac{s}{m}
+\end{aligned}
 ```
 
 This has resulted the scalar being inverted and the unit exponents inverted. Multiplication and inversion apply to the entire product structure. The scalar and unit don't mix, they transform in parallel.
@@ -380,8 +380,10 @@ To change units, we multiply by conversion factors that equal 1.
 We know,
 
 ```math
-1km = 1000m \\
-3600s = 1hr
+\begin{aligned}
+1\,\text{km} &= 1000\,\text{m} \\
+3600\,\text{s} &= 1\,\text{hr}
+\end{aligned}
 ```
 
 Keep in mind, units by themselves are not numbers, only quantities (number + unit) can be compared or divided.
@@ -623,6 +625,61 @@ As an additional example, radioactive decay is an example that includes exponent
 N(t) = N_0 e^{-λt}
 ```
 
+<div align='center'>
+    <h1> Multiplication to Change Units </h1>
+</div>
+
+Multiplication to change between units is very important and frequently used, especially in calculus. The ability to change between units involves scaling upwards a "per unit" unit so that it equals an amount of another unit "per unit" which will cancel out the component of the unit that was scaled upwards. 
+
+Suppose,
+
+1. Temperature changes by $4^\circ C$ for every $1$ volt.
+
+```math
+\frac{dT}{dV} = 4
+```
+
+2. Voltage changes by $3$ volts for every $1$ second.
+
+```math
+\frac{dV}{dt} = 3
+```
+
+It therefore follows,
+
+```math
+\frac{dT}{dt} = \frac{dT}{dV} \cdot \frac{dV}{dt} = 4 \frac{^\circ C}{V} \cdot 3 \frac{V}{s} = 12 \frac{^\circ C}{s}
+```
+
+This can be illustrated algebraically,
+
+```math
+\begin{aligned}
+4\,^\circ C &= 1\,V
+\\
+
+3\,V &= 1\,s
+\\
+
+12\,^\circ C &= 3\,V
+\\
+
+12\,^\circ C &= 3\,V = 1\,s
+\end{aligned}
+```
+
+Therefore, $12 \ ^\circ C$ occurs per $1$ second which is expressed as, 
+
+```math
+12 \frac{^\circ C}{s}
+```
+
+This can also be illustrated visually.
+
+<div align='center'>
+    <img src='./images/20.png' width='400'>
+</div>
+
 
 
 <div align='center'>
@@ -658,8 +715,10 @@ Cancel the Length unit.
 Now solve for $x$
 
 ```math
-x = \frac{1000}{25} \\
-x = 40
+\begin{aligned}
+x &= \frac{1000}{25} \\
+x &= 40
+\end{aligned}
 ```
 
 Therefore, it will take 40 seconds to fill the tank.
@@ -699,15 +758,19 @@ Start by identifying the current units $\frac{m}{s}$ and the units we need to ch
 First, identify the conversion between $m$ and $km$
 
 ```math
-1km = 1000m \\
-\frac{1km}{1000m} = 1
+\begin{aligned}
+1\,\text{km} &= 1000\,\text{m} \\
+\frac{1\,\text{km}}{1000\,\text{m}} &= 1
+\end{aligned}
 ```
 
 Secondly, identify the conversion between $s$ and $hr$
 
 ```math
-3600s = 1hr \\
-\frac{3600s}{1hr} = 1
+\begin{aligned}
+3600\,\text{s} &= 1\,\text{hr} \\
+\frac{3600\,\text{s}}{1\,\text{hr}} &= 1
+\end{aligned}
 ```
 
 Now, we use this to convert between units by multiplying by 1 in disguise.
@@ -743,27 +806,14 @@ We want the recriprical. Therefore, we separate the scalar and unit and both put
 First understand the question carefully to understand the unit we're solving for. We are asked to solve for how much mass we will have. Therefore, we need to solve the unknown $x$ for the mass unit $kg$.
 
 ```math
-800\frac{kg}{m^3} \cdot 4m^3 = xkg
-```
-
-```math
-800\frac{kg}{\cancel{m^3}} \cdot 4\cancel{m^3} = xkg
-```
-
-```math
-800 \cdot 4 kg = xkg
-```
-
-```math
-3200 kg = xkg
-```
-
-```math
-3200 \cancel{kg} = x \cancel{kg}
-```
-
-```math
-3200 = x
+\begin{aligned}
+800\frac{\text{kg}}{\text{m}^3} \cdot 4\text{m}^3 &= x\text{kg} \\
+800\frac{\text{kg}}{\cancel{\text{m}^3}} \cdot 4\cancel{\text{m}^3} &= x\text{kg} \\
+800 \cdot 4\,\text{kg} &= x\text{kg} \\
+3200\,\text{kg} &= x\text{kg} \\
+3200\cancel{\text{kg}} &= x\cancel{\text{kg}} \\
+3200 &= x
+\end{aligned}
 ```
 
 Now, solving for x we know that we will have $3200kg$

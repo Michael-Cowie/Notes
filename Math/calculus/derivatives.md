@@ -470,6 +470,92 @@ and
 
 These properties are essential because they allow complex espressions to be broken into simpler components. Without linearity, differentiation would require full limit expansion for every expression, making calculus far less practical.
 
+We can try to visualize this by observing the behaviour in
+
+```math
+\begin{aligned}
+
+\frac{d}{dx}(g(x) + h(x))
+&= \frac{dg}{dx} + \frac{dh}{dx}
+
+\\
+
+\frac{d}{dx}(\sin(x) + x^2)
+&= \cos(x) + 2x
+\end{aligned}
+```
+
+<div align='center'>
+    <img src='./images/15.png' width='600'>
+</div>
+
+Now, if we zoom in and take the point at $x = 0.5$ We create a new variable $df$ where
+
+```math
+df = d(\sin(x)) + d(x^2)
+```
+
+In this example $d$ means "differential" or "the tiny change". So $d(\sin(x))$ means "the tiny change in the quantity $\sin(x)$". Because $y = \sin(x)$, this is exactly the same as writing $dy$. Therefore,
+
+```math
+\begin{aligned}
+dy &= d(\sin(x))
+\\
+
+dy &= d(x^2)
+\end{aligned}
+```
+
+<div align='center'>
+    <img src='./images/16.png' width='600'>
+</div>
+
+We know that,
+
+```math
+\begin{aligned}
+y &= \sin(x)
+\\
+
+\frac{dy}{dx} &= \cos(x)
+\\
+
+dy &= \cos(x)\,dx
+\end{aligned}
+```
+Additionally,
+
+```math
+\begin{aligned}
+y &= x^2
+\\
+
+\frac{dy}{dx} &= 2x
+\\
+
+dy &= 2x\,dx
+\end{aligned}
+```
+
+It therefores follows,
+
+```math
+\begin{aligned}
+df &= \cos(x)\,dx + 2x\,dx
+\\
+
+\frac{df}{dx} &= \cos(x) + 2x
+\end{aligned}
+```
+
+This now suggests
+
+```math
+\frac{d}{dx} (g(x) + h(x)) = \frac{dg}{dx} + \frac{dh}{dx}
+```
+
+which the sum of derivatives of its part. This is also called the sum rule.
+
 ## Product Rule — Differentiating Multiplication
 
 When two functions are multiplied, differentiation becomes more structured. The product rule states,
@@ -480,7 +566,7 @@ When two functions are multiplied, differentiation becomes more structured. The 
 
 This rule shows that the derivative of a product is not simply the product of the derivatives.
 
-Take $x^2 \cdot x^5$.
+Take $x^2 \cdot x^5$ for each function we can observe
 
 Let,
 
@@ -515,7 +601,47 @@ This matches the direct simplification approach,
 x^2 \cdot x^7 = x^7 \Rightarrow \frac{d}{dx}(x^7) = 7x^6
 ```
 
-#### Product Rule - Proof
+#### Product Rule - Visualized
+
+Often, it is very difficult to visualize the behaviour of 2 functions multiplying, instead it is conceptually more intuitive to instead visualize it geometrically.
+
+Let,
+
+```math
+f(x) = \sin(x) \cdot x^2
+```
+
+Now, consider $\sin(x)$ as the width and $x^2$ as the height. Therefore $\sin(x) \cdot x^2 = \text{Area}$. Below is a visualization of what is occurring geometrically when introducing $dx$, from here we attempt to calculate the newly added area $df$.
+
+<div align='center'>
+    <img src='./images/product_rule_visualized.gif' width='600'>
+</div>
+
+As illustrated above where $df$ represents the new area by the introduced $dx$,
+
+<div align='center'>
+    <img src='./images/17.png' width='300'>
+</div>
+
+```math
+df = d(\sin(x)) x^2 + \sin(x) d(x^2) + d(x^2)
+```
+
+Because
+
+```math
+\lim_{x \to 0} dx^2 = 0
+```
+
+The expression is simplified to
+
+```math
+df = d(\sin(x)) x^2 + \sin(x) d(x^2)
+```
+
+Which represents the product rule.
+
+#### Product Rule - Algebraic Proof
 
 Here, we will prove the product rule.
 
@@ -598,4 +724,393 @@ These two terms follow the definition of derivatives. It follows,
 
 ```math
 F'(x) = f(x) \cdot g'(x) + g(x) \cdot f'(x)
+```
+
+## Chain Rule — Differentiating Composite Functions
+
+Many functions are not formed from a single operation, but instead contain multiple layers of functions nested insde one another. These are known as **composite functions**. A composite function occurs when the output of one function becomes the input of another function.
+
+A general composite function is written as
+
+```math
+f(g(x))
+```
+
+where,
+
+- $g(x)$ is called the inner function
+- $f(x)$ is called the outer function
+
+The chain rule describes how derivatives behave when functions are composted together. It is written as
+
+```math
+\frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x))
+```
+
+This multiplication may appear confusing because function composition itself is not multiplication. When functions are composed, the output of one function is substituted into another function. However, derivatives do not describe the functions themselves. Instead, derivatives describe how small changes propagate through the functions.
+
+When performing the chain rule it is common to introduce an intermediate variable such as $u$. Suppose we have,
+
+```math
+y = (x^2 + 3x)^8
+```
+
+This means,
+
+- $x$ is the horizontal axis
+- $y$ is the vertical axis
+
+The graph itself only contains these two axes. However, the internal structure of the function may be decomposed into stages by introducing an intermediate quantity.
+
+Define,
+
+```math
+\begin{aligned}
+u &= x^2 + 3x \\
+y &= u^8
+\end{aligned}
+```
+
+This decomposition creates the dependency chain,
+
+```math
+x \to u \to y
+```
+
+It is important to understand that $u$ is not a new graph axis. The graph is still entirely determined by the relationship between $x$ and $y$. The variable $u$ is an intermediate quantity used to describe how changes propagate internally through the composite function.
+
+Changing $x$ changes $u$, and changing $u$ then changes $y$. The chain rule therefore studies how change cascades through these intermediate changes.
+
+Differentiating both stages gives,
+
+```math
+\begin{aligned}
+\frac{du}{dx} &= 2x + 3 \\
+\frac{dy}{du} &= 8u^7
+\end{aligned}
+```
+
+Now suppose $x = 1$, then
+
+```math
+u = 1^2 + 3(1) = 4
+```
+
+This means that at the point where $x = 1$, the corresponding intermediate value is $u = 4$. Now evaluate the derivatives at this point. First,
+
+```math
+\frac{du}{dx} 2(1) + 3 = 5
+```
+
+This means that near $x = 1$, a small change in $x$ produces a change in $u$ that is approximately $5$ times as large. Symbolically,
+
+```math
+du = 5 dx
+```
+
+Next,
+
+```math
+\frac{dy}{du} = 8u^7
+```
+
+At the point where $u=4$
+
+```math
+\frac{dy}{du} = 8(4)^7
+```
+
+This means that near $u=4$, a small change in $u$ produces a change in $y$ that is approximately $8(4)^7$ times as large. Symbolically,
+
+```math
+dy = 8(4)^7 du
+```
+
+The important conceptual step is that the change produced by the first stage becomes the input change for the second stage. Since,
+
+```math
+\begin{aligned}
+du &= 5 \, dx \\
+dy &= 8(4)^7 \, du \\
+dy &= 8(4)^7 \cdot 5 \, dx
+\end{aligned}
+```
+
+<div align='center'>
+    <img src='./images/18.png' width='600'>
+</div>
+
+Therefore,
+
+```math
+\frac{dy}{dx} = 8(4)^7 \cdot 5
+```
+
+The first derivative,
+
+```math
+\frac{du}{dx}
+```
+
+describes how $x$ scale into changes in $u$. The second derivative,
+
+```math
+\frac{dy}{du}
+```
+
+describes how changes in $u$ scale into changes in $y$. 
+
+Because the output change from the first derivative stage becomes the input for the second stage, the scaling factors multiply together. This produces the chain rule relationship.
+
+```math
+\frac{dy}{dx} = \frac{dy}{dy} \cdot \frac{du}{dx}
+```
+
+This relationship occurs because any small changes in $x$, increases $u$ which increases $y$.
+
+
+#### Example 1 - Function Composite View
+
+Let,
+
+```math
+y = (x^2 + 1)^3
+```
+
+Observing the expression, it appears that the power rule could potentially be used because their is an exponent of $3$. But the subtle issue is that the thing being cubed is not simply $x$. This is where the chain rule is used.
+
+This expression contains two nested functions. Define the inner function as
+
+```math
+g(x) = x^2 + 1
+```
+
+and define the outer function as
+
+```math
+f(u) = u^3
+```
+
+The original function can now be viewed as,
+
+```math
+y = f(g(x))
+```
+
+The chain rule now be easier to apply. First, differentiate both equations.
+
+```math
+\begin{aligned}
+g'(x) &= 2x \\
+f'(u) &= 3u^2
+\end{aligned}
+```
+
+The chainrule therefore states,
+
+```math
+\begin{aligned}
+\frac{d}{dx} f(g(x))
+&= 3(x^2 + 1)^2 \cdot 2x \\
+\\
+\frac{d}{dx} f(g(x))
+&= 6x(x^2 + 1)^2
+\end{aligned}
+```
+
+#### Example 2 - Function Composite View with Leibniz notation
+
+Let,
+
+```math
+y = (x^2 + 3x)^8
+```
+
+First perform a substitution,
+
+```math
+\begin{aligned}
+u &= x^2 + 3x
+\\
+
+\frac{du}{dx} &= 2x + 3
+\end{aligned}
+```
+
+Therefore
+
+```math
+\begin{aligned}
+y &= u^8
+\\
+
+\frac{dy}{du} &= 8u^7
+\end{aligned}
+```
+
+finally,
+
+```math
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = 8u^7 \cdot (2x + 3) = 8(x^2 + 3x)^7 (2x + 3)
+```
+
+#### Example 3 - Substitution and the Power Rule
+
+As an illustrative example, we can perform substitution to use the power rule and compare this to using the chain rule.
+
+Given,
+
+```math
+y = (x^2 + 1)^3
+```
+
+we define a temporary variable,
+
+```math
+z = x^2 + 1
+```
+
+The function now becomes $y = z^3$. At this stage, the ordinary power rule can be applied directly.
+
+```math
+\frac{dy}{dz} = 3z^2
+```
+
+Differentiating $z = x^2 + 1$ gives
+
+```math
+\frac{dz}{dx} = 2x
+```
+
+The total rate of change of $y$ with respect to $x$ must therefore include both stages of change.
+
+1. How $y$ changes with respect to $z$
+2. How $z$ changes with respect to $x$
+
+The chain rule combines these together.
+
+```math
+\frac{dy}{dx} = \frac{dy}{dz} \cdot \frac{dz}{dx}
+```
+
+It therefore follows,
+
+```math
+\begin{aligned}
+3z^2 \cdot 2x \,
+\frac{dy}{dz}
+\cdot
+\frac{dz}{dx}
+\\
+
+3z^2 \cdot 2x \,
+\frac{dy}{\cancel{dz}}
+\cdot
+\frac{\cancel{dz}}{dx}
+\\
+
+3z^2 \cdot 2x \,
+\frac{dy}{dx}
+\\
+
+3(x^2 + 1)^2 \cdot 2x \,
+\frac{dy}{dx}
+\\
+
+6x(x^2 + 1)^2 \,
+\frac{dy}{dx}
+\end{aligned}
+```
+
+## Chain Rule Proof
+
+Given $y = f(g(x))$
+
+```math
+\begin{aligned}
+\frac{dy}{dx}
+
+&= \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h} \\
+
+&= \lim_{h \to 0} \frac{f(g(x + h)) - f(g(x))}{h} \\
+
+&= \lim_{h \to 0}
+\frac{f(g(x + h)) - f(g(x))}{h}
+\cdot
+\frac{g(x+h) - g(x)}{g(x+h) - g(x)} \\
+
+&= \lim_{h \to 0}
+\frac{f(g(x + h)) - f(g(x))}{g(x+h) - g(x)}
+\cdot
+\frac{g(x+h) - g(x)}{h} \\
+
+&= \left(
+\lim_{h \to 0}
+\frac{f(g(x + h)) - f(g(x))}{g(x+h) - g(x)}
+\right)
+\cdot
+\left(
+\lim_{h \to 0}
+\frac{g(x+h) - g(x)}{h}
+\right) \\
+
+&=
+\lim_{h \to 0}
+\frac{f(g(x + h)) - f(g(x))}{g(x+h) - g(x)}
+\cdot g'(x)
+\end{aligned}
+```
+
+Now, we introduce a new variable.
+
+```math
+\begin{aligned}
+k &= g(x+h) - g(x) \\
+g(x+h) &= g(x) + k
+\end{aligned}
+```
+
+When I write $k = g(x + h) - g(x)$, the value of $k$ depends on whatever value of $h$ you choose (with $x$ fixed). So more formally, $k$ is not an independent variable. Instead, it is a function of $h$,
+
+```math
+k(h) = g(x + h) - g(x)
+```
+
+Because $g$ is differentiable, it is continuous, so as $h \to 0$, we have $k \to 0$. 
+
+```math
+\lim_{h \to 0} k = \lim_{h \to 0} g(x + h) - g(x) = 0
+```
+
+Because every value of $k$ near $0$ corresponds to some $h$ near $0$, the limit of $h$ approaches $0$ is the same limit as $k$ approaches $0$ of the new expression.
+
+```math
+\lim_{h \to 0} \frac{f(g(x+h)) - f(g(x))}{g(x+h)-g(x)} = \lim_{k \to 0} \frac{f(g(x)+k) - f(g(x))}{k}
+```
+
+It therefore follows,
+
+```math
+\begin{aligned}
+\frac{dy}{dx}
+
+
+
+&=
+\lim_{h \to 0}
+\frac{f(g(x + h)) - f(g(x))}{g(x+h) - g(x)}
+\cdot g'(x) \\
+
+&= \lim_{k \to 0} \frac{f(g(x) + k) - f(g(x))}{k} \cdot g'(x) \\
+
+&= f'(g(x)) \cdot g'(x) \\
+
+\end{aligned}
+```
+
+In a complete form this is written as,
+
+```math
+\frac{dy}{dx} = \lim_{k \to 0} \frac{f(g(x) + k) - f(g(x))}{k} \cdot \lim_{h \to 0}
+\frac{g(x+h) - g(x)}{h}
 ```
