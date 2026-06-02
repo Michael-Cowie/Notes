@@ -2,7 +2,7 @@
     <h1> Limits </h1>
 </div>
 
-Limits, however, are not primarily concerned with equality at a point. Instead, **they describe how quantities behave as they move arbitrarily close to a point**. Limits are not the process of approaching (verb), they're the result of the approach (noun). Limits introduce a distinction between exact function values and nearby convergence behaviour.
+Limits, are not primarily concerned with equality at a point. Instead, **they describe how quantities behave as they move arbitrarily close to a point**. Limits are not the process of approaching (verb), they're the result of the approach (noun). Limits introduce a distinction between exact function values and nearby convergence behaviour.
 
 One of the most common conceptual difficulties is the interpretation of the notation.
 
@@ -16,17 +16,13 @@ as though it automatically means
 f(a) = L
 ```
 
-These are fundamentally different statements.
-
-A limit describes the behaviour of function values near a point, while $f(a)$ describes the actual value of the function at the point itself. Only when the function is continuous at a do these coincide.
-
-Therefore, if the limit exists and the function is continuous at $a$, then
+These are fundamentally different statements. A limit describes the behaviour of function values near a point, while $f(a)$ describes the actual value of the function at the point itself. Only when the function is continuous at $a$ do these statements become true. Therefore, **if the limit exists and the function is continuous at $a$**, then
 
 ```math
-\lim_{x->a} f(x) = f(a)
+\lim_{x \to a} f(x) = f(a)
 ```
 
-even though these are fundamentally different statements. The limit describes **convergence behaviour near a point**, while the function describes the actual value at the point itself. The entire conceptual structure of limits depends on separating these ideas clearly.
+even though these are fundamentally different statements. The limit describes **convergence behaviour near a point, while the function describes the actual value at the point itself**. The entire conceptual structure of limits depends on separating these ideas clearly. Importantly, a limit does not mean "the value is never reached", rather it means **the definition of the limit does not require the value to be reached**.
 
 A limit **is** an exact number. When,
 
@@ -42,7 +38,9 @@ The expression
 \lim_{x \rightarrow a} f(x) = L
 ```
 
-should therefore be interpreted not as a statement of directly equality at a point, but a precise statement about convergence. Calculus is therefore not built on approximation alone, but on the rigorous study of behaviour under approach.
+should therefore be interpreted not as a statement of direct equality at a point, but a precise statement **about convergence**. Calculus is therefore not built on approximation alone, but on the rigorous study of behaviour under approach.
+
+This should be interpreted as "As $x$ gets arbitrarily close to $a$, $f(x)$ gets arbitrarily close to $L$". Note that nothing we're saying here within this definition involves the actual value of the function $f(x)$ at point $a$. **We do not care what $f(a)$ is**, it might not even exist. Here, we're trying to define what $f(x)$ means to approach something as $x$ approaches $a$.
 
 <div align='center'>
     <h1> Formal Definition </h1>
@@ -54,9 +52,13 @@ Here we will construct a formal definition to prove,
 \lim_{x \rightarrow c} f(x) = L
 ```
 
-This should be interpreted as "As $x$ gets arbitrarily close to $c$, $f(x)$ gets arbitrarily close to $L$". Note that nothing we're saying here within this definition involves the actual value of the function $f(x)$ at point $c$. We do not care what $f(c)$ is, it might not even exist. Here, we're trying to define what $f(x)$ means to approach something as $x$ approaches $c$.
+Let $f: A \to \mathbb{R}$ and let $c$ be a limit point of $A$. This means,
 
-Let $f: A \to \mathbb{R}$ and let $c$ be a limit point of $A$. Then we say
+- $f$ is a function
+- Its inputs come from a set $A$
+- Its outputs are real numbers $\mathbb{R}$
+
+Then we say
 
 ```math
 \lim_{x \to c} f(x) = L
@@ -253,13 +255,7 @@ alternatively,
 \lim_{n \to \infty} \left(1 - 10^{-n}\right) = 1
 ```
 
-This statement does not claim that one of the finite terms eventually becomes equal to $1$. Rather, it states that the sequence made arbitrarily close to $1$ by continuing the process indefinitely. The important insight here is that limits are determined by nearby behaviour, not by whether the value is eventually attained. They're concerned with the existence of a unique target value toward which behaviours converges.
-
-This idea initially appears strange because ordinary intuition often associates mathematical exactness with direct equality at a point. However, limits define exact mathematical objects through convergence itself.
-
-The limit is not merely an approximation. It is an exact value uniquely determined by the behaviour of the sequence or function under refinement.
-
-Importantly, a limit does not mean "the value is never reached", rather it means **"the definition of the limit does not require the value to be reached"**. For e
+This statement does not claim that one of the finite terms eventually becomes equal to $1$. Rather, it states that the sequence made arbitrarily close to $1$ by continuing the process indefinitely. The important insight here is that limits are determined by nearby behaviour, not by whether the value is eventually attained. They're concerned with the existence of a unique target value toward which behaviours converges. This idea initially appears strange because ordinary intuition often associates mathematical exactness with direct equality at a point. However, limits define exact mathematical objects through convergence itself.
 
 A similar idea appears in the expression
 
@@ -273,9 +269,7 @@ For every finite value of $x$,
 \frac{1}{x} > 0
 ```
 
-The expression never becomes exactly equal to zero. Yet its values become arbitrarily small as $x$ grows larger. **The limit therefore states that the outputs converge toward zero, not that the expression literally becomes zero during the process**.
-
-This distinction between "becoming equal" and "converging toward" is one of the most important conceptual transitions in calculus.
+The expression never becomes exactly equal to zero. Yet its values become arbitrarily small as $x$ grows larger. **The limit therefore states that the outputs converge toward zero, not that the expression literally becomes zero during the process**. This distinction between "becoming equal" and "converging toward" is one of the most important conceptual transitions in calculus.
 
 <div align='center'>
     <h1> Function Values Versus Limit Values </h1>
@@ -325,9 +319,7 @@ which is undefined. The limit exists even though the function value itself does 
     <h1> Derivative as a Limiting Process </h1>
 </div>
 
-The derivative is one of the most important applications of limits. Conceptually, the derivative is intended to measure instantaneous rate of change. At first this idea appears contradictory because an ordinary slope requires two distinct points. A single point alone cannot produce rise over run because there is no interval over which to measure change.
-
-Calculus resolves this difficulty by examining the slopes between nearby points and then studying the limiting behaviour of those slopes as the interval between the points shrink indefinitely.
+The derivative is one of the most important applications of limits. Conceptually, the derivative is intended to measure instantaneous rate of change. At first this idea appears contradictory because an ordinary slope requires two distinct points. A single point alone cannot produce rise over run because there is no interval over which to measure change. Calculus resolves this difficulty by examining the slopes between nearby points and then studying the limiting behaviour of those slopes as the interval between the points shrink indefinitely.
 
 **The key idea is that the existence of a limit depends on nearby convergence behaviour, not on whether the limiting value is directly attained**. It only needs to describe a unique value all sufficiently close inputs force the expression toward. That number is then taken as the derivative because it is fully determined by the local behaviour of the function, even though the defining expression itself never needs to be evaluated at the limiting case. 
 
@@ -335,9 +327,7 @@ Because the limit is not meant to describe a value the expression eventually att
 
 Calculus treats the derivative as exact because the convergence of nearby secant slopes uniquely determines one value from the local behaviour of the function. The derivative is therefore not an approximation to a slope. The derivative is the exact number uniquely determined by the limiting behaviour of nearby secant slopes. It is the exact number forced by the limiting behaviour.
 
-Calculus defines the derivative as the limit because the nearby secant slopes can converge toward one unique value as the interval width approaches zero.
-
-The derivative is therefore defined by,
+Calculus defines the derivative as the limit because the nearby secant slopes can converge toward one unique value as the interval width approaches zero. The derivative is therefore defined by,
 
 ```math
 f'(x) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
@@ -354,9 +344,7 @@ is called the difference quotient. It represents the slope of a secant line betw
 1. One point at $x$
 2. Another point at $x + h$
 
-For every finite nonzero value of $h$, this quantity is an ordinary average slope over a finite interval. **It is not yet the derivative**.
-
-To illustrate this, consider the function
+For every finite nonzero value of $h$, this quantity is an ordinary average slope over a finite interval. **It is not yet the derivative**. To illustrate this, consider the function
 
 ```math
 f(x) = x^3
@@ -412,9 +400,7 @@ Thus,
 f'(2) = 12
 ```
 
-means that the **nearby secant slopes converge uniquely toward $12$ as the interval width approaches $0$**. This is an extremely important conceptual distinction. A derivative is not defined by a single finite interval, nor is it obtained from a literal secant slope. Instead, it is defined through a limit relationship involving infinitely shrinking nearby intervals.
-
-Consequently, the derivative may be described precisely as "A derivative at a point is the exact limiting value of nearby secant slopes as the interval width approaches $0$".
+means that the **nearby secant slopes converge uniquely toward $12$ as the interval width approaches $0$**. This is an extremely important conceptual distinction. A derivative is not defined by a single finite interval, nor is it obtained from a literal secant slope. Instead, it is defined through a limit relationship involving infinitely shrinking nearby intervals. Consequently, the derivative may be described precisely as "A derivative at a point is the exact limiting value of nearby secant slopes as the interval width approaches $0$".
 
 The derivative therefore originates from convergence behaviour. It is not itself a secant slope over a finite interval. **It is the unique value that nearby secant slopes converge toward as the interval width approaches zero**.
 
@@ -442,9 +428,7 @@ the same terms converge toward
 6(2) + (2)^2 = 16
 ```
 
-giving the limit $28$. Calculus asks "As $h$ gets arbitrarily close to 0, do these values settle toward one number?" This is the derivative and also the limit.
-
-This demonstrates that terms do not vanish inherently. Their behaviour depends entirely on the value toward which the variable is approaching. The derivative specifically studies behaviour as intervals collapse toward $0$, which is why the additional terms disappear in the limiting result.
+giving the limit $28 \ (12 + 16)$. Calculus asks "As $h$ gets arbitrarily close to 0, do these values settle toward one number?" This is the derivative and also the limit. This demonstrates that terms do not vanish inherently. Their behaviour depends entirely on the value toward which the variable is approaching. The derivative specifically studies behaviour as intervals collapse toward $0$, which is why the additional terms disappear in the limiting result.
 
 Not every function possesses a derivative everywhere. Consider
 
@@ -654,3 +638,183 @@ For $x \neq 1$, this simplifies to $x + 1$. So near $x = 1$ the expression behav
 ```
 
 A limit depends on nearby behaviour, not necessarily the value at the point itself.
+
+<div align='center'>
+    <h1> Limit Laws </h1>
+</div>
+
+Once the limit of simpler expressions is known, more complicated limits can often be evaluated using algebraic rules called limit laws. These laws allow limits to be broken into smaller parts that are easier to compute.
+
+Assume
+
+```math
+\lim_{x \to a} f(x) = L
+```
+
+and
+
+```math
+\lim_{x \to a} g(x) = M
+```
+
+where both limits exist.
+
+#### Constant Law
+
+The limit of a constant is the constant itself.
+
+```math
+\lim_{x \to a}c = c
+```
+
+e.g.
+
+```math
+\lim_{x \to 5} 7 = 7
+```
+
+#### Constant Multiple Law
+
+A constant can be factored out of a limit.
+
+```math
+\lim_{x \to a} cf(x) = c \cdot \lim_{x \to a} f(x)
+```
+
+e.g.
+
+```math
+\lim_{x \to 2} 3x = 3 \cdot \lim_{x \to 2} x
+```
+
+#### Sum Law
+
+The limit of a sum is the sum of the limits.
+
+```math
+\lim_{x \to a} f(x) + g(x) = L + M
+```
+
+e.g.
+
+```math
+\lim_{x \to 3} x^2 + x = 9 + 3 = 12
+```
+
+#### Difference Law
+
+The limit of a difference is the difference of the limits.
+
+```math
+\lim_{x \to a} f(x) - g(x) = L - M
+```
+
+e.g.
+
+```math
+\lim_{x \to 4} x^2 - x = 16 - 4 = 12
+```
+
+#### Product Law
+
+The limit of a product is the product of the limits.
+
+```math
+\lim_{x \to a} f(x)g(x) = LM
+```
+
+e.g.
+
+```math
+\lim_{x \to 2} x(x + 1) = 2 \times 3 = 6
+```
+
+#### Quotient Law
+
+The limit of a quotient is the quotient of the limits, provided the denominator limit is not zero.
+
+```math
+\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{L}{M}, \qquad M \neq 0
+```
+
+e.g.
+
+```math
+\lim_{x \to 2} \frac{x^2 + 1}{x + 3} = \frac{5}{5} = 1
+```
+
+#### Power Law
+
+Powers pass through limits.
+
+```math
+\lim_{x \to a} (f(x))^n = L^n
+```
+
+e.g.
+
+```math
+\lim_{x \to 2} (x + 1)^3 = 3^3 = 27
+```
+
+#### Change of Variables in Limits
+
+Sometimes a limit contains a complicated expression that appears repeatedly. Instead of working directly with that expression, we can introduce a new variable to represent it. This process is called a change of variables or reparameterisation.
+
+Suppose  we define a new variable,
+
+```math
+\begin{aligned}
+k &= g(x + h) - g(x) \\
+k + g(x) &= g(x + h)
+\end{aligned}
+```
+
+If $g$ is continuous at $x$, then as $h \to 0$,
+
+```math
+g(x + h) \to g(x)
+```
+
+so,
+
+```math
+\begin{aligned}
+g(x + h) - g(x) &\to 0 \\
+k &\to 0
+\end{aligned}
+```
+
+Therefore,
+
+```math
+k \to 0 \qquad \text{as} \qquad h \to 0
+```
+
+Because $k$ and $h$ approach $0$ together, a limit involving $g(x + h) - g(x)$ can be rewritten in terms of $k$.
+
+Let's consider,
+
+```math
+\lim_{h \to 0} \frac{(g(x + h) - g(x))^2 + 3(g(x + h) - g(x))}{5}
+```
+
+Now, using
+
+```math
+k = g(x + h) - g(x)
+```
+
+the limit becomes,
+
+```math
+\lim_{h \to 0} \frac{k^2 + 3k}{5}
+```
+
+Since $k \to 0$ as $h \to 0$, we may replace the limiting variable.
+
+```math
+\lim_{k \to 0} \frac{k^2 + 3k}{5}
+```
+
+The value of the limit is unchanged. We have simply replaced a complicated expression with a simpler variable.
