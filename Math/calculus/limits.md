@@ -818,3 +818,46 @@ Since $k \to 0$ as $h \to 0$, we may replace the limiting variable.
 ```
 
 The value of the limit is unchanged. We have simply replaced a complicated expression with a simpler variable.
+
+#### Taking Out Components
+
+Suppose we have,
+
+```math
+\lim_{h \to 0} f(x + h) g(x)
+```
+
+Notice that the limit is taken as $h \to 0$.
+
+- $f(x + h)$ depends on $h$.
+- $g(x)$ does not depend on $h$, because $x$ is being treated as fixed.
+
+Therefore,
+
+```math
+\lim_{h \to 0} g(x) = g(x)
+```
+
+Applying the product law gives,
+
+```math
+\lim_{h \to 0} f(x + h) g(x) = \lim_{h \to 0} f(x+ h) \cdot \lim_{h \to 0} g(x)
+```
+
+Since $g(x)$ is constant with respect to $h$,
+
+```math
+= \lim_{h \to 0} f(x + h) \cdot g(x)
+```
+
+If $f$ is continuous at $x$, then
+
+```math
+\lim_{h \to 0} f(x + h) = f(x)
+```
+
+So,
+
+```math
+\lim_{h \to 0} f(x + h) \cdot g(x) = f(x)g(x)
+```

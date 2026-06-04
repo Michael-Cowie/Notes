@@ -2,15 +2,13 @@
     <h1> Derivatives </h1>
 </div>
 
-One of the most fundamental problems in mathematics is the problem of change. How can change be measured precisely? At first this question appears simple. If a car travels 100 kilometres in 2 hours, then its average speed is illustrated below.
+One of the most fundamental problems in mathematics is the problem of change. How can change be measured precisely? At first, this question appears simple. If a car travels 100 kilometres in 2 hours, then it drives at an **average** rate of $50 \frac{km}{hr}$ over the 2 hour drive to drive a total distance of 100 kilometres.
 
 <div align='center'>
     <img src='./images/8.png' width='600'>
 </div>
 
-This measures average change over a finite interval. However, deeper conceptual difficulties emerge immediately when attempting to describe at a single instant. Suppose a car is moving along a road and the question is asked, "What is the car's velocity at exactly 2 seconds?".
-
-This creates a serious mathematical problem. Ordinary velocity calculations require both,
+This measures average change over a finite interval. However, deeper conceptual difficulties emerge immediately when attempting to describe at a single instant. Suppose a car is moving along a road and the question is asked, "What is the car's velocity at exactly 2 seconds?". This creates a serious mathematical problem. Ordinary velocity calculations require both,
 
 1. Two positions
 2. An interval between them
@@ -21,7 +19,7 @@ Without an interval, there appears to be no change to measure.  A similar diffic
 \frac{\Delta y}{\Delta x}
 ```
 
-Yet **curves are not straight lines**. A curve changes direction continuously. At a single point on the curve there appears to be no second nearby points available to produce an ordinary slope. We can imagine that a car is never driving at a rate of $50\frac{km}{hr}$ continuously. The car will,
+However, **curves are not straight lines**. A curve changes direction continuously. At a single point on the curve there appears to be no second nearby points available to produce an ordinary slope. We can imagine that a car is never driving at a rate of $50\frac{km}{hr}$ continuously. The car will,
 
 - Accelerate and decelerate
 - Stop at red lights
@@ -37,9 +35,22 @@ This creates one of the deepest conceptual problems in mathematics. How can some
     <h1> Derivatives as a Rate of Change </h1>
 </div>
 
-A derivative is a mathematical tool used to describe **rate of change**. When a quantity depends on another quantity, the derivative measures how quickly the output changes as the input changes. On a graph, this appears as the slope of the curve at a particular point. A positive derivative means the function is increasing, a negative derivative means it is decreasing and a derivative of zero indicatives a flat point where the function momentarily stops rising or falling. In practical terms, derivatives allow mathematics to move beyond simply describing values and instead describe behaviour. Rather than only stating where an object is, derivatives explain how fast it is moving, how quickly population grows, how temperature changes over time or how rapidly profit increases with production.
+A derivative is a mathematical tool used to describe **rate of change**. When a quantity depends on another quantity, the derivative measures how quickly the output changes as the input changes. On a graph, this appears as the slope of the curve at a particular point. 
 
-When performing a differentiation of two variables between the $y$ and $x$ axis, we're calculating the slope between them. That is, we will be performing a calculation involving $\frac{\Delta y}{\Delta x}$ at the given point. Therefore, the units need to be understood so that the relationship makes sense. A common example is a distance-time graph. Suppose a car travels a distance $s(t)$, where $t$ is measured in hours and distance is measured in kilometres. The derivance of distance with respect to time is velocity,
+- A **positive derivative** means the function is **increasing**
+- A **negative derivative** means the function is **decreasing**
+- A **derivative of $0$** indicatives a **flat point** where the function momentarily stops rising or falling 
+
+In practical terms, derivatives allow mathematics to move beyond simply describing values and instead describe behaviour. Rather than only stating where an object is, derivatives explain 
+
+- How fast it is moving at a certain time
+- How quickly population grows at a certain time
+- How temperature changes at a certain time
+- How rapidly profit increases with production
+- How much of $y$ changes with respect to $x$, because of $\frac{\Delta y}{\Delta x}$
+- ...
+
+When performing a differentiation of two variables between the $y$ and $x$ axis, we're calculating the slope between them. That is, we will be performing a calculation involving $\frac{\Delta y}{\Delta x}$ at the given point. Therefore, the units need to be understood so that the relationship makes sense. A common example is a distance-time graph. Suppose a car travels a distance $s(t)$, where $t$ is measured in hours and distance is measured in kilometres. The derivative of the function for distance with respect to time is velocity,
 
 ```math
 v(t) = \frac{ds}{dt} = \frac{km}{h}
@@ -52,6 +63,10 @@ Suppose we graph $s(t) = t^2$. With,
 - Slope between any two points $\frac{\Delta y}{\Delta x} = \frac{\text{km}}{\text{hour}}$
 - The red line represents the function $s(t)$, graphing distance-time.
 - The blue line is a function which graphs the derivative of $s(t)$. 
+
+<div align='center'>
+    <img src='./images/11.png' width='300'>
+</div>
 
 This derivative measures how quickly distance changes as time changes. If the graph of distance versus time is steep, the car is travelling quickly. If it is shallow, the car is travelling slowly. Because distance is measured in kilometres (km) and time in hours (h), the derivative has units of kilometres per hour $\left( \frac{\text{km}}{\text{hr}}\right)$. Thus, the derivative function converts a "position" function into a "speed" function. 
 
@@ -74,19 +89,13 @@ If $t = 10$,
 
 This interpretation is fundamental in physics, engineering and economics because it allows changing systems to be analyzed instantaneously rather than only over large intervals.
 
-<div align='center'>
-    <img src='./images/11.png' width='300'>
-</div>
-
 The second derivative extends this idea further by measuring how the rate of change itself changes. In motion, the first derivative of distance gives velocity, while the second derivative of velocity gives acceleration.
 
 ```math
 a(t) = \frac{dv}{dt} = \frac{d^2s}{dt^2}
 ```
 
-Acceleration describes how quickly velocity changes over time. If a car's speed increases from $50 \frac{\text{km}}{\text{hr}}$ to $70 \frac{\text{km}}{\text{hr}}$, the vehicle is accelerating, if the speed decreases, it is declerating. 
-
-As with every differentiation we're performing a slope calculation. Because the Y axis is velocity and has units of $\frac{\text{km}}{\text{hr}}$ and the X axis has the units of $\text{hr}$.
+Acceleration describes how quickly velocity changes over time. If a car's speed increases from $50 \frac{\text{km}}{\text{hr}}$ to $70 \frac{\text{km}}{\text{hr}}$, the vehicle is accelerating, if the speed decreases, it is declerating. As with every differentiation we're performing a slope calculation. Because the $y$ axis is velocity and has units of $\frac{\text{km}}{\text{hr}}$ and the $x$ axis has the units of $\text{hr}$.
 
 ```math
 \frac{\Delta y}{\Delta x} = \frac{\frac{\text{km}}{\text{hr}}}{\text{hr}} = \frac{\text{km}}{\text{hr}} \div \text{hr} = \frac{\text{km}}{\text{hr}} \cdot \frac{1}{\text{hr}} = \frac{\text{km}}{\text{hr}^2}
@@ -104,13 +113,16 @@ If $t=10$,
 
 - The first derivative gives $v(10) = 20$. Meaning the car is currently travelling at $20 \frac{\text{km}}{\text{hr}}$.
 
-- The second derivative gives $a(10) = 2$. Meaning the cars velocity is increasing at a constant rate of $2 \frac{\text{km}}{\text{hr}^2}$
-
-This shows how each derivative adds another layer of interpretation. The original function describes position, the first derivative describes instantaneous velocity and finally the second derivative describes how rapidly the velocity itself changes over time.
+- The second derivative gives $a(10) = 2$. Meaning the cars velocity is increasing at a constant rate of $2 \frac{\text{km}}{\text{hr}^2}$.
 
 <div align='center'>
     <img src='./images/13.png' width='300'>
 </div>
+
+This shows how each derivative adds another layer of interpretation. 
+- The original function describes position.
+- The first derivative describes instantaneous velocity.
+- The second derivative describes how rapidly the velocity itself changes.
 
 <div align='center'>
     <h1> Derivative Theorem </h1>
@@ -122,13 +134,13 @@ Suppose a function changes from $f(x)$ to $f(x + h)$. We can create a generalize
     <img src='./images/14.png' width='300'>
 </div>
 
-This generalized first will be calculated as,
+This generalized function will be calculated as,
 
 ```math
 \frac{\Delta y}{\Delta x} = \frac{f(x + h) - f(x)}{x + h - x} = \frac{f(x + h) - f(x)}{h}
 ```
 
-Geometrically, this is a slope of a secant line joining two points on a curve. For fininite values of $h$, this produces an ordinary average slope over a finite interval.
+Geometrically, this is a slope of a secant line joining two points on a curve.
 
 <div align='center'>
     <img src='./images/derivative_visualized.gif' width='800'>
@@ -138,25 +150,19 @@ However, this still does not answer "What is occurring at exactly one point". To
 
 **The key idea is that the existence of a limit depends on nearby convergence behaviour, not on whether the limiting value is directly attained**. It only needs to describe a unique value all sufficiently close inputs force the expression toward. That number is then taken as the derivative because it is fully determined by the local behaviour of the function, even though the defining expression itself never needs to be evaluated at the limiting case. 
 
-Calculus defines the derivative as the limit because the nearby secant slopes can converge toward one unique value as the interval width approaches $0$.
-
-**The derivative is therefore defined by**,
+Calculus defines the derivative as the limit because the nearby secant slopes can converge toward one unique value as the interval width approaches $0$. **The derivative is therefore defined by**,
 
 ```math
 f'(x) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 ```
 
-It is therefore crucila to understand that **the derivative is a limit value**. The derivative is not obtained by directly substituting $h=0$. Doing so would produce division by zero. Instead, calculus examines the behaviour of nearby secant slopes as the interval width becomes arbitrarily small. This creates an extremely important conceptual distinction.
-
-The derivative **is not**,
+It is therefore crucial to understand that **the derivative is a limit value**. The derivative is not obtained by directly substituting $h=0$. Doing so would produce division by 0. Instead, calculus examines the behaviour of nearby secant slopes as the interval width becomes arbitrarily small. This creates an extremely important conceptual distinction. The derivative **is not**,
 
 - One finite slope
 - One secant line
 - One ordinary ratio
 
-Rather, the derivative at a point is the exact limiting value of nearby secant slopes as the interval width approaches zero. This means the derivative originates from convergence behaviour. **The derivative is therefore the exact number forced by the limiting behaviour**.
-
-Finite secant slopes may differ slightly from one another. However, if all sufficiently small nearby slopes converge toward one unique value, calculus defines that value to be the derivative. 
+Rather, the derivative at a point **is the exact limiting value** of nearby secant slopes as the interval width approaches 0. This means the derivative originates from convergence behaviour. **The derivative is therefore the exact number forced by the limiting behaviour**. Finite secant slopes may differ slightly from one another. However, if all sufficiently small nearby slopes converge toward one unique value, calculus defines that value to be the derivative. 
 
 ### Manual Derivative Caculation
 
@@ -174,7 +180,7 @@ s'(t) &= \lim_{h \to 0} \frac{(t+h)^2-t^2}{h} \\
 s'(t) &= \lim_{h \to 0} \frac{t^2+2th+h^2-t^2}{h} \\
 s'(t) &= \lim_{h \to 0} \frac{2th+h^2}{h} \\
 s'(t) &= \lim_{h \to 0} \frac{h(2t+h)}{h} \\
-s'(t) &= \lim_{h \to 0} (2t+h)
+s'(t) &= \lim_{h \to 0} 2t+h
 \end{aligned}
 ```
 
@@ -184,13 +190,13 @@ Now let $h \to 0$.
 s'(t) = 2t
 ```
 
-In
+During the final calculation,
 
 ```math
-\lim_{h \to 0} (2t + h)
+\lim_{h \to 0} 2t + h
 ```
 
-the $h$ term becomes $0$ because the limit is examining what happens as $h$ gets arbitrarily close to $0$. Earlier in the derivation, $h$ represented a small change in time used to compare two nearby points on the graph. After simplifying the difference quotient, the only remaining effect of that small change is the extra $h$ in $2t + h$. As the gap between the two points shrinks to nothing, that extra amount also shrinks to nothing, leaving only the instantaneous rate of change. This is possible because the derivative is the limit value where $h \to 0$, resulting it in being removed as it can be simplifying as it converges to a single value.
+the $h$ term vanishes because the limit is examining what happens as $h$ gets arbitrarily close to $0$. Earlier in the differentiation, $h$ represented a small change in time used to compare two nearby points on the graph. After simplifying the difference quotient, the only remaining effect of that small change is the extra $h$ in $2t + h$. As the gap between the two points shrinks to nothing, that extra amount also shrinks to nothing, leaving only the instantaneous rate of change. This is possible because the derivative is the limit value where $h \to 0$, resulting it in being removed as it can be simplifying as it converges to a single value.
 
 
 <div align='center'>
@@ -257,6 +263,64 @@ or generally
 
 This structure preserves the relationship between the variables while clearly indicating repeated differentiation.
 
+#### Fraction-Like Behaviour
+
+One of the most distinctive features of Leibniz notation is that it often behaves as though it were an ordinary fraction. Let's take,
+
+```math
+\frac{dy}{dx} = f(x)
+```
+
+It is common to write
+
+```math
+dy = f(x) \ dx
+```
+
+or to apply symbolic manipulations that resemble multiplying or dividing by $dx$. Similar behaviour appears in the chain rule.
+
+```math
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+```
+
+Where the factor $du$ appears to "cancel", leaving the derivative of $y$ with respect to $x$. At first glance, this may seem surprising because the derivative is not formally defined as a quotient of two quantities. Rather, the derivative is defined through a limit of difference quotients,
+
+```math
+\frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}
+```
+
+From this definition alone, $dy$ and $dx$ **are not independent algebraic quantities** that may simply be cancelled like ordinary fraction behaviour. The symbol $\frac{dy}{dx}$ represents **a single mathematical object**, the derivative.
+
+Nevertheless, Leibniz deliberately designed his notation to reflect the idea of infinitesimal changes. In Leibniz's original conception, $dy$ and $dx$ represented infinitesimally small changes in the variables $y$ and $x$, and the derivatives was viewed as the ratio between them. Although modern calculus no longer defines derivatives in this way, the notation preserves this intuition.
+
+A subtle but important distinction should also be made the derivative and the differential. Although it is common to write
+
+```math
+\frac{dy}{dx} = f'(x)
+```
+
+and then "multiply" by $dx$ to obtain
+
+```math
+dy = f'(x) \ dx
+```
+
+**this is not how the equation is justified normally**. Since the derivative is not defined as fractions, the equation cannot be rigorously derived through ordinary algebraic multiplication. Instead, the differential $dy$ is defined in terms of the derivative. If $y = f(x)$, then the differential of $y$ is defined by
+
+```math
+dy = f'(x) \ dx
+```
+
+where $dx$ is an independently chosen differential of the variable $x$. Consequently, the equation is true by definition rather than by multiplication of the derivative notation.
+
+As calculus developed, mathematicians discovered that many of the symbolic suggested by Leibniz notation could be justified rigorously. In modern differential calculus, $dx$ and $dy$ are mathematical objects in their own right and the equations such as
+
+```math
+dy = f'(x) \ dx
+```
+
+are genuine mathematical statements. Consequently, many calculations that appear to involve multiplying, dividing or cancelling $dx$ and $dy$ and be understood within a precise mathematical framework.
+
 ## Prime Notation — $f'(x)$
 
 Prime notation is written as
@@ -265,9 +329,7 @@ Prime notation is written as
 f'(x)
 ```
 
-and was introduced by Joseph-Louis Language. This notation is read as "f prime of x". Where Leibnzi notation emphasizes variables and relationships, prime notation emphasizes the function itself. The prime symbol marks the function as having been differentiated.
-
-For example, if
+and was introduced by Joseph-Louis Language. This notation is read as "f prime of x". Where Leibnzi notation emphasizes variables and relationships, prime notation emphasizes the function itself. The prime symbol marks the function as having been differentiated. For example, if
 
 ```math
 f(x) = x^3
@@ -289,9 +351,7 @@ Prime notation is particularly effective when discussing repeated differentiatio
 f(x) \to f'(x) \to f''(x)
 ```
 
-This creates a concise symbolic hierarchy that is visually easy to follow. In subjects such as differential equations and mathematical analysis, where higher derivatives appear frequently, prime notation becomes more frequently used.
-
-Despite its simplicity, prime notation carries a strong conceptual message, differentiation transforms functions into new functions.
+This creates a concise symbolic hierarchy that is visually easy to follow. In subjects such as differential equations and mathematical analysis, where higher derivatives appear frequently, prime notation becomes more frequently used. Despite its simplicity, prime notation carries a strong conceptual message, differentiation transforms functions into new functions.
 
 ## Operator Notation — $\frac{d}{dx} f(x)$
 
@@ -309,15 +369,19 @@ The symbol
 \frac{d}{dx}
 ```
 
-acts as a mathematical instruction meaning "differentiate with respect to $x$". In this notation , differentiation is treated less as a static relationship and more as an active process.
+acts as a mathematical instruction meaning "differentiate with respect to $x$". The phrase "with respect to $x$ refers to that fact that,
 
-For example,
+1. $x$ is the variable being allowed to vary, i.e. we can have $x$ and $x + h$.
+2. The denominator contains the change in $x$, namely $\Delta x$.
+3. The limit is taken as $\Delta x \to 0$
+
+In this notation , differentiation is treated less as a static relationship and more as an active process. For example,
 
 ```math
 \frac{d}{dx} (x^2) = 2x
 ```
 
-means "apply differentiation to the expression $x^2$. This means to apply the function $f(x) = x^2$ in the quotient difference. Although this is what occurs for every differentiation notation, this notation places a larger emphasis on functions.
+means, apply differentiation to the expression $x^2$. This means to apply the function $f(x) = x^2$ in the quotient difference. Although this is what occurs for every differentiation notation, this notation places a larger emphasis on functions.
 
 ```math
 \frac{d}{dx}(x^2) = \lim_{h \rightarrow 0} \frac{(x + h)^2 - x^2}{h}
@@ -341,9 +405,7 @@ While the definition of the derivative comes directly from the limit process,
 f'(x) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 ```
 
-in practice, most derivatives are not computed directly from this expression. Instead, calculus develops a set of differentiation rules that allow derivatives to be calculated efficiently without repeatedly expanding limits.
-
-These rules are not new definitions of differentiations. Rather, they are logical consequences of the limit definition, derived once and then used as general tools. They allow complex functions to be differentiated through structured patterns rather than first principles each time.
+in practice, most derivatives are not computed directly from this expression. Instead, calculus develops a set of differentiation rules that allow derivatives to be calculated efficiently without repeatedly expanding limits. These rules are not new definitions of differentiations. Rather, they are logical consequences of the limit definition, derived once and then used as general tools. They allow complex functions to be differentiated through structured patterns rather than first principles each time.
 
 ## Power Rule — $\frac{d}{dx}(x^n)$
 
@@ -376,7 +438,7 @@ as meaning the entire function must match a derivative rule exactly before the r
 \frac{d}{dx}(x^n) = nx^{n-1}
 ```
 
-it may seem that the rule only applies when the whole function is a single power such as $x^5$ or $x^10$. However, this interpretation overlooks an important fact, derivative rules are not only rules about whole functions, but also rules about how derivatives interact with algebraic operations such as addition.
+it may seem that the rule only applies when the whole function is a single power such as $x^5$ or $x^{10}$. However, this interpretation overlooks an important fact, derivative rules are not only rules about whole functions, but also rules about how derivatives interact with algebraic operations such as addition.
 
 The expression
 
@@ -402,9 +464,7 @@ The derivative operator $\frac{d}{dx}$ has a special property called linearity. 
 \frac{d}{dx}(f(x) + g(x)) = \frac{d}{dx}f(x) + \frac{d}{dx}g(x)
 ```
 
-This rule is logically separate from the power rule. The sum rule says that the differentiation passes through addition. In effect, the derivative operator distributes over sums in the same way multiplication distributes over addition in algebra.
-
-So when differentiating
+This rule is logically separate from the power rule. The sum rule says that the differentiation passes through addition. In effect, the derivative operator distributes over sums in the same way multiplication distributes over addition in algebra. So when differentiating
 
 ```math
 \frac{d}{dx} (x^4 + x^3)
@@ -454,23 +514,13 @@ and
 
 where $c$ is a constant.
 
-These rules state that differentiation distributes across addition and factors through constants. In other words, each part of a function can be differentiated independently before being combined.
-
-For example
+These rules state that differentiation distributes across addition and factors through constants. In other words, each part of a function can be differentiated independently before being combined. For example
 
 ```math
 \frac{d}{dx} (x^2 + x^3) = 2x + 3x^2
 ```
 
-and
-
-```math
-\frac{d}{dx}(5x^2) = 10x
-```
-
-These properties are essential because they allow complex espressions to be broken into simpler components. Without linearity, differentiation would require full limit expansion for every expression, making calculus far less practical.
-
-We can try to visualize this by observing the behaviour in
+These properties are essential because they allow complex espressions to be broken into simpler components. Without linearity, differentiation would require full limit expansion for every expression, making calculus far less practical. We can try to visualize this by observing the behaviour in
 
 ```math
 \begin{aligned}
@@ -489,7 +539,7 @@ We can try to visualize this by observing the behaviour in
     <img src='./images/15.png' width='600'>
 </div>
 
-Now, if we zoom in and take the point at $x = 0.5$ We create a new variable $df$ where
+Now, if we zoom in and take the point at $x = 0.5$, we create a new variable $df$ where
 
 ```math
 df = d(\sin(x)) + d(x^2)
@@ -499,10 +549,10 @@ In this example $d$ means "differential" or "the tiny change". So $d(\sin(x))$ m
 
 ```math
 \begin{aligned}
-dy &= d(\sin(x))
+dy &= d(\sin(x)) = \cos(x) \ dx
 \\
 
-dy &= d(x^2)
+dy &= d(x^2) = 2x \ dx
 \end{aligned}
 ```
 
@@ -566,9 +616,7 @@ When two functions are multiplied, differentiation becomes more structured. The 
 
 This rule shows that the derivative of a product is not simply the product of the derivatives.
 
-Take $x^2 \cdot x^5$ for each function we can observe
-
-Let,
+Take $x^2, \cdot x^5$. For each function we can observe
 
 ```math
 f(x) = x^2 \qquad g(x) = x^5
@@ -630,7 +678,7 @@ df = d(\sin(x)) x^2 + \sin(x) d(x^2) + d(x^2)
 Because
 
 ```math
-\lim_{x \to 0} dx^2 = 0
+\lim_{x \to 0} d(x^2) = 0
 ```
 
 The expression is simplified to
@@ -643,7 +691,7 @@ Which represents the product rule.
 
 #### Product Rule - Algebraic Proof
 
-Here, we will prove the product rule.
+Here, we will prove the product rule algebraically which is a more rigorous proof than the conceptual geometric approach.
 
 ```math
 \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
@@ -728,9 +776,7 @@ F'(x) = f(x) \cdot g'(x) + g(x) \cdot f'(x)
 
 ## Chain Rule — Differentiating Composite Functions
 
-Many functions are not formed from a single operation, but instead contain multiple layers of functions nested insde one another. These are known as **composite functions**. A composite function occurs when the output of one function becomes the input of another function.
-
-A general composite function is written as
+Many functions are not formed from a single operation, but instead contain multiple layers of functions nested insde one another. These are known as **composite functions**. A composite function occurs when the output of one function becomes the input of another function. A general composite function is written as
 
 ```math
 f(g(x))
@@ -777,9 +823,7 @@ This decomposition creates the dependency chain,
 x \to u \to y
 ```
 
-It is important to understand that $u$ is not a new graph axis. The graph is still entirely determined by the relationship between $x$ and $y$. The variable $u$ is an intermediate quantity used to describe how changes propagate internally through the composite function.
-
-Changing $x$ changes $u$, and changing $u$ then changes $y$. The chain rule therefore studies how change cascades through these intermediate changes.
+It is important to understand that $u$ is not a new graph axis. The graph is still entirely determined by the relationship between $x$ and $y$. The variable $u$ is an intermediate quantity used to describe how changes propagate internally through the composite function. Changing $x$ changes $u$, and changing $u$ then changes $y$. The chain rule therefore studies how change cascades through these intermediate changes.
 
 Differentiating both stages gives,
 
@@ -799,7 +843,7 @@ u = 1^2 + 3(1) = 4
 This means that at the point where $x = 1$, the corresponding intermediate value is $u = 4$. Now evaluate the derivatives at this point. First,
 
 ```math
-\frac{du}{dx} 2(1) + 3 = 5
+\frac{du}{dx} = 2(1) + 3 = 5
 ```
 
 This means that near $x = 1$, a small change in $x$ produces a change in $u$ that is approximately $5$ times as large. Symbolically,
@@ -836,15 +880,15 @@ dy &= 8(4)^7 \cdot 5 \, dx
 \end{aligned}
 ```
 
-<div align='center'>
-    <img src='./images/18.png' width='600'>
-</div>
-
 Therefore,
 
 ```math
 \frac{dy}{dx} = 8(4)^7 \cdot 5
 ```
+
+<div align='center'>
+    <img src='./images/18.png' width='600'>
+</div>
 
 The first derivative,
 
@@ -852,15 +896,13 @@ The first derivative,
 \frac{du}{dx}
 ```
 
-describes how $x$ scale into changes in $u$. The second derivative,
+describes how changes in $x$ cascades changes in $u$. The second derivative,
 
 ```math
 \frac{dy}{du}
 ```
 
-describes how changes in $u$ scale into changes in $y$. 
-
-Because the output change from the first derivative stage becomes the input for the second stage, the scaling factors multiply together. This produces the chain rule relationship.
+describes how changes in $u$ scale into changes in $y$.  Because the output change from the first derivative stage becomes the input for the second stage, the scaling factors multiply together. This produces the chain rule relationship.
 
 ```math
 \frac{dy}{dx} = \frac{dy}{dy} \cdot \frac{du}{dx}
@@ -918,7 +960,7 @@ The chainrule therefore states,
 \end{aligned}
 ```
 
-#### Example 2 - Function Composite View with Leibniz notation
+#### Example 2 - Function Composite View with Leibniz Notation
 
 Let,
 
@@ -937,7 +979,7 @@ u &= x^2 + 3x
 \end{aligned}
 ```
 
-Therefore
+Which follows,
 
 ```math
 \begin{aligned}
@@ -948,7 +990,7 @@ y &= u^8
 \end{aligned}
 ```
 
-finally,
+Therefore,
 
 ```math
 \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = 8u^7 \cdot (2x + 3) = 8(x^2 + 3x)^7 (2x + 3)
@@ -973,7 +1015,10 @@ z = x^2 + 1
 The function now becomes $y = z^3$. At this stage, the ordinary power rule can be applied directly.
 
 ```math
-\frac{dy}{dz} = 3z^2
+\begin{aligned}
+y &= z^3 \\
+\frac{dy}{dz} &= 3z^2
+\end{aligned}
 ```
 
 Differentiating $z = x^2 + 1$ gives
