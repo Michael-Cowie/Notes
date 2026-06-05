@@ -120,9 +120,14 @@ If $t=10$,
 </div>
 
 This shows how each derivative adds another layer of interpretation. 
-- The original function describes position.
-- The first derivative describes instantaneous velocity.
-- The second derivative describes how rapidly the velocity itself changes.
+- The original function describes position. The $y$ axis units is $km$. The $x$ axis units is $hr$.
+- The first derivative describes instantaneous velocity. The $y$ axis units is $\frac{km}{hr}$. The $x$ axis units is $hr$.
+- The second derivative describes how rapidly the velocity itself changes. The $y$ axis units is $\frac{km}{hr^2}$. The $x$ axis units is $hr$.
+
+<div align='center'>
+    <img src='./images/19.png' width='700'>
+</div>
+
 
 <div align='center'>
     <h1> Derivative Theorem </h1>
@@ -155,6 +160,11 @@ Calculus defines the derivative as the limit because the nearby secant slopes ca
 ```math
 f'(x) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 ```
+
+<div align='center'>
+    <img src='./images/velocity_derivative_visualized.gif' width='800'>
+</div>
+
 
 It is therefore crucial to understand that **the derivative is a limit value**. The derivative is not obtained by directly substituting $h=0$. Doing so would produce division by 0. Instead, calculus examines the behaviour of nearby secant slopes as the interval width becomes arbitrarily small. This creates an extremely important conceptual distinction. The derivative **is not**,
 
