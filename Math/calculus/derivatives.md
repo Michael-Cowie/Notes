@@ -237,7 +237,17 @@ The notation,
 \frac{dy}{dx}
 ```
 
-is known as Leibniz notation, named after Gottfried Wilhelm Leibniz, one of the founders of calculus. It is one of the most recognizable forms of derivative notation and remains especially common in physics, engineering and applied mathematics. This notation is read as "The derivative of $y$ with respect to $x$" or informally "d y by d x".
+is known as Leibniz notation, named after Gottfried Wilhelm Leibniz, one of the founders of calculus. It is one of the most recognizable forms of derivative notation and remains especially common in physics, engineering and applied mathematics. 
+
+This notation is read as "The derivative of $y$ with respect to $x$" or informally "d y by d x". Where the "d" means differential. Alternatively it can be meaning the differential (or change, represented by $d$) of the quantity in the numerator, with respect to the variable in the denominator.
+
+Hence,
+
+- **Numerator - What is changing**, $y$, $f(x)$, etc. This is the **dependent variable, what is changing**.
+
+- **Denominator - What it is changing with respect to**, $x$, $t$, etc. This is the **independent variable, what you change**.
+
+In plain words "How $y$ changes as $x$ changes" or more generally "Rate of change of the numerator with respect to the denominator variable".
 
 One of the defining characteristics of Leibniz notation is that it explicitly displays the relationship between variables. The numerator indicates the quantity being differentiated, while the denominator indicates the variable with respect to which the differentiation occurs. In this way, the notation naturally communicates dependency.
 
@@ -256,6 +266,99 @@ immediately indicates differentiation with respect to time, while
 indicates differentiation with respect to radius. The notation therefore embeds interpretation directly into the symbols themselves.
 
 Historically, Leibniz developed this notation from the idea of infinitesimal changes. Although modern calculus defines derivatives rigorously through limits, the notation preserves the intuitive appearance of a ratio between tiny changes. That is $dy$ represents the "infinitesimal" change in $y$ and $dx$ represents the "infinitesimal" change in $x$. Therefore, $\frac{dy}{dx}$ can be conceptually thought of as the ratio of these two infinitesimal variables which is represented in the notation.
+
+If 
+
+```math
+y = f(x)
+```
+
+then $y$ and $f(x)$ represent the same quantity. Consequently,
+
+```math
+dy = d(f(x))
+```
+
+and therefore
+
+```math
+\frac{dy}{dx} = \frac{d(f(x))}{dx}
+```
+
+Similarly, if
+
+```math
+y = g(h)
+```
+
+then
+
+```math
+\frac{dy}{dh} = \frac{d(g(h))}{dh}
+```
+
+This demonstrates that the numerator may be a variable or an entire expression. In both cases it identifies the quantity whose rate of change is being
+
+A crucial point to understand is that $y$ and $x$ are frequently used for graphing, but are not special because they're axes, they're just names.
+
+In $y = f(x)$, you happen to be using graphing convention where
+
+- $x$ is the input, a horizontal axis.
+- $y$ is the output, a vertical axis.
+
+but calculus doesn't depend on that visual choice. If we were to instead have,
+
+```math
+h = j(z) = z^2
+```
+
+Nothing structurally changes. It is the same idea.
+
+- $z$ is the input, independent variable.
+- $h$ is the output, dependent variable.
+
+So it just means "Take a number $z$, square it and call it $h$". So think of this as,
+
+```math
+\text{input} \to \text{rule} \to \text{output}
+```
+
+So if,
+
+```math
+\begin{aligned}
+h &= j(z) = z^2 \\
+\frac{dh}{dz} &= 2z
+\end{aligned}
+```
+
+So this means identically, "How the output $h$ changes when the input $z$ changes". So to generalize this notation, it's read as, **change in output quantity per change in input quantity**. The thinking for these should be "There is a relationship between two quantities, and one depends on the other.".
+
+So for additional examples,
+
+##### $y = f(x)$
+
+$y$ depends on $x$. Hence, $\frac{dy}{dx}$ measures how $y$ changes with $x$. 
+
+For functional notation it is written as 
+
+```math
+\frac{d(f(x))}{dx} = f'(x)
+```
+
+##### $h = j(z)$
+
+$h$ depends on $z$. Hence, $\frac{dh}{dz}$ measures how $h$ changes with $z$. 
+
+For functional notation it is written as 
+
+```math
+\frac{d(j(z))}{dz} = j'(z)
+```
+
+##### $P = r^3$
+
+$P$ depends on $r$. Hence, $\frac{dP}{dr}$ measures how $P$ changes with $z$.
 
 Leibniz notation is also highly effective when expressing relationships between variables algebraically. In differential equations, for example, derivatives are often manipulated symbolically in ways that resemble ordinary fractions. Because the notation visually separates the dependent and independent variables, it naturally supports these forms of calculation.
 
@@ -385,6 +488,14 @@ acts as a mathematical instruction meaning "differentiate with respect to $x$". 
 2. The denominator contains the change in $x$, namely $\Delta x$.
 3. The limit is taken as $\Delta x \to 0$
 
+If we have $y = f(x) = x^2$. All of these are equivalent differentiation notations.
+
+```math
+\frac{d}{dx}y = 
+\frac{d}{dx}f(x) =
+\frac{d}{dx}(x^2)
+```
+
 In this notation , differentiation is treated less as a static relationship and more as an active process. For example,
 
 ```math
@@ -405,6 +516,155 @@ Operator notation becomes particularly valuable when differentiating large or co
 
 The notation makes it immediately clear that the derivative operator acts on the entire product inside the brackets. Another reason operator notation is important is that it encourages viewing differentiation as a mathematical transformation. The derivative operator behaves almost like a machine that accepts a function as input and produces another function as output.
 
+
+<div align='center'>
+    <h1> Differential Notation </h1>
+</div>
+
+While differential notation is most commonly encountered through the derivative $\frac{dy}{dx}$, the symbols $dx$, $dy$ and $d(f(x))$ have meanings of their own that are worth understanding. Developing an intuition for these symbols provides a deeper understanding of derivatives and their applications.
+
+The starting point is a finite change in the input $\Delta x$ which produces a corresponding finite change in the output
+
+```math
+\Delta y = f(x + \Delta x) - f(x)
+```
+
+The ratio
+
+```math
+\frac{\Delta y}{\Delta x}
+```
+
+represents the average rate of change over the interval. To obtain the instantaneous rate of change, we take the limit.
+
+```math
+\frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}
+```
+
+This is the derivative. Notice that the limit is applied to the entire ratio $\frac{dy}{dx}$, not $\Delta x$ or $\Delta y$ individually. This distinction is important. The symbols $dx$ and $dy$ **are introduced after the derivative has been established** and provide a convenient language for **describing infinitesimal change**.
+
+Conceptually,
+
+- $dx$ represents an infinitesimal change in the input variable.
+
+- $dy$ represents the corresponding infinitesimal change in the output variable.
+
+If a point lies on a curve at $(x, y)$, then a tiny movement along the curve can be described by
+
+```math
+(x + dx, y + dy)
+```
+
+These quantities are not intended to represent finite displacements. Instead, they describe local behaviour at a single point. Once the derivatives exists, we define the differential relationship
+
+```math
+dy = \frac{dy}{dx}dx
+```
+
+This equation is one of the most important identities in calculus. It states that the infinitesimal change in the output is obtained by multiplying the infinitesimal change in the input by the derivative. In this sense, the derivative acts as a local scaling factor.
+
+Consider the function
+
+```math
+y = x^3
+```
+
+Its derivative is
+
+```math
+\frac{dy}{dx} = 3x^2
+```
+
+Therefore,
+
+```math
+dy = 3x^2 dx
+```
+
+At the point $x = 2$,
+
+```math
+dy = 12dx
+```
+
+The symbol $dx$ is not a finite input value. It represents an infinitesimal change arising from the limiting process that produced the derivative. Instead, the equation $dy = 12dx$ should be interpreted as "Near $x=2$, the output changes approximately $12$ times as fast as the input". Although $dx$ itself is not a finite value, differentials are often used to approximate finite changes.
+
+Suppose we choose
+
+```math
+\Delta x = 0.1
+```
+
+Since the derivative at $x = 2$ is $12$, we estimate
+
+```math
+\Delta y \approx dy = 12(0.1) = 1.2
+```
+
+The original value is $2^3 = 8$, adding the estimated change gives $8 + 1.2 = 9.2$. 
+
+```math
+(2, 8) \to (2 + \Delta x, 8 + \Delta y) \to (2.1, 9.2)
+```
+
+The exact value is $2.1^3 = 9.261$. This is one of the primary uses of differentials, they provide local linear approximations.
+
+#### Differential Notation for Functions
+
+Differential notation applies not only to variables such as $y$, but also directly to functions.
+
+Consider a function 
+
+```math
+y = f(x) = x^3
+```
+
+The differential of the function value is written as
+
+```math
+dy = d(f(x)) = df = d(x^3)
+```
+
+This is read as "The differential of $f(x)$ or the infinitesimal change in $f(x)$". This describes how the value of the function changes when its input changes by an infinitesimal amount. 
+
+Just as
+
+```math
+dy = \frac{dy}{dx}dx
+```
+
+We have
+
+```math
+dy = d(f(x)) = \frac{d(f(x))}{dx}dx = \frac{dy}{dx}dx
+```
+
+Because writing $d(f(x))$ repeatedly becomes cumbersome, mathematicians introduce the shorthand notation $df$.
+
+```math
+df = d(f(x)) = dy
+```
+
+This gives the familiar identity
+
+```math
+dy = d(f(x)) = df = \frac{dy}{dx}dx= \frac{df}{dx}dx = \frac{d(f(x))}{dx}dx = f'(x) dx
+```
+The key distinction is,
+
+- $df$ is a **differential**, an infinitesimal change in $f$
+- $\frac{df}{dx}$ is a **derivative**, a rate of change. The derivative determines how large the differential will be for a given infinitesimal input change.
+- $f'(x)$ is another notation for a derivative
+
+The functional representation and derivatives is often used to how as change of distance in the context of proofs. Below is an example for the product rule.
+
+<div align='center'>
+    <img src='./images/22.png' width='300'>
+</div>
+
+Here, $\frac{df}{dx}$ is used to represent a change of length, $df$, but by definition the derivative is a rate of change. In this example, the input increases by some amount $dx$. This means as the input $x$ increases by some amount $dx$, the function $f(x)$ increases by an amount $df$.
+
+
 <div align='center'>
     <h1> Differentiation Rules </h1>
 </div>
@@ -416,6 +676,38 @@ f'(x) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 ```
 
 in practice, most derivatives are not computed directly from this expression. Instead, calculus develops a set of differentiation rules that allow derivatives to be calculated efficiently without repeatedly expanding limits. These rules are not new definitions of differentiations. Rather, they are logical consequences of the limit definition, derived once and then used as general tools. They allow complex functions to be differentiated through structured patterns rather than first principles each time.
+
+## Constant Rule
+
+If we have a function 
+
+```math
+f(x) = 3
+```
+
+or any function with a constant. It's graph would be a horizontal line.
+
+<div align='center'>
+    <img src='./images/20.png' width='600'>
+</div>
+
+Taking any two points,
+
+```math
+\frac{\Delta y}{\Delta x} = \frac{0}{\Delta x} = 0
+```
+
+For this reason, the slope is always $0$ and therefore the derivative is always $0$. We write the generalization as the following,
+
+```math
+\frac{d}{dx} C = 0
+```
+
+or using a more rigorous definition,
+
+```math
+\frac{d}{dx} (C) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} = \frac{C - C}{\Delta x} = 0
+```
 
 ## Power Rule — $\frac{d}{dx}(x^n)$
 
@@ -507,6 +799,107 @@ giving
 ```
 
 The important conceptual distinction is that $f(x)$ names the entire function, but derivative rules act according to the internal algebraic structure of that function.
+
+#### Power Rule Visualized - 3D
+
+Suppose we have a cube with side length $x$. The volume of the cube is given by
+
+```math
+y = V = x^3
+```
+
+where $V$ represents the volume.
+
+<div align='center'>
+    <img src='./images/21.png' width='500'>
+</div>
+
+If the side length is increased by an infinitesimal amount $dx$, then additional volume is created around the existing cube. The 3 largest contributions come from the 3 new rectangular prisms attached to the faces of the cube. Each has volume
+
+```math
+x^2 dx
+```
+
+giving a total contribution of
+
+```math
+x^2dx + x^2xdx + x^2x = 3x^2 dx
+```
+
+Additionally, there are three smaller edge prisms and one corner cube, highlighted in orange. Their combined volume is
+
+```math
+3(dx \cdot dx \ \cdot x) + dx^3 = 3 x dx^2 + dx^3
+```
+
+Since $dx^2$ and $dx^3$ are higher-order infinitesimals, they become negligible compared to $dx$ as $dx \to 0$. This gives
+
+```math
+d(x^3) = 3x^3dx
+```
+
+Therefore,
+
+```math
+\begin{aligned}
+dy &= dV = d(x^3) = 3x^2\,dx \\
+\frac{dy}{dx} &= \frac{dV}{dx} = \frac{d(x^3)}{dx} = 3x^2
+\end{aligned}
+```
+
+This states that the derivative of $x^3$ is $3x^2$, and that the differential change in volume is obtained by multiplying the differential change in side length, $dx$, by the derivative.
+
+In other words,
+
+```math
+dV = dy = 3x^2dx
+```
+
+states that a small change in side length $dx$ produces an approximately linear change in volume $dV$. The derivative $3x^2$ acts as the scaling factor that converts changes in side length inot changes in volume.
+
+The derivative
+
+```math
+\frac{dV}{dx} = 3x^2
+```
+
+describes how rapidly the volume changes with respect to the side length at a particular value of $x$.
+
+For example, when $x=2$ the derivative
+
+```math
+\frac{dV}{dx} = 3x^2 = 3(2)^2 = 12
+```
+
+Thus,
+
+```math
+dV = 12dx
+```
+
+This means that near a cube with side length $2$, an infinitesimal increase in side length produces approximately $12$ times that amount of change in volume.
+
+Similarly, when $x = 4$ the derivative is
+
+```math
+\frac{dV}{dx} = 3(4)^2 = 48
+```
+
+Thus,
+
+```math
+dV = 48 dx
+```
+
+This means that near a cube with side length $4$, the same infinitesimal increase in side length produces approximately $48$ times that amount of change in volume.
+
+A larger cube has much larger faces. Since the new volume is formed by extending those faces outward, the same increase in side length sweeps out a greater amount of volume when the cube is already large. For this reason, volume does not grow at a constant rate. As the cube becomes larger, each additional increase in side length creates increasingly more volume. The derivative
+
+```math
+\frac{dV}{dx} =3x^2
+```
+
+captures this behaviour precisely, showing that the rate of volume growth is proportional to the square of the side length.
 
 ## Linearity Rules — Addition and Constant Multiplication
 
@@ -697,7 +1090,33 @@ The expression is simplified to
 df = d(\sin(x)) x^2 + \sin(x) d(x^2)
 ```
 
-Which represents the product rule.
+Now we use the differential identities
+
+```math
+\begin{aligned}
+d(\sin(x)) &= \cos(x)\,dx = \frac{dy}{dx}\,dx \\
+d(x^2) &= 2x\,dx = \frac{dy}{dx}\,dx
+\end{aligned}
+```
+
+Substituting gives
+
+```math
+\begin{aligned}
+df &= (\cos(x)\,dx)x^2 + \sin(x)(2x\,dx) \\
+df &= \cos(x)\,x^2\,dx + \sin(x)\,2x\,dx \\
+f'(x) = \frac{df}{dx} &= \cos(x)\,x^2 + \sin(x)\,2x
+\end{aligned}
+```
+
+Another visual interpretation of the product rule is directing labelling the derivatives.
+
+<div align='center'>
+    <img src='./images/23.png' width='300'>
+</div>
+
+Here, we label the derivative $\frac{df}{dx}$ as the width increase $df$ because the input has increased by an amount $dx$, which represents the function output increase $df$.
+
 
 #### Product Rule - Algebraic Proof
 
@@ -797,11 +1216,23 @@ where,
 - $g(x)$ is called the inner function
 - $f(x)$ is called the outer function
 
+Examples can include,
+
+1. $f(x) = \sin(2x)$. Where $\sin$ is the outer function and $2x$ is the inner function.
+
+2. $f(x) = (3x + 1^5$. Where $u^5$ is the outer function and $3x +1$ is the inner function.
+
+3. $f(x) = \sqrt{1 + x^3}$. First rewrite as $f(x) = (1 + x^3)^{\frac{1}{2}}$. The outer function is now $u^{\frac{1}{2}}$ and the inner function is $1 + x^3$.
+
 The chain rule describes how derivatives behave when functions are composted together. It is written as
 
 ```math
 \frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x))
 ```
+
+<div align='center'>
+    <img src='./images/32.png' width='400'>
+</div>
 
 This multiplication may appear confusing because function composition itself is not multiplication. When functions are composed, the output of one function is substituted into another function. However, derivatives do not describe the functions themselves. Instead, derivatives describe how small changes propagate through the functions.
 
@@ -920,6 +1351,126 @@ describes how changes in $u$ scale into changes in $y$.  Because the output chan
 
 This relationship occurs because any small changes in $x$, increases $u$ which increases $y$.
 
+
+#### Multiple Functions
+
+This can also expand to more complicated scenarios where we get more terms, but the idea remains the same.
+
+<div align='center'>
+    <img src='./images/33.jpg' width='400'>
+</div>
+
+Consider the function
+
+```math
+y = \cos^2(4x)
+```
+
+Now, break it down into separate variables.
+
+```math
+\begin{aligned}
+h(x) &= 4x \\
+g(u) &= \cos(u) \\
+f(v) &= v^2
+\end{aligned}
+```
+
+which gives
+
+```math
+f(g(h(x))) = \cos^2(4x)
+```
+
+This notation explicitly separates the function into a sequence of individual operations. Beginning with an input $x$,
+
+```math
+h(x) = 4x
+```
+
+multiplies the input by $4$. The result is then passed into,
+
+```math
+g(u) = \cos(u)
+```
+
+which applies the cosine function. Finally,
+
+```math
+f(v) = v^2
+```
+
+squares the result. The complete process can therefore be visualized as,
+
+```math
+x \to u \to v \to y
+```
+
+where
+
+```math
+\begin{aligned}
+u &= h(x) \\
+v &= g(u) \\
+y &= f(v)
+\end{aligned}
+```
+
+The important observation is that each stage produces a new quantity which becomes the input of the next stage. This interpretation is often the most natural way to understand the chain rule because it exposes every intermediate step. Each quantity depends only on the quantity immediately before it. We may therefore ask three independent questions,
+
+First,
+
+```math
+u = 4x
+```
+
+How rapidly does $u$ change with respect to $x$?
+
+```math
+\frac{du}{dx} = 4
+```
+
+Second,
+
+```math
+v = \cos(u)
+```
+
+How rapidly does $v$ change with respect to $u$?
+
+```math
+\frac{dv}{du} = -\sin(u)
+```
+
+Third,
+
+```math
+y = v^2
+```
+
+How rapidly does $y$ change with respect to $v$?
+
+```math
+\frac{dy}{dv} = 2v
+```
+
+Notice that these derivatives are not introduced arbitrarily. Each one simply measures the rate of change between two neighbouring stages of the composition. The chain rule states that the overall rate of change from $x$ to $y$ is obtained by multiplying the rates of change at each stage.
+
+```math
+\frac{dy}{dx} = \frac{dy}{dv} \cdot \frac{dv}{du} \cdot \frac{du}{dx}
+```
+
+Substituting the derivatives gives,
+
+```math
+\frac{dy}{dx} (2v)(-\sin(u))(4)
+```
+
+which produces
+
+```math
+\frac{dy}{dx} = 2\cos(4x)(-\sin(4x))(4) = -8\cos(4x)\sin(4x)
+```
 
 #### Example 1 - Function Composite View
 
@@ -1168,4 +1719,132 @@ In a complete form this is written as,
 ```math
 \frac{dy}{dx} = \lim_{k \to 0} \frac{f(g(x) + k) - f(g(x))}{k} \cdot \lim_{h \to 0}
 \frac{g(x+h) - g(x)}{h}
+```
+
+<div align='center'>
+    <h1> Maximization and Minimization Problems </h1>
+</div>
+
+Calculus can be used to solve optimization problems. They involve finding the local minimum and maximum values for a function. We use the word "local" to describe the behaviour of the point, comparing to the nearest two points
+
+- If it is higher that than the two closest points, it is a local maximum
+
+- If it is lower than the two closest points, it is a local minimum
+
+<div align='center'>
+    <img src='./images/27.png' width='500'>
+</div>
+
+When we set the derivative to $0$ and solve for $x$, we would obtain 2 $x$ values. This would represent both the local maximum and minimum. For this reason, when calculating the derivative and solving for $f'(x) = 0$, it's important to distinguish between them both. To visualize the behaviour, we will colour code the function slope behaviour.
+
+<div align='center'>
+    <img src='./images/30.png' width='500'>
+</div>
+
+- For the local maximum behaviour the slope changes from positive to negative. Additionally, the slope of the derivative is negative at local maximum.
+- For the local minimum behaviour the slope changes from negative to positive. Additionally, the slope of the derivative is positive at a local minimum.
+
+Below is an illustration describing common scenarios where the second derivative can be visually understood. It's very useful because it describes the behaviour of functions.
+
+<div align='center'>
+    <img src='./images/31.png' width='600'>
+</div>
+
+It therefore follows, where $f'(x) = 0$
+
+- It is a local maximum if $f''(x) < 0$
+- It is a local minimum if $f''(x) > 0$
+
+#### Maximum Profit Optimization
+
+Suppose this graph represents the profit our company would make by manufacturing and selling $x$ number of a particular item.
+
+- If we make and sell too few, our profit will be limited by the low number.
+- If we make and sell too many, our supply might exceed the demand and extra cost for running more machines and hiring more people won't be offset by the higher volume.
+
+<div align='center'>
+    <img src='./images/25.png' width='400'>
+</div>
+
+We can use calculus to solve this problem. The optimal number $x$ is precisely when the slope is equal to $0$. Suppose
+
+```math
+\begin{aligned}
+f(x) &= \text{profit}\;(\$1000\text{s}) \\
+     &= -0.012x^2 + 9.8x - 1500 \\
+f'(x) &= -0.024x + 9.8
+\end{aligned}
+```
+
+Now, we set the derivative $f'(x) = 0$ and solve for $x$.
+
+```math
+\begin{aligned}
+f'(x) &= -0.024x + 9.8 = 0 \\
+0.024x &= 9.8 \\
+x &= \frac{9.8}{0.024} \\
+x &\approx 408.3
+\end{aligned}
+```
+
+This means, we should make 408 units to maximize our profit. If the problem statement also asks for the profit amount, plug this **into the original profit function**.
+
+```math
+\begin{aligned}
+f(408) &= -0.012(408)^2 + 9.8 \cdot 408 - 1500 \\
+       &= 500.8
+\end{aligned}
+```
+
+This means, the maximum profit amount will be $500,800 by producing 408 units.
+
+#### Minimum Usage Optimization
+
+Given a plain sheet of metal, we want to cut 4 squares around the edges with the goal of maximizing the volume of the box. The box will have no lid.
+
+<div align='center'>
+    <img src='./images/26.png' width='400'>
+</div>
+
+The 4 boxes will all have equal length $x$. The first thing to do is create a function $f(x)$ to represent the volume $V$.
+
+- The width has a length $32 - 2x$
+- The length has a length $24 -2x$
+- The height has a length of $x$
+
+We can create a function to represent the volume from the removal of squares as a function of $x$,
+
+```math
+\begin{aligned}
+V = f(x) &= (32 - 2x)(24 - 2x)x \\
+         &= (32 \cdot 24 - 64x - 48x + 4x^2)x \\
+         &= (768 - 112x + 4x^2)x \\
+         &= 768x - 112x^2 + 4x^3
+\end{aligned}
+```
+
+This function is used to represent the volume as $x$ changes, therefore
+
+```math
+\frac{dV}{dx} = f'(x) = 768 -224x + 12x^2
+```
+
+Now, we want to make the derivative equal to $0$ to solve for the maximum. This will represent the maximum volume.
+
+```math
+f'(x) = 768 - 224x + 12x^3 = 0
+```
+
+We will use the quadratic formula here to solve for $x$, working will not be shown.
+
+```math
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+```
+
+This will solve for 2 $x$ values, $14.1$ and $4.53$. However, the first $14.1$ can be ignored. This is because $2 * 14.1 > 24$, therefore it has no practical application here we it is not possible to remove squares with the value $x = 14.1$. Therefore, this means the correct solution is $4.53$.
+
+The question specifically asked for maximum dimension, this occurs when $x = 4.53$. Therefore, the total maximum dimension is
+
+```math
+V = f(x) = (32 - 2(4.53))(24 - 2(4.53)) * 4.53 = 1552\text{cm}^3
 ```

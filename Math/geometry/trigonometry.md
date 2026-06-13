@@ -7,7 +7,7 @@ In nature, we observe numerous phenomena that propagate in the form of waves or 
 If we divide the circumfrance of a circle $C$ by the length of the diameter $D$, that is, if we calculate the ratio of the circumfrance to diameter,
 
 ```math
-\frac{C}{d} = \pi
+\frac{C}{D} = \pi
 ```
 
 We get a number that **always remains the same**, no matter how large or small the circle is. Today, we know this number as pi. If we rearrange this equation and substitute the diameter as two times the radius, we get
@@ -304,7 +304,7 @@ A &= \frac{1}{2} r^2 \theta_{rad}
 \end{align*}
 ```
 
-This follows directly from taking a fraction of the full circle area. **Using the variable x in degrees**, we again convert.
+This follows directly from taking a percentage (Calculating it from the fraction of the turn $\frac{\theta_{rad}}{2\pi}$) of the full circle area. **Using the variable x in degrees**, we again convert.
 
 ```math
 \theta_{rad} = x^\circ \cdot \frac{\pi \ \mathrm{rad}}{180^\circ}

@@ -2,7 +2,7 @@
     <h1> Footwork </h1>
 </div>
 
-Good footwork is vital to get into position and move effiently. Without proper footwork you will miss the opportunity to get in propert position to get a good hit.
+Good footwork is vital to get into position and move effiently. Without proper footwork you will miss the opportunity to get in correct position in order to have a high quality hit.
 
 The way most players like Ma Long perform footwork is to perform jumping actions to ensure to get into correct position quickly. The key characteristics are,
 
