@@ -19,7 +19,11 @@ This notation expresses the idea of dividing $a$ into $b$ equal parts or more ge
 \frac{a}{b} = a ÷ b
 ```
 
-Second, it represents a ratio or comparison between two quantities. For example, $\frac{1}{3}$ may describe "1 unit for every 3 units". These interpretations are not separate, rather, they are different perspectives on the same mathematical object. This dual nature allows fractions to function both as values and as relational descriptions, making them essential in contexts ranging from measurement to algebra.
+The symbol $\frac{a}{b}$ has three equivalent interpretations that all say the same thing,
+
+1. **Division** - $a$ divided by $b$
+2. **Comparison / Ratio** - $a$ compared to $b$, or "$a$ for every $b$". More precisely, for every $1$ unit of quantity $b$, there are $\frac{a}{b}$ units of quantity $a$.
+3. **Part-to-Whole** - $a$ out of $b$ equal parts.
 
 <div align='center'>
     <h1> Adding Fractions </h1>
