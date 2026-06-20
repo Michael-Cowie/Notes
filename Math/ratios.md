@@ -4,7 +4,7 @@
 
 A ratio is a mathematical expression that **compares two quantities**, showing how much of one quantity exists relative to another. Unlike an isolated number, **a ratio describes a relationship**. It tells us how two quantities are connected rather than how large either quantity is by itself. A ratio does not represent addition, multiplication, or a completed calculation. It describes how two quantities are related.
 
-A ratio remains valid even if one of the quantities is fixed or constant. The purpose of a ratio is to show relative size or proportion, not to require that both quantities can change. The quantities **may be able to scale, but they do not have to**. A useful way to identify a ratio is to ask, **"What is being compared to what?"**. If the relationship expresses "How much of one quantity exists relative to another", then a ratio is present.
+The purpose of a ratio is to show relative size or proportion, not to require that both quantities can change. The quantities **may be able to scale, but they do not have to**. A useful way to identify a ratio is to ask, **"What is being compared to what?"**. If the relationship expresses "How much of one quantity exists relative to another", then a ratio is present.
 
 Some ratios compare two things that can both vary
 
@@ -16,7 +16,7 @@ Other ratios compare something to a fixed whole
 
 - $\text{Part} : \text{Total}$
 - $\text{Sector Angle} : 360^\circ$
-- Percentages
+- Percentages (Per 100).
 
 In all cases, the ratio tells us how big one quantity is compared to the other.
 
@@ -24,10 +24,10 @@ Ratios appear throughout mathematics and everyday life. They are used to describ
 
 | Concept        | Ratio                                |
 | -------------- | ------------------------------------ |
-| Fraction       | Part : Whole                         |
-| Percentage     | Part : Whole                         |
-| Probability    | Favourable Outcomes : Total Outcomes |
-| Slope          | Rise : Run                           |
+| Fraction       | Part $:$ Whole                         |
+| Percentage     | Part $:$ Whole                         |
+| Probability    | Favourable Outcomes $:$ Total Outcomes |
+| Slope          | Rise $:$ Run                           |
 
 Ratios are the mathematical language of comparison. Fractions, percentages, rates, slopes, scales, probabilities, and many physical quantities can all be understood as different representations of ratios. By describing how quantities relate rather than how large they are individually, ratios provide one of the fundamental tools for modelling relationships throughout mathematics.
 
@@ -94,9 +94,7 @@ When we have a ratio comparing $a$ to $b$, we represent this comparison to a rel
 a : b = 3 : 5
 ```
 
-This is interpreted as $3$ units of $a$ for every $5$ units of $b$. Such as $3$ males for every $5$ females. The ratio view of fractions is the important concept to understand here. When we compare one ratio, we compare it to the simplified ratio. 
-
-When we observe the fraction $\frac{a}{b} = \frac{3}{5}$ as a ratio, we interpret this as $a$ for every $b$ . This requires $a$ to increase every $b$ to allow for the fraction to be able to be simplified to be equal to $\frac{3}{5}$. This implies $\frac{3}{5}$ can be multiplied by some number $\frac{k}{k}$, which creates the ratio $\frac{a}{b}$. In other words,
+This is interpreted as $3$ units of $a$ for every $5$ units of $b$. Such as $3$ males for every $5$ females. The ratio view of fractions is the important concept to understand here. When we compare one ratio, we compare it to the simplified ratio. When we observe the fraction $\frac{a}{b} = \frac{3}{5}$ as a ratio, we interpret this as $a$ for every $b$ . This requires $a$ to increase every $b$ to allow for the fraction to be able to be simplified to be equal to $\frac{3}{5}$. This implies $\frac{3}{5}$ can be multiplied by some number $\frac{k}{k}$, which creates the ratio $\frac{a}{b}$. In other words,
 
 ```math
 \frac{a}{b} = \frac{3}{5} = \frac{k \cdot 3}{k \cdot 5}
@@ -116,10 +114,14 @@ a : b = \frac{3}{5} : 1
 This is interpreted as $\frac{3}{5}$ units of $a$ for every $1$ unit of $b$, or simply $\frac{3}{5}$ of $a$ per unit of $b$. Dividing $a$ by $b$ gives us the amount of $a$ per single unit of $b$. Because a fraction can be interpreted as $a$ for every $b$ it follows that,
 
 ```math
-a : b = \frac{a}{b}
+a : b = \frac{a}{b} \qquad \text{or} \qquad a = \frac{a}{b} \cdot b
 ```
 
-This means, the ratio of $a$ to $b$ is equal to the fraction $a$ divided by $b$. The letters $a$ and $b$ here are **placeholders for quantities**. Hence, when we say $\text{Males} : \text{Females} = 3 : 5$
+This means, the ratio of $a$ to $b$ is equal to the fraction $a$ divided by $b$. The letters $a$ and $b$ here are **placeholders for quantities**. Hence, when we say 
+
+```math
+\text{Males} : \text{Females} = 3 : 5
+```
 
 - $a$ is the actual number of males, this is variable and can be any number.
 - $b$ is the actual number of females, also variable.
@@ -130,7 +132,7 @@ Then we write,
 \frac{a}{b} = \frac{3}{5}
 ```
 
-We are dividing the actual number of males ($a$) by the actual number of females ($b$). The result of that divison must be some multiple of $\frac{3}{5}$. For example, if there are 15 females ($b = 15$), then
+We are dividing the actual number of males ($a$) by the actual number of females ($b$). The result of that divison must be some multiple of $\frac{3}{5}$. For example, if there are $15$ females ($b = 15$), then
 
 ```math
 \frac{a}{15} = \frac{3}{5} \Rightarrow a = 9
@@ -139,7 +141,7 @@ We are dividing the actual number of males ($a$) by the actual number of females
 For a complete explicit explanation, this would be viewed as
 
 ```math
-\text{Males} : \text{Females} = 3 : 5 = a : b
+\text{Males} : \text{Females} = 3 : 5 = 9 : 15
 ```
 
 Therefore,
@@ -287,7 +289,7 @@ Part-to-whole ratios are especially valuable for understanding shares, probabili
 
 
 <div align='center'>
-    <h1> Ratios in Percentages </h1>
+    <h1> Ratios as Percentages </h1>
 </div>
 
 Ratios are used in percentages. Percentages literally mean "per hundred". Therefore, a percentage is a ratio to $100$. This relationship explains why fractions and percentages are fundamentally ratios. Consider a basket containing $3$ apples and $5$ berries, giving a total of $8$ pieces of fruit. The ratio of apples to total fruit is
@@ -444,6 +446,35 @@ Therefore,
 51\% = \frac{51}{100} = 51 : 100 = 510, 000 : 1, 0000, 000
 ```
 
+#### Example Four
+
+Suppose we instead ask for a percentage of a number. What is $50\%$ of $1000$?
+
+By definition, $25\%$ means $25$ per $100$, that is the ratio,
+
+```math
+25 : 100
+```
+
+A percentage is always $\frac{\text{part}}{\text{whole}}$. Therefore,
+
+```math
+\begin{align*}
+\frac{\text{part}}{\text{whole}} &= \frac{25}{100} = \frac{1}{4} \\
+\text{part} &= \frac{1}{4} \cdot \text{whole} \\
+\text{part} &= \frac{1}{4} \cdot 1000 \\
+\text{part} &= 250\\
+\end{align*}
+```
+
+This follows,
+
+```math
+\text{part} : \text{whole} = 25 : 100 = 125 : 500
+```
+
+
+
 
 <div align='center'>
     <h1> Ratios as Rates </h1>
@@ -481,17 +512,13 @@ This is read as, $a$ is to $b$ as $c$ is to $d$. Proportions are powerful becaus
 
 #### Same Type of Quantity, Different Sizes
 
-This occurs when comparing corresponding parts of two objects that have the **same shape**, but possibly different sizes. Consider two similar triangles (The foundation of trigonometry). Triangle $A$ has sides $3\text{cm}$, $4\text{cm}$ and $5\text{cm}$. Triangle $B$ is an enlarged version with one corresponding side measuring $6\text{cm}$. Because the triangles are similar, the ratios of their corresponding sides are equal.
+This occurs when comparing corresponding parts of two objects that have the **same shape, but possibly different sizes**. Consider two similar triangles, triangle $A$ has sides $3\text{cm}$, $4\text{cm}$ and $5\text{cm}$. Triangle $B$ is an enlarged version with one corresponding side measuring $6\text{cm}$. Because the triangles are similar, the ratios of their corresponding sides are equal.
 
 ```math
 \frac{3}{6} = \frac{4}{x} = \frac{5}{y}
 ```
 
-Solving the proportion gives $x = 8\text{cm}$ and $y = 10\text{cm}$.
-
-This type of proportion is essential in trigonometry, scale drawings and geometry. It shows that when shapes are similar, corresponding angles are equal and corresponding sides remain in constant proportion.
-
-Similarily, in a right-angled triangle, the sine of an angle $\theta$ is defined as the ratio.
+Solving the proportion gives $x = 8\text{ cm}$ and $y = 10\text{ cm}$. This type of proportion is essential in trigonometry, scale drawings and geometry. It shows that when shapes are similar, corresponding angles are equal and corresponding sides remain in constant proportion. Similarily, in a right-angled triangle, the sine of an angle $\theta$ is defined as the ratio.
 
 ```math
 \sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}}
@@ -516,7 +543,7 @@ In a small triangle with a hypotenuse length of $6 \text{ cm}$ and $\theta = 30$
 
 ```math
 \begin{aligned}
-\sin(30^\circ) &= \frac{0.5}{1} = \frac{\text{O}}{1 \cdot 6} = \frac{\text{O}}{6} \\
+\sin(30^\circ) &= \frac{\text{O}}{\text{H}} = \frac{0.5}{1} = \frac{\text{O}}{1 \cdot 6} = \frac{\text{O}}{6} \\
 \frac{0.5}{1} &= \frac{\text{O}}{6} \\
 \frac{6 \cdot 0.5}{1} &= \frac{3}{1} = 3 = \text{O}
 \end{aligned}
