@@ -800,6 +800,75 @@ giving
 
 The important conceptual distinction is that $f(x)$ names the entire function, but derivative rules act according to the internal algebraic structure of that function.
 
+#### When to use the Power Rule
+
+The power rule applies when a **variable is raised directly to a constant power**.
+
+```math
+\frac{d}{dx} (x^n) = nx^{n - 1}
+```
+
+Examples include
+
+```math
+\begin{align*}
+x^5 \\
+x^{12} \\
+x^{\frac{1}{2}}
+\end{align*}
+```
+
+For example,
+
+```math
+\frac{d}{dx}(x^3) = 5x^4
+```
+
+and
+
+```math
+\frac{d}{dx}(x^{\frac{1}{2}}) = \frac{1}{2}x^{-\frac{1}{2}}
+```
+
+The defining feature is that the base of the power is simply $x$. There is no additional function inside the exponentiation.
+
+For instance,
+
+```math
+(x + 1)^2
+```
+
+looks similar to $x^2$, but the base is **no longer only** $x$. The quantity being squared is now $x + 1$. This introduces a layer of composition, and the chain rule becomes relevant. The reason the power rule is not directly applicable is that it implicitly a function inside another function. When observing $y = (x + 1)^2$, their are actually two operations happening.
+
+1. Start with $x$
+2. Add $1$ to get $x + 1$
+3. Square the result
+
+```math
+x \xrightarrow{+1} x+1 \xrightarrow{\text{squared}} (x+1)^2
+```
+
+We can write this as,
+
+```math
+\begin{align*}
+u &= x + 1 \\
+y &= u^2
+\end{align*}
+```
+
+Hence,
+
+```math
+x \xrightarrow{\frac{du}{dx}} u \xrightarrow{\frac{dy}{du}} y \\
+\frac{dy}{dx} = \frac{du}{dx} \cdot \frac{dy}{du}
+```
+
+This means,
+
+1. As $x$ changes, $u$ changes with respect so $x$ at a rate of $\frac{du}{dx}$
+2. Moving forward, as $u$ changes, $y$ changes with respect to $u$ at a rate of $\frac{dy}{du}$
+
 #### Power Rule Visualized - 3D
 
 Suppose we have a cube with side length $x$. The volume of the cube is given by
@@ -1117,6 +1186,263 @@ Another visual interpretation of the product rule is directing labelling the der
 
 Here, we label the derivative $\frac{df}{dx}$ as the width increase $df$ because the input has increased by an amount $dx$, which represents the function output increase $df$.
 
+#### Product Rule - Algebraic Intuition
+
+For a composite function,
+
+```math
+y = f(u) \qquad u = g(x)
+```
+
+Has the behaviour,
+
+```math
+\frac{dy}{dx} = \frac{dy}{du} \frac{du}{dx}
+```
+
+This works because there is one path of dependence.
+
+```math
+x \to u \to y
+```
+
+So there is only one chain of change. Now consider,
+
+```math
+y = u(x) v(x)
+```
+
+- $y$ depends on $u$
+- $y$ depends on $v$
+- Both depend on $x$
+
+So the dependency structure is,
+
+```math
+x \to u \to y
+```
+
+and
+
+```math
+x \to v \to y
+```
+
+While the following is not considered a formal definition, it does intuitively explain where the addition occurs from the product rule.
+
+We start with,
+
+```math
+y = uv
+```
+
+Suppose $u$ changes by a small amount $\Delta u$ and $v$ changes by a small amount $\Delta v$. Where,
+
+```math
+\Delta u = u(x + \Delta x) - u(x) \\
+\Delta v = v(x + \Delta x) - v(x)
+```
+
+The old value of $y$ is
+
+```math
+uv
+```
+
+The new value of $y$ is
+
+```math
+(u + \Delta u)(v + \Delta v)
+```
+
+Therefore a tiny change $\Delta y$ is the new value minus the old value,
+
+```math
+\Delta y = (u + \Delta u)(v + \Delta v) - uv
+```
+
+Expanding the brackets
+
+```math
+\begin{aligned}
+\Delta y
+&= uv + u \Delta v + v \Delta u + \Delta u \Delta v - uv \\
+&= u \Delta v + v \Delta u + \Delta u \Delta v
+\end{aligned}
+```
+
+Now divide by $\Delta x$,
+
+```math
+\frac{\Delta y}{\Delta x} = u \frac{\Delta v}{\Delta x} + v \frac{\Delta u}{\Delta x} + \frac{\Delta u \Delta v}{\Delta x}
+```
+
+Now, take the limit of the **entire expression**.
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \left( u \frac{\Delta v}{\Delta x} +  v \frac{\Delta u}{\Delta x} + \frac{\Delta u \Delta v }{\Delta x} \right)
+```
+
+##### Term 1
+
+```math
+\lim_{\Delta x \to 0} u \frac{\Delta v}{\Delta x}
+```
+
+Notice that $u = u(x)$ is evaluated at the original point $x$. Therefore, as $\Delta x \to 0$, $u$ does not change. So it behaves like a contant,
+
+```math
+u \lim_{\Delta x \to 0} \frac{\Delta v}{\Delta x}
+```
+
+By the definition of the derivative,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta v}{\Delta x} = v'(x)
+```
+
+Therefore,
+
+```math
+u \lim_{\Delta x \to 0} \frac{\Delta v}{\Delta x} = u v'(x)
+```
+
+Now, it's very important to understand why this term stays. Let's example,
+
+```math
+v(x) = x^2
+```
+
+Then,
+
+```math
+\Delta v = (x + \Delta x)^2 - x^2
+```
+
+Which follows by expanding,
+
+```math
+\Delta v = 2x \Delta x + (\Delta x)^2
+```
+
+This follows,
+
+```math
+\lim_{\Delta x \to 0} \Delta v = \lim_{\Delta x \to 0} (2x \Delta x + \Delta x^2) = 0
+```
+
+This limit converges to $0$ because because each term contains $\Delta x$. However when we observe,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta v}{\Delta x}
+```
+
+Substitute the same expression.
+
+```math
+\begin{aligned}
+\lim_{\Delta x \to 0}
+\frac{2x\Delta x + \Delta x^2}{\Delta x}
+&=
+\lim_{\Delta x \to 0}
+\left(2x + \Delta x\right) \\
+&=
+2x
+\end{aligned}
+```
+
+##### Term 2
+
+```math
+\lim_{\Delta x \to 0} v \frac{\Delta u}{\Delta x} = v \lim_{\Delta x \to 0} \frac{\Delta u}{\Delta x} 
+```
+
+By definition,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta u}{\Delta x} = u'(x)
+```
+
+Therefore,
+
+```math
+\lim_{\Delta x \to 0} v \frac{\Delta u}{\Delta x} = v u'(x)
+```
+
+##### Term 3
+
+```math
+\lim_{\Delta x \to 0}
+```
+
+To explain why this third is kept, we will first rewrite it.
+
+```math
+\frac{\Delta u \Delta v}{\Delta x} = \left( \frac{\Delta u}{\Delta x} \right) \Delta v
+```
+
+Now we take the limit,
+
+```math
+\lim_{\Delta x \to 0} \left( \frac{\Delta u}{\Delta x} \right) \Delta v
+```
+
+Because $u$ is differentiable,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta u}{\Delta x} = u'(x)
+```
+
+Now we move towards the $\Delta v$. Since $v$ is differentiable, it is continuous. Therefore,
+
+```math
+\Delta v = v(x + \Delta x) - v(x) 
+```
+
+As $\Delta x \to 0$, $v \to 0$. Therefore,
+
+```math
+\lim_{\Delta x \to 0} \Delta v = 0
+```
+
+Putting these together,
+
+```math
+\lim_{\Delta x \to 0} \left( \frac{\Delta u}{\Delta x} \cdot \Delta v \right) = u'(x) \cdot 0 = 0
+```
+
+Therefore,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta u \Delta v}{\Delta x} = 0
+```
+
+
+##### Putting everything together
+
+We now have,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = uv'(x) + vu'(x) + 0
+```
+
+Which finally gives us,
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = uv'(x) + vu'(x)
+```
+
+because
+
+```math
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}
+```
+
+We obtain
+
+```math
+\frac{dy}{dx} = u \frac{dv}{dx} + v \frac{du}{dx}
+```
 
 #### Product Rule - Algebraic Proof
 
@@ -1205,7 +1531,7 @@ F'(x) = f(x) \cdot g'(x) + g(x) \cdot f'(x)
 
 ## Chain Rule — Differentiating Composite Functions
 
-Many functions are not formed from a single operation, but instead contain multiple layers of functions nested insde one another. These are known as **composite functions**. A composite function occurs when the output of one function becomes the input of another function. A general composite function is written as
+Many functions are not formed from a single operation, but instead contain multiple layers of functions nested insde one another. These are known as **composite functions**. A composite function occurs when the output of one function becomes the input of another function. The chain rule is used whenever one function is applied to the output of another function. A general composite function is written as
 
 ```math
 f(g(x))
@@ -1227,7 +1553,7 @@ Examples can include,
 The chain rule describes how derivatives behave when functions are composted together. It is written as
 
 ```math
-\frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x))
+\frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)
 ```
 
 <div align='center'>
@@ -1351,6 +1677,114 @@ describes how changes in $u$ scale into changes in $y$.  Because the output chan
 
 This relationship occurs because any small changes in $x$, increases $u$ which increases $y$.
 
+## Understanding the Chain Rule
+
+#### Example 1 — $y = (x + 1)^2$
+
+When observing 
+
+```math
+y = (x + 1)^2
+``` 
+
+their are actually two operations happening.
+
+1. Start with $x$
+2. Add $1$ to get $x + 1$
+3. Square the result
+
+```math
+x \xrightarrow{+1} x+1 \xrightarrow{\text{squared}} (x+1)^2
+```
+
+We can write this as,
+
+```math
+\begin{align*}
+u &= x + 1 \\
+y &= u^2
+\end{align*}
+```
+
+Hence,
+
+```math
+x \xrightarrow{\frac{du}{dx}} u \xrightarrow{\frac{dy}{du}} y \\
+\frac{dy}{dx} = \frac{du}{dx} \cdot \frac{dy}{du}
+```
+
+This means,
+
+1. As $x$ changes, $u$ changes with respect so $x$ at a rate of $\frac{du}{dx}$
+2. Moving forward, as $u$ changes, $y$ changes with respect to $u$ at a rate of $\frac{dy}{du}$
+
+It therefore follows,
+
+```math
+\begin{align*}
+\frac{du}{dx} &= 1 \\
+\frac{dy}{du} &= 2(x+1) \\[6pt]
+du &= 1 \cdot dx \\
+dy &= 2(x+1)\,du \\
+dy &= 2(x+1)\cdot 1 \cdot dx \\
+dy &= 2(x+1)\,dx \\
+\frac{dy}{dx} &= 2(x+1)
+\end{align*}
+```
+
+#### Example 2 — $y = \sin(x^2)$
+
+When observing
+
+```math
+y = \sin(x^2)
+```
+
+there are actually two operations happening
+
+1. Start with $x$
+2. Square it to get $x^2$
+3. Take the sine of the result
+
+```math
+x \xrightarrow{\text{squared}} x^2 \xrightarrow{\sin} \sin(x^2)
+```
+
+We can write this as,
+
+```math
+\begin{aligned}
+u &= x^2 \\
+y &= \sin(u)
+\end{aligned}
+```
+
+Hence,
+
+```math
+x \xrightarrow{\frac{du}{dx}} u \xrightarrow{\frac{dy}{du}} y \\
+\frac{dy}{dx} = \frac{du}{dx} \cdot \frac{dy}{du}
+```
+
+This means,
+
+1. As $x$ changes, $u$ changes with respect so $x$ at a rate of $\frac{du}{dx}$
+2. Moving forward, as $u$ changes, $y$ changes with respect to $u$ at a rate of $\frac{dy}{du}$
+
+
+It therefore follows,
+
+```math
+\begin{aligned}
+\frac{du}{dx} &= 2x \\
+\frac{dy}{du} &= \cos(u) \\
+du &= 2x \, dx \\
+dy &= \cos(u)\, du \\
+dy &= \cos(u)\cdot 2x \, dx \\
+\frac{dy}{dx} &= 2x \cos(u) \\
+\frac{dy}{dx} &= 2x \cos(x^2)
+\end{aligned}
+```
 
 #### Multiple Functions
 
