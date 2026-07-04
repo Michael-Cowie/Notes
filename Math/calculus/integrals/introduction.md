@@ -16,7 +16,7 @@ To formalise this idea, consider a function $f(x)$ defined on an interval $[a, b
 \Delta x = \frac{b - a}{n}
 ```
 
-On each subinterval, a sample point $x^{ * }_{i}$ is chosen, producing a rectangle of height $f(x^*_i)$ and width $\Delta x$. The area of this rectangle is $f(x^*_i) \Delta x$, where \(x_i^*\) is a sample point in the \(i\)-th subinterval, it's the $x$-coordinate associated with the $i$-th interval. This the asterisk means that the same point on each subinterval is the same because you could choose,
+On each subinterval, a sample point $x^{ * }_{i}$ is chosen, producing a rectangle of height $f(x^{ * }_{i})$ and width $\Delta x$. The area of this rectangle is $f(x^{ * }_i) \Delta x$, where \(x_i^{ * }\) is a sample point in the \(i\)-th subinterval, it's the $x$-coordinate associated with the $i$-th interval. This the asterisk means that the same point on each subinterval is the same because you could choose,
 
 1. The left endpoint underestimates the area.
 2. The right endpoint overestimate the area.
@@ -25,7 +25,7 @@ On each subinterval, a sample point $x^{ * }_{i}$ is chosen, producing a rectang
 However, the remarkable fact is that although these choices give different finite sums, they all converge to the same limit for continuous functions. Summing over all subintervals produces a finite approximation.
 
 ```math
-S_n = \sum_{i=1}^n f(x_i^*) \Delta x
+S_n = \sum_{i=1}^n f(x_i^{ * }) \Delta x
 ```
 
 This process does not yet define the integral, it defines a sequence of approximations.
@@ -78,7 +78,7 @@ emerge from entirely different constructions and therefore have no immediate rea
 The presence of Riemann sums in the definition is often contrasted with their absence in routine computation. This contrast is resolved by distinguishing between what is an integral *is* and how it is *computed*. The Riemann sum defines the integral by specifying it as a limiting accumulation of finite contributions. However evaluating this limit directly is rarely practical because it requires an explicit manipulation of sequences such as,
 
 ```math
-S_n = \sum_{i=1}^n f(x_i^*) \Delta x.
+S_n = \sum_{i=1}^n f(x_i^{ * }) \Delta x.
 ```
 
 followed by algebraic simplification and passage to the limit $n \to \infty$. Even for simple functions, this process can involve substantial computation. There are the definitions (limit of difference quotient, limit of Riemann sum) and then there are practical methods that are much faster. Not every continuous function has an antiderivative describable in terms of elementary functions. The Riemann sum is the definition of an antiderivative in those cases, there are also other kinds of integration that aren't described in terms of the Riemann sum.
