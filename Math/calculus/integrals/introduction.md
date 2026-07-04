@@ -16,7 +16,7 @@ To formalise this idea, consider a function $f(x)$ defined on an interval $[a, b
 \Delta x = \frac{b - a}{n}
 ```
 
-On each subinterval, a sample point $x^{ * }_i$ is chosen, producing a rectangle of height $f(x^{ * }_{i})$ and width $\Delta x$. The area of this rectangle is $f(x^{ * }_i) \Delta x$, where \(x_i^{ * }\) is a sample point in the \(i\)-th subinterval, it's the $x$-coordinate associated with the $i$-th interval. This the asterisk means that the same point on each subinterval is the same because you could choose,
+On each subinterval, a sample point $x^{**}_{i}$ is chosen, producing a rectangle of height $f(x^{ * }_{i})$ and width $\Delta x$. The area of this rectangle is $f(x^{ * }_i) \Delta x$, where \(x_i^{ * }\) is a sample point in the \(i\)-th subinterval, it's the $x$-coordinate associated with the $i$-th interval. This the asterisk means that the same point on each subinterval is the same because you could choose,
 
 1. The left endpoint underestimates the area.
 2. The right endpoint overestimate the area.
