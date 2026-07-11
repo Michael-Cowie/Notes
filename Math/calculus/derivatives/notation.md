@@ -26,21 +26,19 @@ The notation,
 \frac{dy}{dx}
 ```
 
-is known as Leibniz notation, named after Gottfried Wilhelm Leibniz, one of the founders of calculus. It is one of the most recognizable forms of derivative notation and remains especially common in physics, engineering and applied mathematics. 
-
-This notation is read as "The derivative of $y$ with respect to $x$" or informally "d y by d x". Where the "d" means differential. Alternatively it can be meaning the differential (or change, represented by $d$) of the quantity in the numerator, with respect to the variable in the denominator.
-
-Hence,
-
-- **Numerator - What is changing**, $y$, $f(x)$, etc. This is the **dependent variable, what is changing**.
-
-- **Denominator - What it is changing with respect to**, $x$, $t$, etc. This is the **independent variable, what you change**.
+is known as Leibniz notation, named after Gottfried Wilhelm Leibniz, one of the founders of calculus. It is one of the most recognizable forms of derivative notation and remains especially common in physics, engineering and applied mathematics. This notation is read as "The derivative of $y$ with respect to $x$" or informally "d y by d x". Where the "d" means differential. Alternatively it can be meaning the differential (or change, represented by $d$) of the quantity in the numerator, with respect to the variable in the denominator.
 
 In plain words "How $y$ changes as $x$ changes" or more generally "Rate of change of the numerator with respect to the denominator variable".
 
-One of the defining characteristics of Leibniz notation is that it explicitly displays the relationship between variables. The numerator indicates the quantity being differentiated, while the denominator indicates the variable with respect to which the differentiation occurs. In this way, the notation naturally communicates dependency.
+- **Numerator** - What is changing, $y$, $f(x)$, etc. This is the **dependent variable**.
 
-For example,
+- **Denominator** - What the dependent variable is changing with respect to, $x$, $t$, etc. This is the **independent variable, what you change**.
+
+<div align='center'>
+    <img src='../images/40.png' width='800'>
+</div>
+
+One of the defining characteristics of Leibniz notation is that it explicitly displays the relationship between variables. The numerator indicates the quantity being differentiated, while the denominator indicates the variable with respect to which the differentiation occurs. In this way, the notation naturally communicates dependency. For example,
 
 ```math
 \frac{dy}{dt}
@@ -54,7 +52,7 @@ immediately indicates differentiation with respect to time, while
 
 indicates differentiation with respect to radius. The notation therefore embeds interpretation directly into the symbols themselves.
 
-Historically, Leibniz developed this notation from the idea of infinitesimal changes. Although modern calculus defines derivatives rigorously through limits, the notation preserves the intuitive appearance of a ratio between tiny changes. That is $dy$ represents the "infinitesimal" change in $y$ and $dx$ represents the "infinitesimal" change in $x$. Therefore, $\frac{dy}{dx}$ can be conceptually thought of as the ratio of these two infinitesimal variables which is represented in the notation.
+Historically, Leibniz developed this notation from the idea of infinitesimal changes. Although modern calculus defines derivatives rigorously through limits, the notation preserves the intuitive appearance of a ratio between tiny changes. That is, $dy$ represents the "infinitesimal" change in $y$ and $dx$ represents the "infinitesimal" change in $x$. Therefore, $\frac{dy}{dx}$ can be conceptually thought of as the ratio of these two infinitesimal variables which is represented in the notation.
 
 If 
 
@@ -74,7 +72,7 @@ and therefore
 \frac{dy}{dx} = \frac{d(f(x))}{dx}
 ```
 
-Similarly, if
+Similarly,
 
 ```math
 y = g(h)
@@ -83,12 +81,10 @@ y = g(h)
 then
 
 ```math
-\frac{dy}{dh} = \frac{d(g(h))}{dh}
+\frac{dy}{dh} = \frac{d(g(h))}{dh} = \frac{dg}{dh}
 ```
 
-This demonstrates that the numerator may be a variable or an entire expression. In both cases it identifies the quantity whose rate of change is being
-
-A crucial point to understand is that $y$ and $x$ are frequently used for graphing, but are not special because they're axes, they're just names.
+This demonstrates that the numerator may be a variable or an entire expression. In both cases it identifies the quantity whose rate of change is being analyzed. A crucial point to understand is that $y$ and $x$ are frequently used for graphing, but are not special because they're axes, they're just names.
 
 In $y = f(x)$, you happen to be using graphing convention where
 
@@ -103,13 +99,14 @@ h = j(z) = z^2
 
 Nothing structurally changes. It is the same idea.
 
+- $j$ is a function.
 - $z$ is the input, independent variable.
 - $h$ is the output, dependent variable.
 
 So it just means "Take a number $z$, square it and call it $h$". So think of this as,
 
 ```math
-\text{input} \to \text{rule} \to \text{output}
+\text{input} \to \text{function} \to \text{output}
 ```
 
 So if,
@@ -121,35 +118,7 @@ h &= j(z) = z^2 \\
 \end{aligned}
 ```
 
-So this means identically, "How the output $h$ changes when the input $z$ changes". So to generalize this notation, it's read as, **change in output quantity per change in input quantity**. The thinking for these should be "There is a relationship between two quantities, and one depends on the other.".
-
-So for additional examples,
-
-##### $y = f(x)$
-
-$y$ depends on $x$. Hence, $\frac{dy}{dx}$ measures how $y$ changes with $x$. 
-
-For functional notation it is written as 
-
-```math
-\frac{d(f(x))}{dx} = f'(x)
-```
-
-##### $h = j(z)$
-
-$h$ depends on $z$. Hence, $\frac{dh}{dz}$ measures how $h$ changes with $z$. 
-
-For functional notation it is written as 
-
-```math
-\frac{d(j(z))}{dz} = j'(z)
-```
-
-##### $P = r^3$
-
-$P$ depends on $r$. Hence, $\frac{dP}{dr}$ measures how $P$ changes with $z$.
-
-Leibniz notation is also highly effective when expressing relationships between variables algebraically. In differential equations, for example, derivatives are often manipulated symbolically in ways that resemble ordinary fractions. Because the notation visually separates the dependent and independent variables, it naturally supports these forms of calculation.
+So this means identically, "How the output $h$ changes when the input $z$ changes". So to generalize this notation, it's read as, **change in output quantity per change in input quantity**. The thinking for these should be "There is a relationship between two quantities, and one depends on the other".
 
 Another important feature of Leibniz notation is its adaptability to higher derivatives. The second derivative may be written as,
 
@@ -165,7 +134,7 @@ or generally
 
 This structure preserves the relationship between the variables while clearly indicating repeated differentiation.
 
-#### Fraction-Like Behaviour
+### Fraction-Like Behaviour
 
 One of the most distinctive features of Leibniz notation is that it often behaves as though it were an ordinary fraction. Let's take,
 
@@ -191,11 +160,9 @@ Where the factor $du$ appears to "cancel", leaving the derivative of $y$ with re
 \frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}
 ```
 
-From this definition alone, $dy$ and $dx$ **are not independent algebraic quantities** that may simply be cancelled like ordinary fraction behaviour. The symbol $\frac{dy}{dx}$ represents **a single mathematical object**, the derivative.
+From this definition alone, $dy$ and $dx$ **are not independent algebraic quantities** that may simply be cancelled like ordinary fraction behaviour. The symbol $\frac{dy}{dx}$ represents **a single mathematical object**, the derivative. Nevertheless, Leibniz deliberately designed his notation to reflect the idea of infinitesimal changes. In Leibniz's original conception, $dy$ and $dx$ represented infinitesimally small changes in the variables $y$ and $x$, and the derivatives was viewed as the ratio between them. Although modern calculus no longer defines derivatives in this way, the notation preserves this intuition.
 
-Nevertheless, Leibniz deliberately designed his notation to reflect the idea of infinitesimal changes. In Leibniz's original conception, $dy$ and $dx$ represented infinitesimally small changes in the variables $y$ and $x$, and the derivatives was viewed as the ratio between them. Although modern calculus no longer defines derivatives in this way, the notation preserves this intuition.
-
-A subtle but important distinction should also be made the derivative and the differential. Although it is common to write
+A subtle but important distinction should also be made between the derivative and the differential. Although it is common to write
 
 ```math
 \frac{dy}{dx} = f'(x)
@@ -210,7 +177,12 @@ dy = f'(x) \ dx
 **this is not how the equation is justified normally**. Since the derivative is not defined as fractions, the equation cannot be rigorously derived through ordinary algebraic multiplication. Instead, the differential $dy$ is defined in terms of the derivative. If $y = f(x)$, then the differential of $y$ is defined by
 
 ```math
-dy = f'(x) \ dx
+\begin{aligned}
+
+\frac{dy}{dx} &= f'(x) \\
+dy &= \left( \frac{dy}{dx} \right)dx
+
+\end{aligned}
 ```
 
 where $dx$ is an independently chosen differential of the variable $x$. Consequently, the equation is true by definition rather than by multiplication of the derivative notation.
@@ -263,29 +235,34 @@ Operator notation is written as
 \frac{d}{dx} f(x)
 ```
 
-and emphasizes differentiation as an operation applied to a function or expression.
-
-The symbol
+and emphasizes differentiation as an operation applied to a function or expression. The symbol
 
 ```math
 \frac{d}{dx}
 ```
 
-acts as a mathematical instruction meaning "differentiate with respect to $x$". The phrase "with respect to $x$ refers to that fact that,
+acts as a mathematical instruction meaning "differentiate with respect to $x$". The phrase with respect to $x$ refers to that fact that,
 
-1. $x$ is the variable being allowed to vary, i.e. we can have $x$ and $x + h$.
+1. $x$ is the independent variable, i.e. we can have $x$ and $x + h$. We change $x$.
 2. The denominator contains the change in $x$, namely $\Delta x$.
 3. The limit is taken as $\Delta x \to 0$
+
+In $\frac{dy}{dx}$, the symbol $y$ already names the dependent variable and the expression reads as ratios of two differentials. An infinitesimal change in the already-named output $y$, divided by an infinitesimal change in the independent variable $x$. However, in $\frac{d}{dx} (x^2)$, no dependent variable has been named. Instead, $\frac{d}{dx}$ is an **operator**. A standalone instruction meaning to differentiate with respect to $x$, treating $x$ as the independent variable. This notation doesn't require you to explicitly introduce a function $f$ or dependent variable $y$. When evaluating it on the quotient difference, perform a direct substitution.
+
+```math
+\frac{d}{dx}(x^2) = \lim_{h \to 0} \frac{(x + h)^2 -x^2}{h}
+```
 
 If we have $y = f(x) = x^2$. All of these are equivalent differentiation notations.
 
 ```math
 \frac{d}{dx}y = 
 \frac{d}{dx}f(x) =
-\frac{d}{dx}(x^2)
+\frac{d}{dx}(x^2) =
+\frac{dy}{dx}
 ```
 
-In this notation , differentiation is treated less as a static relationship and more as an active process. For example,
+In this notation, differentiation is treated less as a static relationship and more as an active process. For example,
 
 ```math
 \frac{d}{dx} (x^2) = 2x
@@ -381,28 +358,26 @@ The symbol $dx$ is not a finite input value. It represents an infinitesimal chan
 Suppose we choose
 
 ```math
-\Delta x = 0.1
+dx \approx \Delta x = 0.1
 ```
 
-Since the derivative at $x = 2$ is $12$, we estimate
+Since the derivative at $x = 2$ is $12 dx$, we estimate
 
 ```math
 \Delta y \approx dy = 12(0.1) = 1.2
 ```
 
-The original value is $2^3 = 8$, adding the estimated change gives $8 + 1.2 = 9.2$. 
+Because we chose $x=2$, its position is $(2, 2^3) = (2, 8)$. Adding the estimated change $\Delta y$ gives $8 + 1.2 = 9.2$. 
 
 ```math
 (2, 8) \to (2 + \Delta x, 8 + \Delta y) \to (2.1, 9.2)
 ```
 
-The exact value is $2.1^3 = 9.261$. This is one of the primary uses of differentials, they provide local linear approximations.
+The exact $y$ value is $2.1^3 = 9.261$, so it's close but could be further approximated by decreasing $\Delta x$.  This is one of the primary uses of differentials, they provide local linear approximations.
 
 #### Differential Notation for Functions
 
-Differential notation applies not only to variables such as $y$, but also directly to functions.
-
-Consider a function 
+Differential notation applies not only to variables such as $y$, but also directly to functions. Consider a function 
 
 ```math
 y = f(x) = x^3
@@ -443,12 +418,12 @@ The key distinction is,
 
 - $df$ is a **differential**, an infinitesimal change in $f$
 - $\frac{df}{dx}$ is a **derivative**, a rate of change. The derivative determines how large the differential will be for a given infinitesimal input change.
-- $f'(x)$ is another notation for a derivative
+- $f'(x)$ is another notation for a derivative of the function $f$.
 
-The functional representation and derivatives is often used to how as change of distance in the context of proofs. Below is an example for the product rule.
+The functional representation of derivatives is often used to show change of distance in the context of proofs. Below is an example for the product rule.
 
 <div align='center'>
     <img src='../images/22.png' width='300'>
 </div>
 
-Here, $\frac{df}{dx}$ is used to represent a change of length, $df$, but by definition the derivative is a rate of change. In this example, the input increases by some amount $dx$. This means as the input $x$ increases by some amount $dx$, the function $f(x)$ increases by an amount $df$.
+Here, $\frac{df}{dx}$ is used to represent a change of length $df$, but by definition the derivative is a rate of change. In this example, the input increases by some amount $dx$. This means as the input $x$ increases by some amount $dx$, the function $f(x)$ increases by an amount $df$.

@@ -145,18 +145,6 @@ Because $C_1$ and $C_2$ are both arbitrary, they combine into a single constant.
 y + x^2 + K
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
 ### Physical Interpretation
 
 The relationship between graphs provide important information. Consider $x$ as time $t$ in seconds and $y$ as position or distance in metres. Then $\frac{dy}{dt} = 2t$ represents velocity in $\frac{m}{s}$ on the derivative graph.
