@@ -90,10 +90,11 @@ To make this more accurate we need to make $\Delta x$ smaller, this will decreas
 \lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x}
 ```
 
-When this is done, the approximation becomes exact because we're calculating a limit value. This limit value represents what the function converges to as $\Delta x$ gets closer and closer to $0$.
+Where, $\Delta A = A(x + \Delta x) - A(x)$. When this is done, the approximation becomes exact because we're calculating a limit value. This limit value represents what the function converges to as $\Delta x$ gets closer and closer to $0$.
 
 ```math
-\lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x} = \lim_{\Delta x \to 0} f(x)
+\lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x} = 
+\lim_{\Delta x \to 0} f(x)
 ```
 
 Since $f(x)$ does not depend on $\Delta x$, it is treated as a constant with respect to the limit.
