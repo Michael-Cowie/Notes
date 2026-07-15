@@ -502,13 +502,70 @@ Rates are simply ratios expressed relative to one unit of a quantity. This "per 
     <h1> Proportions </h1>
 </div>
 
-A proportion is an equation that states two ratios are equal. It expresses that two pairs of quantities share the same relative relationship. Mathematically, this is written as,
+We first define,
+
+- **Quantity** - What is being measured. This can be length, mass, time, angle, ...
+
+- **Unit** - The standard used to measure the quantity. This can be metre, kilogram, radian, ...
+
+- **Measurement** - A number together with a unit. A measurement of a quantity has a unit.
+
+| Quantity | Unit          | Measurement |
+| -------- | ------------- | ----------- |
+| Length   | metre (m)     | 5 m         |
+| Mass     | kilogram (kg) | 12 kg       |
+| Angle    | degree (°)    | 90°         |
+| Angle    | radian (rad)  | $\pi$ rad |
+
+
+
+A ratio compares two **measurements**, indicating how much of one measurement corresponds to the other. When two measurements are **proportional**, they maintain a constant ratio, meaning that **if one measurement is multiplied by a constant factor, the other is multiplied by the same factor**. Consequently, the relationship between any two corresponding pairs of measurements can be represented by equal ratios. This constant relationship can be expressed using either fraction notation,
 
 ```math
 \frac{a}{b} = \frac{c}{d} \qquad \text{or} \qquad a : b = c : d
 ```
 
 This is read as, $a$ is to $b$ as $c$ is to $d$. Proportions are powerful because they allow us to use information from one relationship to solve for unknowns in another.
+
+A **quantity** is a property that can be measured, such as length, mass, time or angle. It exists independently of any unit of measure. A **measurement** is the numerical value together with a unit that describe the size of the quantity. For example, the length of a stick is a quantity. It may be measured as $1 \text{ m}$, $100 \text{ cm}$ or $1000 \text{ mm}$. Although these measurements use different numbers and different units, they all describe the same underlying quantity, the sticks length.
+
+The same principle applies to angles. **The quantity is the amount of rotation, while the measurement expresses that rotation in a particular unit**. A complete revolution is one specific quantity of rotation. It can be measured as either $360^\circ$ or $2\pi$ radians. These are different measurements of the same quantity, just as $1 \text{ m}$ and $100 \text{ cm}$ are different measurements of the same length.
+
+Because degrees and radians are **two linear units of measurement of the same quantity (angle)**, the relationship between their measurements is proportional. A complete revolution as both $360^\circ$ and $2 \pi$ radians, establishing the constant ratio between the two units. Consequently, every angle has both a degree measurement and a radian measurement, and these measurements are always related by the same constant ratio. This relationship can be written as
+
+```math
+2 \pi \text{ rad} : 360^\circ = x \text{ rad} : y ^\circ
+```
+
+or equivalently
+
+```math
+\frac{2 \pi \text{ rad}}{360^\circ} = \frac{x \text{ rad}}{ y ^\circ}
+```
+
+Hence, the mathematical process for proportionality can be expressed by several steps.
+
+##### 1. Identify two equivalent measurements of the same quantity
+
+A quantity may be measured using different units. If two measurements describe the same underlying quantity, they are equivalent, even though their numerical values differ. These equivalent measurements establish the relationship between the units.
+
+- Length - $1 \text{ m} = 100 \text{ cm}$
+- Angle - $2\pi \text{ rad} = 360^\circ$
+
+##### 2. Express the equivalent measurements as a ratio
+
+Since the measurements are equivalent, they define a fixed relationship between the two units. This relationship can be written as a ratio using colon notation.
+
+- $1 \text{ m} : 100 \text{ cm}$
+- $2\pi \text{ rad} : 360^\circ$
+
+##### 3. Express the ratio as a proportion to compare corresponding measurements
+
+Because the relationship between the units is constant, any other pair of equivalent measurements must preserve the same ratio. This is written as a proportion, either using fractions or colon notation.
+
+```math
+\frac{1 \text{ m}}{100 \text{ cm}} = \frac{x \text{ cm}}{y \text{ cm}}
+```
 
 #### Same Type of Quantity, Different Sizes
 

@@ -351,6 +351,26 @@ and,
 
 This is the **key conversion identity**. Think of conversion like cancelling units in fractions. 
 
+Additionally, these are expressed as ratios. A ratio compares two measurements of the same quantity. Here, the quantity is angle, and the two units are radians and degrees. Just as you could write,
+
+```math
+1 \text{m} : 100 \text{cm} = 2 \text{m} : 200 \text{cm}
+```
+
+because both sides describe the same length in different units, you can write
+
+```math
+2 \pi \text{ rad} : 360^\circ = 5.5 \text{ rad} : 315.13^\circ
+```
+
+because both sides describe the same relationship between the same angle measured in radians and degrees. Therefore,
+
+```math
+\frac{2 \pi \text{ rad}}{360^\circ} = \frac{x \text{ rad}}{y^\circ}
+```
+
+which can be used to solve unknowns or perform unit conversion.
+
 ### Radians to Degrees
 
 To transform an angle $\theta_{rad}$ into degrees, we need to multiply the angle by 1, while cancelling out the $\mathrm{rad}$ unit and keep the $^\circ$ unit. This is done by multiplying by $\frac{180^\circ}{\pi \ \mathrm{rad}}$.
