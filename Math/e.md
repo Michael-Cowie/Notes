@@ -83,7 +83,7 @@ Continuous growth compounds constantly. Many natural systems behave approximatel
 
 Here $x = t$ (time), $k > 0$ is the growth constant with units $\text{time}^{-1}$. If $k = 0.1 \text{ hour}^{-1}$, the population increases by about $10\%$ per hour continuously. The decimal growth rate $0.1$ is equal to the percentage growth rate $10\%$. $10\% = \frac{10}{100} = 0.1$
 
-The key distinction is, $0.1y$ means $10\%$ of $y$, not "$y$ plus $10\%$. So in,
+The key distinction is, $0.1y$ means $10\%$ of $y$, not $y$ plus $10\%$. So in,
 
 ```math
 \frac{dy}{dt} = ky

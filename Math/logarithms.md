@@ -141,11 +141,9 @@ Much faster before calculators existed.
     <h1> Why Logarithms Matter in Practical Life </h1>
 </div>
 
-Although logarithms were born from hand calculation, their usefulness remains highly relevant.
+Although logarithms were born from hand calculation, their usefulness remains highly relevant. In computer science, logarithms describe algorithm efficiency. Binary search repeatedly halves a data set, so searching $n$ items take approximately $\log_2 n$ steps. This explains why enormous sorted lists can be searched quickly. In finance, logarithms are used when solving compound interest equations If money grows exponentially, logs help determine how long it takes for an investment to reach a target value. For example, 
 
-In computer science, logarithms describe algorithm efficiency. Binary search repeatedly halves a data set, so searching $n$ items take approximately $\log_2 n$ steps. This explains why enormous sorted lists can be searched quickly.
-
-In finance, logarithms are used when solving compound interest equations If money grows exponentially, logs help determine how long it takes for an investment to reach a target value. For example, "Given \$5, at an interest rate of 2% a year, how many years to reach \$500?".
+Given \$5, at an interest rate of 2% a year, how many years to reach \$500?.
 
 ```math
 \begin{aligned}

@@ -43,12 +43,24 @@ m = 6
 The equation of a straight line can be written as
 
 ```math
-y - y_1 = m(x - x_1)
+\begin{aligned}
+\frac{\Delta y}{\Delta x} = \frac{y - y_1}{x - x_1} &= 6\\
+y - y_1 &= m(x - x_1) \\
+\end{aligned}
 ```
 
 - The point $(x_1, y_1)$ is simply a known point on the line.
 - The symbols $(x, y)$ represent any other point on the line.
 
+This equation works because we have an **anchor (reference) point** $(3, 9)$. For every other point $(x, y)$ on the line, you compare its horizontal and vertical displacement from the anchor. Those displacements must satisfy the ratio. Therefore, for every point $x$ we compare it to the anchor point $(3,9)$ and calculate the $y$ value to satisfy the ratio.
+
+```math
+\frac{y - 9}{x - 3} = 6
+```
+
+<div align='center'>
+    <img src='../images/41.png' width='400'>
+</div>
 For our equation,
 
 ```math

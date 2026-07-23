@@ -22,7 +22,7 @@ This notation expresses the idea of dividing $a$ into $b$ equal parts or more ge
 The symbol $\frac{a}{b}$ has three equivalent interpretations that all say the same thing,
 
 1. **Division** - $a$ divided by $b$
-2. **Comparison / Ratio** - $a$ compared to $b$, or "$a$ for every $b$". More precisely, for every $1$ unit of quantity $b$, there are $\frac{a}{b}$ units of quantity $a$.
+2. **Comparison / Ratio** - $a$ compared to $b$, or $a$ for every $b$. More precisely, for every $1$ unit of quantity $b$, there are $\frac{a}{b}$ units of quantity $a$.
 3. **Part-to-Whole** - $a$ out of $b$ equal parts.
 
 <div align='center'>

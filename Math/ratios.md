@@ -12,22 +12,20 @@ Some ratios compare two things that can both vary
 - $\text{Flour} : \text{Milk}$
 - $\text{Rise} : \text{Run}$
 
-Other ratios compare something to a fixed whole
+Other ratios compare something to a fixed whole. In all cases, the ratio tells us how big one quantity is compared to the other.
 
 - $\text{Part} : \text{Total}$
 - $\text{Sector Angle} : 360^\circ$
-- Percentages (Per 100).
-
-In all cases, the ratio tells us how big one quantity is compared to the other.
+- Percentages (Per $100$).
 
 Ratios appear throughout mathematics and everyday life. They are used to describe mixtures, populations, rates, probabilities, geometic relationships and many other forms of comparison. Understanding ratios begins with understanding that they are fundamentally about **comparing quantities**. Ratios appear throughout mathematics and science, in each case, a ratio compares the size of one quantity with the size of another quantity. Although these concepts appear different, they all rely on comparing quantities through ratios.
 
-| Concept        | Ratio                                |
-| -------------- | ------------------------------------ |
-| Fraction       | Part $:$ Whole                         |
-| Percentage     | Part $:$ Whole                         |
-| Probability    | Favourable Outcomes $:$ Total Outcomes |
-| Slope          | Rise $:$ Run                           |
+| Concept     | Ratio                                  |
+| ----------- | -------------------------------------- |
+| Fraction    | Part $:$ Whole                         |
+| Percentage  | Part $:$ Whole = x : 100               |
+| Probability | Favourable Outcomes $:$ Total Outcomes |
+| Slope       | Rise $:$ Run                           |
 
 Ratios are the mathematical language of comparison. Fractions, percentages, rates, slopes, scales, probabilities, and many physical quantities can all be understood as different representations of ratios. By describing how quantities relate rather than how large they are individually, ratios provide one of the fundamental tools for modelling relationships throughout mathematics.
 
@@ -47,9 +45,7 @@ When you write $a : b$, by itself, it is **incomplete contextually**. To make it
 a : b = 3 : 5
 ```
 
-means "$3$ of the first quantity for every $5$ of the second quantity". The colon notation is useful because both quantities remain visible, making the comparison easy to interpret.
-
-For example,
+means $3$ of the first quantity for every $5$ of the second quantity. The colon notation is useful because both quantities remain visible, making the comparison easy to interpret. For example,
 
 ```math
 3:5
@@ -85,8 +81,8 @@ Conclusively,
 A ratio can be expressed as a fraction. Every ratio $a : b$ can be written as the fraction $\frac{a}{b}$, and the value of that fraction represents the ratio. The fraction $\frac{a}{b}$ has multiple different, but equivalent interpretations,
 
 1. **Division** - $a$ divided by $b$, providing a single number. Answers the question, how many times $b$ goes into $a$?
-2. **Comparison / Ratio** - $a$ compared to $b$, or "$a$ for every $b$". More precisely, for every $1$ unit of quantity $b$, there are $\frac{a}{b}$ units of quantity $a$.
-3. **Part-to-Whole** - $a$ out of $b$ equal parts.
+2. **Comparison / Ratio** - $a$ compared to $b$, or $a$ for every $b$.
+3. **Part-to-Whole** - $a$ parts out of $b$ equal parts.
 
 When we have a ratio comparing $a$ to $b$, we represent this comparison to a relative amount such as,
 
@@ -94,7 +90,7 @@ When we have a ratio comparing $a$ to $b$, we represent this comparison to a rel
 a : b = 3 : 5
 ```
 
-This is interpreted as $3$ units of $a$ for every $5$ units of $b$. Such as $3$ males for every $5$ females. The ratio view of fractions is the important concept to understand here. When we compare one ratio, we compare it to the simplified ratio. When we observe the fraction $\frac{a}{b} = \frac{3}{5}$ as a ratio, we interpret this as $a$ for every $b$ . This requires $a$ to increase every $b$ to allow for the fraction to be able to be simplified to be equal to $\frac{3}{5}$. This implies $\frac{3}{5}$ can be multiplied by some number $\frac{k}{k}$, which creates the ratio $\frac{a}{b}$. In other words,
+This is interpreted as $3$ units of $a$ for every $5$ units of $b$. Such as $3$ males for every $5$ females. The fractional view of ratios is the important concept to understand here. When we compare one ratio, we compare it to the simplified ratio. When we observe the fraction $\frac{a}{b} = \frac{3}{5}$ as a ratio, we interpret this as $a$ for every $b$ . This requires the numerator to increase by $a$ for every denominator increase of $b$ to allow for the fraction to be able to be simplified to be equal to $\frac{3}{5}$. This implies $\frac{3}{5}$ can be multiplied by some number $\frac{k}{k}$, which creates a ratio that be can simplified or equal to $\frac{a}{b}$. In other words,
 
 ```math
 \frac{a}{b} = \frac{3}{5} = \frac{k \cdot 3}{k \cdot 5}
@@ -103,7 +99,6 @@ This is interpreted as $3$ units of $a$ for every $5$ units of $b$. Such as $3$ 
 <div align='center'>
     <img src='./images/21.png'>
 </div>
-
 
 This also means we can have the equivalent ratio,
 
@@ -117,7 +112,7 @@ This is interpreted as $\frac{3}{5}$ units of $a$ for every $1$ unit of $b$, or 
 a : b = \frac{a}{b} \qquad \text{or} \qquad a = \frac{a}{b} \cdot b
 ```
 
-This means, the ratio of $a$ to $b$ is equal to the fraction $a$ divided by $b$. The letters $a$ and $b$ here are **placeholders for quantities**. Hence, when we say 
+This means, the ratio of $a$ to $b$ is equal to the fraction $a$ divided by $b$. The letters $a$ and $b$ here are **placeholders for quantities**. Hence, when we say
 
 ```math
 \text{Males} : \text{Females} = 3 : 5
@@ -162,17 +157,6 @@ Therefore,
 \frac{a}{b} = \frac{3}{5} = \frac{k \cdot 3}{k \cdot 5}
 ```
 
-This has multiple interpretations, all are valid. The difference is comparing to a per unit of $b$ or scaling $b$ so that $a$ is no longer represented as a fraction.
-
-- For every unit of $b$, $a$ increases by $\frac{a}{b}$. In our example, for every $1$ unit increase of $b$, $a$ increases by $\frac{3}{5} \cdot b$
-- For every $5$ unit increase of $b$, $a$ increases by $3$
-
-To summarize,
-
-- $a : b = 3 : 5$ means the ratio $a$ to $b$ is $3$ to $5$. This represents a ratio of two quantities, where $a$ and $b$ are the actual quantities
-- Therefore $\frac{a}{b} = \frac{3}{5}$
-- This tell us, for every $1$ unit of $b$, there are $\frac{3}{5}$ units of $a$. This is required to keep it a fractional multiple of $\frac{3}{5}$
-
 So $\frac{a}{b}$ represents the amount of $a$ per $1$ unit of $b$. To illustrate this with an example,
 
 ```math
@@ -198,7 +182,6 @@ a:b = 1:2 \qquad &\Leftrightarrow \qquad \frac{a}{b} = \frac{1}{2} = 0.5 \\[6pt]
 a:b = 10:4 \qquad &\Leftrightarrow \qquad \frac{a}{b} = \frac{10}{4} = \frac{5}{2} = 2.5
 \end{aligned}
 ```
-
 
 So, suppose we have a ratio of milk to flour when baking a cake that is
 
@@ -236,7 +219,6 @@ This represents,
 Ratios can compare two parts of a group (part-to-part) or compare one part to the entire group (part-to-whole). These two types exist because they answer fundamentally different questions and serve different practical purposes.
 
 Suppose there are $3$ apples and $5$ berries. The total number of fruits is $3 + 5 = 8$.
-
 
 ### Part-to-Part Ratios
 
@@ -282,11 +264,33 @@ A ratio only requires a comparison of relative size. It does not require both qu
 Useful questions they answer,
 
 - What fraction of the full circle is this sector? e.g. $90^\circ : 360^\circ = 1 : 4 = \frac{1}{4}$
-- What percentage of the total is this part? e.g. $3 : 8 = \frac{3}{8} = 37.5\% = 37.5 : 100$
+- What percentage of the total is this part? e.g. $3 : 8 = \frac{3}{8} = 0.375 = \frac{37.5}{100} = 37.5 : 100 = 37.5\%$
 - What proportion of students passed the test? e.g. $\text{passed} : \text{total} = 18:30 = 3:5$
 
 Part-to-whole ratios are especially valuable for understanding shares, probabilities, percentages and fractions. Both types use the same data but focus on different relationships. Part-to-part ratios are ideal for scaling and mixing, while part-to-whole ratios are ideal for understanding proportions and shares of a total.
 
+These are typically written as,
+
+```math
+\text{part} : \text{whole} = x : y
+```
+
+This says that the part-to-whole ratio is $x : y$, where
+
+- $x$ represents the size of the part.
+- $y$ represents the size of the whole.
+
+For example, with a $90^\circ$ sector of a full circle.
+
+```math
+\text{part} : \text{whole} = 90^\circ : 360^\circ = 1 : 4
+```
+
+or equivalently,
+
+```math
+\frac{\text{part}}{\text{whole}} = \frac{90^\circ}{360^\circ} = \frac{1}{4}
+```
 
 <div align='center'>
     <h1> Ratios as Percentages </h1>
@@ -310,31 +314,25 @@ which evaluates to
 0.375
 ```
 
-Expressing the same proportion per hundred gives
+Expressing this fraction as a percentage is
 
 ```math
 37.5\%
 ```
 
-Thus,
+A percentage means "per hundred", therefore we rewrite this as a ratio of $x : 100$.
 
 ```math
 3 : 8 = \frac{3}{8} = 0.375 = 37.5\% = 37.5 : 100
 ```
 
-These are not different mathematical facts, they're different representations of the same relationship. The ratio notation emphasises comparison, the fraction notation emphasises division and the percentage notation expresses the ratio relative to a standard reference quantity of $100$.
-
-
-
-The idea of ratios being percentages also appears in geometry. A sector angle of $72^\circ$ compared with a full circle of $360^\circ$ forms the ratio,
+These are not different mathematical facts, they're different representations of the same relationship. The ratio notation emphasises comparison, the fraction notation emphasises division and the percentage notation expresses the ratio relative to a standard reference quantity of $100$. The idea of ratios being percentages also appears in geometry. A sector angle of $72^\circ$ compared with a full circle of $360^\circ$ forms the ratio,
 
 ```math
 72 : 360 = 1 : 5 = 20 : 100 = 20\%
 ```
 
-Although the full circle angle is always $360^\circ$, the ratio remains useful because it tells us that the sector occupies $20\%$ of the cirle. This proportion can then be applied to any quantity that scales directly with the angle. As the sector angle increases, both the enclosed area and the arc length increase in the same proportion. Consequently, if the sector occupies $20\%$ of the total angle, it also occupies $20\%$ of the total area and $20\%$ of the total circumfrance.
-
-For example, suppose a circle has radius $10$ cm. It's area is,
+Although the full circle angle is always $360^\circ$, the ratio remains useful because it tells us that the sector occupies $20\%$ of the cirle. This proportion can then be applied to any quantity that scales directly with the angle. As the sector angle increases, both the enclosed area and the arc length increase in the same proportion. Consequently, if the sector occupies $20\%$ of the total angle, it also occupies $20\%$ of the total area and $20\%$ of the total circumfrance. For example, suppose a circle has radius $10$ cm. It's area is,
 
 ```math
 \pi r^2 = \pi(10)^2 = 100 \pi \text{ cm}^2
@@ -362,7 +360,7 @@ This calculation works because the angle ratio describes the fraction of the ent
 ```math
 \begin{aligned}
 \text{Sector Angle} &: \text{Circle Angle} &= 1 : 5 &= 72 : 360\\
-\text{Sector Area} &: \text{Circle Area} &= 1 : 5 &= 20\pi : 100\pi 
+\text{Sector Area} &: \text{Circle Area} &= 1 : 5 &= 20\pi : 100\pi
 \end{aligned}
 ```
 
@@ -372,12 +370,10 @@ Which therefore follows,
 \frac{\text{Sector Angle}}{\text{Circle Angle}} = \frac{\text{Sector Area}}{\text{Circle Area}} = \frac{1}{5} = \frac{72}{360} = \frac{20\pi}{100\pi}
 ```
 
-
-
 #### Example One
 
 ```math
-300:200 
+300:200
 ```
 
 This means $300$ compared to $200$. We can simplify the ratio by dividing both terms by $100$.
@@ -395,10 +391,10 @@ This tells us that for every $3$ units of the first quantity, there are $2$ unit
 Evaluating this fraction gives,
 
 ```math
-\frac{300}{200} = \frac{3}{2} = 1.5
+\frac{300}{200} = \frac{3}{2} = 1.5 \qquad \text{or} \qquad 300 : 200 = 1.5 : 1
 ```
 
-This means the first quantity is $1.5$ times the second quantity. A percentage is simply a ratio expressed per $100$. So starting with $1.5$, multiply by $100$. 
+This means the first quantity is $1.5$ times the second quantity. A percentage is simply a ratio expressed per $100$. So starting with $1.5$, multiply by $100$.
 
 ```math
 1.5 \cdot 100\% = 150\%
@@ -448,33 +444,28 @@ Therefore,
 
 #### Example Four
 
-Suppose we instead ask for a percentage of a number. What is $50\%$ of $1000$?
-
-By definition, $25\%$ means $25$ per $100$, that is the ratio,
+Suppose we instead ask for a percentage of a number. What is $50\%$ of $1000$? By definition, $50\%$ means $50$ per $100$, that is the ratio,
 
 ```math
-25 : 100
+50 : 100
 ```
 
 A percentage is always $\frac{\text{part}}{\text{whole}}$. Therefore,
 
 ```math
 \begin{align*}
-\frac{\text{part}}{\text{whole}} &= \frac{25}{100} = \frac{1}{4} \\
-\text{part} &= \frac{1}{4} \cdot \text{whole} \\
-\text{part} &= \frac{1}{4} \cdot 1000 \\
-\text{part} &= 250\\
+\frac{\text{part}}{\text{whole}} &= \frac{50}{100} = \frac{1}{2} = 0.5\\
+\text{part} &= \frac{1}{2} \cdot \text{whole} \\
+\text{part} &= \frac{1}{2} \cdot 1000 \\
+\text{part} &= 500\\
 \end{align*}
 ```
 
 This follows,
 
 ```math
-\text{part} : \text{whole} = 25 : 100 = 125 : 500
+\text{part} : \text{whole} = 50 : 100 = 500 : 1000
 ```
-
-
-
 
 <div align='center'>
     <h1> Ratios as Rates </h1>
@@ -515,9 +506,7 @@ We first define,
 | Length   | metre (m)     | 5 m         |
 | Mass     | kilogram (kg) | 12 kg       |
 | Angle    | degree (°)    | 90°         |
-| Angle    | radian (rad)  | $\pi$ rad |
-
-
+| Angle    | radian (rad)  | $\pi$ rad   |
 
 A ratio compares two **measurements**, indicating how much of one measurement corresponds to the other. When two measurements are **proportional**, they maintain a constant ratio, meaning that **if one measurement is multiplied by a constant factor, the other is multiplied by the same factor**. Consequently, the relationship between any two corresponding pairs of measurements can be represented by equal ratios. This constant relationship can be expressed using either fraction notation,
 
@@ -525,7 +514,7 @@ A ratio compares two **measurements**, indicating how much of one measurement co
 \frac{a}{b} = \frac{c}{d} \qquad \text{or} \qquad a : b = c : d
 ```
 
-This is read as, $a$ is to $b$ as $c$ is to $d$. Proportions are powerful because they allow us to use information from one relationship to solve for unknowns in another.
+Proportions are powerful because they allow us to use information from one relationship to solve for unknowns in another.
 
 A **quantity** is a property that can be measured, such as length, mass, time or angle. It exists independently of any unit of measure. A **measurement** is the numerical value together with a unit that describe the size of the quantity. For example, the length of a stick is a quantity. It may be measured as $1 \text{ m}$, $100 \text{ cm}$ or $1000 \text{ mm}$. Although these measurements use different numbers and different units, they all describe the same underlying quantity, the sticks length.
 
@@ -564,7 +553,7 @@ Since the measurements are equivalent, they define a fixed relationship between 
 Because the relationship between the units is constant, any other pair of equivalent measurements must preserve the same ratio. This is written as a proportion, either using fractions or colon notation.
 
 ```math
-\frac{1 \text{ m}}{100 \text{ cm}} = \frac{x \text{ cm}}{y \text{ cm}}
+\frac{1 \text{ m}}{100 \text{ cm}} = \frac{x \text{ m}}{y \text{ cm}}
 ```
 
 #### Same Type of Quantity, Different Sizes
@@ -596,7 +585,11 @@ The equivalent colon representation is,
 \sin(30^\circ) = \text{Opposite} : \text{Hypotenuse} = 0.5 : 1 = k \cdot 0.5 : k \cdot 1
 ```
 
-In a small triangle with a hypotenuse length of $6 \text{ cm}$ and $\theta = 30$.
+In a small triangle with a,
+
+- Hypotenuse length of $6 \text{ cm}$
+- $\theta = 30$
+- $\sin(30^\circ) = \frac{0.5}{1} = 0.5$
 
 ```math
 \begin{aligned}
@@ -610,7 +603,7 @@ This means, the opposite length must be equal to $3$ to keep the original ratio 
 
 #### Different Types of Quantities That Are Related
 
-Here, the proportion connects two different measurements that are linked by an underlying rule or property. We can take the circle sector as an example. A circle sector has a central angle of $72^\circ$. The full circle is always $360^\circ$.
+The proportion connects two different measurements that are linked by an underlying rule or property. We can take the circle sector as an example. A circle sector has a central angle of $72^\circ$. The full circle is always $360^\circ$.
 
 ```math
 \frac{\text{Sector Angle}}{\text{Full Angle}} = \frac{72^\circ}{360^\circ} = \frac{1}{5}
@@ -619,8 +612,12 @@ Here, the proportion connects two different measurements that are linked by an u
 Because a circle is symmetric around its center, the angle and the area are distributed proportionally. Therefore, the same ratio applies to the areas.
 
 ```math
-\frac{\text{Sector Angle}}{\text{Full Angle}} = \frac{\text{Sector Area}}{\text{Total Circle Angle}} = \frac{1}{5}
+\frac{\text{Sector Angle}}{\text{Full Angle}} = \frac{\text{Sector Area}}{\text{Total Circle Area}} = \frac{1}{5}
 ```
+
+<div align='center'>
+    <img src='./images/sector_ratio.gif' width='800'>
+</div>
 
 This allows us the calculate the sectors area directly from its angle.
 
@@ -630,11 +627,122 @@ This allows us the calculate the sectors area directly from its angle.
 
 In both situations, the core idea is the same, **the relative relationship remains constant**. This constant relationship is what makes proportions so useful for solving problems.
 
+#### Why Proportionality is Always Multiplicatively Scaled
+
+A fraction or ratio represents the relationship between two quantities rather than the quantities themselves. To produce an equivalent fraction, this relationship must remain unchanged. The only way to preserve the relationship is to multiply or divide both the numerator and denominator by the same non-zero factor. This process is known as **scaling** because every part of the fraction changes by the same proportion. For example, multiplying both the numerator and denominator of $\frac{1}{2}$ by $2$ gives $\frac{2}{4}$.
+
+```math
+\frac{1}{2} \cdot \frac{2}{2} = \frac{2}{4}
+```
+
+Although the numbers are larger, the relationship between them is identical, so both fractions represent the same value.
+
+Adding the same number to both the numerator and denominator, however, does not preserve this relationship. If we add $1$ to both parts of $\frac{1}{2}$, we obtain $\frac{2}{3}$, which is not equivalent to the original fraction.
+
+```math
+\begin{aligned}
+\frac{1 + 1}{2 + 1} = \frac{2}{3} \\
+
+\frac{2}{3} \neq \frac{1}{2}
+\end{aligned}
+```
+
+The reason is that addition changes each quantity by the same **absolute amount**, not by the same **relative amount**. The numerator increases from $1$ to $2$, a $100%$ increase, while the denominator increases from $2$ to $3$, only a $50%$ increase. Since the two quantities have changed by different proportions, the ratio between them has also changed. Multiplication, in constrast, applies the same scale factor to both quantities, preserving their proportional relationship.
+
+A ratio such as $2:3$ means that for every $2$ units of one quantity, there are $3$ units of another. **What matters is how many times larger one quantity is than the other, not the individual number themselves**. If both quantities are multiplied by the same factor, this relationship is preserved.
+
+- $2: 3$
+- $4:6$ - Multiply both by $2$
+- $10:15$ - Multiply both by $5$
+
+All describe the same proportion because the ratio can be compressed to the ratio $\frac{2}{3}$. However, if we add the same amount to both terms, the relationship changes.
+
+```math
+2 : 3 \to 4 : 5   \text{ } (\text{Add } 1, \text{ twice})
+```
+
+Although both numbers increased by the same amount, the proportion did not remain the same. Originally, the first quantity was $\frac{2}{3}$ of the second. After adding $2$, the first quantity is $\frac{4}{5}$ of the second.
+
+```math
+2 : 3 = \frac{2}{3} : 1 \qquad 4 : 5 = \frac{4}{5} : 1
+```
+
+Because,
+
+```math
+\frac{2}{3} \neq \frac{4}{5}
+```
+
+<div align='center'>
+    <h1> More than 3 Quantities </h1>
+</div>
+
+For two quantities, the ratio
+
+```math
+a : b
+```
+
+can be represented by the single fraction
+
+```math
+\frac{a}{b}
+```
+
+because there is only **one comparison** being made, $a$ compared to $b$. For three quantities,
+
+```math
+a : b : c
+```
+
+there is no single fraction that represents an entire ratio. Instead, it represents the relationship
+
+```math
+\frac{a}{b} : \frac{b}{c} : \frac{a}{c}
+```
+
+You can recover any pairwise comparison.
+
+- $a : b = \frac{a}{b}$
+
+- $b : c = \frac{b}{c}$
+
+- $a : c = \frac{a}{c}$
+
+Suppose we had
+
+```math
+2 : 3 : 5
+```
+
+Then,
+
+- $\frac{2}{3}$ compares the first and second quantities.
+
+- $\frac{3}{5}$ compares the second and third quantities.
+
+- $\frac{2}{5}$ compares the first and third quantities.
+
+No single fraction contains all three of these relationships simultaneously. A ratio of three numbers is an ordered triple, not a fraction.
+
+```math
+a : b : c ≡ (a, b, c)
+```
+
+up to multiplication by a common nonzero constant.
+
+```math
+2 : 3 : 5 = 4 : 6 : 10 = 2 \cdot k : 3 \
+\cdot k : 5 \cdot k
+```
+
+because all three entries have been scaled by the same factor.
+
 <div align='center'>
     <h1> Ratios in Coordinate Geometry </h1>
 </div>
 
-One of the most important ratios in mathematics is the slope of a straight line. Slope is not merely a formula. It is a ratio describing how two quantities change together. A slope is defined as,
+One of the most important ratios in mathematics is the slope of a straight line. Slope is not merely a formula, it is a ratio describing how two quantities change together. A slope is defined as,
 
 ```math
 m = \frac{\Delta y}{\Delta x}
