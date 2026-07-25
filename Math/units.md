@@ -545,9 +545,7 @@ The exponent $3$ does not multiply into the result directly. Instead, it specifi
 2^{5_s}
 ```
 
-Would literally mean "Multiply $2$ by itself "5 seconds times"" which has no mathematical interpretation. Seconds measure duration, not repetition count. Thus, **exponents must always reduce to pure dimensionless numbers** before exponentiation becomes meaningful.
-
-Despite this restriction, exponential growth models naturally involve time. For example, suppose a quantity doubles every second. A common shorthand model is,
+Would literally mean "Multiply $2$ by itself "5 seconds times"" which has no mathematical interpretation. Seconds measure duration, not repetition count. Thus, **exponents must always reduce to pure dimensionless numbers** before exponentiation becomes meaningful. Despite this restriction, exponential growth models naturally involve time. For example, suppose a quantity doubles every second. A common shorthand model is,
 
 ```math
 V(t) = V_0 2^t
@@ -861,7 +859,7 @@ Let,
 The rigorous model is,
 
 ```math
-V(t) = V_0 2^{\frac{t}{T}}
+V(t) = V_0 \cdot 2^{\frac{t}{T}}
 ```
 
 The exponent is dimensionless because,
@@ -870,14 +868,14 @@ The exponent is dimensionless because,
 \frac{t}{1s}
 ```
 
-cancels out.
+cancels out the $s$ unit.
 
 ##### Step 2 - Express Full Volume
 
 If the stadium becomes full at $t=60s$ then,
 
 ```math
-V_f = V_0 2^{60}
+V_f = V_0 \cdot 2^{60}
 ```
 
 ##### Step 3 - Determine Quarter Full Volume
@@ -891,13 +889,13 @@ Quarter full means,
 Substitute $V_f$,
 
 ```math
-\frac{V_f}{4} = \frac{V_02^{60}}{2^2}
+\frac{V_f}{4} = \frac{V_0 \cdot 2^{60}}{2^2}
 ```
 
 Apply exponent laws,
 
 ```math
-\frac{V_f}{4} = V_0 2^{60-2} = V_0 2^{58}
+\frac{V_f}{4} = V_0 \cdot 2^{60-2} = V_0 \cdot 2^{58}
 ```
 
 ##### Step 4 - Match Against the Original Model
@@ -905,13 +903,13 @@ Apply exponent laws,
 The model states,
 
 ```math
-V(t) = V_0 2^t
+V(t) = V_0 \cdot 2^t
 ```
 
 Quarter full occurs when,
 
 ```math
-V_02^t = V_02^{58}
+V_0 \cdot 2^t = V_0 \cdot 2^{58}
 ```
 
 Cancel $V_0$

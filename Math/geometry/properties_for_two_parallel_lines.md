@@ -14,7 +14,7 @@ Two lines are parallel if they lie in the same plane and never intersect, regard
 l_1 \parallel l_2
 ```
 
-Parallel lines also main equidistant from each other at every point.
+Parallel lines also maintain an equal distance (are equidistant) from each other at every point.
 
 <div align='center'>
     <img src='./images/42.png'>
@@ -44,7 +44,7 @@ If two parallel lines are intersected by a transversal, corresponding angles are
     <img src='./images/44.jpg' width='400'>
 </div>
 
-We can begin using simple properties. First identify that if we have two parallel lines with a traversal, that the parallel lines will never meet. This can be thought of creating two identical 
+We can begin using simple properties. First identify that if we have two parallel lines with a traversal, that the parallel lines will never meet. This can be thought of creating two identical
 
 <div align='center'>
     <img src='./images/46.jpg' width='600'>
@@ -118,8 +118,73 @@ Any line drawn parallel to one side of a triangle creates a smaller triangle tha
     <img src='./images/49.png' width='700'>
 </div>
 
+Because,
+
+```math
+\triangle ADE \sim \triangle ABC
+```
+
+It follows,
+
+```math
+AD : AB = AE : AC = DE : BC
+```
+
 Additionally,
 
 ```math
 \frac{AD}{AB} = \frac{AE}{AC}
 ```
+
+Thales Theorem is very interesting and its important to notice,
+
+```math
+\triangle ADE \sim \triangle ABC
+```
+
+The two triangles are similar, however Thales Theorem has sides $AD$ and $DB$, where the side $DB$ **is not a full length size of the triangle** $ABC$. So the similar triangle ratio may not be obvious why this works. Given,
+
+```math
+\triangle ADE \sim \triangle ABC
+```
+
+Similarity immediately gives,
+
+```math
+\frac{AD}{AB} = \frac{AE}{AC} = \frac{DE}{BC}
+```
+
+Notice that only **full sides appear**. Now observe that,
+
+```math
+\begin{aligned}
+AB &= AD + DB \\
+AC &= AE + EC
+\end{aligned}
+```
+
+Substitute these into the similarity result,
+
+```math
+\frac{AD}{AD + DB} = \frac{AE}{AE + EC}
+```
+
+Now comes the algebra. Multiply both sides,
+
+```math
+AD(AE + EC) = AE(AD + DB)
+```
+
+Expand,
+
+```math
+\begin{aligned}
+AD \cdot AE + AD \cdot EC &= AE \cdot AD + AE \cdot DB \\
+\cancel{AD \cdot AE} + AD \cdot EC &= \cancel{AE \cdot AD} + AE \cdot DB \\
+AD \cdot EC &= AE \cdot DB \\
+\frac{AD}{DB} &= \frac{AE}{EC}
+
+\end{aligned}
+```
+
+Which is exactly Thales Theorem, where $DB$ is not a full length of a side.

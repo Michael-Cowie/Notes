@@ -786,3 +786,83 @@ These relationships can be written as,
 ```
 
 Although the distance change, the ratio remains constant. This constant ratio is what defines a straight line with slope $0.5$. In other words, the slope is not merely a number. It is a ratio that describes how the vertical change must compare to the horizontal change at every point on the line.
+
+<div align='center'>
+    <h1> Ratios in Similar Triangles </h1>
+</div>
+
+<div align='center'>
+    <img src='./images/22.png' width='200'>
+</div>
+
+Two triangles are **similar** if they have the same shape but not necessarily the same size. Corresponding angles are equal in measure, and corresponding side lengths are in the same ratio.
+
+For example,
+
+```math
+\triangle ADE \sim \triangle ABC
+```
+
+means that the corresponding vertices are
+
+```math
+A \leftrightarrow A,\qquad
+D \leftrightarrow B,\qquad
+E \leftrightarrow C.
+```
+
+Therefore, the corresponding sides are
+
+```math
+AD \leftrightarrow AB,\qquad
+AE \leftrightarrow AC,\qquad
+DE \leftrightarrow BC.
+```
+
+Since the triangles are similar, every pair of corresponding sides has the same ratio
+
+```math
+AD : AB
+=
+AE : AC
+=
+DE : BC
+```
+
+For example, if
+
+```math
+AD = 2,\quad AB = 4,\quad
+AE = 4,\quad AC = 8,\quad
+DE = 3,\quad BC = 6,
+```
+
+then
+
+```math
+2 : 4
+=
+4 : 8
+=
+3 : 6
+=
+1 : 2
+```
+
+So when we state that each **pair of corresponding sides** of two similar triangles has the **same ratio**, it means that,
+
+1. Each ratio can be simplified to the same value. For example,
+
+```math
+2 : 4 = 4 : 8 = 3 : 6 = 1 : 2 = \frac{1}{2}
+```
+
+2. The ratio between every pair of corresponding sides is the same. In this example, every side of the smaller triangle is $\frac{1}{2}$ of its corresponding side in the larger triangle. Equivalently, every side of the larger triangle is $2$ times its corresponding side in the smaller triangle.
+
+3. The numerator and denominator are both multiples of the same value $k$. If the ratio is $1 : 2$, then the numerator has length $1k$ and the denominator has length $2k$. For example,
+
+```math
+2 : 4 = 1(2) : 2(2) \\4 : 8 = 1(4) : 2(4) \\ 3 : 6 = 1(3) : 2(3)
+```
+
+Therefore, when we say **the ratios are equal**, we mean they simplify to the same ratio. Equivalently, each ratio is a multiple of the same simplified ratio. This means each side of the smaller triangle is **half** the length of its corresponding side in the larger triangle. Equivalently, the larger triangle is an enlargement of the smaller triangle by a **scale factor of** $2$. The scale factor always compares **corresponding sides** of the two triangles, not different sides within the same triangle.
