@@ -2,13 +2,29 @@
     <h1> Definite and Indefinite Integrals </h1>
 </div>
 
-The integral sign $\int$ always denotes a summation process. For the summation process to be well-defined, the integrand **must include a differential element** that represents an infinitesimal contribution to the total. In the context of area under a curve, this contribution is the area of a thin rectangle.
+The notation for integration consists of two essential components, the integrand $f(x)$ and the differential $dx$. Together, they specify both the quantity being integrated and the variable with respect to which the integration is performed. The expression $\int f(x)$ is incomplete because it does not identify the variable of integration, whereas $\int f(x)\,dx$ is well-defined.
 
-- The expression $\int 2x$ by itself **is not valid** and does not make sense. There is no indication of what is being summed or with respect to what variable.
+For example,
 
-- The **correct form** is $\int 2x \ dx$. Here, $2x$ is the height of each thin rectangle, $dx$ is its infinitesimal width and the product $2x \ dx$ is the area of one tiny rectangle. The integral sign sums all such rectangles as $x$ varies over an interval.
+- The expression $\int 2x$ is **not valid** because it does not specify the variable of integration.
 
-A bare function $f(x)$ is not able to be integrated. It is a height, a single output at a point, carrying no notion of extent or accumulation. Only when $f(x)$ is multiplied by an infinitesimal width $dx$ does the product $f(x) \ dx$ become a quantity. Here, $dx$ also names the variable of integration. It identifies the axis along which widths are measured and correspondingly the variable with respect to which an antiderivative is desired.
+- The **correct form** is $\int 2x\,dx$. The differential $dx$ indicates that the integration is performed with respect to the variable $x$. This distinction becomes particularly important when an expression contains multiple variables. For example,
+
+```math
+\int xy\,dx=\frac{x^2y}{2}+C,
+```
+
+treats $y$ as a constant, whereas
+
+```math
+\int xy\,dy=\frac{xy^2}{2}+C,
+```
+
+treats $x$ as a constant.
+
+In a **definite integral**, the product $f(x)\,dx$ represents an infinitesimal contribution to an accumulated quantity, such as the area of a thin rectangle, and the integral sums these contributions over a specified interval. 
+
+In an **indefinite integral**, however, **no summation is taking place**. Instead, $\int f(x)\,dx$ denotes the family of functions whose derivative is $f(x)$. Although these two concepts have **different interpretations, they share the notation** $f(x)\,dx$ because the differential identifies the variable of integration and preserves the close relationship between differentiation and integration established by the Fundamental Theorem of Calculus.
 
 <div align='center'>
     <h1> Indefinite Integrals </h1>
@@ -23,6 +39,34 @@ Given a function $f$, finding an indefinite integral means to find all functions
 ```
 
 An indefinite integral evaluates to a **function family**, with no interval and no numerical accumulation involved. The two are connected through the Fundamental Theorem of Calculus, but they answer different questions. One asks, **how much**, the other asks **which function**. The arbitrary constant is essential to the indefinite integral precisely because there are no endpoints available to cancel it.
+
+Although an indefinite integral does not itself compute an accumulated quantity, it **provides the function required to evaluate an indefinite integral**. Once an antiderivative $F(x)$ satisfying $F'(x) = f(x)$ has been found, the Fundamental Theorem of Calculus states that the accumulated quantity over an interval $[a, b]$ is obtained by evaluating the antiderivative at the endpoints.
+
+```math
+\int_a^b f(x) \ dx = F(b) - F(a)
+```
+
+Therefore, the indefinite integral **is not a process of finding an area**. Rather, it constructs the antiderivative that **later allows the definite integral to evaluate that area efficiently**.
+
+A similar process of reversal can be,
+
+```math
+\begin{aligned}
+y &= x^2 \\
+\frac{dy}{dx} &= 2x \\
+dy &= 2x \ dx
+\end{aligned}
+```
+
+Now reversing this procedure,
+
+```math
+\begin{aligned}
+\int dy &= \int 2x \ dx \\
+\int 1 \ dy &= \int 2x \ dx \\ 
+y &= x^2
+\end{aligned}
+```
 
 ### Case 1 - Integrating an Explicit Function
 
@@ -62,7 +106,13 @@ for every constant $C$. Hence,
 \int 2x \ dx = x^2 + C
 ```
 
-This is the general antiderivative, since every member of the family has the same derivative $2x$. Here $2x$ is a bare height, and it is only the the product $2x \ dx$, a constructed quantity that is a valid integrand.
+This is the general antiderivative, since every member of the family has the same derivative $2x$. Here $2x$ is a bare height, and it is only the the product $2x \ dx$, a constructed quantity that is a valid integrand. Notice that this result is still a function, not an area. The indefinite integral has produced an antiderivative, but no interval has been specified, so no numerical accumulation has occurred. However, once an interval is introduced, this antiderivative becomes the tool used to evaluate the corresponding definite integral. For example,
+
+```math
+\int_a^b 2x \ dx = \left[ x^2 \right]_a^b = b^2 - a^2
+```
+
+The first step therefore constructs the function $x^2 + C$, whereas the second evaluates the change in the function over an interval. Although both use the notation $\int 2x \ dx$, the indefinite integral finds an antiderivative, while the definite integral computes an accumulated quantity.
 
 ### Case 2 - Integrating a Bare Differential
 

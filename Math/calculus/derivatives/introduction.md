@@ -13,7 +13,7 @@ This measures average change over a finite interval. However, deeper conceptual 
 1. Two positions
 2. An interval between them
 
-Without an interval, there appears to be no change to measure.  A similar difficulty appears geometrically, the slope of a line is defined using two distinct points.
+Without an interval, there appears to be no change to measure. A similar difficulty appears geometrically, the slope of a line is defined using two distinct points.
 
 ```math
 \frac{\Delta y}{\Delta x}
@@ -35,13 +35,13 @@ This creates one of the deepest conceptual problems in mathematics. How can some
     <h1> Derivatives as a Rate of Change </h1>
 </div>
 
-A derivative is a mathematical tool used to describe **rate of change**. When a quantity depends on another quantity, the derivative measures how quickly the output changes as the input changes. On a graph, this appears as the slope of the curve at a particular point. 
+A derivative is a mathematical tool used to describe **rate of change**. When a quantity depends on another quantity, the derivative measures how quickly the output changes as the input changes. On a graph, this appears as the slope of the curve at a particular point.
 
 - A **positive derivative** means the function is **increasing**
 - A **negative derivative** means the function is **decreasing**
-- A **derivative of $0$** indicatives a **flat point** where the function momentarily stops rising or falling 
+- A **derivative of $0$** indicatives a **flat point** where the function momentarily stops rising or falling
 
-In practical terms, derivatives allow mathematics to move beyond simply describing values and instead describe behaviour. Rather than only stating where an object is, derivatives explain 
+In practical terms, derivatives allow mathematics to move beyond simply describing values and instead describe behaviour. Rather than only stating where an object is, derivatives explain
 
 - How fast it is moving at a certain time
 - How quickly population grows at a certain time
@@ -62,13 +62,13 @@ Suppose we graph $s(t) = t^2$. With,
 - $x = t$ with units hour
 - Slope between any two points $\frac{\Delta y}{\Delta x} = \frac{\text{km}}{\text{hour}}$
 - The red line represents the function $s(t)$, graphing distance-time.
-- The blue line is a function which graphs the derivative of $s(t)$. 
+- The blue line is a function which graphs the derivative of $s(t)$.
 
 <div align='center'>
     <img src='../images/11.png' width='300'>
 </div>
 
-This derivative measures how quickly distance changes as time changes. If the graph of distance versus time is steep, the car is travelling quickly. If it is shallow, the car is travelling slowly. Because distance is measured in kilometres (km) and time in hours (h), the derivative has units of kilometres per hour $\left( \frac{\text{km}}{\text{hr}}\right)$. Thus, the derivative function converts a "position" function into a "speed" function. 
+This derivative measures how quickly distance changes as time changes. If the graph of distance versus time is steep, the car is travelling quickly. If it is shallow, the car is travelling slowly. Because distance is measured in kilometres (km) and time in hours (h), the derivative has units of kilometres per hour $\left( \frac{\text{km}}{\text{hr}}\right)$. Thus, the derivative function converts a "position" function into a "speed" function.
 
 Expanding on our distance function
 
@@ -82,9 +82,9 @@ This function itself describes the car's total distance from the starting point,
 v(t) = \frac{ds}{dt} = 2t
 ```
 
-If $t = 10$, 
+If $t = 10$,
 
-- The distance function gives $s(10) = 100$, meaning the car is 100 kilometres from its starting point. 
+- The distance function gives $s(10) = 100$, meaning the car is 100 kilometres from its starting point.
 - The derivative $v(10) = 20$, meaning that at that exact instant the car is travelling at $20 \frac{km}{hr}$
 
 This interpretation is fundamental in physics, engineering and economics because it allows changing systems to be analyzed instantaneously rather than only over large intervals.
@@ -119,7 +119,8 @@ If $t=10$,
     <img src='../images/13.png' width='300'>
 </div>
 
-This shows how each derivative adds another layer of interpretation. 
+This shows how each derivative adds another layer of interpretation.
+
 - The original function describes position. The $y$ axis units is $km$. The $x$ axis units is $hr$.
 - The first derivative describes instantaneous velocity. The $y$ axis units is $\frac{km}{hr}$. The $x$ axis units is $hr$.
 - The second derivative describes how rapidly the velocity itself changes. The $y$ axis units is $\frac{km}{hr^2}$. The $x$ axis units is $hr$.
@@ -128,12 +129,17 @@ This shows how each derivative adds another layer of interpretation.
     <img src='../images/19.png' width='700'>
 </div>
 
-
 <div align='center'>
     <h1> Derivative Theorem </h1>
 </div>
 
-Suppose a function changes from $f(x)$ to $f(x + h)$. We can create a generalized function for calculating the slope between 2 different points, from $(x, f(x))$ and $(x + h, f(x + h))$.
+Suppose a function changes from \(f(x)\) to \(f(x+h)\), where \(h\) represents a small change in \(x\). These correspond to the two points
+
+```math
+(x,\,f(x))
+\quad\text{and}\quad
+(x+h,\,f(x+h))
+```
 
 <div align='center'>
     <img src='../images/14.png' width='300'>
@@ -153,7 +159,7 @@ Geometrically, this is a slope of a secant line joining two points on a curve.
 
 However, this still does not answer "What is occurring at exactly one point". To resolve this difficulty, calculus studies what happens as the interval shrinks indefinitely. This is precisely how limits are linked to derivatives. You cannot set the value of $h$ to $0$ as you will receive a division by $0$, calculus resolves this difficulty by examining the slopes between nearby points and then studying the limiting behaviour of those slopes as the interval between the points shrink indefinitely.
 
-**The key idea is that the existence of a limit depends on nearby convergence behaviour, not on whether the limiting value is directly attained**. It only needs to describe a unique value all sufficiently close inputs force the expression toward. That number is then taken as the derivative because it is fully determined by the local behaviour of the function, even though the defining expression itself never needs to be evaluated at the limiting case. 
+**The key idea is that the existence of a limit depends on nearby convergence behaviour, not on whether the limiting value is directly attained**. It only needs to describe a unique value all sufficiently close inputs force the expression toward. That number is then taken as the derivative because it is fully determined by the local behaviour of the function, even though the defining expression itself never needs to be evaluated at the limiting case.
 
 Calculus defines the derivative as the limit because the nearby secant slopes can converge toward one unique value as the interval width approaches $0$. **The derivative is therefore defined by**,
 
@@ -161,10 +167,17 @@ Calculus defines the derivative as the limit because the nearby secant slopes ca
 f'(x) = \lim_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}
 ```
 
+The derivative can be defined using either $\Delta x$ or $h$. These are completely equivalent notations.
+
+```math
+f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{h}
+```
+
+Historically, mathematicians found it more convenient to write $x+h$ than $x+\Delta x$. Here, $h$ is simply a small increment added to $x$. The variable $h$ is frequently used in mathematical proofs, but it is important to understand that any variable may be used to represent a small change in $x$, provided it approaches $0$. Many texts prefer $h$ because the notation $\Delta x$ is often reserved for a finite change in $x$, helping to distinguish finite increments from the limiting process used to define the derivative.
+
 <div align='center'>
     <img src='../images/velocity_derivative_visualized.gif' width='800'>
 </div>
-
 
 It is therefore crucial to understand that **the derivative is a limit value**. The derivative is not obtained by directly substituting $h=0$. Doing so would produce division by 0. Instead, calculus examines the behaviour of nearby secant slopes as the interval width becomes arbitrarily small. This creates an extremely important conceptual distinction. The derivative **is not**,
 
@@ -172,7 +185,71 @@ It is therefore crucial to understand that **the derivative is a limit value**. 
 - One secant line
 - One ordinary ratio
 
-Rather, the derivative at a point **is the exact limiting value** of nearby secant slopes as the interval width approaches 0. This means the derivative originates from convergence behaviour. **The derivative is therefore the exact number forced by the limiting behaviour**. Finite secant slopes may differ slightly from one another. However, if all sufficiently small nearby slopes converge toward one unique value, calculus defines that value to be the derivative. 
+Rather, the derivative at a point **is the exact limiting value** of nearby secant slopes as the interval width approaches zero. This means the derivative originates from the convergence of nearby average rates of change. **The derivative is therefore the unique value forced by this limiting behaviour**. Although finite secant slopes generally differ from one another, if every sufficiently small nearby secant slope approaches the same value, calculus defines that value to be the derivative.
+
+The limit of the difference quotient has an important interpretation beyond geometry. The difference quotient
+
+```math
+\frac{f(x+h)-f(x)}{h}
+```
+
+computes the **average rate of change** over a finite interval of width $h$. Taking the limit as $h \to 0$ does **not** produce the rate of change over an infinitesimally small interval. Rather, it removes the interval entirely and leaves a single limiting value, the **instantaneous rate of change** at a point.
+
+If
+
+```math
+y=f(x),
+```
+
+then the derivative is defined by
+
+```math
+\frac{dy}{dx}=f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}.
+```
+
+This equation defines the instantaneous rate at which the dependent variable $y$ changes with respect to the independent variable $x$. More generally, if the independent variable is $t$, then
+
+```math
+\frac{dy}{dt}
+```
+
+is the instantaneous rate of change of $y$ with respect to time.
+
+It is important to distinguish between the **derivative** and the **differentials**. The derivative is **defined first** using the limiting behaviour of nearby average rates of change. The symbols $dx$ and $dy$ are **not** used to define the derivative itself. Instead, they are introduced **after** the derivative has been established.
+
+Once the derivative is known, we define the differential by
+
+```math
+dy=f'(x)\,dx.
+```
+
+Here, $dx$ represents a chosen small change in the independent variable, while $dy$ is the corresponding **linear approximation** of the resulting change in the dependent variable. In other words, the derivative provides the instantaneous rate, and the differential uses that rate to estimate how the function changes for a small input change.
+
+Consequently, the derivative may be interpreted in two equivalent ways:
+
+* **Geometrically** — It is the slope of the tangent line to the graph at a point.
+* **Physically** — It is the instantaneous rate of change of one quantity with respect to another.
+
+These interpretations are equivalent because both arise from the same limiting process.
+
+For example, suppose
+
+* $x$ represents time, and
+* $y$ represents position.
+
+Then
+
+```math
+\frac{dy}{dt}
+```
+
+is the **instantaneous velocity**. This velocity is **not** obtained by measuring motion over an infinitesimally small interval of time. Instead, it is the limiting value of the average velocities over progressively shorter time intervals. Once this instantaneous rate has been determined, it can be used to estimate small changes in position. If $dt$ is a chosen small interval of time, then
+
+```math
+dy=\frac{dy}{dt}\,dt
+```
+
+gives the corresponding **approximate** change in position predicted by the tangent line. Thus, the derivative is obtained from a limit, whereas the differential uses that derivative to relate a chosen small change $dx$ (or $dt$) to the corresponding approximate change $dy$.
 
 ### Manual Derivative Caculation
 
