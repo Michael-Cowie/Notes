@@ -220,3 +220,94 @@ Just as the number of paths grow by multiplication, the probability of travellin
 <div align='center'>
     <img src='./images/11.png'>
 </div>
+
+<div align='center'>
+    <h1> Beyond Probability: The Tree as a Pure Counting Tool </h1>
+</div>
+
+Every tree constructed so far has served the binomial distribution, each leaf carried both a combinatorial weight, $\binom{n}{k}$, and a probability, $p^k(1-p)^{n-k}$. It is worth pausing to separate these two components, because only one of them actually depends on probability.
+
+```math
+P(X = k) = \underbrace{\binom{n}{k}}_{\text{counting}} \times \underbrace{p^k(1-p)^{n-k}}_{\text{probability}}
+```
+
+The tree,
+
+- The branching structure of choices
+- The collapsing of orderings into combinations
+
+belongs entirely to the counting half. It was never built out of $p$ or $q$. It was built out of $n$ distinguishable positions and a decision to select $k$ of them. This means the same tree applies to any problem shaped like "choose $k$ from $n$," whether or not probability is involved at all. Stars and bars is exactly such a problem.
+
+#### The Question, Restated Without Probability
+
+Distributing $12$ identical balls into $3$ distinct boxes has nothing to do with success, failure, or repeated trials. There is no experiment being run and no $p$. Yet, the question,
+
+<div style='margin-left: 50px'>
+    <p> How many ways can this be done? </p>
+</div>
+
+is answered by the identical method. A fixed pool of $n$ distinguishable positions, from which $k$ are selected. The translation is achieved by representing one distribution as a row of stars ($\star$) and bars ($\mid$):
+
+```math
+\underbrace{\star \star}_{\text{box 1}} \mid \underbrace{\star \star \star \star}_{\text{box 2}} \mid \underbrace{\star \star \star \star \star \star}_{\text{box 3}}
+```
+
+For $12$ balls split across $3$ boxes, every such row contains exactly $12$ stars and exactly $3-1=2$ bars, a fixed total of $14$ positions, always. Nothing here is optional or probabilistic, it is a direct consequence of how many balls and how many boxes the problem specifies.
+
+#### Building the Tree
+
+With the pool identified as $14$ positions and the selection size fixed at $k=2$ (the bars), the tree is constructed exactly as before, choosing positions rather than assigning outcomes:
+
+- **Level 1** — Choose which of the $14$ positions holds the 1st bar, $14$ branches.
+- **Level 2** — Choose which of the remaining $13$ positions holds the 2nd bar, $13$ branches from each.
+
+This produces $14 \times 13 = 182$ ordered picks, which collapse into combinations exactly as $AB$ and $BA$ once collapsed into $\{A,B\}$: choosing position $3$ then position $9$ for the bars describes the identical row as choosing position $9$ then position $3$. Dividing out this $2!$ redundancy gives
+
+```math
+\binom{14}{2} = \frac{14 \times 13}{2 \times 1} = 91
+```
+
+ninety-one distinct rows, and therefore ninety-one distinct ways to distribute the balls. At no point in this derivation does a probability appear.
+
+#### A Smaller Case, Fully Drawn
+
+The same construction for $3$ stars and $2$ bars ($3$ balls into $3$ boxes) is small enough to draw in full. The pool has $3+2=5$ positions, the tree selects $2$ of them to be bars:
+
+- **Level 1** — Choose the 1st bar position, $5$ branches.
+- **Level 2** — Choose the 2nd bar position from the remaining $4$, $4$ branches from each.
+
+$5\times4=20$ ordered picks collapse, 2 at a time, into
+
+```math
+\binom{5}{2} = \frac{5\times4}{2\times1}=10
+```
+
+10 unique arrangements
+
+```math
+\{1,2\} \\
+\{1,3\} \\ 
+\{1,4\} \\
+\{1,5\} \\
+\{2,3\} \\
+\{2,4\} \\
+\{2,5\} \\
+\{3,4\} \\
+\{3,5\} \\
+\{4,5\}
+```
+each one a complete, valid split of $3$ balls across $3$ boxes, with box counts summing to $3$ in every case.
+
+<div align='center'>
+    <img src='./images/18.svg'>
+</div>
+
+#### The General Principle
+
+What makes this transfer possible is that $\binom{n}{k}$ was never a statement about success and failure in the first place — it is a statement about **selecting an unordered subset of size $k$ from $n$ distinguishable objects**, full stop. The binomial distribution supplies the objects (trials) and the labels (success/failure); stars and bars supplies different objects (positions in a row) and different labels (bar/star). The tree does not care which pair of labels is used, because it was only ever constructed from the positions, never from the labels themselves.
+
+```math
+\text{Objects to select from} \quad \longrightarrow \quad \text{choose } k \text{ of } n \quad \longrightarrow \quad \binom{n}{k}
+```
+
+Wherever this shape appears — trials and outcomes, positions and dividers, or letters and combinations — the tree built from it is the same tree, and $\binom{n}{k}$ counts it the same way, with or without a probability attached at the end.
