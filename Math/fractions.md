@@ -22,8 +22,101 @@ This notation expresses the idea of dividing $a$ into $b$ equal parts or more ge
 The symbol $\frac{a}{b}$ has three equivalent interpretations that all say the same thing,
 
 1. **Division** - $a$ divided by $b$
-2. **Comparison / Ratio** - $a$ compared to $b$, or $a$ for every $b$. More precisely, for every $1$ unit of quantity $b$, there are $\frac{a}{b}$ units of quantity $a$.
+2. **Comparison / Ratio** - $a$ compared to $b$, or $a$ for every $b$.
 3. **Part-to-Whole** - $a$ out of $b$ equal parts.
+
+<div align='center'>
+    <h1> Visualizing and Interpreting Fractions </h1>
+</div>
+
+A fraction describes a **part of a chosen whole**. For,
+
+```math
+\frac{a}{b}
+```
+
+the denominator divides the whole into $b$ equal sized parts, while the numerator identifies $a$ of those parts.
+
+```math
+\begin{aligned}
+\text{Numerator} &\rightarrow \text{Number of parts taken} \\
+\text{Denominator} &\rightarrow \text{Number of equal parts} \\
+\end{aligned}
+```
+
+For example,
+
+```math
+\frac{3}{4}
+```
+
+means that the whole has been divided into $4$ equal parts, of which $3$ are being considered. The whole does not have to be the number $1$. It can be any quantity, and the visualisation can change depending on what that whole represents.
+
+For a **pizza**, $\frac{1}{4}$ can be visualised as $1$ of $4$ equal slices.
+
+<div align='center'>
+    <img src='./images/23.png' width=200>
+</div>
+
+For a **straight-line** length of $20$, $\frac{3}{4}$ can be visualised as $3$ of $4$ equal sections.
+
+<div align='center'>
+    <img src='./images/24.png' width=800>
+</div>
+
+Therefore,
+
+```math
+\frac{3}{4} (20) = 15
+```
+
+For a **complete revolution**, the whole is $2 \pi$,
+
+```math
+2 \pi = \text{one complete revolution}
+```
+
+so,
+
+```math
+\frac{1}{4}(2\pi) = \frac{\pi}{2}
+```
+
+represents a quarter of a revolution, while
+
+```math
+\frac{3}{4} (2 \pi) = \frac{3 \pi}{2}
+```
+
+represents three quarters of a revolution.
+
+<div align='center'>
+    <img src='./images/25.png' width=250>
+</div>
+
+The visualisation changes because the **whole changes**,
+
+```math
+\begin{aligned}
+\text{Pizza} &\rightarrow \text{Circular slices} \\
+\text{Length} &\rightarrow \text{Line} \\
+\text{Revolution} &\rightarrow \text{Circle} \\
+\end{aligned}
+```
+
+but the underlying interpretation remains the same,
+
+```math
+\text{Fraction} \times \text{Whole} = \text{Part}
+```
+
+Therefore, when interpreting a fraction, it is useful fo first ask,
+
+```math
+\text{What is the whole?}
+```
+
+The fraction describes the **proportion of that whole**, while the context determines the most useful way to visualize it.
 
 <div align='center'>
     <h1> Adding Fractions </h1>
@@ -51,7 +144,7 @@ By looking at the fractions,
 \frac{1}{4} + \frac{1}{2}
 ```
 
-We cannot immediately add them. This is because the denominator is not the same and thus the "pieces" are not the same size. To add fractions we need to make the "pieces" the same size, this is done by making the denominator the same size. 
+We cannot immediately add them. This is because the denominator is not the same and thus the "pieces" are not the same size. To add fractions we need to make the "pieces" the same size, this is done by making the denominator the same size.
 
 The easiest way to find a common multiple of the denominators is to multiply them. Therefore, the denominator is $4 \times 2 = 8$. The numerator needs to be scaled proportionally with the denominator as to keep the fraction value the same. This would be effectively multiplying by $1$.
 
@@ -72,7 +165,6 @@ Subtraction rules apply identically to addition. That is, the subtraction operat
 <div align='center'>
     <h1> Multiplying Fractions </h1>
 </div>
-
 
 Multiplication of fractions represents scaling one quantity by another and is defined **by multiplying numerators together and denominators together**, reflecting how portions of portions combine. Given two fractions,
 
@@ -152,5 +244,3 @@ This expressions are equivalent. However, the denominator is $\frac{1}{4}$. To m
 ```math
 \frac{\frac{2}{3}}{\frac{1}{4}} \times \frac{\frac{4}{1}}{\frac{4}{1}} = \frac{\frac{2 \times 4}{3 \times 1}}{\frac{1 \times 4}{4 \times 1}} = \frac{\frac{2 \times 4}{3 \times 1}}{\frac{4}{4}} = \frac{\frac{2 \times 4}{3 \times 1}}{1} = \frac{2 \times 4}{3 \times 1}
 ```
-
-

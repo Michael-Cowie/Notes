@@ -42,6 +42,8 @@ Having a base understanding for how the number of permutations are calculated us
 \frac{n!}{k!(n-k)!}
 ```
 
+The standard permutation formula and combination formula **assumes you cannot reuse an object**.
+
 ## From Factorials to Permutations
 
 Suppose there are $n$ distinct objects, and every object is arranged in order. The first position may be occupied by any of the $n$ objects. Once the first position has been filled, only $n-1$ objects remain for the second position. The third position then has $n-2$ available objects, and this process continues until every object has been placed.

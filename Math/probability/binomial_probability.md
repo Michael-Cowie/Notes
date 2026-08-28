@@ -35,7 +35,7 @@ This is precisely the purpose of **binomial probability**. Binomial probability 
 \end{aligned}
 ```
 
-for a specified number of successes after a fixed number of independent trials. A classicc occurrence of binomial probability is in video games where monster kills have a chance of dropping a specific item. A classic gaming example comes from the Corrupted Gauntlet in Old School Runescape, where the Enhanced Crystal Seed has an approximate drop probability of
+for a specified number of successes after a fixed number of independent trials. A classic occurrence of binomial probability is in video games where monster kills have a chance of dropping a specific item. A classic gaming example comes from the Corrupted Gauntlet in Old School Runescape, where the Enhanced Crystal Seed has an approximate drop probability of
 
 ```math
 p = \frac{1}{400} = 0.0025
@@ -75,6 +75,8 @@ Because every completion has the same probability of success and does not influe
 
 - **Binomial Probability** - Binomial probability comes from two Latin roots. "bi" - 2 and "nomial" - names or terms. Binomial probability has its name because each trial has exactly two possible outcomes.
 
+- **Binomail Coefficient** - The word coefficient essentially means a number that tells you how many times something occurs or how much of something there is. A binomial coefficient is the number $\binom{n}{k}$ which tells us how many ways we can choose $k$ items from $n$ items.
+
 <div align='center'>
     <h1> The Four Requirements of a Binomial Experiment </h1>
 </div>
@@ -83,14 +85,7 @@ A probability experiment follows the binomial model when only four conditions ar
 
 #### 1 - A Fixed Number of Trials
 
-The total number of repetitions must be predetermined and fixed. For example,
-
-- $200$ Corrupted Gauntlet completions
-- $50$ manufactured products
-- $30$ patients receiving a treatment
-
-The number of trials is denoted by $n$.
-
+The total number of repetitions must be predetermined and fixed. For
 #### 2 - Only Two Possible Outcomes
 
 Every trial must produce one of only two outcomes. These are traditionally labelled
@@ -175,122 +170,47 @@ calculates the probability that every remaining trial is a failure. The multipli
     <h1> Why the Binomial Coefficient Counts Trials, Not Outcomes </h1>
 </div>
 
+The binomial coefficient is often introduced as part of the formula
+
 ```math
 P(X = k) = \binom{n}{k} p^k (1-p)^{n - k}
 ```
 
-A binomial trial only ever produces 2 outcomes, it is tempting to imagine that $\binom{n}{k}$ is somehow built out of those 2 outcomes, as though $S$ and $F$ the way we would combine letters of an alphabet. This is not the case. **The combinations are not of the outcomes, they are of the trials**.
+It is tempting to think that $\binom{n}{k}$ must somehow be a combination of the two possible outcomes, $S$ and $SF. After all, a binomial trial only produces outcomes. However, this is not what the combination formula is doing. **The combination is performed on the trials, not on the outcomes**. This becomes clearer by connecting the binomial coefficient directly to the familiar derivation of combinations from permutations.
 
-#### 1 - Every Completion Is Its Own Trial
+##### 1 - The Trials Are Distinct Objects
 
-Consider 200 completions of the Corrupted Gauntlet. It is natural to picture these as one repeated action 200 times, and therefore, in some sense, "the same thing" 200 times over. This picture is misleading. **Each completion is a separate, individually identifiable event**. This means, each kill is its own trial or experiment.
+Consider four completions of the Corrupted Gauntlet. **Before considering their outcomes**, we identify the four trials as,
 
-- Completion 1 happened at a specific point in time.
-- Completion 2 happened at a different, later point in time.
-- $...$
-- Completion 200 happened last.
+```math
+T_1, \quad T_2, \quad T_3, \quad T_4
+```
 
-These are 200 distinguishable objects, in exactly the same that $A,B,C,D,E$ are five distinguishable objects. The letters are distinguishable because they are different symbols. The completions are distinguishable because they are different events, different attempts, occurring at different times. **Each at these are trials and thus, have their own outcomes**. Nothing about labelling a completion $S$ or $F$ changes the fact that it was already a distinct event before it resolved to either outcome. This is precisely why $n$ in $\binom{n}{k}$ refers to the number of completions, never to the number of possible outcomes per completion, which is fixed at two regardless of how large $n$ is.
+These are four distinct objects, just as $A, B, C, D$ are four distinct objects in an ordinary permutations and combinations problem. Suppose we want to choose two of these trials. We can first construct the permutation tree. The first position can contain any of the four trials and the second position can contain any of the remaining three.
 
 <div align='center'>
-    <img src='./images/17.svg' width='800'>
+    <img src='./images/39.png' width=800>
 </div>
 
-#### 2 - Why $DNN$, $NDN$, and $NND$ Are Different Outcomes
-
-Suppose exactly one enhanced crystal seed drops across three completions. The possible sequences are
+This gives,
 
 ```math
-DNN,\qquad NDN,\qquad NND.
+_4 P _2 = 4 \times 3 = 12
 ```
 
-At first glance, each sequence contains one $D$ and two $N$'s. It is therefore tempting to think they should all collapse into the single combination $\{D,N,N\}$, just as $ABC$ and $ACB$ collapse into the same combination $\{A,B,C\}$. This is the central misconception. The two situations appear similar because both involve counting. However, they count different kinds of objects.
-
-In the combinations example, the objects are the distinct letters $A$, $B$, $C$, $D$, and $E$. The order in which the letters are selected is irrelevant because every ordering produces the same final selection. For example, both $ABC$ and $ACB$ finish with the set
+ordered selections. However, if we only care which two trials were selected the, their order is irrelevant. For example,
 
 ```math
-\{A,B,C\}.
+T_1, T_2 = T_2, T1
 ```
 
-Since the final result is identical, these orderings are treated as one combination. In the binomial experiment, the objects being counted are **the trial numbers**. Each trial is distinct because it represents a different completion of the experiment. The question is therefore not _"Which outcomes occurred?"_ but _"Which trials were successes?"_
-
-As,
+represent the same pair of trials. Every pair therefore appears $2!$ times in the permutation tree. Dividing by $2!$ removes repeated orderings.
 
 ```math
-\begin{aligned}
-A, B &= B , A \\
-T_1, T_2 &= T_2, T_1
-\end{aligned}
+\binom{4}{2} = \frac{_4 P _ 2}{2!} = \frac{4 \times 3}{2!} = 6
 ```
 
-The three sequences above record different successful trials.
-
-- $DNN$ - the drop occurred on completion 1.
-- $NDN$ - the drop occurred on completion 2.
-- $NND$ - the drop occurred on completion 3.
-
-These are three distinct outcomes because they correspond to three different choices of the successful trial. If they were merged into a single object $\{D,N,N\}$, the information about **which completion produced the drop** would be lost.
-
-This is exactly why the binomial coefficient appears. There are
-
-```math
-\binom{3}{1}=3
-```
-
-different choices for the position of the single success. More generally, with $n$ trials and exactly one success,
-
-```math
-\binom{n}{1}=n,
-```
-
-because the success can occur on any one of the $n$ trials.
-
-An important distinction is that the **sample space** consists of the individual sequences
-
-```math
-DNN,\qquad NDN,\qquad NND,
-```
-
-whereas the event
-
-```math
-X=1
-```
-
-means **exactly one drop occurred**, regardless of which completion produced it. In set notation,
-
-```math
-\{X=1\}=\{DNN,\;NDN,\;NND\}.
-```
-
-The binomial coefficient counts how many sequences belong to this event. In general, the event $X=k$ consists of every sequence containing exactly $k$ successes and $n-k$ failures, and there are
-
-```math
-\binom{n}{k}
-```
-
-such sequences.
-
-#### 3 - Visualizing $\binom{n}{k}$ Correctly
-
-The correct construction never begins by writing $S$ and $F$. It begins by listing the trials themselves, unlabelled.
-
-```math
-T_1, T_2, T_3, ... , T_n
-```
-
-From this list of $n$ distinguishable trials, $\binom{n}{k}$ counts the ways to select an unordered subset of size $k$ trials, a pure act of choosing, carried out before any outcome has been assigned.
-
-For
-
-- $n = 4$
-- $k = 2$
-
-$\binom{4}{2}$ produces 6 subsets from the set of all trials of length $k$,
-
-```math
-\binom{4}{2} = \frac{4!}{2! (4 - 2)!} = \frac{4 \times 3 \times 2 \times 1}{2 \times 1(2 \times 1)} = \frac{4 \times 3 \times 2 \times 1}{4} = 3 \times 2 = 6
-```
+The six combinations are,
 
 ```math
 \begin{aligned}
@@ -303,23 +223,20 @@ $\binom{4}{2}$ produces 6 subsets from the set of all trials of length $k$,
 \end{aligned}
 ```
 
-<div align='center'>
-    <img src='./images/15.png' width='400'>
-</div>
+This is exactly the same permutation-to-combination reasoning used with $A, B, C, D$. The only difference is which the objects represent.
 
-This is exactly what
+- With $A, B, C, D$, we are choosing objects.
+- With $T_1, T_2, T_3, T_4$, we are choosing **trial positions**.
+
+##### 2 - Now Assign the Outcomes
+
+**Only after choosing the trial positions do we introduce the outcomes**. Suppose we want exactly two successes We can choose the selected trials to be the successful trials. Every trial inside the selected set is labelled to $S$, while every trial outside the set is labelled $F$. For example,
 
 ```math
-P(X = k) = \binom{n}{k} p^k (1-p)^{n - k}
+\{ T_1, T_3\}
 ```
 
-is doing and why the combinations formula is used. It is calculating the number of combinations we can take from the total number of trials, $6$ in this example and multiply this by the probability of 2 successful drops. This is essentially a shorthand for
-
-<div align='center'>
-    <img src='./images/16.png' width='400'>
-</div>
-
-These can be observed by creating the probability tree below, where we can see the 6 paths calculated. **Only after a subset has been chosen does labelling occur**. Every trial inside subset is set to $S$ and every trial outside the set is set to $F$. Choosing $\{T_1, T_3\}$ as an example, produces the sequence $S F S F$.
+means that trials $1$ and $3$ are successful.
 
 ```math
 \begin{array}{cccc}
@@ -328,21 +245,236 @@ S   & F   & S   & F
 \end{array}
 ```
 
-This two-stage process.
+which produces the **outcome sequence**
 
-1.  First grab $k$ of the $n$ **trials**
-2.  Label these trials as $S$
-3.  Implicitly label the remaining $n - k$ trials as $F$
+```math
+SFSF
+```
+
+The six combinations of trial positions therefore produce six different outcome sequences
+
+```math
+\begin{aligned}
+\{ T_1, T_2 \} &\rightarrow SSFF \\
+\{ T_1, T_3 \} &\rightarrow SFSF \\
+\{ T_1, T_4 \} &\rightarrow SFFS \\
+\{ T_2, T_3 \} &\rightarrow FSSF \\
+\{ T_2, T_4 \} &\rightarrow FSFS \\
+\{ T_3, T_4 \} &\rightarrow FFSS \\
+\end{aligned}
+```
+
+Each sequence contains exactly $2$ successes and $2$ failures. Therefore,
+
+```math
+\binom{4}{2} = 6
+```
+
+is counting the **six ways to choose which two trials are successful**. It is not counting combinations of the symbols $S$ and $F$.
+
+##### 3 - Why the Outcome Sequences Are Different
+
+At first glance, the sequences
+
+```math
+SSFF, \quad SFSF, \quad SFFS
+```
+
+all contain the same number of $S$ and $F$. It may therefore seem that they should represent the same combination. This would be true if we were simply selecting objects from a collection. For example,
+
+```math
+ABC \quad \text{and} \quad ACB
+```
+
+represent the same combination because they both select the same three objects,
+
+```math
+\{ A, B, C \}
+```
+
+The binomial situation is different because the objects being counted are the **trial positions**. The sequences
+
+```math
+SSFF \quad \text{and} \quad SFSF
+```
+
+represent different outcomes because the successes occurred on different trials. Thus, although both sequences contain two successes and two failures, they correspond to different selection of trial positions. This is the key distinction,
+
+- **Outcomes** - Tells us **what** happened.
+- **Trial position** - Tells us **where** it happened.
+
+The combination formula is counted the latter.
+
+##### 4 - The Same Process for Every Value of $k$
+
+The same reasoning applies to every possible number of successes. For four trials, consider
+
+```math
+\binom{4}{0}
+```
+
+There is one way to choose zero successful trials,
+
+```math
+\{ \}
+```
+
+which produces $FFFF$. Therefore, $\binom{4}{0} = 1$.
+
+For one success,
+
+```math
+\binom{4}{1} = 4
+```
+
+We choose which one of the four trials is successful,
+
+```math
+\begin{aligned}
+\{ T_1 \} &\rightarrow SFFF \\
+\{ T_2 \} &\rightarrow FSFF \\
+\{ T_3 \} &\rightarrow FFSF \\
+\{ T_4 \} &\rightarrow FFFS \\
+\end{aligned}
+```
+
+For two successes,
+
+```math
+\binom{4}{2} = 6
+```
+
+giving
+
+```math
+\begin{aligned}
+\{ T_1, T_2 \} &\rightarrow SSFF \\
+\{ T_1, T_3 \} &\rightarrow SFSF \\
+\{ T_1, T_4 \} &\rightarrow SFFS \\
+\{ T_2, T_3 \} &\rightarrow FSSF \\
+\{ T_2, T_4 \} &\rightarrow FSFS \\
+\{ T_3, T_4 \} &\rightarrow FFSS \\
+\end{aligned}
+```
 
 <div align='center'>
-    <img src='./images/14.png' width='400'>
+    <img src='./images/15.png' width=400>
 </div>
-
-The decision tree appears as
 
 <div align='center'>
-    <img src='./images/13.svg' width='1000'>
+    <img src='./images/16.png' width=400>
 </div>
+
+For three successes,
+
+```math
+\binom{4}{3} = 4
+```
+
+giving
+
+```math
+\begin{aligned}
+\{ T_1, T_2, T_3 \} &\rightarrow SSSF \\
+\{ T_1, T_2, T_4 \} &\rightarrow SSFS \\
+\{ T_1, T_3, T_4 \} &\rightarrow SFSS \\
+\{ T_2, T_3, T_4 \} &\rightarrow FSSS \\
+\end{aligned}
+```
+
+Finally,
+
+```math
+\binom{4}{4} = 1
+```
+
+because there is only one way to choose all four trials as successful.
+
+```math
+\{ T_1, T_2, T_3, T_4 \} = 1
+```
+
+These numbers represent the number of possible outcome sequences containing exactly $k$ successes.
+
+##### 5 - Connecting This to the Binomial Formula
+
+We can now connect this directly to the binomial probability formula,
+
+```math
+P(X = k) = \binom{n}{k} \cdot p^k(1-p)^{n-k}
+```
+
+The combination component,
+
+```math
+\binom{n}{k}
+```
+
+counts the number of ways to choose which $k$ of the $n$ trial positions are successes. Once those positions have been chosen, **the remaining $n-k$ positions are failures**. For any one resulting sequence, there are $k$ successes and $n-k$ failures. Its probability is therefore
+
+```math
+p^k(1-p)^{n-k}
+```
+
+Since there are
+
+```math
+\binom{n}{k}
+```
+
+different sequences containing exactly $k$ successes, we multiply
+
+```math
+\underbrace{\binom{n}{k}}_{\text{number of choices of successful trials}} \cdot 
+\underbrace{p^k(1-p)^{n-k}}_{\text{probability of each sequence}}
+```
+
+giving
+
+```math
+P(X = k) = \binom{n}{k} \cdot p^k(1-p)^{n-k}
+```
+
+The important point is that the combination formula has not changed. It is still the same formula derived from permutations,
+
+```math
+\binom{n}{k}
+=
+\frac{{}_nP_k}{k!}
+=
+\frac{n!}{k!(n-k)!}
+```
+
+What has changed is what the $n$ objects represent. In an ordinary combinations problem, the $n$ objects might be
+
+```math
+A,B,C,D
+```
+
+In a binomial probability problem, the $n$ objects are the distinct trial positions:
+
+```math
+T_1,T_2,T_3,\ldots,T_n
+```
+
+We choose $k$ of those trial positions and designate them as successes. The resulting selection then corresponds to one particular sequence in the probability tree. Thus the connection can be summarised as,
+
+```math
+\begin{array}{c}
+\text{Permute the distinct trial positions} \\
+\downarrow \\
+\text{Remove ordering} \\
+\downarrow \\
+\text{Choose } k \text{ trial positions} \\
+\downarrow \\
+\text{Assign } S \text{ to those positions} \\
+\downarrow \\
+\text{Obtain an outcome sequence}
+\end{array}
+```
+
+The binomial coefficient therefore provides the combinatorail weight, it fells us how many different probability-tree paths contain exactly $K$ successes.
+
 
 <div align='center'>
     <h1> Exercises </h1>
@@ -351,11 +483,10 @@ The decision tree appears as
 These exercises will be using the Corrupted Gauntlet which has,
 
 - **$p$** = $\frac{1}{400}$ to receivie the enhanced crystal seed
-- **$q$** = $\frac{399}{400}$ to **not** receive the enhanced crystal seed.
+- **$q$** = $\frac{399}{400}$ to **not** receive the enhanced crystal seed. example
+- $200$ Corrupted Gauntlet completions (trials)
 
 #### Example 1 - No Drop After 200 Completions
-
-Here,
 
 ```math
 \begin{aligned}
@@ -380,8 +511,6 @@ Therefore, there is approximately a $60.6\%$ probability of receiving no enhance
 
 #### Example 2 - Exactly 1 Drop After 200 Completions
 
-Now
-
 ```math
 \begin{aligned}
 n &= 200 \\
@@ -392,7 +521,7 @@ k &= 1
 The probability now becomes calculating the number of sample points that have exactly $1$ drop ($S$). The probability becomes
 
 ```math
-P( X = 1 ) = \binom{200}{1}p^1q^{399}
+P( X = 1 ) = \binom{200}{1} \cdot p^1q^{399}
 ```
 
 Since

@@ -1,0 +1,64 @@
+<svg viewBox="0 0 950 850" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <text x="475" y="35" font-size="26" font-weight="bold" fill="#222222" text-anchor="middle">
+    Sequential Interpretation of A &#8745; B
+  </text>
+
+  <!-- edges (drawn first, underneath nodes) -->
+  <line x1="100" y1="395" x2="350" y2="230" stroke="#888888" stroke-width="2"/>
+  <line x1="100" y1="395" x2="350" y2="560" stroke="#888888" stroke-width="2"/>
+  <line x1="350" y1="230" x2="650" y2="130" stroke="#888888" stroke-width="2"/>
+  <line x1="350" y1="230" x2="650" y2="330" stroke="#888888" stroke-width="2"/>
+  <line x1="350" y1="560" x2="650" y2="460" stroke="#888888" stroke-width="2"/>
+  <line x1="350" y1="560" x2="650" y2="660" stroke="#888888" stroke-width="2"/>
+
+  <!-- edge labels, each on a small white pill so the line never crosses the text -->
+  <g font-size="15" fill="#333333">
+    <rect x="200" y="275" width="34" height="20" fill="white"/>
+    <text x="217" y="290" text-anchor="middle">A</text>
+
+    <rect x="188" y="485" width="62" height="20" fill="white"/>
+    <text x="219" y="500" text-anchor="middle">not A</text>
+
+    <rect x="470" y="160" width="34" height="20" fill="white"/>
+    <text x="487" y="175" text-anchor="middle">B</text>
+
+    <rect x="458" y="270" width="62" height="20" fill="white"/>
+    <text x="489" y="285" text-anchor="middle">not B</text>
+
+    <rect x="470" y="390" width="34" height="20" fill="white"/>
+    <text x="487" y="405" text-anchor="middle">B</text>
+
+    <rect x="458" y="620" width="62" height="20" fill="white"/>
+    <text x="489" y="635" text-anchor="middle">not B</text>
+  </g>
+
+  <!-- Start node -->
+  <circle cx="100" cy="395" r="58" fill="white" stroke="#222222" stroke-width="2.5"/>
+  <text x="100" y="401" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">Sample Space</text>
+
+  <!-- Level 1 nodes -->
+  <circle cx="350" cy="230" r="58" fill="#bbdefb" stroke="#1565c0" stroke-width="2.5"/>
+  <text x="350" y="238" font-size="24" font-weight="bold" text-anchor="middle" fill="#0d47a1">A</text>
+
+  <circle cx="350" cy="560" r="58" fill="#e0e0e0" stroke="#757575" stroke-width="2.5"/>
+  <text x="350" y="568" font-size="20" font-weight="bold" text-anchor="middle" fill="#424242">not A</text>
+
+  <!-- Leaf nodes -->
+  <circle cx="650" cy="130" r="55" fill="#8e24aa" stroke="#4a148c" stroke-width="2.5"/>
+  <text x="650" y="137" font-size="17" font-weight="bold" text-anchor="middle" fill="white">A &#8745; B</text>
+
+  <circle cx="650" cy="330" r="55" fill="#bbdefb" stroke="#1565c0" stroke-width="2.5"/>
+  <text x="650" y="337" font-size="14" text-anchor="middle" fill="#0d47a1">A, not B</text>
+
+  <circle cx="650" cy="460" r="55" fill="#e0e0e0" stroke="#757575" stroke-width="2.5"/>
+  <text x="650" y="467" font-size="14" text-anchor="middle" fill="#424242">not A, B</text>
+
+  <circle cx="650" cy="660" r="55" fill="#e0e0e0" stroke="#757575" stroke-width="2.5"/>
+  <text x="650" y="667" font-size="16" text-anchor="middle" fill="#424242">neither</text>
+
+  <!-- explanation box -->
+  <rect x="140" y="730" width="670" height="100" rx="10" fill="#f7f7f7" stroke="#cccccc" stroke-width="1.5"/>
+  <text x="475" y="760" font-size="17" font-weight="bold" text-anchor="middle" fill="#222222">Along the A &#8594; B path:</text>
+  <text x="475" y="787" font-size="16" text-anchor="middle" fill="#333333">P(A &#8745; B) = P(A) &#215; P(B | A)</text>
+  <text x="475" y="813" font-size="13" text-anchor="middle" fill="#555555">Each step selects a proportion of the outcomes remaining.</text>
+</svg>
