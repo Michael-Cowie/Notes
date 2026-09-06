@@ -12,7 +12,7 @@ Bayes Theorem follows directly from the definition of conditional probability. T
 P(A \mid B) = \frac{P(A) P(B \mid A)}{P(B)} = \frac{P(A \cap B)}{P(B)}
 ```
 
-This can be rearranged to give,
+To understand this we first need to identify multiple ways $P(A \cap B)$ can be defined.
 
 ```math
 P(A \cap B) = P(B) P(A \mid B)

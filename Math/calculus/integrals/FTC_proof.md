@@ -7,11 +7,9 @@ Before this proof begins, the functions used throughout this proof must be expre
 - $f(x)$ is the derivative of $F(x)$, where $f(x) = \frac{dF}{dx}$
 - $F(x)$ is the antiderivative of $f(x)$
 
-```math
-F(x)
-\;\xrightleftharpoons[\text{anti-differentiate}]{\text{differentiate}}\;
-F'(x)=f(x)
-```
+<div align='center'>
+    <img src='./images/9.png'>
+</div>
 
 Integration is generally introduced as the process of summation of tiny parts. Here, the concept of an integral is defined in terms of the sums of lots of rectangular areas under a curve. To calculate an integral you need to find the limit of a sum. This is a very cumbersome and impractical process. What this approach is defining is the Fundamental Theorem of Calculus where we find the integrals, not by finding the limit of a sum, but instead using anti-derivatives.
 
@@ -55,7 +53,6 @@ A = A(x)
 
 This shows the dependence of the area upon the value that we choose for $x$. Hence, larger $x$, larger area and smaller $x$, smaller area.
 
-
 Their are multiple attributes that needed to be understood,
 
 1. **$f(x)$** - Represents the height at point $x$.
@@ -93,7 +90,7 @@ To make this more accurate we need to make $\Delta x$ smaller, this will decreas
 Where, $\Delta A = A(x + \Delta x) - A(x)$. When this is done, the approximation becomes exact because we're calculating a limit value. This limit value represents what the function converges to as $\Delta x$ gets closer and closer to $0$.
 
 ```math
-\lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x} = 
+\lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x} =
 \lim_{\Delta x \to 0} f(x)
 ```
 
@@ -109,7 +106,7 @@ When we calculate a limit, we can change our approximation $\approx$ to an exact
 \lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x} = \frac{dA}{dx} = f(x)
 ```
 
-**This is a very important observation**. This tells us 
+**This is a very important observation**. This tells us
 
 1. The rate of which the area changes with respect to $x$ is equal to value at that point $x$ from $f(x)$.
 2. The function $f$ is the derivative of the function $A$.
@@ -162,7 +159,7 @@ We now have two expressions.
 We can now calculate the area from $a$ to $b$ by first calculating the area to $b$ and subtracting the area to $a$. Therefore the area under $y = f(x)$ from $x=a$ to $x=b$ is,
 
 ```math
-F(b) - F(0)- F(a) + F(0) = F(b) - F(a) 
+F(b) - F(0)- F(a) + F(0) = F(b) - F(a)
 ```
 
 This is exactly the definition of integration, finding the area from $a$ to $b$. This is expressed using the notation
