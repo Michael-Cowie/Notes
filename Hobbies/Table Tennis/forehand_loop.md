@@ -32,7 +32,7 @@ The brushing topspin, wrist rotation and follow through are all used together to
     <img src="./images/follow_through.gif/" width='400'>
 </div>
 
-#### Backspin and Topspin - Identical Racket Angle 
+#### Backspin and Topspin - Identical Racket Angle
 
 - Drop the racket low, this is essential to grab the ball.
 - Keep the elbow near the body.
@@ -62,7 +62,7 @@ The racket angle should be approximately $45^\circ$. Too vertical means you can 
 
 #### Don't Push Downward
 
-When performing the forehand loop, it's very important to **not push downward**. This can be unintuitive to beginners without a history of spin sports. Amateur players may attempt to grab the ball and then create an arc by having a downward motion, **do not create a downward motion**. 
+When performing the forehand loop, it's very important to **not push downward**. This can be unintuitive to beginners without a history of spin sports. Amateur players may attempt to grab the ball and then create an arc by having a downward motion, **do not create a downward motion**.
 
 The motion should have extreme emphasis on the following,
 
@@ -86,6 +86,14 @@ The motion should have extreme emphasis on the following,
 
 <div align="center">
     <img src="./images/104.png/" width='600'>
+</div>
+
+<div align="center">
+    <img src="./images/109.png/" width='600'>
+</div>
+
+<div align="center">
+    <img src="./images/fzd_ma_long_fh_rallies.gif/" width='600'>
 </div>
 
 <div align="center">

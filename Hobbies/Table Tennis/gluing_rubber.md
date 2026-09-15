@@ -6,35 +6,34 @@ When first using DHS No. 15 glue, players may feel like that the glue dries almo
 
 Butterfly Free Chack, being thinner and smoother, is less prone to this effect. DHS glue, by contrast, requires a more controlled spreading technique, especially when applied by tacky rubbers such as Hurricane 3. DHS No. 15 glue presents challenges due to its higher viscosity and sensitivity to friction, but these can be managed through proper technique. Understanding that "rapid drying" is actually frictional congealing allows players to adapt their method. The dot distribution pattern combined with cross-spreading strokes ensures smooth, uniform layers. By avoiding common mistakes such as heavy rubbing, overapplication or premature assembly, players can achieve professional-quality adhesion particularily for tacky rubbers.
 
-#### Glue Application - Dot Method
+#### Glue Application - Line Near the Bottom
 
-Instead of applying a single blob or hozizontal line of glue, use multiple spaced dots. This reduces friction and promotes uniform cover. An example pattern using 3-2-3 distribution.
+Apply a direct single line as shown in preparation for the bottom to top movement.
 
-```
- _______________________________________
-|                                       |
-|        •           •           •      |
-|                                       |
-|             •           •             |
-|                                       |
-|        •           •           •      |
-|_______________________________________|
-```
+<div align='center'>
+    <img src='./images/105.png' width=600>
+</div>
 
-- **Rubber Side - Sponge** - Use a 3-2-3 pattern and use **two layers of glue**.
-- **Blade Side** - 2-3 smaller dots only as wood absorbs less glue. Use **one layer of glue**.
+<div align='center'>
+    <img src='./images/106.png' width=600>
+</div>
 
-This pattern ensures that glue spreads from multiple centers, reducing the need for heavy rubbing and minimizing clumping.
+#### Spreading Technique - Bottom to Top
 
-#### Spreading Technique
+When performing strokes. Always make the motion from **bottom to up**. For the rubber, make sure the **bottom of the rubber is at the top of your stroke** (This is the part that touches the blade handle). What matters is **staying consistent** and not going back-and-forth/circular, since that's what causes ridges and uneven thickness.
 
-- **First pass** - Spread **horizontally** in long, light strokes to distribute glue across the surface.
-- **Second pass** - Smooth vertically with **minimal pressure** to eliminate streaks and ensure even thickness.
+<div align='center'>
+    <img src='./images/gluing_rubber_motion.gif' width=600>
+</div>
+
+<div align='center'>
+    <img src='./images/gluing_rubber_motion_2.gif' width=600>
+</div>
 
 Think of painting, not scrubbing. Friction generates heat and causes clumps. **Ensure the applicator is fully loaded with glue**. Using a dry sponge edge will drag glue unevenly, leaving streaks. This will cause clumping as demonstrated below,
 
 <div align='center'>
-    <img src='./images/61.png'>
+    <img src='./images/61.png' width=600>
 </div>
 
 #### Drying and Assembly
@@ -45,11 +44,9 @@ Align the rubber at the handle edge and roll it upward onto the blade, pressing 
 
 Wait 10-20 minutes before trimming to allow the bond to stabilize
 
+Once the glue is non-sticky and transparent you can apply, **2 layers for the rubber and one layer for the blade**.
+
 #### Common Mistakess
-
-##### Applying glue as a single blob or line
-
-This will create uneven thickness and requires excessive spreading. Use multiple dots for balanced coverage.
 
 ##### Rubbing too hard during spreading
 

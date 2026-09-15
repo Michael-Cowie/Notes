@@ -13,17 +13,21 @@ The pendulum serve involves swinging your forearm from right to left, like a pen
 The shakehand grip is too stiff on the wrist, instead you need to change to use a pinch grip.
 
 <div align='center'>
-    <img src='images/66.png'>
+    <img src='images/66.png' width=600>
 </div>
 
 <div align='center'>
-    <img src='images/67.png'>
+    <img src='images/108.png' width=600>
+</div>
+
+<div align='center'>
+    <img src='images/67.png' width=600>
 </div>
 
 The goal is to allow the wrist to flow freely.
 
 <div align='center'>
-    <img src='images/pendulum_serve_1.gif'>
+    <img src='images/pendulum_serve_1.gif' width=600>
 </div>
 
 ## Basic Steps
@@ -31,7 +35,7 @@ The goal is to allow the wrist to flow freely.
 #### Preparation
 
 <div align='center'>
-    <img src='images/69.png'>
+    <img src='images/69.png' width=600>
 </div>
 
 #### Pendulum Motion
@@ -39,7 +43,7 @@ The goal is to allow the wrist to flow freely.
 Get the elbow to be the anchor for the pendulum. The forearm and the racket needs to move in a pendulum motion.
 
 <div align='center'>
-    <img src='images/pendulum_serve_2.gif'>
+    <img src='images/pendulum_serve_2.gif' width=600>
 </div>
 
 #### Wrist Snap
@@ -47,7 +51,7 @@ Get the elbow to be the anchor for the pendulum. The forearm and the racket need
 The wrist needs to perform a snapping motion to generate the spin.
 
 <div align='center'>
-    <img src='images/pendulum_serve_1.gif'>
+    <img src='images/pendulum_serve_1.gif' width=600>
 </div>
 
 #### Contact Point
@@ -55,7 +59,7 @@ The wrist needs to perform a snapping motion to generate the spin.
 During the pendulum service, the goal is to make contact on the left side of the racket. This is due to allowing the most amount of spin due to increased contact time.
 
 <div align='center'>
-    <img src='images/68.png'>
+    <img src='images/68.png' width=600>
 </div>
 
 #### Direction After Contact
@@ -63,7 +67,15 @@ During the pendulum service, the goal is to make contact on the left side of the
 A crucial step to creating backspin is to have an **upward motion** during contact. To do this, at some point during the motion your hand needs to be beneath the ball to **create an upward motion**.
 
 <div align='center'>
-    <img src='images/upward_motion_pendulum_serve.gif'>
+    <img src='images/upward_motion_pendulum_serve.gif' width=600>
+</div>
+
+#### Squeeze At Contact
+
+Observe Hugos thumb below. His hand and thumb are relaxed, only when contacting does his thumb touch the rubber and squeeze.
+
+<div align='center'>
+    <img src='images/107.png' width=600>
 </div>
 
 <div align='center'>
@@ -83,7 +95,6 @@ A crucial step to creating backspin is to have an **upward motion** during conta
 <div align='center'>
     <img src='images/ma_long_service_slowed_1.gif' width='700'>
 </div>
-
 
 <div align='center'>
     <img src='images/ma_long_pendulum_serve_slowed.gif' width='700'>
@@ -107,11 +118,9 @@ Notice that the ball is not thrown vertically up and down, instead he **throws i
     <img src='images/98.png' width='700'>
 </div>
 
-
 <div align='center'>
     <img src='images/81.png' width='700'>
 </div>
-
 
 Notice the **paddle angle**. Despite it being backspin, he still contacts in a way for sidespin aswell.
 
@@ -144,19 +153,19 @@ Additionally, notice that he brings the paddle close to upper chest when contact
 #### Backspin
 
 <div align='center'>
-    <img src='images/70.png'>
+    <img src='images/70.png' width=600>
 </div>
 
 <div align='center'>
-    <img src='images/pendulum_serve_4.gif'>
+    <img src='images/pendulum_serve_4.gif' width=600>
 </div>
 
 ### Topspin
 
 <div align='center'>
-    <img src='images/71.png'>
+    <img src='images/71.png' width=600>
 </div>
 
 <div align='center'>
-    <img src='images/pendulum_serve_5.gif'>
+    <img src='images/pendulum_serve_5.gif' width=600>
 </div>
