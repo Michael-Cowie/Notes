@@ -186,11 +186,11 @@ Because the derivative of $\sin(\theta)$ is out of phase by $\frac{\pi}{2}$, doe
     <img src='./images/21.png' width=600>
 </div>
 
- Yes! However, we do not have a function for this immediately. We can flip the $\sin(\theta)$ curve. Therefore,
+Yes! However, we do not have a function for this immediately. We can flip the $\sin(\theta)$ curve. Therefore,
 
- ```math
+```math
 \frac{dy}{dx} \cos (\theta) = - \sin (\theta)
- ```
+```
 
 <div align='center'>
     <img src='./images/22.png' width=600>
@@ -206,7 +206,7 @@ Finally we can observe,
     <img src='./images/23.png' width=600>
 </div>
 
-Finally, we wrap it back for 
+Finally, we wrap it back for
 
 ```math
 \frac{dy}{dx} - \cos (\theta) = \sin (\theta)
@@ -230,3 +230,76 @@ This can be remembered by,
 2. Only **keep** the sign ($-$ or $+$) when changing from $\sin \rightarrow \cos$
 
 3. Only **reverse** the sign ($-$ or $+$) when changing from $\cos \rightarrow \sin$
+
+<div align='center'>
+    <h1> Extended using Quotient Rule </h1>
+</div>
+
+We can use the quotient rule to extend to additional trigonometry identities,
+
+```math
+\begin{aligned}
+\frac{\mathrm{d}(\tan\theta)}{\mathrm{d}\theta}
+\quad
+\tan\theta=\frac{\sin\theta}{\cos\theta}
+&=
+\frac{\cos\theta\cdot\cos\theta-\sin\theta\cdot(-\sin\theta)}{\cos^{2}\theta}
+=
+\frac{1}{\cos^{2}\theta}
+=
+\sec^{2}\theta
+\\
+\frac{\mathrm{d}(\cot\theta)}{\mathrm{d}\theta}
+\quad
+\cot\theta=\frac{\cos\theta}{\sin\theta}
+&=
+\frac{\sin\theta\cdot(-\sin\theta)-\cos\theta\cdot\cos\theta}{\sin^{2}\theta}
+=
+\frac{-1}{\sin^{2}\theta}
+=
+-\csc^{2}\theta
+\\
+\frac{\mathrm{d}(\sec\theta)}{\mathrm{d}\theta}
+\quad
+\sec\theta=\frac{1}{\cos\theta}
+&=
+\frac{\cos\theta\cdot(0)-1\cdot(-\sin\theta)}{\cos^{2}\theta}
+=
+\frac{\sin\theta}{\cos^{2}\theta}
+=
+\frac{\sin\theta}{\cos\theta}\cdot\frac{1}{\cos\theta}
+=
+\tan\theta\cdot\sec\theta
+\\
+\frac{\mathrm{d}(\csc\theta)}{\mathrm{d}\theta}
+\quad
+\csc\theta=\frac{1}{\sin\theta}
+&=
+\frac{\sin\theta\cdot(0)-1\cdot(\cos\theta)}{\sin^{2}\theta}
+=
+\frac{-\cos\theta}{\sin^{2}\theta}
+=
+\frac{\cos\theta}{\sin\theta}\cdot\frac{-1}{\sin\theta}
+=
+-\cot\theta\cdot\csc\theta
+\end{aligned}
+```
+
+
+Finally, giving us simplified identities.
+
+```math
+\begin{aligned}
+\frac{\mathrm{d}(\sin\theta)}{\mathrm{d}\theta}&=\cos\theta \\
+
+\frac{\mathrm{d}(\cos\theta)}{\mathrm{d}\theta}&=-\sin\theta \\
+
+\frac{\mathrm{d}(\tan\theta)}{\mathrm{d}\theta}&=\sec^{2}\theta \\ 
+
+\frac{\mathrm{d}(\cot\theta)}{\mathrm{d}\theta}&=-\csc^{2}\theta \\
+
+\frac{\mathrm{d}(\sec\theta)}{\mathrm{d}\theta}&=\tan\theta\cdot\sec\theta \\
+
+\frac{\mathrm{d}(\csc\theta)}{\mathrm{d}\theta}&=-\cot\theta\cdot\csc\theta \\
+\end{aligned}
+```
