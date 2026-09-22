@@ -2,6 +2,39 @@
     <h1> Chain Rule — Differentiating Composite Functions </h1>
 </div>
 
+It is true that,
+
+```math
+\frac{dy}{dx} \sin (x) = \cos (x)
+```
+
+However, if we were given,
+
+```math
+f(x) = \sin (2x)
+```
+
+
+**It is not true** that,
+
+```math
+\frac{dy}{dx} \sin(2x) \neq \cos (2x)
+```
+
+In general, the derivative of $\sin$ something with respect to that something equals $\cos$ of that something. All 3 terms need to match for the differentaiton rule to apply. When we try to apply this to $\sin (2x)$ we can see that they do not match. This is illustrated with the trig rule, however it applies to all rules.
+
+<div align='center'>
+    <img src='./images/24.png' width=400>
+</div>
+
+If we were to alter this to,
+
+```math
+\frac{dy}{d(2x)} = \sin(2x) = \cos(2x)
+```
+
+then it would be correct because all of the terms match. However, this is very infrequently asked. Therefore, we need to dig a little deeper to differentiate these types of equations.
+
 Many functions are not formed from a single operation, but instead contain multiple layers of functions nested insde one another. These are known as **composite functions**. A composite function occurs when the output of one function becomes the input of another function. The chain rule is used whenever one function is applied to the output of another function. A general composite function is written as
 
 ```math
@@ -17,7 +50,7 @@ Examples can include,
 
 1. $f(x) = \sin(2x)$. Where $\sin$ is the outer function and $2x$ is the inner function.
 
-2. $f(x) = (3x + 1^5$. Where $u^5$ is the outer function and $3x +1$ is the inner function.
+2. $f(x) = (3x + 1)^5$. Where $u^5$ is the outer function and $3x +1$ is the inner function.
 
 3. $f(x) = \sqrt{1 + x^3}$. First rewrite as $f(x) = (1 + x^3)^{\frac{1}{2}}$. The outer function is now $u^{\frac{1}{2}}$ and the inner function is $1 + x^3$.
 
@@ -140,7 +173,7 @@ describes how changes in $x$ cascades changes in $u$. The second derivative,
 \frac{dy}{du}
 ```
 
-describes how changes in $u$ scale into changes in $y$.  Because the output change from the first derivative stage becomes the input for the second stage, the scaling factors multiply together. This produces the chain rule relationship.
+describes how changes in $u$ scale into changes in $y$. Because the output change from the first derivative stage becomes the input for the second stage, the scaling factors multiply together. This produces the chain rule relationship.
 
 ```math
 \frac{dy}{dx} = \frac{dy}{dy} \cdot \frac{du}{dx}
@@ -152,11 +185,11 @@ This relationship occurs because any small changes in $x$, increases $u$ which i
 
 #### Example 1 — $y = (x + 1)^2$
 
-When observing 
+When observing
 
 ```math
 y = (x + 1)^2
-``` 
+```
 
 their are actually two operations happening.
 
@@ -241,7 +274,6 @@ This means,
 
 1. As $x$ changes, $u$ changes with respect so $x$ at a rate of $\frac{du}{dx}$
 2. Moving forward, as $u$ changes, $y$ changes with respect to $u$ at a rate of $\frac{dy}{du}$
-
 
 It therefore follows,
 
@@ -533,7 +565,9 @@ It therefore follows,
 \end{aligned}
 ```
 
-## Chain Rule Proof
+<div align='center'>
+    <h1> Algebraic Proof </h1>
+</div>
 
 Given $y = f(g(x))$
 
@@ -587,7 +621,7 @@ When I write $k = g(x + h) - g(x)$, the value of $k$ depends on whatever value o
 k(h) = g(x + h) - g(x)
 ```
 
-Because $g$ is differentiable, it is continuous, so as $h \to 0$, we have $k \to 0$. 
+Because $g$ is differentiable, it is continuous, so as $h \to 0$, we have $k \to 0$.
 
 ```math
 \lim_{h \to 0} k = \lim_{h \to 0} g(x + h) - g(x) = 0

@@ -24,7 +24,7 @@ treats $x$ as a constant.
 
 In a **definite integral**, the product $f(x)\,dx$ represents an infinitesimal contribution to an accumulated quantity, such as the area of a thin rectangle, and the integral sums these contributions over a specified interval. 
 
-In an **indefinite integral**, however, **no summation is taking place**. Instead, $\int f(x)\,dx$ denotes the family of functions whose derivative is $f(x)$. Although these two concepts have **different interpretations, they share the notation** $f(x)\,dx$ because the differential identifies the variable of integration and preserves the close relationship between differentiation and integration established by the Fundamental Theorem of Calculus.
+In an **indefinite integral**, however, **no accumulation over an interval is taking place**. Instead, $\int f(x) \, dx$ denotes the family of functions whose derivative is $f(x)$. Although these two concepts have **different interpretations, they share the notation** $f(x) \, dx$ because the differential identifies the variable of integration and reflects the close relationship between integration and differentiation established by the Fundamental Theorem of Calculus.
 
 <div align='center'>
     <h1> Indefinite Integrals </h1>
@@ -63,7 +63,9 @@ Now reversing this procedure,
 ```math
 \begin{aligned}
 \int dy &= \int 2x \ dx \\
-\int 1 \ dy &= \int 2x \ dx \\ 
+\int 1 \ dy  &= \int 2x \ dx  \\
+\int 1 \ dy \text{ Integrate 1 with respect to } y  
+&= \int 2x \ dx \text{ Integrate } 2x \text{ with respect to x} \\ 
 y &= x^2
 \end{aligned}
 ```
@@ -174,7 +176,7 @@ Leibniz notation treats $\frac{dy}{dx}$ formally as a ratio of differentials, so
 dy = \frac{dy}{dx}dx = 2x \ dx
 ```
 
-- $2x \ dx$ is a constructred quantity. $2x$ is the height of the derivative curve at $x$ and $dx$ is the width, so their product is the area of the rectangle on the derivatives graph.
+- $2x \ dx$ is a constructed quantity. $2x$ is the height of the derivative curve at $x$ and $dx$ is the width, so their product is the area of the rectangle on the derivatives graph.
 
 - $dy$ is the corresponding infinitesimal quantity on the original graph, not a rectangle, but a direct rise in $y$.
 

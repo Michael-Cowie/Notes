@@ -30,10 +30,7 @@ $e$ isn't just a number, **it's a behaviour**. Whenever changes depends on the c
     <h1> The Origin of Euler's Number <h1>
 </div>
 
-
-Euler's number arises naturally from repeated compounding.
-
-Suppose $\$1$ earns $100\%$ annual interest. If interest is compounded once per year,
+Euler's number arises naturally from repeated compounding. Suppose $\$1$ earns $100\%$ annual interest. If interest is compounded once per year,
 
 ```math
 1(1 + 1) = 2
