@@ -2,15 +2,15 @@
     <h1> Quotient Rule </h1>
 </div>
 
-When a function is formed by dividing one function by another, the derivative cannot generally be found by differentiating the numerator and denominator independently .The **quotient rule** provides a method for differentiating a quotient of two differentiable functions. The quotient rule is closely related to the **product rule**, which is used when two functions are multiplied together
+When a function is formed by dividing one function by another, the derivative cannot generally be found by differentiating the numerator and denominator independently .The **quotient rule** provides a method for differentiating a quotient of two differentiable functions. The quotient rule is closely related to the **product rule**. However, the product rule adds the two terms while
 
-```math id="q8v2mx"
+```math
 (fg)'=f'g+fg'
 ```
 
 While the product rule accounts for the change in each function when they are multiplied, the quotient rule accounts for the change in each function when one is divided by the other. For two functions \(u(x)\) and \(v(x)\), where \(v(x)\neq0\), the quotient rule is
 
-```math id="mq3hbv"
+```math
 \boxed{
 \left(\frac{u}{v}\right)'
 =
@@ -18,9 +18,9 @@ While the product rule accounts for the change in each function when they are mu
 }
 ```
 
-For example, consider
+#### Example 1
 
-```math id="2o8xlq"
+```math
 f(x)=\frac{x^2}{x+1}
 ```
 
@@ -56,6 +56,41 @@ Simplifying gives
 \boxed{
 f'(x)=\frac{x^2+2x}{(x+1)^2}
 }
+```
+
+#### Example 2
+
+```math
+\frac{d}{dx} \frac{3x^3 -x^2 + 2}{\cos (x)}
+```
+
+First, list all information.
+
+```math
+\begin{aligned}
+u &= 3x^3 -x^2 + 2 \\ 
+u' &= 9x^2 -2x  \\
+v &= \cos (x) \\
+v' &= - \sin (x)
+\end{aligned}
+```
+
+Now we substitute into the formula,
+
+```math
+\left(\frac{u}{v}\right)'
+=
+\frac{u'v-v'u}{v^2}
+```
+
+Therefore,
+
+```math
+\begin{aligned}
+\frac{d}{dx} \frac{3x^3 -x^2 + 2}{\cos (x)}
+&= \frac{(9x^2 -2x) \cdot \cos (x) - (- \sin (x) \cdot (3x^3 -x^2 + 2))}{\cos^2 (x)} \\
+&= \frac{(9x^2 -2x) \cdot \cos (x) + \sin (x) \cdot (3x^3 -x^2 + 2)}{\cos^2 (x)} \\
+\end{aligned}
 ```
 
 <div align='center'>
