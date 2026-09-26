@@ -267,6 +267,130 @@ A \cup B &\rightarrow A \text{ or } B
 ```
 
 <div align='center'>
+    <h1> Thought Process </h1>
+</div>
+
+When solving a probability question, it is useful to separate the problem into three stages. Rather than immediately looking for a formula,
+
+1. Establish **what can happen**
+2. What we are **interested in**
+3. Which **probability rule** allows us to calculate what we want
+
+The three stages are,
+
+```math
+\boxed{\text{1. Identify the sample space} \rightarrow \text{2. Create the events} \rightarrow \text{3. Apply the rules}}
+```
+
+Each stages answers a different question.
+
+### 1. Identify the Sample Space
+
+First, determine **all possible outcomes** of the experiment. The sample space is the set containing every outcome that could occur. Before calculating a probability, we need to establish the possible outcomes of the experiment. The first question to ask is,
+
+<div align='center'>
+    <h5> What can happen? </h5>
+</div>
+
+For a single roll of a six-sided die, the possible outcomes are,
+
+```math
+S = \{ 1, 2, 3, 4, 5, 6\}
+```
+
+Therefore,
+
+```math
+S = \text{All possible outcomes}
+```
+
+The sample space provides the **foundation for the rest of the problem**. Every event we create must consist of outcomes contained within the sample space.
+
+```math
+E ⊆ S
+```
+
+### 2. Create the Events
+
+Once we know what can happen, we can identify **which outcomes we are interested in**. An event is a set of outcomes from the sample space that satisfy a particular condition. The second question is to ask,
+
+<div align='center'>
+    <h5> What are we interested in? </h5>
+</div>
+
+There can be multiple events within the sample space. For example, when rolling a six-sided die, we could define
+
+```math
+\begin{aligned}
+A &= \{ \text{Even number} \} &= \{ 2, 4, 6\} \\
+B &= \{ \text{Number > 3} \}  &= \{ 4, 5, 6\} \\
+\end{aligned}
+```
+
+Both are events because they are subsets of the sample space
+
+```math
+A ⊆ S \\
+B ⊆ S \\
+```
+
+Creating events gives us a way to describe the particular outcomes we want to investigate without repeatedly listing them. For example, instead of saying,
+
+<div align='center'>
+    <h5> The probability of rolling an even number and a number > 3 </h5>
+</div>
+
+we can refer to the events as $A$ and $B$. This allows us to express relationships between events mathematically.
+
+When an experiment consists of multiple stages, we can use a **probability tree** to organise the events and their possible outcomes. Each branch represents a possible outcome, allowing us to follow the different paths through the experiment.
+
+### 3. Apply the Rules
+
+Once we have identified the sample space and created the events, we can determine **how the events are related** and select the appropriate probability rule. The third question to ask is,
+
+<div align='center'>
+    <h5> How can we calculate the probability we want? </h5> 
+</div>
+
+For example, we may want to know the probability that both $A$ and $B$ occur. This is called the intersection of the two events and is written as,
+
+```math
+A \cap B
+```
+
+so the probability that both events occur is,
+
+```math
+P(A \cap B)
+```
+
+We can use a probability tree to follow the branches corresponding to $A$ and then $B$. The probability of following both branches is found by multiplying the probabilities along the path. For any two events, the multiplication rule is,
+
+```math
+P(A \cap B) = P(A) \cdot P(B \mid A)
+```
+
+where $P(B \mid A)$ represents the probability of $B$ occurring given that $A$ has already occurred. If $A$ and $B$ are independent, the occurrence of $A$ does not effect the probability of $B$, so
+
+```math
+P(B \mid A) = P(B)
+```
+
+and the multiplication rule becomes
+
+```math
+P(A \cap B) = P(A) \cdot P(B)
+```
+
+For an independent example, use **two separate dice**. Let $A$ be "The first die rolls an even number" and $B$ be "The second die rolls a number greater than 3". Knowing the result of the first die **does not effect the second die**, so
+
+```math
+P(B \mid A) = P(B) = \frac{3}{6} = \frac{1}{2}
+```
+
+The probability tree therefore provides a way to **organise the possible outcomes and identify the relationships between events**, while the probability rules provide the mathematical method for calculating the probability we want. It's important to reinforce, **events do not mean separate rolls**. This is an important distinction, an event is **simply a condition applied to an experiment**. Multiple events can refer to the same outcome. Previously, $P(A \cap B)$ referred to a **single roll**. We are simply asking whether the result satisfies both conditions.
+
+<div align='center'>
     <h1> $A \cap B \qquad A \text{ and } B$</h1>
 </div>
 
@@ -416,6 +540,7 @@ The percentage is simply another representation of the same probability. It does
 ```
 
 rolls to satisfy both conditions. This is a **long-run interpretation** of the probability. It does not alter the original 6 outcome sample space. Therefore, the four statements are all describing the same probability.
+
 ### The Multiplication Rule
 
 The direct counting method above works particularly well when the sample space is small and its outcomes are easily enumerated. However, probability frequently involves much larger or sequential sample spaces where directly listing every outcome is impractical. This is where the multiplication rule becomes important. The general multiplication is

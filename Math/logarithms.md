@@ -444,3 +444,41 @@ It follows,
 ```math
 b^{\log_b{x}} = x
 ```
+
+<div align='center'> <h1>Cancellation</h1> </div>
+
+We want to prove
+
+```math
+\log_b(b^x)=x 
+```
+
+Now, we always build from the definitions, so write it down.
+
+```math
+\log_b(x)=y \Leftrightarrow b^y=x
+```
+
+Observe from the definition,
+
+```math
+b^y=x
+```
+
+Therefore, we can replace $x$ directly with $b^y$ in the definition,
+
+```math
+\log_b(x)=y
+```
+
+giving
+
+```math
+\log_b(b^y)=y
+```
+
+Since $y$ represents any exponent, we can rename it $x$,
+
+```math
+\boxed{\log_b (b^x) = x}
+```

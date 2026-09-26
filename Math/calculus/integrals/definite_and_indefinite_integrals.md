@@ -22,9 +22,13 @@ treats $y$ as a constant, whereas
 
 treats $x$ as a constant.
 
-In a **definite integral**, the product $f(x)\,dx$ represents an infinitesimal contribution to an accumulated quantity, such as the area of a thin rectangle, and the integral sums these contributions over a specified interval. 
+In a **definite integral**, the product $f(x)\,dx$ represents an infinitesimal contribution to an accumulated quantity, such as the area of a thin rectangle, and the integral sums these contributions over a specified interval.
 
 In an **indefinite integral**, however, **no accumulation over an interval is taking place**. Instead, $\int f(x) \, dx$ denotes the family of functions whose derivative is $f(x)$. Although these two concepts have **different interpretations, they share the notation** $f(x) \, dx$ because the differential identifies the variable of integration and reflects the close relationship between integration and differentiation established by the Fundamental Theorem of Calculus.
+
+<div align='center'>
+    <img src='./images/10.png' width=700>
+</div>
 
 <div align='center'>
     <h1> Indefinite Integrals </h1>
@@ -64,8 +68,8 @@ Now reversing this procedure,
 \begin{aligned}
 \int dy &= \int 2x \ dx \\
 \int 1 \ dy  &= \int 2x \ dx  \\
-\int 1 \ dy \text{ Integrate 1 with respect to } y  
-&= \int 2x \ dx \text{ Integrate } 2x \text{ with respect to x} \\ 
+\int 1 \ dy \text{ Integrate 1 with respect to } y
+&= \int 2x \ dx \text{ Integrate } 2x \text{ with respect to x} \\
 y &= x^2
 \end{aligned}
 ```
@@ -205,13 +209,13 @@ The relationship between graphs provide important information. Consider $x$ as t
 
 - Integrating $\int 2t \ dt$ sums these rectangles on the velocity graph.
 
-- The result equals the total change in position $\Delta y$  on the original position graph.
+- The result equals the total change in position $\Delta y$ on the original position graph.
 
 <div align='center'>
     <img src='./images/8.png' width='1000'/>
 </div>
 
-In other words, the area under the velocity curve, the sum of $\frac{m}{s}s$ equals the net displacement on the position graph. The $dx$ (or $dt$) is the same horizontal increment on both graphs, but the integral connects the accumulated area on one graph to the net change in the vertical quantity on the other. 
+In other words, the area under the velocity curve, the sum of $\frac{m}{s}s$ equals the net displacement on the position graph. The $dx$ (or $dt$) is the same horizontal increment on both graphs, but the integral connects the accumulated area on one graph to the net change in the vertical quantity on the other.
 
 <div align='center'>
     <h1> Definite Integrals </h1>
@@ -224,7 +228,7 @@ If $f(x)$ represents the value of a quantity at each point $x$, then
 ```math
 \int^b_a f(x) \ dx
 ```
- 
+
 accumulates the infinitesimal quantities $f(x) \ dx$ from $x = a$ to $a = b$. When $f(x)$ is non-negative, this accumulation is the area under the curve between the graph and the $x$-axis. The Fundamental Theorem of Calculus provides an efficient method for evaluating a definite integral. If $F(x)$ is an antiderivative of $f(x)$, meaning,
 
 ```math
