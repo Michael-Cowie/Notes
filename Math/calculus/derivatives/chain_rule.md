@@ -46,13 +46,11 @@ where,
 - $g(x)$ is called the inner function
 - $f(x)$ is called the outer function
 
-Examples can include,
+There are two primary approaches to using the chain rule,
 
-1. $f(x) = \sin(2x)$. Where $\sin$ is the outer function and $2x$ is the inner function.
+1. Direct function usage, defining the inner function and outer function. 
 
-2. $f(x) = (3x + 1)^5$. Where $u^5$ is the outer function and $3x +1$ is the inner function.
-
-3. $f(x) = \sqrt{1 + x^3}$. First rewrite as $f(x) = (1 + x^3)^{\frac{1}{2}}$. The outer function is now $u^{\frac{1}{2}}$ and the inner function is $1 + x^3$.
+2. Using Leibniz notation and creating temporary variables to express the function in a format with known rules.
 
 The chain rule describes how derivatives behave when functions are composted together. It is written as
 
@@ -181,6 +179,90 @@ describes how changes in $u$ scale into changes in $y$. Because the output chang
 
 This relationship occurs because any small changes in $x$, increases $u$ which increases $y$.
 
+##### Example 1 - $f(x) = \sin(2x)$
+
+<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+
+```math
+\begin{aligned}
+g(x)  &= 2x \qquad &f(u) = \sin(u) \\
+g'(x) &= 2 \qquad &f'(u) = \cos(u) \\
+\end{aligned}
+```
+
+```math
+f'(g(x)) \cdot g'(x) = \cos(2x) \cdot 2 = 2 \cos (2x)
+```
+
+<div style="margin-left: 2em;"><strong>Leibniz notation</strong></div>
+
+```math
+\begin{aligned}
+u &= 2x \qquad            &f(u) = \sin (u) \\
+\frac{du}{dx} &= 2 \qquad &\frac{df}{du} = \cos(u) \\
+\end{aligned}
+```
+
+```math
+\frac{df}{dx} = \frac{df}{du} \frac{du}{dx} = \cos(2x) \cdot 2
+```
+
+##### Example 2 - $(3x + 1)^5$
+
+<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+
+```math
+\begin{aligned}
+g(x)  &= 3x + 1 \qquad &f(u) = u^5 \\
+g'(x) &= 3 \qquad      &f'(u)  = 5u^4 \\
+\end{aligned}
+```
+
+```math
+f'(g(x)) \cdot g'(x) = 5(3x + 1)^4 \cdot 3 = 15(3x + 1)^4
+```
+
+<div style="margin-left: 2em;"><strong>Leibniz notation</strong></div>
+
+```math
+\begin{aligned}
+u &= 3x + 1 \qquad &f(u) = u^5 \\
+\frac{du}{dx} &= 3 \qquad &\frac{df}{du} = 5u^4 \\
+\end{aligned}
+```
+
+```math
+\frac{df}{dx} = \frac{df}{du} \frac{du}{dx} = 5(3x + 1)^5 \cdot 3 = 15(3x + 1)^5 
+```
+
+##### Example 3 - $f(x) = \sqrt{1 + x^3} = (1 + x^3)^{1/2}$
+
+<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+
+```math
+\begin{aligned}
+g(x) &= 1 + x^3 \qquad f(u) &= u^{1/2} \\
+g'(x) &= 3x^2   \qquad f'(u) &= \frac{1}{2}u^{-1/2}
+\end{aligned}
+```
+
+```math
+f'(g(x)) \cdot g'(x) = \frac{1}{2} (1 + x^3)^{-1/2} \cdot 3x^2 = \frac{3x^2}{2 \sqrt{1 + x^3}}
+```
+
+<div style="margin-left: 2em;"><strong>Leibniz notation</strong></div>
+
+```math
+\begin{aligned}
+u &= 1 + x^3          \qquad &f(u) = u^{1/2} \\
+\frac{du}{dx} &= 3x^2 \qquad &\frac{df}{du} = \frac{1}{2}u^{-1/2} \\
+\end{aligned}
+```
+
+```math
+\frac{df}{dx} = \frac{df}{du} \frac{du}{dx} = \frac{1}{2} (1 + x^3)^{-1/2} \cdot 3x^2 = \frac{3x^2}{2 \cdot \sqrt{1 + x^3}}
+```
+
 ## Understanding the Chain Rule
 
 #### Example 1 — $y = (x + 1)^2$
@@ -191,7 +273,7 @@ When observing
 y = (x + 1)^2
 ```
 
-their are actually two operations happening.
+there are actually two operations happening.
 
 1. Start with $x$
 2. Add $1$ to get $x + 1$
