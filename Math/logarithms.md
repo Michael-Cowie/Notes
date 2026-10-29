@@ -375,7 +375,7 @@ Consider,
 3^x = 20
 ```
 
-Now we have two methods for solving this problem. The first is to solve it directly uusing the definition of logarithms.
+Now we have two methods for solving this problem. The first is to solve it directly using the definition of logarithms.
 
 ```math
 \log_3 (20) = x
@@ -394,7 +394,7 @@ x &= \frac{\log\left(20\right)}{\log\left(3\right)}
 
 Without logarithms, such equations would be extremely difficult to solve exactly.
 
-Similarily, while the common logarithm $\log$ is for base $10$, $ln$ is used for base $e$.
+Similarly, while the common logarithm $\log$ is for base $10$, $ln$ is used for base $e$.
 
 Therefore,
 
