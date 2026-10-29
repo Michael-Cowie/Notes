@@ -18,8 +18,8 @@ To begin this proof, we will create a visual diagram of the the first three shap
     <img src='./images/19.png'>
 </div>
 
-1. For each shape with $n$ numbers of verticies, create a point in the centre of the shape and draw a line to each vertex.
-2. For each shape, for $n$ number of verticies we have created $n$ number of triangles.
+1. For each shape with $n$ numbers of vertices, create a point in the centre of the shape and draw a line to each vertex.
+2. For each shape, for $n$ number of vertices we have created $n$ number of triangles.
 3. Each triangle has $180$ degrees of angles, this means the sum of all angles for the total number of triangles is $n \cdot 180$.
 4. The previous calculation $n \cdot 180$ includes the angles that do not include the shape interior angles, that is, it contains the angles in the triangle that are not part of the interior shape angles.
 
