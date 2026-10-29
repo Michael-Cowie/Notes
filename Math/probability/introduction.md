@@ -186,7 +186,7 @@ Therefore,
 P(A^c) = 1 - P(A)
 ```
 
-The complement becomes particularly useful when an event is difficult to calculate directly but its opposite is easier. For example, the probability of obtaining at least one success in repeated trials can often be calculated by finding the probability of obtaining zero success and subtracting it from 1.
+The complement becomes particularly useful when an event is difficult to calculate directly but its opposite is easier. For example, the probability of obtaining at least one success in repeated trials can often be calculated by finding the probability of obtaining zero successes and subtracting it from 1.
 
 ### Intersection
 
