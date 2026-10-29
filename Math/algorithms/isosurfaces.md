@@ -111,7 +111,7 @@ t = \frac{|2 - 0|}{|2 - 0| + |-1 - 0|} = \frac{2}{2 + 1} = \frac{2}{3}
 Then, interpolate the value of $p$ using,
 
 ```math
-p = (0, 0, 0) + \frac{2}{3}((1, 0, 0) - (0, 0, 0)) = (0, 0, 0) + \frac{2}{3}(1, 0, 0) = (\frac{2}{3}, 0, 0)
+p = \left(0, 0, 0\right) + \frac{2}{3}\left(\left(1, 0, 0\right) - \left(0, 0, 0\right)\right) = \left(0, 0, 0\right) + \frac{2}{3}\left(1, 0, 0\right) = \left(\frac{2}{3}, 0, 0\right)
 ```
 
 Therefore, the isosurface intersects the edge $AB$ at $p = (\frac{2}{3}, 0, 0)$ 
