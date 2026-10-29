@@ -19,7 +19,7 @@ The isosurface divides the 3D volume into two regions,
 1. Points where $f(x, y, z) < c$ (negative side)
 2. Points where $f(x, y, z) > c$ (positive side)
 
-The generated isosurface will use verticies that are interpolated between the verticies that hold a negative and positive value from the scalar field.
+The generated isosurface will use vertices that are interpolated between the vertices that hold a negative and positive value from the scalar field.
 
 # Algorithms for Generating Isosurfaces
 
@@ -42,13 +42,13 @@ Determine which edges of the cube are intersected by the isosurface. This depend
 
 **At each vertex, we compute $f(x, y, z) - c$**. This determines whether the vertex is **inside** ($f(x, y, z) - c < 0$ ) or **outside** $f(x, y, z) - c > 0$. Each edge of the cube connects two vertices. If the scalar values of these two vertices have **opposite signs**, i.e. a positive and a negative scalar value. This will mean that the **isosurface passes through that edge. If the signs are the same, the edge is not intersected**. Some implementations of the Marching Cube algorithm might treat $f(x, y, z) = c$ as a special case and consider the vertex to be part of the isosurface itself.
 
-In the example below, I have set the threshold (isovalue $c$) to $3$. In this example, we can see interpolated verticies on all edges that are connected through a positive vertex ($> 3$) and a negative vertex ($< 3$).
+In the example below, I have set the threshold (isovalue $c$) to $3$. In this example, we can see interpolated vertices on all edges that are connected through a positive vertex ($> 3$) and a negative vertex ($< 3$).
 
 ![](../images/marching_cube_1.png)
 
 ##### 4. Generate Triangles
 
-For each cube, generate triangles by interpolating positions on edges where the scalar value equals $c$. A lookup table maps each vertex configuration to a set of triangles. For code generation, the cubes has 8 verticies labelled from 0 to 7. Now if verticies 7,5 and 1 were active, turn it into `1010 0010`. Viewing this as a binary number, in base 10 it can be seen as 162.
+For each cube, generate triangles by interpolating positions on edges where the scalar value equals $c$. A lookup table maps each vertex configuration to a set of triangles. For code generation, the cubes has 8 vertices labelled from 0 to 7. Now if vertices 7,5 and 1 were active, turn it into `1010 0010`. Viewing this as a binary number, in base 10 it can be seen as 162.
 
 We have a mapping table called the triangulation table, where the BitCube number is the key, e.g. 162 from above. We now grab 162 from the table to get an array, e.g. `[5, 0, 1, 5, 4, 0, 7, 6, 11]`. This array tells us to join the edges `(5, 0, 1), (5, 4, 0), (7, 6, 11)` to form our triangle.
 
@@ -56,7 +56,7 @@ We have a mapping table called the triangulation table, where the BitCube number
 
 ##### 5. Connect Triangles
 
-Now, look up the two verticies that are connected to the edges 5, 0 and 1. Perform interpolation to find where the vertex will be on your edge between the P and N verticies and perform this on the other edges. Finally, connect the interpolated values on each edge to create the triangle. Combine triangles from all cubes to form a continuous mesh.
+Now, look up the two vertices that are connected to the edges 5, 0 and 1. Perform interpolation to find where the vertex will be on your edge between the P and N vertices and perform this on the other edges. Finally, connect the interpolated values on each edge to create the triangle. Combine triangles from all cubes to form a continuous mesh.
 
 ![](../images/marching_cube_3.png)
 
