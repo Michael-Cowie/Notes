@@ -137,7 +137,7 @@ Therefore, $2.4$ out of every $100$ people both have the disease and develop sev
 8\% \times 30\% = 2.4\%
 ```
 
-The second percentage is evaluated only within the subset defined by the first event. Their are multiple ways of performing these types of percentage arithmatic.
+The second percentage is evaluated only within the subset defined by the first event. there are multiple ways of performing these types of percentage arithmetic.
 
 ```math
 \frac{8}{100} \cdot \frac{3}{100} = 0.024
