@@ -167,7 +167,7 @@ So $\frac{a}{b}$ represents the amount of $a$ per $1$ unit of $b$. To illustrate
 \end{aligned}
 ```
 
-This now states that their are $\frac{3}{5}$ apples **per 1 berry**. This information allows us to create a fractional relationship, allowing us to perform algebra. Hence,
+This now states that there are $\frac{3}{5}$ apples **per 1 berry**. This information allows us to create a fractional relationship, allowing us to perform algebra. Hence,
 
 ```math
 \frac{a}{b} = \frac{3}{5}
