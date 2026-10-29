@@ -278,7 +278,7 @@ We can now calculate the longer side being $2 * 3 = 6$ and the shorter side bein
 
 
 <div align='center'>
-    <h1> perimeter </h1>
+    <h1> Perimeter </h1>
 </div>
 
 Angle bisector refers to a line that splits an angle into two equal angles.
