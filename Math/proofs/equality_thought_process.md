@@ -16,7 +16,7 @@ Mathematical reasoning during equality proofs is fundamentally a process of cont
 
 - What structure is present?
 - Which definitions apply?
-- Does this operation preserve equivalance?
+- Does this operation preserve equivalence?
 - Is the step reversible?
 - Were any restrictions introduced or ignored?
 - Does the transformation preserve the domain?
@@ -46,7 +46,7 @@ Mathematical thinking begins by **identifying structure**. In this example,
 
 - Logarithms represent exponents.
 - Exponentiation and logarithms are inverse operations.
-- Powers inside logairthms are often related to multiplication outside them.
+- Powers inside logarithms are often related to multiplication outside them.
 
 **Most successful proofs begin by reducing unfamiliar expressions to their definitions**. Definitions provide the logical foundation from which algebraic rules emerge.
 
@@ -120,7 +120,7 @@ The manipulations were guided entirely by structure and definition.
     <h1> Equality Proofs Thought Process </h1>
 </div>
 
-An essential part of equality proofs is determining whether each operation preserves equivalnce. Many valid algebraic operations are reversible.
+An essential part of equality proofs is determining whether each operation preserves equivalence. Many valid algebraic operations are reversible.
 
 ```math
 a = b \Rightarrow a + c = b + c
