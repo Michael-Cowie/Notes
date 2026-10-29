@@ -230,7 +230,7 @@ This is exactly the same permutation-to-combination reasoning used with $A, B, C
 
 ##### 2 - Now Assign the Outcomes
 
-**Only after choosing the trial positions do we introduce the outcomes**. Suppose we want exactly two successes We can choose the selected trials to be the successful trials. Every trial inside the selected set is labelled to $S$, while every trial outside the set is labelled $F$. For example,
+**Only after choosing the trial positions do we introduce the outcomes**. Suppose we want exactly two successes. We can choose the selected trials to be the successful trials. Every trial inside the selected set is labelled to $S$, while every trial outside the set is labelled $F$. For example,
 
 ```math
 \{ T_1, T_3\}
