@@ -425,19 +425,19 @@ P(G) = 0.05 + \tfrac13 + 0.075 = 0.458\overline{3}
 
 ##### Posterior probabilities
 
-**1. \( P(B_1 \mid G) \)**
+**1. $P(B_1 \mid G)$**
 
 ```math
 P(B_1 \mid G) = \dfrac{P(B_1 \cap G)}{P(G)} = \dfrac{1/20}{0.4583} = \dfrac{1}{20} \times \dfrac{1}{0.4583} \approx 0.1091 \ (10.91\%)
 ```
 
-**2. \( P(B_2 \mid G) \)**
+**2. $P(B_2 \mid G)$**
 
 ```math
 P(B_2 \mid G) = \dfrac{P(B_2 \cap G)}{P(G)} = \dfrac{1/3}{0.4583} = \dfrac{1}{3} \times \dfrac{1}{0.4583} \approx 0.7273 \ (72.73\%)
 ```
 
-**3. \( P(B_3 \mid G) \)**
+**3. $P(B_3 \mid G)$**
 
 ```math
 P(B_3 \mid G) = \dfrac{P(B_3 \cap G)}{P(G)} = \dfrac{3/40}{0.4583} = \dfrac{3}{40} \times \dfrac{1}{0.4583} \approx 0.1636 \ (16.36\%)
