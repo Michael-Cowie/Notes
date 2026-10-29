@@ -33,7 +33,7 @@ The result shows that the accumulation function $F(x)$, which measures the net a
     <h1> Theorem Part Two </h1>
 </div>
 
-The second part of theorem provides the practical method for evaluating definite integrals. If $F(x)$ is any antiderivative of $f(x)$, then
+The second part of the theorem provides the practical method for evaluating definite integrals. If $F(x)$ is any antiderivative of $f(x)$, then
 
 ```math
 \int^b_a f(x) \ dx = F(b) - F(a)
@@ -41,7 +41,7 @@ The second part of theorem provides the practical method for evaluating definite
 
 This evaluation theorem transforms the often difficult task of computing areas via limits of Riemann sums into a straightforward process of finding an antiderivative and evaluating it at the endpoints.
 
-Together, these two parts unify the seemingly separate branches of calculus. They reveal that integration and differentiation are not merely related but are inverse operations, thereby providing theoretical foundation for much of the power and applicability of calculus in physics, engineering, economics, ...
+Together, these two parts unify the seemingly separate branches of calculus. They reveal that integration and differentiation are not merely related but are inverse operations, thereby providing the theoretical foundation for much of the power and applicability of calculus in physics, engineering, economics, ...
 
 <div align='center'>
     <h1> Notation Explanation </h1>
@@ -152,7 +152,7 @@ Each input produces a different accumulated value. Consequently, the integral no
 F(3) = \int^3_a f(t) \ dt
 ```
 
-cannot be evaluated until the value of $a$ is known. However, the purpose of theorem is not to compute numerical answers. Instead, it seeks to establish a relationship that holds for **every possible fixed value of $a$**. The lower limit acts as a constant parameter rather than an unknown quantity to be solved.
+cannot be evaluated until the value of $a$ is known. However, the purpose of the theorem is not to compute numerical answers. Instead, it seeks to establish a relationship that holds for **every possible fixed value of $a$**. The lower limit acts as a constant parameter rather than an unknown quantity to be solved.
 
 Let,
 
@@ -206,7 +206,7 @@ F'(x) = f(x)
 
 The integral itself defines a function. The derivative is therefore taken with respect to the function represented by the integral. The theorem states that the rate at which accumulated change increases is exactly equal to the value of the original function at the current endpoint.
 
-**The second part** of theorem appears in a different form,
+**The second part** of the theorem appears in a different form,
 
 ```math
 \int^b_a f(x) \ dx = F(b) - F(a)
