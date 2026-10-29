@@ -82,7 +82,7 @@ If the chord divides the circle into two regions, each region is called a segmen
 
 #### Circumference
 
-Total length of boundry or perimiter of a circle.
+Total length of boundary or perimeter of a circle.
 
 <div align='center'>
     <img src='./images/12.png'>
@@ -195,7 +195,7 @@ We also know this to be true from the second theorem, because this point is from
 
 #### Theorem 4 - Opposite Angles on A Cyclic Quadrilateral sum to 180
 
-A quadrilateral is called cyclic if all four of its verticies lie on the circumference of a circle. This important property creates the theorem that states the opposite angles always sum to 180.
+A quadrilateral is called cyclic if all four of its vertices lie on the circumference of a circle. This important property creates the theorem that states the opposite angles always sum to 180.
 
 In the following example, $A + B = 180$.
 
