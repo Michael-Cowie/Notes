@@ -157,7 +157,7 @@ f\left(2\right) &< f\left(1\right) \\
 
 - $f(x) = x^2$
 
-This function is special as the equality preservation depends on the domain of which the number is in. Applying any operation is equivalent to composing with a function and checking whether that function is increasing or decreasing on the relveant domain.
+This function is special as the equality preservation depends on the domain of which the number is in. Applying any operation is equivalent to composing with a function and checking whether that function is increasing or decreasing on the relevant domain.
 
  It is **increasing** between $(0, \infty]$ and therefore **preserves the equality**. That is,
 
