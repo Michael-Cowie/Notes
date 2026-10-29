@@ -46,7 +46,7 @@ An equillateral triangle has additional properties. The height, median and angle
     <img src='./images/92.png' width='300'>
 </div>
 
-- If a triangle has **two equal length sides**, it is called an **isoceles triangle**. The angles opposite these sides are equal.
+- If a triangle has **two equal length sides**, it is called an **isosceles triangle**. The angles opposite these sides are equal.
 
 <div align='center'>
     <img src='./images/54.png' width='300'>
@@ -195,7 +195,7 @@ Therefore, our goal is to prove $AE = b$.
 
 4. Due to parallel line properties (Corresponding angles), $\angle BAD$ is equal to $\angle BEC$.
 
-5. Because $\angle ACE = \angle AEC$ we can determine that this is an isoceles triangle and therefore $\overline{AC} = \overline{AE}$.
+5. Because $\angle ACE = \angle AEC$ we can determine that this is an isosceles triangle and therefore $\overline{AC} = \overline{AE}$.
 
 6. We can now determine $\overline{AB} = b$
 
@@ -299,7 +299,7 @@ Every triangle has a base, which is nothing but any side you would like to pick 
     <img src='./images/63.png' width='400'>
 </div>
 
-For an isoceles triangle, the height will intersect the center of the base.
+For an isosceles triangle, the height will intersect the center of the base.
 
 <div align='center'>
     <h1> Area of a Triangle </h1>
@@ -539,7 +539,7 @@ Therefore,
 ```
 
 
-When applying the arithmatic here, we're applying the inverse sine function. When we go from, 
+When applying the arithmetic here, we're applying the inverse sine function. When we go from, 
 ```math
 \sin(\theta) = \frac{o}{h}
 ```
