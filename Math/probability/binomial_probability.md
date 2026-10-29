@@ -201,7 +201,7 @@ _4 P _2 = 4 \times 3 = 12
 ordered selections. However, if we only care which two trials were selected the, their order is irrelevant. For example,
 
 ```math
-T_1, T_2 = T_2, T1
+T_1, T_2 = T_2, T_1
 ```
 
 represent the same pair of trials. Every pair therefore appears $2!$ times in the permutation tree. Dividing by $2!$ removes repeated orderings.
