@@ -10,7 +10,7 @@ Before moving into larger vertex shapes, we will begin by demonstrating the base
 
 #### Solution 1 - Using Exterior Angle Theorem
 
-We first identify a triangle using two of the interior angles and use the the exterior angle theorem to use the identification below.
+We first identify a triangle using two of the interior angles and use the exterior angle theorem to use the identification below.
 
 <div align='center'>
     <img src='./images/2.png' width='400'/>
@@ -51,7 +51,7 @@ This is the sum of all angles, given that this is regular and they're all equal 
 ```
 
 
-We can identify the triangle with purple lines and given that this is a regular star it is therefore an isoceles triangle with both green angles being the same. This leads to,
+We can identify the triangle with purple lines and given that this is a regular star it is therefore an isosceles triangle with both green angles being the same. This leads to,
 
 ```math
 \begin{aligned}
@@ -107,7 +107,7 @@ A + B + C + D + E + F + G = 180
 
 #### Solution 2 - Using Interior Angles for a Regular Convex Polygon
 
-We will solve the sum of all interior angles of the star by first performing the arithmatic on a regular sized heptagonal star. As illustrated below, all angles will be the same and will be named $a$. Additionally, we have identified the triangle which will have the sum interior angles of $2a + b$.
+We will solve the sum of all interior angles of the star by first performing the arithmetic on a regular sized heptagonal star. As illustrated below, all angles will be the same and will be named $a$. Additionally, we have identified the triangle which will have the sum interior angles of $2a + b$.
 
 <div align='center'>
     <img src='./images/12.png' width='600'/>
