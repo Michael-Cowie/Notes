@@ -18,7 +18,7 @@ Consider a rectangle that is $2$ units high and $3$ units wide. When we calculat
 
 Now, previously we could visualize a one multiplication and even a two dimensional multiplication using standard boxes as examples. Now, with area the units is $6 \ units^2$. To see what the $6 \ units^2$ actually means, picture the rectangle divided into a smaller grid of $1 \times 1$ squares. Each small square has an area of $1 \ unit^2$. In a 2-by-3 rectangle, there are 2 rows with 3 squares in each row, giving a total of 6 unit squares. Counting them directly shows that the area is exactly $6 \times 1 \ unit^2$, which is written more concisely as $6 \ units^2$.
 
-The notation $6 \ units^2$ is **therefore equivalent to saying** "6 copies of a single $1 \times 1$ square unit", i.e. $6 \times 1 \ unit^2$ . The superscript serves as a reminder that the measurement describes a two-dimensional quantity rather than a length or a count.
+The notation $6 \ units^2$ is **therefore equivalent to saying** "6 copies of a single $1 \times 1$ square unit", i.e. $6 \times 1 \ unit^2$. The superscript serves as a reminder that the measurement describes a two-dimensional quantity rather than a length or a count.
 
 <div align='center'>
     <img src='./images/1.png'>
