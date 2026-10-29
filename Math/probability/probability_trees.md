@@ -355,7 +355,7 @@ each one a complete, valid split of $3$ balls across $3$ boxes, with box counts 
 
 #### The General Principle
 
-What makes this transfer possible is that $\binom{n}{k}$ was never a statement about success and failure in the first place, it is a statement about **selecting an unordered subset of size $k$ from $n$ distinguishable objects**, full stop. The binomial distribution supplies the objects (trials) and the labels (success/failure), stars and bars supplies different objects (positions in a row) and different labels (bar/star). The tree does not care which pair of labels is used, because it was only ever constructed from the positions, never from the labels themselves.
+What makes this transfer possible is that $\binom{n}{k}$ was never a statement about success and failure in the first place; it is a statement about **selecting an unordered subset of size $k$ from $n$ distinguishable objects**, full stop. The binomial distribution supplies the objects (trials) and the labels (success/failure), stars and bars supplies different objects (positions in a row) and different labels (bar/star). The tree does not care which pair of labels is used, because it was only ever constructed from the positions, never from the labels themselves.
 
 ```math
 \text{Objects to select from} \quad \longrightarrow \quad \text{choose } k \text{ of } n \quad \longrightarrow \quad \binom{n}{k}
