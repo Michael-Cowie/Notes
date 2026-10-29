@@ -26,7 +26,7 @@ B-Trees core concepts,
 
 4. **Each Node Holds Multiple Keys** - Each Node will have at most `m -1` keys and maximum `m` children. More keys per node results in a shorter free height.
 
-5. **Min Keys Enforced** - Each node (Except root) has atleast $\left\lceil \frac{m}{2} \right\rceil - 1$ keys to prevent imbalance. Only the root node can have less than the specified minimum.
+5. **Min Keys Enforced** - Each node (Except root) has at least $\left\lceil \frac{m}{2} \right\rceil - 1$ keys to prevent imbalance. Only the root node can have less than the specified minimum.
 
 6. **Self Balancing** - Insertion and deletion preserve all variants through localized, recursive rebalancing.
 
@@ -61,9 +61,9 @@ In short, **B-Trees optimize I/O** at the cost of more complex in-memory logic.
 A **B-Tree of order m**  has the following properties,
 
 1. Each node contains a **maximum of (m - 1) keys**.
-2. The root has atleast two children **if it is not a leaf node**.
+2. The root has at least two children **if it is not a leaf node**.
 2. A non-leaf node with `k` children contains `k−1` keys.
-2. Each node has **between** $\left\lceil \frac{m}{2} \right\rceil$ **and m children**. The example below is using `m` as `4`, illustrationg the node `[0012, 0016, 0020]` having `3` keys and additionally having `4` children. Where `⌈` and `⌉` denote the ceiling function, meaning the number is rounded up to an integer.
+2. Each node has **between** $\left\lceil \frac{m}{2} \right\rceil$ **and m children**. The example below is using `m` as `4`, illustrating the node `[0012, 0016, 0020]` having `3` keys and additionally having `4` children. Where `⌈` and `⌉` denote the ceiling function, meaning the number is rounded up to an integer.
 
 <div align="center">
     <img src="./images/2.png">
@@ -188,7 +188,7 @@ Now the parent becomes `[20, 40, 60, 90]` which results in splitting being requi
 We assume a B-Tree of order `m`, where
 
 1. Each node can contain at most `m - 1` keys.
-2. Each non-root node must contain atleast `⌈m⁄2⌉ − 1` keys.
+2. Each non-root node must contain at least `⌈m⁄2⌉ − 1` keys.
 3. Internal nodes have between `⌈m⁄2⌉` and `m` children.
 
 
