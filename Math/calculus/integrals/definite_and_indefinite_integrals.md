@@ -112,7 +112,7 @@ for every constant $C$. Hence,
 \int 2x \ dx = x^2 + C
 ```
 
-This is the general antiderivative, since every member of the family has the same derivative $2x$. Here $2x$ is a bare height, and it is only the the product $2x \ dx$, a constructed quantity that is a valid integrand. Notice that this result is still a function, not an area. The indefinite integral has produced an antiderivative, but no interval has been specified, so no numerical accumulation has occurred. However, once an interval is introduced, this antiderivative becomes the tool used to evaluate the corresponding definite integral. For example,
+This is the general antiderivative, since every member of the family has the same derivative $2x$. Here $2x$ is a bare height, and it is only the product $2x \ dx$, a constructed quantity that is a valid integrand. Notice that this result is still a function, not an area. The indefinite integral has produced an antiderivative, but no interval has been specified, so no numerical accumulation has occurred. However, once an interval is introduced, this antiderivative becomes the tool used to evaluate the corresponding definite integral. For example,
 
 ```math
 \int_a^b 2x \ dx = \left[ x^2 \right]_a^b = b^2 - a^2

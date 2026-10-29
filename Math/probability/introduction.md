@@ -10,7 +10,7 @@ Probability provides a mathematical framework for describing uncertainty. It all
 \frac{\text{Favourable outcomes}}{\text{Total number of possible outcomes}}
 ```
 
-When expressed as a percentage, it describes a quantity per one hundred. For example, a probability of $20\%$ can be interpreted as $20$ outcomes occurring for every $100$ equally likely outcomes. This interpretation provides an intuitive connection between probability and proportions, while the corresponding decimal and fractional representations provide the mathematical forms used in calcuatlions,
+When expressed as a percentage, it describes a quantity per one hundred. For example, a probability of $20\%$ can be interpreted as $20$ outcomes occurring for every $100$ equally likely outcomes. This interpretation provides an intuitive connection between probability and proportions, while the corresponding decimal and fractional representations provide the mathematical forms used in calculations,
 
 ```math
 20\% = \frac{20}{100} = 0.2

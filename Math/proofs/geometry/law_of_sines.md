@@ -4,7 +4,11 @@
 
 The Law of Sines states that for any triangle ABC, with sides $a$, $b$ and $c$,
 
-$$\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}$$
+
+```math
+\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
+```
+
 
 A proof in geometry is sufficient only if it establishes a statement for all cases allowed for its assumptions, using definitions and arguments that remain valid across those cases. If any configuration is excluded or relies on conditions not guaranteed by the hypothesis, the proof is incomplete.
 
@@ -192,11 +196,19 @@ Now that this is an established relationship for $c$ and $b$, we need to include
 
 The angles $BAC$ and $BAK$ are supplementary, so the sine of both are the same. That is,
 
-$$\sin(\theta) = \sin(180 - \theta)$$
+
+```math
+\sin(\theta) = \sin(180 - \theta)
+```
+
 
 Below illustrates an example with $45^\circ$, that is,
 
-$$\sin(45) = \sin(180-45)$$
+
+```math
+\sin(45) = \sin(180-45)
+```
+
 
 <div align='center'>
     <img src='./images/52.png' width='700'>
@@ -233,20 +245,40 @@ c \cdot \sin(\theta_2) &= h
 
 Because $\theta_2$ is equal to $A$, we finally have,
 
-$$\boxed{c \cdot \sin(A) = h}$$
+
+```math
+\boxed{c \cdot \sin(A) = h}
+```
+
 
 Next, we need to creation a relationship using the larger triangle. That is,
 
-$$\sin(C) = \frac{h}{a}$$
+
+```math
+\sin(C) = \frac{h}{a}
+```
+
 
 Therefore,
 
-$$\boxed{a \cdot \sin(C) = h}$$
+
+```math
+\boxed{a \cdot \sin(C) = h}
+```
+
 
 Combining both into,
 
-$$a \cdot \sin(C) = c \cdot \sin(A)$$
-$$\boxed{\frac{a}{\sin(A)} = \frac{c}{\sin(C)}}$$
+
+```math
+a \cdot \sin(C) = c \cdot \sin(A)
+```
+
+
+```math
+\boxed{\frac{a}{\sin(A)} = \frac{c}{\sin(C)}}
+```
+
 
 Finally, we can combine the previous equality,
 

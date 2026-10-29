@@ -2,7 +2,7 @@
     <h1> Opposite angles in a cyclic quadrilateral sum to 180 </h1>
 </div>
 
-A cyclic quadrilateral is a quadrilateral whose four vertices lie on a single circle circumfrance. If all four verticies do not lie on the circle cumfrance, it is considered a quadrilateral. Such figures possess a number of elegant and powerful angle properties that make them central objects in classical Euclidean geometry. The defining characteristic of a cyclic quadrilateral is that each interior angle subtends an arc of the same circle, which leads to the fundamental result that opposite angles sum to 180.
+A cyclic quadrilateral is a quadrilateral whose four vertices lie on a single circle circumference. If all four vertices do not lie on the circle cumfrance, it is considered a quadrilateral. Such figures possess a number of elegant and powerful angle properties that make them central objects in classical Euclidean geometry. The defining characteristic of a cyclic quadrilateral is that each interior angle subtends an arc of the same circle, which leads to the fundamental result that opposite angles sum to 180.
 
 #### Proof One - Using Inscribed Angle Theorem
 
@@ -31,7 +31,7 @@ Therefore,
     a + b = 180
 ```
 
-#### Proof Two - Using Isoceles Triangles
+#### Proof Two - Using isosceles Triangles
 
 <div align='center'>
     <img src='./images/24.png'>

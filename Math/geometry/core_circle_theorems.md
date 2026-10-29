@@ -82,7 +82,7 @@ If the chord divides the circle into two regions, each region is called a segmen
 
 #### Circumference
 
-Total length of boundry or perimiter of a circle.
+Total length of boundary or perimeter of a circle.
 
 <div align='center'>
     <img src='./images/12.png'>
@@ -90,7 +90,7 @@ Total length of boundry or perimiter of a circle.
 
 #### Tangent
 
-The tangent to a circle is a straight line that touches the circumfrance at exactly one point without crossing it. If a line is tangent to a circle at a point, **the radius to that point is perpendicular to the tangent**.
+The tangent to a circle is a straight line that touches the circumference at exactly one point without crossing it. If a line is tangent to a circle at a point, **the radius to that point is perpendicular to the tangent**.
 
 <div align='center'>
     <img src='./images/31.png'>
@@ -110,13 +110,13 @@ A straight line that intersections the circle at two distinct points.
 
 #### Subtended
 
-This word is used to describe how an arc or a chord creates an angle at a point on the circle. For example, when an arc forms an angle at the circumfrance, we say the angle "subtended" at the circumfrance by the arc.
+This word is used to describe how an arc or a chord creates an angle at a point on the circle. For example, when an arc forms an angle at the circumference, we say the angle "subtended" at the circumference by the arc.
 
 <div align='center'>
     <img src='./images/15.png'>
 </div>
 
-Similarily, if the angle is formed at the center, we say the angle subtended at the center by the arc.
+Similarly, if the angle is formed at the center, we say the angle subtended at the center by the arc.
 
 <div align='center'>
     <img src='./images/16.png'>
@@ -168,13 +168,13 @@ Using our first theorem, this means we can draw any two lines from the arc verte
 
 #### Theorem 3 - Angles in a Semicircle is always 90 degrees
 
-If an arc is a semicircle, that is, the arc lies on the circles diameter. Then, the angle subtended on the circumfrance will always be 90 degrees.
+If an arc is a semicircle, that is, the arc lies on the circles diameter. Then, the angle subtended on the circumference will always be 90 degrees.
 
 <div align='center'>
     <img src='./images/23.png'>
 </div>
 
-We can create two isoceles triangles to form an algebraic equation.
+We can create two isosceles triangles to form an algebraic equation.
 
 <div align='center'>
     <img src='./images/24.png'>
@@ -195,7 +195,7 @@ We also know this to be true from the second theorem, because this point is from
 
 #### Theorem 4 - Opposite Angles on A Cyclic Quadrilateral sum to 180
 
-A quadrilateral is called cyclic if all four of its verticies lie on the circumfrance of a circle. This important property creates the theorem that states the opposite angles always sum to 180.
+A quadrilateral is called cyclic if all four of its vertices lie on the circumference of a circle. This important property creates the theorem that states the opposite angles always sum to 180.
 
 In the following example, $A + B = 180$.
 

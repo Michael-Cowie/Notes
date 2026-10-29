@@ -2,7 +2,7 @@
     <h1> Limits </h1>
 </div>
 
-Limits, are not primarily concerned with equality at a point. Instead, **they describe how quantities behave as they move arbitrarily close to a point**. Limits are not the process of approaching (verb), they're the result of the approach (noun). Limits introduce a distinction between exact function values and nearby convergence behaviour.
+Limits are not primarily concerned with equality at a point. Instead, **they describe how quantities behave as they move arbitrarily close to a point**. A limit is not the process of approaching (the verb); it is the result of that approach (the noun). Limits introduce a distinction between exact function values and nearby convergence behaviour.
 
 One of the most common conceptual difficulties is the interpretation of the notation.
 
@@ -16,7 +16,7 @@ as though it automatically means
 f(a) = L
 ```
 
-These are fundamentally different statements. A limit describes the behaviour of function values near a point, while $f(a)$ describes the actual value of the function at the point itself. Only when the function is continuous at $a$ do these statements become true. Therefore, **if the limit exists and the function is continuous at $a$**, then
+These are fundamentally different statements. A limit describes the behaviour of function values near a point, while $f(a)$ describes the actual value of the function at the point itself. These statements are equal when the function is continuous at $a$. Therefore, **if the limit exists and the function is continuous at $a$**, then
 
 ```math
 \lim_{x \to a} f(x) = f(a)
@@ -30,7 +30,7 @@ A limit **is** an exact number. When,
 \lim_{h \rightarrow 0} g(h) = L
 ```
 
-exists. $L$ is a specific **exact real number**. It's not approaching anything, the convergence is how you define or computed the value, but the value itself is just a number.
+exists. $L$ is a specific **exact real number**. It is not approaching anything; convergence is the process used to define or compute the value, but the value itself is a number.
 
 The expression
 
@@ -95,7 +95,7 @@ Equivalently,
 |f(x)-L| < \varepsilon
 ```
 
-Where, 
+Where:
 
 - $\forall$ means "For all"
 - $\exists$ means "Exists"
@@ -106,7 +106,7 @@ Where,
 
 This means, for every tolerance $\epsilon$, I can find some neighbourhood around $c$ where the function properly behaves. The keyword here "exists", implies only requiring one $\delta$ to satisfy the definition. It does not mean every possible $\delta$ works, not that larger $\delta$s must work.
 
-It's similar to saying "There exists a shoe that fits you". You cannot refute that by bringing me a shoe that does not fit, the statement was never "every shoe fits". Simiarly, you cannot choose a large $\delta$ that makes the definition untrue.
+It's similar to saying "There exists a shoe that fits you". You cannot refute that by bringing me a shoe that does not fit, the statement was never "every shoe fits". Similarly, you cannot choose a large $\delta$ that makes the definition untrue.
 
 **This formalizes the idea that $x$ gets arbitrarily close to $c$, the function values are forced arbitrarily close to $L$**. The entire intuitive meaning is that when $x$ is sufficiently close to $c$, $f(x)$ is forced to be close to $L$. A limit is not about reaching $c$ or evaluating $f(c)$, it is about controlling nearby behaviour.
 
@@ -123,11 +123,11 @@ In the following example, we can choose a value $x$ that satisfies $0 < |x - c| 
     <img src='./images/4.png' width='400'>
 </div>
 
-Keep in mind $\varepsilon$ is configurable and therefore can be made larger or smaller in order to satisfy the criteria. Here, we're trying to make $\varepsilon$ smaller and smaller to show the converging behaviour, this will resolved in a smaller $x$ value and therefore a reduced $\delta$ value.
+Keep in mind $\varepsilon$ is configurable and therefore can be made larger or smaller in order to satisfy the criteria. Here, we're trying to make $\varepsilon$ smaller and smaller to show the converging behaviour, this will result in a smaller $x$ value and therefore a reduced $\delta$ value.
 
-Keep in mind, their does not not have to be a single $\delta$, but rather, a $\delta$ for each $\varepsilon > 0$.
+Keep in mind, there does not have to be a single $\delta$, but rather, a $\delta$ for each $\varepsilon > 0$.
 
-To show the limit of a function does **not** equal $L$, we must prove the negation of the defintion. That is,
+To show the limit of a function does **not** equal $L$, we must prove the negation of the definition. That is,
 
 There exists $\varepsilon > 0$, such that for every $\delta > 0$ there exists some $x \in A$ with $0 < |x - c| < \delta$, such that $|f(x) - L| \geq \varepsilon.$
 
@@ -138,15 +138,15 @@ This has some slight modifications from the original definition,
 3. **For every** $x$ becomes **there exists** $x$.
 4. |$f(x) - L| < \varepsilon$ becomes $|f(x) - L| \geq \varepsilon$
 
-This is interpreted as choosing an $x$ value which satisfies $|f(x) - L| \geq \varepsilon$. 
+This is interpreted as choosing an $x$-value which satisfies $|f(x) - L| \geq \varepsilon$. 
 
-In the following example, $\varepsilon$ satisfies this criteria.
+In the following example, $\varepsilon$ satisfies these criteria.
 
 <div align='center'>
     <img src='./images/5.png' width='400'>
 </div>
 
-However, if we widen $\varepsilon$. We can now choose an $x$ value where $|f(x) - L| \geq \varepsilon$. As we only need to choose some $\varepsilon$ where the definition fails for it to completely fail.
+However, if we widen $\varepsilon$, we can now choose an $x$ value where $|f(x) - L| \geq \varepsilon$. As we only need to choose some $\varepsilon$ where the definition fails for it to completely fail.
 
 <div align='center'>
     <img src='./images/6.png' width='400'>
@@ -183,7 +183,7 @@ We have
 \end{aligned}
 ```
 
-So let $\delta = \frac{\varepsilon}{4}$. Keep in mind here our limit is $3$ and therefore we intentionally structued this to become $|x - 3|$ to fulfill $|x - c|$, where $c$ is the value being approached. This is interpreted as only considering $x$ values that are within $\frac{\varepsilon}{4}$ distance from $3$.
+So let $\delta = \frac{\varepsilon}{4}$. Keep in mind here our limit is $3$ and therefore we intentionally structured this to become $|x - 3|$ to fulfill $|x - c|$, where $c$ is the value being approached. This is interpreted as only considering $x$ values that are within $\frac{\varepsilon}{4}$ distance from $3$.
 
 That is to say,
 
@@ -255,7 +255,7 @@ alternatively,
 \lim_{n \to \infty} \left(1 - 10^{-n}\right) = 1
 ```
 
-This statement does not claim that one of the finite terms eventually becomes equal to $1$. Rather, it states that the sequence made arbitrarily close to $1$ by continuing the process indefinitely. The important insight here is that limits are determined by nearby behaviour, not by whether the value is eventually attained. They're concerned with the existence of a unique target value toward which behaviours converges. This idea initially appears strange because ordinary intuition often associates mathematical exactness with direct equality at a point. However, limits define exact mathematical objects through convergence itself.
+This statement does not claim that one of the finite terms eventually becomes equal to $1$. Rather, it states that the sequence becomes arbitrarily close to $1$ by continuing the process indefinitely. The important insight here is that limits are determined by nearby behaviour, not by whether the value is eventually attained. They're concerned with the existence of a unique target value toward which behaviour converges. This idea initially appears strange because ordinary intuition often associates mathematical exactness with direct equality at a point. However, limits define exact mathematical objects through convergence itself.
 
 A similar idea appears in the expression
 

@@ -2,9 +2,9 @@
     <h1> Functions </h1>
 </div>
 
-The concept of a function occupies a central position in modern mathematics. Functions provide a framework for describing relationships between quantities and serve as the foundation of algebra, analysis, calculus and mathematical modelling. Although the notation is used to represent functions is compact, it encodes several distinct ideas that are often expressed using the same symbols. A precise distinction between a function, the variables used in its definition, the arguments supplied to it and the quantities produced as output clarifies the structure underlying differentiation and the chain rule.
+The concept of a function occupies a central position in modern mathematics. Functions provide a framework for describing relationships between quantities and serve as the foundation of algebra, analysis, calculus and mathematical modelling. Although the notation used to represent functions is compact, it encodes several distinct ideas that are often expressed using the same symbols. A precise distinction between a function, the variables used in its definition, the arguments supplied to it and the quantities produced as output clarifies the structure underlying differentiation and the chain rule.
 
-A function may be regarded as a rule that assigns exactly one output for its given inputs. For example,
+A function may be regarded as a rule that assigns exactly one output to each valid input. For example,
 
 ```math
 f(x) = x^2
@@ -18,7 +18,7 @@ This is evident from the fact that
 f(x) = x^2 \qquad f(z) = z^2 \qquad f(q) = q^2
 ```
 
-all describe the same function. The symbols $x$, $z$ and $q$ are interchangeable because they serve only as placeholders within the definition. Such symbols are referred to as formal parameters or bound variables. This idea corresponds closely to local variables in programming. A function such as,
+all describe the same function. The symbols $x$, $z$ and $q$ are interchangeable because they serve only as placeholders within the definition. Such symbols are referred to as formal parameters or bound variables. This idea corresponds closely to local variables in programming. A function such as
 
 ```python
 def square(x):
@@ -62,7 +62,7 @@ The distinction is that formal parameters belong to the definition of the functi
 y = f(x)
 ```
 
-represents a relationship in which $x$ is the independent variable and $y$ is the dependent variable obtained by applying $f$ to $x$. This does not define a new function, it evaluates an existing one and assigns the result to a quantity $y$.
+represents a relationship in which $x$ is the independent variable and $y$ is the dependent variable obtained by applying $f$ to $x$. This does not define a new function; it evaluates an existing one and assigns the result to a quantity $y$.
 
 The derivative of this relationship may be written in several equivalent forms,
 
@@ -76,7 +76,7 @@ Each notation expresses the same quantity. The first emphasises variables, the s
 h = j(x) \qquad y = f(h)
 ```
 
-To clarify the meaning of these expressions, consider a concrete example. Let,
+To clarify the meaning of these expressions, consider a concrete example. Let
 
 ```math
 j(x) = 2x \qquad f(h) = h^2
@@ -126,7 +126,7 @@ This expression reflects the propagation of variation through intermediate varia
 y = f(x) \qquad h = j(x)
 ```
 
-In this case both quantities  depend directly on $x$, producing the dependency structure
+In this case both quantities depend directly on $x$, producing the dependency structure
 
 ```math
 x \to y \qquad x \to h
@@ -154,13 +154,13 @@ The following **defines functions**.
 f(h) = h^2
 ```
 
-The $h$ inside of $f(h) = h^2$ has no assoication to the other $h$ previously defined as a variable. If both were complete in a single assignment
+The $h$ in $f(h) = h^2$ is not associated with the other $h$ previously defined as a variable. If both were combined in a single assignment
 
 ```math
 g = j(y) = y^2
 ```
 
-then $g$ is a variable at the exact point $y$.  Here, $y$ is not an input placeholder, it must has been previously defined as a variable and a quantity as it determines the value of $g$.
+then $g$ is a variable evaluated at the value of $y$. Here, $y$ is not an input placeholder; it must have been previously defined as a variable whose value determines $g$.
 
 The difficulty is that mathematicians often reuse the same letter. For example, if someone writes
 
@@ -239,7 +239,7 @@ Here,
 - $x$ is an actual argument being supplied to the function.
 - $y$ is the resulting output.
 
-This statement does **not** define $f$. It uses $f$. A useful ways to read it is "Let $y$ be the value obtained by applying $f$ to $x$".
+This statement does **not** define $f$. It uses $f$. A useful way to read it is "Let $y$ be the value obtained by applying $f$ to $x$".
 
 #### Function Application and Substitution Combined
 
@@ -259,7 +259,7 @@ and
 h = f(x)
 ```
 
-The second equality comes from substituting $x$ into the definition. More explicitly
+The second equality comes from substituting $x$ into the definition. More explicitly,
 
 ```math
 \begin{aligned}

@@ -83,7 +83,7 @@ S_n = \sum_{i=1}^n f(x_i^\ast) \Delta x.
 
 followed by algebraic simplification and passage to the limit $n \to \infty$. Even for simple functions, this process can involve substantial computation. There are the definitions (limit of difference quotient, limit of Riemann sum) and then there are practical methods that are much faster. Not every continuous function has an antiderivative describable in terms of elementary functions. The Riemann sum is the definition of an antiderivative in those cases, there are also other kinds of integration that aren't described in terms of the Riemann sum.
 
-The Fundamental Theorem of Calculus replaces this limiting procedure with a structurally simpler operation, if an antiderivative $F$ of $f$ is known, the value of the integral is determined entirely by evaluating $F$ at the endpoints. In this way, the theorem does not redefine the integral, but provides a method of computation that avoids direct engagement with the limiting construction that defines it.
+The Fundamental Theorem of Calculus replaces this limiting procedure with a structurally simpler operation, if an antiderivative $F$ of $f$ is known, the value of the integral is determined entirely by evaluating $F$ at the endpoints. In this way, theorem does not redefine the integral, but provides a method of computation that avoids direct engagement with the limiting construction that defines it.
 
 **This separation explains why Riemann sums appear frequently in definitions and theoretical discussions, while antiderivatives dominate practical evaluation**. The Riemann sum establishes the meaning of integration as accumulation, while the Fundamental Theorem reveals that, under appropriate conditions, this accumulation can be expressed in terms of boundary values of a derivative-related function.
 
@@ -145,11 +145,11 @@ A distinction must me made between a **definition** and a **theorem**.
 
 A definition establishes the meaning of a mathematical object. It is not proved, rather, it specifies precisely what is meant by a concept. Essentially, a definition creates a new mathematical entity "out of nothing". The definite integral, is defined as the limit of a sequence of Riemann sums.
 
-A theorem, by contrast, is not a definition but a mathematical statement that has been proved using definitions, axioms and previously established results. A theorem therefore describes a property of an already-defined object rather than giving the object its meaning. Unlike a definition, every theorem is accompained by a collection of hypotheses that specify the circumstances under which the theorem is valid. The logic structure of every theorem is therefore, if the hypotheses are satisfied, then the stated conclusion follows. In essence, a theorem states some relation between previously defined mathematical entities.
+A theorem, by contrast, is not a definition but a mathematical statement that has been proved using definitions, axioms and previously established results. A theorem therefore describes a property of an already-defined object rather than giving the object its meaning. Unlike a definition, every theorem is accompained by a collection of hypotheses that specify the circumstances under which theorem is valid. The logic structure of every theorem is therefore, if the hypotheses are satisfied, then the stated conclusion follows. In essence, a theorem states some relation between previously defined mathematical entities.
 
 The Fundamental Theorem of Calculus is precisely such a theorem. It does not define the definite integral, instead, it proves that the definite integral, already defined through the limit of Riemann sums, may be computed by evaluating an antiderivative at the endpoints of the interval, provided its hypotheses are satisfied.
 
-One of the most important hypotheses is that the function being integrated must be continuous on the interval of integration. This requirement is not an arbitrary restriction but one of the assumptions under which the theorem has been proved. Consequently, before applying the Fundamental Theorem, it is necessary to verify that its hypotheses hold. The importance of this distinction becomes apparent when considering functions with discontinuities. Consider the function,
+One of the most important hypotheses is that the function being integrated must be continuous on the interval of integration. This requirement is not an arbitrary restriction but one of the assumptions under which theorem has been proved. Consequently, before applying the Fundamental Theorem, it is necessary to verify that its hypotheses hold. The importance of this distinction becomes apparent when considering functions with discontinuities. Consider the function,
 
 ```math
 f(x) = \frac{1}{x^2}
@@ -161,7 +161,7 @@ Although an antiderivative exits,
 F(x) = - \frac{1}{x}
 ```
 
-The function itself is undefined at $x = 0$. Therefore, it is not continuous on any interval containing $0$, such as $[-1, 1]$. Since one of the hypotheses of the Fundamental Theorem is violated, the theorem cannot be applied to evaluate,
+The function itself is undefined at $x = 0$. Therefore, it is not continuous on any interval containing $0$, such as $[-1, 1]$. Since one of the hypotheses of the Fundamental Theorem is violated, theorem cannot be applied to evaluate,
 
 ```math
 \int^1_{-1} \frac{1}{x^2}dx
@@ -173,6 +173,6 @@ by computing
 \left[ - \frac{1}{x} \right]^1_{-1}
 ```
 
-The issue is not that the theorem produces an incorrect result, rather, the theorem makes no claim in this situation because its assumptions have not been satisfied. Instead, the integral must be analysed using the definition appropriate for an improper integral, in which the interval is separated at the point of discontinuity and each portion is evaluated through its own limiting process.
+The issue is not that theorem produces an incorrect result, rather, theorem makes no claim in this situation because its assumptions have not been satisfied. Instead, the integral must be analysed using the definition appropriate for an improper integral, in which the interval is separated at the point of discontinuity and each portion is evaluated through its own limiting process.
 
-This illustrates why the Riemann definition of the definite integral is logically primary. The integral itself is defined independently of antiderivatives and independently of the Fundamental Theorem of Calculus. **The theorem provides a remarkably efficient method for evaluating the integral when its hypotheses are satisfied, but it does not replace the definition**. Whenever those hypotheses fail, you return not to a different notion of integration, but to the original definition from which the theorem was proved.
+This illustrates why the Riemann definition of the definite integral is logically primary. The integral itself is defined independently of antiderivatives and independently of the Fundamental Theorem of Calculus. **The theorem provides a remarkably efficient method for evaluating the integral when its hypotheses are satisfied, but it does not replace the definition**. Whenever those hypotheses fail, you return not to a different notion of integration, but to the original definition from which theorem was proved.

@@ -394,7 +394,7 @@ For example, consider
 \frac{1km}{1m}
 ```
 
-Using the definition \(1km = 1000m\), we rewrite,
+Using the definition $1km = 1000m$, we rewrite,
 
 ```math
 \frac{1km}{1m} = \frac{1000m}{1m} = \frac{1000\cancel{m}}{\cancel{m}}= 1000
@@ -426,7 +426,7 @@ Similarly,
 - If units do not cancel, then you have a physical quantity (scalar × unit). 
 - If units cancel (same dimension), then you get a pure number .
 
-To change units, we are multiplying by 1 in disguise. This means we keep the dimension the same for the units we are changing. For example, to convert from \(\frac{m}{s}\) to \(\frac{km}{h}\):
+To change units, we are multiplying by 1 in disguise. This means we keep the dimension the same for the units we are changing. For example, to convert from $\frac{m}{s}$ to $\frac{km}{h}$:
 
 ```math
 \frac{6}{5} \frac{m}{s} \cdot \frac{1km}{1000m} \cdot \frac{3600s}{1hr}

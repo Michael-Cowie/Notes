@@ -8,7 +8,7 @@ When a function is formed by dividing one function by another, the derivative ca
 (fg)'=f'g+fg'
 ```
 
-While the product rule accounts for the change in each function when they are multiplied, the quotient rule accounts for the change in each function when one is divided by the other. For two functions \(u(x)\) and \(v(x)\), where \(v(x)\neq0\), the quotient rule is
+While the product rule accounts for the change in each function when they are multiplied, the quotient rule accounts for the change in each function when one is divided by the other. For two functions $u(x)$ and $v(x)$, where $v(x)\neq0$, the quotient rule is
 
 ```math
 \boxed{

@@ -82,7 +82,7 @@ Each of the 5 active paths now has 4 remaining choices. So for each node, connec
     <img src='./images/8.png'>
 </div>
 
-This means their are 4 new nodes for every node on the previous depth. So the the total number of nodes at the bottom (Leaf nodes) is now,
+This means there are 4 new nodes for every node on the previous depth. So the total number of nodes at the bottom (Leaf nodes) is now,
 
 ```math
 \begin{aligned}
@@ -99,7 +99,7 @@ This is the calculation for the number of permutations for 3 choices from 5 opti
     <img src='./images/7.png'>
 </div>
 
-This means their are 3 new nodes for every node on the previous depth. So the the total number of nodes at the bottom (Leaf nodes) is now,
+This means there are 3 new nodes for every node on the previous depth. So the total number of nodes at the bottom (Leaf nodes) is now,
 
 ```math
 \begin{aligned}

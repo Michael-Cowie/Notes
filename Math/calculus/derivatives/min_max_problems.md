@@ -73,7 +73,7 @@ f(408) &= -0.012(408)^2 + 9.8 \cdot 408 - 1500 \\
 \end{aligned}
 ```
 
-This means, the maximum profit amount will be $500,800 by producing 408 units.
+This means, the maximum profit amount will be $500,800$ by producing 408 units.
 
 #### Minimum Usage Optimization
 

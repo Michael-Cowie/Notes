@@ -137,13 +137,13 @@ Suppose
 The probability is given by the **binomial distribution**
 
 ```math
-P(X = k) = \binom{n}{k}p^k(1-p)^{n - k}
+P(X = k) = \binom{n}{k}p^k\left(1-p\right)^{n-k}
 ```
 
 Each term can be analyzed.
 
 ```math
-P(X = k) = \underbrace{\binom{n}{k}}_{\text{counting}} \times \underbrace{p^k(1-p)^{n-k}}_{\text{probability}}
+P(X = k) = \underbrace{\binom{n}{k}}_{\text{counting}} \times \underbrace{p^k\left(1-p\right)^{n-k}}_{\text{probability}}
 ```
 
 Where
@@ -176,7 +176,7 @@ The binomial coefficient is often introduced as part of the formula
 P(X = k) = \binom{n}{k} p^k (1-p)^{n - k}
 ```
 
-It is tempting to think that $\binom{n}{k}$ must somehow be a combination of the two possible outcomes, $S$ and $SF. After all, a binomial trial only produces outcomes. However, this is not what the combination formula is doing. **The combination is performed on the trials, not on the outcomes**. This becomes clearer by connecting the binomial coefficient directly to the familiar derivation of combinations from permutations.
+It is tempting to think that $\binom{n}{k}$ must somehow be a combination of the two possible outcomes, $S$ and $F$. After all, a binomial trial only produces outcomes. However, this is not what the combination formula is doing. **The combination is performed on the trials, not on the outcomes**. This becomes clearer by connecting the binomial coefficient directly to the familiar derivation of combinations from permutations.
 
 ##### 1 - The Trials Are Distinct Objects
 

@@ -93,7 +93,11 @@ Multiplying both sides gives,
 
 
 **To Prove:**
-$$PA \times PB = PC^2$$
+
+```math
+PA \times PB = PC^2
+```
+
 
 **Construction:**
 Draw line segments (chords) $AC$ and $BC$ inside the circle to form two triangles $\triangle PAC$ (the smaller triangle) and $\triangle PCB$ (the larger triangle containing the whole shape).
@@ -123,8 +127,15 @@ Draw line segments (chords) $AC$ and $BC$ inside the circle to form two triangle
     * In the small $\triangle PAC$, the side opposite $\angle PCA$ is $PA$. In the large $\triangle PCB$, the corresponding side opposite $\angle PBC$ is $PC$.
     * In the small $\triangle PAC$, the third side (opposite the unstated angle) is $PC$. In the large $\triangle PCB$, the corresponding third side is $PB$.
     * Using the corresponding sides containing $P$, we get:
-    $$\frac{PA}{PC} = \frac{PC}{PB}$$
+    
+```math
+\frac{PA}{PC} = \frac{PC}{PB}
+```
+
 
 5.  **Solve the equation:**
     * Cross-multiply the ratios to get the final formula:
-    $$PA \times PB = PC^2$$
+    
+```math
+PA \times PB = PC^2
+```

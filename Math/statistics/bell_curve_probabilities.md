@@ -8,11 +8,13 @@ Probability can initially be understood as the proportion of favourable outcomes
 P(A)=\frac{\text{Number of favourable outcomes}}{\text{Total number of outcomes}}
 ```
 
-For example, when rolling a fair six-sided die, there are six possible outcomes. If the event \(A\) is rolling an even number, the favourable outcomes are \(2,4,6\), giving
+For example, when rolling a fair six-sided die, there are six possible outcomes. If the event $A$ is rolling an even number, the favourable outcomes are $2,4,6$, giving
 
-$$
+
+```math
 P(A)=\frac{3}{6}=\frac12=0.5=50\%
-$$
+```
+
 
 The important idea is that probability is fundamentally a **proportion**. We compare the number of outcomes belonging to an event with the total number of outcomes. This same idea can be applied to a dataset. Suppose 10,000 people have their heights measured. Instead of asking whether one particular outcome occurs, we can ask questions such as,
 

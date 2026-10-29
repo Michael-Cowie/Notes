@@ -4,7 +4,7 @@
 
 In nature, we observe numerous phenomena that propagate in the form of waves or can be described by the concept of a wave. To understand these phenomena, we model them mathematically. It is remarkable that the mathematical description of wave, even when solving complicated differential equations can be traced back to a simple geometric shape, **the triangle**. So, how can a wave arise from a triangle?
 
-If we divide the circumfrance of a circle $C$ by the length of the diameter $D$, that is, if we calculate the ratio of the circumfrance to diameter,
+If we divide the circumference of a circle $C$ by the length of the diameter $D$, that is, if we calculate the ratio of the circumference to diameter,
 
 ```math
 \frac{C}{D} = \pi
@@ -16,13 +16,13 @@ We get a number that **always remains the same**, no matter how large or small t
 C = 2\pi r
 ```
 
-With a radius of 1, the circumfrance is simply $2\pi$. It was precisely this circle that was used as a template for a new measurement of angular units. Which is why **it became known as the unit circle**. Now, instead of imagining that, for example $60^\circ$ consists of 60 parts, we place our circle template with its center at the tip of the angle and measure the length of the arc that this angle encloses.
+With a radius of 1, the circumference is simply $2\pi$. It was precisely this circle that was used as a template for a new measurement of angular units. Which is why **it became known as the unit circle**. Now, instead of imagining that, for example $60^\circ$ consists of 60 parts, we place our circle template with its center at the tip of the angle and measure the length of the arc that this angle encloses.
 
 <div align='center'>
     <img src='./images/106.png' width='700'>
 </div>
 
-In the case of this angle, the arc length corresponds with $\frac{1}{6}$ of the entire circumfrance. That is, $60^\circ \cong \frac{2\pi}{6} = \frac{\pi}{3}$. At a $90^\circ$ angle, the arc occupies a quarter of the circle. So this angle corresponds to $\frac{90}{360} \cdot 2\pi = \frac{1}{4} \cdot 2\pi = \frac{2\pi}{4} = \frac{\pi}{2}$
+In the case of this angle, the arc length corresponds with $\frac{1}{6}$ of the entire circumference. That is, $60^\circ \cong \frac{2\pi}{6} = \frac{\pi}{3}$. At a $90^\circ$ angle, the arc occupies a quarter of the circle. So this angle corresponds to $\frac{90}{360} \cdot 2\pi = \frac{1}{4} \cdot 2\pi = \frac{2\pi}{4} = \frac{\pi}{2}$
 
 <div align='center'>
     <img src='./images/107.png' width='200'>
@@ -46,7 +46,7 @@ A **radian ($\mathrm{rad}$)** is defined using the geometry of a circle. Angles 
     <img src='./images/133.png' width='300'>
 </div>
 
-If we bring the radius outside the circle and wrap it around the circumfrance to create an arc. From here, draw a line from the centre of the circle to where the arc ends, **this is the definition of one radian**. It is the angle created when we have an **arc length of $r$**.
+If we bring the radius outside the circle and wrap it around the circumference to create an arc. From here, draw a line from the centre of the circle to where the arc ends, **this is the definition of one radian**. It is the angle created when we have an **arc length of $r$**.
 
 <div align='center'>
     <img src='./images/134.png' width='300'>
@@ -62,9 +62,9 @@ For reference, this is about $\approx 57.3^\circ$. This conversion occurs becaus
 \end{align*}
 ```
 
-When we count the number of radians in a circle, this is how we come up with $2\pi \ \mathrm{rad}$ in a circle. This is not coincidental, it is precisely because the circumfrance of a circle is calculated from $2 \pi r$. Meaning, their are $2 \pi$ number of $r$ into the circumfrance.
+When we count the number of radians in a circle, this is how we come up with $2\pi \ \mathrm{rad}$ in a circle. This is not coincidental, it is precisely because the circumference of a circle is calculated from $2 \pi r$. Meaning, there are $2 \pi$ number of $r$ into the circumference.
 
-That is, we know that $1 \ \mathrm{rad}$ occurs every $r$ length on the circumfrance.
+That is, we know that $1 \ \mathrm{rad}$ occurs every $r$ length on the circumference.
 
 ```math
 \begin{align*}
@@ -73,7 +73,7 @@ C &= 2 \pi r \\
 \end{align*}
 ```
 
-Therefore, we know that $r$ goes into the circumfrance $C$, $2 \pi$ times. It follows that $1 \ \mathrm{rad}$ will go into the circumfrance (Also $360^\circ$) $2 \pi$ times as $1 \ \mathrm{rad} = r$.
+Therefore, we know that $r$ goes into the circumference $C$, $2 \pi$ times. It follows that $1 \ \mathrm{rad}$ will go into the circumference (Also $360^\circ$) $2 \pi$ times as $1 \ \mathrm{rad} = r$.
 
 <div align='center'>
     <img src='./images/135.png' width='300'>
@@ -93,7 +93,7 @@ Alternatively, we can begin to create this relationship by starting with somethi
 C = 2 \pi r
 ```
 
-Now think in **fractions of a circle**. If an angle $\theta_{rad}$ in $\mathrm{rad}$ is some fraction of a full turn, then its arc length $s$ is the same fraction of the circumfrance. Because $\theta_{rad}$ is in $\mathrm{rad}$ and $2 \pi r$ is also in $\mathrm{rad}$, the units cancel out to get a pure number. This is how these equalities hold true.
+Now think in **fractions of a circle**. If an angle $\theta_{rad}$ in $\mathrm{rad}$ is some fraction of a full turn, then its arc length $s$ is the same fraction of the circumference. Because $\theta_{rad}$ is in $\mathrm{rad}$ and $2 \pi r$ is also in $\mathrm{rad}$, the units cancel out to get a pure number. This is how these equalities hold true.
 
 ```math
 \begin{align*}
@@ -572,7 +572,7 @@ Within the unit circle framework, trigonometric functions are understood as peri
 \cos : \mathbb{R} \to [-1,1]
 ```
 
-Each angle corresponds to a unique point on the circle, as $\theta$ increases, this point moves continuously around the circumfrance. This motion directly generates the wave-like graphs of sine and cosine when projected onto the coordinate axes.
+Each angle corresponds to a unique point on the circle, as $\theta$ increases, this point moves continuously around the circumference. This motion directly generates the wave-like graphs of sine and cosine when projected onto the coordinate axes.
 
 Additionally, other trigonometric functions arise naturally.
 
@@ -952,9 +952,9 @@ While the function $\tan(x)$ represents the slope of the triangle, it can also b
     <img src='./images/125.png' width='800'>
 </div>
 
-We begin this proof by creating a single right angled triangle on the unit circle with 3 lengths, $a$, $b$ and $c$. From here, we create a second triangle with another straight line that is a tangent to the point touching the circumfrance. 
+We begin this proof by creating a single right angled triangle on the unit circle with 3 lengths, $a$, $b$ and $c$. From here, we create a second triangle with another straight line that is a tangent to the point touching the circumference. 
 
-Because a line tangent touches the circumfrance to create a right angle and they both have the same angle $\theta$, they're therefore similar triangles as both triangles have all 3 equal angles.
+Because a line tangent touches the circumference to create a right angle and they both have the same angle $\theta$, they're therefore similar triangles as both triangles have all 3 equal angles.
 
 <div align='center'>
     <img src='./images/126.png' width='800'>

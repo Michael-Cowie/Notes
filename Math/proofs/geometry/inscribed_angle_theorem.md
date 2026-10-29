@@ -24,7 +24,7 @@ To begin the proof, we will begin with the following operations.
     <img src='./images/13.png'>
 </div>
 
-3. Given these are isoceles triangles we can mark the remaining angle as $180 - 2x$ and $180 - 2y$.
+3. Given these are isosceles triangles we can mark the remaining angle as $180 - 2x$ and $180 - 2y$.
 4. This means the remaining angle to be calculated can be immediately identified as $2x$ given the exterior angle theorem or calculated via,
 
 ```math
@@ -41,20 +41,20 @@ Therefore,
     \boxed{2x = z}
 ```
 
-Similarily for $y$. Hence, the remaining angle is calculated as $2x$ and $2y$ for the opposing side.
+Similarly for $y$. Hence, the remaining angle is calculated as $2x$ and $2y$ for the opposing side.
 
 <div align='center'>
     <img src='./images/14.png'>
 </div>
 
-Therefore, the inscribed angle is $x + y$ and the bottom angle is $2(x + y$). Therefore, the angle from the center point to the arc is twice the angle on the inscribed angle on the same arc that lies on the circumfrance.
+Therefore, the inscribed angle is $x + y$ and the bottom angle is $2(x + y$). Therefore, the angle from the center point to the arc is twice the angle on the inscribed angle on the same arc that lies on the circumference.
 
 ## Proof - The Arc Angle Crosses the Centre
 
 Now, in the previous example we had the arc angle above the center angle. If instead it crosses, the following can be performed.
 
-1. Create the subtended angle from the arc to the circumfrance.
-2. Create another isoceles triangle (Due to both sides having the same length, the radius). Called these angles $x$.
+1. Create the subtended angle from the arc to the circumference.
+2. Create another isosceles triangle (Due to both sides having the same length, the radius). Called these angles $x$.
 3. Therefore, the remaining angle inside the triangle is $180 - 2x$. Leading from this, the outside outside must therefore be $180$ (The angles on a straight line) $- (180 - 2x) = 2x$.
 
 Therefore, this still holds.

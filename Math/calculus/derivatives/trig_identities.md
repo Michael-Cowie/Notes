@@ -57,7 +57,7 @@ We can first begin by extending the diagram and include a new purple line. The l
     <img src='./images/5.png' width=400>
 </div>
 
-As we zoom in, the point on the circles circumfrance is nearly a straight line as the focus of attention gets smaller and smaller. The derivative of $\sin(\theta)$ is how much the vertical distance changes as $\theta$ changes by the tiny differential $\theta$, $d(\theta)$. Because pink $\theta$ and green $\theta$ have the same measurement, we can make the $d(\theta)$ green to match the formula.
+As we zoom in, the point on the circles circumference is nearly a straight line as the focus of attention gets smaller and smaller. The derivative of $\sin(\theta)$ is how much the vertical distance changes as $\theta$ changes by the tiny differential $\theta$, $d(\theta)$. Because pink $\theta$ and green $\theta$ have the same measurement, we can make the $d(\theta)$ green to match the formula.
 
 <div align='center'>
     <img src='./images/6.png' width=400>

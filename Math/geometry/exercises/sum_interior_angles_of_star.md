@@ -10,7 +10,7 @@ Before moving into larger vertex shapes, we will begin by demonstrating the base
 
 #### Solution 1 - Using Exterior Angle Theorem
 
-We first identify a triangle using two of the interior angles and use the the exterior angle theorem to use the identification below.
+We first identify a triangle using two of the interior angles and use the exterior angle theorem to use the identification below.
 
 <div align='center'>
     <img src='./images/2.png' width='400'/>
@@ -45,9 +45,13 @@ Inside the star, we can identify the pentagon that is illustrated by the blue li
 
 This is the sum of all angles, given that this is regular and they're all equal it means that the purple angle is 
 
-$$\frac{540}{5} = 108$$
 
-We can identify the triangle with purple lines and given that this is a regular star it is therefore an isoceles triangle with both green angles being the same. This leads to,
+```math
+\frac{540}{5} = 108
+```
+
+
+We can identify the triangle with purple lines and given that this is a regular star it is therefore an isosceles triangle with both green angles being the same. This leads to,
 
 ```math
 \begin{aligned}
@@ -57,7 +61,11 @@ We can identify the triangle with purple lines and given that this is a regular 
 \end{aligned}
 ```
 
-This is the single angle and therefore the sum of all angles is $$36 \cdot 5 = 180$$.
+This is the single angle and therefore the sum of all angles is 
+```math
+36 \cdot 5 = 180
+```
+.
 
 <div align='center'>
     <h1> 7 Vertex Star <h1>
@@ -99,7 +107,7 @@ A + B + C + D + E + F + G = 180
 
 #### Solution 2 - Using Interior Angles for a Regular Convex Polygon
 
-We will solve the sum of all interior angles of the star by first performing the arithmatic on a regular sized heptagonal star. As illustrated below, all angles will be the same and will be named $a$. Additionally, we have identified the triangle which will have the sum interior angles of $2a + b$.
+We will solve the sum of all interior angles of the star by first performing the arithmetic on a regular sized heptagonal star. As illustrated below, all angles will be the same and will be named $a$. Additionally, we have identified the triangle which will have the sum interior angles of $2a + b$.
 
 <div align='center'>
     <img src='./images/12.png' width='600'/>
@@ -117,7 +125,11 @@ We can calculate the angle $b$ by first identifying a seven sided shape in the c
 
 This is the sum of all angles, given that this is regular and they're all equal it means that the purple angle is 
 
-$$b = \frac{900}{7} = 128.57$$
+
+```math
+b = \frac{900}{7} = 128.57
+```
+
 
 We can now solve for $a$,
 
@@ -129,7 +141,15 @@ We can now solve for $a$,
 \end{aligned}
 ```
 
-Therefore, the sum of all interior angles will be $$7b$$ and therefore give us $$7 \cdot 25.715 = 180$$
+Therefore, the sum of all interior angles will be 
+```math
+7b
+```
+ and therefore give us 
+```math
+7 \cdot 25.715 = 180
+```
+
 
 #### Solution 3 - Using Interior Angles for a Iregular Convex Polygon
 

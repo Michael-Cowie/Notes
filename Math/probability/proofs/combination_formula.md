@@ -148,7 +148,7 @@ n!
 n^{\underline{k}}(n-k)!
 ```
 
-Dividing both sides by \((n-k)!\) gives
+Dividing both sides by $(n-k)!$ gives
 
 ```math
 n^{\underline{k}}
