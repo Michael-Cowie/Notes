@@ -59,7 +59,7 @@ Creation of a unit involves,
 
 In practice, units ensure that each term in an equation is consistent, compatible and in the same dimension. For example, in the kinematics equation $v = u + at$, all terms must have units of velocity for the equation to hold.
 
-A term in this context is any individual piece of an equation seperated by a plus or minus sign. Key points about terms i,
+A term in this context is any individual piece of an equation separated by a plus or minus sign. Key points about terms include:
 
 - **Simple or compound** - A term can be a single variable (e.g $u$) or a combination of variables (e.g. $at$)
 
