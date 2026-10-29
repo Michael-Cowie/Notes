@@ -86,7 +86,7 @@ Which follows,
 \frac{df}{dx} = f'(x) = \frac{df}{dt} \frac{dt}{dx} = 2x \cos(x^2)
 ```
 
-Similarily,
+Similarly,
 
 ```math
 g = e^{3x}
