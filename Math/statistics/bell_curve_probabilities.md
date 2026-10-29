@@ -8,7 +8,7 @@ Probability can initially be understood as the proportion of favourable outcomes
 P(A)=\frac{\text{Number of favourable outcomes}}{\text{Total number of outcomes}}
 ```
 
-For example, when rolling a fair six-sided die, there are six possible outcomes. If the event \(A\) is rolling an even number, the favourable outcomes are \(2,4,6\), giving
+For example, when rolling a fair six-sided die, there are six possible outcomes. If the event $A$ is rolling an even number, the favourable outcomes are $2,4,6$, giving
 
 
 ```math
