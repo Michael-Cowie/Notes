@@ -6,7 +6,7 @@ A triangle is a shape which has
 
 1. 3 Sides
 2. 3 Angles
-3. 3 Corners / Verticies
+3. 3 Corners / vertices
 
 It is one of the simplest shapes in geometry.
 
@@ -278,7 +278,7 @@ We can now calculate the longer side being $2 * 3 = 6$ and the shorter side bein
 
 
 <div align='center'>
-    <h1> Perimiter </h1>
+    <h1> perimeter </h1>
 </div>
 
 Angle bisector refers to a line that splits an angle into two equal angles.
@@ -287,7 +287,7 @@ Angle bisector refers to a line that splits an angle into two equal angles.
     <img src='./images/62.png' width='400'>
 </div>
 
-If a triangle has three sides with length $4$, $5$ and $6$, the perimiter is $4 + 5 + 6 = 15$.
+If a triangle has three sides with length $4$, $5$ and $6$, the perimeter is $4 + 5 + 6 = 15$.
 
 <div align='center'>
     <h1> Base and Height </h1>
