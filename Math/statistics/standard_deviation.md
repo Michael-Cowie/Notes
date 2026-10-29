@@ -452,7 +452,7 @@ becomes
 
 Therefore,
 
-\[
+```math
 \begin{aligned}
 P(\mu-\sigma\leq X\leq\mu+\sigma)
 &=P(-1\leq Z\leq1)\\
@@ -461,7 +461,7 @@ P(\mu-\sigma\leq X\leq\mu+\sigma)
 &\approx 0.6827\\
 &=68.27\%
 \end{aligned}
-\]
+```
 
 For the standard normal distribution, this area is approximately
 
