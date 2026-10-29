@@ -129,7 +129,7 @@ For instance,
 (x + 1)^2
 ```
 
-looks similar to $x^2$, but the base is **no longer only** $x$. The quantity being squared is now $x + 1$. This introduces a layer of composition, and the chain rule becomes relevant. The reason the power rule is not directly applicable is that it implicitly a function inside another function. When observing $y = (x + 1)^2$, their are actually two operations happening.
+looks similar to $x^2$, but the base is **no longer only** $x$. The quantity being squared is now $x + 1$. This introduces a layer of composition, and the chain rule becomes relevant. The reason the power rule is not directly applicable is that it implicitly involves a function inside another function. When observing $y = (x + 1)^2$, there are actually two operations happening.
 
 1. Start with $x$
 2. Add $1$ to get $x + 1$
