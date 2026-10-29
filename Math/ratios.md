@@ -90,7 +90,7 @@ When we have a ratio comparing $a$ to $b$, we represent this comparison to a rel
 a : b = 3 : 5
 ```
 
-This is interpreted as $3$ units of $a$ for every $5$ units of $b$. Such as $3$ males for every $5$ females. The fractional view of ratios is the important concept to understand here. When we compare one ratio, we compare it to the simplified ratio. When we observe the fraction $\frac{a}{b} = \frac{3}{5}$ as a ratio, we interpret this as $a$ for every $b$ . This requires the numerator to increase by $a$ for every denominator increase of $b$ to allow for the fraction to be able to be simplified to be equal to $\frac{3}{5}$. This implies $\frac{3}{5}$ can be multiplied by some number $\frac{k}{k}$, which creates a ratio that be can simplified or equal to $\frac{a}{b}$. In other words,
+This is interpreted as $3$ units of $a$ for every $5$ units of $b$. For example, $3$ males for every $5$ females. The fractional view of ratios is the important concept to understand here. When we compare one ratio, we compare it to the simplified ratio. When we observe the fraction $\frac{a}{b} = \frac{3}{5}$ as a ratio, we interpret this as $a$ for every $b$. This requires the numerator to increase by $a$ for every denominator increase of $b$ to allow for the fraction to be able to be simplified to be equal to $\frac{3}{5}$. This implies $\frac{3}{5}$ can be multiplied by some number $\frac{k}{k}$, which creates a ratio that can be simplified or equal to $\frac{a}{b}$. In other words,
 
 ```math
 \frac{a}{b} = \frac{3}{5} = \frac{k \cdot 3}{k \cdot 5}
