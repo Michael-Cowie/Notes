@@ -332,7 +332,7 @@ These are not different mathematical facts, they're different representations of
 72 : 360 = 1 : 5 = 20 : 100 = 20\%
 ```
 
-Although the full circle angle is always $360^\circ$, the ratio remains useful because it tells us that the sector occupies $20\%$ of the cirle. This proportion can then be applied to any quantity that scales directly with the angle. As the sector angle increases, both the enclosed area and the arc length increase in the same proportion. Consequently, if the sector occupies $20\%$ of the total angle, it also occupies $20\%$ of the total area and $20\%$ of the total circumfrance. For example, suppose a circle has radius $10$ cm. It's area is,
+Although the full circle angle is always $360^\circ$, the ratio remains useful because it tells us that the sector occupies $20\%$ of the circle. This proportion can then be applied to any quantity that scales directly with the angle. As the sector angle increases, both the enclosed area and the arc length increase in the same proportion. Consequently, if the sector occupies $20\%$ of the total angle, it also occupies $20\%$ of the total area and $20\%$ of the total circumference. For example, suppose a circle has radius $10$ cm. Its area is,
 
 ```math
 \pi r^2 = \pi(10)^2 = 100 \pi \text{ cm}^2
@@ -355,7 +355,7 @@ of the circle,
 \end{aligned}
 ```
 
-This calculation works because the angle ratio describes the fraction of the entire circle occupied by the sector. Once this fraction is known, it can be applied directly to the circles area. This viewpoint can be viewed viewed via the colon expression,
+This calculation works because the angle ratio describes the fraction of the entire circle occupied by the sector. Once this fraction is known, it can be applied directly to the circles area. This viewpoint can be seen via the colon expression,
 
 ```math
 \begin{aligned}
@@ -394,7 +394,7 @@ Evaluating this fraction gives,
 \frac{300}{200} = \frac{3}{2} = 1.5 \qquad \text{or} \qquad 300 : 200 = 1.5 : 1
 ```
 
-This means the first quantity is $1.5$ times the second quantity. A percentage is simply a ratio expressed per $100$. So starting with $1.5$, multiply by $100$.
+This means the first quantity is $1.5$ times the second quantity. A percentage is a ratio expressed per $100$, so starting with $1.5$, multiply by $100$.
 
 ```math
 1.5 \cdot 100\% = 150\%
@@ -430,7 +430,7 @@ Suppose we are given percentages. $49\%$ of the population is female and $51\%$ 
 \text{Male}: \text{Female} = 51 : 49 = 510, 000 : 490, 000 = 1.04 : 1
 ```
 
-We can also compare it to the total population. Suppose we perform this calculations for the ratio of males to total population.
+We can also compare it to the total population. Suppose we perform this calculation for the ratio of males to total population.
 
 ```math
 51 : 100
@@ -439,7 +439,7 @@ We can also compare it to the total population. Suppose we perform this calculat
 Therefore,
 
 ```math
-51\% = \frac{51}{100} = 51 : 100 = 510, 000 : 1, 0000, 000
+51\% = \frac{51}{100} = 51 : 100 = 510, 000 : 1,000,000
 ```
 
 #### Example Four
@@ -471,7 +471,7 @@ This follows,
     <h1> Ratios as Rates </h1>
 </div>
 
-Many practical applications of ratios involve comparing a quntity to a single unit of another quantity. These comparisons are called rates. Examples include
+Many practical applications of ratios involve comparing a quantity to a single unit of another quantity. These comparisons are called rates. Examples include
 
 ```math
 60 \frac{\text{km}}{\text{hr}}
@@ -564,7 +564,7 @@ This occurs when comparing corresponding parts of two objects that have the **sa
 \frac{3}{6} = \frac{4}{x} = \frac{5}{y}
 ```
 
-Solving the proportion gives $x = 8\text{ cm}$ and $y = 10\text{ cm}$. This type of proportion is essential in trigonometry, scale drawings and geometry. It shows that when shapes are similar, corresponding angles are equal and corresponding sides remain in constant proportion. Similarily, in a right-angled triangle, the sine of an angle $\theta$ is defined as the ratio.
+Solving the proportion gives $x = 8\text{ cm}$ and $y = 10\text{ cm}$. This type of proportion is essential in trigonometry, scale drawings and geometry. It shows that when shapes are similar, corresponding angles are equal and corresponding sides remain in constant proportion. Similarly, in a right-angled triangle, the sine of an angle $\theta$ is defined as the ratio.
 
 ```math
 \sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}}
@@ -619,7 +619,7 @@ Because a circle is symmetric around its center, the angle and the area are dist
     <img src='./images/sector_ratio.gif' width='800'>
 </div>
 
-This allows us the calculate the sectors area directly from its angle.
+This allows us to calculate the sectors area directly from its angle.
 
 - In the similar triangles case, we compare the same measurement (length to corresponding length) across different sizes.
 
@@ -647,9 +647,9 @@ Adding the same number to both the numerator and denominator, however, does not 
 \end{aligned}
 ```
 
-The reason is that addition changes each quantity by the same **absolute amount**, not by the same **relative amount**. The numerator increases from $1$ to $2$, a $100%$ increase, while the denominator increases from $2$ to $3$, only a $50%$ increase. Since the two quantities have changed by different proportions, the ratio between them has also changed. Multiplication, in constrast, applies the same scale factor to both quantities, preserving their proportional relationship.
+The reason is that addition changes each quantity by the same **absolute amount**, not by the same **relative amount**. The numerator increases from $1$ to $2$, a $100%$ increase, while the denominator increases from $2$ to $3$, only a $50%$ increase. Since the two quantities have changed by different proportions, the ratio between them has also changed. Multiplication, in contrast, applies the same scale factor to both quantities, preserving their proportional relationship.
 
-A ratio such as $2:3$ means that for every $2$ units of one quantity, there are $3$ units of another. **What matters is how many times larger one quantity is than the other, not the individual number themselves**. If both quantities are multiplied by the same factor, this relationship is preserved.
+A ratio such as $2:3$ means that for every $2$ units of one quantity, there are $3$ units of another. **What matters is how many times larger one quantity is than the other, not the individual numbers themselves**. If both quantities are multiplied by the same factor, this relationship is preserved.
 
 - $2: 3$
 - $4:6$ - Multiply both by $2$
@@ -771,7 +771,7 @@ m &= 0.5
 \end{aligned}
 ```
 
-The slope is therefore $0.5$, this can be viewed as a ratio $1 : 2$. This means, for every $2$ units travelled horizontally, the line rises by $1$ unit vertically. Alternatively, $\text{run} : \text{rise} = 1 : 2$. Because this ratio remains constant, every point on the line must preserve this relationship between horizontal and vertical movement.
+The slope is therefore $0.5$; this can be viewed as a ratio of $1 : 2$. This means, for every $2$ units travelled horizontally, the line rises by $1$ unit vertically. Alternatively, $\text{run} : \text{rise} = 1 : 2$. Because this ratio remains constant, every point on the line must preserve this relationship between horizontal and vertical movement.
 
 For example,
 
@@ -785,7 +785,7 @@ These relationships can be written as,
 \frac{1}{2} = \frac{k \cdot 1}{k \cdot 2} = 0.5
 ```
 
-Although the distance change, the ratio remains constant. This constant ratio is what defines a straight line with slope $0.5$. In other words, the slope is not merely a number. It is a ratio that describes how the vertical change must compare to the horizontal change at every point on the line.
+Although the distance changes, the ratio remains constant. This constant ratio is what defines a straight line with slope $0.5$. In other words, the slope is not merely a number. It is a ratio that describes how the vertical change must compare to the horizontal change at every point on the line.
 
 <div align='center'>
     <h1> Ratios in Similar Triangles </h1>
