@@ -284,7 +284,7 @@ The tree,
 
 - The branching structure of choices
 - The collapsing of orderings into combinations
-- Combinatorial weight means the number of different outcome sequences that produce the same number of successes. It is called a weight because of tells us how many times the same probability appears.
+- Combinatorial weight means the number of different outcome sequences that produce the same number of successes. It is called a weight because it tells us how many times the same probability appears.
 
 belongs entirely to the counting half. It was never built out of $p$ or $q$. It was built out of $n$ distinguishable positions and a decision to select $k$ of them. This means the same tree applies to any problem shaped like "choose $k$ from $n$," whether or not probability is involved at all. Stars and bars is exactly such a problem.
 
