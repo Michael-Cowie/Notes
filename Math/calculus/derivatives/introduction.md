@@ -133,7 +133,7 @@ This shows how each derivative adds another layer of interpretation.
     <h1> Derivative Theorem </h1>
 </div>
 
-Suppose a function changes from \(f(x)\) to \(f(x+h)\), where \(h\) represents a small change in \(x\). These correspond to the two points
+Suppose a function changes from $f(x)$ to $f(x+h)$, where $h$ represents a small change in $x$. These correspond to the two points
 
 ```math
 (x,\,f(x))
