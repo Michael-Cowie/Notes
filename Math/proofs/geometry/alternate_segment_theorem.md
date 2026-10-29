@@ -2,7 +2,7 @@
     <h1> Alternate Segment Theorem </h1>
 </div>
 
-The angle between the chord and the tangent is equal to the angle by the the chord in the alternate segment.
+The angle between the chord and the tangent is equal to the angle by the chord in the alternate segment.
 
 <div align='center'>
     <img src='./images/32.png' width='400'>
