@@ -62,3 +62,7 @@ In LaTeX math, write a percentage as `\%`, not a bare `%`. For example:
 ```
 
 For inline math, use `$20\%$`. A bare percent sign starts a LaTeX comment and can cause the rest of the expression to disappear. If the percent sign is ordinary prose outside math delimiters, write it normally (for example, `20%`).
+
+## Capitalization in Section Headings
+
+When correcting spelling, preserve the author's capitalization. In particular, if a new section uses a centered HTML heading such as `<div align="center">` with an `<h1>`, keep the heading's intended title capitalization. Correct a misspelling such as `Perimiter` to `Perimeter`, but do not change `Perimeter` to lowercase `perimeter` merely for consistency. Do not normalize capitalization in headings unless it is clearly a typo or the author asks for it.
