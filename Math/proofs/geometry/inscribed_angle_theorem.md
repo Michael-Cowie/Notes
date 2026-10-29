@@ -55,7 +55,7 @@ Now, in the previous example we had the arc angle above the center angle. If ins
 
 1. Create the subtended angle from the arc to the circumference.
 2. Create another isosceles triangle (Due to both sides having the same length, the radius). Called these angles $x$.
-3. Therefore, the remaining angle inside the triangle is $180 - 2x$. Leading from this, the outside outside must therefore be $180$ (The angles on a straight line) $- (180 - 2x) = 2x$.
+3. Therefore, the remaining angle inside the triangle is $180 - 2x$. Leading from this, the outside must therefore be $180$ (The angles on a straight line) $- (180 - 2x) = 2x$.
 
 Therefore, this still holds.
 
