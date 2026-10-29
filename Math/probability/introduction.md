@@ -128,7 +128,7 @@ means that $A$ is impossible, while
 P(A) = 1 = \{ \text{All possible outcomes} \}
 ```
 
-means that $A$ is certain. For equally likely outcomes, probably can be calculated as
+means that $A$ is certain. For equally likely outcomes, probability can be calculated as
 
 ```math
 P(A) = \frac{\text{Favourable outcomes in } A}{\text{Total number of possible outcomes}}
