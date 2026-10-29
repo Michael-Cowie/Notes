@@ -473,7 +473,7 @@ We choose $k$ of those trial positions and designate them as successes. The resu
 \end{array}
 ```
 
-The binomial coefficient therefore provides the combinatorail weight, it fells us how many different probability-tree paths contain exactly $K$ successes.
+The binomial coefficient therefore provides the combinatorial weight; it tells us how many different probability-tree paths contain exactly $k$ successes.
 
 
 <div align='center'>
