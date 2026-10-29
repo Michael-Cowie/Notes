@@ -53,7 +53,7 @@ A = A(x)
 
 This shows the dependence of the area upon the value that we choose for $x$. Hence, larger $x$, larger area and smaller $x$, smaller area.
 
-Their are multiple attributes that needed to be understood,
+there are multiple attributes that needed to be understood,
 
 1. **$f(x)$** - Represents the height at point $x$.
 2. **$\Delta x$** - Represents a small distance from $x$.
