@@ -116,7 +116,7 @@ This word is used to describe how an arc or a chord creates an angle at a point 
     <img src='./images/15.png'>
 </div>
 
-Similarily, if the angle is formed at the center, we say the angle subtended at the center by the arc.
+Similarly, if the angle is formed at the center, we say the angle subtended at the center by the arc.
 
 <div align='center'>
     <img src='./images/16.png'>
