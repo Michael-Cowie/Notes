@@ -54,7 +54,11 @@ To represent this in a 1D array we will use **row-order** and we will therefore 
 
 The formula for translating from 2D to 1D will therefore be,
 
-$$index = (row * \text{numberOfColumns}) + column$$
+
+```math
+index = (row * \text{numberOfColumns}) + column
+```
+
 
 Hence, if we had 31 at location (2, 1), it would be represented at index $2 * 2 + 1 = 5$.
 
@@ -110,19 +114,35 @@ To index into the flattened array we need a formula that needs to perform three 
 
 To traverse through the elevation in the one dimensional array we need to make "jumps" of the number of blocks on each elevation height. This would be calculated from the number of blocks on the X axis multiplied by the number of blocks on the Y axis.
 
-$$k * \text{sizeX} * \text{sizeY}$$
+
+```math
+k * \text{sizeX} * \text{sizeY}
+```
+
 
 To traverse vertically through the Y axis in the one dimensional array we need to make "jumps" of the number of blocks on the X axis.
 
-$$j * \text{sizeX}$$
+
+```math
+j * \text{sizeX}
+```
+
 
 Finally, once we have the correct elevation and height, we only need to add the horizontal displacement `i` to the final result to find the index inside the one dimensional array. This will give us the final 3D to 1D translation mapping of,
 
-$$index = i + j * \text{sizeX} +  k * \text{sizeX} * \text{sizeY}$$
+
+```math
+index = i + j * \text{sizeX} +  k * \text{sizeX} * \text{sizeY}
+```
+
 
 In the previous example with a `2 x 2 x 2` Block Model, the 3D to 1D translation we will have our final mapping equation,
 
-$$index = i + j * 2 + K * 4$$
+
+```math
+index = i + j * 2 + K * 4
+```
+
 
 We previously saw the number 7 in index 6 of the flattened array which was represented by the position (0, 1, 1). Here we can validate our equation using,
 
