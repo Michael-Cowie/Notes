@@ -60,7 +60,3 @@ In LaTeX math, write a percentage as `\%`, not a bare `%`. For example:
 ```
 
 For inline math, use `$20\%$`. A bare percent sign starts a LaTeX comment and can cause the rest of the expression to disappear. If the percent sign is ordinary prose outside math delimiters, write it normally (for example, `20%`).
-
-## Checking Inline Math Delimiters
-
-Every inline math expression must have a matching opening and closing dollar sign on the same line, for example `$P(A)$` or `$20\%$`. Check for missing closing dollar signs, especially before punctuation. Do not put a complete math expression inside another pair of dollar signs. Keep prose outside the delimiters and mathematical notation inside them.
