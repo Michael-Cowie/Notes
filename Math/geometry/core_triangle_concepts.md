@@ -110,7 +110,11 @@ b + c > a \\
 
 ####  Pythagoras Theorem
 
-The pythagoras theorem is applied to a **right angle triangle**. It states, $$a^2 + b^2 = c^2$$
+The pythagoras theorem is applied to a **right angle triangle**. It states, 
+```math
+a^2 + b^2 = c^2
+```
+
 
 Where $c$ is the hypotenuse of a triangle.
 
@@ -165,7 +169,11 @@ The proof for this method involves using Thales Theorem.
 1. Draw a line that is parallel to $AD$, from above this will be $CE$.
 2. By Thales Theorem, we have $\triangle EBC$ having a parallel line $AD$ run through it with $AD$ being parallel with $EC$. Therefore, this creates the relationship.
 
-$$\frac{BD}{DC} = \frac{BA}{AE}$$
+
+```math
+\frac{BD}{DC} = \frac{BA}{AE}
+```
+
 
 We can label
 
@@ -175,7 +183,11 @@ We can label
 
 Creating,
 
-$$\frac{x}{y} = \frac{a}{AE}$$
+
+```math
+\frac{x}{y} = \frac{a}{AE}
+```
+
 
 Therefore, our goal is to prove $AE = b$.
 
@@ -189,7 +201,11 @@ Therefore, our goal is to prove $AE = b$.
 
 Therefore,
 
-$$\frac{x}{y} = \frac{a}{b}$$
+
+```math
+\frac{x}{y} = \frac{a}{b}
+```
+
 
 #### Midsegment Theorem
 
@@ -462,9 +478,17 @@ Instead of dropping a height (which can be messy), Heron’s formula lets you co
     <img src='./images/98.png' width='400'>
 </div>
 
-First, calculate the semi-perimeter $s$. $$s = \frac{a+b+c}{2}$$
+First, calculate the semi-perimeter $s$. 
+```math
+s = \frac{a+b+c}{2}
+```
 
-Then, we plug $s$ into the equation, $$A=\sqrt{s(s-a)(s-b)(s-c)}$$
+
+Then, we plug $s$ into the equation, 
+```math
+A=\sqrt{s(s-a)(s-b)(s-c)}
+```
+
 
 <div align='center'>
     <h1> Basic Trigometric Ratios in Right Triangles </h1>
@@ -492,7 +516,11 @@ Basic trigonometric ratios can be remembered by an acronym called SOH-CAH-TOA. T
 
 These ratios depend on the hypotenuse and therefore require a right triangle. If you have an opposite of $3$ and hypotenuse of $5$ then we have,
 
-$$\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{3}{5} = 0.6$$
+
+```math
+\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{3}{5} = 0.6
+```
+
 
 This means that the side across from angle $\theta$ is 60% of the hypotenuse. This ratio uniquely determines the angle.
 
@@ -505,9 +533,25 @@ To get the angle from sine, use the inverse sine function.
 \end{align*}
 ```
 
-Therefore, $$\sin(36.87^\circ) = 0.6$$
+Therefore, 
+```math
+\sin(36.87^\circ) = 0.6
+```
 
-When applying the arithmatic here, we're applying the inverse sine function. When we go from, $$\sin(\theta) = \frac{o}{h}$$ to $$\theta = \sin^{-1}\left(\frac{o}{h}\right)$$ We're applying the inverse sine function $\sin^{-1}$ to both sides. That is, $$\sin^{-1}(\sin(\theta)) = \sin^{-1}\left(\frac{o}{h}\right)$$
+
+When applying the arithmatic here, we're applying the inverse sine function. When we go from, 
+```math
+\sin(\theta) = \frac{o}{h}
+```
+ to 
+```math
+\theta = \sin^{-1}\left(\frac{o}{h}\right)
+```
+ We're applying the inverse sine function $\sin^{-1}$ to both sides. That is, 
+```math
+\sin^{-1}(\sin(\theta)) = \sin^{-1}\left(\frac{o}{h}\right)
+```
+
 
 <div align='center'>
     <h1> The Law of Sines </h1>
@@ -525,7 +569,11 @@ Where,
 
 When observing the proportional equations,
 
-$$\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}$$
+
+```math
+\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}
+```
+
 
 We need to fill them in to find the unknowns. We compare two proportional equations and need to fill in the unknowns to solve for a single unknown. This means,
 
@@ -765,7 +813,11 @@ This occurs because,
 
 If two sides and the included angles are known, the area of a triangle is
 
-$$A = \frac{1}{2}ab\sin(C)$$
+
+```math
+A = \frac{1}{2}ab\sin(C)
+```
+
 
 Alternative forms of this can be written down,
 
@@ -779,7 +831,11 @@ A &= \frac{1}{2}ac\sin(B)
 
 This all begins from the basic area formula,
 
-$$A = \frac{1}{2} \cdot \text{base} \cdot \text{height}$$
+
+```math
+A = \frac{1}{2} \cdot \text{base} \cdot \text{height}
+```
+
 
 Where each equations calculates the height using a different angle.
 
@@ -789,7 +845,11 @@ Where each equations calculates the height using a different angle.
 
 ##### 1. Using angle $C$
 
-So, from the above using $$\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\text{Hypotenuse}}$$
+So, from the above using 
+```math
+\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\text{Hypotenuse}}
+```
+
 
 Using angle $C$,
 
@@ -802,11 +862,19 @@ b\sin C &= h
 
 Therefore,
 
-$$\boxed{A = \frac{1}{2} \times  ab\sin(C)}$$
+
+```math
+\boxed{A = \frac{1}{2} \times  ab\sin(C)}
+```
+
 
 ##### 2. Using angle $B$
 
-So, from the above using $$\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\text{Hypotenuse}}$$
+So, from the above using 
+```math
+\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\text{Hypotenuse}}
+```
+
 
 Using angle $B$,
 
@@ -819,7 +887,11 @@ c\sin B &= h
 
 Therefore,
 
-$$\boxed{A = \frac{1}{2} \times  ac\sin(B)}$$
+
+```math
+\boxed{A = \frac{1}{2} \times  ac\sin(B)}
+```
+
 
 ##### 3. Using angle $A$
 
@@ -829,7 +901,11 @@ We cannot use $\angle A$ given the original triangle with base as $a$, because t
     <img src='./images/105.png' width='700'>
 </div>
 
-So, from the above using $$\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\text{Hypotenuse}}$$
+So, from the above using 
+```math
+\sin(\theta) = \frac{O}{H} = \frac{\text{Opposite}}{\text{Hypotenuse}}
+```
+
 
 Using angle $A$,
 
@@ -842,4 +918,7 @@ c\sin A &= h
 
 Therefore,
 
-$$\boxed{A = \frac{1}{2} \times  bc\sin(A)}$$
+
+```math
+\boxed{A = \frac{1}{2} \times  bc\sin(A)}
+```
