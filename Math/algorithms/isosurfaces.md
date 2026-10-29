@@ -87,7 +87,7 @@ Where,
 
 This can be explained in the following steps,
 
-1. The numerator, $|f(A) - c|$ meaures how far the scalar value at $A$ is from the isovalue $c$.
+1. The numerator, $|f(A) - c|$ measures how far the scalar value at $A$ is from the isovalue $c$.
 2. The denominator, $|f(A) - c| + |f(B) - c|$, is the total distance between the field values $A$ and $B$ relative to the isovalue.
 
 $t$ is the proportion of the distance that $A$'s scalar value contributes to the total distance from $c$.
