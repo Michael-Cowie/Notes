@@ -12,7 +12,7 @@ AE \cdot EB = CE \cdot ED
     <img src='./images/42.png' width='400'>
 </div>
 
-To begin this proof we will draw lines from verticies $A$ to $D$ and $C$ to $B$.
+To begin this proof we will draw lines from vertices $A$ to $D$ and $C$ to $B$.
 
 <div align='center'>
     <img src='./images/43.png' width='700'>
