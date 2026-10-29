@@ -424,7 +424,7 @@ Similarly,
 
 
 - If units do not cancel, then you have a physical quantity (scalar × unit). 
-- If units cancel (same dimension), then you get a pure number .
+- If units cancel (same dimension), then you get a pure number.
 
 To change units, we are multiplying by 1 in disguise. This means we keep the dimension the same for the units we are changing. For example, to convert from $\frac{m}{s}$ to $\frac{km}{h}$:
 
@@ -816,7 +816,7 @@ First understand the question carefully to understand the unit we're solving for
 
 Now, solving for x we know that we will have $3200kg$
 
-**Question 6** - A rocket ejects gas at a rate of of $4\frac{kg}{s}$ with a velocity of $300 \frac{m}{s}$. What force is produced?
+**Question 6** - A rocket ejects gas at a rate of $4\frac{kg}{s}$ with a velocity of $300 \frac{m}{s}$. What force is produced?
 
 First, start with.
 
