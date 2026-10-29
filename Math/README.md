@@ -41,15 +41,17 @@ Although these may render locally, they are **unreliable on GitHub** and may be 
 
 ## Scalable Brackets and Parentheses
 
-When an expression contains a fraction, summation, integral, matrix, or other tall expression inside parentheses or brackets, use `\left` and `\right` so the delimiters grow to fit the contents.
+Whenever a fraction appears **inside a pair of parentheses, square brackets, or braces**, use `\left` and `\right` for that pair so the delimiters grow to fit the fraction. Apply this rule to each enclosing pair that contains the fraction. Do not automatically enlarge other pairs that do not contain a fraction.
+
+For example, use scalable parentheses around the fraction-containing coordinate:
 
 ```math
-\left(\frac{a+b}{c+d}\right)
-\qquad
-\left[\frac{n!}{k!(n-k)!}\right]
+p = (0, 0, 0) + \frac{2}{3}\left(1, 0, 0\right)
 ```
 
-Use matching pairs: `\left(` with `\right)`, `\left[` with `\right]`, and `\left\{` with `\right\}`. For a delimiter that should be invisible on one side, use `\left.` or `\right.`. Do not add `\left` and `\right` to every small inline expression; use them when the contents need larger delimiters.
+Here, the first coordinate tuple does not contain a fraction, so its parentheses remain ordinary. The second pair contains a fraction and therefore uses `\left(` and `\right)`.
+
+Use matching pairs: `\left(` with `\right)`, `\left[` with `\right]`, and `\left\{` with `\right\}`. For a delimiter that should be invisible on one side, use `\left.` or `\right.`.
 
 ## Literal Percent Signs
 
