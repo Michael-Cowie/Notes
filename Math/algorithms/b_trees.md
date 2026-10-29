@@ -285,7 +285,7 @@ This is now the **root node** and a **leaf**.
 
 ## Insert `20`
 
-Still space in in the root (Max is 3 keys), so just add `20` after `10`.
+Still space in the root (Max is 3 keys), so just add `20` after `10`.
 
 ```
 [10, 20]
