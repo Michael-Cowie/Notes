@@ -253,7 +253,7 @@ This follows,
 \lim_{\Delta x \to 0} \Delta v = \lim_{\Delta x \to 0} (2x \Delta x + \Delta x^2) = 0
 ```
 
-This limit converges to $0$ because because each term contains $\Delta x$. However when we observe,
+This limit converges to $0$ because each term contains $\Delta x$. However when we observe,
 
 ```math
 \lim_{\Delta x \to 0} \frac{\Delta v}{\Delta x}
