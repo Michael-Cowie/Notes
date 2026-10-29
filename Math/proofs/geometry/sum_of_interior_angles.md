@@ -12,7 +12,7 @@ Now, the sum of the interior angles is not always a constant value and we will c
 
 #### Proof One
 
-To begin this proof, we will create a visual diagram of the the first three shapes from $n$ equals 3 to 5.
+To begin this proof, we will create a visual diagram of the first three shapes from $n$ equals 3 to 5.
 
 <div align='center'>
     <img src='./images/19.png'>
@@ -52,7 +52,7 @@ The second method of this proof is to instead connect each vertex with every oth
 
 #### Proof - Exterior Angles of a Convex, non-intersecting Polygon Sum to 360
 
-Now, we can use this proof to to prove that the sum of the exterior angles of any polygon equal 360.
+Now, we can use this proof to prove that the sum of the exterior angles of any polygon equal 360.
 
 <div align='center'>
     <img src='./images/23.png'>
