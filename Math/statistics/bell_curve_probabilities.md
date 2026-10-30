@@ -66,7 +66,7 @@ If the vertical height is simply 2,700 people, then
 13500\text{ people}\cdot\text{cm}
 ```
 
-This area does not directly represent the number of people. The width of the bin has introduced an extra factor. Therefore, if we want the **area of a histogram bar to represent the number of observations**, we need to change what the vertical axis means. For the 170–175 cm interval, there are 2,700 people spread across 5 cm. We can therefore calculate the number of people **per centimetre**:
+This area does not directly represent the number of people. The width of the bin has introduced an extra factor. Therefore, if we want the **area of a histogram bar to represent the number of observations**, we need to change what the vertical axis means. For the 170–175 cm interval, there are 2,700 people spread across 5 cm. The bin width is $175\text{ cm}-170\text{ cm}=5\text{ cm}$; its unit is centimetres because the horizontal axis measures height in centimetres. We can therefore calculate the number of people **per centimetre**:
 
 ```math
 \frac{2700\text{ people}}{5\text{ cm}}
