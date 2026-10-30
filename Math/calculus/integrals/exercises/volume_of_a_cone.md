@@ -134,7 +134,7 @@ Factor out the constants,
 V &= \frac{\pi r^2}{h^2} \int_0^h x^2\,dx \\
   &= \frac{\pi r^2}{h^2} \left[ \frac{1}{3}x^3 \right]_0^h \\
   &= \frac{\pi r^2}{h^2} \left( \frac{1}{3}h^3 - 0\right) \\
-  &= \frac{1}{3}\pi r^2h. \end{aligned}
+  &= \frac{1}{3}\pi r^2h \end{aligned}
 ```
 
 Therefore,
