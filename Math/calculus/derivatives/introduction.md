@@ -76,7 +76,7 @@ Expanding on our distance function
 s(t) = t^2
 ```
 
-This function itself describes the car's total distance from the starting point, while its derivative describes the cars instantaneous velocity. Differentiating gives
+This function itself describes the car's total distance from the starting point, while its derivative describes the car's instantaneous velocity. Differentiating gives
 
 ```math
 v(t) = \frac{ds}{dt} = 2t
@@ -95,7 +95,7 @@ The second derivative extends this idea further by measuring how the rate of cha
 a(t) = \frac{dv}{dt} = \frac{d^2s}{dt^2}
 ```
 
-Acceleration describes how quickly velocity changes over time. If a car's speed increases from $50 \frac{\text{km}}{\text{hr}}$ to $70 \frac{\text{km}}{\text{hr}}$, the vehicle is accelerating, if the speed decreases, it is declerating. As with every differentiation we're performing a slope calculation. Because the $y$ axis is velocity and has units of $\frac{\text{km}}{\text{hr}}$ and the $x$ axis has the units of $\text{hr}$.
+Acceleration describes how quickly velocity changes over time. If a car's speed increases from $50 \frac{\text{km}}{\text{hr}}$ to $70 \frac{\text{km}}{\text{hr}}$, the vehicle is accelerating. If the speed decreases, it is decelerating. As with every differentiation, we're performing a slope calculation because the $y$-axis is velocity and has units of $\frac{\text{km}}{\text{hr}}$, while the $x$-axis has units of $\text{hr}$. 
 
 ```math
 \frac{\Delta y}{\Delta x} = \frac{\frac{\text{km}}{\text{hr}}}{\text{hr}} = \frac{\text{km}}{\text{hr}} \div \text{hr} = \frac{\text{km}}{\text{hr}} \cdot \frac{1}{\text{hr}} = \frac{\text{km}}{\text{hr}^2}
@@ -109,11 +109,11 @@ a(t) = \frac{dv}{dt} = \frac{d^2s}{dt^2} = 2
 
 If $t=10$,
 
-- The distance function $s(10)$ gives $100$. Meaning the car is 100 kilometres from its starting point.
+- The distance function $s(10)$ gives $100$, meaning the car is 100 kilometres from its starting point.
 
-- The first derivative gives $v(10) = 20$. Meaning the car is currently travelling at $20 \frac{\text{km}}{\text{hr}}$.
+- The first derivative gives $v(10) = 20$, meaning the car is currently travelling at $20 \frac{\text{km}}{\text{hr}}$.
 
-- The second derivative gives $a(10) = 2$. Meaning the cars velocity is increasing at a constant rate of $2 \frac{\text{km}}{\text{hr}^2}$.
+- The second derivative gives $a(10) = 2$, meaning the car's velocity is increasing at a constant rate of $2 \frac{\text{km}}{\text{hr}^2}$.
 
 <div align='center'>
     <img src='../images/13.png' width='300'>
