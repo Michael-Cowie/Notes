@@ -18,8 +18,8 @@ P(A)=\frac{3}{6}=\frac12=0.5=50\%
 
 The important idea is that probability is fundamentally a **proportion**. We compare the number of outcomes belonging to an event with the total number of outcomes. This same idea can be applied to a dataset. Suppose 10,000 people have their heights measured. Instead of asking whether one particular outcome occurs, we can ask questions such as,
 
-<div style='margin-left: 2em; margin-bottom: 0.5em;'>
-What is the probability that a randomly selected person has a height <b>between 170 cm and 175 cm? </b>
+<div style='margin-left: 2em; padding-bottom: 1em;'>
+What is the probability that a randomly selected person has a height <b>between 170 cm and 175 cm?</b>
 </div>
 
 If 2,700 of the 10,000 people fall within this interval, then
