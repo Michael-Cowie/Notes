@@ -140,12 +140,40 @@ P(170\leq X<175)
 0.27
 ```
 
-We can therefore divide the frequency density by the total population,
+We can therefore divide the frequency density by the total population. The important point is that the reciprocal must include the unit \(\text{people}\), because we are dividing by the entire quantity \(10000\text{ people}\), not just by the number \(10000\).
+
+First, write the division as a fraction:
 
 ```math
-\frac{540\text{ people/cm}}{10000\text{ people}}
+\frac{\dfrac{540\text{ people}}{\text{cm}}}{10000\text{ people}}
+```
+
+Dividing by a nonzero quantity is equivalent to multiplying by its reciprocal. The reciprocal of (10000	ext{ people}) is (dfrac{1}{10000	ext{ people}}):
+
+```math
+\frac{\dfrac{540\text{ people}}{\text{cm}}}{10000\text{ people}}
 =
-540 \frac{\text{people}}{\text{cm}} \times \frac{1}{10 000} \text{people}
+\frac{540\text{ people}}{\text{cm}}
+\times
+\frac{1}{10000\text{ people}}
+```
+
+Separate the numerical values from the units:
+
+```math
+=
+\frac{540}{10000}
+\times
+\frac{\text{people}}{\text{cm}\times\text{people}}
+```
+
+The (	ext{people}) units cancel because they appear once in the numerator and once in the denominator:
+
+```math
+=
+\frac{540}{10000}
+\times
+\frac{\cancel{\text{people}}}{\text{cm}\times\cancel{\text{people}}}
 =
 0.054\frac{1}{\text{cm}}
 ```
