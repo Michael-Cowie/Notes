@@ -808,7 +808,7 @@ means that the corresponding vertices are
 ```math
 A \leftrightarrow A,\qquad
 D \leftrightarrow B,\qquad
-E \leftrightarrow C.
+E \leftrightarrow C
 ```
 
 Therefore, the corresponding sides are
@@ -816,7 +816,7 @@ Therefore, the corresponding sides are
 ```math
 AD \leftrightarrow AB,\qquad
 AE \leftrightarrow AC,\qquad
-DE \leftrightarrow BC.
+DE \leftrightarrow BC
 ```
 
 Since the triangles are similar, every pair of corresponding sides has the same ratio

@@ -114,7 +114,7 @@ so that
 \boxed{
 \text{area of bar}
 =
-\text{number of observations}.
+\text{number of observations}
 }
 ```
 

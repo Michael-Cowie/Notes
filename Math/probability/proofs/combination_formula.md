@@ -29,7 +29,7 @@ ACB
 are different permutations because the order of selection differs, yet they represent the same combination
 
 ```math
-\{A,B,C\}.
+\{A,B,C\}
 ```
 
 Having a base understanding for how the number of permutations are calculated using the probability tree is an essential skill to derive the combination formula as they're very similar.
