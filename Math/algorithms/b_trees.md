@@ -138,7 +138,7 @@ The middle key is `10` and will be promoted. The left is `[5 ,6]` and the right 
 
 - - Root `[10]` becomes `[10, 20]`
 - - The left `[12, 17]` will become its own left node.
-- - The right `[30]` will becomes its own right node.
+- - The right `[30]` will become its own right node.
 
 ```
       [10, 20]
