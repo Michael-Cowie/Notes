@@ -62,3 +62,22 @@ In LaTeX math, write a percentage as `\%`, not a bare `%`. For example:
 ```
 
 For inline math, use `$20\%$`. A bare percent sign starts a LaTeX comment and can cause the rest of the expression to disappear. If the percent sign is ordinary prose outside math delimiters, write it normally (for example, `20%`).
+
+
+## Indented Questions
+
+When presenting a standalone question within an explanation, use an HTML paragraph with equal top and bottom margins and left padding for indentation. This keeps the question visually distinct while maintaining balanced vertical spacing above and below it across GitHub's rendered Markdown, including mobile browsers.
+
+Use this pattern:
+
+```html
+<p style="margin: 1em 0; padding-left: 2em;">
+What is the probability that a randomly selected person has a height between 170 cm and 175 cm?
+</p>
+```
+
+- Keep the top and bottom margins equal (for example, `1em 0`).
+- Use `padding-left: 2em` to indent the question.
+- Do not use a `<div>` with only a left margin for the question.
+- Do not add extra `<br>` tags or spacer elements to tune the bottom gap; these can make the spacing uneven or behave inconsistently.
+- Keep the question text inside the paragraph and continue with the next paragraph normally.
