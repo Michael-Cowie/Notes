@@ -217,7 +217,9 @@ From each of these machine, they have a chance of making the product defective.
     <img src='./images/42.png' width=300>
 </div>
 
-**Given a defective product, what is the probability it came from $C$?**
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;**Given a defective product, what is the probability it came from $C$?**
+</p>
 
 Before beginning the question we define multiple events,
 
@@ -303,7 +305,9 @@ R &= \{ \text{Ball is red} \}
 \end{aligned}
 ```
 
-**Randomly given a red ball, what is the probability it came from bag $2$?**
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;**Randomly given a red ball, what is the probability it came from bag $2$?**
+</p>
 
 Hence, we want to calculate
 
