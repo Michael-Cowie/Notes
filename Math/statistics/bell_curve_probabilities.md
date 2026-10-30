@@ -21,7 +21,7 @@ The important idea is that probability is fundamentally a **proportion**. We com
 <div style='margin: 1em 0 0 2em;'>
 What is the probability that a randomly selected person has a height <b>between 170 cm and 175 cm?</b>
 </div>
-<div style='height: 1em;'></div>
+<br>
 
 If 2,700 of the 10,000 people fall within this interval, then
 
