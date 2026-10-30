@@ -80,3 +80,8 @@ Use this pattern:
 - Keep the text inside a normal `<p>` element so it retains ordinary paragraph spacing.
 - Do not use inline CSS for indentation, blockquotes, extra `<br>` tags, or spacer elements.
 - Continue with the next paragraph normally.
+
+
+## Punctuation in Displayed Mathematics
+
+Do not place a full stop at the end of a displayed mathematical expression. Keep terminal punctuation in the surrounding prose instead; displayed equations should end with the mathematical expression itself, not a trailing period. Apply this consistently to single-line and multiline `math` blocks.
