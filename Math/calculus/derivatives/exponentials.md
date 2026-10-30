@@ -84,7 +84,9 @@ which applies when the **independent variable is the base**. Keep in mind when d
 ```
 
 
-<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Direct function usage</strong>
+</p>
 
 ```math
 x \rightarrow f(x) \rightarrow b^{f(x)}
@@ -101,7 +103,9 @@ f(u) &= b^u  \qquad  &f'(u) = b^u \cdot \ln b
 \frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x) = b^{f(x)} \cdot \ln b \cdot f'(x)
 ```
 
-<div style="margin-left: 2em;"><strong>Leibniz notation </strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Leibniz notation</strong>
+</p>
 
 ```math
 \begin{aligned}
