@@ -292,8 +292,8 @@ belongs entirely to the counting half. It was never built out of $p$ or $q$. It 
 
 Distributing $12$ identical balls into $3$ distinct boxes has nothing to do with success, failure, or repeated trials. There is no experiment being run and no $p$. Yet, the question,
 
-<p style='margin: 1em 0; padding-left: 2em;'>
-How many ways can this be done?
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;How many ways can this be done?
 </p>
 
 is answered by the identical method. A fixed pool of $n$ distinguishable positions, from which $k$ are selected. The translation is achieved by representing one distribution as a row of stars ($\star$) and bars ($\mid$):
