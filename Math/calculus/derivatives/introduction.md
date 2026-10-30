@@ -204,7 +204,7 @@ y=f(x),
 then the derivative is defined by
 
 ```math
-\frac{dy}{dx}=f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}.
+\frac{dy}{dx}=f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}
 ```
 
 This equation defines the instantaneous rate at which the dependent variable $y$ changes with respect to the independent variable $x$. More generally, if the independent variable is $t$, then
@@ -220,7 +220,7 @@ It is important to distinguish between the **derivative** and the **differential
 Once the derivative is known, we define the differential by
 
 ```math
-dy=f'(x)\,dx.
+dy=f'(x)\,dx
 ```
 
 Here, $dx$ represents a chosen small change in the independent variable, while $dy$ is the corresponding **linear approximation** of the resulting change in the dependent variable. In other words, the derivative provides the instantaneous rate, and the differential uses that rate to estimate how the function changes for a small input change.
