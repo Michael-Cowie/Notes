@@ -66,17 +66,17 @@ For inline math, use `$20\%$`. A bare percent sign starts a LaTeX comment and ca
 
 ## Indented Questions
 
-When presenting a standalone question within an explanation, use a normal HTML paragraph and begin the question with four non-breaking spaces (`&nbsp;`). GitHub's Markdown renderer may ignore inline CSS indentation, whereas non-breaking spaces visibly indent the text while preserving normal paragraph spacing.
+When presenting a standalone question or statement that should be indented within an explanation, use a normal HTML paragraph and begin its text with four non-breaking spaces (`&nbsp;`). GitHub's Markdown renderer may ignore inline CSS indentation, whereas non-breaking spaces visibly indent the text while preserving normal paragraph spacing.
 
 Use this pattern:
 
 ```html
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp;What is the probability that a randomly selected person has a height between 170 cm and 175 cm?
+&nbsp;&nbsp;&nbsp;&nbsp;Your indented question or statement goes here.
 </p>
 ```
 
-- Use four `&nbsp;` entities at the start of the question to indent it.
-- Keep the question inside a normal `<p>` element so it retains ordinary paragraph spacing.
+- Use four `&nbsp;` entities at the start of the question or statement to indent it.
+- Keep the text inside a normal `<p>` element so it retains ordinary paragraph spacing.
 - Do not use inline CSS for indentation, blockquotes, extra `<br>` tags, or spacer elements.
 - Continue with the next paragraph normally.
