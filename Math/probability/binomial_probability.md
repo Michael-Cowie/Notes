@@ -11,19 +11,15 @@ Probability is the mathematical study of uncertainty. While some events only occ
 
 <p>The central question changes from</p>
 
-<div style="margin-left:2em;">
-
+<p style="margin: 1em 0; padding-left: 2em;">
 What is the **probability of one event**?
-
-</div>
+</p>
 
 <p>to</p>
 
-<div style="margin-left:2em;">
-
+<p style="margin: 1em 0; padding-left: 2em;">
 What is the probability of observing a **particular number of successes after many independent attempts**?
-
-</div>
+</p>
 
 This is precisely the purpose of **binomial probability**. Binomial probability refers to the probability of exact successes on repeated trials in an experiment which has **two possible outcomes**. Binomial probability extends basic probability into repeated trials. Rather than calculating the chance of a single success, it calculates the probability of obtaining
 
