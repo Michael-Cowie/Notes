@@ -181,7 +181,9 @@ This relationship occurs because any small changes in $x$, increases $u$ which i
 
 ##### Example 1 - $f(x) = \sin(2x)$
 
-<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Direct function usage</strong>
+</p>
 
 ```math
 \begin{aligned}
@@ -194,7 +196,9 @@ g'(x) &= 2 \qquad &f'(u) = \cos(u) \\
 f'(g(x)) \cdot g'(x) = \cos(2x) \cdot 2 = 2 \cos (2x)
 ```
 
-<div style="margin-left: 2em;"><strong>Leibniz notation</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Leibniz notation</strong>
+</p>
 
 ```math
 \begin{aligned}
@@ -209,7 +213,9 @@ u &= 2x \qquad            &f(u) = \sin (u) \\
 
 ##### Example 2 - $(3x + 1)^5$
 
-<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Direct function usage</strong>
+</p>
 
 ```math
 \begin{aligned}
@@ -222,7 +228,9 @@ g'(x) &= 3 \qquad      &f'(u)  = 5u^4 \\
 f'(g(x)) \cdot g'(x) = 5(3x + 1)^4 \cdot 3 = 15(3x + 1)^4
 ```
 
-<div style="margin-left: 2em;"><strong>Leibniz notation</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Leibniz notation</strong>
+</p>
 
 ```math
 \begin{aligned}
@@ -237,7 +245,9 @@ u &= 3x + 1 \qquad &f(u) = u^5 \\
 
 ##### Example 3 - $f(x) = \sqrt{1 + x^3} = (1 + x^3)^{1/2}$
 
-<div style="margin-left: 2em;"><strong>Direct function usage</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Direct function usage</strong>
+</p>
 
 ```math
 \begin{aligned}
@@ -250,7 +260,9 @@ g'(x) &= 3x^2   \qquad f'(u) &= \frac{1}{2}u^{-1/2}
 f'(g(x)) \cdot g'(x) = \frac{1}{2} (1 + x^3)^{-1/2} \cdot 3x^2 = \frac{3x^2}{2 \sqrt{1 + x^3}}
 ```
 
-<div style="margin-left: 2em;"><strong>Leibniz notation</strong></div>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>Leibniz notation</strong>
+</p>
 
 ```math
 \begin{aligned}
