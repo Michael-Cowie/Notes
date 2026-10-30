@@ -66,7 +66,7 @@ If the vertical height is simply 2,700 people, then
 13500\text{ people}\cdot\text{cm}
 ```
 
-This area does not directly represent the number of people. The width of the bin has introduced an extra factor. Therefore, if we want the **area of a histogram bar to represent the number of observations**, we need to change what the vertical axis means. For the 170–175 cm interval, there are 2,700 people spread across 5 cm. The bin width is $175\text{ cm}-170\text{ cm}=5\text{ cm}$; its unit is centimetres because the horizontal axis measures height in centimetres. We can therefore calculate the number of people **per centimetre**:
+This area does not directly represent the number of people. The width of the bin has introduced an extra factor. Therefore, if we want the **area of a histogram bar to represent the number of observations**, we need to change what the vertical axis means. For the 170–175 cm interval, there are 2,700 people spread across 5 cm. We can therefore calculate the number of people **per centimetre**:
 
 ```math
 \frac{2700\text{ people}}{5\text{ cm}}
@@ -200,7 +200,7 @@ More precisely, because probability itself is dimensionless, this can be written
 0.054\text{ cm}^{-1}
 ```
 
-The area of the bar is now
+The area of the bar is now. The bin width is $5\text{ cm}$ because the interval runs from $170\text{ cm}$ to $175\text{ cm}$. In this area calculation, the centimetres in the bin width cancel the $1/\text{cm}$ in the probability density, leaving a probability with no units:
 
 ```math
 0.054\frac{1}{\text{cm}}\times5\text{ cm}
