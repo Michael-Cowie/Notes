@@ -55,7 +55,7 @@ The horizontal axis represents **height**, while the vertical axis initially rep
 ```math
 \text{area}
 =
-\text{height}\times\text{width}.
+\text{height}\times\text{width}
 ```
 
 If the vertical height is simply 2,700 people, then
@@ -63,7 +63,7 @@ If the vertical height is simply 2,700 people, then
 ```math
 2700\text{ people}\times5\text{ cm}
 =
-13500\text{ people}\cdot\text{cm}.
+13500\text{ people}\cdot\text{cm}
 ```
 
 This area does not directly represent the number of people. The width of the bin has introduced an extra factor. Therefore, if we want the **area of a histogram bar to represent the number of observations**, we need to change what the vertical axis means. For the 170–175 cm interval, there are 2,700 people spread across 5 cm. We can therefore calculate the number of people **per centimetre**:
@@ -71,13 +71,13 @@ This area does not directly represent the number of people. The width of the bin
 ```math
 \frac{2700\text{ people}}{5\text{ cm}}
 =
-540\frac{\text{people}}{\text{cm}}.
+540\frac{\text{people}}{\text{cm}}
 ```
 
 The height of this histogram bar is therefore
 
 ```math
-540\frac{\text{people}}{\text{cm}}.
+540\frac{\text{people}}{\text{cm}}
 ```
 
 Now the area of the bar is
@@ -86,7 +86,7 @@ Now the area of the bar is
 540\frac{\text{people}}{\text{cm}}
 \times5\text{ cm}
 =
-2700\text{ people}.
+2700\text{ people}
 ```
 
 The units explain why this works,
@@ -137,7 +137,7 @@ P(170\leq X<175)
 =
 \frac{2700}{10000}
 =
-0.27.
+0.27
 ```
 
 We can therefore divide the frequency density by the total population,
@@ -222,7 +222,7 @@ The 5 cm bins are useful, but they give us only a relatively coarse picture of t
 \text{probability density}
 =
 \frac{\text{number of observations in bin}}
-{\text{total observations}\times\text{bin width}}.
+{\text{total observations}\times\text{bin width}}
 ```
 
 This produces a new step-shaped function, which can be called $f_1(x)$. We could then use even smaller bins,
@@ -247,13 +247,13 @@ The bars become narrower and the graph provides an increasingly detailed represe
 ```math
 P(X\text{ is in the interval})
 \approx
-f(x)\Delta x.
+f(x)\Delta x
 ```
 
 This is simply the same rectangle-area idea we already established:
 
 ```math
-\boxed{\text{probability}\approx\text{height}\times\text{width}}.
+\boxed{\text{probability}\approx\text{height}\times\text{width}}
 ```
 
 Here, the height is probability per centimetre and the width is centimetres. However, an important distinction must be made, **with a finite dataset, making the bins indefinitely small does not necessarily produce a perfectly smooth curve**. Eventually the bins become sparse and noisy. The smooth bell curve therefore does **not** literally come from mechanically smoothing the histogram. Instead, when the observed histogram has an approximately bell-shaped pattern, we can use a known mathematical distribution to **model and estimate that underlying shape**. The famous mathematical model used for a bell-shaped distribution is the **normal distribution**, also called the Gaussian distribution. Its **probability density function** is
@@ -351,7 +351,7 @@ For a small interval $\Delta x$
 ```math
 P(X\text{ is in the interval})
 \approx
-f(x)\Delta x.
+f(x)\Delta x
 ```
 
 If we divide a larger interval into many small pieces, the total probability is approximately the sum of the individual pieces:
@@ -359,7 +359,7 @@ If we divide a larger interval into many small pieces, the total probability is 
 ```math
 P(a\leq X\leq b)
 \approx
-\sum_i f(x_i)\Delta x.
+\sum_i f(x_i)\Delta x
 ```
 
 This is precisely the idea behind integration. As the intervals become increasingly narrow, the summation becomes a definite integral,
@@ -384,7 +384,7 @@ therefore
 ```math
 \frac{\text{probability}}{\text{cm}}\times\text{cm}
 =
-\text{probability}.
+\text{probability}
 ```
 
 Integration is therefore not introducing a completely new interpretation of probability. It is extending the same **area = proportion** idea from histogram rectangles to a continuously varying curve.
@@ -406,7 +406,7 @@ allows us to calculate probability by finding the area under the curve,
 ```math
 P(a\leq X\leq b)
 =
-\int_a^b f(x)\,dx.
+\int_a^b f(x)\,dx
 ```
 
 The horizontal axis of this function is the original measurement, such as height in centimetres. Although this allows us to calculate probabilities, it is useful to express positions relative to the mean and standard deviation instead of using the original units. The **$z$-score** provides a way of expressing how far a value is from the mean in standard-deviation units,
@@ -470,7 +470,7 @@ which is exactly one standard deviation above the mean.
 Our original probability calculation uses
 
 ```math
-\int f(x)\,dx.
+\int f(x)\,dx
 ```
 
 Here, $dx$ represents a very small width along the original $x$-axis. Since
@@ -515,13 +515,13 @@ f(x)\Delta x
 =
 f(\mu+\sigma z)(\sigma\Delta z)
 =
-\left[\sigma f(\mu+\sigma z)\right]\Delta z.
+\left[\sigma f(\mu+\sigma z)\right]\Delta z
 ```
 
 Thus the standardised density must be
 
 ```math
-\boxed{\phi(z)=\sigma f(\mu+\sigma z)}.
+\boxed{\phi(z)=\sigma f(\mu+\sigma z)}
 ```
 
 The factor $\sigma$ makes the new graph taller or shorter precisely enough to compensate for the change in horizontal scale, preserving the probability represented by the area.
@@ -545,7 +545,7 @@ z=\frac{x-\mu}{\sigma}
 which can be rearranged to give
 
 ```math
-x=\mu+\sigma z.
+x=\mu+\sigma z
 ```
 
 This tells us how a position on the original $x$-axis corresponds to a position on the new $z$-axis. Taking differentials gives
@@ -762,7 +762,7 @@ P(-1\leq Z\leq1)\approx0.6827
 or
 
 ```math
-\boxed{68.27\%}.
+\boxed{68.27\%}
 ```
 
 The same calculation can be performed for two and three standard deviations:
