@@ -106,4 +106,4 @@ This now suggests
 \frac{d}{dx} (g(x) + h(x)) = \frac{dg}{dx} + \frac{dh}{dx}
 ```
 
-which the sum of derivatives of its part. This is also called the sum rule.
+which is the sum of the derivatives of its parts. This is also called the sum rule.
