@@ -284,7 +284,7 @@ The tree,
 
 - The branching structure of choices
 - The collapsing of orderings into combinations
-- Combinatorial weight means the number of different outcome sequences that produce the same number of successes. It is called a weight because of tells us how many times the same probability appears.
+- Combinatorial weight means the number of different outcome sequences that produce the same number of successes. It is called a weight because it tells us how many times the same probability appears.
 
 belongs entirely to the counting half. It was never built out of $p$ or $q$. It was built out of $n$ distinguishable positions and a decision to select $k$ of them. This means the same tree applies to any problem shaped like "choose $k$ from $n$," whether or not probability is involved at all. Stars and bars is exactly such a problem.
 
@@ -355,7 +355,7 @@ each one a complete, valid split of $3$ balls across $3$ boxes, with box counts 
 
 #### The General Principle
 
-What makes this transfer possible is that $\binom{n}{k}$ was never a statement about success and failure in the first place, it is a statement about **selecting an unordered subset of size $k$ from $n$ distinguishable objects**, full stop. The binomial distribution supplies the objects (trials) and the labels (success/failure), stars and bars supplies different objects (positions in a row) and different labels (bar/star). The tree does not care which pair of labels is used, because it was only ever constructed from the positions, never from the labels themselves.
+What makes this transfer possible is that $\binom{n}{k}$ was never a statement about success and failure in the first place; it is a statement about **selecting an unordered subset of size $k$ from $n$ distinguishable objects**, full stop. The binomial distribution supplies the objects (trials) and the labels (success/failure), Stars and bars supplies different objects (positions in a row) and different labels (bar/star). The tree does not care which pair of labels is used, because it was only ever constructed from the positions, never from the labels themselves.
 
 ```math
 \text{Objects to select from} \quad \longrightarrow \quad \text{choose } k \text{ of } n \quad \longrightarrow \quad \binom{n}{k}

@@ -71,7 +71,7 @@ So,
 - $c$ - Belongs to your rectangle decomposition.
 - $d$ - Belongs to your rectangle decomposition.
 
-This should immediately make you suspicious. Anything introduced purely because you chose a particular proof straghety probably shouldn't survive to the final theorem. Consider the expression
+This should immediately make you suspicious. Anything introduced purely because you chose a particular proof strategy probably shouldn't survive to the final theorem. Consider the expression
 
 ```math
 A = bh - \frac{ch}{2} - \frac{dh}{2}

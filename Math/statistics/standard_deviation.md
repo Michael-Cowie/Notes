@@ -531,7 +531,7 @@ The sample variance measures the spread of the observations around $\bar X$, whe
 
 Let's suppose we had a normally distributed population with population mean $\mu$. We have to assume that we do not know what $\mu$ is, this is generally the case as we do not usually know the true population mean. We do not need to know the population mean in order to see that using $\bar X$ will tend to give us an underestimate of our deviations.
 
-Suppose we take a sample from our population and average it to get $\bar X$ that gives us a number below $\mu$. Now we need to think about that that will do to our deviations. What we can realize is that **the point exactly between $\bar X$ and $\mu$** will create the split between underestimating deviations and overestimating deviations. The points below this split will **underestimate the deviation** and the points above this split will **overestimate the deviation**.
+Suppose we take a sample from our population and average it to get $\bar X$ that gives us a number below $\mu$. Now we need to think about what that will do to our deviations. What we can realize is that **the point exactly between $\bar X$ and $\mu$** will create the split between underestimating deviations and overestimating deviations. The points below this split will **underestimate the deviation** and the points above this split will **overestimate the deviation**.
 
 - **Underestimation** - This occurs because as we move left from the point between $\bar X$ and $\mu$, we become closer to $\bar X$ and further away from $\mu$. This means the deviation (Distance) to $\bar X$ decreases, as it inversely increases (Further away) from $\mu$.
 
@@ -545,7 +545,7 @@ Illustrated in the diagram above, if our sample set were normally distributed, s
     <img src='./images/17.png' width=500>
 </div>
 
-We can observe the equivalent behaviour when $\bar x$ is above the mean. In this case their will be a point and any scores above that point are going to underestimate the deviation because they're closer to $\bar x$ than $\mu$ and any scores below that point will now be overestimates, because they're further away from from $\bar X$ and closer to $\mu$.
+We can observe the equivalent behaviour when $\bar x$ is above the mean. In this case there will be a point and any scores above that point are going to underestimate the deviation because they're closer to $\bar x$ than $\mu$ and any scores below that point will now be overestimates, because they're further away from $\bar X$ and closer to $\mu$.
 
 However, the conclusion is the same. We must have more scores in our sample dataset that are underestimates than overestimates. Therefore, in total, we're going to end up with an underestimate because $\bar X$ differs from $\mu$. So any time that $\bar X$ differs from $\mu$ we'll get an underestimate of the deviations.
 
@@ -555,7 +555,7 @@ However, the conclusion is the same. We must have more scores in our sample data
     <img src='./images/18.png' width=500>
 </div>
 
-It is also possible that you could get an $\bar X$ that actually equals $\mu$. If this happens then you won't be underestimating the deviation. You'll be getting deviation just right because $\bar X$ equals $\mu$ so comparing $\bar X$ is exactly the same as comparing to $\mu$. However, this is going to happen in a very small minority of the possible samples you might draw from the population. When this does happen where you get $\bar X$ equal to $\mu$, you won't know that it happened because **you actually do not know $\mu$**. You will not be able to say for sure that that's what happened. So it's generally safer to assume is that your $\bar X$ differs from $\mu$ because most samples will get an $\bar X$ that differs from $\mu$. It is therefore safer to assume you will always have an underestimate. This is going to be more accurate in most cases and is going to be incorrect in a very small number of cases.
+It is also possible that you could get an $\bar X$ that actually equals $\mu$. If this happens then you won't be underestimating the deviation. You'll be getting deviation just right because $\bar X$ equals $\mu$ so comparing $\bar X$ is exactly the same as comparing to $\mu$. However, this is going to happen in a very small minority of the possible samples you might draw from the population. When this does happen where you get $\bar X$ equal to $\mu$, you won't know that it happened because **you actually do not know $\mu$**. You will not be able to say for sure that that's what happened. So it's generally safer to assume that your $\bar X$ differs from $\mu$ because most samples will get an $\bar X$ that differs from $\mu$. It is therefore safer to assume you will always have an underestimate. This is going to be more accurate in most cases and is going to be incorrect in a very small number of cases.
 
 If the sample mean happens to equal the population mean,
 

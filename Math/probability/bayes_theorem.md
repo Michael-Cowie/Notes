@@ -63,7 +63,7 @@ The idea can therefore be thought of as,
 \boxed{\text{Prior probability} \rightarrow \text{Evidence} \rightarrow \text{Updated probability}}
 ```
 
-A useful way to understand the denominator $P(B)$ is to consider all the different ways in which $B$ can occur. If $A$ and $A^c$, and each of these branches then separate into $B$ and $B^c$. Multiplying along a branch gives the probably of both events occurring. If we want $P(A \mid B)$, we consider only the branches that result in $B$ and determine what proportion of those outcomes came from the $A$ branch.
+A useful way to understand the denominator $P(B)$ is to consider all the different ways in which $B$ can occur. The branches for $A$ and $A^c$ each then separate into $B$ and $B^c$. Multiplying along a branch gives the probability of both events occurring. If we want $P(A \mid B)$, we consider only the branches that result in $B$ and determine what proportion of those outcomes came from the $A$ branch.
 
 <div align='center'>
     <h1> Exercises </h1>

@@ -222,7 +222,7 @@ The parent `20` moves down to the left `[20]` and the right siblings smallest ke
 [20]   [40]
 ```
 
-3. **Key is in an internal node** - Now, we must replace the key with either the predecessor (Max key from left subtree) or the success (Min key from the right subtree). Then delete that replacement key from a leaf.
+3. **Key is in an internal node** - Now, we must replace the key with either the predecessor (Max key from left subtree) or the successor (Min key from the right subtree). Then delete that replacement key from a leaf.
 
 ```
     [20]
@@ -285,7 +285,7 @@ This is now the **root node** and a **leaf**.
 
 ## Insert `20`
 
-Still space in in the root (Max is 3 keys), so just add `20` after `10`.
+Still space in the root (Max is 3 keys), so just add `20` after `10`.
 
 ```
 [10, 20]

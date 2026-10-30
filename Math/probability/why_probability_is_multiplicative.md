@@ -253,7 +253,7 @@ The probability of rolling a $6$ on the second roll is also
 \frac{1}{6}
 ```
 
-because each roll is independent. This sequence may be represented as a successive restrictions of the sample space.
+because each roll is independent. This sequence may be represented as a succession of restrictions to the sample space.
 
 <div align='center'>
     <img src='./images/6.png' width='400'>
