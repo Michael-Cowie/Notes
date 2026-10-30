@@ -211,7 +211,7 @@ Then for all $x$ satisfying $0 < |x - 3| < \delta$, we have
 &= 4|x - 3| \\
 &< 4\delta && \text{(since } |x-3| < \delta\text{)} \\
 &= 4 \cdot \frac{\varepsilon}{4} \\
-&= \varepsilon.
+&= \varepsilon
 \end{align*}
 ```
 
