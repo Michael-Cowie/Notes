@@ -151,11 +151,21 @@ First, write the division as a fraction:
 Dividing by a nonzero quantity is equivalent to multiplying by its reciprocal. The reciprocal of (10000	ext{ people}) is (dfrac{1}{10000	ext{ people}}):
 
 ```math
+\frac{1}{10000\text{ people}}
+=
+\frac{1}{10000}\times\frac{1}{\text{people}}
+```
+
+Now substitute this reciprocal into the original calculation:
+
+```math
 \frac{\dfrac{540\text{ people}}{\text{cm}}}{10000\text{ people}}
 =
 \frac{540\text{ people}}{\text{cm}}
 \times
-\frac{1}{10000\text{ people}}
+\frac{1}{10000}
+\times
+\frac{1}{\text{people}}
 ```
 
 Separate the numerical values from the units:
