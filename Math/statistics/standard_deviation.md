@@ -39,7 +39,7 @@ B=\{1,3,5,7,9\}
 with mean
 
 ```math
-\bar{x}=5.
+\bar{x}=5
 ```
 
 The deviations from the mean are therefore
@@ -566,7 +566,7 @@ If the sample mean happens to equal the population mean,
 then every observation has exactly the same deviation from either mean,
 
 ```math
-X_i-\bar X=X_i-\mu.
+X_i-\bar X=X_i-\mu
 ```
 
 Consequently,
@@ -1042,7 +1042,7 @@ where the last step uses equality 3. The key is that $\bar x$ is itself a random
 and we take samples of $n=2$. The population mean is,
 
 ```math
- \mu=\frac{2+4+6}{3}=4. 
+ \mu=\frac{2+4+6}{3}=4 
 ```
 
 Now consider three possible samples.
