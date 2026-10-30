@@ -1,14 +1,14 @@
 <div align='center'>
-    <h1> Two Tanget <h1>
+    <h1>Two Tangent</h1>
 </div>
 
-The two tangent theorem states that a point outside a circle, the two tangent segments drawn to the circle are equal in length.
+The two-tangent theorem states that the two tangent segments drawn from a point outside a circle are equal in length.
 
 <div align='center'>
     <img src='./images/30.png'>
 </div>
 
-We will begin this proof by outling the following information,
+We will begin this proof by outlining the following information:
 
 1. Draw two lines from the centre point $O$ to the tangent point. Both will have the length of the radius and thus, we can name the same variable $x$. Draw $x$ to both vertices on the tangent point $B$ and $A$.
 2. Draw a line from the centre point $O$ to the origin point $C$. Call this length $Y$.
