@@ -200,7 +200,7 @@ More precisely, because probability itself is dimensionless, this can be written
 0.054\text{ cm}^{-1}
 ```
 
-The area of the bar is now. The bin width is $5\text{ cm}$ because the interval runs from $170\text{ cm}$ to $175\text{ cm}$. In this area calculation, the centimetres in the bin width cancel the $1/\text{cm}$ in the probability density, leaving a probability with no units:
+The area of the bar is now calculated by multiplying the probability density by the bin width. The bin width is $5\text{ cm}$ because the interval runs from $170\text{ cm}$ to $175\text{ cm}$. In this area calculation, the centimetres in the bin width cancel the $1/\text{cm}$ in the probability density, leaving a probability with no units:
 
 ```math
 0.054\frac{1}{\text{cm}}\times5\text{ cm}
