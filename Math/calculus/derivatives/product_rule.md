@@ -10,7 +10,7 @@ When two functions are multiplied, differentiation becomes more structured. The 
 
 This rule shows that the derivative of a product is not simply the product of the derivatives.
 
-Take $x^2, \cdot x^5$. For each function we can observe
+Take $x^2 \cdot x^5$. For each function we can observe
 
 ```math
 f(x) = x^2 \qquad g(x) = x^5
