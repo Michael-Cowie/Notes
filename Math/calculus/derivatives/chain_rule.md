@@ -5,7 +5,7 @@
 It is true that,
 
 ```math
-\frac{dy}{dx} \sin (x) = \cos (x)
+\frac{d}{dx} \sin (x) = \cos (x)
 ```
 
 However, if we were given,
@@ -18,7 +18,7 @@ f(x) = \sin (2x)
 **It is not true** that,
 
 ```math
-\frac{dy}{dx} \sin(2x) \neq \cos (2x)
+\frac{d}{dx} \sin(2x) \neq \cos (2x)
 ```
 
 In general, the derivative of $\sin$ something with respect to that something equals $\cos$ of that something. All 3 terms need to match for the differentaiton rule to apply. When we try to apply this to $\sin (2x)$ we can see that they do not match. This is illustrated with the trig rule, however it applies to all rules.
@@ -174,7 +174,7 @@ describes how changes in $x$ cascades changes in $u$. The second derivative,
 describes how changes in $u$ scale into changes in $y$. Because the output change from the first derivative stage becomes the input for the second stage, the scaling factors multiply together. This produces the chain rule relationship.
 
 ```math
-\frac{dy}{dx} = \frac{dy}{dy} \cdot \frac{du}{dx}
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
 ```
 
 This relationship occurs because any small changes in $x$, increases $u$ which increases $y$.
@@ -240,7 +240,7 @@ u &= 3x + 1 \qquad &f(u) = u^5 \\
 ```
 
 ```math
-\frac{df}{dx} = \frac{df}{du} \frac{du}{dx} = 5(3x + 1)^5 \cdot 3 = 15(3x + 1)^5 
+\frac{df}{dx} = \frac{df}{du} \frac{du}{dx} = 5(3x + 1)^4 \cdot 3 = 15(3x + 1)^4 
 ```
 
 ##### Example 3 - $f(x) = \sqrt{1 + x^3} = (1 + x^3)^{1/2}$
