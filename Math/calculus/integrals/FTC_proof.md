@@ -132,6 +132,45 @@ On the left-hand side, integration reverses differentiation, allowing us to reco
 A(x) = F(x) + C
 ```
 
+It is important to understand that the area function $$A(x)$$ and the antiderivative $$F(x)$$ are not necessarily the same function. They can differ by an arbitrary constant while still having the same derivative. For example, consider the following two functions,
+
+```math
+\begin{aligned}
+A(x)&=x^2 \\
+F(x)&=x^2-5
+\end{aligned}
+```
+
+Although these are different functions, differentiating both gives the same result:
+
+```math
+A'(x)=2x
+```
+
+```math
+F'(x)=2x
+```
+
+Therefore, both functions have the same derivative, but they differ by a constant of $5$.
+
+```math
+A(x)=F(x)+5
+```
+
+This is why we express the relationship as
+
+```math
+A(x)=F(x)+C
+```
+
+rather than assuming that
+
+```math
+A(x)=F(x)
+```
+
+When calculating a definite integral, this difference does not matter because the constant cancels when we subtract the values at the two endpoints. This is why we can use any antiderivative of $$f(x)$$ to calculate a definite integral.
+
 Where $F(x)$ is an antiderivative of $f(x)$ and $C$ is an arbitrary constant of integration. The constant is necessary because differentiation removes constants. Consequently, integrating a derivative cannot tell us which particular constant was present in the original function.
 
 We have therefore established that the area function $A(x)$ is an antiderivative of $f(x)$ and can be expressed as,
