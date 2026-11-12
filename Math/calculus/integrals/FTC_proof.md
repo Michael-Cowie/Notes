@@ -51,9 +51,7 @@ We define $A$ as the area under the curve $y = f(x)$, when given $x$, will outpu
 A = A(x)
 ```
 
-This shows the dependence of the area upon the value that we choose for $x$. Hence, larger $x$, larger area and smaller $x$, smaller area.
-
-there are multiple attributes that needed to be understood,
+This shows the dependence of the area upon the value that we choose for $x$. Hence, larger $x$, larger area and smaller $x$, smaller area. There are multiple attributes that are required to be understood,
 
 1. **$f(x)$** - Represents the height at point $x$.
 2. **$\Delta x$** - Represents a small distance from $x$.
@@ -106,21 +104,45 @@ When we calculate a limit, we can change our approximation $\approx$ to an exact
 \lim_{\Delta x \to 0} \frac{\Delta A}{\Delta x} = \frac{dA}{dx} = f(x)
 ```
 
-**This is a very important observation**. This tells us
-
-1. The rate of which the area changes with respect to $x$ is equal to value at that point $x$ from $f(x)$.
-2. The function $f$ is the derivative of the function $A$.
-3. $A$ is an antiderivative of $f$.
-
-In other words,
+We have established that,
 
 ```math
-\boxed{A(x) = F(x) + C}
+\frac{dA}{dx}=f(x)
 ```
 
-This is saying, if we have a function $f(x)$ and we want to find the area under the curve upto $x$, we can complete this calculation by finding an antiderivative of $f(x)$ and providing the input $x$ to $F(x)$. However, we have the problem of having an unknown $C$. We can solve for this by trying to find the area under the curve when $x=0$. This would solve for $C$, because the area would be $0$.
+Interestingly, we already know that $F(x)$ is an antiderivative of $f(x)$, meaning that its derivative is also $f(x)$. The following diagram illustrates the relationship between the area function $A(x)$, the antiderivative $F(x)$, and the original function $f(x)$.
 
-When $x=0$, $A=0$ because there exists no area.
+<div align='center'>
+    <img src='./images/11.png'>
+</div>
+
+As illustrated, both $A(x)$ and $F(x)$ have the same derivative, $f(x)$. Therefore, they can only differ by an arbitrary constant.
+
+Our objective is to find an expression for the area function $A(x)$. Currently, we know its derivative, but we want to recover the original function. To do this, we need to reverse the process of differentiation. This is achieved through integration.
+
+We can integrate both sides of the equation with respect to $x$.
+
+```math
+\int \frac{dA}{dx}\,dx = \int f(x)\,dx
+```
+
+On the left-hand side, integration reverses differentiation, allowing us to recover the original function $A(x)$. On the right-hand side, integration gives us the antiderivative of $f(x)$.
+
+```math
+A(x) = F(x) + C
+```
+
+Where $F(x)$ is an antiderivative of $f(x)$ and $C$ is an arbitrary constant of integration. The constant is necessary because differentiation removes constants. Consequently, integrating a derivative cannot tell us which particular constant was present in the original function.
+
+We have therefore established that the area function $A(x)$ is an antiderivative of $f(x)$ and can be expressed as,
+
+```math
+\boxed{A(x)=F(x)+C}
+```
+
+We have now established that the area function $A(x)$ can be expressed as $F(x)+C$, where $F(x)$ is an antiderivative of $f(x)$. This tells us that we can recover the general expression for the area function by finding an antiderivative of $f(x)$. However, we still have an unknown constant $C$, which we need to determine before we can express the accumulated area precisely.
+
+We can determine this constant by considering the area function when \(x=0\).
 
 ```math
 \begin{aligned}

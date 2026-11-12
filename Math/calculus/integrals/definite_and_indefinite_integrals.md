@@ -26,6 +26,8 @@ In a **definite integral**, the product $f(x)\,dx$ represents an infinitesimal c
 
 In an **indefinite integral**, however, **no accumulation over an interval is taking place**. Instead, $\int f(x) \, dx$ denotes the family of functions whose derivative is $f(x)$. Although these two concepts have **different interpretations, they share the notation** $f(x) \, dx$ because the differential identifies the variable of integration and reflects the close relationship between integration and differentiation established by the Fundamental Theorem of Calculus.
 
+The word "integration" can refer to two related operations. So, when someone says "integrate both sides" **without specifying bounds**, they generally mean indefinite integration. When they specify bounds, such as $0$ to $b$, they mean definite integration.
+
 <div align='center'>
     <img src='./images/10.png' width=700>
 </div>
