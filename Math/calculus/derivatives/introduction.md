@@ -198,7 +198,7 @@ computes the **average rate of change** over a finite interval of width $h$. Tak
 If
 
 ```math
-y=f(x),
+y=f(x)
 ```
 
 then the derivative is defined by
@@ -321,4 +321,221 @@ This information tells us,
 
 ```math
 \lim_{\Delta x \to 0} \frac{\Delta v}{\Delta x} = \frac{dv}{dx} = v'(x)
+```
+
+### $h$ Can Be Positive or Negative
+
+In the definition of the derivative, $h$ represents a change in the input $x$. Importantly, $h$ is not restricted to positive values. It can be either positive or negative, depending on the direction from which we approach a particular point.
+
+```math
+f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}
+```
+
+For the derivative to exist, the limits from both directions must converge to the same finite value. In other words, the right-hand and left-hand derivatives must agree.
+
+```math
+\lim_{h\to0^+}\frac{f(x+h)-f(x)}{h}
+=
+\lim_{h\to0^-}\frac{f(x+h)-f(x)}{h}
+```
+
+When both limits exist and are equal, the derivative exists at that point, and their common value is $f'(x)$. To understand this, consider a fixed point at $x$. The expression $x+h$ represents a nearby point whose position depends on the value of $h$.
+
+Recall that,
+
+- **$h\to0^+$** - Means, $h$ is a positive number. This means, $h = 0.1, 0.001, 0.001, ...$
+- **$h\to0^-$** - Means, $h$ is a negative number. This means, $h = -0.1, -0.001, -0.001, ...$
+
+There are two possibilities:
+
+- **If $h>0$**, then $x+h>x$. We are considering a nearby point to the right of $x$, approaching from the right.
+- **If $h<0$**, then $x+h<x$. We are considering a nearby point to the left of $x$, approaching from the left.
+
+For example, suppose $x=3$:
+
+```math
+h=0.1 \implies x+h=3.1
+```
+
+```math
+h=-0.1 \implies x+h=2.9
+```
+
+Both values approach $x=3$, but from opposite directions.
+
+### Understanding the difference quotient
+
+The difference quotient calculates the gradient of a secant line between two points on a curve:
+
+```math
+\frac{f(x+h)-f(x)}{h}
+```
+
+When $h$ is positive, we calculate the gradient using a point to the right of $x$. When $h$ is negative, we calculate it using a point to the left of $x$. Importantly, **changing the sign of $h$ does not change the fundamental meaning of the difference quotient**. It still measures the change in the function's output divided by the corresponding change in the input.
+
+Consider a locally increasing function. When $h$ is positive, both the change in $x$ and the change in $y$ are positive. When $h$ is negative, both changes are negative. In either case, their ratio is positive. Therefore, reversing the direction of approach reverses both changes, but leaves their ratio unchanged. The gradient remains positive in either direction.
+
+<div align='center'>
+    <img src='./images/31.png' width=500>
+</div>
+
+
+For a locally decreasing function, the changes have opposite signs. When $h$ is positive, the change in $x$ is positive while the change in $y$ is negative. When $h$ is negative, the change in $x$ is negative while the change in $y$ is positive. In either case, their ratio is negative. This demonstrates that reversing the direction of approach reverses both changes, **leaving their ratio unchanged**.
+
+<div align='center'>
+    <img src='./images/32.png' width=500>
+</div>
+
+### The Derivative Is a Two-Sided Limit
+
+The important distinction is that the derivative is not simply the gradient obtained by approaching from the right. It considers the limit as $h$ approaches zero from both positive and negative directions. We can express this using two one-sided limits. 
+
+Approaching from the right,
+
+```math
+f'(x)=\lim_{h\to0^+}
+\frac{f(x+h)-f(x)}{h}
+```
+
+Approaching from the left,
+
+```math
+f'(x)=\lim_{h\to0^-}
+\frac{f(x+h)-f(x)}{h}
+```
+
+Provided both one-sided limits exist and agree, they give the same derivative:
+
+```math
+\boxed{
+f'(x)=\lim_{h\to0}
+\frac{f(x+h)-f(x)}{h}
+}
+```
+
+
+Geometrically, the secant lines approach the same tangent line as the nearby point gets closer to the fixed point, regardless of which side it approaches from. Consequently, both approaches converge to the same limiting gradient. It is important to understand that we are not calculating two different derivatives. We are approaching the same point from two different directions to establish whether a single, well-defined derivative exists there.
+
+### How This Relates To The Circle
+
+Consider the equation of a circle,
+
+```math
+x^2+y^2=25
+```
+
+Implicit differentiation gives,
+
+```math
+2x+2y\frac{dy}{dx}=0
+```
+
+Rearranging,
+
+```math
+\frac{dy}{dx}=-\frac{x}{y}
+```
+
+At the point $(3,4)$, the gradient is,
+
+```math
+\frac{dy}{dx}=-\frac34
+```
+
+This negative gradient tells us that as $x$ increases, $y$ decreases. Conversely, as $x$ decreases, $y$ increases. Both movements follow the same tangent line. The gradient remains $-\frac34$ because reversing the direction of travel reverses both the horizontal and vertical changes.
+
+For example, consider the tangent line's gradient in either direction,
+
+```math
+\frac{\Delta y}{\Delta x}
+=
+\frac{-3}{4}
+```
+
+Reversing the direction:
+
+```math
+\frac{\Delta y}{\Delta x}
+=
+\frac{3}{-4}
+=
+-\frac34
+```
+
+The gradient is unchanged.
+
+### Demonstrating the Derivative from Both Sides
+
+Consider the function $y=x^2$. To establish that its derivative exists, we must show that the difference quotient approaches the same value from both the left and right.
+
+Approaching from the right, where $h\to0^+$
+
+```math
+\begin{aligned}
+f'_+(x)
+&=\lim_{h\to0^+}\frac{f(x+h)-f(x)}{h}\\
+&=\lim_{h\to0^+}\frac{(x+h)^2-x^2}{h}\\
+&=\lim_{h\to0^+}(2x+h)\\
+&=2x
+\end{aligned}
+```
+
+Approaching from the left, where $h\to0^-$
+
+```math
+\begin{aligned}
+f'_-(x)
+&=\lim_{h\to0^-}\frac{f(x+h)-f(x)}{h}\\
+&=\lim_{h\to0^-}\frac{(x+h)^2-x^2}{h}\\
+&=\lim_{h\to0^-}(2x+h)\\
+&=2x
+\end{aligned}
+```
+
+Both one-sided limits converge to the same value, $2x$. Therefore, the derivative exists for all real values of $x$, and we can conclude that:
+
+```math
+\boxed{\frac{dy}{dx}=2x}
+```
+
+### Demonstrating When the Derivative Does Not Exist
+
+Consider the function $y=|x|$. To establish whether its derivative exists at $x=0$, we must show that the left-hand and right-hand limits converge to the same value.
+
+Approaching from the right, where $h\to0^+$
+
+```math
+\begin{aligned}
+f'_+(0)
+&=\lim_{h\to0^+}\frac{f(0+h)-f(0)}{h}\\
+&=\lim_{h\to0^+}\frac{|h|}{h}\\
+&=\lim_{h\to0^+}\frac{h}{h}\\
+&=1
+\end{aligned}
+```
+
+Approaching from the left, where $h\to0^-$. Recall that $|h|$ for a negative number is $-h$, this is done to make it positive. Because the numerator is now positive from $-h$ and the denomiantor is negative, because we're approaching from $0^-$, the result is a negative number.
+
+```math
+\begin{aligned}
+f'_-(0)
+&=\lim_{h\to0^-}\frac{f(0+h)-f(0)}{h}\\
+&=\lim_{h\to0^-}\frac{|h|}{h}\\
+&=\lim_{h\to0^-}\frac{-h}{h}\\
+&=-1
+\end{aligned}
+```
+
+The two one-sided limits produce different values:
+
+```math
+f'_+(0)=1
+\qquad
+f'_-(0)=-1
+```
+
+Therefore, the derivative **does not exist** at $x=0$, since the left-hand and right-hand limits do not agree. The derivative can therefore be expressed as,
+
+```math
+f'(x)= \begin{cases} -1 & x<0\\ \text{undefined} & x=0\\ 1 & x>0 \end{cases}
 ```
