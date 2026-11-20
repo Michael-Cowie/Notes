@@ -72,7 +72,7 @@ Use this pattern:
 
 ```html
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp;What is the probability that a randomly selected person has a height between 170 cm and 175 cm?
+&nbsp;&nbsp;&nbsp;&nbsp; <strong> Example </strong>
 </p>
 ```
 
