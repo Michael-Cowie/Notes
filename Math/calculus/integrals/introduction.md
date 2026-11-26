@@ -429,6 +429,161 @@ A&=\frac{1}{3}(8)^3-\frac{1}{3}(2)^3\\
 Therefore, between $2$ and $8$ seconds, the particle travels a total distance of $168\,\text{m}$. This example demonstrates how integration allows us to calculate the exact accumulated area beneath a curve, even when its shape makes ordinary geometric area formulas impractical.
 
 <div align='center'>
+<h1>Including Negative Area in Integration</h1>
+</div>
+
+So far, our examples have involved functions that remain positive throughout the interval of integration. This means that the entire area beneath the curve lies above the horizontal axis, and our definite integrals have produced positive results. However, functions can also take negative values, meaning that portions of the graph can fall below the horizontal axis. What happens when we include these regions in our integration?
+
+An important property of definite integration is that **areas above the horizontal axis contribute positively, while areas below the horizontal axis contribute negatively**. This means that integration does not simply add together the geometric areas of each region. Instead, it calculates what we call the *signed area*. To understand why this happens and what it means, let's return to our particle example.
+
+### Understanding Negative Area Through Velocity
+
+Previously, we considered particles travelling with positive velocities. This meant that the particles were always moving in the positive direction, and their displacement continually increased. However, particles can also change direction. For example, a particle travelling forwards can eventually reverse direction and begin travelling backwards.
+
+We can represent this using a velocity-time graph. When velocity is positive, the particle travels in the positive direction. When velocity is negative, the particle travels in the opposite direction. Consider a particle travelling forwards at a constant velocity of $2\,\text{m/s}$ for $5$ seconds, before reversing direction and travelling backwards at $2\,\text{m/s}$ for another $3$ seconds.
+
+We can describe its velocity using the following piecewise function,
+
+```math
+v(t)=
+\begin{cases}
+2 & 0\leq t\leq5\\
+-2 & 5<t\leq8
+\end{cases}
+```
+
+<div align='center'>
+    <img src='./images/26.png' width=600>
+</div>
+
+
+The displacement during the first $5$ seconds is positive,
+
+```math
+\begin{aligned}
+\Delta s_1
+&=\int_0^5 2\,dt\\
+&=[2t]_0^5\\
+&=2(5)-2(0)\\
+&=10\,\text{m}
+\end{aligned}
+```
+
+During the following $3$ seconds, the particle travels in the opposite direction. Its velocity is now negative, meaning that the area beneath the velocity-time graph contributes negatively to its displacement,
+
+```math
+\begin{aligned}
+\Delta s_2
+&=\int_5^8 -2\,dt\\
+&=[-2t]_5^8\\
+&=-2(8)-(-2(5))\\
+&=-16+10\\
+&=-6\,\text{m}
+\end{aligned}
+```
+
+Notice that the negative result does not mean the particle travelled a negative distance. **It means that the particle displaced itself $6$ metres in the negative direction**. We can combine both intervals to calculate the particle's total displacement,
+
+```math
+\begin{aligned}
+\Delta s
+&=\int_0^8 v(t)\,dt\\
+&=10+(-6)\\
+&=4\,\text{m}
+\end{aligned}
+```
+
+Therefore, the particle finishes $4$ metres ahead of its original starting position.
+
+<div align='center'>
+    <img src='./images/signed_area_position_velocity_animation_final_layout.gif' width=600>
+</div>
+
+
+### Displacement Versus Total Distance
+
+This example introduces an important distinction between displacement and distance. Although the particle has a net displacement of only $4$ metres, it has actually travelled a total distance of $16$ metres. We can see the difference by comparing the two calculations,
+
+| Measurement | Calculation | Result |
+|---|---|---:|
+| Forward displacement | $5\times2$ | $+10\,\text{m}$ |
+| Backward displacement | $3\times-2$ | $-6\,\text{m}$ |
+| Net displacement | $10-6$ | $4\,\text{m}$ |
+| Total distance | $10+6$ | $16\,\text{m}$ |
+
+The distinction is that displacement considers both the magnitude and direction of movement, whereas distance measures the total length travelled, regardless of direction. This is why we distinguish between the signed area beneath a velocity-time graph and the total geometric area.
+
+**Net displacement** is calculated by integrating velocity,
+
+```math
+\boxed{\Delta s=\int_a^b v(t)\,dt}
+```
+
+**Total distance travelled** is calculated by integrating the absolute value of velocity, also known as speed,
+
+```math
+\boxed{D=\int_a^b |v(t)|\,dt}
+```
+
+The absolute value ensures that negative velocities also contribute positively when calculating total distance. This demonstrates why negative areas are important. They are not simply mathematical inconveniences, they represent quantities accumulating in the opposite direction.
+
+### Negative Area In a General Function
+
+We can now apply this understanding to a more general function,
+
+```math
+f(x)=0.1x^2-1.5x+4
+```
+
+<div align='center'>
+    <img src='./images/25.png' width=600>
+</div>
+
+Suppose we want to calculate the definite integral between $x=2$ and $x=9$.
+
+The graph crosses the horizontal axis within our interval. This creates two distinct regions - a green region above the horizontal axis and a red region below it. The green region represents positive area, while the red region represents negative area. When calculating the definite integral, these regions offset one another.
+
+We can calculate the definite integral using the antiderivative of our function,
+
+```math
+\begin{aligned}
+\int_2^9 (0.1x^2-1.5x+4)\,dx
+&=\left[\frac{1}{30}x^3-\frac{3}{4}x^2+4x\right]_2^9\\
+&=\left(\frac{1}{30}(9)^3-\frac{3}{4}(9)^2+4(9)\right)\\
+&\quad-\left(\frac{1}{30}(2)^3-\frac{3}{4}(2)^2+4(2)\right)\\
+&=-\frac{343}{60}\\
+&\approx-5.717
+\end{aligned}
+```
+
+The result is negative because the red region below the horizontal axis is larger than the green region above it. Consequently, the negative contribution outweighs the positive contribution, producing a negative net area. It is important to understand that this does not mean the geometric area is negative. Geometric area is always non-negative. Instead, the negative result tells us that the accumulated negative contribution exceeds the accumulated positive contribution.
+
+If we interpret this function as a velocity function, the negative result means that the particle's net displacement over the interval is approximately $5.717$ units in the negative direction. In other words, its final position is behind its starting position. Other applications of negative net area represent,
+
+- **Electrical Charge** - If we integrate electrical current over time and obtain a negative result, it means there has been a net flow of electrical charge in the negative direction, relative to the chosen reference direction.
+
+- **Population Growth** - If we integrate a population growth rate over time and obtain a negative result, it means the population has experienced a net decrease over that interval. The population has lost more individuals than it has gained.
+
+- **Energy Transfer** - If we integrate power over time and obtain a negative result, it means there has been a net transfer of energy out of the system, rather than energy being supplied to it. This depends on the chosen sign convention.
+
+### Calculating Total Geometric Area
+
+What if we instead wanted to calculate the total geometric area beneath the curve?
+
+In this case, we would not want the positive and negative regions to cancel one another. Instead, we would add the magnitudes of both regions. To do this, we can split the integral at the point where the function crosses the horizontal axis and take the absolute value of the negative contribution. Mathematically, this is equivalent to integrating the absolute value of the function,
+
+```math
+\boxed{\text{Total area}=\int_a^b |f(x)|\,dx}
+```
+
+This ensures that every region contributes positively, regardless of whether it lies above or below the horizontal axis. There are two important distinctions to remember,
+
+- **Definite integral** - Calculates the net signed area, allowing positive and negative regions to offset one another.
+- **Total geometric area** - Adds the magnitudes of all regions, regardless of whether they lie above or below the horizontal axis.
+
+This distinction is particularly important when working with physical quantities such as velocity. Integrating velocity (Speed and Direction) gives us displacement, which accounts for direction, whereas integrating speed (Directionless) gives us the total distance travelled. **Integration is therefore not simply a method for calculating geometric area. It is a method of measuring accumulated quantities**, where the sign of the function determines the direction in which that quantity changes.
+
+<div align='center'>
     <h1> Area Representation  </h1>
 </div>
 
