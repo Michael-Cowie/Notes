@@ -584,6 +584,67 @@ This ensures that every region contributes positively, regardless of whether it 
 This distinction is particularly important when working with physical quantities such as velocity. Integrating velocity (Speed and Direction) gives us displacement, which accounts for direction, whereas integrating speed (Directionless) gives us the total distance travelled. **Integration is therefore not simply a method for calculating geometric area. It is a method of measuring accumulated quantities**, where the sign of the function determines the direction in which that quantity changes.
 
 <div align='center'>
+<h1>Integration Determines Change, Not Absolute Position</h1>
+</div>
+
+An important distinction when interpreting definite integrals is that they determine the net change in a function over an interval, rather than necessarily revealing its actual starting and ending values. Consider a particle travelling with a constant velocity of $1\,\text{m/s}$. Its velocity function is,
+
+```math
+v(t)=1
+```
+
+Since velocity is the derivative of position, we can integrate to find the position function,
+
+```math
+\begin{aligned}
+s'(t)&=v(t)=1\\
+s(t)&=\int 1\,dt\\
+&=t+C
+\end{aligned}
+```
+
+The constant of integration represents an unknown starting position. Without knowing its value, we cannot determine the particle's absolute position.
+
+For example, consider two possible position functions,
+
+```math
+\begin{aligned}
+s_1(t)&=t+2\\
+s_2(t)&=t+10
+\end{aligned}
+```
+
+Both functions describe a particle travelling at the same constant velocity of $1\,\text{m/s}$, since differentiating either function gives $v(t)=1$. However, their initial positions are different. For the first function, the particle starts at position 2 metres and reaches position 5 metres after 3 seconds. For the second function, it starts at position 10 metres and reaches position 13 metres after the same duration.
+
+<div align='center'>
+    <img src='./images/27.png' width=600>
+</div>
+
+Despite their different starting and ending positions, both particles experience exactly the same displacement of 3 metres. We can calculate this displacement by integrating their common velocity function,
+
+```math
+\begin{aligned}
+\Delta s&=\int_0^3 v(t)\,dt\\
+&=\int_0^3 1\,dt\\
+&=[t]_0^3\\
+&=3-0\\
+&=3\,\text{m}
+\end{aligned}
+```
+
+This demonstrates that the definite integral determines the difference between the endpoint positions, but does not independently determine what those positions are. The reason becomes clear when we consider the arbitrary constant,
+
+```math
+\begin{aligned}
+\Delta s&=s(3)-s(0)\\
+&=(3+C)-(0+C)\\
+&=3
+\end{aligned}
+```
+
+Regardless of the value of $C$, the displacement remains 3 metres because the constant cancels when we subtract the initial position from the final position. Therefore, integration allows us to determine how much a particle has displaced over an interval, even when its absolute starting position is unknown. To determine its actual position, we need additional information, such as its initial position at a known time.
+
+<div align='center'>
     <h1> Area Representation  </h1>
 </div>
 
