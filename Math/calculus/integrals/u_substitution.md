@@ -50,6 +50,30 @@ Notice that differentiating the composite function produces two components,
   
 U-substitution works in the opposite direction. When we encounter an integral containing these same components, we can identify the inner function, replace it with $u$, and use its derivative to simplify the integral.
 
+```math
+\begin{gathered}
+\textbf{Differentiate — Chain Rule}\\[6pt]
+u=g(x)
+\qquad
+\frac{du}{dx}=g'(x)\\[4pt]
+\frac{dy}{dx}
+=
+\frac{dy}{du}
+\cdot
+\underbrace{\frac{du}{dx}}_{\text{Multiply by derivative}}
+\\[12pt]
+\downarrow\qquad
+\text{Reverse process}
+\qquad\uparrow
+\\[12pt]
+\textbf{Integrate — U-Substitution}\\[6pt]
+du=g'(x)\,dx\\[4pt]
+dx=
+\frac{du}{\underbrace{g'(x)}_{\text{Divide by derivative}}}
+\end{gathered}
+
+```
+
 The general relationship is,
 
 ```math
