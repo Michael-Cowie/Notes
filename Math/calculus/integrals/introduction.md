@@ -428,6 +428,24 @@ A&=\frac{1}{3}(8)^3-\frac{1}{3}(2)^3\\
 
 Therefore, between $2$ and $8$ seconds, the particle travels a total distance of $168\,\text{m}$. This example demonstrates how integration allows us to calculate the exact accumulated area beneath a curve, even when its shape makes ordinary geometric area formulas impractical.
 
+#### Particle Example 4
+
+So far, we have calculated displacement by integrating the velocity function. However, suppose we are instead given the difference between two positions on the integral function. Can we use this information to determine the signed area beneath the derivative?
+
+<div align='center'> <img src='./images/28.png' width=400> </div>
+
+The pink curve represents velocity, $v(t)=s'(t)$, while the black curve represents position, $s(t)$. The difference between the two marked positions is $-5.72\,\text{m}$. Using the Fundamental Theorem of Calculus, we know that the signed area beneath the velocity curve is equal to this change in position,
+
+```math
+\begin{aligned}
+\int_2^9 v(t)\,dt
+&=s(9)-s(2)\\
+&=-5.72\,\text{m}
+\end{aligned}
+```
+
+Therefore, even without knowing the equation of the velocity function, we can determine that the net signed area is $-5.72\,\text{m}$.
+
 <div align='center'>
 <h1>Including Negative Area in Integration</h1>
 </div>
